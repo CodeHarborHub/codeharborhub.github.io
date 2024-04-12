@@ -1,0 +1,119 @@
+{
+  "course": {
+    "title": "Practical CSS Layouts",
+    "sections": [
+      {
+        "title": "Introduction",
+        "lessons": [
+          {
+            "title": "Easy Design: Styleguide Exercise",
+            "topics": [
+              "CSS Basics Setup",
+              "rem vs. em Units",
+              "Style Guide Type Sizes",
+              "Custom Font & Responsive Image",
+              "HTML Markup for a Simple Website",
+              "CSS for a Simple Responsive Layout",
+              "Mobile Tour Styles",
+              "Reviews & Images Styles",
+              "Margin Collapse",
+              "Basic CSS Footer Styles",
+              "CSS for Tablet Layout",
+              "Responsive Images with the Picture Element",
+              "Basic Tablet CSS Layout",
+              "CSS Styles for Desktop Layout"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Medium Design",
+        "lessons": [
+          {
+            "title": "Tour Page & Tracklist",
+            "topics": [
+              "Tour Page Styles",
+              "Button Styling Practice",
+              "Button Interactive States",
+              "Tour Text Styles",
+              "Tour Layout Practice",
+              "Album & Tracklist Exercise",
+              "Album Solution",
+              "Album Styles",
+              "Tracklist Styles"
+            ]
+          },
+          {
+            "title": "Reviews & Images",
+            "topics": [
+              "Reviews & Images Mobile Styles",
+              "Reviews & Images Tablet Styles",
+              "Reviews & Images Tablet Styles Exercise",
+              "Reviews & Images Desktop Styles"
+            ]
+          },
+          {
+            "title": "Audio Player & Hamburger Menu",
+            "topics": [
+              "Audio Player Overview",
+              "Audio Player Markup",
+              "Audio Player Base Styles",
+              "Play & Mute Button Styles",
+              "Range Slider Styles",
+              "Album Cover Styles",
+              "Hamburger Menu Exercise",
+              "Hamburger Menu Logo Exercise",
+              "Hamburger Menu Styles Exercise",
+              "Hamburger Menu Tablet & Mobile Styles"
+            ]
+          },
+          {
+            "title": "Final Site Assembly",
+            "topics": [
+              "Medium Design Site Assembly Exercise",
+              "Medium Design Desktop Layout Exercise"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Difficult Design",
+        "lessons": [
+          {
+            "title": "Small Elements",
+            "topics": [
+              "Small Elements Exercise",
+              "Small Elements Solution",
+              "Review Layout Exercise",
+              "Album Boxes Exercise & Solution",
+              "Double Border Corners",
+              "Navigation Exercise & Solution",
+              "Social Icons"
+            ]
+          },
+          {
+            "title": "Advanced Styles",
+            "topics": [
+              "Tracklist CSS",
+              "Tracklist Show & Hide JavaScript",
+              "Tracklist Grid for Tablet & Desktop",
+              "CSS Transitions & Custom Table Scrollbar",
+              "Diamond Images Mobile Layout",
+              "Diamond Images Tablet & Desktop Layout",
+              "Advanced Layout Exercise",
+              "Advanced Desktop Layout"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Wrapping Up",
+        "lessons": [
+          {
+            "title": "Wrapping Up"
+          }
+        ]
+      }
+    ]
+  }
+}

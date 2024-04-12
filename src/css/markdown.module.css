@@ -1,0 +1,38 @@
+.colorRed strong {
+  color: #af6431;
+}
+
+[data-theme='dark'] .colorRed strong {
+  color: #af6431;
+}
+
+[data-theme='dark'] .colorRed em {
+  color: #e6a377;
+}
+
+.maxwidth {
+  width: auto;
+  max-width: 600px;
+  float: left;
+  margin: 0 10px;
+}
+
+.wrap {
+  display: inline-block;
+}
+
+.colorRed dt::after {
+  content: ':';
+}
+
+.colorRed dl > dt {
+  float: left;
+  margin-inline-end: 0.26em;
+  color: #af6431;
+  font-weight: bold;
+}
+
+.colorRed dl > dd {
+  margin: 0;
+  color: #e6a377;
+}

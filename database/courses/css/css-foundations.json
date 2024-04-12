@@ -1,0 +1,136 @@
+{
+  "course": {
+    "title": "CSS Foundations",
+    "sections": [
+      {
+        "title": "Introduction",
+        "lessons": [
+          {
+            "title": "Introduction"
+          }
+        ]
+      },
+      {
+        "title": "CSS Basics",
+        "lessons": [
+          {
+            "title": "CSS History & Basics"
+          },
+          {
+            "title": "Selectors"
+          },
+          {
+            "title": "Specificity"
+          },
+          {
+            "title": "Color"
+          },
+          {
+            "title": "Fonts & Typography"
+          }
+        ]
+      },
+      {
+        "title": "Project",
+        "lessons": [
+          {
+            "title": "Project Setup"
+          },
+          {
+            "title": "Landing Page CSS & HTML"
+          },
+          {
+            "title": "Creating Base CSS File & Variables"
+          }
+        ]
+      },
+      {
+        "title": "Layout",
+        "lessons": [
+          {
+            "title": "Layout Methods History"
+          },
+          {
+            "title": "Flexbox & Grid"
+          },
+          {
+            "title": "Combinators"
+          },
+          {
+            "title": "Block Element Modifier (BEM)"
+          },
+          {
+            "title": "CSS Header"
+          },
+          {
+            "title": "Getting Started with CSS Q&A"
+          },
+          {
+            "title": "The Box Model"
+          },
+          {
+            "title": "Z-Index & Positioning"
+          },
+          {
+            "title": "Border & Border Radius"
+          },
+          {
+            "title": "Background"
+          },
+          {
+            "title": "Dropshadow & Cursor"
+          },
+          {
+            "title": "Pseudo Classes"
+          },
+          {
+            "title": "Elements & Transitions"
+          }
+        ]
+      },
+      {
+        "title": "Interactive & Responsive UI",
+        "lessons": [
+          {
+            "title": "Home Page Layout"
+          },
+          {
+            "title": "Styling Interactive Buttons"
+          },
+          {
+            "title": "SVG"
+          },
+          {
+            "title": "Align Items Q&A"
+          },
+          {
+            "title": "Speakers Image & Grid Layout"
+          },
+          {
+            "title": "Responsive Layout with Media Queries"
+          },
+          {
+            "title": "Mobile Header Layout"
+          },
+          {
+            "title": "Mobile Navigation Menu"
+          },
+          {
+            "title": "Menu Transition"
+          },
+          {
+            "title": "Color & Scrolling"
+          }
+        ]
+      },
+      {
+        "title": "Wrapping Up",
+        "lessons": [
+          {
+            "title": "Wrapping Up"
+          }
+        ]
+      }
+    ]
+  }
+}

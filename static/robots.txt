@@ -1,0 +1,5 @@
+# Algolia-Crawler-Verif: 883906CE7DC3C64B
+
+User-agent: *
+Allow: /
+sitemap: https://ajay-dhangar.github.io/code-harbor-hub/sitemap.xml

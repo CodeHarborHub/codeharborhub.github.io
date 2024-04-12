@@ -1,0 +1,8 @@
+{
+  "label": "Module 6: Advanced Styling in React",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "In this module, you will learn how to use advanced styling techniques in React. You will learn how to use CSS Modules, Styled Components, and how to use the CSS-in-JS approach to style your React components. You will also learn how to use the Material-UI library to style your React components."
+  }
+}

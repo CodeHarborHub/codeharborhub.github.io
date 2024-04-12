@@ -1,0 +1,8 @@
+{
+  "label": "Module 7: Managing Complex UIs in React",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "In this module, you will learn how to manage complex UIs in React. You will learn how to manage state in a React component, how to use React's lifecycle methods, and how to use React's context API to manage state across multiple components. You will also learn how to use React's ref API to interact with the DOM directly, and how to use React's error boundaries to handle errors in your application. Finally, you will learn how to use React's new hooks API to manage state and side effects in your components."
+  }
+}
