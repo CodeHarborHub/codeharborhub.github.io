@@ -317,6 +317,13 @@ const config = {
       },
     ],
     [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-8QK6Y7QDCB',
+        anonymizeIP: true,
+      },
+    ],
+    [
       "@docusaurus/plugin-pwa",
       {
         debug: true,
