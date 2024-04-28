@@ -304,6 +304,13 @@ const config = {
 
   plugins: [
     [
+      'vercel-analytics',
+      {
+        debug: true,
+        mode: 'auto',
+      },
+    ],
+    [
       "@docusaurus/plugin-pwa",
       {
         debug: true,
@@ -331,7 +338,6 @@ const config = {
         ],
       },
     ],
-
     [
       "@docusaurus/plugin-ideal-image",
       {
@@ -415,7 +421,6 @@ const config = {
         showLastUpdateTime: true,
       },
     ],
-
     [
       "@docusaurus/plugin-content-docs",
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
@@ -430,7 +435,6 @@ const config = {
         showLastUpdateTime: true,
       },
     ],
-
     [
       path.join(__dirname, "/plugins/my-plugin"),
       {

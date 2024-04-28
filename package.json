@@ -18,6 +18,7 @@
     "@docusaurus/plugin-content-pages": "^3.2.1",
     "@docusaurus/plugin-ideal-image": "^3.2.1",
     "@docusaurus/plugin-pwa": "^3.2.1",
+    "@docusaurus/plugin-vercel-analytics": "^3.2.1",
     "@docusaurus/preset-classic": "^3.2.1",
     "@docusaurus/remark-plugin-npm2yarn": "^3.2.1",
     "@docusaurus/theme-live-codeblock": "^3.2.1",
