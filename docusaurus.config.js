@@ -311,6 +311,12 @@ const config = {
       },
     ],
     [
+      '@docusaurus/plugin-google-tag-manager',
+      {
+        containerId: 'GTM-MLJNRGC9',
+      },
+    ],
+    [
       "@docusaurus/plugin-pwa",
       {
         debug: true,
