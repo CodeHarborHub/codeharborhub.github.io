@@ -1,0 +1,8 @@
+{
+  "label": "Module 13: React Testing",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "In this module, you will learn how to test React components using Jest and Enzyme. You will learn how to write unit tests, snapshot tests, and integration tests for React components. You will also learn how to test React components that use Redux for state management."
+  }
+}

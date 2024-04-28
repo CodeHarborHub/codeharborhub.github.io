@@ -3,7 +3,7 @@
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 // import OurInstructors from "@site/src/components/OurInstructors";
-import GiscusComponent from "@site/src/components/GiscusComponent";
+// import GiscusComponent from "@site/src/components/GiscusComponent";
 
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
@@ -117,9 +117,9 @@ export default function Home() {
           <Heading as="h2">Join the Discussion</Heading>
         </div>
         
-        <div>
+        {/* <div>
           <GiscusComponent />
-        </div>
+        </div> */}
       </main>
     </Layout>
   );

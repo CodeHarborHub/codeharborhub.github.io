@@ -1,0 +1,8 @@
+{
+  "label": "Advanced Level",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "In this module, you will learn about advanced topics in React, such as Context, Portals, Error Boundaries, and Refs. You will also learn about the new features in React 16, such as Fragments, Error Boundaries, and Portals."
+  }
+}

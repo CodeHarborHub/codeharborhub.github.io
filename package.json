@@ -16,6 +16,7 @@
   "dependencies": {
     "@docusaurus/core": "^3.2.1",
     "@docusaurus/plugin-content-pages": "^3.2.1",
+    "@docusaurus/plugin-google-analytics": "^3.2.1",
     "@docusaurus/plugin-google-gtag": "^3.2.1",
     "@docusaurus/plugin-google-tag-manager": "^3.2.1",
     "@docusaurus/plugin-ideal-image": "^3.2.1",
@@ -47,6 +48,7 @@
     "react-popper": "^2.3.0",
     "react-redux": "^9.1.0",
     "react-simple-code-editor": "^0.13.1",
+    "react-window": "^1.8.10",
     "redux": "^5.0.1",
     "rehype-katex": "^6.0.3",
     "remark-math": "^5.1.1",
