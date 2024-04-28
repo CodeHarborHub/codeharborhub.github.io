@@ -19,6 +19,7 @@ import InsertionSortVisualization from '@site/src/components/DSA/arrays/Insertio
 import File from '@site/src/components/File';
 import YoutubeVideo from '../components/YoutubeVideo';
 import Lesson from '@site/src/components/Lesson';
+import Image from '@theme/IdealImage';
 
 export default {
   // Re-use the default mapping
@@ -43,5 +44,6 @@ export default {
   InsertionSortVisualization,
   File,
   YoutubeVideo,
-  Lesson
+  Lesson,
+  Image
 };
