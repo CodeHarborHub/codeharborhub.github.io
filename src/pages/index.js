@@ -94,9 +94,9 @@ export default function Home() {
 
       <main>
         <Hero
-          title="Welcome To CodeHarborHub"
+          title="CodeHarborHub is"
           description="Your gateway to top-notch tech education. We're dedicated to empowering individuals with the skills to thrive in today's tech landscape. Whether you're a novice or a seasoned developer, our inclusive platform offers tailored learning opportunities. Join us today and embark on your path to tech mastery!"
-          imageUrl="/img/svg/about_me.svg"
+          imageUrl="/img/svg/blogging.svg"
         />
 
         <hr style={{ margin: "1rem" }} />
@@ -112,10 +112,11 @@ export default function Home() {
         </div>
 
         <Courses courses={coursesData} />
-
+      
+      {/* 
         <div className={styles.home__divider}>
           <Heading as="h2">Join the Discussion</Heading>
-        </div>
+        </div> */}
         
         {/* <div>
           <GiscusComponent />

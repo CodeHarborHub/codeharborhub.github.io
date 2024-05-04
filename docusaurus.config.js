@@ -41,7 +41,7 @@ const config = {
             keywords: ["my-custom-admonition"],
             extendDefaults: true,
           },
-          editUrl: "https://github.com/Ajay-Dhangar/edit/main/",
+          editUrl: "https://github.com/CodeHarborHub/codeharborhub/edit/main/",
           remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, rehypeKatex],
         },
         pages: {
