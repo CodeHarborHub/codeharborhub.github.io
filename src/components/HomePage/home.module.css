@@ -26,15 +26,15 @@
 
 .hero_title {
   font-size: 3rem;
-  padding: 2px 4px;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: GradientAnimation 15s ease infinite;
-  color: transparent;
-  -webkit-background-clip: text;
+  padding: 1px 4px;
+  background: linear-gradient(
+    90deg,
+    rgb(131 58 180 / 100%) 0%,
+    rgb(253 29 29 / 100%) 50%,
+    rgb(252 176 69 / 100%) 100%
+  );
   background-clip: text;
-  /* -webkit-text-stroke: 1px #1b0446; */
-  /* text-shadow: 2px 2px 2px #1b044644; */
+  -webkit-text-fill-color: transparent;
 }
 
 .hero_description {
@@ -81,8 +81,7 @@
 .hero_image_container {
   width: 100%;
   height: 400px;
-  margin-bottom: 50px;
-  overflow: hidden;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 853px) {
@@ -132,14 +131,10 @@
   } */
 }
 
-.hero_image {
-  /* width: 100%;
-  height: 100%; */
-  /* object-fit: cover;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: GradientAnimation 15s ease infinite; */
-}
+/* .hero_image {
+  width: 100%;
+  height: 100%;  
+} */
 .feature_container,
 .course_cards {
   margin: 20px 0;

@@ -96,7 +96,7 @@ export default function Home() {
         <Hero
           title="CodeHarborHub is"
           description="Your gateway to top-notch tech education. We're dedicated to empowering individuals with the skills to thrive in today's tech landscape. Whether you're a novice or a seasoned developer, our inclusive platform offers tailored learning opportunities. Join us today and embark on your path to tech mastery!"
-          imageUrl="/img/svg/blogging.svg"
+          imageUrl="/img/img-5.png"
         />
 
         <hr style={{ margin: "1rem" }} />
