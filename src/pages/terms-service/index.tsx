@@ -59,7 +59,7 @@ const Strong = styled.strong`
 const TermsOfService: React.FC = () => {
   return (
     <Layout
-    title={`Terms of Service`}
+    title={"Terms of Service"}
     description="Terms of Service Page for CodeHarborHub Learners, and users"
     >
       <TermsContainer>
