@@ -1,0 +1,20 @@
+name: Greetings
+
+on: [pull_request_target, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+      - name: Greet first-time contributors
+        id: greet
+        uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: |
+            Hi there! 👋 Thank you for opening your first issue on CodeHarborHub. We're excited to hear your thoughts and help you out. Please provide as much detail as you can so we can assist you effectively.
+          pr-message: |
+            Hi there! 👋 Thank you for submitting your first pull request to CodeHarborHub. We appreciate your contribution! Our team will review it soon. If you have any questions or need further assistance, feel free to reach out.
