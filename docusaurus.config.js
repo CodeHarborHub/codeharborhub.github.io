@@ -41,7 +41,7 @@ const config = {
             keywords: ["my-custom-admonition"],
             extendDefaults: true,
           },
-          editUrl: "https://github.com/CodeHarborHub/codeharborhub/edit/main/",
+          editUrl: "https://github.com/codeharborhub/codeharborhub/edit/main/",
           remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, rehypeKatex],
         },
         pages: {
@@ -49,7 +49,7 @@ const config = {
         },
         blog: {
           showReadingTime: true,
-          editUrl: "https://github.com/Ajay-Dhangar/edit/main/",
+          editUrl: "https://github.com/codeharborhub/codeharborhub/edit/main/",
           remarkPlugins: [[npm2yarn, { converters: ["pnpm"] }]],
         },
         theme: {
@@ -65,7 +65,7 @@ const config = {
       image: "img/logo.jpg",
       announcementBar: {
         id: "announcementBar",
-        content: `⭐️ If you like CodeHarborHub, give it a star on <a target="_blank" href="https://github.com/Ajay-Dhangar/">GitHub</a> and join us on <a target="_blank" href="https://www.linkedin.com/groups/14232119/">LinkedIn</a> ⭐️`,
+        content: `⭐️ If you like CodeHarborHub, give it a star on <a target="_blank" href="https://github.com/codeharborhub/codeharborhub">GitHub</a> and join us on <a target="_blank" href="https://www.linkedin.com/groups/14232119/">LinkedIn</a> ⭐️`,
         isCloseable: true,
       },
 
@@ -144,7 +144,7 @@ const config = {
             ],
           },       
           {
-            href: 'https://github.com/ajay-dhangar/code-harbor-hub',
+            href: 'https://github.com/codeharborhub/codeharborhub',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository',
@@ -245,7 +245,7 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/ajay-dhangar",
+                href: "https://github.com/codeharborhub",
               },
               {
                 label: "Products",
@@ -262,7 +262,7 @@ const config = {
               },
               {
                 label: "YouTube",
-                href: "https://www.youtube.com/@ajay-dhangar/",
+                href: "https://www.youtube.com/",
               },
               {
                 label: "Discord",
@@ -276,7 +276,7 @@ const config = {
           },
         ],
         logo: {
-          alt: "Copyright © CMHQ Made with ❤️ by Ajay-Dhangar",
+          alt: "Copyright © CodeHarborHub Made with ❤️ by Ajay-Dhangar",
           src: "/img/main-logo.jpg",
           href: "https://github.com/ajay-dhangar",
         },

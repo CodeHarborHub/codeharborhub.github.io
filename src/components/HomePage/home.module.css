@@ -163,9 +163,9 @@
   height: 150px;
   border-radius: 5px;
   border-bottom: 1px solid #ccc;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: GradientAnimation 15s ease infinite;
+  background: linear-gradient(-20deg, #ee76522a, #b21f572b, #23a5d531, #23d5ab21);
+  /* background-size: 400% 400%; */
+  /* animation: GradientAnimation 15s ease infinite; */
 }
 
 .feature_item h3,
