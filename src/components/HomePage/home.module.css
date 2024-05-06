@@ -131,10 +131,6 @@
   } */
 }
 
-/* .hero_image {
-  width: 100%;
-  height: 100%;  
-} */
 .feature_container,
 .course_cards {
   margin: 20px 0;
@@ -164,8 +160,6 @@
   border-radius: 5px;
   border-bottom: 1px solid #ccc;
   background: linear-gradient(-20deg, #ee76522a, #b21f572b, #23a5d531, #23d5ab21);
-  /* background-size: 400% 400%; */
-  /* animation: GradientAnimation 15s ease infinite; */
 }
 
 .feature_item h3,

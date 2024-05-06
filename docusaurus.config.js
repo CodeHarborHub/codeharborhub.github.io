@@ -13,8 +13,8 @@ const config = {
   favicon: "img/logo.jpg",
 
   url: process.env.URL || "http://localhost:3000/",
-  // baseUrl: process.env.BASE_URL,
-  baseUrl: "/",
+  baseUrl: process.env.BASE_URL,
+  // baseUrl: "/",
   customFields: {
     teamEmail: process.env.EMAIL,
   },
@@ -70,9 +70,9 @@ const config = {
       },
 
       algolia: {
-        apiKey: "2c1a3331ebff51f76d2f247323ee4ba4",
+        apiKey: process.env.ALGOLIA_API_KEY,
         indexName: "code-harbor-hub",
-        appId: "M9BCMBK1PH",
+        appId: process.env.ALGOLIA_APP_ID,
         contextualSearch: false,
       },
 
@@ -313,13 +313,13 @@ const config = {
     [
       '@docusaurus/plugin-google-tag-manager',
       {
-        containerId: 'GTM-MLJNRGC9',
+        containerId: process.env.GTM_ID,
       },
     ],
     [
       '@docusaurus/plugin-google-gtag',
       {
-        trackingID: 'G-8QK6Y7QDCB',
+        trackingID: process.env.GA_ID,
         anonymizeIP: true,
       },
     ],
