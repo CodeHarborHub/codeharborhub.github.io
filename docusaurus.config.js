@@ -13,9 +13,16 @@ const config = {
   favicon: "img/logo.jpg",
 
   url: process.env.URL || "http://localhost:3000/",
+  // baseUrl: process.env.BASE_URL,
   baseUrl: "/",
   customFields: {
+    admin: 'Ajay Dhangar',
+    superman: 'Shivay',
     teamEmail: process.env.EMAIL,
+    GTM_ID: process.env.GTM_ID,
+    GA_ID: process.env.GA_ID,
+    ALGOLIA_APP_ID: process.env.ALGOLIA_APP_ID,
+    ALGOLIA_API_KEY: process.env.ALGOLIA_API_KEY,    
   },
 
   organizationName: "ajay-dhangar",
@@ -69,9 +76,9 @@ const config = {
       },
 
       algolia: {
-        apiKey: process.env.ALGOLIA_API_KEY,
+        apiKey: "2c1a3331ebff51f76d2f247323ee4ba4",
         indexName: "code-harbor-hub",
-        appId: process.env.ALGOLIA_APP_ID,
+        appId: "M9BCMBK1PH",
         contextualSearch: false,
       },
 
@@ -312,13 +319,13 @@ const config = {
     [
       '@docusaurus/plugin-google-tag-manager',
       {
-        containerId: process.env.GTM_ID,
+        containerId: 'GTM-MLJNRGC9',
       },
     ],
     [
       '@docusaurus/plugin-google-gtag',
       {
-        trackingID: process.env.GA_ID,
+        trackingID: 'G-8QK6Y7QDCB',
         anonymizeIP: true,
       },
     ],
