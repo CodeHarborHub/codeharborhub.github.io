@@ -1,4 +1,4 @@
-import {sortBy} from '../utils/jsUtils';
+import { sortBy } from '../utils/jsUtils';
 
 export type Tag = {
   label: string;
@@ -27,6 +27,7 @@ export type TagType =
   | 'nextjs'
   | 'vanilla'
   | 'typescript'
+  | 'ai'
   | 'clone';
 
 export type User = {
@@ -38,7 +39,7 @@ export type User = {
   tags: TagType[];
 };
 
-export const Tags: {[type in TagType]: Tag} = {
+export const Tags: { [type in TagType]: Tag } = {
   html: {
     label: 'HTML',
     description:
@@ -86,20 +87,20 @@ export const Tags: {[type in TagType]: Tag} = {
     description:
       '',
     color: '#026e00',
-  }, 
-  
+  },
+
   mongodb: {
     label: 'MongoDB',
     description:
       '',
     color: '#13aa52',
   },
-  
+
   favorite: {
     label: 'Favorite',
     description:
       '',
-    color: '#e9669e',
+    color: '#f06529',
   },
   opensource: {
     label: 'Open-Source',
@@ -145,7 +146,7 @@ export const Tags: {[type in TagType]: Tag} = {
   meta: {
     label: 'Meta',
     description: '',
-    color: '#4267b2', 
+    color: '#4267b2',
   },
 
   personal: {
@@ -173,6 +174,12 @@ export const Tags: {[type in TagType]: Tag} = {
     description: '',
     color: '#004400',
   },
+
+  ai: {
+    label: 'AI',
+    description: '',
+    color: '#007acc',
+  },
 };
 
 const Users: User[] = [
@@ -183,8 +190,8 @@ const Users: User[] = [
     preview: require('./showcase/YouTube-Clone.jpg'),
     website: 'https://my-youtube-ajay.vercel.app/',
     source: 'https://github.com/Ajay-Dhangar/youtube_clone',
-    tags: ['opensource', 'clone', 'templates', 'react'],
-  },  
+    tags: ['opensource', 'clone', 'favorite', 'react'],
+  },
   {
     title: 'Quiz App',
     description: 'Explore and test your knowledge with the Quiz app. Engaging quizzes to challenge your mind and expand your horizons. Try it now!',
@@ -200,7 +207,7 @@ const Users: User[] = [
     website: 'https://shivay-studio.vercel.app/',
     source: 'https://github.com/Ajay-Dhangar/music-app',
     tags: ['opensource', 'clone', 'templates'],
-  }, 
+  },
 
   {
     title: 'TailwindBlog',

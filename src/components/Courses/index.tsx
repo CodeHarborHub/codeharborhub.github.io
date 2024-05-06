@@ -143,18 +143,9 @@ const Courses: React.FC<Props> = ({ courses }) => {
         <Button onClick={() => setFilter("git")}>Git</Button>
         <Button onClick={() => setFilter("github")}>GitHub</Button>
         <Button onClick={() => setFilter("gitlab")}>GitLab</Button>
-        <Button onClick={() => setFilter("bitbucket")}>Bitbucket</Button>
-        <Button onClick={() => setFilter("jira")}>Jira</Button>
-        <Button onClick={() => setFilter("slack")}>Slack</Button>
-        <Button onClick={() => setFilter("trello")}>Trello</Button>
-        <Button onClick={() => setFilter("notion")}>Notion</Button>
         <Button onClick={() => setFilter("figma")}>Figma</Button>
         <Button onClick={() => setFilter("adobexd")}>Adobe XD</Button>
         <Button onClick={() => setFilter("sketch")}>Sketch</Button>
-        <Button onClick={() => setFilter("invision")}>InVision</Button>
-        <Button onClick={() => setFilter("zeplin")}>Zeplin</Button>
-        <Button onClick={() => setFilter("photoshop")}>Photoshop</Button>
-        <Button onClick={() => setFilter("illustrator")}>Illustrator</Button>
         <Button onClick={() => setFilter("fullstack")}>Full Stack Web Developer</Button>
         <Button onClick={() => setFilter("sde")}>Software Development Engineer</Button>
         <Button onClick={() => setFilter("mern")}>MERN Stack Developer</Button>
@@ -162,50 +153,26 @@ const Courses: React.FC<Props> = ({ courses }) => {
         <Button onClick={() => setFilter("laravel")}>Laravel Developer</Button>
         <Button onClick={() => setFilter("django")}>Django Developer</Button>
         <Button onClick={() => setFilter("flask")}>Flask Developer</Button>
-        <Button onClick={() => setFilter("spring")}>Spring Developer</Button>
-        <Button onClick={() => setFilter("ruby")}>Ruby Developer</Button>
-        <Button onClick={() => setFilter("rails")}>Rails Developer</Button>
-        <Button onClick={() => setFilter("php")}>PHP Developer</Button>
         <Button onClick={() => setFilter("wordpress")}>WordPress Developer</Button>
-        <Button onClick={() => setFilter("shopify")}>Shopify Developer</Button>
-        <Button onClick={() => setFilter("magento")}>Magento Developer</Button>
-        <Button onClick={() => setFilter("woocommerce")}>WooCommerce Developer</Button>
-        <Button onClick={() => setFilter("bigcommerce")}>BigCommerce Developer</Button>
-        <Button onClick={() => setFilter("prestashop")}>PrestaShop Developer</Button>
-        <Button onClick={() => setFilter("opencart")}>OpenCart Developer</Button>
         <Button onClick={() => setFilter("joomla")}>Joomla Developer</Button>
         <Button onClick={() => setFilter("drupal")}>Drupal Developer</Button>
         <Button onClick={() => setFilter("vue")}>Vue Developer</Button>
         <Button onClick={() => setFilter("angular")}>Angular Developer</Button>
-        <Button onClick={() => setFilter("ember")}>Ember Developer</Button>
-        <Button onClick={() => setFilter("backbone")}>Backbone Developer</Button>
         <Button onClick={() => setFilter("next")}>Next Developer</Button>
         <Button onClick={() => setFilter("nuxt")}>Nuxt Developer</Button>
-        <Button onClick={() => setFilter("gatsby")}>Gatsby Developer</Button>
         <Button onClick={() => setFilter("svelte")}>Svelte Developer</Button>
         <Button onClick={() => setFilter("webcomponents")}>Web Components Developer</Button>
-        <Button onClick={() => setFilter("webassembly")}>WebAssembly Developer</Button>
-        <Button onClick={() => setFilter("pwa")}>Progressive Web App Developer</Button>
-        <Button onClick={() => setFilter("jamstack")}>JAMstack Developer</Button>
-        <Button onClick={() => setFilter("serverless")}>Serverless Developer</Button>
-        <Button onClick={() => setFilter("microservices")}>Microservices Developer</Button>
-        <Button onClick={() => setFilter("devops")}>DevOps Engineer</Button>
-        <Button onClick={() => setFilter("cloud")}>Cloud Engineer</Button>
         <Button onClick={() => setFilter("cybersecurity")}>Cybersecurity Engineer</Button>
         <Button onClick={() => setFilter("datascience")}>Data Science Engineer</Button>
         <Button onClick={() => setFilter("machinelearning")}>Machine Learning Engineer</Button>
         <Button onClick={() => setFilter("artificialintelligence")}>Artificial Intelligence Engineer</Button>
-        <Button onClick={() => setFilter("blockchain")}>Blockchain Engineer</Button>
-        <Button onClick={() => setFilter("iot")}>IoT Engineer</Button>
         <Button onClick={() => setFilter("arvr")}>AR/VR Engineer</Button>
-        <Button onClick={() => setFilter("gamedev")}>Game Developer</Button>
-        <Button onClick={() => setFilter("mobiledev")}>Mobile Developer</Button>
         <Button onClick={() => setFilter("frontend")}>Frontend Developer</Button>
         <Button onClick={() => setFilter("backend")}>Backend Developer</Button>
         <Button onClick={() => setFilter("fullstackdev")}>Full Stack Developer</Button>
         <Button onClick={() => setFilter("softwaredev")}>Software Developer</Button>
         <Button onClick={() => setFilter("webapp")}>Web App Developer</Button>
-        <Button onClick={() => setFilter("desktopapp")}>Desktop App Developer</Button>
+        <Button onClick={() => setFilter("aidev")}>AI Developer</Button>
       </FilterButtons>
 
       <CoursesList>

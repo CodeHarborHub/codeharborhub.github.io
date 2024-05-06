@@ -32,7 +32,7 @@ const TITLE =
 const DESCRIPTION =
   'Unleash your creativity and expertise with our exceptional Site/Templates/Projects Showcase at CodeHarborHub: Where Innovation Meets Inspiration.';
 const EDIT_URL =
-  'https://github.com/Ajay-Dhangar';
+  'https://github.com/codeharborhub/codeharborhub';
 
 type UserState = {
   scrollTopPosition: number;
