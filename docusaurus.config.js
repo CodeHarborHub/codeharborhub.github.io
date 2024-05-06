@@ -16,7 +16,13 @@ const config = {
   // baseUrl: process.env.BASE_URL,
   baseUrl: "/",
   customFields: {
+    admin: 'Ajay Dhangar',
+    superman: 'Shivay',
     teamEmail: process.env.EMAIL,
+    GTM_ID: process.env.GTM_ID,
+    GA_ID: process.env.GA_ID,
+    ALGOLIA_APP_ID: process.env.ALGOLIA_APP_ID,
+    ALGOLIA_API_KEY: process.env.ALGOLIA_API_KEY,    
   },
 
   organizationName: "ajay-dhangar",
