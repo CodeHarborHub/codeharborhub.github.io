@@ -11,7 +11,7 @@ function YoutubeVideo({ id }: { id: string }) {
       allowFullScreen
       webkitallowfullscreen="true"
       mozallowfullscreen="true"
-    ></iframe>
+     />
   );
 }
 
