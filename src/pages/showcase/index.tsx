@@ -325,7 +325,7 @@ function ShowcaseCards() {
 export default function Showcase(): JSX.Element {
   return (
     <Layout
-      title={`Showcase of CodeHarborHub`}
+      title={"Showcase of CodeHarborHub"}
       description="Showcase of CodeHarborHub for CodeHarborHub Learners, and users"
     >
       <main className="margin-vert--lg">
