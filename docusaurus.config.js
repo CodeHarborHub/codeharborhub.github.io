@@ -13,8 +13,7 @@ const config = {
   favicon: "img/logo.jpg",
 
   url: process.env.URL || "http://localhost:3000/",
-  baseUrl: process.env.BASE_URL,
-  // baseUrl: "/",
+  baseUrl: "/",
   customFields: {
     teamEmail: process.env.EMAIL,
   },

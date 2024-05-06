@@ -200,12 +200,10 @@ const Courses: React.FC<Props> = ({ courses }) => {
         <Button onClick={() => setFilter("arvr")}>AR/VR Engineer</Button>
         <Button onClick={() => setFilter("gamedev")}>Game Developer</Button>
         <Button onClick={() => setFilter("mobiledev")}>Mobile Developer</Button>
-        <Button onClick={() => setFilter("webdev")}>Web Developer</Button>
         <Button onClick={() => setFilter("frontend")}>Frontend Developer</Button>
         <Button onClick={() => setFilter("backend")}>Backend Developer</Button>
         <Button onClick={() => setFilter("fullstackdev")}>Full Stack Developer</Button>
         <Button onClick={() => setFilter("softwaredev")}>Software Developer</Button>
-        <Button onClick={() => setFilter("mobileapp")}>Mobile App Developer</Button>
         <Button onClick={() => setFilter("webapp")}>Web App Developer</Button>
         <Button onClick={() => setFilter("desktopapp")}>Desktop App Developer</Button>
       </FilterButtons>
