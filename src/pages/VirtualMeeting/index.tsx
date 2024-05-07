@@ -73,7 +73,7 @@ const VirtualMeeting: React.FC = () => {
 
   return (
     <Layout
-      title={`Virtual Meeting`}
+      title={"Virtual Meeting"}
       description="Virtual Meeting Page for CodeHarborHub Learners, and users"
     >
       <div className="virtual-meeting-container">

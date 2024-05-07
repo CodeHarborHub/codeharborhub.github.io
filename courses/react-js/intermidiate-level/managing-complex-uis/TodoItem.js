@@ -4,7 +4,7 @@ function TodoItem({ todo, toggleTodo }) {
   const { id, text, completed } = todo;
 
   const handleToggle = () => {
-    toggleTodo && toggleTodo(id);
+    toggleTodo?.(id);
   };
 
   const handleKeyPress = (event) => {

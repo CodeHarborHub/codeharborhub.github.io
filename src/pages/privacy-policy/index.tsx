@@ -46,7 +46,7 @@ const Strong = styled.strong`
 const PrivacyPolicy: React.FC = () => {
   return (
     <Layout
-      title={`Privacy Policy`}
+      title={"Privacy Policy"}
       description="Privacy Policy of CodeHarborHub for CodeHarborHub Learners, and users"
     >
       <PrivacyPolicyContainer>

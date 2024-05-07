@@ -27,7 +27,7 @@ function FetchDataExample() {
       {loading ? <p>Loading...</p> : (
         error ? <p>Error: {error}</p> : (
           <ul>
-            {data && data.map((item) => (
+            {data?.map((item) => (
               <li key={item.id}>{item.name}</li>
             ))}
           </ul>
