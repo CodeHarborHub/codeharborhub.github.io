@@ -353,11 +353,12 @@ const config = {
           "standalone",
           "queryString",
         ],
+        swCustom: require.resolve('./src/sw.js'),
         pwaHead: [
           {
             tagName: "link",
             rel: "icon",
-            href: "/img/logo.png",
+            href: "/img/favicon_io/favicon.ico",
           },
           {
             tagName: "link",
@@ -368,6 +369,37 @@ const config = {
             tagName: "meta",
             name: "theme-color",
             content: "rgb(37, 194, 160)",
+          },
+          {
+            tagName: 'meta',
+            name: 'apple-mobile-web-app-capable',
+            content: 'yes',
+          },
+          {
+            tagName: 'meta',
+            name: 'apple-mobile-web-app-status-bar-style',
+            content: '#000',
+          },
+          {
+            tagName: 'link',
+            rel: 'apple-touch-icon',
+            href: '/img/favicon_io/apple-touch-icon.png',
+          },
+          {
+            tagName: 'link',
+            rel: 'mask-icon',
+            href: '/img/docusaurus.svg',
+            color: 'rgb(37, 194, 160)',
+          },
+          {
+            tagName: 'meta',
+            name: 'msapplication-TileImage',
+            content: '/img/favicon_io/android-chrome-192x192.png',
+          },
+          {
+            tagName: 'meta',
+            name: 'msapplication-TileColor',
+            content: '#000',
           },
         ],
       },
