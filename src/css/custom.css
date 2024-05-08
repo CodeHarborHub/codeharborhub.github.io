@@ -240,3 +240,16 @@ table, tr, td, th {
     display: inline-block;
   }
 }
+
+.navbar__title {
+  font-size: 1.2em;
+  padding: 1px 4px;
+  background: linear-gradient(
+    90deg,
+    rgb(252 176 69 / 100%) 0%,
+    rgb(253 29 29 / 100%) 50%,
+    rgb(131 58 180 / 100%) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
