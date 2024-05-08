@@ -10,7 +10,7 @@ const path = require("path");
 const config = {
   title: "CodeHarborHub",
   tagline: "A place to learn and grow",
-  favicon: "img/logo.jpg",
+  favicon: "img/favicon_io/favicon.ico",
 
   url: process.env.URL || "http://localhost:3000/",
   // baseUrl: process.env.BASE_URL,
@@ -68,7 +68,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: "img/logo.jpg",
+      image: "img/nav-logo.jpg",
       announcementBar: {
         id: "announcementBar",
         content: `⭐️ If you like CodeHarborHub, give it a star on <a target="_blank" href="https://github.com/codeharborhub/codeharborhub">GitHub</a> and join us on <a target="_blank" href="https://www.linkedin.com/groups/14232119/">LinkedIn</a> ⭐️`,
@@ -90,18 +90,29 @@ const config = {
         },
         items: [
           {
-            type: "doc",
-            docId: "docs",
-            html: '<span class="nav-emoji">📚</span> Tutorials',
-          },
-          {
-            html: '<span class="nav-emoji">🧠</span> DSA',
-            to: "/dsa",
-          },
-          {
-            to: "/blog",
-            html: '<span class="nav-emoji">📰</span> Blog',
-          },
+            type: "dropdown",
+            html: '<span class="nav-emoji">📚</span> Docs',
+            position: "left",
+            items: [
+              {
+                type: "doc",
+                docId: "docs",
+                html: '<span class="nav-emoji">📚</span> Tutorials',
+              },
+              {
+                to: "/courses/",
+                html: '<span class="nav-emoji">🎓</span> Courses',
+              },
+              {
+                to: "/web-dev/",
+                html: '<span class="nav-emoji">🌐</span> Web Dev',
+              },
+              {
+                to: "/dsa/",
+                html: '<span class="nav-emoji">🧠</span> DSA',
+              },
+            ],
+          },          
           {
             to: "/showcase",
             html: '<span class="nav-emoji">🌍</span> Showcase',
@@ -115,6 +126,10 @@ const config = {
           {
             html: '<span class="nav-emoji"> 📊</span> Quiz',
             to: "https://quiz-app-ajay-dhangar.vercel.app/",
+          },
+          {
+            to: "/blog",
+            html: '<span class="nav-emoji">📰</span> Blog',
           },
           {
             type: "dropdown",
