@@ -54,7 +54,7 @@ function DocSearch({contextualSearch, externalUrlRegex, ...props}) {
   const searchContainer = useRef(null);
   const searchButtonRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
-  const [initialQuery, setInitialQuery] = useState(undefined);
+  const [initialQuery, setInitialQuery] = useState();
   const importDocSearchModalIfNeeded = useCallback(() => {
     if (DocSearchModal) {
       return Promise.resolve();

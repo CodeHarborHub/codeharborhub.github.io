@@ -1,4 +1,4 @@
-# Contributing to Code Harbor Hub
+# Contributing to CodeHarborHub
 
 Thank you for considering contributing to Code Harbor Hub! We welcome contributions from everyone.
 
@@ -10,7 +10,7 @@ To contribute to this project, please follow these steps:
 2. **Clone** your fork of the repository to your local machine:
 
     ```bash
-    git clone https://github.com/your-username/code-harbor-hub.git
+    git clone https://github.com/your-username/codeharborhub.git
     ```
 
 3. **Create a new branch** for your changes:
@@ -58,4 +58,4 @@ By participating in this project, you agree to abide by our [Code of Conduct](CO
 
 If you have any questions about contributing or need assistance with anything, feel free to reach out to us by opening an issue or contacting one of the maintainers listed in the `README.md` file.
 
-Thank you for contributing to Code Harbor Hub!
+Thank you for contributing to CodeHarborHub!
