@@ -60,7 +60,55 @@ div[class^='announcementBar_'] {
 }
 
 div[class^='announcementBar_'] a {
-  color: #ffe11c;
+  font-size: 1.2em;
+  padding: 1px 4px;
+  background: linear-gradient(
+    90deg,
+    rgb(252 176 69 / 100%) 0%,
+    rgb(253 29 29 / 100%) 50%,
+    rgb(131 58 180 / 100%) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+div[class^='announcementBar_'] a:hover {
+  font-size: 1.2em;
+  padding: 1px 4px;
+  background: linear-gradient(
+    90deg,
+    rgb(131 58 180 / 100%) 0%,    
+    rgb(253 29 29 / 100%) 50%,
+    rgb(252 176 69 / 100%) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-theme='dark'] div[class^='announcementBar_'] a {
+  font-size: 1.2em;
+  padding: 1px 4px;
+  background: linear-gradient(
+    90deg,
+    rgb(131 58 180 / 100%) 0%,    
+    rgb(253 29 29 / 100%) 50%,
+    rgb(252 176 69 / 100%) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-theme='dark'] div[class^='announcementBar_'] a:hover {
+  font-size: 1.2em;
+  padding: 1px 4px;
+  background: linear-gradient(
+    90deg,
+    rgb(252 176 69 / 100%) 0%,
+    rgb(253 29 29 / 100%) 50%,
+    rgb(131 58 180 / 100%) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 div[class^='announcementBar_'] .clean-btn {

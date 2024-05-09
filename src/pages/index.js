@@ -11,26 +11,6 @@ import Hero from "../components/HomePage/Hero";
 import Features from "../components/HomePage/Features";
 import Courses from "../components/HomePage/Courses";
 
-// function HomepageHeader() {
-//   const { siteConfig } = useDocusaurusContext();
-//   return (
-//     <header className={clsx("hero hero--primary", styles.heroBanner)}>
-//       <div className="container">
-//         <Heading as="h1" className="hero__title">
-//           {siteConfig.title}          
-//           Code Harbor Hub
-//           <p className="hero__subtitle">{siteConfig.tagline}</p>
-//         </Heading>
-//         <div className={styles.buttons}>
-//           <Link className="button button--secondary button--lg" to="/docs">
-//             Documentation - Get Started
-//           </Link>
-//         </div>
-//       </div>
-//     </header>
-//   );
-// }
-
 const featuresData = [
   {
     icon: "/img/svg/blogging.svg",
@@ -84,14 +64,12 @@ const coursesData = [
 ];
 
 export default function Home() {
-  const { siteConfig } = useDocusaurusContext();    
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Welcome to CodeHarborHub. Learn the basics to advanced concepts of web development. html, css, javascript, react, node.js, dsa, and more."
     >
-      {/* <HomepageHeader /> */}
-
       <main>
         <Hero
           title="CodeHarborHub is"
@@ -112,12 +90,12 @@ export default function Home() {
         </div>
 
         <Courses courses={coursesData} />
-      
-      {/* 
+
+        {/* 
         <div className={styles.home__divider}>
           <Heading as="h2">Join the Discussion</Heading>
         </div> */}
-        
+
         {/* <div>
           <GiscusComponent />
         </div> */}
