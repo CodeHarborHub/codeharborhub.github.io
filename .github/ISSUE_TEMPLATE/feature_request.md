@@ -2,7 +2,7 @@
 name: Feature request
 about: Suggest an idea for this project
 title: 'Feature Request: [[Brief Description of Feature]]'
-labels: enhancement, GSSOC'24
+labels: enhancement
 assignees: ''
 
 ---
