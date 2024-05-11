@@ -1,7 +1,7 @@
 ---
 id: elements-and-tags-html
-title: HTML Tags and Elements
-sidebar_label: Introduction of HTML Tags and Elements
+title: Introduction of HTML Tags and Elements
+sidebar_label: HTML Tags and Elements
 sidebar_position: 2
 tags: [html, introduction, web development, markup language, hyper text, web pages, career opportunities, personal growth, web-development, web design, web pages, websites, career opportunities, contribute to the web, stay relevant, express yourself, learn other technologies, have fun, how to use html, steps to start using html, set up your development environment, create your first html document, learn html syntax and structure, explore html elements and-attributes]
 description: In this tutorial, you will learn about HTML Elements and HTML Tags and about their differences
@@ -11,7 +11,7 @@ HTML (Hypertext Markup Language) is the standard markup language used for creati
 
 ## HTML Tags
 
-HTML tags are the building blocks of an HTML document. They are enclosed in angle brackets (<>) and are used to define the structure and formatting of the content. Tags are usually paired with an opening tag and a closing tag, with the content placed between them.
+HTML tags are the building blocks of an HTML document. They are enclosed in angle brackets (`<>`) and are used to define the structure and formatting of the content. Tags are usually paired with an opening tag and a closing tag, with the content placed between them.
 
 For example, the `<h1>` tag is used to define a heading, and it is written as `<h1>Heading</h1>`. The opening tag `<h1>` indicates the start of the heading, and the closing tag `</h1>` indicates the end of the heading.
 
