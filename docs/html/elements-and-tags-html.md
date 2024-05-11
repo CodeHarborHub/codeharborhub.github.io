@@ -1,5 +1,5 @@
 ---
-id: elements-and-tags-HTML
+id: elements-and-tags-html
 title: HTML Tags and Elements
 sidebar_label: Introduction of HTML Tags and Elements
 sidebar_position: 2
