@@ -1,12 +1,11 @@
 ---
-id: elements_&_tags-HTML
-title: 
+id: elements-and-tags-HTML
+title: HTML Tags and Elements
 sidebar_label: Introduction of HTML Tags and Elements
 sidebar_position: 2
 tags: [html, introduction, web development, markup language, hyper text, web pages, career opportunities, personal growth, web-development, web design, web pages, websites, career opportunities, contribute to the web, stay relevant, express yourself, learn other technologies, have fun, how to use html, steps to start using html, set up your development environment, create your first html document, learn html syntax and structure, explore html elements and-attributes]
 description: In this tutorial, you will learn about HTML Elements and HTML Tags and about their differences
 ---
-
 # HTML Tags and Elements
 
 HTML (Hypertext Markup Language) is the standard markup language used for creating web pages. It consists of various tags and elements that define the structure and content of a web page.
