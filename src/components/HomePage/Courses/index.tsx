@@ -14,7 +14,7 @@ interface CoursesProps {
 const Courses: React.FC<CoursesProps> = ({ courses }) => {
   return (
     <>
-      <div className={styles.course_cards}>
+      <div className={styles.course_container}>
         {courses.map((course) => (
           <div className={styles.course_card} key={course.title}>
             {course.imageUrl && (
