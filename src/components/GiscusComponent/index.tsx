@@ -10,15 +10,15 @@ export default function GiscusComponent() {
     <div className="giscus-component">
       <Giscus
         id="giscus"
-        repo="ajay-dhangar/code-harbor-hub"
-        repoId="R_kgDOLNryZQ"
-        category="General"
-        categoryId="DIC_kwDOLNryZc4Cc7ll"
+        repo="codeharborhub/codeharborhub"
+        repoId="R_kgDOLiT30w"
+        category="Support"
+        categoryId="DIC_kwDOLiT3084CfRMi"
         mapping="pathname"
         term="Welcome to @giscus/react component!"
         strict="0"
         reactionsEnabled="1"
-        emitMetadata="1"
+        emitMetadata="0"
         inputPosition="bottom"
         theme={colorMode}
         lang="en"
