@@ -99,14 +99,32 @@ const config = {
                 docId: "docs",
                 html: '<span class="nav-emoji">📚</span> Tutorials',
               },
+
+              {
+                type: "html",
+                value: '<hr style="margin: 0.3rem 0;">',
+              },
+
               {
                 to: "/courses/",
                 html: '<span class="nav-emoji">🎓</span> Courses',
               },
+
+              {
+                type: "html",
+                value: '<hr style="margin: 0.3rem 0;">',
+              },
+
               {
                 to: "/web-dev/",
                 html: '<span class="nav-emoji">🌐</span> Web Dev',
               },
+
+              {
+                type: "html",
+                value: '<hr style="margin: 0.3rem 0;">',
+              },
+              
               {
                 to: "/dsa/",
                 html: '<span class="nav-emoji">🧠</span> DSA',
