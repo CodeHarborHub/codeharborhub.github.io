@@ -30,7 +30,7 @@ For example, in the HTML element `<p> This is a paragraph.</p>`, `<p>` and `</p>
 | HTML Tags | HTML Elements |
 |-----------|--------------|
 | HTML Tags are used to hold HTML Elements | HTML Elements hold the content |
-| Enclosed in angle brackets (<>) | Consist of opening tag, content, and closing tag |
+| Enclosed in angle brackets (`<>`) | Consist of opening tag, content, and closing tag |
 | Used to define structure and formatting | Can contain text, images, links, or other HTML elements |
 | Paired with opening and closing tags | Content placed between opening and closing tags |
 
