@@ -21,4 +21,4 @@ If you are interested in joining the team, or would like to contribute to the Op
 
 ## Contributors {#contributors}
 
-<img src="https://opencollective.com/codeharborhub/contributors.svg?width=890&button=false" />
+[![contributors](https://opencollective.com/codeharborhub/contributors.svg?button=false)](https://opencollective.com/codeharborhub/contributors.svg?button=false)
