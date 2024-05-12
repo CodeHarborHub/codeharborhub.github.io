@@ -31,10 +31,7 @@ const Hero: React.FC<HeroProps> = ({ title, description, imageUrl }) => {
             </Link>
           </button>
           <button className={styles.animated_button}>
-            <Link
-              className={styles.source_link}
-              to="/courses/category/beginners-level/"
-            >
+            <Link className={styles.source_link} to="/courses/category/beginners-level/">
               Courses
             </Link>
           </button>
@@ -57,15 +54,9 @@ const Hero: React.FC<HeroProps> = ({ title, description, imageUrl }) => {
             </BrowserWindow>
           ) : (
             <>
-              <BrowserWindow
-                url="https://www.codeharborhub.live"
-                bodyStyle={{ padding: "0" }}
-              >
+              <BrowserWindow url="https://www.codeharborhub.live" bodyStyle={{ padding: "0" }}>
                 <img className={styles.hero_image} src={imageUrl} alt={title} />
-                <div
-                  className={styles.play_button_overlay}
-                  onClick={handlePlayClick}
-                >
+                <div className={styles.play_button_overlay} onClick={handlePlayClick}>
                   <div className={styles.play_icon}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
