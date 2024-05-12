@@ -72,7 +72,7 @@ const ArrayVisualizations: React.FC = () => {
             key={index}
             className={`array-bar ${index === minIndex ? 'min-value' : ''} ${index === currentIndex ? 'current-value' : ''}`}
             style={{ height: `${value * 3}px` }}
-          ></div>
+           />
         ))}
       </div>      
     </div>

@@ -76,7 +76,7 @@ const InsertionSortVisualization: React.FC = () => {
             key={index}
             className={`array-bar ${index === currentIndex ? 'current-index' : index === minIndex ? 'min-index' : ''}`}
             style={{ height: `${value * 3}px`, transitionDelay: `${delay / 2}ms` }}
-          ></div>
+           />
         ))}
       </div>      
     </div>
