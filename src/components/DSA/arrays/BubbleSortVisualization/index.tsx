@@ -68,7 +68,7 @@ const BubbleSortVisualization: React.FC = () => {
             key={index}
             className={`array-bar ${comparingIndices.includes(index) ? 'comparing' : ''}`}
             style={{ height: `${value * 3}px` }}
-          ></div>
+           />
         ))}
       </div>
     </div>
