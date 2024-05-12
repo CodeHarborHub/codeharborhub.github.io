@@ -29,16 +29,15 @@ export default function Home() {
         <hr className={styles.home__hr} />
 
         <div className={styles.home__divider}>
-          <Heading as="h2">Features of CodeHarborHub</Heading>
-        </div>
-
-        <Features features={featuresData} />
-
-        <div className={styles.home__divider}>
           <Heading as="h2">Courses Available</Heading>
         </div>
 
         <Courses courses={coursesData} />
+        <div className={styles.home__divider}>
+          <Heading as="h2">Features of CodeHarborHub</Heading>
+        </div>
+
+        <Features features={featuresData} />
 
         {/* 
         <div className={styles.home__divider}>

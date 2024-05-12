@@ -15,14 +15,15 @@
 .hero_title {
   font-size: 3rem;
   padding: 1px 4px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     30deg,
     rgba(206, 86, 174, 0.972) 0%,
     rgb(253 29 29 / 100%) 50%,
     rgb(252 176 69 / 100%) 100%
-  );
+  ); */
+  color: #000;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-text-fill-color: transparent; */
 }
 
 .hero_description {
@@ -48,13 +49,15 @@
   cursor: pointer;
   box-shadow: 0 0 5px 0 #ccc;
   object-fit: cover;
-  background: linear-gradient(-45deg, #f44009, #db0557, #0785b3, #07ab85);
+  background-color: #07ab85;
+  /* background: linear-gradient(-45deg, #f44009, #db0557, #0785b3, #07ab85); */
   background-size: 400% 400%;
   animation: GradientAnimation 15s ease infinite;
 }
 
 .animated_button:hover {
   background: linear-gradient(-30deg, #f44009, #db0557, #0785b3, #07ab85);
+  color: #07ab85;
 }
 
 .source_link {
@@ -131,6 +134,7 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 5px 0 #cccccc68;
+  cursor: pointer;
 }
 
 .feature_item img,

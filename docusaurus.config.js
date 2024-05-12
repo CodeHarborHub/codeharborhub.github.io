@@ -314,11 +314,11 @@ const config = {
             ],
           },
         ],
-        logo: {
-          alt: "Copyright © CodeHarborHub Made with ❤️ by Ajay-Dhangar",
-          src: "/img/main-logo.jpg",
-          href: "https://github.com/ajay-dhangar",
-        },
+        // logo: {
+        //   alt: "Copyright © CodeHarborHub Made with ❤️ by Ajay-Dhangar",
+        //   src: "/img/main-logo.jpg",
+        //   href: "https://github.com/ajay-dhangar",
+        // },
         copyright: `Copyright © ${new Date().getFullYear()} CodeHarborHub, Made by <a href="https://github.com/Ajay-Dhangar/">Ajay Dhangar</a>`,
       },
       prism: {
