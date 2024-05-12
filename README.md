@@ -44,4 +44,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contributors
 
-<img src="https://opencollective.com/codeharborhub/contributors.svg?width=890&button=false" />
+<img src="https://opencollective.com/codeharborhub/contributors.svg?button=false" />

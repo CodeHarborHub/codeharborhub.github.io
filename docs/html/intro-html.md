@@ -1,7 +1,7 @@
 ---
 id: intro-HTML
 title: Introduction of HTML
-sidebar_label: Introduction ofHTML
+sidebar_label: Introduction of HTML
 sidebar_position: 1
 tags: [html, introduction, web development, markup language, hyper text, web pages, career opportunities, personal growth, web-development, web design, web pages, websites, career opportunities, contribute to the web, stay relevant, express yourself, learn other technologies, have fun, how to use html, steps to start using html, set up your development environment, create your first html document, learn html syntax and structure, explore html elements and-attributes]
 description: In this tutorial, you will learn about HTML, its importance, what is HTML, why learn HTML, how to use HTML, steps to start using HTML, and more.

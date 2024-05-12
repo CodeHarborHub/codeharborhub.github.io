@@ -2,33 +2,23 @@
 id: team
 title: Welcome to the Team
 sidebar_label: Our Team
-sidebar_position: 2
+sidebar_position: 4
 ---
 
 import {
-  ActiveTeamRow,
-  HonoraryAlumniTeamRow,
-  StudentFellowsTeamRow,
+ActiveTeamRow
 } from '@site/src/components/TeamProfileCards';
 
-## Active Team {#active-team}
+## Owner and Founder {#owner}
 
-The team is composed of a diverse group of individuals from around the world, who are passionate about open source and the mission of the OpenMined community. The team is responsible for the day-to-day operations of the community, and is supported by a larger group of contributors and volunteers.
+CodeHarborHub was founded by [Ajay Dhangar](https://www.linkedin.com/in/ajay-dhangar/). Ajay is a software engineer and educator with a passion for teaching and mentoring. He is dedicated to providing accessible and comprehensive educational resources to learners of all levels, from beginners to advanced professionals.
 
 <ActiveTeamRow />
 
-## Honorary Alumni {#honorary-alumni}
+## Contributing {#contributing}
 
-The honorary alumni team is composed of individuals who have made significant contributions to the OpenMined community, and have since moved on to other projects or roles. They continue to be involved in the community, and are recognized for their contributions.
+If you are interested in joining the team, or would like to contribute to the OpenMined community, please refer to our [Contributing Guidelines](/community/contributing-guidelines).
 
-<HonoraryAlumniTeamRow />
+## Contributors {#contributors}
 
-## Student Fellows {#student-fellows}
-
-The student fellows team is composed of individuals who are currently enrolled in an academic program, and are passionate about open source and the mission of the OpenMined community. The student fellows team is responsible for a variety of projects and initiatives, and is supported by the larger community.
-
-<StudentFellowsTeamRow />
-
-## Acknowledgements {#acknowledgements}
-
-We would like to thank all of our contributors and volunteers for their hard work and dedication to the OpenMined community. We would not be where we are today without your support.
+[![contributors](https://opencollective.com/codeharborhub/contributors.svg?button=false)](https://opencollective.com/codeharborhub/contributors.svg?button=false)
