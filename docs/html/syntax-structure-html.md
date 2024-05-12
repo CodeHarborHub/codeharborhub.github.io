@@ -15,13 +15,13 @@ HTML syntax consists of a set of elements, tags, attributes, and their combinati
     ```html
         <tagname>Content goes here</tagname>
     ```
-2. **Tags**: Tags are keywords enclosed in angle brackets (<>) that define the structure and content of HTML elements. They can be categorized into two types:
+2. **Tags**: Tags are keywords enclosed in angle brackets `<>` that define the structure and content of HTML elements. They can be categorized into two types:
 
     + **Opening Tags** : They denote the beginning of an element and have the tag name wrapped in angle brackets.
     ```html
         <tagname>
     ```
-    +  **Closing Tags** : They denote the end of an element and have the tag name wrapped in angle brackets, preceded by a forward slash (/).
+    +  **Closing Tags** : They denote the end of an element and have the tag name wrapped in angle brackets, preceded by a forward slash `/`.
 
     ```html
         </tagname>
