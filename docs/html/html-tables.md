@@ -1,5 +1,5 @@
 ---
-id: HTML Tables
+id: html-tables
 title: HTML Tables
 sidebar_label: HTML Tables
 sidebar_position: 2
