@@ -1,4 +1,4 @@
-import React, {useCallback, useMemo, useRef, useState} from 'react';
+import {useCallback, useMemo, useRef, useState} from 'react';
 import {createPortal} from 'react-dom';
 import {DocSearchButton, useDocSearchKeyboardEvents} from '@docsearch/react';
 import Head from '@docusaurus/Head';
