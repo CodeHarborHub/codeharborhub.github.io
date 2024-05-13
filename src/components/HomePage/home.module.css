@@ -157,11 +157,6 @@
   margin-top: 5px;
 }
 
-.feature_links,
-.course_links{
-  color: black ;
-}
-
 /* Animation */
 @keyframes GradientAnimation {
   0% {
