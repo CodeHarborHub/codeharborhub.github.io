@@ -4,7 +4,7 @@
   align-items: center;
   transform-style: preserve-3d;
   overflow: hidden;
-  padding: 3rem 1.5rem;
+  padding: 3rem auto;
 }
 
 .chh__header {
@@ -14,12 +14,13 @@
 }
 
 .chh__header-content {
+  width: 100%;
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  margin-right: 5rem;
+  margin-right: 2rem;
 }
 
 .chh__header-content h1 {
@@ -87,28 +88,27 @@
 }
 
 .chh__header-image {
-  width: 400px;
-  height: 400px;
+  width: auto;
+  height: auto;
   flex: 1 0 0%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem;
-  background: linear-gradient(
-    90deg,
-    #ff49208d 0%,
-    #ffc80097 25%,
-    #20e3a28d 50%,
-    #ff49208b 75%,
-    #ffc8008a 100%
-  );
-  background-image: url("/bg-img.gif");
+  padding: 0.3rem;  
+  background-image: url("/bg.gif");
   border-radius: 10% 40%;
   border: 1px solid #20e3a2;
 }
 
 .chh__header-image:hover {
-  background-image: url("/bg.gif");
+  background: linear-gradient(
+    90deg,
+    #ff4920f6 0%,
+    #ffc800f3 25%,
+    #20e3a2 50%,
+    #ff4920 75%,
+    #ffc800 100%
+  );
 }
 
 .chh__header-image img {

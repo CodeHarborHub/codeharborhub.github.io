@@ -1,5 +1,3 @@
-import React from "react";
-
 function TodoItem({ todo, toggleTodo }) {
   const { id, text, completed } = todo;
 
