@@ -69,28 +69,6 @@ The `controls` attribute adds the default set of playback controls to the media 
 ```
 
 Combining these attributes can further enhance the multimedia experience. For instance, you can use both `loop` and `controls` together to allow users to control a media file that plays in a continuous loop.
-<!-- 
-```html
-<audio src="audio.mp3" controls loop></audio>
-<video src="video.mp4" controls loop></video>
-```
-
-<Tabs>
-    <TabItem value="HTML">
-    ```html
-    <audio src="audio.mp3" controls></audio>
-    <video src="video.mp4" width="320" height="240" controls></video>
-    ```
-    </TabItem>
-    <TabItem value="Output">
-        <BrowserWindow url ="http://127.0.0.1:5500/index.html">
-        <div>
-            <audio src="audio.mp3" controls></audio>
-            <video src="video.mp4" width="320" height="240" controls></video>
-        </div>
-        </BrowserWindow>
-    </TabItem>
-</Tabs> -->
 
 ## Attributes of Audio
 
