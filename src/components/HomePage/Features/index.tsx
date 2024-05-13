@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from "../home.module.css";
-
+import Link from "@docusaurus/Link"
 type Feature = {
   // icon: string; 
   title: string;
   description: string;
+  url:string;
 };
 
 interface FeaturesProps {
@@ -17,7 +18,7 @@ const Features: React.FC<FeaturesProps> = ({ features }) => {
       {features.map((feature) => (
         <div className={styles.feature_item} key={feature.title}>
           {/* <img src={feature.icon} alt={feature.title} /> */}
-          <h3>{feature.title}</h3>
+          <Link to={feature.url}><h3>{feature.title}</h3></Link>
           <p>{feature.description}</p>
         </div>
       ))}
