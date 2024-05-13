@@ -14,30 +14,43 @@ HTML forms play a crucial role in web development, allowing users to interact wi
 * Value: Any valid URL.
 * Usage: 
 
+        ```html
         <form action="URL">...</form>
+        ```
+
 * Example: 
 
+        ```html
         <form action="/submit">...</form>
+        ```
 
 ### 2.`method` attribute
 * Description:  Defines the HTTP method used to submit the form data.
 * Value: `GET` or `POST`.
 * Usage: 
 
+        ```html
         <form method="GET|POST">...</form>
+        ```
 * Example: 
 
+        ```html
         <form method="POST">...</form>
+        ```
 
 ### 3.`autocomplete` attribute
 * Description:  Specifies whether the browser should automatically complete form fields.
 * Value: `on` or `off`.
 * Usage: 
 
+        ```html
         <form autocomplete="on|off">...</form>
+        ```
 * Example: 
 
+        ```html
         <form autocomplete="off">...</form>
+        ```
 
 ### 4.`target` attribute
 * Description:  Specifies where to display the response that is received after submitting the form.
@@ -49,14 +62,18 @@ HTML forms play a crucial role in web development, allowing users to interact wi
     - framename :  The response is displayed in a named iframe
 * Example: 
 
+        ```html
         <form target="_blank">
+        ```
 
 ### 4.`novalidate` attribute
 * Description: It is a Boolean attribute. When present, it specifies that the form-data (input) should not be validated when submitted.
 
 * Example: 
 
+        ```html
         <form action="" novalidate>
+        ```
 
 ### Some other attributes
 * `accept-charset` - Specifies the character encodings used for form submission

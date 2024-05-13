@@ -11,18 +11,20 @@ HTML provides a set of elements and attributes to create interactive forms that 
 
 ## The `<form>` Element
 The `<form>` element serves as a container for form elements such as input fields, buttons, checkboxes, etc. It defines the boundary of the form and specifies where the form data should be sent upon submission.
-
+        ```html
         <form>
             -.
             -form elements
             -.
         </form>
+        ```
 
 ## The `<input>` element
 Input elements allow users to enter data into the form. There are various types of input elements, each catering to different data types and input methods
 
 Common input types include:
 
+        ```html
         -Text: <input type="text">
         -Password: <input type="password">
         -Email: <input type="email">
@@ -32,34 +34,43 @@ Common input types include:
         -Date: <input type="date">
         -Number: <input type="number">
         -Submit Button: <input type="submit">
+        ```
 
 ## The `<label>` element
 The `<label>` element associates a text label with an input element, improving accessibility and user experience.
 
 Example:
 
+        ```html
         <label for="username">Username:</label>
         <input type="text" id="username" name="username">
+        ```
 
 ## Select Element `<select>` and Option Element `<option>`
 The `<select>` element creates a dropdown list, while <option> elements define the options within the dropdown.
 Example: 
 
+        ```html
         <select name="gender">
         <option value="male">Male</option>
         <option value="female">Female</option>
         <option value="other">Other</option>
         </select>
+        ```
 
 ## Textarea Element `<textarea>`
 The `<textarea>` element allows users to input multi-line text.
 Example:
 
+        ```html
         <textarea name="message" rows="4" cols="50">Enter your message here</textarea>
+        ```
 
 ## Submit Button
 A submit button allows users to send the form data to the server.
 Example: 
 
+        ```html
         <input type="submit" value="Submit">
+        ```
 

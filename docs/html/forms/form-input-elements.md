@@ -23,7 +23,9 @@ The `<input>` element is used to create various types of input fields within a f
 
 Example:- 
 
+    ```html
     <input type="text" name="username" placeholder="Enter your username" required>
+    ```
 
 ### `<textarea>`
 The `<textarea>` element is used to create a multiline text input field where users can enter longer text entries.
@@ -38,7 +40,9 @@ The `<textarea>` element is used to create a multiline text input field where us
 
 Example:- 
 
+    ```html
     <textarea name="message" rows="4" cols="50" placeholder="Enter your message" required></textarea>
+    ```
 
 ### `<select>`
 The `<select>` element creates a dropdown list from which users can select one or more options.
@@ -52,8 +56,10 @@ The `<select>` element creates a dropdown list from which users can select one o
 
 Example: 
 
+    ```html
     <select name="gender" required>
     <option value="">Select your gender</option>
     <option value="male">Male</option>
     <option value="female">Female</option>
     </select>
+    ```
