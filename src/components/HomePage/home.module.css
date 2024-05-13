@@ -131,6 +131,7 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 5px 0 #cccccc68;
+  min-height:8.55rem;
 }
 
 .feature_item img,
@@ -154,6 +155,11 @@
   padding: 0 10px;
   font-size: 1rem;
   margin-top: 5px;
+}
+
+.feature_links,
+.course_links{
+  color: black ;
 }
 
 /* Animation */
