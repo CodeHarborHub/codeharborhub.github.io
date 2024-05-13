@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function SomeComponent(props) {
   // You can fully customize this implementation
   // including changing the JSX, CSS and React hooks
