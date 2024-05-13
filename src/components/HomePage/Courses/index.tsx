@@ -15,7 +15,6 @@ interface CoursesProps {
 
 const Courses: React.FC<CoursesProps> = ({ courses }) => {
   return (
-    <>
       <div className={styles.course_container}>
         {courses.map((course) => (
           <div className={styles.course_card} key={course.title}>
@@ -25,7 +24,6 @@ const Courses: React.FC<CoursesProps> = ({ courses }) => {
           </div>
         ))}
       </div>
-    </>
   );
 };
 
