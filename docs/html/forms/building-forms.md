@@ -47,7 +47,7 @@ Example:
         ```
 
 ## Select Element `<select>` and Option Element `<option>`
-The `<select>` element creates a dropdown list, while <option> elements define the options within the dropdown.
+The `<select>` element creates a dropdown list, while `<option>` elements define the options within the dropdown.
 Example: 
 
         ```html
