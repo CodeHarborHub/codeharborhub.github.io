@@ -36,6 +36,7 @@ Example:
 
 Example: 
 
+    ```js
     function validateForm() {
     var email = document.forms["myForm"]["email"].value;
     var password = document.forms["myForm"]["password"].value;
@@ -46,6 +47,7 @@ Example:
     }
     // Additional validation logic
     }
+    ```
 
 ### 3.Providing User Feedback
 Effective form validation should provide clear and concise feedback to users, informing them about any validation errors and guiding them towards resolving them.
