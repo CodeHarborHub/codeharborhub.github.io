@@ -21,6 +21,8 @@ If you are interested in joining the team, or would like to contribute to the Op
 
 ## Contributors {#contributors}
 
-<a href="https://github.com/codeharborhub/codeharborhub/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=codeharborhub/codeharborhub" />
-</a>
+![contributors](https://opencollective.com/codeharborhub/contributors.svg?button=false)
+
+<!--
+[![contributors](https://contrib.rocks/image?repo=codeharborhub/codeharborhub)](https://github.com/codeharborhub/codeharborhub/graphs/contributors)
+-->
