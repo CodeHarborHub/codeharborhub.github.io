@@ -12,10 +12,6 @@ description: In this tutorial, you will learn how to use the Geolocation API to 
 ## Introduction
 In this tutorial, you will learn how to use the Geolocation API to get the user's current location in a web page. The HTML Geolocation API is crucial for creating location-aware web applications. It allows you to locate a user's position and use this information to provide a more personalized user experience.
 
-## Prerequisites
-- Basic knowledge of HTML and JavaScript
-- A modern web browser that supports the Geolocation API
-
 ## Locating the User's Position
 The HTML Geolocation API is used to get the geographical position of a user. Since accessing a user's location can compromise privacy, the API only works if the user grants permission.
 
