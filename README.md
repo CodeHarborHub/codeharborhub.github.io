@@ -44,6 +44,10 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contributors
 
+![Contributors](https://opencollective.com/codeharborhub/contributors.svg?button=false)
+
+<!--
 <a href="https://github.com/codeharborhub/codeharborhub/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=codeharborhub/codeharborhub" />
 </a>
+-->
