@@ -7,7 +7,7 @@ Visit our website [CodeHarbourHub](https://www.codeharborhub.live/)
 - [Features](#features)
 - [Contributing Guidelines](#getting-started)
 - [Code of Conduct](#code-of-conduct)
-- [Socials]()
+- [Socials](#socials)
 
 ## Introduction
 
@@ -29,11 +29,11 @@ We're the exclusive platform offering a comprehensive tech curriculum, taught by
 
 ## Getting Started
 
-For the enthusiasts who want to contribute to CodeHarbourHub, please refer to our [Contributing Guildelines](link)
+For the enthusiasts who want to contribute to CodeHarbourHub, please refer to our [Contributing Guildelines](https://github.com/CodeHarborHub/codeharborhub/blob/main/CONTRIBUTING.md)
 
 ## Code of Conduct
 
-For all the enthusiastic contributers, please refer to the [Code of Conduct](https://github.com/CodeHarborHub/codeharborhub?tab=coc-ov-file)
+For all the enthusiastic contributers, please refer to the [Code of Conduct](https://github.com/CodeHarborHub/codeharborhub/blob/main/CODE_OF_CONDUCT.md)
 
 ## Socials
 Stay updated with the latest news and announcements:
