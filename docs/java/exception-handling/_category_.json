@@ -1,0 +1,8 @@
+{
+    "label": "Exception Handling in Java",
+    "position": 8,
+    "link": {
+      "type": "generated-index",
+      "description": "In this section, you will learn about exception handling in Java. You will learn about the different types of exceptions in Java, how to handle exceptions, and how to create your own custom exceptions."
+    }
+  }

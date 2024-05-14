@@ -1,0 +1,8 @@
+{
+    "label": "Introduction To Java",
+    "position": 2,
+    "link": {
+      "type": "generated-index",
+      "description": "In this section, you will learn about the basics of Java programming language. You will learn about the features of Java, its installation, and how to write and run your first Java program."
+    }
+  }
