@@ -35,7 +35,7 @@ const Header = () => {
             </div>
           </div>
           <div className="chh__header-image">
-            <img src="/img/img-5.png" alt="ai" />
+            <img src="/img/hero-img.png" alt="ai" />
           </div>
         </div>
       </div>
