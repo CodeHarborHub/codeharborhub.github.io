@@ -1,0 +1,8 @@
+{
+  "label": "Build Automation with Maven in Java",
+  "position": 15,
+  "link": {
+    "type": "generated-index",
+    "description": "In this section, you will learn how to automate the build process of your Java applications using Maven. You will learn how to create a Maven project, how to build and run your project, and how to manage dependencies using Maven."
+  }
+}
