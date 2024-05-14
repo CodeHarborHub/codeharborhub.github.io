@@ -5,7 +5,7 @@ Visit our website [CodeHarbourHub](https://www.codeharborhub.live/)
 
 - [Introduction](#introduction)
 - [Features](#features)
-- [Contributing Guidelines](#getting-started)
+- [Contributing Guidelines](#contributing-guidelines)
 - [Code of Conduct](#code-of-conduct)
 - [Socials](#socials)
 
@@ -27,7 +27,7 @@ We're the exclusive platform offering a comprehensive tech curriculum, taught by
 - **Engaging Community**: Connect with a vibrant community of developers, share knowledge, and collaborate on projects.
 ![](/assets/Community.png)
 
-## Getting Started
+## Contributing Guidelines
 
 For the enthusiasts who want to contribute to CodeHarbourHub, please refer to our [Contributing Guildelines](https://github.com/CodeHarborHub/codeharborhub/blob/main/CONTRIBUTING.md)
 
