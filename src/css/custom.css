@@ -44,7 +44,7 @@
 }
 
 div[class^='announcementBar_'] {
-  background: #048363;
+  background: #06e06fb4;
   color: #fff;
   border-bottom: 1.8px dotted rgb(37, 184, 11);
   font-weight: bold;  
@@ -67,6 +67,7 @@ div[class^='announcementBar_'] a {
   );
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 2px #ff00de, 0 0 1px #ff00de;
 }
 
 div[class^='announcementBar_'] a:hover {
