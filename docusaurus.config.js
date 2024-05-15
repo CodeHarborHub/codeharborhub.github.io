@@ -1,8 +1,7 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import npm2yarn from "@docusaurus/remark-plugin-npm2yarn";
-import remarkMath from "remark-math";
-import rehypeKatex from "rehype-katex";
-import "dotenv/config";
+const remarkMath = require('remark-math');
+const rehypeKatex = require('rehype-katex');
 
 const path = require("path");
 
@@ -48,7 +47,8 @@ const config = {
             extendDefaults: true,
           },
           editUrl: "https://github.com/codeharborhub/codeharborhub/edit/main/",
-          remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, rehypeKatex],
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
         },
         pages: {
           remarkPlugins: [npm2yarn],
@@ -65,6 +65,16 @@ const config = {
     ],
   ],
 
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
+  ],
+  
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -442,8 +452,8 @@ const config = {
         routeBasePath: "community",
         // editUrl: "#",
         sidebarPath: require.resolve("./sidebarsCommunity.js"),
-        remarkPlugins: [remarkMath.default],
-        rehypePlugins: [rehypeKatex.default],
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
       },
@@ -457,8 +467,8 @@ const config = {
         routeBasePath: "dsa",
         // editUrl: "#",
         sidebarPath: require.resolve("./sidebarsDSA.js"),
-        remarkPlugins: [remarkMath.default],
-        rehypePlugins: [rehypeKatex.default],
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
       },
@@ -472,8 +482,8 @@ const config = {
         routeBasePath: "product",
         // editUrl: "#",
         sidebarPath: require.resolve("./sidebarsProduct.js"),
-        remarkPlugins: [remarkMath.default],
-        rehypePlugins: [rehypeKatex.default],
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
       },
@@ -486,8 +496,9 @@ const config = {
         path: "courses",
         routeBasePath: "courses",
         // editUrl: "#",
-        sidebarPath: require.resolve("./sidebarsCourses.js"),        
-        remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, rehypeKatex],
+        sidebarPath: require.resolve("./sidebarsCourses.js"),
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
       },
@@ -501,7 +512,8 @@ const config = {
         routeBasePath: "dsa-solutions",
         // editUrl: "#",
         sidebarPath: require.resolve("./sidebarsDSASolutions.js"),
-        remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, rehypeKatex],
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
       },
@@ -515,7 +527,8 @@ const config = {
         routeBasePath: "web-dev",
         // editUrl: "#",
         sidebarPath: require.resolve("./sidebarsWebDev.js"),
-        remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, rehypeKatex],
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
       },

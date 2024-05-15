@@ -51,8 +51,8 @@
     "react-simple-code-editor": "^0.13.1",
     "react-window": "^1.8.10",
     "redux": "^5.0.1",
-    "rehype-katex": "^6.0.3",
-    "remark-math": "^5.1.1",
+    "rehype-katex": "^7.0.0",
+    "remark-math": "^6.0.0",
     "styled-components": "^6.1.8"
   },
   "devDependencies": {

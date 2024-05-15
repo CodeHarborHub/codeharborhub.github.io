@@ -312,6 +312,45 @@ export default MyComponent;
     ```
 </BrowserWindow>
 
+## Math Equations with KaTeX
+
+Math equations are rendered using KaTeX. You can write inline math equations or block equations using LaTeX.
+
+### Inline
+
+Write inline math equations by wrapping LaTeX equations between `$`:
+
+```latex
+Let $f\colon[a,b]\to\R$ be Riemann integrable. Let $F\colon[a,b]\to\R$ be
+$F(x)=\int_{a}^{x} f(t)\,dt$. Then $F$ is continuous, and at all $x$ such that
+$f$ is continuous at $x$, $F$ is differentiable at $x$ with $F'(x)=f(x)$.
+```
+
+<BrowserWindow>
+
+Let $f\colon[a,b] \to \R$ be Riemann integrable. Let $F\colon[a,b]\to\R$ be $F(x)=
+\int_{a}^{x} f(t)\,dt$. Then $F$ is continuous, and at all $x$ such that $f$ is continuous at $x$, $F$ is differentiable at $x$ with $F'(x)=f(x)$.
+
+</BrowserWindow>
+
+### Blocks
+
+For equation block or display mode, use line breaks and `$$`:
+
+```latex
+$$
+I = \int_0^{2\pi} \sin(x)\,dx
+$$
+```
+
+<BrowserWindow>
+
+$$
+I = \int_0^{2\pi} \sin(x)\,dx
+$$
+
+</BrowserWindow>
+
 ## warning
 
 ```md title="warning"
