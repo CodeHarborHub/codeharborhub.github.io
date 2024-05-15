@@ -8,12 +8,10 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  /* --docusaurus-highlighted-code-line-bg: rgb(72, 77, 91); */
   --ifm-task-complete-color: #2e9e32e1;
   --ifm-task-incomplete-color: #3d78cbe1;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
@@ -23,7 +21,6 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  /* --docusaurus-highlighted-code-line-bg: rgb(100, 100, 100); */
   --ifm-task-complete-color: #25c2a0;
   --ifm-task-incomplete-color: #3d78cbe1;
 }
@@ -47,7 +44,7 @@
 }
 
 div[class^='announcementBar_'] {
-  background-image: linear-gradient(#ff0303, #ff030329, transparent), url("../../static/img/use-svg-as-background-image-particle-strokes.svg");
+  background: #048363;
   color: #fff;
   border-bottom: 1.8px dotted rgb(37, 184, 11);
   font-weight: bold;  
