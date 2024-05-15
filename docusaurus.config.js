@@ -89,6 +89,7 @@ const config = {
           src: "img/nav-logo.jpg",
         },
         items: [
+          
           {
             type: "dropdown",
             html: '<span class="nav-emoji">📚</span> Docs',
@@ -181,14 +182,19 @@ const config = {
                 activeBaseRegex: `/dsa/tags/`,
               },
             ],
-          },       
+          }, 
+          {
+            type: 'search',
+            position: 'right',
+          },      
           {
             href: 'https://github.com/codeharborhub/codeharborhub',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository',
-          },
+          },          
         ],
+        // hideOnScroll: true,
       },
       footer: {
         style: "dark",
