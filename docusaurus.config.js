@@ -122,8 +122,15 @@ const config = {
               },
 
               {
-                to: "/courses/",
-                html: '<span class="nav-emoji">🎓</span> Courses',
+                type: "html",
+                value: `<div class="dropdown">
+                <a class="dropbtn" href="/courses/"> Courses&nbsp; </a>
+                <div class="dropdown-content">
+                  <a href="/courses/">HTML, </a>
+                  <a href="/courses/">JavaScript, </a>
+                  <a href="/courses/category/reactjs/">React</a>
+                </div>
+              </div>`,
               },
 
               {
