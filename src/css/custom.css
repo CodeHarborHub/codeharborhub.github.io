@@ -299,3 +299,21 @@ table, tr, td, th {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* ================================= */
+
+.dropbtn {
+  background-color: transparent;
+  color: var(--ifm-color-primary);
+  padding: 16px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-right: 1px solid #4e8da0db;
+  margin: 2px;
+}
+
+.dropdown-content {
+  min-width: 100px;
+  margin: 2px 5px;
+}
