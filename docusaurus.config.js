@@ -1,7 +1,7 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import npm2yarn from "@docusaurus/remark-plugin-npm2yarn";
-const remarkMath = require('remark-math');
-const rehypeKatex = require('rehype-katex');
+const remarkMath = require("remark-math");
+const rehypeKatex = require("rehype-katex");
 
 const path = require("path");
 
@@ -15,13 +15,13 @@ const config = {
   // baseUrl: process.env.BASE_URL,
   baseUrl: "/",
   customFields: {
-    admin: 'Ajay Dhangar',
-    superman: 'Shivay',
+    admin: "Ajay Dhangar",
+    superman: "Shivay",
     teamEmail: process.env.EMAIL,
     GTM_ID: process.env.GTM_ID,
     GA_ID: process.env.GA_ID,
     ALGOLIA_APP_ID: process.env.ALGOLIA_APP_ID,
-    ALGOLIA_API_KEY: process.env.ALGOLIA_API_KEY,    
+    ALGOLIA_API_KEY: process.env.ALGOLIA_API_KEY,
   },
 
   organizationName: "ajay-dhangar",
@@ -67,14 +67,14 @@ const config = {
 
   stylesheets: [
     {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
-      type: 'text/css',
+      href: "https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css",
+      type: "text/css",
       integrity:
-        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-      crossorigin: 'anonymous',
+        "sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM",
+      crossorigin: "anonymous",
     },
   ],
-  
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -99,16 +99,21 @@ const config = {
           src: "img/nav-logo.jpg",
         },
         items: [
-          
           {
             type: "dropdown",
             html: '<span class="nav-emoji">📚</span> Docs',
             position: "left",
             items: [
               {
-                type: "doc",
-                docId: "docs",
-                html: '<span class="nav-emoji">📚</span> Tutorials',
+                type: "html",
+                value: `<div class="dropdown">
+                <a class="dropbtn" href="/docs/"> Tutorials </a>
+                <div class="dropdown-content">
+                  <a href="/docs/category/html/">HTML, </a>
+                  <a href="/docs/category/javascript/">JavaScript, </a>
+                  <a href="/docs/category/react/">React</a>                  
+                </div>
+              </div>`,
               },
 
               {
@@ -135,13 +140,13 @@ const config = {
                 type: "html",
                 value: '<hr style="margin: 0.3rem 0;">',
               },
-              
+
               {
                 to: "/dsa/",
                 html: '<span class="nav-emoji">🧠</span> DSA',
               },
             ],
-          },          
+          },
           {
             to: "/showcase",
             html: '<span class="nav-emoji">🌍</span> Showcase',
@@ -192,17 +197,17 @@ const config = {
                 activeBaseRegex: `/dsa/tags/`,
               },
             ],
-          }, 
+          },
           {
-            type: 'search',
-            position: 'right',
-          },      
+            type: "search",
+            position: "right",
+          },
           {
-            href: 'https://github.com/codeharborhub/codeharborhub',
-            position: 'right',
-            className: 'header-github-link',
-            'aria-label': 'GitHub repository',
-          },          
+            href: "https://github.com/codeharborhub/codeharborhub",
+            position: "right",
+            className: "header-github-link",
+            "aria-label": "GitHub repository",
+          },
         ],
         // hideOnScroll: true,
       },
@@ -354,22 +359,22 @@ const config = {
 
   plugins: [
     [
-      'vercel-analytics',
+      "vercel-analytics",
       {
         debug: true,
-        mode: 'auto',
+        mode: "auto",
       },
     ],
     [
-      '@docusaurus/plugin-google-tag-manager',
+      "@docusaurus/plugin-google-tag-manager",
       {
-        containerId: 'GTM-MLJNRGC9',
+        containerId: "GTM-MLJNRGC9",
       },
     ],
     [
-      '@docusaurus/plugin-google-gtag',
+      "@docusaurus/plugin-google-gtag",
       {
-        trackingID: 'G-8QK6Y7QDCB',
+        trackingID: "G-8QK6Y7QDCB",
         anonymizeIP: true,
       },
     ],
@@ -382,7 +387,7 @@ const config = {
           "standalone",
           "queryString",
         ],
-        swCustom: require.resolve('./src/sw.js'),
+        swCustom: require.resolve("./src/sw.js"),
         pwaHead: [
           {
             tagName: "link",
@@ -400,35 +405,35 @@ const config = {
             content: "rgb(37, 194, 160)",
           },
           {
-            tagName: 'meta',
-            name: 'apple-mobile-web-app-capable',
-            content: 'yes',
+            tagName: "meta",
+            name: "apple-mobile-web-app-capable",
+            content: "yes",
           },
           {
-            tagName: 'meta',
-            name: 'apple-mobile-web-app-status-bar-style',
-            content: '#000',
+            tagName: "meta",
+            name: "apple-mobile-web-app-status-bar-style",
+            content: "#000",
           },
           {
-            tagName: 'link',
-            rel: 'apple-touch-icon',
-            href: '/img/favicon_io/apple-touch-icon.png',
+            tagName: "link",
+            rel: "apple-touch-icon",
+            href: "/img/favicon_io/apple-touch-icon.png",
           },
           {
-            tagName: 'link',
-            rel: 'mask-icon',
-            href: '/img/docusaurus.svg',
-            color: 'rgb(37, 194, 160)',
+            tagName: "link",
+            rel: "mask-icon",
+            href: "/img/docusaurus.svg",
+            color: "rgb(37, 194, 160)",
           },
           {
-            tagName: 'meta',
-            name: 'msapplication-TileImage',
-            content: '/img/favicon_io/android-chrome-192x192.png',
+            tagName: "meta",
+            name: "msapplication-TileImage",
+            content: "/img/favicon_io/android-chrome-192x192.png",
           },
           {
-            tagName: 'meta',
-            name: 'msapplication-TileColor',
-            content: '#000',
+            tagName: "meta",
+            name: "msapplication-TileColor",
+            content: "#000",
           },
         ],
       },
@@ -437,8 +442,8 @@ const config = {
       "@docusaurus/plugin-ideal-image",
       {
         quality: 70,
-        max: 1030, 
-        min: 640, 
+        max: 1030,
+        min: 640,
         steps: 2,
         disableInDev: false,
       },
