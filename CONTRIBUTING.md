@@ -39,8 +39,8 @@ To contribute to this project, please follow these steps:
    Launch GitHub Desktop and log in to your GitHub account if you haven't already.
 
 2. **Clone the Repository:**
-   - If you haven't cloned the ResourceHub repository yet, you can do so by clicking on the "File" menu and selecting "Clone Repository."
-   - Choose the ResourceHub repository from the list of repositories on GitHub and clone it to your local machine.
+   - If you haven't cloned the CodeHarborHub repository yet, you can do so by clicking on the "File" menu and selecting "Clone Repository."
+   - Choose the CodeHarborHub repository from the list of repositories on GitHub and clone it to your local machine.
 
 3. **Switch to the Correct Branch:**
    - Ensure you are on the branch that you want to submit a pull request for.
@@ -57,7 +57,7 @@ To contribute to this project, please follow these steps:
    After committing your changes, click the "Push origin" button in the top right corner of GitHub Desktop to push your changes to your forked repository on GitHub.
 
 7. **Create a Pull Request:**
-  - Go to the GitHub website and navigate to your fork of the ResourceHub repository.
+  - Go to the GitHub website and navigate to your fork of the CodeHarborHub repository.
   - You should see a button to "Compare & pull request" between your fork and the original repository. Click on it.
 
 8. **Review and Submit:**
@@ -65,7 +65,7 @@ To contribute to this project, please follow these steps:
    - Once you're satisfied, click the "Create pull request" button to submit your pull request.
 
 9. **Wait for Review:**
-    Your pull request will now be available for review by the project maintainers. They may provide feedback or ask for changes before merging your pull request into the main branch of the ResourceHub repository.
+    Your pull request will now be available for review by the project maintainers. They may provide feedback or ask for changes before merging your pull request into the main branch of the CodeHarborHub repository.
 
 ⭐️ Support the Project
 If you find this project helpful, please consider giving it a star on GitHub! Your support helps to grow the project and reach more contributors.
