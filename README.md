@@ -83,7 +83,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contributors
 
-![Contributors](https://opencollective.com/codeharborhub/contributors.svg?button=false)
+![Contributors](https://opencollective.com/codeharborhub/contributors.svg)
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
