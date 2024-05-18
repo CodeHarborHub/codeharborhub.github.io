@@ -114,7 +114,22 @@
     margin: 0 0 3rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .gradient__text{
+    text-align: center;
+  }
 
+}
+@media screen and (max-width: 350px) {
+  .anouncementBarContent, .navbar__title{
+    font-size: medium;
+  }
+}
+@media screen and (max-width: 280px) {
+  .navbar__title{
+    display: none;
+  }
+}
 @media screen and (max-width: 650px) {
   .chh__header-content h1 {
     font-size: 48px;
