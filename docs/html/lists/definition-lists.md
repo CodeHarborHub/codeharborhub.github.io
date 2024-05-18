@@ -143,4 +143,7 @@ So go ahead, experiment with definition lists in your next project. Your users (
 
 Happy coding!
 
-Written by: Anoushka @ [dippedinink.xyz](https://dippedinink.xyz/)
+## Signing Off
+
+Written by: Anoushka 
+Read more posts by the same author: [dippedinink.xyz](https://dippedinink.xyz/)
