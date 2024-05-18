@@ -9,7 +9,7 @@ description: In this tutorial, you will learn about ordered lists in HTML. Order
 
 # Unlocking the Potential of Ordered Lists in HTML: A Beginner-Friendly Guide
 
-Hello, coding aficionados and web development enthusiasts! Today, we’re going to explore the structured and orderly world of ordered lists in HTML. Whether you're a novice coder or a seasoned developer, understanding ordered lists can significantly enhance your web pages. So grab your favorite snack, get comfortable, and let's delve into the organized charm of <ol>, <li>, and the many ways they can be utilized.
+Hello, coding aficionados and web development enthusiasts! Today, we’re going to explore the structured and orderly world of ordered lists in HTML. Whether you're a novice coder or a seasoned developer, understanding ordered lists can significantly enhance your web pages. So grab your favorite snack, get comfortable, and let's delve into the organized charm of `<ol>`, `<li>`, and the many ways they can be utilized.
 
 ## What *Are* Ordered Lists?
 
