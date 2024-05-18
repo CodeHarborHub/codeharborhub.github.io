@@ -92,7 +92,7 @@ const config = {
         contextualSearch: false,
       },
 
-      navbar: {
+      navbar: { 
         title: "CodeHarborHub",
         logo: {
           alt: "CodeHarborHub Logo",
