@@ -85,8 +85,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ![Contributors](https://opencollective.com/codeharborhub/contributors.svg?button=false)
 
-<!--
-<a href="https://github.com/codeharborhub/codeharborhub/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=codeharborhub/codeharborhub" />
-</a>
--->
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+![image](https://github.com/CodeHarborHub/codeharborhub/assets/99037494/a8645938-5269-4d97-93e7-206059266035)
