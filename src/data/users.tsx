@@ -166,7 +166,7 @@ export const Tags: { [type in TagType]: Tag } = {
   game: {
     label: "Game",
     description: "",
-    color: "#ff4400",
+    color: "#555555",
   },
 };
 
