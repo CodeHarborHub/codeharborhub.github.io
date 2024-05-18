@@ -9,7 +9,7 @@ description: In this tutorial, you will learn the basics of definition lists in 
 
 # Mastering Definition Lists in HTML: A beginner's guide
 
-Welcome, dear readers, to the fascinating world of HTML definition lists! Whether you're a coding newbie or a seasoned web developer, understanding how to effectively use definition lists can add a touch of semantic flair to your webpages. So grab a cup of coffee, sit back, and let’s dive into the wonderful realm of <dl>, <dt>, and <dd>.
+Welcome, dear readers, to the fascinating world of HTML definition lists! Whether you're a coding newbie or a seasoned web developer, understanding how to effectively use definition lists can add a touch of semantic flair to your webpages. So grab a cup of coffee, sit back, and let’s dive into the wonderful realm of `<dl>`, `<dt>`, and `<dd>`.
 
 ## So What *Are* Definition Lists?
 
@@ -19,9 +19,9 @@ Definition lists are a way to organize content on your webpage that involves pai
 
 Before we jump into examples, let's get familiar with the three main HTML tags used in definition lists:
 
-1. <dl>: This tag stands for "definition list" and acts as a container for the entire list.
-2. <dt>: This tag stands for "definition term" and is used to define the term or name.
-3. <dd>: This tag stands for "definition description" and is used to provide the explanation or description of the term.
+1. `<dl>`: This tag stands for "definition list" and acts as a container for the entire list.
+2. `<dt>`: This tag stands for "definition term" and is used to define the term or name.
+3. `<dd>`: This tag stands for "definition description" and is used to provide the explanation or description of the term.
 
 ## Welcome To The Basics
 
@@ -38,13 +38,13 @@ Let's start with a simple example. Imagine you're creating a glossary of web dev
 </dl>
 ```
 
-Here, each <dt> is a term, and each <dd> provides the definition. The browser will display these with the term indented to the left and the description slightly indented to the right, making it visually clear which description belongs to which term.
+Here, each `<dt>` is a term, and each `<dd>` provides the definition. The browser will display these with the term indented to the left and the description slightly indented to the right, making it visually clear which description belongs to which term.
 
 ## Why Are Definition Lists Used?
 
 There are many reasons why one might decide to use definition lists while writing a webpage. Here are some of the most common ones:
 
-1. Semantic Clarity: One of the main reasons to use definition lists is semantic clarity. HTML is all about structure and meaning. Using a <dl> indicates that the content is a list of terms and definitions, making your HTML more readable and meaningful for both humans and search engines.
+1. Semantic Clarity: One of the main reasons to use definition lists is semantic clarity. HTML is all about structure and meaning. Using a `<dl>` indicates that the content is a list of terms and definitions, making your HTML more readable and meaningful for both humans and search engines.
 
 2. Accessibility: Definition lists can improve accessibility. Screen readers and other assistive technologies can navigate them more effectively when they are semantically correct. This ensures that users with disabilities have a better experience on your site.
 
@@ -131,7 +131,7 @@ So when should you use definition lists? Here are a few practical applications:
 
 1. Glossaries: For sites that include a lot of terminology, such as educational sites, scientific journals, or tech blogs, definition lists are perfect for creating glossaries.
 
-2. FAQs: Definition lists can be used to create FAQ sections. Each question is a <dt> and each answer is a <dd>.
+2. FAQs: Definition lists can be used to create FAQ sections. Each question is a `<dt>` and each answer is a `<dd>`.
 
 3. Terms and Conditions: Legal documents, terms and conditions, or privacy policies often have terms that need defining. Using definition lists here can make the content more readable.
 
@@ -142,3 +142,5 @@ Definition lists in HTML are a powerful tool for organizing content in a clear a
 So go ahead, experiment with definition lists in your next project. Your users (and search engines) will thank you!
 
 Happy coding!
+
+Written by: Anoushka @ [dippedinink.xyz](https://dippedinink.xyz/)
