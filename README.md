@@ -26,6 +26,42 @@ At CodeHarborHub, our mission is clear: to provide accessible and comprehensive 
 
 To get started with contributing to CodeHarborHub, please refer to our [Contributing Guidelines](CONTRIBUTING.md).
 
+Follow these steps:
+
+1. **Clone the repository:** 
+   ```bash
+   git clone https://github.com/your-username/codeharborhub.git
+   ```
+
+2. **Navigate to the project directory:**
+   ```bash
+   cd codeharborhub
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Running the Application:**
+
+    Once you have installed the dependencies, you can run the application locally using:
+
+    ```bash
+    npm start
+    ```
+
+    This command will start a development server and open the application in your default web browser.
+
+**If you'd like to contribute to CodeHarborHub, please follow these guidelines:**
+
+- **Fork** the repository and clone it locally.
+- Create a new branch for your feature or bug fix: `git checkout -b feature-name`
+- Make your changes and test thoroughly.
+- Commit your changes: `git commit -m "Brief description of your changes"`
+- Push to the branch: `git push origin feature-name`
+- Submit a pull request detailing your changes.
+
 ## Support
 
 For any questions or issues, feel free to reach out to us through our [website](https://www.codeharborhub.live/) or by opening an [issue](https://github.com/CodeHarborHub/codeharborhub/issues) on GitHub.
