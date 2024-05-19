@@ -88,3 +88,9 @@ This project is licensed under the [MIT License](LICENSE).
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ![image](https://github.com/CodeHarborHub/codeharborhub/assets/99037494/a8645938-5269-4d97-93e7-206059266035)
+
+
+## Chat with us
+
+[![Chat with us](https://github.com/CodeHarborHub/codeharborhub/assets/99037494/e898e0e8-7985-4adb-9730-a2588fcba78e)](https://www.patreon.com/ajay_dhangar/membership)
+

@@ -317,3 +317,8 @@ table, tr, td, th {
   min-width: 100px;
   margin: 2px 5px;
 }
+
+.nav__icons img {
+  width: 30px;
+  height: 30px;
+}

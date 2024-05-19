@@ -125,7 +125,7 @@ console.log('Hello, Node.js!');
 
 Save the file and open a terminal or command prompt in the same directory. Run the following command to execute the JavaScript code using Node.js:
 
-```bash title="Run hello.js with Node.js"
+```bash
 node hello.js
 ```
 
