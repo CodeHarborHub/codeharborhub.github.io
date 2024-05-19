@@ -141,5 +141,5 @@ Happy coding!
 
 ## Signing Off
 
-Written by: Anoushka 
+Written by: Anoushka <br>
 Read more posts by the same author: [dippedinink.xyz](https://dippedinink.xyz/)
