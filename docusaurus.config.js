@@ -109,7 +109,8 @@ const config = {
                 value: `<div class="dropdown">
                 <a class="dropbtn" href="/docs/"> Tutorials </a>
                 <div class="dropdown-content">
-                  <a href="/docs/category/html/">HTML, </a>
+                  <a href="/docs/category/html/" class="nav__icons" > <img src="/icons/html-5.svg" alt="HTML" /> </a>
+                  <a href="/docs/" class="nav__icons" > <img src="/icons/css.svg" alt="CSS" /> </a>
                   <a href="/docs/category/javascript/">JavaScript, </a>
                   <a href="/docs/category/react/">React</a>                  
                 </div>
