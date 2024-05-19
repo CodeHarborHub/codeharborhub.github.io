@@ -158,8 +158,3 @@ Ordered lists in HTML are a versatile and powerful tool for presenting sequentia
 So go ahead, experiment with ordered lists in your next project. Your audience will appreciate the structured and clear presentation of your content.
 
 Happy coding!
-
-## Signing Off
-
-Written by: Anoushka 
-Read more posts by the same author: [dippedinink.xyz](https://dippedinink.xyz/)

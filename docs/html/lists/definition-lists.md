@@ -142,8 +142,3 @@ Definition lists in HTML are a powerful tool for organizing content in a clear a
 So go ahead, experiment with definition lists in your next project. Your users (and search engines) will thank you!
 
 Happy coding!
-
-## Signing Off
-
-Written by: Anoushka 
-Read more posts by the same author: [dippedinink.xyz](https://dippedinink.xyz/)
