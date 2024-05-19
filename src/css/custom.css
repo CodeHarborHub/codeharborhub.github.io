@@ -314,11 +314,18 @@ table, tr, td, th {
 }
 
 .dropdown-content {
-  min-width: 100px;
+  min-width: 200px;
   margin: 2px 5px;
 }
 
+.dropdown-content a:hover {
+  text-decoration: none;
+  background-color: #cccccc45;
+  border-radius: 50% 40%;
+}
+
 .nav__icons img {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
 }

@@ -109,10 +109,13 @@ const config = {
                 value: `<div class="dropdown">
                 <a class="dropbtn" href="/docs/"> Tutorials </a>
                 <div class="dropdown-content">
-                  <a href="/docs/category/html/" class="nav__icons" > <img src="/icons/html-5.svg" alt="HTML" /> </a>
-                  <a href="/docs/" class="nav__icons" > <img src="/icons/css.svg" alt="CSS" /> </a>
-                  <a href="/docs/category/javascript/">JavaScript, </a>
-                  <a href="/docs/category/react/">React</a>                  
+                  <a href="/docs/category/html/" class="nav__icons"> <img src="/icons/html-5.svg" alt="HTML" /> </a>
+                  <a href="/docs/" class="nav__icons"> <img src="/icons/css.svg" alt="CSS" /> </a>
+                  <a href="/docs/category/javascript/" class="nav__icons" > <img src="/icons/js.svg" alt="JavaScript" /> </a>
+                  <a href="/docs/category/react/" class="nav__icons"> <img src="/icons/jsx.svg" alt="React" /> </a>                  
+                  <a href="/docs/category/typescript/" class="nav__icons"> <img src="/icons/ts.svg" alt="TypeScript" /> </a>                  
+                  <a href="/docs/category/python/" class="nav__icons"> <img src="/icons/py.svg" alt="Python" /> </a>                  
+                  <a href="/docs/category/java/" class="nav__icons"> <img src="/icons/java.svg" alt="Java" /> </a>                  
                 </div>
               </div>`,
               },
@@ -127,9 +130,7 @@ const config = {
                 value: `<div class="dropdown">
                 <a class="dropbtn" href="/courses/"> Courses&nbsp; </a>
                 <div class="dropdown-content">
-                  <a href="/courses/">HTML, </a>
-                  <a href="/courses/">JavaScript, </a>
-                  <a href="/courses/category/reactjs/">React</a>
+                  <a href="/courses/category/reactjs/" class="nav__icons"> <img src="/icons/jsx.svg" alt="React" /> </a>                  
                 </div>
               </div>`,
               },
