@@ -138,8 +138,3 @@ List-item attributes in HTML are a powerful tool for adding functionality and st
 So go ahead, experiment with list-item attributes in your next project. Your users will appreciate the enhanced structure and design they bring to your site.
 
 Happy coding!
-
-## Signing Off
-
-Written by: Anoushka <br>
-Read more posts by the same author: [dippedinink.xyz](https://dippedinink.xyz/)

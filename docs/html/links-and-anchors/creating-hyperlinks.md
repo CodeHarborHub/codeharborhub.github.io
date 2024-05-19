@@ -189,8 +189,3 @@ Creating hyperlinks in HTML is a fundamental skill that every web developer shou
 So go ahead, experiment with hyperlinks in your next project. Use them to create navigation menus, link collections, and more. Your users will appreciate the improved navigation and interactivity.
 
 Happy coding!
-
-## Signing Off
-
-Written by: Anoushka <br>
-Read more posts by the same author: [dippedinink.xyz](https://dippedinink.xyz/)

@@ -242,8 +242,3 @@ Link attributes in HTML are powerful tools that can enhance the functionality, a
 So go ahead, experiment with link attributes in your next project. Use them to create navigation menus, downloadable links, and more. Your users will appreciate the improved navigation and interactivity.
 
 Happy coding!
-
-## Signing Off
-
-Written by: Anoushka<br>
-Read more posts by the same author: [dippedinink.xyz](https://dippedinink.xyz/)
