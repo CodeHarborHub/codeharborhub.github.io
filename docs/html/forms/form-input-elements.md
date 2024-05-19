@@ -168,9 +168,10 @@ The `<input type="password">` element displays a field where the user can enter 
     </TabItem>
 </Tabs>
 
+## Input elements Example
 <Tabs>
     <TabItem value="HTML">
-    ```html
+    ```html {3,4,6,8,11,13,14,15}
     <form action="/submit" method="post">
         <label for="fname">First name:</label>
         <input type="text" id="fname" name="fname"></input>
@@ -184,7 +185,7 @@ The `<input type="password">` element displays a field where the user can enter 
         <input type="email" id="email" name="email"></input>
         <label for="pwd">Password:</label>
         <input type="password" id="pwd" name="pwd"></input>
-        <input type="button" value="Click Me" onclick="alert('Hello World!')"></input>
+        <input type="button" value="Click Me"></input>
         <input type="submit" value="Submit"></input>
     </form>
     ```

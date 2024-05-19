@@ -114,6 +114,99 @@ The `novalidate` attribute specifies that the form should not be validated when 
     </TabItem>
 </Tabs>
 
+## The `name` Attribute
+
+The name attribute specifies the name of the form. This name can be used to reference the form in JavaScript.
+
+<Tabs>
+    <TabItem value="HTML">
+    ```html
+    <form name="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <input type="submit" value="Submit">
+    </form>
+    ```
+    </TabItem>
+    <TabItem value="Output">
+        <BrowserWindow>
+            <div>
+                <form name="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"></input>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"></input>
+                    <input type="submit" value="Submit"></input>
+                </form>
+            </div>
+        </BrowserWindow>
+    </TabItem>
+</Tabs>
+
+## The `target` Attribute
+
+The target attribute specifies where to display the response after submitting the form. Common values include `_self`, `_blank`, `_parent`, and `_top`.
+
+<Tabs>
+    <TabItem value="HTML">
+    ```html
+    <form action="/submit-form" method="post" target="_blank">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <input type="submit" value="Submit">
+    </form>
+    ```
+    </TabItem>
+    <TabItem value="Output">
+        <BrowserWindow>
+            <div>
+            <form action="/submit-form" method="post" target="_blank">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"></input>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"></input>
+                <input type="submit" value="Submit"></input>
+            </form>
+            </div>
+        </BrowserWindow>
+    </TabItem>
+</Tabs>
+
+## The `rel` Attribute
+
+The rel attribute specifies the relationship between the current document and the linked document. It is often used in conjunction with the `target` attribute.
+
+<Tabs>
+    <TabItem value="HTML">
+    ```html
+    <form action="https://example.com" method="post" target="_blank" rel="noopener noreferrer">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <input type="submit" value="Submit">
+    </form>
+    ```
+    </TabItem>
+    <TabItem value="Output">
+        <BrowserWindow>
+            <div>
+               <form action="https://example.com" method="post" target="_blank" rel="noopener noreferrer">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"></input>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"></input>
+                <input type="submit" value="Submit"></input>
+                </form>
+            </div>
+        </BrowserWindow>
+    </TabItem>
+</Tabs>
+
 ## Other Form Attributes
 
 Here are other form attributes you can use in HTML:
@@ -124,37 +217,37 @@ Here are other form attributes you can use in HTML:
   <th>Description</th>
  </tr>
  <tr>
-  <td>action</td>
+  <td><a href="/docs/html/forms/form-attributes#the-action-attribute">action</a></td>
   <td>Specifies where to send the form-data when a form is submitted</td>
  </tr>
  <tr>
-  <td>autocomplete</td>
+  <td><a href="/docs/html/forms/form-attributes#the-autocomplete-attribute">autocomplete</a></td>
   <td>Specifies whether a form should have autocomplete on or off</td>
  </tr>
  <tr>
-  <td>enctype</td>
+  <td><a href="/docs/html/forms/form-attributes#the-enctype-attribute">enctype</a></td>
   <td>Specifies how the form-data should be encoded when submitting it to the 
   server (only for method="post")</td>
  </tr>
  <tr>
-  <td>method</td>
+  <td><a href="/docs/html/forms/form-attributes#the-method-attribute">method</a></td>
   <td>Specifies the HTTP method to use when sending form-data</td>
  </tr>
  <tr>
-  <td>name</td>
+  <td><a href="/docs/html/forms/form-attributes#the-name-attribute">name</a></td>
   <td>Specifies the name of the form</td>
  </tr>
  <tr>
-  <td>novalidate</td>
+  <td><a href="/docs/html/forms/form-attributes#the-novalidate-attribute">novalidate</a></td>
   <td>Specifies that the form should not be validated when submitted</td>
  </tr>
  <tr>
-  <td>rel</td>
+  <td><a href="/docs/html/forms/form-attributes#the-rel-attribute">rel</a></td>
   <td>Specifies the relationship between a linked resource and the current 
   document</td>
  </tr>
  <tr>
-  <td>target</td>
+  <td><a href="/docs/html/forms/form-attributes#the-target-attribute">target</a></td>
   <td>Specifies where to display the response that is received after submitting 
   the form</td>
  </tr>
