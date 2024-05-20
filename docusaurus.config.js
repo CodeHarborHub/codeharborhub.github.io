@@ -177,6 +177,11 @@ const config = {
             to: "https://quiz-app-ajay-dhangar.vercel.app/",
           },
           {
+            html: '<span class="nav-emoji"> 📺</span> Broadcast',
+            to: "https://codeharborhub-broadcast-web.vercel.app/",
+          },
+
+          {
             to: "/blog",
             html: '<span class="nav-emoji">📰</span> Blog',
           },
