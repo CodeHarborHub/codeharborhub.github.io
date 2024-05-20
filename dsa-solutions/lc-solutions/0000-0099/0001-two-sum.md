@@ -13,15 +13,13 @@ tags:
 description: "This is a solution to the Two Sum problem on LeetCode."
 ---
 
-We have provided multiple solutions to the Two Sum problem on LeetCode. The problem is to find two numbers in an array that add up to a target sum. We have provided solutions using a brute force approach, a hash table, and the two-pointer technique. The hash table approach is the most efficient among the three approaches and is recommended for large inputs.
+## Problem Description
 
 |Problem Statement | Solution Link | LeetCode Profile|
 |:---|:---|:---|
 | [Two Sum on LeetCode](https://leetcode.com/problems/two-sum/) | [Two Sum Solution on LeetCode](https://leetcode.com/problems/two-sum/solutions/4958021/two-sum-problem-solution-using-hash-table-ts-js-java-py-cpp-recommended-solutions) | [Ajay Dhangar](https://leetcode.com/ajaydhangar49/) |
 
-LeetCode provides the [Two Sum problem](https://leetcode.com/problems/two-sum/) with the following problem statement:
-
-### Problem Description
+## Problem Description
 
 Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`.
 
@@ -31,18 +29,23 @@ You can return the answer in any order.
 
 ### Examples
 
-```text
+**`Example 1:`**
+
+```plaintext
 Input: nums = [2,7,11,15], target = 9
 Output: [0,1]
-Output: Because nums[0] + nums[1] == 9, we return [0, 1].
-```
+``` 
 
-```text
+**`Example 2:`**
+
+```plaintext
 Input: nums = [3,2,4], target = 6
 Output: [1,2]
 ```
 
-```text
+**`Example 3:`**
+
+```plaintext
 Input: nums = [3,3], target = 6
 Output: [0,1]
 ```
@@ -54,11 +57,15 @@ Output: [0,1]
 - `-10^9 <= target <= 10^9`
 - Only one valid answer exists.
 
+**Follow up:** Can you come up with an algorithm that is less than <code>$$O(n^2)$$</code> time complexity?
+
+---
+
 ## Solution for Two Sum Problem
 
-### Intuition
+### Intuition and Approach
 
-The problem can be solved using a brute force approach, a hash table, or the two-pointer technique. The brute force approach has a time complexity of **_O(n<sup>2</sup>)_**, the hash table approach has a time complexity of **_O(n)_**, and the two-pointer technique has a time complexity of **_O(n log n)_**.
+The problem can be solved using a brute force approach, a hash table, or the two-pointer technique. The brute force approach has a time complexity of $$O(n^2)$$, while the hash table and two-pointer techniques have a time complexity of $$O(n)$$. The hash table approach is the most efficient and is recommended for large inputs.
 
 ### Approach 1: Brute Force (Naive)
 
@@ -177,16 +184,16 @@ function twoSumProblem() {
 
 #### Complexity Analysis
 
-- Time Complexity: **_O(n<sup>2</sup>)_**
-- Space Complexity: **_O(1)_**
+- Time Complexity: $$O(n^2)$$
+- Space Complexity: $$O(1)$$
 - Where `n` is the length of the input array `nums`.
-- The time complexity is **_O(n<sup>2</sup>)_** because we are iterating through the array twice.
-- The space complexity is **_O(1)_** because we are not using any extra space.
+- The time complexity is $$O(n^2)$$ because we are iterating through the array twice.
+- The space complexity is $$O(1)$$ because we are not using any extra space.
 - This approach is not efficient and is not recommended for large inputs.
 
 ### Approach 2: Using Hash Table
 
-We can improve the time complexity of the brute force approach by using a hash table to store the elements and their indices. While we iterate through the array, we check if the difference between the target and the current element exists in the hash table. If it does, we return the indices of the current element and the element that makes up the target sum.
+We can solve this problem more efficiently using a hash table. We iterate through the array and store the elements and their indices in a hash table. For each element `nums[i]`, we calculate the complement `target - nums[i]` and check if the complement is present in the hash table. If it is present, we return the indices `[i, numMap.get(complement)]`. If the complement is not present, we add the element `nums[i]` to the hash table. If no pair is found, we return an empty array.
 
 #### Implementation
 
@@ -314,19 +321,19 @@ function twoSumProblem() {
 
 #### Complexity Analysis
 
-- Time Complexity: **_O(n)_**
-- Space Complexity: **_O(n)_**
+- Time Complexity: $$O(n)$$
+- Space Complexity: $$O(n)$$
 - Where `n` is the length of the input array `nums`.
-- The time complexity is **_O(n)_** because we iterate through the array only once.
-- The space complexity is **_O(n)_** because we use a hash table to store the elements and their indices.
+- The time complexity is $$O(n)$$ because we iterate through the array only once.
+- The space complexity is $$O(n)$$ because we use a hash table to store the elements and their indices.
 - This approach is more efficient than the brute force approach and is recommended for large inputs.
-- The hash table lookup has an average time complexity of **_O(1)_**.
-- The space complexity is **_O(n)_** because we store at most `n` elements in the hash table.
-- The total time complexity is **_O(n)_**. and the total space complexity is **_O(n)_**.
+- The hash table lookup has an average time complexity of $$O(1)$$, which makes this approach efficient.
+- The space complexity is $$O(n)$$ because we store at most `n` elements in the hash table.
+- The total time complexity is $$O(n)$$. and the total space complexity is $$O(n)$$.
 
 ### Approach 3: Using Two Pointers
 
-We can also solve this problem using the two-pointer technique. We first sort the array and then use two pointers, one at the beginning and one at the end. We move the pointers based on the sum of the elements at the two pointers. If the sum is equal to the target, we return the indices of the two elements. If the sum is less than the target, we move the left pointer to the right. If the sum is greater than the target, we move the right pointer to the left.
+We can also solve this problem using the two-pointer technique. We first sort the array and then use two pointers, `left` and `right`, to find the two numbers that add up to the target sum. We initialize `left` to `0` and `right` to `nums.length - 1`. We calculate the sum of the two numbers at the `left` and `right` pointers. If the sum is equal to the target, we return the indices `[left, right]`. If the sum is less than the target, we increment the `left` pointer. If the sum is greater than the target, we decrement the `right` pointer. If no pair is found, we return an empty array.
 
 #### Implementation
 
@@ -504,25 +511,21 @@ function twoSumProblem() {
 
 #### Complexity Analysis
 
-- Time Complexity: **_O(n log n)_**
-- Space Complexity: **_O(n)_**
+- Time Complexity: $$O(n \log n)$$
+- Space Complexity: $$O(n)$$
 - Where `n` is the length of the input array `nums`.
-- The time complexity is **_O(n log n)_** because we sort the array.
-- The space complexity is **_O(n)_** because we store the indices of the elements in the sorted array.
+- The time complexity is $$O(n \log n)$$ because we sort the array.
+- The space complexity is $$O(n)$$ because we store the indices of the elements in the sorted array.
 - This approach is efficient and is recommended for large inputs.
-- The total time complexity is **_O(n log n)_**. and the total space complexity is **_O(n)_**.
+- The total time complexity is $$O(n \log n)$$. and the total space complexity is $$O(n)$$.
 
 :::tip Note
 **Which is the best approach? and why?**
 
-The hash table approach is the most efficient among the three approaches. It has a time complexity of **_O(n)_** and is recommended for large inputs. The two-pointer approach also has a time complexity of **_O(n log n)_** but requires sorting the array, which may not be necessary in some cases. The brute force approach is the least efficient with a time complexity of **_O(n<sup>2</sup>)_** and is not recommended for large inputs.
+The hash table approach is the most efficient and is recommended for large inputs. The hash table lookup has an average time complexity of $$O(1)$$, which makes this approach efficient. The time complexity of the hash table approach is $$O(n)$$, which is better than the brute force approach with a time complexity of $$O(n^2)$$ and the two-pointer approach with a time complexity of $$O(n \log n)$$. The space complexity of the hash table approach is $$O(n)$$, which is the same as the two-pointer approach. Therefore, the hash table approach is the best approach for this problem.
+
 :::
 
-## Summary
+## Conclusion
 
-In this problem, we learned how to find two numbers in an array that add up to a target sum. We explored three different approaches to solve this problem:
-
-1. The brute force approach with a time complexity of **_O(n<sup>2</sup>)_**.
-2. The hash table approach with a time complexity of **_O(n)_**.
-3. The two-pointer approach with a time complexity of **_O(n log n)_**.
-4. The hash table approach is the most efficient and is recommended for large inputs.
+In this tutorial, we learned how to solve the Two Sum problem on LeetCode using different approaches. We discussed the brute force approach, the hash table approach, and the two-pointer approach. We implemented the solutions in JavaScript, TypeScript, Python, Java, and C++. We also analyzed the time and space complexity of each approach and compared them to determine the best approach for this problem. The hash table approach is the most efficient and is recommended for large inputs.
