@@ -140,10 +140,10 @@ const config = {
                 value: '<hr style="margin: 0.3rem 0;">',
               },
 
-              {
-                to: "/web-dev/",
-                html: '<span class="nav-emoji">🌐</span> Web Dev',
-              },
+              // {
+              //   to: "/web-dev/",
+              //   html: '<span class="nav-emoji">🌐</span> Web Dev',
+              // },
 
               {
                 type: "html",
@@ -151,8 +151,14 @@ const config = {
               },
 
               {
-                to: "/dsa/",
-                html: '<span class="nav-emoji">🧠</span> DSA',
+                type: "html",
+                value: `<div class="dropdown">
+                <a class="dropbtn" href="/dsa/"> DSA&nbsp; </a>
+                <div class="dropdown-content">
+                  <a href="/dsa-problems/" class="nav__icons"> Problems </a> <br />
+                  <a href="/dsa-solutions/" class="nav__icons"> Solutions </a>
+                </div>
+              </div>`,          
               },
             ],
           },
