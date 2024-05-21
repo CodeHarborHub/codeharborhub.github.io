@@ -14,8 +14,8 @@ const MyComponent = () => {
       {isLoggedIn && <p>Welcome back, {name}!</p>}
 
       <ul>
-        {fruits.map((fruit) => (
-          <li>{fruit}</li>
+        {fruits.map((fruit, index) => (
+          <li key={index}>{fruit}</li>
         ))}
       </ul>
 
@@ -24,6 +24,7 @@ const MyComponent = () => {
   );
 }
 
+// Another component to compose
 const Button = ({ text, onClick }) => {
   return <button onClick={onClick}>{text}</button>;
 }
