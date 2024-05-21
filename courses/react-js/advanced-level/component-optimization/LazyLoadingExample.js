@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import { Suspense } from "react";
 const LazyComponent = React.lazy(() => import("./LazyComponent"));
 const LazyLoadingExample = () => {
   return (

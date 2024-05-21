@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 function IfElseExample() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);

@@ -1,5 +1,3 @@
-import React from "react";
-
 function KeyPropExample() {
   const items = [
     { id: 1, name: "Apple" },

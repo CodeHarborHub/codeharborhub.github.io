@@ -1,8 +1,7 @@
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 
 const ExpensiveComponent = ({ value }) => {
   const expensiveFunction = (value) => {
-    // Expensive computation
     return value * 2;
   };
   const memoizedValue = useMemo(() => expensiveFunction(value), [value]);

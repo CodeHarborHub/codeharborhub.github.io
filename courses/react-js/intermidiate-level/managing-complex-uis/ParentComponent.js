@@ -1,4 +1,3 @@
-import React from "react";
 import ChildComponent from "./ChildComponent";
 
 function ParentComponent({ count, incrementCount }) {
