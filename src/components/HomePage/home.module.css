@@ -134,6 +134,7 @@
   min-height:8.55rem;
 }
 
+
 .feature_item img,
 .course_card img {
   width: 100%;
@@ -141,6 +142,8 @@
   border-radius: 5px;
   border-bottom: 1px solid #ccc;
   background: #f5f5f555;
+  position: relative;
+  z-index: 2;
 }
 
 .feature_item h3,
@@ -148,6 +151,8 @@
   padding: 0 10px;
   font-size: 1.5rem;
   margin-top: 10px;
+  position: relative;
+  z-index: 2;
 }
 
 .feature_item p,
@@ -155,6 +160,8 @@
   padding: 0 10px;
   font-size: 1rem;
   margin-top: 5px;
+  position: relative;
+  z-index: 2;
 }
 
 /* Animation */
