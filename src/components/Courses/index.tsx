@@ -58,6 +58,11 @@ const CourseItem = styled.div`
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 5px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  &:hover {
+  box-shadow: 0 0 10px 0 rgba(255, 64, 102, 1); transform: scale(1.05);
+  border-color: red;
+  }
 `;
 
 const CourseImage = styled.img`
