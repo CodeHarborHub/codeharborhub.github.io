@@ -7,8 +7,6 @@ description: "Learn how to lift state up in React to manage shared state across 
 tags: [courses, react-js, intermediate-level, state-management, lifting-state-up]
 ---
 
-import Counter from './Counter';
-
 In React applications, managing shared state between components can be challenging, especially when components are not directly related in the component tree. Lifting state up is a common pattern in React that allows you to manage shared state in a parent component and pass it down to child components as props. This lesson will introduce you to the concept of lifting state up and show you how to use it to share state between components in your React applications.
 
 ## What is lifting state up?
@@ -78,10 +76,6 @@ Here's an example of lifting state up in a React application:
 </Tabs>
 
 In this example, we have an `App` component that manages the `count` state using the `useState` hook. The `App` component passes the `count` state and an `incrementCount` function down to the `ParentComponent` as props. The `ParentComponent` then passes the `incrementCount` function down to the `ChildComponent` as a prop. When the `ChildComponent` button is clicked, it calls the `incrementCount` function to update the `count` state in the `App` component.
-
-<BrowserWindow>
-    <Counter />
-</BrowserWindow>
 
 By lifting the `count` state up to the `App` component, we can share the state between the `ParentComponent` and `ChildComponent` without having to pass the state through multiple levels of components. This pattern helps keep the application's data in sync and makes it easier to manage shared state across components.
 

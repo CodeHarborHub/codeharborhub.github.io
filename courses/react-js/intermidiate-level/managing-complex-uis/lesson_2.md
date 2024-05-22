@@ -7,8 +7,6 @@ description: "Learn about the challenges of prop drilling in React applications 
 tags: [courses, react-js, intermediate-level, state-management, prop-drilling, context-api, redux, state-management-libraries]
 ---
 
-import TodoApp from './TodoApp';
-
 In React applications, passing data through multiple levels of components using props can become cumbersome and lead to prop drilling. Prop drilling refers to the process of passing props down the component tree to child components that do not directly use the props, resulting in complex and hard-to-maintain code. This lesson will explore the challenges of prop drilling in React applications and discuss strategies to avoid them using context, Redux, or other state management libraries.
 
 ## What is prop drilling?
@@ -174,10 +172,6 @@ Let's look at an example of prop drilling in a React application for Todo list m
 </Tabs>
 
 In this example, the `TodoApp` component manages the state of todos and new todo text using the `useState` hook. It passes the todos array and `toggleTodo` function to the `TodoList` component as props. The `TodoList` component then maps over the todos array and renders a `TodoItem` component for each todo, passing the todo object and `toggleTodo` function as props.
-
-<BrowserWindow>
-    <TodoApp />
-</BrowserWindow>
 
 This example demonstrates prop drilling, as the `TodoApp` component passes down the todos array and `toggleTodo` function through the `TodoList` component to the `TodoItem` component. While this approach works for small applications, it can become cumbersome and hard to maintain as the application grows in complexity.
 
