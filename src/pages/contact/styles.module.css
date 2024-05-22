@@ -1,0 +1,88 @@
+.myform {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 2rem;
+    font-size: 16px;
+
+    .myinput {
+      width: 100%;
+      height: 35px;
+      padding: 7px;
+      outline: none;
+      border-radius: 5px;
+      border: 1px solid rgb(220, 220, 220);
+      margin-bottom: 0.5rem;
+
+      &:focus {
+        border: 2px solid rgba(0, 206, 158, 1);
+      }
+    }
+
+    .mytextarea {
+        max-width: 100%;
+        min-width: 100%;
+        width: 100%;
+        max-height: 100px;
+        min-height: 100px;
+        padding: 7px;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid rgb(220, 220, 220);
+  
+        &:focus {
+          border: 2px solid rgba(0, 206, 158, 1);
+        }
+      }
+
+    .mylabel {
+        margin-top: 1rem;
+    }
+
+    .inputsubmit {
+      margin-top: 2rem;
+      padding: 0.2rem;
+      width: 10rem;
+      height: 3rem;
+      font-size: larger;
+      border-radius: 10px;
+      cursor: pointer;
+      background: rgb(249, 105, 14);
+      color: white;
+      border: none;
+      margin-bottom: 2rem;
+
+    &:hover {
+        background-color: rgb(229, 96, 14);
+        transition: transform 0.3s ease-in-out;
+        transform: scale(1.07);;
+    }
+  }
+}
+
+.division {
+    display: flex;
+    gap: 2rem;
+}
+
+.image {
+    display: block;
+    margin: auto;
+}
+
+@media (max-width: 760px) {
+    .division {
+      flex-direction: column;
+      width: 90%;
+      height: auto;
+    }
+
+    .myform, .myinput, .mytextarea {
+        width: 90%;
+    }
+
+    .image {
+        display: none;
+    }
+  }

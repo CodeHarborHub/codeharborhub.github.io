@@ -279,7 +279,7 @@ const config = {
               },
               {
                 label: "Contact",
-                to: "#",
+                to: "/contact/",
               },
               {
                 label: "Careers",
