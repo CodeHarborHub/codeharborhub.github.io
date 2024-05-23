@@ -6,7 +6,7 @@ import styles from './styles.module.css';
  * Contact Us Page
  */
 
-const Index = () => {
+const Contact = () => {
   return (
     <Layout>
       <h1 style={{marginLeft: '2rem', marginTop: '1rem'}}>Contact Us</h1>
@@ -26,4 +26,4 @@ const Index = () => {
   )
 }
 
-export default Index;
+export default Contact;
