@@ -47,12 +47,20 @@ const Content = styles.div`
   margin-bottom: 20px;
 `;
 
+/**
+ * Cookie Section
+ **/
+
 const CookieSection = ({ title, children }) => (
   <section>
     <SubTitle>{title}</SubTitle>
     {children}
   </section>
 );
+
+/**
+ * Cookie Policy
+ **/
 
 const Cookiepolicy = () => {
   return (

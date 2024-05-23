@@ -47,6 +47,10 @@ const Content = styles.div`
   margin-bottom: 20px;
 `;
 
+/**
+ * Code of Conduct - section
+ **/
+
 const Section = ({ title, children }) => (
   <section>
     <SubTitle>{title}</SubTitle>
@@ -54,12 +58,20 @@ const Section = ({ title, children }) => (
   </section>
 );
 
+/**
+ * Code of Conduct - list item
+ **/
+
 const ListItem = ({ title, description }) => (
   <StyledLi>
     <strong>{title}</strong>
     <p>{description}</p>
   </StyledLi>
 );
+
+/**
+ * Code of Conduct
+ **/
 
 const Codeofconduct = () => {
   return (
