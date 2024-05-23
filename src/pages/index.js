@@ -19,7 +19,7 @@ export default function Home() {
       title={`Hello from ${siteConfig.title}`}
       description="Welcome to CodeHarborHub. Learn the basics to advanced concepts of web development. html, css, javascript, react, node.js, dsa, and more."
     >
-      <main>
+      <main className={styles.main__home}>
         <div className={styles.home__header}>
           <Header />
         </div>
