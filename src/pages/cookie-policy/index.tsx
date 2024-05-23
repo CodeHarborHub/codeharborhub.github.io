@@ -43,6 +43,9 @@ const StyledOl = styles.ol`
   margin-bottom: 20px;
 `;
 
+/**
+ * Cookie Policy
+ */
 
 const Cookiepolicy = () => {
   return (

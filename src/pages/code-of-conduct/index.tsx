@@ -43,6 +43,9 @@ const StyledOl = styles.ol`
   margin-bottom: 20px;
 `;
 
+/**
+ * Code Of Conduct Page
+ */
 
 const Codeofconduct = () => {
   return (
