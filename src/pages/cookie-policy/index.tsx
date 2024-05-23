@@ -1,8 +1,8 @@
 import React from 'react';
-import Layout from "@theme/Layout";
-import styles from "styled-components";
+import Layout from '@theme/Layout';
+import styles from 'styled-components';
 
-const CookiePolicy = styles.div`
+const CookiePolicyContainer = styles.div`
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
@@ -12,7 +12,7 @@ const CookiePolicy = styles.div`
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.6;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: justify;
 `;
 
@@ -20,10 +20,6 @@ const Title = styles.h2`
   margin-bottom: 20px;
   font-weight: 700;
   text-align: center;
-`;
-
-const Content = styles.p`
-  margin-bottom: 20px;
 `;
 
 const SubTitle = styles.h3`
@@ -43,54 +39,67 @@ const StyledOl = styles.ol`
   margin-bottom: 20px;
 `;
 
-/**
- * Cookie Policy
- */
+const Content = styles.div`
+  margin-bottom: 20px;
+`;
+
+const CookieSection = ({ title, children }) => (
+  <section>
+    <SubTitle>{title}</SubTitle>
+    {children}
+  </section>
+);
 
 const Cookiepolicy = () => {
   return (
     <Layout>
-        <CookiePolicy>
-            <Title>Cookie Policy</Title>
-            <Content>
-            <strong>Last Updated:</strong> 23rd May 2024
-          <br /> <br />
-          <SubTitle>Our Mission</SubTitle>
-          Welcome to CodeHarborHub. Our mission is to provide accessible and comprehensive educational resources to learners of all levels. This Cookie Policy explains how we use cookies on our website.<br/><br/>
-          <SubTitle>What Are Cookies?</SubTitle>
-          Cookies are small text files stored on your device when you visit a website. They help the site to remember your preferences and activities over time.<br/><br/>
-          <SubTitle>How We Use Cookies</SubTitle>
-          We use cookies to:<br/><br/>
-          <StyledUl>
-            <StyledLi>Enhance your user experience</StyledLi>
-            <StyledLi>Analyze our website traffic</StyledLi>
-            <StyledLi>Provide personalized content and advertisements</StyledLi>
-          </StyledUl><br/>
-          <SubTitle>Types of Cookies We Use</SubTitle><br/>
-          <StyledOl>
-            <StyledLi><strong>Essential Cookies</strong></StyledLi>
-            These cookies are necessary for our website to function properly and cannot be switched off in our systems.<br/><br/>
-            <StyledLi><strong>Performance Cookies</strong></StyledLi>
-            These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously.<br/><br/>
-            <StyledLi><strong>Functionality Cookies</strong></StyledLi>
-            These cookies enable the website to provide enhanced functionality and personalization based on your interactions.<br/><br/>
-            <StyledLi><strong>Targeting/Advertising Cookies</strong></StyledLi>
-            These cookies are used to deliver ads more relevant to you and your interests. They may be set by us or by third-party providers.<br/><br/>
-          </StyledOl>
-          <SubTitle><strong>Managing Cookies</strong></SubTitle>
-          You can manage or disable cookies through your browser settings. For more information on how to do this, visit your browser’s help section.<br/><br/>
-          <SubTitle><strong>Third-Party Cookies</strong></SubTitle>
-          We may use third-party cookies for various purposes such as analytics and advertising. These cookies are governed by the privacy policies of the respective third parties.<br/><br/>
-          <SubTitle><strong>Cookie Policy Updates</strong></SubTitle>
-          We may update this Cookie Policy from time to time. We will notify you of any significant changes by posting the new policy on our website and updating the date at the top of this page.<br/><br/>
-          <SubTitle><strong>Contact Us</strong></SubTitle>
-          If you have any questions or concerns about our Cookie Policy, please contact us at: 
-          <a href="mailto:ajaydhangar49@gmail.com" target="_blank"
-            rel="noopener noreferrer"> ajaydhangar49@gmail.com</a>.
-          </Content>
-        </CookiePolicy>
+      <CookiePolicyContainer>
+        <Title>Cookie Policy</Title>
+        <Content>
+          <p><strong>Last Updated:</strong> 23rd May 2024</p>
+          <CookieSection title="Our Mission">
+            <p>Welcome to CodeHarborHub. Our mission is to provide accessible and comprehensive educational resources to learners of all levels. This Cookie Policy explains how we use cookies on our website.</p>
+          </CookieSection>
+          <CookieSection title="What Are Cookies?">
+            <p>Cookies are small text files stored on your device when you visit a website. They help the site to remember your preferences and activities over time.</p>
+          </CookieSection>
+          <CookieSection title="How We Use Cookies">
+            <p>We use cookies to:</p>
+            <StyledUl>
+              <StyledLi>Enhance your user experience</StyledLi>
+              <StyledLi>Analyze our website traffic</StyledLi>
+              <StyledLi>Provide personalized content and advertisements</StyledLi>
+            </StyledUl>
+          </CookieSection>
+          <CookieSection title="Types of Cookies We Use">
+            <StyledOl>
+              <StyledLi><strong>Essential Cookies</strong></StyledLi>
+              <p>These cookies are necessary for our website to function properly and cannot be switched off in our systems.</p>
+              <StyledLi><strong>Performance Cookies</strong></StyledLi>
+              <p>These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously.</p>
+              <StyledLi><strong>Functionality Cookies</strong></StyledLi>
+              <p>These cookies enable the website to provide enhanced functionality and personalization based on your interactions.</p>
+              <StyledLi><strong>Targeting/Advertising Cookies</strong></StyledLi>
+              <p>These cookies are used to deliver ads more relevant to you and your interests. They may be set by us or by third-party providers.</p>
+            </StyledOl>
+          </CookieSection>
+          <CookieSection title="Managing Cookies">
+            <p>You can manage or disable cookies through your browser settings. For more information on how to do this, visit your browser’s help section.</p>
+          </CookieSection>
+          <CookieSection title="Third-Party Cookies">
+            <p>We may use third-party cookies for various purposes such as analytics and advertising. These cookies are governed by the privacy policies of the respective third parties.</p>
+          </CookieSection>
+          <CookieSection title="Cookie Policy Updates">
+            <p>We may update this Cookie Policy from time to time. We will notify you of any significant changes by posting the new policy on our website and updating the date at the top of this page.</p>
+          </CookieSection>
+          <CookieSection title="Contact Us">
+            <p>If you have any questions or concerns about our Cookie Policy, please contact us at:</p>
+            <p><a href="mailto:ajaydhangar49@gmail.com" target="_blank" rel="noopener noreferrer">ajaydhangar49@gmail.com</a></p>
+          </CookieSection>
+        </Content>
+      </CookiePolicyContainer>
     </Layout>
-  )
-}
+  );
+};
 
-export default Cookiepolicy
+export default Cookiepolicy;
