@@ -2,6 +2,10 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import styles from 'styled-components';
 
+/**
+ * Cookie Policy
+ **/
+
 const CookiePolicyContainer = styles.div`
   max-width: 800px;
   margin: 0 auto;
