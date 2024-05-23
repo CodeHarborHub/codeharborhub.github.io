@@ -304,11 +304,11 @@ const config = {
               },
               {
                 label: "Code of Conduct",
-                to: "#",
+                to: "/code-of-conduct",
               },
               {
                 label: "Cookie Policy",
-                to: "#",
+                to: "/cookie-policy",
               },
             ],
           },
