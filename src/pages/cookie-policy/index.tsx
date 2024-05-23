@@ -86,7 +86,7 @@ const Cookiepolicy = () => {
           <SubTitle><strong>Contact Us</strong></SubTitle>
           If you have any questions or concerns about our Cookie Policy, please contact us at: 
           <a href="mailto:ajaydhangar49@gmail.com" target="_blank"
-            rel="noopener noreferrer">{" "}ajaydhangar49@gmail.com</a>.
+            rel="noopener noreferrer"> ajaydhangar49@gmail.com</a>.
           </Content>
         </CookiePolicy>
     </Layout>
