@@ -1,57 +1,69 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import styles from 'styled-components';
-
-/**
- * Cookie Policy
- **/
-
-const CookiePolicyContainer = styles.div`
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 16px;
-  line-height: 1.6;
-  font-family: 'Open Sans', sans-serif;
-  text-align: justify;
-`;
-
-const Title = styles.h2`
-  margin-bottom: 20px;
-  font-weight: 700;
-  text-align: center;
-`;
-
-const SubTitle = styles.h3`
-  margin-bottom: 20px;
-  font-weight: 700;
-`;
-
-const StyledUl = styles.ul`
-  margin-bottom: 20px;
-`;
-
-const StyledLi = styles.li`
-  margin-bottom: 20px;
-`;
-
-const StyledOl = styles.ol`
-  margin-bottom: 20px;
-`;
-
-const Content = styles.div`
-  margin-bottom: 20px;
-`;
+import styled from 'styled-components';
 
 /**
  * Cookie Section
  **/
 
-const CookieSection = ({ title, children }) => (
+interface CookieSectionProps {
+  title: string;
+  children: React.ReactNode;
+}
+
+/**
+ * Styled Components
+ **/
+
+const CookiePolicyContainer = styled.div`
+  display: block;
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+
+  @media (max-width: 760px) {
+    width: 80%;
+  }
+`;
+
+const Title = styled.h2`
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-align: center;
+`;
+
+const SubTitle = styled.h3`
+  margin-bottom: 20px;
+  font-weight: 700;
+`;
+
+const StyledUl = styled.ul`
+  margin-bottom: 20px;
+`;
+
+const StyledLi = styled.li`
+  margin-bottom: 20px;
+`;
+
+const StyledOl = styled.ol`
+  margin-bottom: 20px;
+`;
+
+const Content = styled.div`
+  margin-bottom: 20px;
+`;
+
+/**
+ * Functional Components
+ **/
+
+const CookieSection: React.FC<CookieSectionProps> = ({ title, children }) => (
   <section>
     <SubTitle>{title}</SubTitle>
     {children}
@@ -62,7 +74,7 @@ const CookieSection = ({ title, children }) => (
  * Cookie Policy
  **/
 
-const Cookiepolicy = () => {
+const CookiePolicy: React.FC = () => {
   return (
     <Layout>
       <CookiePolicyContainer>
@@ -114,4 +126,4 @@ const Cookiepolicy = () => {
   );
 };
 
-export default Cookiepolicy;
+export default CookiePolicy;
