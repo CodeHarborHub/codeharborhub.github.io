@@ -2,23 +2,11 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import styled from 'styled-components';
 
-/**
- * Cookie Section
- **/
-
-interface CookieSectionProps {
-  title: string;
-  children: React.ReactNode;
-}
-
-/**
- * Styled Components
- **/
-
+// Styled Components
 const CookiePolicyContainer = styled.div`
+  width: 50%;
   display: block;
   margin: auto;
-  width: 50%;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -59,71 +47,124 @@ const Content = styled.div`
   margin-bottom: 20px;
 `;
 
-/**
- * Functional Components
- **/
-
-const CookieSection: React.FC<CookieSectionProps> = ({ title, children }) => (
+// Reusable Components
+const Section = ({ title, children }) => (
   <section>
     <SubTitle>{title}</SubTitle>
     {children}
   </section>
 );
 
-/**
- * Cookie Policy
- **/
+// Reusable Components
+const ListItem = ({ title, description }) => (
+  <StyledLi>
+    <strong>{title}</strong>
+    <p>{description}</p>
+  </StyledLi>
+);
 
-const CookiePolicy: React.FC = () => {
-  return (
-    <Layout>
-      <CookiePolicyContainer>
-        <Title>Cookie Policy</Title>
-        <Content>
-          <p><strong>Last Updated:</strong> 23rd May 2024</p>
-          <CookieSection title="Our Mission">
-            <p>Welcome to CodeHarborHub. Our mission is to provide accessible and comprehensive educational resources to learners of all levels. This Cookie Policy explains how we use cookies on our website.</p>
-          </CookieSection>
-          <CookieSection title="What Are Cookies?">
-            <p>Cookies are small text files stored on your device when you visit a website. They help the site to remember your preferences and activities over time.</p>
-          </CookieSection>
-          <CookieSection title="How We Use Cookies">
-            <p>We use cookies to:</p>
-            <StyledUl>
-              <StyledLi>Enhance your user experience</StyledLi>
-              <StyledLi>Analyze our website traffic</StyledLi>
-              <StyledLi>Provide personalized content and advertisements</StyledLi>
-            </StyledUl>
-          </CookieSection>
-          <CookieSection title="Types of Cookies We Use">
-            <StyledOl>
-              <StyledLi><strong>Essential Cookies</strong></StyledLi>
-              <p>These cookies are necessary for our website to function properly and cannot be switched off in our systems.</p>
-              <StyledLi><strong>Performance Cookies</strong></StyledLi>
-              <p>These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously.</p>
-              <StyledLi><strong>Functionality Cookies</strong></StyledLi>
-              <p>These cookies enable the website to provide enhanced functionality and personalization based on your interactions.</p>
-              <StyledLi><strong>Targeting/Advertising Cookies</strong></StyledLi>
-              <p>These cookies are used to deliver ads more relevant to you and your interests. They may be set by us or by third-party providers.</p>
-            </StyledOl>
-          </CookieSection>
-          <CookieSection title="Managing Cookies">
-            <p>You can manage or disable cookies through your browser settings. For more information on how to do this, visit your browser’s help section.</p>
-          </CookieSection>
-          <CookieSection title="Third-Party Cookies">
-            <p>We may use third-party cookies for various purposes such as analytics and advertising. These cookies are governed by the privacy policies of the respective third parties.</p>
-          </CookieSection>
-          <CookieSection title="Cookie Policy Updates">
-            <p>We may update this Cookie Policy from time to time. We will notify you of any significant changes by posting the new policy on our website and updating the date at the top of this page.</p>
-          </CookieSection>
-          <CookieSection title="Contact Us">
-            <p>If you have any questions or concerns about our Cookie Policy, please contact us at:</p>
-            <p><a href="mailto:ajaydhangar49@gmail.com" target="_blank" rel="noopener noreferrer">ajaydhangar49@gmail.com</a></p>
-          </CookieSection>
-        </Content>
-      </CookiePolicyContainer>
-    </Layout>
-  );
-};
+// Separate Sections as Components
+const LastUpdated = () => (
+  <p><strong>Last Updated:</strong> 23rd May 2024</p>
+);
+
+// Separate Sections as Components
+const Mission = () => (
+  <Section title="Our Mission">
+    <p>Welcome to CodeHarborHub. Our mission is to provide accessible and comprehensive educational resources to learners of all levels. This Cookie Policy explains how we use cookies on our website.</p>
+  </Section>
+);
+
+// Separate Sections as Components
+const WhatAreCookies = () => (
+  <Section title="What Are Cookies?">
+    <p>Cookies are small text files stored on your device when you visit a website. They help the site to remember your preferences and activities over time.</p>
+  </Section>
+);
+
+// Separate Sections as Components
+const HowWeUseCookies = () => (
+  <Section title="How We Use Cookies">
+    <p>We use cookies to:</p>
+    <StyledUl>
+      <StyledLi>Enhance your user experience</StyledLi>
+      <StyledLi>Analyze our website traffic</StyledLi>
+      <StyledLi>Provide personalized content and advertisements</StyledLi>
+    </StyledUl>
+  </Section>
+);
+
+// Separate Sections as Components
+const TypesOfCookies = () => (
+  <Section title="Types of Cookies We Use">
+    <StyledOl>
+      <ListItem
+        title="Essential Cookies"
+        description="These cookies are necessary for our website to function properly and cannot be switched off in our systems."
+      />
+      <ListItem
+        title="Performance Cookies"
+        description="These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously."
+      />
+      <ListItem
+        title="Functionality Cookies"
+        description="These cookies enable the website to provide enhanced functionality and personalization based on your interactions."
+      />
+      <ListItem
+        title="Targeting/Advertising Cookies"
+        description="These cookies are used to deliver ads more relevant to you and your interests. They may be set by us or by third-party providers."
+      />
+    </StyledOl>
+  </Section>
+);
+
+// Separate Sections as Components
+const ManagingCookies = () => (
+  <Section title="Managing Cookies">
+    <p>You can manage or disable cookies through your browser settings. For more information on how to do this, visit your browser’s help section.</p>
+  </Section>
+);
+
+// Separate Sections as Components
+const ThirdPartyCookies = () => (
+  <Section title="Third-Party Cookies">
+    <p>We may use third-party cookies for various purposes such as analytics and advertising. These cookies are governed by the privacy policies of the respective third parties.</p>
+  </Section>
+);
+
+// Separate Sections as Components
+const CookiePolicyUpdates = () => (
+  <Section title="Cookie Policy Updates">
+    <p>We may update this Cookie Policy from time to time. We will notify you of any significant changes by posting the new policy on our website and updating the date at the top of this page.</p>
+  </Section>
+);
+
+// Separate Sections as Components
+const ContactUs = () => (
+  <Section title="Contact Us">
+    <p>If you have any questions or concerns about our Cookie Policy, please contact us at:</p>
+    <p><a href="mailto:ajaydhangar49@gmail.com" target="_blank" rel="noopener noreferrer">ajaydhangar49@gmail.com</a></p>
+  </Section>
+);
+
+// Cookie Policy Component
+const CookiePolicy = () => (
+  <Layout>
+    <CookiePolicyContainer>
+      <Title>Cookie Policy</Title>
+      <Content>
+        <LastUpdated />
+        <Mission />
+        <WhatAreCookies />
+        <HowWeUseCookies />
+        <TypesOfCookies />
+        <ManagingCookies />
+        <ThirdPartyCookies />
+        <CookiePolicyUpdates />
+        <ContactUs />
+      </Content>
+    </CookiePolicyContainer>
+  </Layout>
+);
 
 export default CookiePolicy;

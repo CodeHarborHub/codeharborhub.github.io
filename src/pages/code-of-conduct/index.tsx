@@ -55,30 +55,12 @@ const Section = ({ title, children }) => (
   </section>
 );
 
+// Reusable Components
 const ListItem = ({ title, description }) => (
   <StyledLi>
     <strong>{title}</strong>
     <p>{description}</p>
   </StyledLi>
-);
-
-// Code of Conduct Component
-const CodeOfConduct = () => (
-  <Layout>
-    <CodeOfConductContainer>
-      <Title>Code Of Conduct</Title>
-      <Content>
-        <LastUpdated />
-        <OurPledge />
-        <OurStandards />
-        <EnforcementResponsibilities />
-        <Scope />
-        <Enforcement />
-        <EnforcementGuidelines />
-        <Attribution />
-      </Content>
-    </CodeOfConductContainer>
-  </Layout>
 );
 
 // Separate Sections as Components
@@ -110,7 +92,7 @@ const OurStandards = () => (
       <StyledLi>The use of sexualized language or imagery, and sexual attention or advances of any kind</StyledLi>
       <StyledLi>Trolling, insulting or derogatory comments, and personal or political attacks</StyledLi>
       <StyledLi>Public or private harassment</StyledLi>
-      <StyledLi>Publishing others' private information, such as a physical or email address, without their explicit permission</StyledLi>
+      <StyledLi>Publishing others&apos; private information, such as a physical or email address, without their explicit permission</StyledLi>
       <StyledLi>Other conduct which could reasonably be considered inappropriate in a professional setting</StyledLi>
     </StyledUl>
   </Section>
@@ -191,9 +173,28 @@ const EnforcementGuidelines = () => (
 const Attribution = () => (
   <Section title="Attribution">
     <p>This Code of Conduct is adapted from the <a href="https://www.contributor-covenant.org/" target="_blank" rel="noopener noreferrer">Contributor Covenant</a>, version 2.0, available at <a href="https://www.contributor-covenant.org/version/2/0/code_of_conduct/" target="_blank" rel="noopener noreferrer">https://www.contributor-covenant.org/version/2/0/code_of_conduct.html</a>.</p>
-    <p>Community Impact Guidelines were inspired by <a href="https://github.com/mozilla/inclusion" target="_blank" rel="noopener noreferrer">Mozilla's code of conduct enforcement ladder</a>.</p>
+    <p>Community Impact Guidelines were inspired by <a href="https://github.com/mozilla/inclusion" target="_blank" rel="noopener noreferrer">Mozilla&apos;s code of conduct enforcement ladder</a>.</p>
     <p>For answers to common questions about this code of conduct, see the FAQ at <a href="https://www.contributor-covenant.org/faq/" target="_blank" rel="noopener noreferrer">https://www.contributor-covenant.org/faq/</a>. Translations are available at <a href="https://www.contributor-covenant.org/translations" target="_blank" rel="noopener noreferrer">https://www.contributor-covenant.org/translations</a>.</p>
   </Section>
+);
+
+// Code of Conduct Component
+const CodeOfConduct = () => (
+  <Layout>
+    <CodeOfConductContainer>
+      <Title>Code Of Conduct</Title>
+      <Content>
+        <LastUpdated />
+        <OurPledge />
+        <OurStandards />
+        <EnforcementResponsibilities />
+        <Scope />
+        <Enforcement />
+        <EnforcementGuidelines />
+        <Attribution />
+      </Content>
+    </CodeOfConductContainer>
+  </Layout>
 );
 
 export default CodeOfConduct;
