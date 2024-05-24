@@ -1,4 +1,4 @@
-const MyComponent = () => {
+function MyComponent () {
   const name = "Ajay";
   const isLoggedIn = true;
   const fruits = ["apple", "banana", "orange"];
@@ -24,7 +24,6 @@ const MyComponent = () => {
   );
 }
 
-// Another component to compose
 const Button = ({ text, onClick }) => {
   return <button onClick={onClick}>{text}</button>;
 }
