@@ -1,19 +1,27 @@
 ---
 id: docs
 title: Welcome to CodeHarborHub Tutorials
-sidebar_label: Welcome to CodeHarborHub 
+sidebar_label: Welcome to CodeHarborHub
 sidebar_position: 1
 slug: /
 ---
 
 Hello, and welcome to CodeHarborHub! Our mission is to provide accessible and comprehensive educational resources to learners of all levels, from beginners to advanced professionals. Whether you're looking to kickstart your career in web development, master a new programming language, or stay updated on the latest tech trends, we've got you covered.
 
-With a team of experienced instructors and industry experts, we offer a diverse range of courses and learning paths tailored to meet your specific goals and interests. Join our community today and embark on your journey towards success in the tech industry! 
+With a team of experienced instructors and industry experts, we offer a diverse range of courses and learning paths tailored to meet your specific goals and interests. Join our community today and embark on your journey towards success in the tech industry!
 
 ## What is CodeHarborHub?
 
-CodeHarborHub is an online platform that offers a wide range of tech courses and tutorials to help you learn new skills and advance your career. Our courses cover a variety of topics, including web development, programming languages, data science, and more. Whether you're a beginner looking to get started in tech or an experienced professional looking to expand your skill set, we have something for everyone.
+<LiteYouTubeEmbed
+    id="lI3RBnK8V6Y"
+    params="autoplay=1&autohide=1&showinfo=0&rel=0"
+    title="CodeHarborHub Website Introduction | CodeHarborHub Website Overview | CodeHarborHub Website Features"
+    poster="maxresdefault"
+    webp />
 
+    <br />
+
+CodeHarborHub is an online platform that offers a wide range of tech courses and tutorials to help you learn new skills and advance your career. Our courses cover a variety of topics, including web development, programming languages, data science, and more. Whether you're a beginner looking to get started in tech or an experienced professional looking to expand your skill set, we have something for everyone.
 
 ## Why Choose CodeHarborHub?
 

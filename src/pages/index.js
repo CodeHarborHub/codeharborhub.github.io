@@ -33,7 +33,7 @@ export default function Home() {
         <Courses courses={coursesData} />
 
         <div className={styles.home__divider}>
-          <Heading as="h2">Features of CodeHarborHub</Heading>
+          <Heading as="h2">Features of {siteConfig.title}</Heading>
         </div>
 
         <Features features={featuresData} />
