@@ -1,4 +1,3 @@
-import React from "react";
 import { connect } from "react-redux";
 
 function Counter({ count, increment, decrement }) {

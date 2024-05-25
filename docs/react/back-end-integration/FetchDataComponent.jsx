@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 function FetchDataComponent() {
   const [userData, setUserData] = useState(null);
@@ -8,6 +8,9 @@ function FetchDataComponent() {
     async function fetchData() {
       try {
         const response = await fetch('https://api.github.com/users/Ajay-Dhangar');
+        if (!response.ok) {
+          throw new Error('Failed to fetch data');
+        }
         const data = await response.json();
         setUserData(data);
       } catch (error) {

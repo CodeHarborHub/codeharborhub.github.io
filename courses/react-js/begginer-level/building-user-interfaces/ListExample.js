@@ -1,5 +1,3 @@
-import React from "react";
-
 function ListExample() {
   const items = ["Apple", "Banana", "Cherry", "Date"];
 

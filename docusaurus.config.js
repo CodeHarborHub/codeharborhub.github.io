@@ -109,9 +109,13 @@ const config = {
                 value: `<div class="dropdown">
                 <a class="dropbtn" href="/docs/"> Tutorials </a>
                 <div class="dropdown-content">
-                  <a href="/docs/category/html/">HTML, </a>
-                  <a href="/docs/category/javascript/">JavaScript, </a>
-                  <a href="/docs/category/react/">React</a>                  
+                  <a href="/docs/category/html/" class="nav__icons"> <img src="/icons/html-5.svg" alt="HTML" /> </a>
+                  <a href="/docs/" class="nav__icons"> <img src="/icons/css.svg" alt="CSS" /> </a>
+                  <a href="/docs/category/javascript/" class="nav__icons" > <img src="/icons/js.svg" alt="JavaScript" /> </a>
+                  <a href="/docs/category/react/" class="nav__icons"> <img src="/icons/jsx.svg" alt="React" /> </a>                  
+                  <a href="/docs/category/typescript/" class="nav__icons"> <img src="/icons/ts.svg" alt="TypeScript" /> </a>                  
+                  <a href="/docs/category/python/" class="nav__icons"> <img src="/icons/py.svg" alt="Python" /> </a>                  
+                  <a href="/docs/category/java/" class="nav__icons"> <img src="/icons/java.svg" alt="Java" /> </a>                  
                 </div>
               </div>`,
               },
@@ -126,9 +130,7 @@ const config = {
                 value: `<div class="dropdown">
                 <a class="dropbtn" href="/courses/"> Courses&nbsp; </a>
                 <div class="dropdown-content">
-                  <a href="/courses/">HTML, </a>
-                  <a href="/courses/">JavaScript, </a>
-                  <a href="/courses/category/reactjs/">React</a>
+                  <a href="/courses/category/reactjs/" class="nav__icons"> <img src="/icons/jsx.svg" alt="React" /> </a>                  
                 </div>
               </div>`,
               },
@@ -138,10 +140,10 @@ const config = {
                 value: '<hr style="margin: 0.3rem 0;">',
               },
 
-              {
-                to: "/web-dev/",
-                html: '<span class="nav-emoji">🌐</span> Web Dev',
-              },
+              // {
+              //   to: "/web-dev/",
+              //   html: '<span class="nav-emoji">🌐</span> Web Dev',
+              // },
 
               {
                 type: "html",
@@ -149,8 +151,14 @@ const config = {
               },
 
               {
-                to: "/dsa/",
-                html: '<span class="nav-emoji">🧠</span> DSA',
+                type: "html",
+                value: `<div class="dropdown">
+                <a class="dropbtn" href="/dsa/"> DSA&nbsp; </a>
+                <div class="dropdown-content">
+                  <a href="/dsa-problems/" class="nav__icons"> Problems </a> <br />
+                  <a href="/dsa-solutions/" class="nav__icons"> Solutions </a>
+                </div>
+              </div>`,          
               },
             ],
           },
@@ -168,6 +176,11 @@ const config = {
             html: '<span class="nav-emoji"> 📊</span> Quiz',
             to: "https://quiz-app-ajay-dhangar.vercel.app/",
           },
+          {
+            html: '<span class="nav-emoji"> 📺</span> Broadcast',
+            to: "https://codeharborhub-broadcast-web.vercel.app/",
+          },
+
           {
             to: "/blog",
             html: '<span class="nav-emoji">📰</span> Blog',
@@ -291,11 +304,11 @@ const config = {
               },
               {
                 label: "Code of Conduct",
-                to: "#",
+                to: "/code-of-conduct",
               },
               {
                 label: "Cookie Policy",
-                to: "#",
+                to: "/cookie-policy",
               },
             ],
           },

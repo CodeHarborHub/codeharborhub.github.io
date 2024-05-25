@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "label": "Intermediate",
     "position": 2,
@@ -5,4 +6,13 @@
       "type": "generated-index",
       "description": "Learn the intermediate of the Data Structures."
     }
+=======
+{
+    "label": "Intermediate",
+    "position": 2,
+    "link": {
+      "type": "generated-index",
+      "description": "Learn the intermediate of the Data Structures."
+    }
+>>>>>>> ffdb98189e57785af0ab636ef7392311a2e98db9
   }
