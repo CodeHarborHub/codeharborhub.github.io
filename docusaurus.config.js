@@ -1,5 +1,5 @@
 import { themes as prismThemes } from "prism-react-renderer";
-import npm2yarn from "@docusaurus/remark-plugin-npm2yarn";
+import { default as npm2yarn } from "@docusaurus/remark-plugin-npm2yarn";
 const remarkMath = require("remark-math");
 const rehypeKatex = require("rehype-katex");
 
@@ -10,22 +10,15 @@ const config = {
   title: "CodeHarborHub",
   tagline: "A place to learn and grow",
   favicon: "img/favicon_io/favicon.ico",
-
   url: process.env.URL || "http://localhost:3000/",
-  // baseUrl: process.env.BASE_URL,
   baseUrl: "/",
   customFields: {
     admin: "Ajay Dhangar",
     superman: "Shivay",
-    teamEmail: process.env.EMAIL,
-    GTM_ID: process.env.GTM_ID,
-    GA_ID: process.env.GA_ID,
-    ALGOLIA_APP_ID: process.env.ALGOLIA_APP_ID,
-    ALGOLIA_API_KEY: process.env.ALGOLIA_API_KEY,
   },
 
-  organizationName: "ajay-dhangar",
-  projectName: "code-harbor-hub",
+  organizationName: "codeharborhub",
+  projectName: "codeharborhub",
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -81,8 +74,9 @@ const config = {
       image: "img/nav-logo.jpg",
       announcementBar: {
         id: "announcementBar",
-        content: `⭐️ If you like CodeHarborHub, give it a star on <a target="_blank" href="https://github.com/codeharborhub/codeharborhub">GitHub</a> and join us on <a target="_blank" href="https://www.linkedin.com/groups/14232119/">LinkedIn</a> ⭐️`,
+        content: '⭐️ If you like CodeHarborHub, give it a star on <a target="_blank" href="https://github.com/codeharborhub/codeharborhub">GitHub</a> and join us on <a target="_blank" href="https://www.linkedin.com/groups/14232119/">LinkedIn</a> ⭐️',
         isCloseable: true,
+        backgroundColor: "var(--ifm-color-primary)",
       },
 
       algolia: {
@@ -193,7 +187,7 @@ const config = {
               {
                 label: "🏷️ Tutorial Tags 📚",
                 to: "/docs/tags/",
-                activeBaseRegex: `/docs/tags/`,
+                activeBaseRegex: "/docs/tags/",
               },
 
               {
@@ -204,7 +198,7 @@ const config = {
               {
                 label: "🏷️ Courses Tags 🎓",
                 to: "/courses/tags/",
-                activeBaseRegex: `/courses/tags/`,
+                activeBaseRegex: "/courses/tags/",
               },
               {
                 type: "html",
@@ -214,7 +208,7 @@ const config = {
               {
                 label: "🏷️ DSA Tags 🧠",
                 to: "/dsa/tags/",
-                activeBaseRegex: `/dsa/tags/`,
+                activeBaseRegex: "/dsa/tags/",
               },
             ],
           },
@@ -235,15 +229,15 @@ const config = {
         style: "dark",
         links: [
           {
-            title: ` `,
+            title: " ",
             items: [
               {
                 html: `
                     <div class="footer_info--container">
-                      <img src="/img/logo.png" alt="Footer logo" />
-                      <p>
-                        Welcome to CodeHarborHub, a place to learn and grow. We are a community of developers, creators, and learners
-                      </p>
+                      <img src="/img/nav-logo.jpg" alt="Footer logo" />
+                      <span>
+                      Our mission at CodeHarborHub is clear: to provide accessible and comprehensive educational resources to learners of all levels, from beginners to advanced professionals.
+                      </span>
                     </div>
                   `,
               },
@@ -261,12 +255,12 @@ const config = {
                 to: "/courses",
               },
               {
-                label: "Web Dev",
-                to: "/web-dev",
+                label: "DSA Problems",
+                to: "/dsa-problems/",
               },
               {
-                label: "DSA",
-                to: "/docs/dsa/",
+                label: "DSA Solutions",
+                to: "/dsa-solutions/",
               },
             ],
           },
@@ -440,12 +434,6 @@ const config = {
             href: "/img/favicon_io/apple-touch-icon.png",
           },
           {
-            tagName: "link",
-            rel: "mask-icon",
-            href: "/img/docusaurus.svg",
-            color: "rgb(37, 194, 160)",
-          },
-          {
             tagName: "meta",
             name: "msapplication-TileImage",
             content: "/img/favicon_io/android-chrome-192x192.png",
@@ -475,7 +463,6 @@ const config = {
         id: "community",
         path: "community",
         routeBasePath: "community",
-        // editUrl: "#",
         sidebarPath: require.resolve("./sidebarsCommunity.js"),
         remarkPlugins: [remarkMath],
         rehypePlugins: [rehypeKatex],
@@ -490,7 +477,6 @@ const config = {
         id: "dsa",
         path: "dsa",
         routeBasePath: "dsa",
-        // editUrl: "#",
         sidebarPath: require.resolve("./sidebarsDSA.js"),
         remarkPlugins: [remarkMath],
         rehypePlugins: [rehypeKatex],
@@ -505,7 +491,6 @@ const config = {
         id: "product",
         path: "product",
         routeBasePath: "product",
-        // editUrl: "#",
         sidebarPath: require.resolve("./sidebarsProduct.js"),
         remarkPlugins: [remarkMath],
         rehypePlugins: [rehypeKatex],
@@ -520,7 +505,6 @@ const config = {
         id: "courses",
         path: "courses",
         routeBasePath: "courses",
-        // editUrl: "#",
         sidebarPath: require.resolve("./sidebarsCourses.js"),
         remarkPlugins: [remarkMath],
         rehypePlugins: [rehypeKatex],
@@ -550,29 +534,13 @@ const config = {
         id: "dsa-problems",
         path: "dsa-problems",
         routeBasePath: "dsa-problems",
-        // editUrl: "#",
         sidebarPath: require.resolve("./sidebarsDSAProblems.js"),
         remarkPlugins: [remarkMath],
         rehypePlugins: [rehypeKatex],
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
       },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
-      {
-        id: "web-dev",
-        path: "web-dev",
-        routeBasePath: "web-dev",
-        // editUrl: "#",
-        sidebarPath: require.resolve("./sidebarsWebDev.js"),
-        remarkPlugins: [remarkMath],
-        rehypePlugins: [rehypeKatex],
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
-      },
-    ],
+    ],    
     [
       path.join(__dirname, "/plugins/my-plugin"),
       {
