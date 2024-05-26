@@ -149,8 +149,8 @@ Let’s set up a development environment using Visual Studio Code, a favorite am
 
 ## In Conclusion
 
-Setting up your development environment for HTML coding is a crucial step towards becoming a proficient web developer. Whether you choose a powerful IDE like Visual Studio Code, a lightweight editor like Sublime Text, or a simple tool like Notepad++, the key is to find what works best for you and your workflow.<br>
+Setting up your development environment for HTML coding is a crucial step towards becoming a proficient web developer. Whether you choose a powerful IDE like Visual Studio Code, a lightweight editor like Sublime Text, or a simple tool like Notepad++, the key is to find what works best for you and your workflow.<br />
 
-For most users, especially beginners, Visual Studio Code is an excellent choice due to its extensive features, flexibility, and community support. It strikes a great balance between power and usability, making it a favorite among developers of all skill levels.<br>
+For most users, especially beginners, Visual Studio Code is an excellent choice due to its extensive features, flexibility, and community support. It strikes a great balance between power and usability, making it a favorite among developers of all skill levels.<br />
 
 So, go ahead, set up your development environment, and start coding your way to web development greatness. Happy coding, and may your HTML always be well-formed!
