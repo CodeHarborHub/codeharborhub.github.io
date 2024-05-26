@@ -1,3 +1,4 @@
+// skipcq: JS-W1028
 import React, { useEffect, useRef } from "react";
 import "./header.css";
 import Link from "@docusaurus/Link";
