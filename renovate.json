@@ -17,6 +17,6 @@
   "prHourlyLimit": 5,
   "prConcurrentLimit": 10,
   "labels": ["dependencies"],
-  "reviewers": ["your-github-username"],
-  "assignees": ["your-github-username"]
+  "reviewers": ["Ajay-Dhangar"],
+  "assignees": ["Ajay-Dhangar"]
 }
