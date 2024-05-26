@@ -16,9 +16,6 @@ tags:
   ]
 ---
 
-import ListExample from "./ListExample";
-import KeyPropExample from "./KeyPropExample";
-
 In this lesson, you will learn how to render dynamic lists in React using arrays and the `map()` function. Dynamic lists allow you to display a collection of items in your components, such as a list of products, blog posts, or user comments. By iterating over an array of data and generating list items, you can create dynamic and interactive user interfaces.
 
 ## Introduction to rendering dynamic lists
@@ -50,7 +47,10 @@ export default ListExample;
 ```
 
 <BrowserWindow minHeight="300px">
-  <ListExample />
+  - Apple
+  - Banana
+  - Cherry
+  - Date
 </BrowserWindow>
 
 In this example, we define a functional component called `ListExample` that renders a list of items using the `map()` function. The `items` array contains four fruit names, and we use the `map()` function to generate a list item for each element in the array. The `key` prop is used to provide a unique identifier for each list item.
@@ -85,7 +85,10 @@ export default KeyPropExample;
 ```
 
 <BrowserWindow minHeight="300px">
-  <KeyPropExample />
+  - Apple
+  - Banana
+  - Cherry
+  - Date
 </BrowserWindow>
 
 In this example, we define a list of items as an array of objects, where each object contains an `id` and a `name` property. We use the `id` property as the `key` prop for each list item to ensure that React can identify and track the items correctly.
@@ -125,4 +128,3 @@ In this example, we define a list of products as an array of objects, where each
 ## Conclusion
 
 Rendering dynamic lists in React using arrays and the `map()` function is a powerful technique for displaying collections of data in your components. By iterating over an array of data and generating list items dynamically, you can create interactive and data-driven user interfaces. Remember to provide a unique `key` prop for each list item to optimize list rendering and maintain component state effectively.
-```

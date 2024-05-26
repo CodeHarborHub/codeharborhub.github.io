@@ -16,9 +16,6 @@ tags:
   ]
 ---
 
-import WelcomeMessage from "./WelcomeMessage";
-import Counter from "./Counter";
-
 In this lesson, we will explore the concept of components in React and understand the structure and usage of functional and class-based components. Components are the building blocks of a React application, and they encapsulate the UI elements and logic of the application.
 
 ## What are components in React?
@@ -143,14 +140,30 @@ In this practice session, you will create a new functional component and a class
    export default App;
    ```
 
-    Now, run your React application and test the `WelcomeMessage` and `Counter` components to see how they work.
+   Now, run your React application and test the `WelcomeMessage` and `Counter` components to see how they work.
 
-    <BrowserWindow>
-        <div>
-            <WelcomeMessage />
-            <Counter />
-        </div>
-    </BrowserWindow>
+     <BrowserWindow>
+         <div>
+             Welcome to React!
+             <div>
+                <p>Count: <span id="count">0</span></p>
+                <button
+                style={{
+                  marginTtop: "10px",                  
+                  paddingTop: "15px",
+                  paddingBottom: "0",
+                  fontSize: "16px"}}
+                    onClick={
+                      () => {
+                        let count = parseInt(document.getElementById('count').textContent); document.getElementById('count').textContent = count + 1;
+                      }
+                    }
+                >
+                  Increment
+                </button>
+              </div>
+         </div>
+     </BrowserWindow>
 
 4. Experiment with the `WelcomeMessage` and `Counter` components by customizing their content and functionality. Try adding new features or modifying the existing components to enhance your React application. After making changes, test the components to see the updated behavior. And share your experience with us on our [Discord Community](https://discord.gg/5VjTyJcf).
 
@@ -164,7 +177,6 @@ In this practice session, you will create a new functional component and a class
 4. What are the benefits of using components in a React application, and how do they help in building scalable and maintainable applications?
 
 :::
-
 
 :::tip Quick Recap
 
