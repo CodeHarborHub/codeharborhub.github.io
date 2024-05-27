@@ -2,7 +2,6 @@
 import React, { useEffect, useRef } from "react";
 import "./header.css";
 import Link from "@docusaurus/Link";
-import VanillaTilt from "vanilla-tilt";
 
 /**
  * Renders the header component of the application.
@@ -44,21 +43,18 @@ const HeaderImage = () => {
   const imgRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
-    if (imgRef.current) {
-      VanillaTilt.init(imgRef.current, {
-        max: 25,
-        speed: 400,
-        glare: true,
-        "max-glare": 0.5,
-      });
+    interface VanillaTiltElement extends HTMLElement {
+      vanillaTilt?: {
+        destroy: () => void;
+      };
     }
 
-    // Cleanup function to destroy VanillaTilt instance
-    return () => {
-      if (imgRef.current && imgRef.current.vanillaTilt) {
-        imgRef.current.vanillaTilt.destroy();
+    if (imgRef.current && (imgRef.current as VanillaTiltElement).vanillaTilt) {
+      const { vanillaTilt } = imgRef.current as VanillaTiltElement;
+      if (vanillaTilt) {
+        vanillaTilt.destroy();
       }
-    };
+    }
   }, []);
 
   return (
