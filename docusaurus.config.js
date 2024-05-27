@@ -74,7 +74,7 @@ const config = {
       image: "img/nav-logo.jpg",
       announcementBar: {
         id: "announcementBar",
-        content: '⭐️ If you like CodeHarborHub, give it a star on <a target="_blank" href="https://github.com/codeharborhub/codeharborhub">GitHub</a> and join us on <a target="_blank" href="https://www.linkedin.com/groups/14232119/">LinkedIn</a> ⭐️',
+        content: '⭐️ If you like CodeHarborHub, give it a star on <a target="_blank" href="https://github.com/codeharborhub/codeharborhub">GitHub</a> and join us on <a target="_blank" href="https://www.linkedin.com/company/codeharborhub/">LinkedIn</a> ⭐️',
         isCloseable: true,
         backgroundColor: "var(--ifm-color-primary)",
       },
@@ -332,7 +332,7 @@ const config = {
             items: [
               {
                 label: "LinkedIn",
-                href: "https://www.linkedin.com/groups/14232119/",
+                href: "https://www.linkedin.com/company/codeharborhub/",
               },
               {
                 label: "YouTube",
