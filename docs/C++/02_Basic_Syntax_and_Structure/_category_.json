@@ -1,0 +1,8 @@
+{
+    "label": "The Basics of C++ Syntax and Structure",
+    "position": 3,
+    "link": {
+      "type": "generated-index",
+      "description": "In this section, you will learn about the basics of C++ syntax, the details of how the language is structured and the data types and operators that make up C++."
+    }
+}

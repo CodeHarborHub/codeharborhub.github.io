@@ -1,0 +1,8 @@
+{
+    "label": "Introduction To C++",
+    "position": 2,
+    "link": {
+      "type": "generated-index",
+      "description": "In this section, you will learn about the basics of the C++ programming language. You will learn about the many features that make C++ unqiue, you'll learn how to install it on your machine, and how to write and run your first C++ program."
+    }
+}

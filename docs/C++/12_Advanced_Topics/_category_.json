@@ -1,0 +1,8 @@
+{
+    "label": "Advanced Topics in C++",
+    "position": 13,
+    "link": {
+      "type": "generated-index",
+      "description": "In this section, you will dive into advanced topics in C++, expanding your knowledge and expertise beyond the basics. You will explore sophisticated features such as template programming, advanced topics in STL, and C++ multi-threading. By mastering these advanced topics, you will be equipped to tackle complex programming challenges and develop high-performance, cutting-edge C++ applications."
+    }
+}

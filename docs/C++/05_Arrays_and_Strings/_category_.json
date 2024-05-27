@@ -1,0 +1,8 @@
+{
+    "label": "Arrays and Strings in C++",
+    "position": 6,
+    "link": {
+      "type": "generated-index",
+      "description": "In this section, you will learn about arrays and strings in C++, the fundamental structures for storing and manipulating sequences of data. We will cover how to declare, initialize, and access arrays, as well as the various ways to handle and operate on strings, enabling you to efficiently manage collections of data in your programs."
+    }
+}

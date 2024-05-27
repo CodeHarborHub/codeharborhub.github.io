@@ -1,0 +1,8 @@
+{
+    "label": "C++",
+    "position": 9,
+    "link": {
+      "type": "generated-index",
+      "description": "C++ is a powerful, high-performance programming language developed by Bjarne Stroustrup in 1983. It extends the C language with object-oriented features, allowing for both low-level memory manipulation and high-level abstractions. C++ supports multiple programming paradigms, including procedural, object-oriented, and generic programming, making it versatile for various applications. It is widely used in system/software development, game programming, real-time simulations, and performance-critical applications. C++ offers robust standard libraries, enabling efficient and effective code reuse. Its combination of efficiency, flexibility, and rich feature set has made it a staple in the programming world."
+    }
+}

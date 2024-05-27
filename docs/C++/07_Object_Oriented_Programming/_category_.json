@@ -1,0 +1,8 @@
+{
+    "label": "Object Oriented Programming in C++",
+    "position": 8,
+    "link": {
+      "type": "generated-index",
+      "description": "In this section, you will learn about object-oriented programming (OOP) in C++, a paradigm that organizes software design around data, or objects, rather than functions and logic. We will cover key concepts such as classes, objects, inheritance, polymorphism, and encapsulation, providing you with the tools to create modular, reusable, and maintainable C++ code."
+    }
+}

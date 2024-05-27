@@ -1,0 +1,8 @@
+{
+    "label": "Functions In C++",
+    "position": 5,
+    "link": {
+      "type": "generated-index",
+      "description": "In this section, you will learn about functions in C++, the building blocks that allow you to organize and modularize your code. We will cover the syntax for defining and calling functions, the use of parameters and return values, and best practices for creating reusable and maintainable code with functions."
+    }
+}
