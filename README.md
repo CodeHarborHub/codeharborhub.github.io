@@ -9,6 +9,7 @@ Welcome to CodeHarborHub! Your gateway to top-notch tech education. **Tired of l
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.codeharborhub.live%2F)](https://www.codeharborhub.live/)
 [![License](https://img.shields.io/github/license/CodeHarborHub/codeharborhub)](https://github.com/CodeHarborHub/codeharborhub/blob/main/LICENSE)
 [![Contributors](https://img.shields.io/github/contributors/CodeHarborHub/codeharborhub)](https://github.com/CodeHarborHub/codeharborhub/graphs/contributors)
+[![](https://img.shields.io/badge/Discord-5865F2.svg?style=for-the-badge&logo=Discord&logoColor=white)](https://discord.com/channels/1231112132595028008/1238672287037919333)
 
 ## About
 
