@@ -75,6 +75,7 @@ Stay updated with the latest news and announcements:
 
 - Follow us on [Twitter](https://twitter.com/CodesWithAjay)
 - Follow us on [LinkedIn](https://www.linkedin.com/groups/14232119/)
+- Join our Discord channel [GSSoC'24](https://discord.com/channels/1231112132595028008/1238672287037919333)
 
 ## License
 
