@@ -29,7 +29,7 @@ const TWEETS: TweetItem[] = [
     date: "May 28, 2024",
     content: (
       <>
-        Can't believe how much I've learned from @CodeHarborHub in just a few
+        Can&apos;t believe how much I&apos;ve learned from @CodeHarborHub in just a few
         weeks. Their hands-on projects are amazing! #WebDevelopment
         #CodeHarborHub
       </>
@@ -44,7 +44,7 @@ const TWEETS: TweetItem[] = [
     date: "May 28, 2024",
     content: (
       <>
-        Loving the data science courses on @CodeHarborHub. It's all free and ad-free. Perfect for anyone looking to upskill. #DataScience #FreeLearning
+        Loving the data science courses on @CodeHarborHub. It&apos;s all free and ad-free. Perfect for anyone looking to upskill. #DataScience #FreeLearning
       </>
     ),
     showOnHomepage: true,
@@ -96,7 +96,7 @@ const TWEETS: TweetItem[] = [
     date: "May 28, 2024",
     content: (
       <>
-        If you're looking to learn AI and machine learning, @CodeHarborHub is the place to be. Comprehensive and free! #MachineLearning #AI #CodeHarborHub
+        If you&apos;re looking to learn AI and machine learning, @CodeHarborHub is the place to be. Comprehensive and free! #MachineLearning #AI #CodeHarborHub
       </>
     ),
     showOnHomepage: true,
