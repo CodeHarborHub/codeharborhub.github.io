@@ -9,7 +9,6 @@ Welcome to CodeHarborHub! Your gateway to top-notch tech education. **Tired of l
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.codeharborhub.live%2F)](https://www.codeharborhub.live/)
 [![License](https://img.shields.io/github/license/CodeHarborHub/codeharborhub)](https://github.com/CodeHarborHub/codeharborhub/blob/main/LICENSE)
 [![Contributors](https://img.shields.io/github/contributors/CodeHarborHub/codeharborhub)](https://github.com/CodeHarborHub/codeharborhub/graphs/contributors)
-[![](https://img.shields.io/badge/Discord-5865F2.svg?style=for-the-badge&logo=Discord&logoColor=white)](https://discord.com/channels/1231112132595028008/1238672287037919333)
 
 ## About
 
@@ -22,6 +21,11 @@ At CodeHarborHub, our mission is clear: to provide accessible and comprehensive 
 - **Inspiring Showcases**: Explore inspiring showcases of real-world projects and innovative web solutions.
 - **Engaging Community**: Connect with a vibrant community of developers, share knowledge, and collaborate on projects.
 
+## Discord Channel for GSSoC 2024 Contributors
+
+Now, resolve your all doubts and communicate with our all contributors.
+
+[![](https://img.shields.io/badge/Discord-5865F2.svg?style=for-the-badge&logo=Discord&logoColor=white)](https://discord.com/channels/1231112132595028008/1238672287037919333)
 
 ## Getting Started
 
