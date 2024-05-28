@@ -12,7 +12,7 @@ import Header from "../components/HomePage/Header";
 import Tweet from "../components/Tweet";
 import Tweets, { type TweetItem } from "../data/tweets";
 
-function TweetsSection() {
+function TweetsSection(): React.JSX.Element {
   const tweetColumns: TweetItem[][] = [[], [], []];
   Tweets.filter((tweet) => tweet.showOnHomepage).forEach((tweet, i) =>
     tweetColumns[i % 3]!.push(tweet)
@@ -43,7 +43,7 @@ function TweetsSection() {
   );
 }
 
-export default function Home(): JSX.Element {
+export default function Home(): React.JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
