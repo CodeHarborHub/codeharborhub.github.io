@@ -30,3 +30,7 @@
   height: 2px;
   background-color: var(--ifm-color-primary);
 }
+
+.section {
+  padding: 1rem;
+}
