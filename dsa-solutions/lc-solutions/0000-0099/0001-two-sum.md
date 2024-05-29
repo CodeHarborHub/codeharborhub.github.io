@@ -95,10 +95,10 @@ function twoSumProblem() {
   return (
     <div>
       <p>
-        <b>Input:</b> nums = {("[", nums.join(", "), "]")}, target = {target}
+        <b>Input:</b> nums = {("["+ nums.join(", ")+ "]")}, target = {target}
       </p>
       <p>
-        <b>Output:</b> {("[", result.join(", "), "]")}
+        <b>Output:</b> {("["+ result.join(", ")+ "]")}
       </p>
     </div>
   );
@@ -233,10 +233,10 @@ function twoSumProblem() {
   return (
     <div>
       <p>
-        <b>Input:</b> nums = {("[", nums.join(", "), "]")}, target = {target}
+        <b>Input:</b> nums = {("["+ nums.join(", ")+ "]")}, target = {target}
       </p>
       <p>
-        <b>Output:</b> {("[", result.join(", "), "]")}
+        <b>Output:</b> {("["+ result.join(", ")+ "]")}
       </p>
     </div>
   );
@@ -391,10 +391,10 @@ function twoSumProblem() {
   return (
     <div>
       <p>
-        <b>Input:</b> nums = {("[", nums.join(", "), "]")}, target = {target}
+        <b>Input:</b> nums = {("["+ nums.join(", ")+ "]")}, target = {target}
       </p>
       <p>
-        <b>Output:</b> {("[", result.join(", "), "]")}
+        <b>Output:</b> {("["+ result.join(", ")+ "]")}
       </p>
     </div>
   );
