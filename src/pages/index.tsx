@@ -1,18 +1,49 @@
-// import clsx from "clsx";
+import clsx from "clsx";
 // import Link from "@docusaurus/Link";
+import React from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-// import OurInstructors from "@site/src/components/OurInstructors";
-// import GiscusComponent from "@site/src/components/GiscusComponent";
-
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
 import Features from "../components/HomePage/Features";
 import Courses from "../components/HomePage/Courses";
 import { featuresData, coursesData } from "../database/home";
 import Header from "../components/HomePage/Header";
+import Tweet from "../components/Tweet";
+import Tweets, { type TweetItem } from "../data/tweets";
 
-export default function Home() {
+function TweetsSection(): React.JSX.Element {
+  const tweetColumns: TweetItem[][] = [[], [], []];
+  Tweets.filter((tweet) => tweet.showOnHomepage).forEach((tweet, i) =>
+    tweetColumns[i % 3]!.push(tweet)
+  );
+
+  return (
+    <div className={clsx(styles.section, styles.sectionAlt)}>
+      <div className="tweets-container">
+        <div className={styles.home__divider}>
+          <Heading
+            as="h2"
+            className={clsx("text--center")}
+          >
+            Loved by many Users
+          </Heading>
+        </div>
+        <div className={clsx("row", styles.tweetsSection)}>
+          {tweetColumns.map((tweetItems, i) => (
+            <div className="col col--4" key={i}>
+              {tweetItems.map((tweet) => (
+                <Tweet {...tweet} key={tweet.url} />
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function Home(): React.JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
@@ -38,14 +69,7 @@ export default function Home() {
 
         <Features features={featuresData} />
 
-        {/* 
-        <div className={styles.home__divider}>
-          <Heading as="h2">Join the Discussion</Heading>
-        </div> */}
-
-        {/* <div>
-          <GiscusComponent />
-        </div> */}
+        <TweetsSection />
       </main>
     </Layout>
   );

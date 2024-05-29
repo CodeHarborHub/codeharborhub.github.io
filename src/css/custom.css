@@ -335,3 +335,7 @@ table, tr, td, th {
   height: 35px;
   border-radius: 50%;
 }
+
+.row .col .card {
+  margin-top: 10px;
+}
