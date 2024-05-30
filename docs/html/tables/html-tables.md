@@ -2,7 +2,7 @@
 id: html-tables
 title: HTML Tables
 sidebar_label: HTML Tables
-sidebar_position: 2
+sidebar_position: 1
 tags: [html, tables, web development, markup language, structure, data presentation, web design, web pages, websites, table attributes, table structure]
 description: This guide will introduce you to HTML tables, their importance, and how to use them to organize data on web pages. You'll learn about creating tables, structuring rows and columns, and customizing tables with HTML attributes.
 ---

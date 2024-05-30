@@ -7,9 +7,7 @@ tags: [html, web-development, headings]
 description: In this tutorial, you will learn about headings in HTML. Headings are used to define the structure of a web page and are used to provide a hierarchy of information.
 ---
 
-# Heading into HTML: A Comprehensive Guide to HTML Headings
-
-Hello, fellow web adventurers! Today, we’re setting off on an exciting journey to explore one of the fundamental building blocks of HTML: headings. Whether you’re a coding novice or a seasoned developer, understanding how to use headings effectively can transform your web pages from bland to grand. So, grab a comfy seat, maybe a snack, and let’s dive headfirst into the world of HTML headings.
+Today, we’re setting off on an exciting journey to explore one of the fundamental building blocks of HTML: headings. Whether you’re a coding novice or a seasoned developer, understanding how to use headings effectively can transform your web pages from bland to grand. So, grab a comfy seat, maybe a snack, and let’s dive headfirst into the world of HTML headings.
 
 ## What Are Headings?
 
@@ -32,24 +30,38 @@ Here’s a quick look at each heading level:
 
 Creating headings in HTML is straightforward. Here’s an example of how to use each heading level:
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML Headings Example</title>
-</head>
-<body>
-  <h1>This is an H1 Heading</h1>
-  <h2>This is an H2 Heading</h2>
-  <h3>This is an H3 Heading</h3>
-  <h4>This is an H4 Heading</h4>
-  <h5>This is an H5 Heading</h5>
-  <h6>This is an H6 Heading</h6>
-</body>
-</html>
-```
+<Tabs>
+    <TabItem value="HTML">
+     ```html
+      <!DOCTYPE html>
+      <html lang="en">
+       <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>HTML Headings Example</title>
+        </head>
+        <body>
+         <h1>This is an H1 Heading</h1>
+         <h2>This is an H2 Heading</h2>
+         <h3>This is an H3 Heading</h3>
+         <h4>This is an H4 Heading</h4>
+         <h5>This is an H5 Heading</h5>
+         <h6>This is an H6 Heading</h6>
+       </body>
+      </html>
+     ```
+    </TabItem>
+    <TabItem value="Output">
+    <BrowserWindow url ="http://127.0.0.1:5500/index.html">
+        <h1>This is an H1 Heading</h1>
+        <h2>This is an H2 Heading</h2>
+        <h3>This is an H3 Heading</h3>
+        <h4>This is an H4 Heading</h4>
+        <h5>This is an H5 Heading</h5>
+        <h6>This is an H6 Heading</h6>
+    </BrowserWindow>
+    </TabItem>
+</Tabs>
 
 In this example, each heading level is displayed, showing the hierarchical structure and relative size differences.
 
