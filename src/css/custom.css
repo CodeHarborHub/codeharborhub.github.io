@@ -134,12 +134,13 @@ mark {
 }
 
 .footer_info--container {
-  width: 400px;
+  width: 380px;
 }
 
 .footer_info--container img {
-  width: 150px;
+  width: 62px;
   border-radius: 8px;
+  padding: 0.2rem;  
 }
 
 @media screen and (max-width: 420px) {
@@ -191,8 +192,13 @@ mark {
   }
 }
 
+
 .footer .container a {
   text-decoration: none;
+}
+
+.footer__bottom {
+  margin-top: 40px;
 }
 
 .footer__copyright a { 
@@ -328,4 +334,8 @@ table, tr, td, th {
   width: 35px;
   height: 35px;
   border-radius: 50%;
+}
+
+.row .col .card {
+  margin-top: 10px;
 }

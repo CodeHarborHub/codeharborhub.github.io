@@ -1,3 +1,11 @@
+.main__home {
+  background: linear-gradient(rgb(255 255 255), rgb(255 255 255/50%));
+}
+
+[data-theme='dark'] .main__home {
+  background: linear-gradient(rgb(15 23 42), rgb(15 23 42/50%));
+}
+
 .home__header {
   margin: 1rem;
 }
@@ -21,4 +29,8 @@
   width: 100px;
   height: 2px;
   background-color: var(--ifm-color-primary);
+}
+
+.section {
+  padding: 1rem;
 }

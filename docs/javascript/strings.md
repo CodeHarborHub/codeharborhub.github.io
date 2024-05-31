@@ -323,7 +323,7 @@ console.log(message); // Hello, Ajay!
 ```
 
 :::info 
-Template literals are enclosed by the back-tick (&lt) (grave accent) character instead of double or single quotes.
+Template literals are enclosed by the back-tick `(<)` (grave accent) character instead of double or single quotes.
 :::
 
 ## Conclusion

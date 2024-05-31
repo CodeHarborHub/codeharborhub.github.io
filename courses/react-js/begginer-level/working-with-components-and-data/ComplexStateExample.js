@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 function ComplexStateExample() {
   const [user, setUser] = useState({ name: "Ajay", age: 24 });

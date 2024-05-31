@@ -15,9 +15,6 @@ tags:
   ]
 ---
 
-import MyComponent from "./MyComponent.js";
-
-
 In this lesson, we will explore JSX (JavaScript XML) and learn how to use it to build UI elements in React. JSX is a syntax extension for JavaScript that allows you to write HTML-like code within your JavaScript files. It provides a more readable and concise way to define UI components in React.
 
 ## What is JSX?
@@ -116,10 +113,6 @@ export default MyComponent;
 ```
 
 In this example, we define a functional component called `MyComponent` that renders a greeting message, conditional text, an image, a conditional paragraph, a list of fruits, and a composed `Button` component. We use JSX features like embedding expressions, defining attributes, conditional rendering, mapping arrays, and composing components to build the UI structure.
-
-<BrowserWindow>
-  <MyComponent />
-</BrowserWindow>
 
 Try modifying the JSX code and exploring different features to understand how JSX works and how you can use it to build UI elements in React.
 

@@ -7,9 +7,6 @@ description: "Learn how to conditionally render content in React based on compon
 tags: [courses, react-js, beginner-level, building-user-interfaces, conditional-rendering, if-else, ternary-operator, logical-operators]
 ---
 
-import IfElseExample from "./IfElseExample";
-import TernaryOperatorExample from "./TernaryOperatorExample";
-
 In this lesson, you will learn how to conditionally render content in React based on component state. Conditional rendering allows you to display different elements or components based on certain conditions, such as user interactions, API responses, or internal component state.
 
 ## Introduction to conditional rendering in React
@@ -52,10 +49,6 @@ function IfElseExample() {
 export default IfElseExample;
 ```
 
-<BrowserWindow minHeight="300px">
-  <IfElseExample />
-</BrowserWindow>
-
 In this example, we define a functional component called `IfElseExample` that conditionally renders content based on the `isLoggedIn` state. If the user is logged in (`isLoggedIn` is `true`), we display a welcome message and a "Logout" button. Otherwise, we show a "Login" button to allow the user to log in.
 
 ## Using the ternary operator for conditional rendering
@@ -85,10 +78,6 @@ function TernaryOperatorExample() {
 
 export default TernaryOperatorExample;
 ```
-
-<BrowserWindow minHeight="300px">
-  <TernaryOperatorExample />
-</BrowserWindow>
 
 In this example, we define a functional component called `TernaryOperatorExample` that uses the ternary operator to conditionally render content based on the `isError` state. If an error occurs (`isError` is `true`), we display an error message in red text. Otherwise, we show a button that triggers the error when clicked.
 

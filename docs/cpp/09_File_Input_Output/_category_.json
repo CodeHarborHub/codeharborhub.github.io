@@ -1,0 +1,8 @@
+{
+    "label": "File Input and Output in C++",
+    "position": 10,
+    "link": {
+      "type": "generated-index",
+      "description": "In this section, you will learn about file input and output in C++, the processes for reading from and writing to files. We will cover how to use file streams, open and close files, and perform various file operations, enabling you to efficiently manage data storage and retrieval in your C++ programs."
+    }
+}
