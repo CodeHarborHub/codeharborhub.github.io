@@ -10,33 +10,46 @@ description: "This is a solution to the Add Two Numbers problem on LeetCode."
 ---
 ## Problem Description
 
-You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
+| Problem Statement                                             | Solution Link                                                                                                                                                             | LeetCode Profile                                    |
+| :------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :-------------------------------------------------- |
+| [Add Two Numbers on LeetCode](https://leetcode.com/problems/add-two-numbers/) | [Add Two Numbers Solution on LeetCode](https://leetcode.com/problems/add-two-numbers/solutions/5234194/solution/) | [Amruta Jayanti](https://leetcode.com/u/user7669cY/)|
+
+
+## Problem Description
+
+You are given two `non-empty` linked lists representing two non-negative integers. The digits are stored in `reverse order`, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
 
 You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 
  
 
-Example 1:
+**Example 1:**
 
-
+```plaintext
 Input: l1 = [2,4,3], l2 = [5,6,4]
 Output: [7,0,8]
 Explanation: 342 + 465 = 807.
-Example 2:
+```
 
+**Example 2:**
+
+```plaintext
 Input: l1 = [0], l2 = [0]
 Output: [0]
-Example 3:
+```
 
+**Example 3:**
+
+```plaintext
 Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
 Output: [8,9,9,9,0,0,0,1]
- 
+``` 
 
-Constraints:
+### Constraints:
 
-The number of nodes in each linked list is in the range [1, 100].
-0 <= Node.val <= 9
-It is guaranteed that the list represents a number that does not have leading zeros.
+- The number of nodes in each linked list is in the range `[1, 100]`.
+- `0 <= Node.val <= 9`
+- It is guaranteed that the list represents a number that does not have leading zeros.
 
 
 ## Solution to the problem
@@ -86,9 +99,72 @@ class Solution(object):
 Above is the implementation in Python. Here total_sum stores the value and adds to the dummy. Variable carry is used to handle the carry bits.
 
 #### Complexity Analysis:
-- Time Complexity : $$O(max(n,m))$$ .Here, n,m are the lengths of the input linked lists
+- Time Complexity : $$O(max(n,m))$$ Here, n,m are the lengths of the input linked lists
 - Space Complexity : $$O(max(n,m))$$
 
+#### Codes in different languages:
+`CPP`:
+```cpp
+class Solution {
+public:
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+        ListNode* dummyHead = new ListNode(0);
+        ListNode* tail = dummyHead;
+        int carry = 0;
+
+        while (l1 != nullptr || l2 != nullptr || carry != 0) {
+            int digit1 = (l1 != nullptr) ? l1->val : 0;
+            int digit2 = (l2 != nullptr) ? l2->val : 0;
+
+            int sum = digit1 + digit2 + carry;
+            int digit = sum % 10;
+            carry = sum / 10;
+
+            ListNode* newNode = new ListNode(digit);
+            tail->next = newNode;
+            tail = tail->next;
+
+            l1 = (l1 != nullptr) ? l1->next : nullptr;
+            l2 = (l2 != nullptr) ? l2->next : nullptr;
+        }
+
+        ListNode* result = dummyHead->next;
+        delete dummyHead;
+        return result;
+    }
+};
+```
+
+`Java`:
+```java
+class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode dummyHead = new ListNode(0);
+        ListNode tail = dummyHead;
+        int carry = 0;
+
+        while (l1 != null || l2 != null || carry != 0) {
+            int digit1 = (l1 != null) ? l1.val : 0;
+            int digit2 = (l2 != null) ? l2.val : 0;
+
+            int sum = digit1 + digit2 + carry;
+            int digit = sum % 10;
+            carry = sum / 10;
+
+            ListNode newNode = new ListNode(digit);
+            tail.next = newNode;
+            tail = tail.next;
+
+            l1 = (l1 != null) ? l1.next : null;
+            l2 = (l2 != null) ? l2.next : null;
+        }
+
+        ListNode result = dummyHead.next;
+        dummyHead.next = null;
+        return result;
+    }
+}
+```
 
 
 
