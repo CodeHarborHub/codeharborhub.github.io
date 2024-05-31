@@ -15,8 +15,8 @@ description: "This is a solution to the Two Sum problem on LeetCode."
 
 ## Problem Description
 
-|Problem Statement | Solution Link | LeetCode Profile|
-|:---|:---|:---|
+| Problem Statement                                             | Solution Link                                                                                                                                                             | LeetCode Profile                                    |
+| :------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :-------------------------------------------------- |
 | [Two Sum on LeetCode](https://leetcode.com/problems/two-sum/) | [Two Sum Solution on LeetCode](https://leetcode.com/problems/two-sum/solutions/4958021/two-sum-problem-solution-using-hash-table-ts-js-java-py-cpp-recommended-solutions) | [Ajay Dhangar](https://leetcode.com/ajaydhangar49/) |
 
 ## Problem Description
@@ -34,7 +34,7 @@ You can return the answer in any order.
 ```plaintext
 Input: nums = [2,7,11,15], target = 9
 Output: [0,1]
-``` 
+```
 
 **`Example 2:`**
 
@@ -67,7 +67,9 @@ Output: [0,1]
 
 The problem can be solved using a brute force approach, a hash table, or the two-pointer technique. The brute force approach has a time complexity of $$O(n^2)$$, while the hash table and two-pointer techniques have a time complexity of $$O(n)$$. The hash table approach is the most efficient and is recommended for large inputs.
 
-### Approach 1: Brute Force (Naive)
+<Tabs>
+ <tabItem value="Brute Force" label="Brute Force">
+  ### Approach 1: Brute Force (Naive)
 
 The brute force approach is simple. We iterate through each element `nums[i]` and check if there is another element `nums[j]` such that `nums[i] + nums[j] == target`. If we find such a pair, we return the indices `[i, j]`.
 
@@ -92,8 +94,12 @@ function twoSumProblem() {
   const result = twoSum(nums, target);
   return (
     <div>
-      <p><b>Input:</b> nums = {"[", nums.join(", "), "]"}, target = {target}</p>
-      <p><b>Output:</b> {"[", result.join(", "), "]"}</p>
+      <p>
+        <b>Input:</b> nums = {("["+ nums.join(", ")+ "]")}, target = {target}
+      </p>
+      <p>
+        <b>Output:</b> {("["+ result.join(", ")+ "]")}
+      </p>
     </div>
   );
 }
@@ -116,6 +122,7 @@ function twoSumProblem() {
     return [];
     }
     ```
+
   </TabItem>
   <TabItem value="TypeScript" label="TypeScript">  
    ```typescript
@@ -131,6 +138,7 @@ function twoSumProblem() {
       return [];
     }
     ```
+
   </TabItem>
   <TabItem value="Python" label="Python">  
    ```python
@@ -141,8 +149,9 @@ function twoSumProblem() {
                 if nums[i] + nums[j] == target:
                    return [i, j]
 
-        return []        
+        return []
     ```
+
   </TabItem>
   <TabItem value="Java" label="Java">  
    ```java
@@ -160,6 +169,7 @@ function twoSumProblem() {
         }
     }
     ```
+
   </TabItem>
   <TabItem value="C++" label="C++">  
    ```cpp
@@ -178,9 +188,9 @@ function twoSumProblem() {
         }
     };
     ```
+
   </TabItem>  
 </Tabs>
-
 
 #### Complexity Analysis
 
@@ -190,6 +200,9 @@ function twoSumProblem() {
 - The time complexity is $$O(n^2)$$ because we are iterating through the array twice.
 - The space complexity is $$O(1)$$ because we are not using any extra space.
 - This approach is not efficient and is not recommended for large inputs.
+
+</tabItem>
+<tabItem value="Hash Table" label="Hash Table">
 
 ### Approach 2: Using Hash Table
 
@@ -202,25 +215,29 @@ function twoSumProblem() {
   const nums = [2, 7, 11, 15];
   const target = 9;
 
-    const twoSum = function (nums, target) {
-        const numMap = new Map();
+  const twoSum = function (nums, target) {
+    const numMap = new Map();
 
-        for (let i = 0; i < nums.length; i++) {
-        const complement = target - nums[i];
-        if (numMap.has(complement)) {
-            return [numMap.get(complement), i];
-        }
-        numMap.set(nums[i], i);
-        }
+    for (let i = 0; i < nums.length; i++) {
+      const complement = target - nums[i];
+      if (numMap.has(complement)) {
+        return [numMap.get(complement), i];
+      }
+      numMap.set(nums[i], i);
+    }
 
-        return [];
-    };
+    return [];
+  };
 
   const result = twoSum(nums, target);
   return (
     <div>
-      <p><b>Input:</b> nums = {"[", nums.join(", "), "]"}, target = {target}</p>
-      <p><b>Output:</b> {"[", result.join(", "), "]"}</p>
+      <p>
+        <b>Input:</b> nums = {("["+ nums.join(", ")+ "]")}, target = {target}
+      </p>
+      <p>
+        <b>Output:</b> {("["+ result.join(", ")+ "]")}
+      </p>
     </div>
   );
 }
@@ -245,6 +262,7 @@ function twoSumProblem() {
       return [];
     }
     ```
+
   </TabItem>
   <TabItem value="TypeScript" label="TypeScript">  
    ```typescript
@@ -262,6 +280,7 @@ function twoSumProblem() {
       return [];
     }
     ```
+
   </TabItem>
   <TabItem value="Python" label="Python">  
    ```python
@@ -276,6 +295,7 @@ function twoSumProblem() {
 
         return []
     ```
+
   </TabItem>
   <TabItem value="Java" label="Java">  
    ```java
@@ -295,6 +315,7 @@ function twoSumProblem() {
         }
     }
     ```
+
   </TabItem>
   <TabItem value="C++" label="C++">  
    ```cpp
@@ -315,9 +336,9 @@ function twoSumProblem() {
         }
     };
     ```
+
   </TabItem>
 </Tabs>
-
 
 #### Complexity Analysis
 
@@ -330,6 +351,9 @@ function twoSumProblem() {
 - The hash table lookup has an average time complexity of $$O(1)$$, which makes this approach efficient.
 - The space complexity is $$O(n)$$ because we store at most `n` elements in the hash table.
 - The total time complexity is $$O(n)$$. and the total space complexity is $$O(n)$$.
+
+</tabItem>
+<tabItem value="Two Pointer" label="Two Pointer">
 
 ### Approach 3: Using Two Pointers
 
@@ -366,8 +390,12 @@ function twoSumProblem() {
   const result = twoSum(nums, target);
   return (
     <div>
-      <p><b>Input:</b> nums = {"[", nums.join(", "), "]"}, target = {target}</p>
-      <p><b>Output:</b> {"[", result.join(", "), "]"}</p>
+      <p>
+        <b>Input:</b> nums = {("["+ nums.join(", ")+ "]")}, target = {target}
+      </p>
+      <p>
+        <b>Output:</b> {("["+ result.join(", ")+ "]")}
+      </p>
     </div>
   );
 }
@@ -399,6 +427,7 @@ function twoSumProblem() {
       return [];
     }
     ```
+
   </TabItem>
   <TabItem value="TypeScript" label="TypeScript">  
    ```typescript
@@ -423,6 +452,7 @@ function twoSumProblem() {
       return [];
     }
     ```
+
   </TabItem>
   <TabItem value="Python" label="Python">  
    ```python
@@ -443,6 +473,7 @@ function twoSumProblem() {
 
         return []
     ```
+
   </TabItem>
   <TabItem value="Java" label="Java">  
    ```java
@@ -473,6 +504,7 @@ function twoSumProblem() {
         }
     }
     ```
+
   </TabItem>
   <TabItem value="C++" label="C++">  
    ```cpp
@@ -506,6 +538,7 @@ function twoSumProblem() {
         }
     };
     ```
+
   </TabItem>  
 </Tabs>
 
@@ -518,6 +551,9 @@ function twoSumProblem() {
 - The space complexity is $$O(n)$$ because we store the indices of the elements in the sorted array.
 - This approach is efficient and is recommended for large inputs.
 - The total time complexity is $$O(n \log n)$$. and the total space complexity is $$O(n)$$.
+
+</tabItem>
+</Tabs>
 
 :::tip Note
 **Which is the best approach? and why?**

@@ -1,7 +1,7 @@
 ---
 id: cpp-syntax-basics
-title: C++ Syntax Basics
-sidebar_label: C++ Syntax Basics
+title: Basics Syntax and Structure of C++ 
+sidebar_label: Syntax and Structure
 sidebar_position: 1
 tags:
   [

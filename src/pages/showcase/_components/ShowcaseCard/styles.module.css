@@ -69,10 +69,6 @@
   font-size: smaller;
   line-height: 1.66;
 }
-li:hover{
-  scale: 1.05;
-  transition: scale 0.5s;
-}
 
 .cardFooter {
   display: flex;
