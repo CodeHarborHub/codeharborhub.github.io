@@ -74,7 +74,8 @@ const config = {
       image: "img/nav-logo.jpg",
       announcementBar: {
         id: "announcementBar",
-        content: '⭐️ If you like CodeHarborHub, give it a star on <a target="_blank" href="https://github.com/codeharborhub/codeharborhub">GitHub</a> and join us on <a target="_blank" href="https://www.linkedin.com/company/codeharborhub/">LinkedIn</a> ⭐️',
+        content:
+          '⭐️ If you like CodeHarborHub, give it a star on <a target="_blank" href="https://github.com/codeharborhub/codeharborhub">GitHub</a> and join us on <a target="_blank" href="https://www.linkedin.com/company/codeharborhub/">LinkedIn</a> ⭐️',
         isCloseable: true,
         backgroundColor: "var(--ifm-color-primary)",
       },
@@ -110,6 +111,7 @@ const config = {
                   <a href="/docs/category/typescript/" class="nav__icons"> <img src="/icons/ts.svg" alt="TypeScript" /> </a>                  
                   <a href="/docs/category/python/" class="nav__icons"> <img src="/icons/py.svg" alt="Python" /> </a>                  
                   <a href="/docs/category/java/" class="nav__icons"> <img src="/icons/java.svg" alt="Java" /> </a>                  
+                  <a href="/docs/category/tailwind/" class="nav__icons"> <img src="/icons/tailwind.png" alt="Tailwind" /> </a>                  
                 </div>
               </div>`,
               },
@@ -152,7 +154,7 @@ const config = {
                   <a href="/dsa-problems/" class="nav__icons"> Problems </a> <br />
                   <a href="/dsa-solutions/" class="nav__icons"> Solutions </a>
                 </div>
-              </div>`,          
+              </div>`,
               },
             ],
           },
@@ -540,7 +542,7 @@ const config = {
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
       },
-    ],    
+    ],
     [
       path.join(__dirname, "/plugins/my-plugin"),
       {
