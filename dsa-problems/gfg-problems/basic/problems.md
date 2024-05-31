@@ -19,13 +19,13 @@ export const problems = [
     {
         "problemName": "2. Preorder Traversal",
         "difficulty": "basic",
-        "gfgLink": "https://geeksforgeeks.org/problems/preorder-traversal/0",
+        "leetCodeLink": "https://geeksforgeeks.org/problems/preorder-traversal/0",
         "solutionLink": "#"
     },
     {
         "problemName": "3. Peak element",
         "difficulty": "basic",
-        "gfgLink": "https://www.geeksforgeeks.org/problems/peak-element/0",
+        "leetCodeLink": "https://www.geeksforgeeks.org/problems/peak-element/0",
         "solutionLink": "#"
     },
     {
@@ -59,7 +59,7 @@ export const problems = [
         "solutionLink": "#"
     },
     {
-        "problemName": "9. Find minimum and maximum element in an arra",
+        "problemName": "9. Find minimum and maximum element in an array",
         "difficulty": "basic",
         "leetCodeLink": "https://www.geeksforgeeks.org/problems/find-minimum-and-maximum-element-in-an-array4428/0",
         "solutionLink": "#"
