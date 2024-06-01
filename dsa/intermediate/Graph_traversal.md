@@ -16,7 +16,7 @@ tags:
   - java
   - programming
   - tutorial
-sidebar_position: 5
+sidebar_position: 3
 ---
 ## What is Graph Data Structure
 Graph Data Structure is a collection of vertices connected by edges. The vertices(V) are also referred as nodes and lines connecting any two nodes are called edges(E). A graph is denoted by G(V,E).
