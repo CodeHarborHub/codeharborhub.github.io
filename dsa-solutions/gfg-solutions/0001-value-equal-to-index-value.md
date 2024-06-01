@@ -15,7 +15,7 @@ description: "This is a solution to the Value Equal to Index Value problem on Ge
 
 ## Problem Description
 
-Given an array Arr of N positive integers. Your task is to find the elements whose value is equal to that of its index value ( Consider 1-based indexing ).<br />
+Given an array Arr of N positive integers. Your task is to find the elements whose value is equal to that of its index value (Consider 1-based indexing).
 
 Note: There can be more than one element in the array which have the same value as its index. You need to include every such element's index. Follows 1-based indexing of the array.
 
@@ -52,16 +52,16 @@ You don't need to read input or print anything. Your task is to complete the fun
 
 ## Problem Explanation
 
-The problem involves finding elements in an array whose values match their index positions, considering 1-based indexing. This means if an element's value matches its position in the array when counting from 1 (not 0), it should be included in the result.<br />
+The problem involves finding elements in an array whose values match their index positions, considering 1-based indexing. This means if an element's value matches its position in the array when counting from 1 (not 0), it should be included in the result.
 
 Example:
 
 * Given an array [15, 2, 45, 12, 7]:
-    - At 0-based index 0, the value is 15 (not equal to 1)
-    - At 0-based index 1, the value is 2 (equal to 2)
-    - At 0-based index 2, the value is 45 (not equal to 3)
-    - At 0-based index 3, the value is 12 (not equal to 4)
-    - At 0-based index 4, the value is 7 (not equal to 5)
+    - At 1-based index 1, the value is 15 (not equal to 1)
+    - At 1-based index 2, the value is 2 (equal to 2)
+    - At 1-based index 3, the value is 45 (not equal to 3)
+    - At 1-based index 4, the value is 12 (not equal to 4)
+    - At 1-based index 5, the value is 7 (not equal to 5)
 
 The only element that matches its index is 2 at index 2.
 
@@ -108,17 +108,17 @@ For the array `[15, 2, 45, 12, 7]` with length `n = 5`:
 * Initialize an empty list: `result = []`
 * Loop through the array with indices from 0 to 4:
     - Check element at index 0 (1-based index 1): 15 ≠ 1
-    Check element at index 1 (1-based index 2): 2 = 2 (add to result)
-    Check element at index 2 (1-based index 3): 45 ≠ 3
-    Check element at index 3 (1-based index 4): 12 ≠ 4
-    Check element at index 4 (1-based index 5): 7 ≠ 5
+    - Check element at index 1 (1-based index 2): 2 = 2 (add to result)
+    - Check element at index 2 (1-based index 3): 45 ≠ 3
+    - Check element at index 3 (1-based index 4): 12 ≠ 4
+    - Check element at index 4 (1-based index 5): 7 ≠ 5
 
 Final `result` list: `[2]`
 
 ## Time Complexity
 
-The time complexity of this solution is O(N) where N is the number of elements in the array. This is because the solution involves a single pass through the array to check each element against its 1-based index.
+The time complexity of this solution is $O(N)$ where N is the number of elements in the array. This is because the solution involves a single pass through the array to check each element against its 1-based index.
 
 ## Space Complexity
 
-The space complexity is O(1) for the input space, and O(K) for the output space, where K is the number of elements matching the condition. In the worst case, if all elements match, the space used by the result list will be O(N).
+The space complexity is $O(1)$ for the input space, and $O(K)$ for the output space, where K is the number of elements matching the condition. In the worst case, if all elements match, the space used by the result list will be $O(N)$.
