@@ -220,10 +220,10 @@ class Solution:
 ```
 Complexity Analysis
 Time Complexity
-Let T, P be the lengths of the text and the pattern respectively. The work for every call to dp(i, j) for i=0,...,T; j=0,...,P is done once, and it is O(1) work. Hence, the time complexity is O(TP).
+Let T, P be the lengths of the text and the pattern respectively. The work for every call to dp(i, j) for i=0,...,T; j=0,...,P is done once, and it is $O(1)$ work. Hence, the time complexity is $O(TP)$.
 
 Space Complexity
-The only memory we use is the O(TP) boolean entries in our cache. Hence, the space complexity is O(TP)
+The only memory we use is the $O(TP)$ boolean entries in our cache. Hence, the space complexity is $O(TP)$
 
 
 Now, just as you asked, the last part should include the summary and links to the problem, solution, and profile. Let's add that:

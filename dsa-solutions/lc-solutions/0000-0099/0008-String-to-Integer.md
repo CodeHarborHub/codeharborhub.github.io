@@ -139,8 +139,8 @@ class Solution {
 
 ### Complexity Analysis
 
-- **Time Complexity**: O(n), where n is the length of the string `s`.
-- **Space Complexity**: O(1), due to the constant number of variables used.
+- **Time Complexity**: $O(n)$, where n is the length of the string `s`.
+- **Space Complexity**: $O(1)$, due to the constant number of variables used.
 
 ## Conclusion
 

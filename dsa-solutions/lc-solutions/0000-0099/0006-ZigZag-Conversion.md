@@ -204,24 +204,24 @@ class Solution:
 
 #### Approach 1: Iterative Approach
 
-- **Time Complexity**: O(n), where n is the length of the input string `s`. We iterate through the entire string once.
-- **Space Complexity**: O(n), where n is the length of the input string `s`. We use a StringBuilder to store the output.
+- **Time Complexity**: $O(n)$, where n is the length of the input string `s`. We iterate through the entire string once.
+- **Space Complexity**: $O(n)$, where n is the length of the input string `s`. We use a StringBuilder to store the output.
 
 #### Approach 2: Using StringBuilder Rows
 
-- **Time Complexity**: O(n), where n is the length of the input string `s`. We iterate through the entire string once to fill the rows of the StringBuilder.
-- **Space Complexity**: O(n), where n is the length of the input string `s`. We use a StringBuilder to store the output.
+- **Time Complexity**: $O(n)$, where n is the length of the input string `s`. We iterate through the entire string once to fill the rows of the StringBuilder.
+- **Space Complexity**:$O(n)$, where n is the length of the input string `s`. We use a StringBuilder to store the output.
 
 #### Approach 3: Direct Construction
 
-- **Time Complexity**: O(n), where n is the length of the input string `s`. We iterate through the entire string once to construct the output string.
-- **Space Complexity**: O(n), where n is the length of the input string `s`. We use a StringBuilder to store the output.
+- **Time Complexity**: $O(n)$, where n is the length of the input string `s`. We iterate through the entire string once to construct the output string.
+- **Space Complexity**: $O(n)$, where n is the length of the input string `s`. We use a StringBuilder to store the output.
 
 #### Approach 4: Using Mathematical Formula
 
-- **Time Complexity**: O(n), where n is the length of the input string `s`. We iterate through the entire string once to construct the output string.
-- **Space Complexity**: O(n), where n is the length of the input string `s`. We use a StringBuilder to store the output.
+- **Time Complexity**: $O(n)$, where n is the length of the input string `s`. We iterate through the entire string once to construct the output string.
+- **Space Complexity**: $O(n)$, where n is the length of the input string `s`. We use a StringBuilder to store the output.
 
 ### Conclusion
 
-We explored four different approaches to solve the Zigzag Conversion problem, each offering a unique perspective and trade-offs in terms of simplicity and efficiency. All four approaches have a linear time complexity of O(n), where n is the length of the input string `s`. The space complexity varies slightly among the approaches but remains linear in terms of the input size.
+We explored four different approaches to solve the Zigzag Conversion problem, each offering a unique perspective and trade-offs in terms of simplicity and efficiency. All four approaches have a linear time complexity of $O(n)$, where n is the length of the input string `s`. The space complexity varies slightly among the approaches but remains linear in terms of the input size.

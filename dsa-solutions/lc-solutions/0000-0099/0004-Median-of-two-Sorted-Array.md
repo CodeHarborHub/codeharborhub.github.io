@@ -76,7 +76,7 @@ def findMedianSortedArrays(nums1, nums2):
         return (merged[n // 2 - 1] + merged[n // 2]) / 2.0
 ```
 
-#### Approach 2: Binary Search (O(log(min(m, n))))
+#### Approach 2: Binary Search $(O(log(min(m, n))))$
 
 **Intuition:**
 To achieve $O(log(min(m, n)))$ complexity, use binary search on the smaller array. The goal is to find a partition where the left half of both arrays combined is less than or equal to the right half.

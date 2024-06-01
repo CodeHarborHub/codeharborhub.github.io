@@ -70,8 +70,8 @@ def longestPalindrome(s: str) -> str:
 ```
 
 ### Complexity Analysis
-- **Time complexity**: `O(n^3)` - We check each substring, and checking each substring takes `O(n)` time.
-- **Space complexity**: `O(1)` - We use a constant amount of extra space.
+- **Time complexity**: $O(n^3)$ - We check each substring, and checking each substring takes $O(n)$ time.
+- **Space complexity**: $O(1)$ - We use a constant amount of extra space.
 
 ### Approach 2: Dynamic Programming
 
@@ -112,8 +112,8 @@ def longestPalindrome(s: str) -> str:
 ```
 
 ### Complexity Analysis
-- **Time complexity**: `O(n^2)` - We fill an `n * n` table.
-- **Space complexity**: `O(n^2)` - We use an `n * n` table to store the DP results.
+- **Time complexity**: $O(n^2)$ - We fill an `n * n` table.
+- **Space complexity**: $O(n^2)$ - We use an `n * n` table to store the DP results.
 
 ### Approach 3: Expand From Centers
 
@@ -148,8 +148,8 @@ def longestPalindrome(s: str) -> str:
 ```
 
 ### Complexity Analysis
-- **Time complexity**: `O(n^2)` - We expand around each center, which takes `O(n)` time.
-- **Space complexity**: `O(1)` - We use a constant amount of extra space.
+- **Time complexity**: $O(n^2)$ - We expand around each center, which takes $O(n)$  time.
+- **Space complexity**: $O(1)$ - We use a constant amount of extra space.
 
 ### Approach 4: Manacher's Algorithm
 
@@ -185,8 +185,8 @@ def longestPalindrome(s: str) -> str:
 ```
 
 ### Complexity Analysis
-- **Time complexity**: `O(n)` - Manacher's algorithm runs in linear time.
-- **Space complexity**: `O(n)` - We use an array of length `n` to store the lengths of palindromes.
+- **Time complexity**: $O(n)$ - Manacher's algorithm runs in linear time.
+- **Space complexity**: $O(n)$ - We use an array of length `n` to store the lengths of palindromes.
 
 ### Conclusion
 We discussed four approaches to solve the "Longest Palindromic Substring" problem, each with varying complexities and trade-offs. The dynamic programming and center expansion approaches provide a good balance of simplicity and efficiency for practical use cases, while Manacher's algorithm offers the optimal theoretical performance.

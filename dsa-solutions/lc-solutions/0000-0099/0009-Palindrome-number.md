@@ -225,13 +225,13 @@ class Solution:
 
 ### Approach 1: Reversing the Entire Number
 
-- **Time Complexity**: O(log10(x)), where x is the input number.
-- **Space Complexity**: O(1).
+- **Time Complexity**: $O(log10(x))$, where x is the input number.
+- **Space Complexity**: $O(1)$.
 
 ### Approach 2: Reversing Half of the Number
 
-- **Time Complexity**: O(log10(x)), where x is the input number.
-- **Space Complexity**: O(1).
+- **Time Complexity**: $O(log10(x))$, where x is the input number.
+- **Space Complexity**: $O(1)$.
 
 ## Conclusion
 
