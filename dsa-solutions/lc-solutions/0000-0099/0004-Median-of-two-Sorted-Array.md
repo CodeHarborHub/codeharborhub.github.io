@@ -6,7 +6,7 @@ tags:
     - Array
     - Binary Search
     - Divide and Conquer
-description: Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
+description: Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays. The overall run time complexity should be $O(log (m+n))$.
 ---
 
 
@@ -20,7 +20,7 @@ description: Given two sorted arrays nums1 and nums2 of size m and n respectivel
 
 Given two sorted arrays `nums1` and `nums2` of size `m` and `n` respectively, return the median of the two sorted arrays.
 
-The overall run time complexity should be `O(log (m+n))`.
+The overall run time complexity should be $O(log (m+n))$.
 
 **Example 1:**
 ```
@@ -46,7 +46,7 @@ Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
 
 ### Solution
 
-#### Approach 1: Merge Sort (O(m + n))
+#### Approach 1: Merge Sort $(O(m + n))$
 
 **Algorithm:**
 1. Merge `nums1` and `nums2` into a single sorted array.
@@ -79,7 +79,7 @@ def findMedianSortedArrays(nums1, nums2):
 #### Approach 2: Binary Search (O(log(min(m, n))))
 
 **Intuition:**
-To achieve O(log(min(m, n))) complexity, use binary search on the smaller array. The goal is to find a partition where the left half of both arrays combined is less than or equal to the right half.
+To achieve $O(log(min(m, n)))$ complexity, use binary search on the smaller array. The goal is to find a partition where the left half of both arrays combined is less than or equal to the right half.
 
 **Algorithm:**
 1. Ensure `nums1` is the smaller array.
@@ -125,12 +125,12 @@ def findMedianSortedArrays(nums1, nums2):
 ### Complexity Analysis
 
 - **Time Complexity:**
-  - Approach 1: O(m + n) because it involves merging both arrays into one sorted array.
-  - Approach 2: O(log(min(m, n))) because it performs binary search on the smaller array.
+  - Approach 1:$O(m + n)$ because it involves merging both arrays into one sorted array.
+  - Approach 2: $O(log(min(m, n)))$ because it performs binary search on the smaller array.
 
 - **Space Complexity:**
-  - Approach 1: O(m + n) due to the additional space needed for the merged array.
-  - Approach 2: O(1) because it uses only a constant amount of additional space.
+  - Approach 1: $O(m + n)$ due to the additional space needed for the merged array.
+  - Approach 2: $O(1)$ because it uses only a constant amount of additional space.
 
 ### Summary
 
