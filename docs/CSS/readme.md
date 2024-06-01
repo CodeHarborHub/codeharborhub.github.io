@@ -36,7 +36,7 @@ Applied directly to an HTML element using the style attribute.
 
 2. Internal CSS:
 
-Defined within a <style> tag in the HTML document's <head>.
+Defined within a `<style>` tag in the HTML document's `<head>` .
 
 ```html
 <head>
@@ -51,7 +51,7 @@ Defined within a <style> tag in the HTML document's <head>.
 
 3. External CSS:
 
-Linked via a separate .css file, using the <link> tag.
+Linked via a separate .css file, using the `<link>`  tag.
 
 ```html
 <head>
