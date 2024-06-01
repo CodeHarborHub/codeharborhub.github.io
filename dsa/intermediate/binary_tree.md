@@ -13,7 +13,7 @@ tags:
   - java
   - programming
   - tutorial
-sidebar_position: 5
+sidebar_position: 2
 ---
 In this tutorial we will explore one of the fundamental data structure in computer science: Binary Tree 
 # What is a Binary Tree?
