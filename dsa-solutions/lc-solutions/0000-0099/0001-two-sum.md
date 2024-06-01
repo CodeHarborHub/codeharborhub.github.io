@@ -1,6 +1,6 @@
 ---
 id: two-sum
-title: Two Sum Problem (LeetCode)
+title: Two Sum Solution
 sidebar_label: 0001 - Two Sum
 tags:
   - Two Sum
@@ -13,11 +13,7 @@ tags:
 description: "This is a solution to the Two Sum problem on LeetCode."
 ---
 
-## Problem Description
-
-| Problem Statement                                             | Solution Link                                                                                                                                                             | LeetCode Profile                                    |
-| :------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :-------------------------------------------------- |
-| [Two Sum on LeetCode](https://leetcode.com/problems/two-sum/) | [Two Sum Solution on LeetCode](https://leetcode.com/problems/two-sum/solutions/4958021/two-sum-problem-solution-using-hash-table-ts-js-java-py-cpp-recommended-solutions) | [Ajay Dhangar](https://leetcode.com/ajaydhangar49/) |
+In this page, we will solve the Two Sum problem using three different approaches: brute force, hash table, and two-pointer technique. We will provide the implementation of the solution in JavaScript, TypeScript, Python, Java, C++, and more.
 
 ## Problem Description
 
@@ -29,21 +25,21 @@ You can return the answer in any order.
 
 ### Examples
 
-**`Example 1:`**
+**Example 1:**
 
 ```plaintext
 Input: nums = [2,7,11,15], target = 9
 Output: [0,1]
 ```
 
-**`Example 2:`**
+**Example 2:**
 
 ```plaintext
 Input: nums = [3,2,4], target = 6
 Output: [1,2]
 ```
 
-**`Example 3:`**
+**Example 3:**
 
 ```plaintext
 Input: nums = [3,3], target = 6
@@ -69,7 +65,8 @@ The problem can be solved using a brute force approach, a hash table, or the two
 
 <Tabs>
  <tabItem value="Brute Force" label="Brute Force">
-  ### Approach 1: Brute Force (Naive)
+  
+### Approach 1: Brute Force (Naive)
 
 The brute force approach is simple. We iterate through each element `nums[i]` and check if there is another element `nums[j]` such that `nums[i] + nums[j] == target`. If we find such a pair, we return the indices `[i, j]`.
 
@@ -109,6 +106,7 @@ function twoSumProblem() {
 
 <Tabs>
   <TabItem value="JavaScript" label="JavaScript" default>
+  <SolutionAuthor name="@ajay-dhangar"/>
    ```javascript
     function twoSum(nums, target) {
       for (let i = 0; i < nums.length; i++) {
@@ -124,7 +122,8 @@ function twoSumProblem() {
     ```
 
   </TabItem>
-  <TabItem value="TypeScript" label="TypeScript">  
+  <TabItem value="TypeScript" label="TypeScript">
+  <SolutionAuthor name="@ajay-dhangar"/> 
    ```typescript
     function twoSum(nums: number[], target: number): number[] {
       for (let i = 0; i < nums.length; i++) {
@@ -140,7 +139,8 @@ function twoSumProblem() {
     ```
 
   </TabItem>
-  <TabItem value="Python" label="Python">  
+  <TabItem value="Python" label="Python"> 
+  <SolutionAuthor name="@ajay-dhangar"/>
    ```python
     class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -153,7 +153,8 @@ function twoSumProblem() {
     ```
 
   </TabItem>
-  <TabItem value="Java" label="Java">  
+  <TabItem value="Java" label="Java">
+  <SolutionAuthor name="@ajay-dhangar"/>
    ```java
     class Solution {
         public int[] twoSum(int[] nums, int target) {
@@ -171,7 +172,8 @@ function twoSumProblem() {
     ```
 
   </TabItem>
-  <TabItem value="C++" label="C++">  
+  <TabItem value="C++" label="C++">
+  <SolutionAuthor name="@ajay-dhangar"/>
    ```cpp
     class Solution {
     public:
@@ -247,6 +249,7 @@ function twoSumProblem() {
 
 <Tabs>
   <TabItem value="JavaScript" label="JavaScript" default>
+  <SolutionAuthor name="@ajay-dhangar"/>
    ```javascript
     function twoSum(nums, target) {
       const numMap = new Map();
@@ -264,7 +267,8 @@ function twoSumProblem() {
     ```
 
   </TabItem>
-  <TabItem value="TypeScript" label="TypeScript">  
+  <TabItem value="TypeScript" label="TypeScript">
+  <SolutionAuthor name="@ajay-dhangar"/>
    ```typescript
     function twoSum(nums: number[], target: number): number[] {
       const numMap = new Map<number, number>();
@@ -282,7 +286,8 @@ function twoSumProblem() {
     ```
 
   </TabItem>
-  <TabItem value="Python" label="Python">  
+  <TabItem value="Python" label="Python">
+  <SolutionAuthor name="@ajay-dhangar"/>
    ```python
      class Solution:
       def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -297,7 +302,8 @@ function twoSumProblem() {
     ```
 
   </TabItem>
-  <TabItem value="Java" label="Java">  
+  <TabItem value="Java" label="Java">
+  <SolutionAuthor name="@ajay-dhangar"/>
    ```java
     class Solution {
         public int[] twoSum(int[] nums, int target) {
@@ -317,7 +323,8 @@ function twoSumProblem() {
     ```
 
   </TabItem>
-  <TabItem value="C++" label="C++">  
+  <TabItem value="C++" label="C++">
+  <SolutionAuthor name="@ajay-dhangar"/>
    ```cpp
     class Solution {
     public:
@@ -405,6 +412,7 @@ function twoSumProblem() {
 
 <Tabs>
   <TabItem value="JavaScript" label="JavaScript" default>
+  <SolutionAuthor name="@ajay-dhangar"/>
    ```javascript
     function twoSum(nums, target) {
       const sortedNums = nums.map((num, index) => [num, index]);
@@ -429,8 +437,10 @@ function twoSumProblem() {
     ```
 
   </TabItem>
-  <TabItem value="TypeScript" label="TypeScript">  
-   ```typescript
+  <TabItem value="TypeScript" label="TypeScript">
+  <SolutionAuthor name="@ajay-dhangar"/>
+
+   ```ts
     function twoSum(nums: number[], target: number): number[] {
       const sortedNums = nums.map((num, index) => [num, index]);
       sortedNums.sort((a, b) => a[0] - b[0]);
@@ -454,8 +464,9 @@ function twoSumProblem() {
     ```
 
   </TabItem>
-  <TabItem value="Python" label="Python">  
-   ```python
+  <TabItem value="Python" label="Python">
+  <SolutionAuthor name="@ajay-dhangar"/>
+   ```py
      class Solution:
       def twoSum(self, nums: List[int], target: int) -> List[int]:
         sorted_nums = sorted(enumerate(nums), key=lambda x: x[1])
@@ -475,7 +486,8 @@ function twoSumProblem() {
     ```
 
   </TabItem>
-  <TabItem value="Java" label="Java">  
+  <TabItem value="Java" label="Java">
+  <SolutionAuthor name="@ajay-dhangar"/>
    ```java
     class Solution {
         public int[] twoSum(int[] nums, int target) {
@@ -506,7 +518,9 @@ function twoSumProblem() {
     ```
 
   </TabItem>
-  <TabItem value="C++" label="C++">  
+  <TabItem value="C++" label="C++"> 
+  <SolutionAuthor name="@ajay-dhangar"/>
+  
    ```cpp
     class Solution {
     public:
@@ -562,6 +576,8 @@ The hash table approach is the most efficient and is recommended for large input
 
 :::
 
-## Conclusion
+## References
 
-In this tutorial, we learned how to solve the Two Sum problem on LeetCode using different approaches. We discussed the brute force approach, the hash table approach, and the two-pointer approach. We implemented the solutions in JavaScript, TypeScript, Python, Java, and C++. We also analyzed the time and space complexity of each approach and compared them to determine the best approach for this problem. The hash table approach is the most efficient and is recommended for large inputs.
+- **LeetCode Problem:** [LeetCode Problem](https://leetcode.com/problems/two-sum/)
+- **Solution Link:** [Two Sum Solution on LeetCode](https://leetcode.com/problems/two-sum/solutions/4958021/two-sum-problem-solution-using-hash-table-ts-js-java-py-cpp-recommended-solutions)
+- **Authors LeetCode Profile:** [Ajay Dhangar](https://leetcode.com/ajaydhangar49/)
