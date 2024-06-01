@@ -163,6 +163,3 @@ class Solution:
 ## Conclusion
 
 The two-pointer approach is efficient for solving the Container With Most Water problem, allowing us to explore all possible containers by adjusting the pointers based on the heights of the lines, ensuring that we find the container with the maximum possible area.
-
-
-```
