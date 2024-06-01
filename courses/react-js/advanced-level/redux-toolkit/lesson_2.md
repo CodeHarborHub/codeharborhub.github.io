@@ -25,8 +25,7 @@ Creating an API utility for your application is an essential step to manage and 
 
 You'll often want to separate your API calls into a dedicated utility file. This approach allows you to centralize the logic for making HTTP requests, making your code more modular and easier to maintain. 
 
-```javascript
-// src/features/posts/postsAPI.js
+```javascript title = "src/features/posts/postsAPI.js"
 import axios from 'axios';
 
 export const fetchPosts = () => {
@@ -40,8 +39,7 @@ export const fetchPosts = () => {
 
 With the API utility created, you can now use it in your Redux slices to handle asynchronous actions. Redux Toolkit provides `createAsyncThunk` to simplify this process.
 
-```javascript
-// src/features/posts/Posts.js
+```javascript title = "src/features/posts/Posts.js"
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchPostsAsync } from './postsSlice';
@@ -88,8 +86,7 @@ For complex applications, it's important to structure your state effectively to 
 
 ### 1. Normalizing State Structure
 
-```javascript
-// src/features/entities/entitiesSlice.js
+```javascript title = "src/features/entities/entitiesSlice.js" 
 import { createSlice } from '@reduxjs/toolkit';
 
 const entitiesSlice = createSlice({
@@ -125,8 +122,7 @@ export default entitiesSlice.reducer;
 
 Redux Toolkit provides `createEntityAdapter` to manage normalized state more efficiently. It includes helpers for common operations like adding, updating, and removing entities.
 
-```javascript
-// src/features/posts/postsSlice.js
+```javascript title="src/features/posts/postsSlice.js"
 import { createSlice, createEntityAdapter } from '@reduxjs/toolkit';
 import { fetchPosts } from './postsAPI';
 

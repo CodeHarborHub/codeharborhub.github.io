@@ -42,8 +42,7 @@ npm install @reduxjs/toolkit react-redux
 
 Redux Toolkit provides a `configureStore` function that simplifies store creation. It includes good defaults and automatically sets up the Redux DevTools extension.
 
-```javascript
-// src/app/store.js
+```Javascript title="src/app/store.js"
 import { configureStore } from '@reduxjs/toolkit';
 import counterReducer from '../features/counter/counterSlice';
 
@@ -60,8 +59,7 @@ export default store;
 
 A slice is a collection of Redux reducer logic and actions for a single feature of your app. Redux Toolkit’s `createSlice` function automatically generates action creators and action types.
 
-```javascript
-// src/features/counter/counterSlice.js
+```javascript title = "src/app/app.js"
 import { createSlice } from '@reduxjs/toolkit';
 
 export const counterSlice = createSlice({
@@ -90,8 +88,7 @@ export default counterSlice.reducer;
 
 Now that the store and slice are set up, you can use them in your React components. Use the `useSelector` hook to read state and the `useDispatch` hook to dispatch actions.
 
-```javascript
-// src/features/counter/Counter.js
+```javascript title = "src/features/counter/counter.js
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { increment, decrement, incrementByAmount } from './counterSlice';
@@ -121,8 +118,7 @@ export default Counter;
 
 To make the Redux store available to your entire app, wrap your application in the `Provider` component from `react-redux`.
 
-```javascript
-// src/index.js
+```javascript title = "src/index.js"
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';

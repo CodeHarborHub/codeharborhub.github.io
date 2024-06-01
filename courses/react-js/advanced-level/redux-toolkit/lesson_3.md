@@ -28,8 +28,7 @@ Middleware in Redux is a powerful way to extend the functionality of the store. 
 
 Redux Toolkit's `configureStore` makes it easy to add middleware to your Redux store.
 
-```javascript
-// src/app/store.js
+```javascript title="src/app/store.js"
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
 import counterReducer from '../features/counter/counterSlice';
 import logger from 'redux-logger';
@@ -48,8 +47,7 @@ export default store;
 
 You can write your own custom middleware to handle specific tasks. Middleware is a function that returns another function, which receives the `next` function and the `action`.
 
-```javascript
-// src/middleware/customMiddleware.js
+```javascript title="src/middleware/customMiddleware.js"
 const customMiddleware = (storeAPI) => (next) => (action) => {
   console.log('Dispatching action:', action);
   let result = next(action);
@@ -64,8 +62,7 @@ export default customMiddleware;
 
 Add the custom middleware to your Redux store using `configureStore`.
 
-```javascript
-// src/app/store.js
+```javascript title="src/app/store.js"
 import { configureStore } from '@reduxjs/toolkit';
 import counterReducer from '../features/counter/counterSlice';
 import customMiddleware from '../middleware/customMiddleware';
@@ -86,7 +83,7 @@ export default store;
 
 Sometimes you may want to reuse the same logic in different parts of your application. You can create a reusable slice that can be configured for different use cases.
 
-```javascript
+```javascript title="src/features/toggle/toggleSlice.js"
 // src/features/toggle/toggleSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 
@@ -108,8 +105,7 @@ export default createToggleSlice;
 
 You can create instances of the reusable slice for different parts of your state.
 
-```javascript
-// src/features/toggle/toggleInstances.js
+```javascript title="src/fratures/toggle/toggleInstace.js"
 import createToggleSlice from './toggleSlice';
 
 export const lightSlice = createToggleSlice('light');
@@ -128,8 +124,7 @@ export default {
 
 Use Redux Toolkit's `combineReducers` to combine the reducers into a single reducer.
 
-```javascript
-// src/app/rootReducer.js
+```javascript title = "src/app/rootReducer.js"
 import { combineReducers } from '@reduxjs/toolkit';
 import toggleReducers from '../features/toggle/toggleInstances';
 
@@ -144,8 +139,7 @@ export default rootReducer;
 
 Create the store with the combined reducer.
 
-```javascript
-// src/app/store.js
+```javascript title = "src/app/store.js"
 import { configureStore } from '@reduxjs/toolkit';
 import rootReducer from './rootReducer';
 
@@ -160,8 +154,7 @@ export default store;
 
 Use the toggle slices in your components.
 
-```javascript
-// src/features/toggle/LightSwitch.js
+```javascript title ="src/toggle/lightSwitch.js"
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleLight } from './toggleInstances';
