@@ -10,14 +10,14 @@ const Image = "./image.png";
  * App component renders a testimonial slider with multiple Card components.
  * It uses the react-slick library for the slider functionality.
  */
-class App extends Component<React.ComponentType<{}>, {}> {
+class App extends Component<object, Record<string, never>> {
   private slider: RefObject<Slider>;
 
   /**
    * Creates an instance of App.
-   * @param {React.ComponentType<{}>} props - The component props.
+   * @param {object} props - The component props.
    */
-  constructor(props: React.ComponentType<{}>) {
+  constructor(props: object) {
     super(props);
     this.slider = React.createRef(); // Create a ref for the Slider component
   }
@@ -88,7 +88,7 @@ class App extends Component<React.ComponentType<{}>, {}> {
                 imageSrc={Image}
                 contributor="TechLover99"
                 cont="@TechLover99"
-                cardback="If you're looking to learn AI and machine learning, CodeHarborHub is the place to be. Comprehensive and free! #MachineLearning #AI #CodeHarborHub"
+                cardback="If you're looking to learn AI and machine learning, @CodeHarborHub is the place to be. Comprehensive and free! #MachineLearning #AI #CodeHarborHub"
                 onMouseEnter={this.handleCardHover}
                 onMouseLeave={this.handleCardLeave}
               />
@@ -98,7 +98,7 @@ class App extends Component<React.ComponentType<{}>, {}> {
                 imageSrc={Image}
                 contributor="CoderGirl"
                 cont="@CoderGirl"
-                cardback="Just completed my first JavaScript course on CodeHarborHub! The content is top-notch and completely free. Highly recommend it! #LearnToCode #FreeEducation"
+                cardback="Just completed my first JavaScript course on @CodeHarborHub! The content is top-notch and completely free. Highly recommend it! #LearnToCode #FreeEducation"
                 onMouseEnter={this.handleCardHover}
                 onMouseLeave={this.handleCardLeave}
               />
@@ -108,7 +108,7 @@ class App extends Component<React.ComponentType<{}>, {}> {
                 imageSrc={Image}
                 contributor="AI_Enthusiast"
                 cont="@AI_Enthusiast"
-                cardback="Joined CodeHarborHub last month and already feel more confident in my coding skills. Great community and resources! #TechCommunity #WomenInTech"
+                cardback="Joined @CodeHarborHub last month and already feel more confident in my coding skills. Great community and resources! #TechCommunity #WomenInTech"
                 onMouseEnter={this.handleCardHover}
                 onMouseLeave={this.handleCardLeave}
               />
@@ -128,7 +128,7 @@ class App extends Component<React.ComponentType<{}>, {}> {
                 imageSrc={Image}
                 contributor="FutureDev"
                 cont="@FutureDev"
-                cardback="Shoutout to CodeHarborHub for providing such quality education for free! Their courses have been a game-changer for me. #TechSkills #CareerGrowth"
+                cardback="Shoutout to @CodeHarborHub for providing such quality education for free! Their courses have been a game-changer for me. #TechSkills #CareerGrowth"
                 onMouseEnter={this.handleCardHover}
                 onMouseLeave={this.handleCardLeave}
               />
@@ -161,4 +161,3 @@ class App extends Component<React.ComponentType<{}>, {}> {
 }
 
 export default App;
-
