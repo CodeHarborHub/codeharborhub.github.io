@@ -317,3 +317,35 @@
 .float-animation {
   animation: float 2s ease-in-out infinite;
 }
+
+
+
+
+.scroll-to-bottom-button {
+  position: absolute; 
+  top: 20px; 
+  right: 20px; 
+  padding: 10px 12px;
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.scroll-to-bottom-button:hover {
+  background-color: #ff4b3a;
+  transform: translateY(-2px);
+}
+
+.scroll-to-bottom-button:active {
+  background-color: #e64b3a;
+  transform: translateY(0);
+}
