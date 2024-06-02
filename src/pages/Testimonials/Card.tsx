@@ -28,7 +28,7 @@ const Card: React.FC<CardProps> = ({
   const starArray = [1, 2, 3, 4, 5];
 
   return (
-    <div className="card" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+    <button className="card" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} aria-label={`View details for ${contributor}`}>
       <div className="card-inner">
         <div className="card-front">
           <div className="card-image-container">
@@ -51,7 +51,7 @@ const Card: React.FC<CardProps> = ({
           <div className="card-back-content">{cardback}</div>
         </div>
       </div>
-    </div>
+    </button>
   );
 };
 
