@@ -756,6 +756,55 @@ The binary search approach is more efficient and recommended for solving the pro
 
 :::
 
+:::tip 
+When asked to find the median of two sorted arrays, a direct approach that merges the two arrays and then finds the median will work but isn't optimal. Given the problem's constraints, we can leverage the fact that the arrays are already sorted and use binary search to find the median in $$ O(\log(\min(n, m))) $$ time complexity. 
+
+The key idea is to use binary search to partition the smaller array in such a way that we can easily find the median by comparing elements around the partition.
+
+#### Detailed Explanation
+
+1. **Ensure the Smaller Array is First**: 
+   - This step is to make sure we always perform the binary search on the smaller array, which helps us manage the partition logic more easily. Let $$ \text{nums1} $$ be the smaller array and $$ \text{nums2} $$ be the larger array.
+
+2. **Set Up Binary Search**:
+   - Initialize $$ \text{low} $$ and $$ \text{high} $$ pointers for the binary search on $$ \text{nums1} $$.
+   - We aim to partition $$ \text{nums1} $$ and $$ \text{nums2} $$ such that the left side of the combined arrays contains half of the elements, and the right side contains the other half.
+
+3. **Partitioning the Arrays**:
+   - Calculate $$ \text{partitionX} $$ as the midpoint of $$ \text{nums1} $$.
+   - Calculate $$ \text{partitionY} $$ such that the left side of the combined arrays has the same number of elements as the right side. This can be achieved by: 
+     $$
+     \text{partitionY} = \frac{(x + y + 1)}{2} - \text{partitionX}
+     $$
+
+     where $$ x $$ and $$ y $$ are the lengths of $$ \text{nums1} $$ and $$ \text{nums2} $$ respectively.
+
+4. **Boundary Conditions**:
+   - Handle cases where partitions might go out of bounds. If $$ \text{partitionX} $$ is 0, it means there are no elements on the left side of $$ \text{nums1} $$. If $$ \text{partitionX} $$ is $$ x $$, it means there are no elements on the right side of $$ \text{nums1} $$.
+
+5. **Check Valid Partition**:
+   - A valid partition is one where the maximum element on the left side of both partitions is less than or equal to the minimum element on the right side of both partitions:
+     $$
+     \text{maxX} \leq \text{minY} \quad \text{and} \quad \text{maxY} \leq \text{minX}
+     $$
+     Here, $$ \text{maxX} $$ is the largest element on the left side of $$ \text{nums1} $$, $$ \text{minX} $$ is the smallest element on the right side of $$ \text{nums1} $$, and similarly for $$ \text{nums2} $$.
+
+6. **Calculate the Median**:
+   - If the total number of elements $$ (x + y) $$ is even, the median is the average of the two middle values:
+     $$
+     \text{median} = \frac{\text{max(maxX, maxY)} + \text{min(minX, minY)}}{2}
+     $$
+   - If the total number of elements is odd, the median is the maximum element of the left partition:
+     $$
+     \text{median} = \text{max(maxX, maxY)}
+     $$
+
+7. **Adjust Binary Search**:
+   - If $$ \text{maxX} > \text{minY} $$, it means we need to move the partition in $$ \text{nums1} $$ to the left, so adjust $$ \text{high} $$.
+   - If $$ \text{maxY} > \text{minX} $$, it means we need to move the partition in $$ \text{nums1} $$ to the right, so adjust $$ \text{low} $$.
+
+:::
+
 
 ## References
 
