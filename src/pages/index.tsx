@@ -1,4 +1,3 @@
-import clsx from "clsx";
 // import Link from "@docusaurus/Link";
 import React from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
@@ -11,6 +10,11 @@ import { featuresData, coursesData } from "../database/home";
 import Header from "../components/HomePage/Header";
 import { motion } from "framer-motion";
 import Testimonials from "./Testimonials/App";
+/**
+ * Home component renders the main homepage layout of the website.
+ * It includes the header, courses, features, and testimonials sections.
+ * @returns {React.JSX.Element} The rendered Home component.
+ */
 export default function Home(): React.JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
