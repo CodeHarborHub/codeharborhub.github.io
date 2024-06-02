@@ -23,14 +23,14 @@ function TweetsSection(): React.JSX.Element {
     <div className={clsx(styles.section, styles.sectionAlt)}>
       <div className="tweets-container">
         <motion.div
-          initial={{ opacity: 0, x: -150 }}
+          initial={{ opacity: 0, x: -10 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{
             duration: 1,
             type: "spring",
             stiffness: 100,
-            delay: 0.5,
+            delay: 0.3,
           }}
           className={styles.home__divider}
         >
@@ -44,14 +44,14 @@ function TweetsSection(): React.JSX.Element {
         <div className={clsx("row", styles.tweetsSection)}>
           {tweetColumns.map((tweetItems, i) => (
             <motion.div
-            initial={{ opacity: 0, y: -150 }}
+            initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{
               duration: 1,
               type: "spring",
               stiffness: 100,
-              delay: 0.5,
+              delay: 0.3,
             }}
             className="col col--4"
             key={i}
@@ -82,14 +82,14 @@ export default function Home(): React.JSX.Element {
         <hr className={styles.home__hr} />
 
         <motion.div
-          initial={{ opacity: 0, x: -150 }}
+          initial={{ opacity: 0, x: -10 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{
             duration: 1,
             type: "spring",
             stiffness: 100,
-            delay: 0.5,
+            delay: 0.3,
           }}
           className={styles.home__divider}
         >
@@ -97,28 +97,28 @@ export default function Home(): React.JSX.Element {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: -150 }}
+          initial={{ opacity: 0, y: -10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{
             duration: 1,
             type: "spring",
             stiffness: 100,
-            delay: 0.5,
+            delay: 0.3,
           }}
         >
         <Courses courses={coursesData} />
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: -150 }}
+          initial={{ opacity: 0, x: -10 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{
             duration: 1,
             type: "spring",
             stiffness: 100,
-            delay: 0.5,
+            delay: 0.3,
           }}
           className={styles.home__divider}
         >
@@ -126,14 +126,14 @@ export default function Home(): React.JSX.Element {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: -150 }}
+          initial={{ opacity: 0, y: -10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{
             duration: 1,
             type: "spring",
             stiffness: 100,
-            delay: 0.5,
+            delay: 0.3,
           }}
         >
         <Features features={featuresData} />
