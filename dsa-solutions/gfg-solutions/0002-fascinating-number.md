@@ -24,15 +24,19 @@ Fascinating Number: When a number(should contain 3 digits or more) is multiplied
 
 Example 1:
 
+```
 Input: N = 192
 Output: Fascinating
 Explanation: After multiplication with 2 and 3, and concatenating with original number, number will become 192384576 which contains all digits from 1 to 9.
+```
 
 Example 2:
 
+```
 Input: N = 853
 Output: Not Fascinating
 Explanation: It's not a fascinating number.
+```
 
 ## Your Task
 
@@ -43,7 +47,7 @@ Expected Auxiliary Space: $O(1)$
 
 ## Constraints
 
-100 <= N <= 2*10^9
+`100 <= N <= 2*10^9`
 
 ## Problem Explanation
 

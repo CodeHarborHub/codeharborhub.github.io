@@ -47,8 +47,8 @@ You don't need to read input or print anything. Your task is to complete the fun
 
 ## Constraints
 
-* 1 ≤ N ≤ 105
-* 1 ≤ `Arr[i]` ≤ 106
+* `1 ≤ N ≤ 105`
+* `1 ≤ Arr[i] ≤ 106`
 
 ## Problem Explanation
 
