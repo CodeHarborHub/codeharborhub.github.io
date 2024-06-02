@@ -63,4 +63,4 @@ Visit `http://localhost:3000` to view your application.
 Edit `app/page.tsx` (or `pages/index.tsx`) file and save it to see the updated result in your browser.
 
 
-<a href="https://nextjs.org/docs/app"><img src="https://github.com/Aksshay88/Macbook/assets/119944779/1c389169-463a-42e1-b4f0-28830ed4b8a8"></a>
+<a href="https://nextjs.org/docs/app"><img src="emty.png"></a>
