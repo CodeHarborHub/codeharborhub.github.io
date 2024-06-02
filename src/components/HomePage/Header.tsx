@@ -4,7 +4,6 @@ import "./header.css";
 import Link from "@docusaurus/Link";
 import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
-import { FaArrowDown } from 'react-icons/fa'; 
 
 /**
  * Renders the header component of the application.
@@ -28,6 +27,8 @@ const HeaderContent = () => {
       >
         Level Up Skills with CodeHarborHub
       </motion.h1>
+      {/* <h1 className="gradient__text"
+      >Level Up Skills with CodeHarborHub</h1> */}
       <motion.p
         initial={{ opacity: 0, x: -10 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -133,16 +134,6 @@ const HeaderImage = () => {
 };
 
 /**
- * Scrolls the window to the bottom of the page.
- */
-const scrollToBottom = () => {
-  window.scrollTo({
-    top: document.documentElement.scrollHeight,
-    behavior: 'smooth',
-  });
-};
-
-/**
  * Renders the header component of the application.
  * @returns A header component with styling and structure.
  */
@@ -153,22 +144,6 @@ const Header: React.FC = () => {
         <HeaderContent />
         <HeaderImage />
       </div>
-      <motion.button
-        initial={{ opacity: 0, y: -10 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{
-          duration: 1,
-          type: "spring",
-          stiffness: 100,
-          delay: 0.4,
-        }}
-        type="button"
-        className="scroll-to-bottom-button"
-        onClick={scrollToBottom}
-      >
-        <FaArrowDown /> {/* Icon */}
-      </motion.button>
     </div>
   );
 };

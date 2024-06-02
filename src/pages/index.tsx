@@ -1,6 +1,6 @@
 import clsx from "clsx";
 // import Link from "@docusaurus/Link";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
@@ -12,6 +12,7 @@ import Header from "../components/HomePage/Header";
 import Tweet from "../components/Tweet";
 import Tweets, { type TweetItem } from "../data/tweets";
 import { motion } from "framer-motion";
+import { FaArrowDown } from "react-icons/fa"; 
 
 function TweetsSection(): React.JSX.Element {
   const tweetColumns: TweetItem[][] = [[], [], []];
@@ -69,6 +70,29 @@ function TweetsSection(): React.JSX.Element {
 
 export default function Home(): React.JSX.Element {
   const { siteConfig } = useDocusaurusContext();
+  const [showScrollButton, setShowScrollButton] = useState(true);
+
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: "smooth",
+    });
+    setShowScrollButton(false);
+  };
+
+  const handleScroll = () => {
+    if (window.scrollY === 0) {
+      setShowScrollButton(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
@@ -140,6 +164,15 @@ export default function Home(): React.JSX.Element {
         </motion.div>
 
         <TweetsSection />
+
+        {showScrollButton && (
+          <button
+            onClick={scrollToBottom}
+            className={styles.scrollToBottomButton}
+          >
+            <FaArrowDown />
+          </button>
+        )}
       </main>
     </Layout>
   );
