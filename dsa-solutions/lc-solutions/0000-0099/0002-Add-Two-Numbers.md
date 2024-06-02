@@ -6,6 +6,8 @@ tags:
   - Linked List
   - Math
   - Recursion
+  - Add Two Numbers
+  - LeetCode
 description: "This is a solution to the Add Two Numbers problem on LeetCode."
 ---
 
@@ -72,12 +74,19 @@ We iterate through both linked lists, adding corresponding node's values along w
 
 ```mermaid
 flowchart TD
-    A[Start] --> B{l1 or l2 or carry}
-    B --> |Yes| C[Add values of l1, l2, and carry]
-    C --> D[Calculate new carry and current node value]
-    D --> E[Add node with value to result list]
-    E --> F{Move to next node in l1 and l2 if exist}
-    F --> |Next nodes exist| G{l1 or l2 or carry}
+    A[Start] --> B{l1 or l2 
+    or carry}
+    B --> |Yes| C[Add values of l1, l2, 
+    and carry]
+    C --> D[Calculate new carry and 
+    current node value]
+    D --> E[Add node with value 
+    to result list]
+    E --> F{Move to next 
+    node in l1 and 
+    l2 if exist}
+    F --> |Next nodes exist| G{l1 or l2 
+    or carry}
     G --> |Yes| C
     G --> |No| H[Return result list]
     F --> |Next nodes do not exist| H
