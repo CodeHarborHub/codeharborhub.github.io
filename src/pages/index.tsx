@@ -11,6 +11,7 @@ import { featuresData, coursesData } from "../database/home";
 import Header from "../components/HomePage/Header";
 import Tweet from "../components/Tweet";
 import Tweets, { type TweetItem } from "../data/tweets";
+import { motion } from "framer-motion";
 
 function TweetsSection(): React.JSX.Element {
   const tweetColumns: TweetItem[][] = [[], [], []];
@@ -21,21 +22,44 @@ function TweetsSection(): React.JSX.Element {
   return (
     <div className={clsx(styles.section, styles.sectionAlt)}>
       <div className="tweets-container">
-        <div className={styles.home__divider}>
+        <motion.div
+          initial={{ opacity: 0, x: -150 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 100,
+            delay: 0.5,
+          }}
+          className={styles.home__divider}
+        >
           <Heading
             as="h2"
             className={clsx("text--center")}
           >
             Loved by many Users
           </Heading>
-        </div>
+        </motion.div>
         <div className={clsx("row", styles.tweetsSection)}>
           {tweetColumns.map((tweetItems, i) => (
-            <div className="col col--4" key={i}>
+            <motion.div
+            initial={{ opacity: 0, y: -150 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 1,
+              type: "spring",
+              stiffness: 100,
+              delay: 0.5,
+            }}
+            className="col col--4"
+            key={i}
+          >
               {tweetItems.map((tweet) => (
                 <Tweet {...tweet} key={tweet.url} />
               ))}
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -57,17 +81,63 @@ export default function Home(): React.JSX.Element {
 
         <hr className={styles.home__hr} />
 
-        <div className={styles.home__divider}>
+        <motion.div
+          initial={{ opacity: 0, x: -150 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 100,
+            delay: 0.5,
+          }}
+          className={styles.home__divider}
+        >
           <Heading as="h2">Courses Available</Heading>
-        </div>
+        </motion.div>
 
+        <motion.div
+          initial={{ opacity: 0, y: -150 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 100,
+            delay: 0.5,
+          }}
+        >
         <Courses courses={coursesData} />
+        </motion.div>
 
-        <div className={styles.home__divider}>
+        <motion.div
+          initial={{ opacity: 0, x: -150 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 100,
+            delay: 0.5,
+          }}
+          className={styles.home__divider}
+        >
           <Heading as="h2">Features of {siteConfig.title}</Heading>
-        </div>
+        </motion.div>
 
+        <motion.div
+          initial={{ opacity: 0, y: -150 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 100,
+            delay: 0.5,
+          }}
+        >
         <Features features={featuresData} />
+        </motion.div>
 
         <TweetsSection />
       </main>
