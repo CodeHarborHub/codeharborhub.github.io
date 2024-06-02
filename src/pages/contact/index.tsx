@@ -1,6 +1,7 @@
 import Layout from "@theme/Layout";
 import styles from "./Contact.module.css";
 import React, { useState, ChangeEvent, FormEvent } from "react";
+import { motion } from "framer-motion";
 
 interface FormValues {
   fullName: string;
@@ -46,15 +47,47 @@ export default function Contact(): JSX.Element {
             <div className={styles.main__contact_contains_left}>
               <div className={styles.main__contact_ud_wrapper}>
                 <div className={styles.ud_contact_title}>
-                  <span className={styles.contact_us}>
+                  <motion.span
+                    initial={{ opacity: 0, x: -150 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                      duration: 1,
+                      type: "spring",
+                      stiffness: 100,
+                      delay: 0.5,
+                    }}
+                    className={styles.contact_us}
+                  >
                     <b>CONTACT US</b>
-                  </span>
-                  <h2 className={styles.contact_heading}>
+                  </motion.span>
+                  <motion.h2
+                    initial={{ opacity: 0, x: -150 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                      duration: 1,
+                      type: "spring",
+                      stiffness: 100,
+                      delay: 0.5,
+                    }}
+                    className={styles.contact_heading}
+                  >
                     Let's talk about your problem.
-                  </h2>
+                  </motion.h2>
                 </div>
                 <div className={styles.contact_info}>
-                  <div className={styles.contact_info_item}>
+                  <motion.div
+                    initial={{ opacity: 0, y: 150 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                      duration: 1,
+                      type: "spring",
+                      stiffness: 100,
+                      delay: 0.5,
+                    }}
+                    className={styles.contact_info_item}>
                     <div className={styles.icon}>
                       <svg
                         width="29"
@@ -72,8 +105,18 @@ export default function Contact(): JSX.Element {
                         Mandsaur, Madhya Pradesh, India - 458002
                       </p>
                     </div>
-                  </div>
-                  <div className={styles.contact_info_item}>
+                  </motion.div>
+                  <motion.div
+                    initial={{ opacity: 0, y: 150 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                      duration: 1,
+                      type: "spring",
+                      stiffness: 100,
+                      delay: 0.5,
+                    }}
+                    className={styles.contact_info_item}>
                     <div className={styles.icon}>
                       <svg
                         width="34"
@@ -90,11 +133,21 @@ export default function Contact(): JSX.Element {
                         ajaydhyangar49@gmail.com
                       </p>
                     </div>
-                  </div>
+                  </motion.div>
                 </div>
               </div>
             </div>
-            <div className={styles.main__contact_contains_right}>
+            <motion.div
+              initial={{ opacity: 0, x: 150 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 1,
+                type: "spring",
+                stiffness: 100,
+                delay: 0.5,
+              }}
+              className={styles.main__contact_contains_right}>
               <div className={styles.form_container}>
                 <h3 className={styles.form_heading}>Send us a Message</h3>
                 <form onSubmit={handleSubmit}>
@@ -157,7 +210,7 @@ export default function Contact(): JSX.Element {
                   </div>
                 </form>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
