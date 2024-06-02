@@ -1,10 +1,11 @@
-<div align=center>
-<h1>NextJS</h1> 
-<img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&color=black width=650">
-  <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" width="100">
-</div>
-<br>
-
+---
+id: Next JS
+title: Next Js Getting Started
+sidebar_label: Next JS
+sidebar_position: 26
+tags: [NextJS,Routing,Page Routing]
+description: This docs contains about the Next JS documentation
+---
 
 ## Get Started
 
