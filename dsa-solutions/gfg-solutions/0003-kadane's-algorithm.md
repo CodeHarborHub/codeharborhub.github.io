@@ -250,7 +250,7 @@ class Solution:
 ```
 
 #### Complexity:
-- Time Complexity: $(O(N))$, where O(N)$ is the size of the array as we are looping once over the whole array.
+- Time Complexity: $(O(N))$, where $O(N)$ is the size of the array as we are looping once over the whole array.
 - Space Complexity: $(O(1))$, Here we are not using extra space.
 
 ## Conclusion
