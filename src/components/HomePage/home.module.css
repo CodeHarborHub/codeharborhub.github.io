@@ -6,12 +6,11 @@
   margin: 20px 10px;
   border-radius: 10px;
 }
-/* home.module.css */
 
 
 .feature_item:hover ,.course_card:hover {
 scale: 1.03;
-  box-shadow: 0 0px 20px #4be7e2;
+  box-shadow: 0 0 0 1px #f2f2f24a, 0 0 10px 0 #f2f2f255;
   transition: scale 0.3s ease-in;
 }
 
