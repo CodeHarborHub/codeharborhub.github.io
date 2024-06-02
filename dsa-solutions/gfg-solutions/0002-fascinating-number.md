@@ -14,6 +14,8 @@ tags:
 description: "This is a solution to the Fascinating Number problem on Geeks for Geeks."
 ---
 
+This tutorial contains a complete walk-through of the Fascinating Number problem from the Geeks for Geeks website. It features the implementation of the solution code in two programming languages: Python and C++.
+
 ## Problem Description
 
 Given a number N. Your task is to check whether it is fascinating or not.
@@ -22,7 +24,7 @@ Fascinating Number: When a number(should contain 3 digits or more) is multiplied
 
 ## Examples
 
-Example 1:
+**Example 1:**
 
 ```
 Input: N = 192
@@ -30,7 +32,7 @@ Output: Fascinating
 Explanation: After multiplication with 2 and 3, and concatenating with original number, number will become 192384576 which contains all digits from 1 to 9.
 ```
 
-Example 2:
+**Example 2:**
 
 ```
 Input: N = 853
@@ -58,43 +60,52 @@ The problem is to determine if a given number N is a fascinating number. A fasci
 3. Concatenate the original number, the product of the number and 2, and the product of the number and 3 into a single string.
 4. The concatenated string should contain all digits from 1 to 9 exactly once, with no other digits present (e.g., no zeros).
 
-## CPP Code
+## Code Implementation
 
-```cpp
-class Solution {
-public:
-	bool fascinating(int n) {
-	    int m2 = n * 2;
-	    int m3 = n * 3;
-	    string num = to_string(n) + to_string(m2) + to_string(m3);
-	    sort(num.begin(), num.end());
-	    if (num.find("123456789") == string::npos)
-	        return false;
-	    else if (num.length() - num.find("123456789") > 9)
-	        return false;
-	    else return true;
+<Tabs>
+  <TabItem value="Python" label="Python" default>
+  <SolutionAuthor name="@iamanolive"/>
+  ```py
+  class Solution:
+  
+  	def fascinating(self, n):
+		m2 = n * 2
+		m3 = n * 3
+		num = str(n) + str(m2) + str(m3)
+		num = "".join(sorted(num))
+		zero_count = num.count("0")
+		if (num.find("123456789") == -1):
+			return False
+		elif (len(num) - zero_count > 9):
+			return False
+		else: 
+			return True
+	```
+
+  </TabItem>
+  <TabItem value="C++" label="C++">
+  <SolutionAuthor name="@iamanolive"/>
+
+  ```cpp
+  class Solution {
+  public:
+  	bool fascinating(int n) {
+	  int m2 = n * 2;
+	  int m3 = n * 3;
+	  string num = to_string(n) + to_string(m2) + to_string(m3);
+	  sort(num.begin(), num.end());
+	  if (num.find("123456789") == string::npos)
+	    return false;
+	  else if (num.length() - num.find("123456789") > 9)
+	    return false;
+	  else return true;
 	}
 };
 ```
 
-## Python Code
+  </TabItem>  
+</Tabs>
 
-```py
-class Solution:
-
-	def fascinating(self, n):
-	    m2 = n * 2
-	    m3 = n * 3
-	    num = str(n) + str(m2) + str(m3)
-	    num = "".join(sorted(num))
-	    zero_count = num.count("0")
-	    if (num.find("123456789") == -1):
-	        return False
-	    elif (len(num) - zero_count > 9):
-	        return False
-	    else: 
-	        return True
-```
 
 ## Example Walkthrough
 
@@ -125,3 +136,9 @@ The time complexity is $O(1)$ because the operations involve a fixed number of s
 ## Space Complexity
 
 The space complexity is $O(1)$ as well since the operations use a constant amount of extra space for storing the products and concatenated strings.
+
+## References
+
+- **LeetCode Problem:** [Geeks for Geeks Problem](https://www.geeksforgeeks.org/problems/fascinating-number3751/1?page=1&difficulty=School&sortBy=difficulty)
+- **Solution Link:** [Fascinating Number on Geeks for Geeks](https://www.geeksforgeeks.org/problems/fascinating-number3751/1?page=1&difficulty=School&sortBy=difficulty)
+- **Authors LeetCode Profile:** [Anoushka](https://www.geeksforgeeks.org/user/iamanolive/)
