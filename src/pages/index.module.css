@@ -5,7 +5,23 @@
 [data-theme='dark'] .main__home {
   background: linear-gradient(rgb(15 23 42), rgb(15 23 42/50%));
 }
-
+/* scrollbar.css */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px; 
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;  
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: darkgray;    
+  border-radius: 10px;   
+}
+::-webkit-scrollbar-thumb:hover {
+  background:  darkgray;
+}
 .home__header {
   margin: 1rem;
 }
