@@ -4,33 +4,47 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./App.css"; // General app styles
 import Card from "./Card"; // Import the Card component
-const Image="./image.png";
+const Image = "./image.png";
 
-interface AppState {}
-
-class App extends Component<{}, AppState> {
+/**
+ * App component renders a testimonial slider with multiple Card components.
+ * It uses the react-slick library for the slider functionality.
+ */
+class App extends Component<object, {}> {
   private slider: RefObject<Slider>;
 
-  constructor(props: {}) {
+  /**
+   * Creates an instance of App.
+   * @param {object} props - The component props.
+   */
+  constructor(props: object) {
     super(props);
     this.slider = React.createRef(); // Create a ref for the Slider component
   }
 
-  // Function to pause the slider on card hover
+  /**
+   * Pauses the slider when a card is hovered over.
+   */
   handleCardHover = (): void => {
     if (this.slider.current) {
       this.slider.current.slickPause(); // Pause the slider
     }
   };
 
-  // Function to play the slider on card mouse leave
+  /**
+   * Resumes the slider when the mouse leaves a card.
+   */
   handleCardLeave = (): void => {
     if (this.slider.current) {
       this.slider.current.slickPlay(); // Play the slider
     }
   };
 
-  render() {
+  /**
+   * Renders the App component.
+   * @returns {JSX.Element} The rendered component.
+   */
+  render(): JSX.Element {
     const settings = {
       dots: true,
       infinite: true,
@@ -38,7 +52,7 @@ class App extends Component<{}, AppState> {
       speed: 5000,
       autoplaySpeed: 2000,
       cssEase: "linear",
-      slidesToShow: 4, // Default to 3 slides
+      slidesToShow: 4, // Default to 4 slides
       slidesToScroll: 1,
       responsive: [
         {
@@ -49,14 +63,14 @@ class App extends Component<{}, AppState> {
           },
         },
         {
-          breakpoint: 1030, // Adjust the breakpoint for large screens
+          breakpoint: 1030, // Adjust the breakpoint for medium screens
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
           },
         },
         {
-          breakpoint: 730, // Adjust the breakpoint for large screens
+          breakpoint: 730, // Adjust the breakpoint for small screens
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
