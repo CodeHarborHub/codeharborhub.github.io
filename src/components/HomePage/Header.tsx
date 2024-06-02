@@ -13,10 +13,24 @@ import { motion } from "framer-motion";
 const HeaderContent = () => {
   return (
     <div className="chh__header-content">
-      <h1 className="gradient__text"
-      >Level Up Skills with CodeHarborHub</h1>
+      <motion.h1
+        initial={{ opacity: 0, x: -10 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 1,
+          type: "spring",
+          stiffness: 100,
+          delay: 0.1,
+        }}
+        className="gradient__text"
+      >
+        Level Up Skills with CodeHarborHub
+      </motion.h1>
+      {/* <h1 className="gradient__text"
+      >Level Up Skills with CodeHarborHub</h1> */}
       <motion.p
-        initial={{ opacity: 0, x: -150 }}
+        initial={{ opacity: 0, x: -10 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{
@@ -34,14 +48,14 @@ const HeaderContent = () => {
 
       <div className="chh__header-content__input">
         <motion.button
-          initial={{ opacity: 0, x: -150 }}
+          initial={{ opacity: 0, x: -10 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{
             duration: 1,
             type: "spring",
             stiffness: 100,
-            delay: 0.5,
+            delay: 0.3,
           }}
           type="button"
         >
@@ -50,14 +64,14 @@ const HeaderContent = () => {
           </Link>
         </motion.button>
         <motion.button
-          initial={{ opacity: 0, x: 150 }}
+          initial={{ opacity: 0, x: 10 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{
             duration: 1,
             type: "spring",
             stiffness: 100,
-            delay: 0.5,
+            delay: 0.2,
           }}
           type="button"
         >
@@ -97,14 +111,14 @@ const HeaderImage = () => {
 
   return (
     <motion.div
-        initial={{ scale: 0, x: 150 }}
+        initial={{ scale: 0, x: 10 }}
         whileInView={{ scale: 0.8, x: 0 }}
         viewport={{ once: true }}
         transition={{
           duration: 1,
           type: "spring",
           stiffness: 100,
-          delay: 0.5,
+          delay: 0.3,
         }}
         className="chh__header-image"
       >
