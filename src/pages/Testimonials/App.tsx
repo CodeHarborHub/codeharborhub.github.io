@@ -10,14 +10,14 @@ const Image = "./image.png";
  * App component renders a testimonial slider with multiple Card components.
  * It uses the react-slick library for the slider functionality.
  */
-class App extends Component<object, {}> {
+class App extends Component<React.ComponentType<{}>, {}> {
   private slider: RefObject<Slider>;
 
   /**
    * Creates an instance of App.
-   * @param {object} props - The component props.
+   * @param {React.ComponentType<{}>} props - The component props.
    */
-  constructor(props: object) {
+  constructor(props: React.ComponentType<{}>) {
     super(props);
     this.slider = React.createRef(); // Create a ref for the Slider component
   }
@@ -128,7 +128,8 @@ class App extends Component<object, {}> {
                 imageSrc={Image}
                 contributor="FutureDev"
                 cont="@FutureDev"
-                cardback="Shoutout to @CodeHarborHub for providing such quality education for free! Their courses have been a game-changer for me. #TechSkills #CareerGrowth"
+                cardback="Shoutout to @CodeHarborHub for providing such quality education for free! Their courses have been a game-changer for me.
+                              cardback="Shoutout to @CodeHarborHub for providing such quality education for free! Their courses have been a game-changer for me. #TechSkills #CareerGrowth"
                 onMouseEnter={this.handleCardHover}
                 onMouseLeave={this.handleCardLeave}
               />
@@ -161,3 +162,4 @@ class App extends Component<object, {}> {
 }
 
 export default App;
+
