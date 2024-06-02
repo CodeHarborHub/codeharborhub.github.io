@@ -9,64 +9,8 @@ import Features from "../components/HomePage/Features";
 import Courses from "../components/HomePage/Courses";
 import { featuresData, coursesData } from "../database/home";
 import Header from "../components/HomePage/Header";
-import Tweet from "../components/Tweet";
-import Tweets, { type TweetItem } from "../data/tweets";
 import { motion } from "framer-motion";
-
-function TweetsSection(): React.JSX.Element {
-  const tweetColumns: TweetItem[][] = [[], [], []];
-  Tweets.filter((tweet) => tweet.showOnHomepage).forEach((tweet, i) =>
-    tweetColumns[i % 3]!.push(tweet)
-  );
-
-  return (
-    <div className={clsx(styles.section, styles.sectionAlt)}>
-      <div className="tweets-container">
-        <motion.div
-          initial={{ opacity: 0, x: -10 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 100,
-            delay: 0.3,
-          }}
-          className={styles.home__divider}
-        >
-          <Heading
-            as="h2"
-            className={clsx("text--center")}
-          >
-            Loved by many Users
-          </Heading>
-        </motion.div>
-        <div className={clsx("row", styles.tweetsSection)}>
-          {tweetColumns.map((tweetItems, i) => (
-            <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{
-              duration: 1,
-              type: "spring",
-              stiffness: 100,
-              delay: 0.3,
-            }}
-            className="col col--4"
-            key={i}
-          >
-              {tweetItems.map((tweet) => (
-                <Tweet {...tweet} key={tweet.url} />
-              ))}
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
-
+import Testimonials from "./Testimonials/App";
 export default function Home(): React.JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -138,8 +82,33 @@ export default function Home(): React.JSX.Element {
         >
         <Features features={featuresData} />
         </motion.div>
-
-        <TweetsSection />
+        <motion.div
+          initial={{ opacity: 0, x: -10 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 100,
+            delay: 0.3,
+          }}
+          className={styles.home__divider}
+        >
+          <Heading as="h2">Loved by many Users</Heading>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 100,
+            delay: 0.3,
+          }}
+        >
+        <Testimonials/>
+        </motion.div>
       </main>
     </Layout>
   );

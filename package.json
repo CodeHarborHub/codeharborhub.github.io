@@ -51,10 +51,12 @@
     "react-popper": "^2.3.0",
     "react-redux": "^9.1.0",
     "react-simple-code-editor": "^0.13.1",
+    "react-slick": "^0.30.2",
     "react-window": "^1.8.10",
     "redux": "^5.0.1",
     "rehype-katex": "^7.0.0",
     "remark-math": "^6.0.0",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.8",
     "vanilla-tilt": "^1.8.1"
   },
