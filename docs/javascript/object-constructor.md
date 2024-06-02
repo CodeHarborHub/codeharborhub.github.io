@@ -1,5 +1,5 @@
 ---
-id: Object Constructor
+id: 0bject Constructor
 title: JavaScript Object Constructor
 sidebar_label: Object Constructor
 sidebar_position: 17
@@ -136,17 +136,19 @@ A constructor is a function that initializes an object. In JavaScript, construct
 
 In JavaScript, there is a special constructor function known as `Object()` that is used to create and initialize an object. The return value of the `Object()` constructor is assigned to a variable. The variable contains a reference to the new object. We need an object constructor to create an object “type” that can be used multiple times without redefining the object every time.
 
-#### Example
+#Example
 
 ```javascript
-function GFG(A, B, C) {
-    this.g = A;
-    this.f = B;
-    this.gg = C;
+class Car {
+    constructor(brand, model, year) {
+        this.brand = brand;
+        this.model = model;
+        this.year = year;
+    }
 }
 ```
-Here, `GFG` is the constructor name and `A`, `B`, `C` are the arguments of the constructor.
 
+In this example, `Car` is the class name, and `brand`, `model`, and `year` are the parameters of the constructor.
 ### Instantiating an Object Constructor
 
 There are two ways to instantiate an object constructor:
@@ -170,112 +172,111 @@ There are two ways to assign properties to objects:
 #### Using Dot (.) Operator
 
 ```javascript
-object_name.properties = value;
+objectName.propertyName = value;
 ```
 
 #### Using Bracket Notation
 
 ```javascript
-object_name['properties'] = value;
+objectName['propertyName'] = value;
 ```
 
 #### Example 1: Using `new` Keyword and Dot Operator
 
 ```javascript
 // Creating object using "new" keyword 
-var gfg = new Object(); 
+var myObject = new Object(); 
   
 // Assigning properties to the object using dot (.) operator     
-gfg.a = "JavaScript"; 
-gfg.b = "GeeksforGeeks"; 
+myObject.subject = "JavaScript"; 
+myObject.author = "John Doe"; 
   
-console.log("Subject: " + gfg.a); 
-console.log("Author: " + gfg.b );
+console.log("Subject: " + myObject.subject); 
+console.log("Author: " + myObject.author);
 ```
 **Output:**
 ```
 Subject: JavaScript
-Author: GeeksforGeeks
+Author: John Doe
 ```
 
 #### Example 2: Using Curly Braces and Bracket Notation
 
 ```javascript
 // Creating an object using "{ }" bracket 
-var gfg = { }; 
+var myObject = { }; 
   
 // Assigning properties to the object using bracket notation 
-gfg['a'] = "JavaScript"; 
-gfg['b'] = "GeeksforGeeks"; 
+myObject['subject'] = "JavaScript"; 
+myObject['author'] = "Jane Smith"; 
   
-console.log("Subject: " + gfg.a); 
-console.log("Author: " + gfg.b );
+console.log("Subject: " + myObject.subject); 
+console.log("Author: " + myObject.author);
 ```
 **Output:**
 ```
 Subject: JavaScript
-Author: GeeksforGeeks
+Author: Jane Smith
 ```
 
 #### Example 3: Using Function with Object Constructor
 
 ```javascript
 // Creating object     
-var gfg = new Object(); 
+var myObject = new Object(); 
   
 // Assigning properties to the object     
-gfg.a = "JavaScript"; 
-gfg.b = "GeeksforGeeks"; 
+myObject.subject = "JavaScript"; 
+myObject.author = "James Brown"; 
   
 // Use function() 
-gfg.c = function () { 
-    return (gfg.a + " " + gfg.b); 
+myObject.displayInfo = function () { 
+    return (myObject.subject + " " + myObject.author); 
 }; 
   
-console.log("Subject: " + gfg.a); 
-console.log("Author: " + gfg.b); 
+console.log("Subject: " + myObject.subject); 
+console.log("Author: " + myObject.author); 
   
 // Call function with object constructor     
-console.log("Adding the strings: " + gfg.c() );
+console.log("Adding the strings: " + myObject.displayInfo());
 ```
 **Output:**
 ```
 Subject: JavaScript
-Author: GeeksforGeeks
-Adding the strings: JavaScript GeeksforGeeks
+Author: James Brown
+Adding the strings: JavaScript James Brown
 ```
 
 #### Example: Another Way to Create a Function Using Function Name
 
 ```javascript
 // Creating object using "{ }" bracket 
-var gfg = { }; 
+var myObject = { }; 
   
 // Assigning properties to the object     
-gfg.a = "JavaScript"; 
-gfg.b = "GeeksforGeeks"; 
+myObject.subject = "JavaScript"; 
+myObject.author = "Jessica Green"; 
   
 // Use function() 
-gfg.c = add; 
+myObject.displayInfo = add; 
   
 // Declare function add() 
 function add() { 
-    return (gfg.a + " " + gfg.b); 
+    return (myObject.subject + " " + myObject.author); 
 }; 
   
-console.log("Subject: " + gfg.a); 
-console.log("Author: " + gfg.b); 
+console.log("Subject: " + myObject.subject); 
+console.log("Author: " + myObject.author); 
   
 // Call function with object constructor     
-console.log("Adding the strings: " + gfg.c());
+console.log("Adding the strings: " + myObject.displayInfo());
 ```
 **Output:**
 ```
 Subject: JavaScript
-Author: GeeksforGeeks
-Adding the strings: JavaScript GeeksforGeeks
+Author: Jessica Green
+Adding the strings: JavaScript Jessica Green
 ```
-
 ## Conclusion
 
 Object constructor functions in JavaScript provide a powerful way to create and manage objects of the same type. By following best practices, such as using prototypes and understanding the limitations of constructors, you can write more efficient and maintainable code.
