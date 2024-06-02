@@ -55,7 +55,7 @@ export default function Contact(): JSX.Element {
                       duration: 1,
                       type: "spring",
                       stiffness: 100,
-                      delay: 0.5,
+                      delay: 0.2,
                     }}
                     className={styles.contact_us}
                   >

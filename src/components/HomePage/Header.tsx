@@ -13,18 +13,8 @@ import { motion } from "framer-motion";
 const HeaderContent = () => {
   return (
     <div className="chh__header-content">
-      <motion.h1
-        initial={{ opacity: 0, y: -150 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{
-          duration: 1,
-          type: "spring",
-          stiffness: 100,
-          delay: 0.5,
-        }}
-        className="gradient__text"
-      >Level Up Skills with CodeHarborHub</motion.h1>
+      <h1 className="gradient__text"
+      >Level Up Skills with CodeHarborHub</h1>
       <motion.p
         initial={{ opacity: 0, x: -150 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -33,7 +23,7 @@ const HeaderContent = () => {
           duration: 1,
           type: "spring",
           stiffness: 100,
-          delay: 0.5,
+          delay: 0.2,
         }}
       >
         Tired of limitations? CodeHarborHub shatters them. We&apos;re the

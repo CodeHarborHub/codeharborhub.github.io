@@ -19,7 +19,7 @@ export default function AboutUsSection() {
           duration: 1,
           type: "spring",
           stiffness: 100,
-          delay: 0.5,
+          delay: 0.2,
         }}
       >
             <Heading as={"h1"}>About Us</Heading>

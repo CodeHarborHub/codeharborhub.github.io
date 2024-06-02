@@ -124,7 +124,7 @@ function ShowcaseHeader() {
           duration: 1,
           type: "spring",
           stiffness: 100,
-          delay: 0.5,
+          delay: 0.2,
         }}
       >{TITLE}</motion.h1>
       <motion.p
@@ -177,7 +177,7 @@ function useSiteCountPlural() {
             'Pluralized label for the number of sites found on the showcase. Use as much plural forms (separated by "|") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)',
           message: '1 site|{sitesCount} sites',
         },
-        { sitesCount },
+        {sitesCount},
       ),
     );
 }
@@ -197,7 +197,7 @@ function ShowcaseFilters() {
               duration: 1,
               type: "spring",
               stiffness: 100,
-              delay: 1.4,
+              delay: 1,
             }}
           >
             <Translate id="showcase.filters.title">Filters</Translate>
@@ -210,7 +210,7 @@ function ShowcaseFilters() {
               duration: 1,
               type: "spring",
               stiffness: 100,
-              delay: 1.4,
+              delay: 1,
             }}
           >
             <span>{siteCountPlural(filteredUsers.length)}</span>
@@ -226,12 +226,12 @@ function ShowcaseFilters() {
                   duration: 4,
                   type: "spring",
                   stiffness: 100,
-                  delay: 1.4,
+                  delay: 1.2,
                 }}
                 className={clsx('clean-list', styles.checkboxList)}
               >
         {TagList.map((tag, i) => {
-          const { label, description, color } = Tags[tag];
+          const {label, description, color} = Tags[tag];
           const id = `showcase_checkbox_id_${tag}`;
 
           return (
@@ -350,7 +350,7 @@ function ShowcaseCards() {
                     duration: 1,
                     type: "spring",
                     stiffness: 100,
-                    delay: 1.4,
+                    delay: 1,
                   }}
                 >
                   <Translate id="showcase.favoritesList.title">
@@ -365,7 +365,7 @@ function ShowcaseCards() {
                     duration: 1,
                     type: "spring",
                     stiffness: 100,
-                    delay: 1.4,
+                    delay: 1,
                   }}
                 >
                   <FavoriteIcon svgClass={styles.svgIconFavorite} />
