@@ -19,8 +19,8 @@ Given a positive number N, find the value of $f0 + f1 + f2 + ... + fN$ where fi 
 ## Examples
 
 **Example 1:**
-```
 
+```
 Input:
 N = 3
 Output:
@@ -30,16 +30,14 @@ Explanation:
 ```
 
 **Example 2:**
+
 ```
-
-
 Input:
 N = 4
 Output:
 7
 Explanation:
 0 + 1 + 1 + 2 + 3 = 7
-
 ```
 
 ## Your Task
@@ -51,7 +49,7 @@ Expected Auxiliary Space: $O(1)$
 
 ## Constraints
 
-1. $1 \leq N \leq 100000$
+- $(1 \leq N \leq 100000)$
 
 ## Solution Approach
 
@@ -66,7 +64,7 @@ We can compute the sum of Fibonacci numbers from f0 to fN using a simple iterati
 1. Initialize `sum` to 0.
 2. Use a loop to compute Fibonacci numbers up to N.
 3. Add each Fibonacci number to `sum`.
-4. Return the sum modulo 1000000007.
+4. Return the sum modulo $1000000007$.
 
 #### Code (C++):
 
@@ -267,4 +265,3 @@ By leveraging the properties of Fibonacci numbers and matrix multiplication, we 
 - **GeeksforGeeks Problem:** [Geeks for Geeks Problem](https://www.geeksforgeeks.org/problems/fibonacci-sum/0)
 - **Solution Link:** [Fibonacci Sum on Geeks for Geeks](https://www.geeksforgeeks.org/problems/fibonacci-sum/0)
 - **Authors GeeksforGeeks Profile:** [Vipul](https://www.geeksforgeeks.org/user/lakumvipwjge/)
-
