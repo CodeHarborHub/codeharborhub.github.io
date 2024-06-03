@@ -1,3 +1,12 @@
+---
+id: 105
+title: troubleshoot
+sidebar_label: trouble
+sidebar_position: 444
+---
+
+
+
 # Troubleshooting
 
 See [Rollup's troubleshooting guide](https://rollupjs.org/troubleshooting/) for more information too.
