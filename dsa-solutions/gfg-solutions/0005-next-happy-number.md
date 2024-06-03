@@ -22,13 +22,10 @@ For a given non-negative integer N, find the next smallest Happy Number. A numbe
 
 ```
 input:
-
 N = 8
 
 Output:
-
 10
-
 ```
 
 Explanation:
@@ -39,13 +36,10 @@ $[ 1 * 1 + 0 * 0 = 1]$
 
 ```
 Input:
-
 N = 10
 
 Output:
-
 13
-
 ```
 
 Explanation:
@@ -124,6 +118,7 @@ Here are examples of how to determine if numbers less than 10 are happy numbers:
   $[9^2 + 7^2 = 130]$
   $[1^2 + 3^2 + 0^2 = 10]$
   $[1^2 + 0^2 = 1]$
+  
   Since we have reached 1, the process stops here. 7 is a happy number.
 ```
 
