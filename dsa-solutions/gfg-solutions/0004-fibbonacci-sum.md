@@ -14,13 +14,13 @@ This tutorial contains a complete walk-through of the Fibonacci Sum problem from
 
 ## Problem Description
 
-Given a positive number N, find the value of f0 + f1 + f2 + ... + fN where fi indicates the ith Fibonacci number. Note that f0 = 0, f1 = 1, f2 = 1, f3 = 2, f4 = 3, f5 = 5, and so on. Since the answer can be very large, return the result modulo 1000000007.
+Given a positive number N, find the value of $f0 + f1 + f2 + ... + fN$ where fi indicates the ith Fibonacci number. Note that $f0 = 0, f1 = 1, f2 = 1, f3 = 2, f4 = 3, f5 = 5,$ and so on. Since the answer can be very large, return the result modulo $1000000007$.
 
 ## Examples
 
-```
 **Example 1:**
 
+```
 Input:
 N = 3
 Output:
@@ -29,10 +29,9 @@ Explanation:
 0 + 1 + 1 + 2 = 4
 ```
 
-```
 **Example 2:**
 
-
+```
 Input:
 N = 4
 Output:
@@ -66,7 +65,7 @@ We can compute the sum of Fibonacci numbers from f0 to fN using a simple iterati
 1. Initialize `sum` to 0.
 2. Use a loop to compute Fibonacci numbers up to N.
 3. Add each Fibonacci number to `sum`.
-4. Return the sum modulo 1000000007.
+4. Return the sum modulo $1000000007$.
 
 #### Code (C++):
 
