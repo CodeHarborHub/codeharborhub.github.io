@@ -1,3 +1,12 @@
+---
+id: vite-js
+title: Vite Js Getting Started
+sidebar_label: Vite JS
+sidebar_position: 28
+tags: [ViteJS, Routing, Fast HMR]
+description: This docs contains about the Next JS documentation
+---
+
 <p align="center">
   <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
     <img width="180" src="https://vitejs.dev/logo.svg" alt="Vite logo">
