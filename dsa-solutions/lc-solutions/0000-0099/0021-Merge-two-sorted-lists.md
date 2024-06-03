@@ -1,5 +1,5 @@
 ---
-id: MergeTwoSortedLists
+id: merge-two-sorted-lists
 title: Merge Two Sorted Lists (LeetCode)
 sidebar_label: 0021-MergeTwoSortedLists
 tags:
