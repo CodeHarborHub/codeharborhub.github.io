@@ -30,12 +30,12 @@ const Courses: React.FC<CoursesProps> = ({ courses }) => {
     div.style.display = "none"
     const bigbox = document.querySelector("main");
     bigbox.appendChild(div)
-    for(let boxelement of allBox){
+    for(const boxelement of allBox){
       boxelement.addEventListener("mouseover", function(){
-      const height=this.offsetHeight;
-      const width=this.offsetWidth;
-      const x=this.offsetLeft;           	 	
-      const y=this.offsetTop;
+      const height=boxelement.offsetHeight;
+      const width=boxelement.offsetWidth;
+      const x=boxelement.offsetLeft;           	 	
+      const y=boxelement.offsetTop;
       div.style.display = "block";
       div.style.left= `${x}px`;
       div.style.top= `${y}px`;
@@ -44,12 +44,12 @@ const Courses: React.FC<CoursesProps> = ({ courses }) => {
     })
     const allfeatureBox=document.querySelectorAll<HTMLElement>(".feature_item_src-components-HomePage-home-module");
 
-    for(let boxelement of allfeatureBox){
+    for(const boxelement of allfeatureBox){
       boxelement.addEventListener("mouseover", function(){
-      const height=this.offsetHeight;
-      const width=this.offsetWidth;
-      const x=this.offsetLeft;           	 	
-      const y=this.offsetTop;
+      const height=boxelement.offsetHeight;
+      const width=boxelement.offsetWidth;
+      const x=boxelement.offsetLeft;           	 	
+      const y=boxelement.offsetTop;
       div.style.display = "block";
       div.style.left= `${x}px`;
       div.style.top= `${y}px`;
