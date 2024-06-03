@@ -1,5 +1,5 @@
 ---
-id: RemoveDuplicatesFromSortedArray
+id: remove-duplicates-from-sorted-array
 title: Remove Duplicates from Sorted Array (LeetCode)
 sidebar_label: 0026-RemoveDuplicatesFromSortedArray
 tags:
