@@ -14,12 +14,12 @@ This tutorial contains a complete walk-through of the Fibonacci Sum problem from
 
 ## Problem Description
 
-Given a positive number N, find the value of f0 + f1 + f2 + ... + fN where fi indicates the ith Fibonacci number. Note that f0 = 0, f1 = 1, f2 = 1, f3 = 2, f4 = 3, f5 = 5, and so on. Since the answer can be very large, return the result modulo 1000000007.
+Given a positive number N, find the value of $f0 + f1 + f2 + ... + fN$ where fi indicates the ith Fibonacci number. Note that $f0 = 0, f1 = 1, f2 = 1, f3 = 2, f4 = 3, f5 = 5,$ and so on. Since the answer can be very large, return the result modulo $1000000007$.
 
 ## Examples
 
-```
 **Example 1:**
+```
 
 Input:
 N = 3
@@ -29,8 +29,8 @@ Explanation:
 0 + 1 + 1 + 2 = 4
 ```
 
-```
 **Example 2:**
+```
 
 
 Input:
@@ -268,6 +268,3 @@ By leveraging the properties of Fibonacci numbers and matrix multiplication, we 
 - **Solution Link:** [Fibonacci Sum on Geeks for Geeks](https://www.geeksforgeeks.org/problems/fibonacci-sum/0)
 - **Authors GeeksforGeeks Profile:** [Vipul](https://www.geeksforgeeks.org/user/lakumvipwjge/)
 
-```
-This structured tutorial provides a comprehensive solution to the Fibonacci Sum problem, making it easy for others to understand and implement in various programming languages.
-```
