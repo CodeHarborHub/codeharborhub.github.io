@@ -37,9 +37,9 @@ Merge two sorted linked lists and return it as a sorted list. The list should be
 
 ### Constraints
 
-- `The number of nodes in both lists is in the range [0, 50].`
-- `-100 <= Node.val <= 100`
-- `Both `list1` and `list2` are sorted in non-decreasing order.`
+- The number of nodes in both lists is in the range [0, 50].
+- -100 <= Node.val <= 100
+- Both `list1` and `list2` are sorted in non-decreasing order.
 
 ### Approach
 
@@ -170,5 +170,5 @@ class Solution {
 ### Conclusion
 
 The above solution efficiently merges two sorted linked lists into a single sorted linked list. It employs a straightforward approach to compare the elements from both lists and attach the smaller element to the merged list. This ensures that the merged list maintains the sorted order of the input lists, providing a simple yet effective approach to solving the problem of merging two sorted linked lists.
-```
+
 
