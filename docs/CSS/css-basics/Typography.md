@@ -27,7 +27,15 @@ h1 {
 ```
 You can check the relation between units
 
-<img src="https://tse4.mm.bing.net/th?id=OIP.x3eQ0WknsCLHiRLl5jGYowHaEr&pid=Api&P=0&h=180" alt="CSS" height= "300" width="500"/>
+| Unit | Description | 
+| :--------: | :--------: | 
+| `em`   | Calculated relative to the current font size. For example, 2em indicates 2 times larger size than current element's font size. | 
+| `px`  | `px` stands for "pixels." It's a unit of measurement commonly used in digital design and web development to define the size of elements on a screen.   | 
+| `%` |  Percentage (`%`) is a relative unit of measurement that expresses a value as a fraction of the parent element's size or the viewport's dimensions.For example, 50% of the width of the container. |
+| `rem` | Relative to font size of the root-element. |
+| `vw` | Viewport width (`vw`) is a relative unit of measurement that expresses a value as a fraction of the width of the browser viewport. `1vw` is equal to 1% of the width of the viewport. |
+| `vh` | Viewport height (`vh`) is a relative unit of measurement that expresses a value as a fraction of the height of the browser viewport. `1vh` is equal to 1% of the height of the viewport. |
+
 
 **3. Font Weight**
 
