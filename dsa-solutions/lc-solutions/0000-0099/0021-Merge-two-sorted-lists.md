@@ -12,7 +12,7 @@ description: Given two sorted linked lists, merge them into a single sorted link
 
 | Problem Statement | Solution Link | LeetCode Profile |
 | :---------------- | :------------ | :--------------- |
-| [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Merge Two Sorted Lists Solution on LeetCode](https://leetcode.com/problems/merge-two-sorted-lists/solutions/) | [your-profile](https://leetcode.com/your-profile/) |
+| [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Merge Two Sorted Lists Solution on LeetCode](https://leetcode.com/problems/merge-two-sorted-lists/solutions/) |  [VijayShankerSharma](https://leetcode.com/u/darkknight648/) |
 
 ### Problem Description
 
