@@ -265,7 +265,3 @@ By leveraging the properties of Fibonacci numbers and matrix multiplication, we 
 - **GeeksforGeeks Problem:** [Geeks for Geeks Problem](https://www.geeksforgeeks.org/problems/fibonacci-sum/0)
 - **Solution Link:** [Fibonacci Sum on Geeks for Geeks](https://www.geeksforgeeks.org/problems/fibonacci-sum/0)
 - **Authors GeeksforGeeks Profile:** [Vipul](https://www.geeksforgeeks.org/user/lakumvipwjge/)
-<<<<<<<<< Temporary merge branch 1
-
-=========
->>>>>>>>> Temporary merge branch 2
