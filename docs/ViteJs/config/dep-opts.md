@@ -1,3 +1,11 @@
+---
+id: 107
+title: dept
+sidebar_label: opts
+sidebar_position: 666
+---
+
+
 # Dep Optimization Options
 
 - **Related:** [Dependency Pre-Bundling](/guide/dep-pre-bundling)
