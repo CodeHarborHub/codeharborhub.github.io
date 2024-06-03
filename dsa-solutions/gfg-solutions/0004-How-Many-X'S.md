@@ -193,7 +193,7 @@ function countXs() {
 
 #### Complexity Analysis
 
-- Time Complexity: $$O(R - L)$$
+- Time Complexity: $$O((R - L)*logR)$$
 - Space Complexity: $$O(1)$$
 
 </tabItem>
