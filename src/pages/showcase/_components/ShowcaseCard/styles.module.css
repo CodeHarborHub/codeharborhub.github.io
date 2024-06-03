@@ -10,16 +10,25 @@
   height: 150px;
   border-bottom: 2px solid var(--ifm-color-emphasis-200);
 }
-
+.showcaseCardImage:hover{
+  transform: scale(0.9);
+}
 .showcaseCardHeader {
   display: flex;
   align-items: center;
   margin-bottom: 12px;
 }
-
+.showcaseCardHeader :hover {
+  color:red;
+  text-shadow:0 0 10px var(--ifm-color-primary);
+}
 .showcaseCardTitle {
   margin-bottom: 0;
   flex: 1 1 auto;
+}
+.showcaseCardTitle :hover {
+  color:var(--ifm-color-primary);
+  text-shadow:0 0 10px whitesmoke;
 }
 
 .showcaseCardTitle a {
@@ -42,16 +51,17 @@
 }
 
 .showcaseCardHeader .svgIconFavorite {
-  color: var(--site-color-svg-icon-favorite);
+  color:white;
 }
-
+[data-theme='dark'] .showcaseCardHeader {
+  color:white;
+}
 .showcaseCardSrcBtn {
   margin-left: 6px;
   padding-left: 12px;
   padding-right: 12px;
   border: none;
 }
-
 .showcaseCardSrcBtn:focus-visible {
   background-color: var(--ifm-color-secondary-dark);
 }
@@ -68,8 +78,8 @@
 .showcaseCardBody {
   font-size: smaller;
   line-height: 1.66;
+  text-shadow:0 0 15px var(--ifm-color-primary);
 }
-
 .cardFooter {
   display: flex;
   flex-wrap: wrap;
@@ -96,4 +106,7 @@
   border-radius: 50%;
   margin-left: 6px;
   margin-right: 6px;
+}
+.tag :hover{
+  text-shadow:0 0 10px var(--ifm-color-secondary-dark);
 }
