@@ -49,7 +49,7 @@ Expected Auxiliary Space: $O(1)$
 
 ## Constraints
 
-1. $1 \leq N \leq 100000$
+- $(1 \leq N \leq 100000)$
 
 ## Solution Approach
 
