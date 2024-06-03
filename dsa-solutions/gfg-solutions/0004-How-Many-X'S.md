@@ -386,7 +386,7 @@ The mathematical approach is more efficient for large ranges. Choose the method 
 ## References
 
 - **GeeksforGeeks Problem:** [GeeksforGeeks Problem](https://www.geeksforgeeks.org/problems/how-many-xs4514/0)
-- **Solution Link:** [Two Repeated Elements Solution on GeeksforGeeks](https://www.geeksforgeeks.org/problems/how-many-xs4514/0)
+- **Solution Link:** [How Many X's Solution on GeeksforGeeks](https://www.geeksforgeeks.org/problems/how-many-xs4514/0)
 - **Authors GeeksforGeeks Profile:** [Manish Kumar Gupta](https://www.geeksforgeeks.org/user/manishd5hla)
 
 ---
