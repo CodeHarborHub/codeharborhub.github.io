@@ -1,6 +1,5 @@
 import clsx from "clsx";
-// import Link from "@docusaurus/Link";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
@@ -12,12 +11,13 @@ import Header from "../components/HomePage/Header";
 import Tweet from "../components/Tweet";
 import Tweets, { type TweetItem } from "../data/tweets";
 import { motion } from "framer-motion";
-import { FaArrowDown } from "react-icons/fa"; 
+import ScrollToTopButton from "../pages/Buttons/bottom/ScrollToBottomButton";
+import ScrollToBottomButton from "../pages/Buttons/top/ScrollToTopButton";
 
-function TweetsSection(): React.JSX.Element {
-  const tweetColumns: TweetItem[][] = [[], [], []];
+function TweetsSection() {
+  const tweetColumns = [[], [], []];
   Tweets.filter((tweet) => tweet.showOnHomepage).forEach((tweet, i) =>
-    tweetColumns[i % 3]!.push(tweet)
+    tweetColumns[i % 3].push(tweet)
   );
 
   return (
@@ -35,28 +35,25 @@ function TweetsSection(): React.JSX.Element {
           }}
           className={styles.home__divider}
         >
-          <Heading
-            as="h2"
-            className={clsx("text--center")}
-          >
+          <Heading as="h2" className={clsx("text--center")}>
             Loved by many Users
           </Heading>
         </motion.div>
         <div className={clsx("row", styles.tweetsSection)}>
           {tweetColumns.map((tweetItems, i) => (
             <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{
-              duration: 1,
-              type: "spring",
-              stiffness: 100,
-              delay: 0.3,
-            }}
-            className="col col--4"
-            key={i}
-          >
+              initial={{ opacity: 0, y: -10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 1,
+                type: "spring",
+                stiffness: 100,
+                delay: 0.3,
+              }}
+              className="col col--4"
+              key={i}
+            >
               {tweetItems.map((tweet) => (
                 <Tweet {...tweet} key={tweet.url} />
               ))}
@@ -68,30 +65,8 @@ function TweetsSection(): React.JSX.Element {
   );
 }
 
-export default function Home(): React.JSX.Element {
+export default function Home() {
   const { siteConfig } = useDocusaurusContext();
-  const [showScrollButton, setShowScrollButton] = useState(true);
-
-  const scrollToBottom = () => {
-    window.scrollTo({
-      top: document.documentElement.scrollHeight,
-      behavior: "smooth",
-    });
-    setShowScrollButton(false);
-  };
-
-  const handleScroll = () => {
-    if (window.scrollY === 0) {
-      setShowScrollButton(true);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <Layout
@@ -131,7 +106,7 @@ export default function Home(): React.JSX.Element {
             delay: 0.3,
           }}
         >
-        <Courses courses={coursesData} />
+          <Courses courses={coursesData} />
         </motion.div>
 
         <motion.div
@@ -160,19 +135,13 @@ export default function Home(): React.JSX.Element {
             delay: 0.3,
           }}
         >
-        <Features features={featuresData} />
+          <Features features={featuresData} />
         </motion.div>
 
         <TweetsSection />
 
-        {showScrollButton && (
-          <button
-            onClick={scrollToBottom}
-            className={styles.scrollToBottomButton}
-          >
-            <FaArrowDown />
-          </button>
-        )}
+        <ScrollToTopButton />
+        <ScrollToBottomButton />
       </main>
     </Layout>
   );
