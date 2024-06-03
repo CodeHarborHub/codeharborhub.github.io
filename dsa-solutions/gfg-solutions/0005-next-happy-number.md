@@ -79,12 +79,12 @@ The numbers that, when you repeatedly sum the squares of their digits, eventuall
 Here are examples of how to determine if numbers less than 10 are happy numbers:
 
 - **Number 1:**
+
   $[1 ^ 2 = 1]$
   Since we have already reached 1, the process stops here. 1 is a happy number.
 
 - **Number 2:**
 
-```
   $[2^2 = 4]$
   $[4^2 = 16]$
   $[1^2 + 6^2 = 37]$
@@ -94,25 +94,27 @@ Here are examples of how to determine if numbers less than 10 are happy numbers:
   $[1^2 + 4^2 + 5^2 = 42]$
   $[4^2 + 2^2 = 20]$
   $[2^2 + 0^2 = 4]$
-
-  Since we have reached 4 again, the process will continue in an infinite loop. 2 is not a happy number.
-```
+  
+Since we have reached 4 again, the process will continue in an infinite loop. 2 is not a happy number.
 
 - **Number 3:**
+
   Similar to the above steps, 3 will also enter a loop and is not a happy number.
 
 - **Number 4:**
+
   Similar to the above steps, 4 will also enter a loop and is not a happy number.
 
 - **Number 5:**
+
   Similar to the above steps, 5 will also enter a loop and is not a happy number.
 
 - **Number 6:**
+
   Similar to the above steps, 6 will also enter a loop and is not a happy number.
 
 - **Number 7:**
 
-```
   $[7^2 = 49]$
   $[4^2 + 9^2 = 97]$
   $[9^2 + 7^2 = 130]$
@@ -120,12 +122,13 @@ Here are examples of how to determine if numbers less than 10 are happy numbers:
   $[1^2 + 0^2 = 1]$
   
   Since we have reached 1, the process stops here. 7 is a happy number.
-```
 
 - **Number 8:**
+
   Similar to the above steps, 8 will also enter a loop and is not a happy number.
 
 - **Number 9:**
+
   Similar to the above steps, 9 will also enter a loop and is not a happy number.
 
 Based on this analysis, the numbers less than 10 that result in 1 when you repeatedly sum the squares of their digits are: 1 and 7.
