@@ -8,15 +8,15 @@ The color property sets the color of the text. Colors can be defined using vario
 
 Hex - Codes :
 
-![HexCode](https://tse4.mm.bing.net/th?id=OIP.9ipFzqjVN-PlJKwrpuAiuQHaFM&pid=Api&P=0&h=180)
+<img src="https://tse4.mm.bing.net/th?id=OIP.9ipFzqjVN-PlJKwrpuAiuQHaFM&pid=Api&P=0&h=180" alt="HexCode" height="200cm" width="200cm"/>
 
 RGB (Red-Green-Blue):
 
-<img src="https://tse4.mm.bing.net/th?id=OIP.zBlyNAyf8fFyqp7_vdv2mgHaCx&pid=Api&P=0&h=180" alt="RGB" height="500" width="400"/>
+<img src="https://tse4.mm.bing.net/th?id=OIP.zBlyNAyf8fFyqp7_vdv2mgHaCx&pid=Api&P=0&h=180" alt="RGB"/>
 
 HSL (Hue-Saturation-Lightness):
 
-<img src="https://giggster.com/guide/static/fed42130c194b0c240a4ec10408adf97/8282f/hsl-cover-2.png" alt="HSL" height="200" width="200"/>
+<img src="https://giggster.com/guide/static/fed42130c194b0c240a4ec10408adf97/8282f/hsl-cover-2.png" alt="HSL"/>
 
 ```css
 /* Named color */
