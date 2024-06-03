@@ -1,11 +1,12 @@
 ---
-id: Next JS
+id: next-js
 title: Next Js Getting Started
 sidebar_label: Next JS
 sidebar_position: 26
-tags: [NextJS,Routing,Page Routing]
+tags: [NextJS, Routing, Page Routing]
 description: This docs contains about the Next JS documentation
 ---
+
 
 ## Get Started
 
