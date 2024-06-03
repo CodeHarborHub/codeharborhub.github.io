@@ -21,7 +21,7 @@ In this page, we will solve the Pascal Triangle Row problem using different appr
 
 ## Problem Description
 
-Given a positive integer N, return the Nth row of Pascal's triangle. Pascal's triangle is a triangular array of the binomial coefficients formed by summing up the elements of the previous row. The elements can be large so return it modulo $\(10^9 + 7\)$.
+Given a positive integer N, return the Nth row of Pascal's triangle. Pascal's triangle is a triangular array of the binomial coefficients formed by summing up the elements of the previous row. The elements can be large so return it modulo $(10^9 + 7)$.
 
 ### Examples
 
@@ -188,9 +188,9 @@ function nthRowOfPascalTriangle() {
 
 The mathematical approach leverages the properties of binomial coefficients to directly compute each element in the Nth row of Pascal's triangle. The value of the element at the ith position is calculated using the formula:
 
-$\[
+$[
 \text{Value} = \binom{i}{j} = \frac{i!}{j! \cdot (i - j)!}
-\]$
+]$
 #### Implementation
 
 ```jsx live
