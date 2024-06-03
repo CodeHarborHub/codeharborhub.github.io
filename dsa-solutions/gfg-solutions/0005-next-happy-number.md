@@ -94,8 +94,8 @@ Here are examples of how to determine if numbers less than 10 are happy numbers:
   $[1^2 + 4^2 + 5^2 = 42]$
   $[4^2 + 2^2 = 20]$
   $[2^2 + 0^2 = 4]$
-  
-Since we have reached 4 again, the process will continue in an infinite loop. 2 is not a happy number.
+
+  Since we have reached 4 again, the process will continue in an infinite loop. 2 is not a happy number.
 
 - **Number 3:**
 
