@@ -1,3 +1,12 @@
+---
+id: 104
+title: getting-started
+sidebar_label: start
+sidebar_position: 333
+---
+
+
+
 # Getting Started
 
 <audio id="vite-audio">
