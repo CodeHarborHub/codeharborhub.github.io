@@ -63,5 +63,4 @@ Run `npm run dev` to start the development server.
 Visit `http://localhost:3000` to view your application.
 Edit `app/page.tsx` (or `pages/index.tsx`) file and save it to see the updated result in your browser.
 
-
-<a href="https://nextjs.org/docs/app"><img src="emty.png" alt ="continuereading" /></a>
+[![continuereading](emty.png)](https://nextjs.org/docs/app)
