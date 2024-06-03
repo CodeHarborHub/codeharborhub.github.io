@@ -26,6 +26,7 @@ const TagComp = React.forwardRef<HTMLLIElement, Tag>(
   ),
 );
 
+
 function ShowcaseCardTag({tags}: {tags: TagType[]}) {
   const tagObjects = tags.map((tag) => ({tag, ...Tags[tag]}));
 
@@ -34,6 +35,7 @@ function ShowcaseCardTag({tags}: {tags: TagType[]}) {
     TagList.indexOf(tagObject.tag),
   );
 
+  
   return (
     <>
       {tagObjectsSorted.map((tagObject, index) => {

@@ -5,12 +5,12 @@
  * LICENSE file in the root directory of this source tree.
  */
 
- .showcaseCardImage {
+.showcaseCardImage {
   overflow: hidden;
   height: 150px;
   border-bottom: 2px solid var(--ifm-color-emphasis-200);
 }
-.showcaseCardImage:hover{
+.showcaseCardImage:hover {
   transform: scale(0.9);
 }
 .showcaseCardHeader {
@@ -19,16 +19,16 @@
   margin-bottom: 12px;
 }
 .showcaseCardHeader :hover {
-  color:red;
-  text-shadow:0 0 10px var(--ifm-color-primary);
+  color: red;
+  text-shadow: 0 0 10px var(--ifm-color-primary);
 }
 .showcaseCardTitle {
   margin-bottom: 0;
   flex: 1 1 auto;
 }
 .showcaseCardTitle :hover {
-  color:var(--ifm-color-primary);
-  text-shadow:0 0 10px whitesmoke;
+  color: var(--ifm-color-primary);
+  text-shadow: 0 0 10px whitesmoke;
 }
 
 .showcaseCardTitle a {
@@ -51,10 +51,10 @@
 }
 
 .showcaseCardHeader .svgIconFavorite {
-  color:white;
+  color: white;
 }
-[data-theme='dark'] .showcaseCardHeader {
-  color:white;
+[data-theme="dark"] .showcaseCardHeader {
+  color: white;
 }
 .showcaseCardSrcBtn {
   margin-left: 6px;
@@ -66,19 +66,19 @@
   background-color: var(--ifm-color-secondary-dark);
 }
 
-[data-theme='dark'] .showcaseCardSrcBtn {
+[data-theme="dark"] .showcaseCardSrcBtn {
   background-color: var(--ifm-color-emphasis-200) !important;
   color: inherit;
 }
 
-[data-theme='dark'] .showcaseCardSrcBtn:hover {
+[data-theme="dark"] .showcaseCardSrcBtn:hover {
   background-color: var(--ifm-color-emphasis-300) !important;
 }
 
 .showcaseCardBody {
   font-size: smaller;
   line-height: 1.66;
-  text-shadow:0 0 15px var(--ifm-color-primary);
+  text-shadow: 0 0 15px var(--ifm-color-primary);
 }
 .cardFooter {
   display: flex;
@@ -107,6 +107,7 @@
   margin-left: 6px;
   margin-right: 6px;
 }
-.tag :hover{
-  text-shadow:0 0 10px var(--ifm-color-secondary-dark);
+
+.tag :hover {
+  text-shadow: 0 0 10px var(--ifm-color-secondary-dark);
 }
