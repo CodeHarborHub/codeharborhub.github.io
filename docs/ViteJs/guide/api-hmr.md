@@ -1,3 +1,10 @@
+---
+id: 101
+title: api-hmr
+sidebar_label: 321
+sidebar_position: 123
+---
+
 # HMR API
 
 :::tip Note
