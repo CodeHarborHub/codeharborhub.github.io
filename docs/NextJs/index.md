@@ -32,7 +32,7 @@ What import alias would you like configured? @/*
 ```
 After the prompts, `create-next-app` will create a folder with your project name and install the required dependencies.
 
-Create a root layout inside `app/layout.tsx` with the required `<html>` and ``<body>`` tags:
+Create a root layout inside `app/layout.tsx` with the required `<html>` and `<body>` tags:
 
 ```tsx
 // app/layout.tsx
@@ -64,4 +64,4 @@ Visit `http://localhost:3000` to view your application.
 Edit `app/page.tsx` (or `pages/index.tsx`) file and save it to see the updated result in your browser.
 
 
-<a href="https://nextjs.org/docs/app"><img src="emty.png"></a>
+<a href="https://nextjs.org/docs/app"><img src="emty.png" alt ="continuereading" /></a>
