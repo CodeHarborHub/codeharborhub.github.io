@@ -66,3 +66,55 @@ p {
     font-variant: small-caps;
 }
 ```
+
+**6. Text Transform**
+
+The `text-transform` property changes the case of the text.
+
+```css
+h1 {
+    text-transform: uppercase;
+}
+
+p {
+    text-transform: capitalize;
+}
+```
+
+**7. Text Alignment**
+
+The `text-align` property sets the horizontal alignment of the text.
+
+```css
+div {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+```
+
+**8. Text Decoration**
+
+The `text-decoration` property adds decorations to the text, such as underlines, overlines, and line-throughs.
+
+```css
+a {
+    text-decoration: none; /* Removes underline from links */
+}
+
+del {
+    text-decoration: line-through;
+}
+```
+
+**9. Text Shadow**
+
+The `text-shadow` property adds a shadow effect to the text.
+
+```css
+h1 {
+    text-shadow: 2px 2px 5px gray;
+}
+```
