@@ -1,3 +1,11 @@
+---
+id: 100
+title: plugin
+sidebar_label: 88
+sidebar_position: 23
+---
+
+
 # Plugins
 
 :::tip NOTE
