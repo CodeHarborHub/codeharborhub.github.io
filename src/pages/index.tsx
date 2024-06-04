@@ -12,7 +12,7 @@ import Header from "../components/HomePage/Header";
 import Tweet from "../components/Tweet";
 import Tweets, { type TweetItem } from "../data/tweets";
 import { motion } from "framer-motion";
-import { FaArrowDown } from "react-icons/fa"; 
+import { FaArrowDown, FaArrowUp } from "react-icons/fa"; 
 
 function TweetsSection(): React.JSX.Element {
   const tweetColumns: TweetItem[][] = [[], [], []];
@@ -78,6 +78,13 @@ export default function Home(): React.JSX.Element {
       behavior: "smooth",
     });
     setShowScrollButton(false);
+  };
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+    setShowScrollButton(false); // Optional: Hide button after scrolling
   };
 
   const handleScroll = () => {
@@ -171,6 +178,11 @@ export default function Home(): React.JSX.Element {
             className={styles.scrollToBottomButton}
           >
             <FaArrowDown />
+          </button>
+        )}
+        {showScrollButton && ( // Conditionally render the button
+          <button onClick={scrollToTop} className={styles.scrollToTopButton}>
+            <FaArrowUp />
           </button>
         )}
       </main>
