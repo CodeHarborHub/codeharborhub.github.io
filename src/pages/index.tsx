@@ -139,7 +139,7 @@ export default function Home() {
         <Features features={featuresData} />
         </motion.div> */}
 
-        <div className={styles.home__resources}>
+        <div>
           <ResourcesSection />
         </div>
 
