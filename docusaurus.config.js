@@ -18,7 +18,7 @@ const config = {
   },
 
   organizationName: "codeharborhub",
-  projectName: "codeharborhub",
+  projectName: "codeharborhub.github.io",
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -39,7 +39,7 @@ const config = {
             keywords: ["my-custom-admonition"],
             extendDefaults: true,
           },
-          editUrl: "https://github.com/codeharborhub/codeharborhub/edit/main/",
+          editUrl: "https://github.com/codeharborhub/codeharborhub.github.io/edit/main/",
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
         },
@@ -48,7 +48,7 @@ const config = {
         },
         blog: {
           showReadingTime: true,
-          editUrl: "https://github.com/codeharborhub/codeharborhub/edit/main/",
+          editUrl: "https://github.com/codeharborhub/codeharborhub.github.io/edit/main/",
           remarkPlugins: [[npm2yarn, { converters: ["pnpm"] }]],
         },
         theme: {
