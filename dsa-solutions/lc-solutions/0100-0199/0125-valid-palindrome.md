@@ -4,25 +4,24 @@ title: Valid Palindrome Solution
 sidebar_label: 0125 Valid Palindrome
 tags:
   - String
-  - Two Pointers
+  - Two Pointer
   - LeetCode
-  - Java
   - Python
+  - Java
+  - C++
 description: "This is a solution to the Valid Palindrome problem on LeetCode."
 ---
 
 ## Problem Description
 
-A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
-
-Given a string s, return true if it is a palindrome, or false otherwise.
+Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
 
 ### Examples
 
 **Example 1:**
 
 ```
-Input: s = "A man, a plan, a canal: Panama"
+Input: "A man, a plan, a canal: Panama"
 Output: true
 Explanation: "amanaplanacanalpanama" is a palindrome.
 ```
@@ -30,105 +29,311 @@ Explanation: "amanaplanacanalpanama" is a palindrome.
 **Example 2:**
 
 ```
-Input: s = "race a car"
+Input: "race a car"
 Output: false
 Explanation: "raceacar" is not a palindrome.
 ```
 
-**Example 3:**
-
-```
-Input: s = " "
-Output: true
-Explanation: s is an empty string "" after removing non-alphanumeric characters.
-Since an empty string reads the same forward and backward, it is a palindrome.
-```
-
 ### Constraints
 
-- $ (1 <= s.length <= 2 * 10^5) $
-- `s` consists only of printable ASCII characters.
-
----
+- The input string may consist of uppercase and lowercase letters, digits, and punctuation symbols.
+- The empty string is considered a valid palindrome.
 
 ## Solution for Valid Palindrome Problem
 
-### Approach
+<Tabs>
+  <TabItem value="Brute Force" label="Brute Force">
+  
+### Approach 1: Brute Force
 
-This code is an implementation of a solution to determine if a given string is a palindrome. A string is considered a palindrome if it reads the same forwards and backwards, ignoring spaces, punctuation, and letter casing.
+#### Intuition
 
-The approach used in this solution is a two-pointer technique, where two pointers are maintained, one at the start of the string and the other at the end of the string. The two pointers move towards each other until they meet in the middle of the string.
+The brute force approach involves stripping non-alphanumeric characters from the string and then checking if the resulting string is a palindrome by comparing it with its reverse.
 
-At each iteration of the while loop, the characters pointed to by the start and last pointers are checked. If either of the characters is not a letter or digit (e.g., a space or punctuation), the pointer is moved one step to the right (for start) or one step to the left (for last) until a letter or digit is found.
+#### Implementation
 
-If both characters are letters or digits, they are converted to lowercase and compared. If they are not equal, the function returns false, as the string is not a palindrome. If they are equal, both pointers are moved one step to the right and left, respectively.
-
-The while loop continues until the start pointer is greater than the last pointer, indicating that all the characters have been checked and that the string is a palindrome. The function then returns true.
-
-### Complexity
-
-- Time Complexity: O(n), where n is the length of the string. This is because, in the worst case, all characters in the string need to be checked once, so the number of operations is proportional to the length of the string.
-- Space Complexity: O(1), as no additional data structures are used, and only a constant amount of memory is required for the start and last pointers and a few variables.
-
-### Code
-
-#### Java
-
-```java
-class Solution {
-    public boolean isPalindrome(String s) {
-        if (s.isEmpty()) {
-            return true;
-        }
-        int start = 0;
-        int last = s.length() - 1;
-        while(start <= last) {
-            char currFirst = s.charAt(start);
-            char currLast = s.charAt(last);
-            if (!Character.isLetterOrDigit(currFirst)) {
-                start++;
-            } else if (!Character.isLetterOrDigit(currLast)) {
-                last--;
-            } else {
-                if (Character.toLowerCase(currFirst) != Character.toLowerCase(currLast)) {
-                    return false;
-                }
-                start++;
-                last--;
-            }
-        }
-        return true;
+```jsx live
+function ValidPalindromeTwoPointer() {
+  const isPalindrome = function (s) {
+    if (!s) return true;
+    let left = 0,
+      right = s.length - 1;
+    while (left < right) {
+      while (left < right && !s[left].match(/[a-zA-Z0-9]/)) left++;
+      while (left < right && !s[right].match(/[a-zA-Z0-9]/)) right--;
+      if (s[left].toLowerCase() !== s[right].toLowerCase()) return false;
+      left++;
+      right--;
     }
+    return true;
+  };
+
+  const input = "A man, a plan, a canal: Panama";
+  const output = isPalindrome(input);
+
+  return (
+    <div>
+      <p>
+        <b>Input:</b> {input}
+      </p>
+      <p>
+        <b>Output:</b> {output.toString()}
+      </p>
+    </div>
+  );
 }
 ```
 
-#### Python
+#### Code in Different Languages
 
-```python
-class Solution:
-    def isPalindrome(self, s: str) -> bool:
-        if not s:
-            return True
-        start = 0
-        last = len(s) - 1
-        while start <= last:
-            curr_first = s[start]
-            curr_last = s[last]
-            if not curr_first.isalnum():
-                start += 1
-            elif not curr_last.isalnum():
-                last -= 1
-            else:
-                if curr_first.lower() != curr_last.lower():
-                    return False
-                start += 1
-                last -= 1
-        return True
+<Tabs>
+  <TabItem value="JavaScript" label="JavaScript">
+  <SolutionAuthor name="@Vipullakum007"/>
+   ```javascript
+    function isPalindrome(s) {
+        if (!s) return true;
+        const cleanedS = s.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
+        return cleanedS === cleanedS.split('').reverse().join('');
+    }
+    ```
+
+  </TabItem>
+  <TabItem value="TypeScript" label="TypeScript">
+  <SolutionAuthor name="@Vipullakum007"/> 
+   ```typescript
+    function isPalindrome(s: string): boolean {
+        if (!s) return true;
+        const cleanedS = s.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
+        return cleanedS === cleanedS.split('').reverse().join('');
+    }
+
+    const input: string = "A man, a plan, a canal: Panama";
+    const output: boolean = isPalindrome(input);
+
+    console.log("Input:", input);
+    console.log("Output:", output);
+    ```
+
+  </TabItem>
+  <TabItem value="Python" label="Python">
+  <SolutionAuthor name="@Vipullakum007"/>
+   ```python
+    def is_palindrome(s: str) -> bool:
+      if not s:
+          return True
+      cleaned_s = ''.join(ch.lower() for ch in s if ch.isalnum())
+      return cleaned_s == cleaned_s[::-1]
+
+      input_str = "A man, a plan, a canal: Panama"
+      output = is_palindrome(input_str)
+
+      print("Input:", input_str)
+      print("Output:", output)
+
+    ```
+
+  </TabItem>
+  <TabItem value="Java" label="Java">
+  <SolutionAuthor name="@Vipullakum007"/>
+   ```java
+    class Solution {
+        public boolean isPalindrome(String s) {
+            if (s == null || s.isEmpty()) {
+                return true;
+            }
+            
+            String cleanedS = s.replaceAll("[^A-Za-z0-9]", "").toLowerCase();
+            return cleanedS.equals(new StringBuilder(cleanedS).reverse().toString());
+        }
+    }
+    ```
+
+  </TabItem>
+  <TabItem value="C++" label="C++">
+  <SolutionAuthor name="@Vipullakum007"/>
+   ```cpp
+    class Solution {
+    public:
+        bool isPalindrome(string s) {
+            if (s.empty()) {
+                return true;
+            }
+            
+            string cleanedS;
+            for (char ch : s) {
+                if (isalnum(ch)) {
+                    cleanedS += tolower(ch);
+                }
+            }
+            
+            string reversedS = cleanedS;
+            reverse(reversedS.begin(), reversedS.end());
+            
+            return cleanedS == reversedS;
+        }
+    };
+    ```
+
+  </TabItem>
+</Tabs>
+
+#### Complexity Analysis
+
+- Time Complexity: O(n), where n is the length of the input string. We iterate through the string once.
+- Space Complexity: O(n), where n is the length of the input string. We create a new string to store the cleaned version of the input.
+
+</TabItem>
+<TabItem value="Two Pointer" label="Two Pointer">
+
+### Approach 2: Two Pointer
+
+#### Intuition
+
+The two-pointer approach involves using two pointers, one starting from the beginning of the string and the other starting from the end. We move both pointers towards the center of the string, comparing characters at each step until they meet or cross each other.
+
+#### Implementation
+
+```jsx live
+function ValidPalindromeBruteForce() {
+  const isPalindrome = function (s) {
+    if (!s) return true;
+    const cleanedS = s.replace(/[^A-Za-z0-9]/g, "").toLowerCase();
+    return cleanedS === cleanedS.split("").reverse().join("");
+  };
+
+  const input = "A man, a plan, a canal: Panama";
+  const output = isPalindrome(input);
+
+  return (
+    <div>
+      <p>
+        <b>Input:</b> {input}
+      </p>
+      <p>
+        <b>Output:</b> {output.toString()}
+      </p>
+    </div>
+  );
+}
 ```
 
----
+#### Code in Different Languages
+
+<Tabs>
+  <TabItem value="JavaScript" label="JavaScript">
+  <SolutionAuthor name="@Vipullakum007"/>
+   ```javascript
+    function isPalindrome(s) {
+        if (!s) return true;
+        let left = 0, right = s.length - 1;
+        while (left < right) {
+            while (left < right && !s[left].match(/[a-zA-Z0-9]/)) left++;
+            while (left < right && !s[right].match(/[a-zA-Z0-9]/)) right--;
+            if (s[left].toLowerCase() !== s[right].toLowerCase()) return false;
+            left++;
+            right--;
+        }
+        return true;
+    }
+    ```
+
+  </TabItem>
+    <TabItem value="TypeScript" label="TypeScript">
+  <SolutionAuthor name="@Vipullakum007"/> 
+   ```typescript
+    function isPalindrome(s: string): boolean {
+      if (!s) return true;
+      let left = 0, right = s.length - 1;
+      while (left < right) {
+          while (left < right && !s[left].match(/[a-zA-Z0-9]/)) left++;
+          while (left < right && !s[right].match(/[a-zA-Z0-9]/)) right--;
+          if (s[left].toLowerCase() !== s[right].toLowerCase()) return false;
+          left++;
+          right--;
+      }
+      return true;
+    }
+    ```
+
+  </TabItem>
+  <TabItem value="Java" label="Java">
+  <SolutionAuthor name="@Vipullakum007"/>
+   ```java
+    class Solution {
+        public boolean isPalindrome(String s) {
+            if (s == null || s.isEmpty()) {
+                return true;
+            }
+            
+            int left = 0, right = s.length() - 1;
+            while (left < right) {
+                while (left < right && !Character.isLetterOrDigit(s.charAt(left))) left++;
+                while (left < right && !Character.isLetterOrDigit(s.charAt(right))) right--;
+                if (Character.toLowerCase(s.charAt(left)) != Character.toLowerCase(s.charAt(right))) return false;
+                left++;
+                right--;
+            }
+            return true;
+        }
+    }
+    ```
+
+  </TabItem>
+  <TabItem value="Python" label="Python">
+  <SolutionAuthor name="@Vipullakum007"/>
+   ```python
+    def is_palindrome(s: str) -> bool:
+      if not s:
+          return True
+      left, right = 0, len(s) - 1
+      while left < right:
+          while left < right and not s[left].isalnum(): left += 1
+          while left < right and not s[right].isalnum(): right -= 1
+          if s[left].lower() != s[right].lower(): return False
+          left += 1
+          right -= 1
+      return True
+    ```
+
+  </TabItem>
+  <TabItem value="C++" label="C++">
+  <SolutionAuthor name="@Vipullakum007"/>
+   ```cpp
+    class Solution {
+    public:
+        bool isPalindrome(string s) {
+            if (s.empty()) {
+                return true;
+            }
+            
+            int left = 0, right = s.length() - 1;
+            while (left < right) {
+                while (left < right && !isalnum(s[left])) left++;
+                while (left < right && !isalnum(s[right])) right--;
+                if (tolower(s[left]) != tolower(s[right])) return false;
+                left++;
+                right--;
+            }
+            return true;
+        }
+    };
+    ```
+
+  </TabItem>
+</Tabs>
+
+#### Complexity Analysis
+
+- Time Complexity: O(n), where n is the length of the input string. We iterate through the string once.
+- Space Complexity: O(1). We're not using any extra space.
+
+</TabItem>
+</Tabs>
 
 ## References
 
 - **LeetCode Problem**: [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
+
 - **Solution Link**: [LeetCode Solution](https://leetcode.com/problems/valid-palindrome/solution/)
+
+- **Authors GeeksforGeeks Profile:** [Vipul lakum](https://leetcode.com/u/vipul_lakum_02/)

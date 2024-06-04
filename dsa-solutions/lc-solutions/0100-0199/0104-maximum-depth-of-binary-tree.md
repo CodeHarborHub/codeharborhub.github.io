@@ -103,6 +103,41 @@ function MaxDepthOfBinaryTree() {
 #### Code in Different Languages
 
 <Tabs>
+  <TabItem value="JavaScript" label="JavaScript" default>
+  <SolutionAuthor name="@Vipullakum007"/>
+   ```javascript
+    function maxDepth(root) {
+        if (!root) return 0;
+        const maxLeft = maxDepth(root.left);
+        const maxRight = maxDepth(root.right);
+        return Math.max(maxLeft, maxRight) + 1;
+    }
+    ```
+
+  </TabItem>
+  <TabItem value="TypeScript" label="TypeScript">
+  <SolutionAuthor name="@Vipullakum007"/> 
+   ```typescript
+    class TreeNode {
+        val: number;
+        left: TreeNode | null;
+        right: TreeNode | null;
+        constructor(val: number) {
+            this.val = val;
+            this.left = null;
+            this.right = null;
+        }
+    }
+
+    function maxDepth(root: TreeNode | null): number {
+        if (!root) return 0;
+        const maxLeft: number = maxDepth(root.left);
+        const maxRight: number = maxDepth(root.right);
+        return Math.max(maxLeft, maxRight) + 1;
+    }
+    ```
+
+  </TabItem>
   <TabItem value="Java" label="Java" default>
   <SolutionAuthor name="@Vipullakum007"/>
    ```java
@@ -168,11 +203,118 @@ Another approach to find the maximum depth of a binary tree is to use breadth-fi
 
 #### Implementation
 
+```jsx live
+function MaxDepthOfBinaryTree() {
+  class TreeNode {
+    constructor(val) {
+      this.val = val;
+      this.left = null;
+      this.right = null;
+    }
+  }
 
+  // Creating the binary tree
+  const root = new TreeNode(3);
+  root.left = new TreeNode(9);
+  root.right = new TreeNode(20);
+  root.right.left = new TreeNode(15);
+  root.right.right = new TreeNode(7);
+
+  const maxDepth = function (root) {
+    if (!root) return 0;
+
+    let depth = 0;
+    const queue = [root];
+
+    while (queue.length) {
+      const size = queue.length;
+      for (let i = 0; i < size; i++) {
+        const node = queue.shift();
+        if (node.left) queue.push(node.left);
+        if (node.right) queue.push(node.right);
+      }
+      depth++;
+    }
+
+    return depth;
+  };
+
+  const result = maxDepth(root);
+  return (
+    <div>
+      <p>
+        <b>Binary Tree:</b> {JSON.stringify(root)}
+      </p>
+      <p>
+        <b>Maximum Depth:</b> {result}
+      </p>
+    </div>
+  );
+}
+```
 
 #### Code in Different Languages
 
 <Tabs>
+    <TabItem value="JavaScript" label="JavaScript" default>
+  <SolutionAuthor name="@Vipullakum007"/>
+   ```javascript
+    function maxDepth(root) {
+    if (!root) return 0;
+
+    let depth = 0;
+    const queue = [root];
+
+    while (queue.length) {
+        depth++;
+        const levelSize = queue.length;
+        for (let i = 0; i < levelSize; ++i) {
+        const node = queue.shift();
+        if (node.left) queue.push(node.left);
+        if (node.right) queue.push(node.right);
+        }
+    }
+
+    return depth;
+    }
+    ```
+
+  </TabItem>
+  <TabItem value="TypeScript" label="TypeScript">
+  <SolutionAuthor name="@Vipullakum007"/>
+   ```typescript
+    class TreeNode {
+        val: number;
+        left: TreeNode | null;
+        right: TreeNode | null;
+        constructor(val: number) {
+            this.val = val;
+            this.left = null;
+            this.right = null;
+        }
+    }
+
+    function maxDepth(root: TreeNode | null): number {
+        if (!root) return 0;
+
+        let depth = 0;
+        const queue: TreeNode[] = [root];
+
+        while (queue.length) {
+            depth++;
+            const levelSize = queue.length;
+            for (let i = 0; i < levelSize; ++i) {
+            const node = queue.shift()!;
+            if (node.left) queue.push(node.left);
+            if (node.right) queue.push(node.right);
+            }
+        }
+
+        return depth;
+    }
+    ```
+
+  </TabItem>
   <TabItem value="Java" label="Java" default>
   <SolutionAuthor name="@Vipullakum007"/>
    ```java
