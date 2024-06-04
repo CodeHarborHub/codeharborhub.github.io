@@ -1,5 +1,4 @@
 import clsx from "clsx";
-// import Link from "@docusaurus/Link";
 import React from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
@@ -11,31 +10,54 @@ import { featuresData, coursesData } from "../database/home";
 import Header from "../components/HomePage/Header";
 import Tweet from "../components/Tweet";
 import Tweets, { type TweetItem } from "../data/tweets";
+import { motion } from "framer-motion";
+import ScrollToTopButton from "../components/Buttons/bottom/ScrollToBottomButton";
+import ScrollToBottomButton from "../components/Buttons/top/ScrollToTopButton";
 
-function TweetsSection(): React.JSX.Element {
-  const tweetColumns: TweetItem[][] = [[], [], []];
+function TweetsSection() {
+  const tweetColumns = [[], [], []];
   Tweets.filter((tweet) => tweet.showOnHomepage).forEach((tweet, i) =>
-    tweetColumns[i % 3]!.push(tweet)
+    tweetColumns[i % 3].push(tweet)
   );
 
   return (
     <div className={clsx(styles.section, styles.sectionAlt)}>
       <div className="tweets-container">
-        <div className={styles.home__divider}>
-          <Heading
-            as="h2"
-            className={clsx("text--center")}
-          >
+        <motion.div
+          initial={{ opacity: 0, x: -10 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 100,
+            delay: 0.3,
+          }}
+          className={styles.home__divider}
+        >
+          <Heading as="h2" className={clsx("text--center")}>
             Loved by many Users
           </Heading>
-        </div>
+        </motion.div>
         <div className={clsx("row", styles.tweetsSection)}>
           {tweetColumns.map((tweetItems, i) => (
-            <div className="col col--4" key={i}>
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 1,
+                type: "spring",
+                stiffness: 100,
+                delay: 0.3,
+              }}
+              className="col col--4"
+              key={i}
+            >
               {tweetItems.map((tweet) => (
                 <Tweet {...tweet} key={tweet.url} />
               ))}
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -43,8 +65,9 @@ function TweetsSection(): React.JSX.Element {
   );
 }
 
-export default function Home(): React.JSX.Element {
+export default function Home() {
   const { siteConfig } = useDocusaurusContext();
+
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
@@ -57,19 +80,68 @@ export default function Home(): React.JSX.Element {
 
         <hr className={styles.home__hr} />
 
-        <div className={styles.home__divider}>
+        <motion.div
+          initial={{ opacity: 0, x: -10 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 100,
+            delay: 0.3,
+          }}
+          className={styles.home__divider}
+        >
           <Heading as="h2">Courses Available</Heading>
-        </div>
+        </motion.div>
 
-        <Courses courses={coursesData} />
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 100,
+            delay: 0.3,
+          }}
+        >
+          <Courses courses={coursesData} />
+        </motion.div>
 
-        <div className={styles.home__divider}>
+        <motion.div
+          initial={{ opacity: 0, x: -10 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 100,
+            delay: 0.3,
+          }}
+          className={styles.home__divider}
+        >
           <Heading as="h2">Features of {siteConfig.title}</Heading>
-        </div>
+        </motion.div>
 
-        <Features features={featuresData} />
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 100,
+            delay: 0.3,
+          }}
+        >
+          <Features features={featuresData} />
+        </motion.div>
 
         <TweetsSection />
+
+        <ScrollToTopButton />
+        <ScrollToBottomButton />
       </main>
     </Layout>
   );
