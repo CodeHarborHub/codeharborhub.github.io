@@ -1,0 +1,18 @@
+.scrollToTopButton {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.scrollToTopButton:hover {
+  background-color: var(--ifm-color-primary-dark);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
