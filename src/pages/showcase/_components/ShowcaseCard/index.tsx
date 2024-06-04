@@ -1,4 +1,3 @@
-
 import React from 'react';
 import clsx from 'clsx';
 import Image from '@theme/IdealImage';
@@ -26,7 +25,6 @@ const TagComp = React.forwardRef<HTMLLIElement, Tag>(
   ),
 );
 
-
 function ShowcaseCardTag({tags}: {tags: TagType[]}) {
   const tagObjects = tags.map((tag) => ({tag, ...Tags[tag]}));
 
@@ -35,7 +33,6 @@ function ShowcaseCardTag({tags}: {tags: TagType[]}) {
     TagList.indexOf(tagObject.tag),
   );
 
-  
   return (
     <>
       {tagObjectsSorted.map((tagObject, index) => {
@@ -58,7 +55,10 @@ function ShowcaseCardTag({tags}: {tags: TagType[]}) {
 
 function ShowcaseCard({user}: {user: User}) {
   return (
-    <li key={user.title} className="card shadow--md">
+    <li
+      key={user.title}
+      className={clsx('card shadow--md', styles.card)}
+    >
       <div className={clsx('card__image', styles.showcaseCardImage)}>
         <Image img={user.preview} alt={user.title} />
       </div>

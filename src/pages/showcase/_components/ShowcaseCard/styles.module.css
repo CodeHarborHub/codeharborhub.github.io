@@ -10,26 +10,18 @@
   height: 150px;
   border-bottom: 2px solid var(--ifm-color-emphasis-200);
 }
-.showcaseCardImage:hover {
-  transform: scale(0.9);
-}
+
 .showcaseCardHeader {
   display: flex;
   align-items: center;
   margin-bottom: 12px;
 }
-.showcaseCardHeader :hover {
-  color: red;
-  text-shadow: 0 0 10px var(--ifm-color-primary);
-}
+
 .showcaseCardTitle {
   margin-bottom: 0;
   flex: 1 1 auto;
 }
-.showcaseCardTitle :hover {
-  color: var(--ifm-color-primary);
-  text-shadow: 0 0 10px whitesmoke;
-}
+
 
 .showcaseCardTitle a {
   text-decoration: none;
@@ -78,7 +70,6 @@
 .showcaseCardBody {
   font-size: smaller;
   line-height: 1.66;
-  text-shadow: 0 0 15px var(--ifm-color-primary);
 }
 .cardFooter {
   display: flex;
@@ -107,7 +98,13 @@
   margin-left: 6px;
   margin-right: 6px;
 }
-
-.tag :hover {
-  text-shadow: 0 0 10px var(--ifm-color-secondary-dark);
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.card:hover {
+  /* transform: translateY(-5px); */
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px white;
+}
+
