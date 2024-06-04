@@ -5,13 +5,14 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
-import Features from "../components/HomePage/Features";
-import Courses from "../components/HomePage/Courses";
-import { featuresData, coursesData } from "../database/home";
+// import Features from "../components/HomePage/Features";
+// import Courses from "../components/HomePage/Courses";
+// import { featuresData, coursesData } from "../database/home";
 import Header from "../components/HomePage/Header";
 import Tweet from "../components/Tweet";
 import Tweets, { type TweetItem } from "../data/tweets";
 import { motion } from "framer-motion";
+import ResourcesSection from "../components/HomePage/ResourcesSection";
 
 function TweetsSection(): React.JSX.Element {
   const tweetColumns: TweetItem[][] = [[], [], []];
@@ -81,7 +82,7 @@ export default function Home(): React.JSX.Element {
 
         <hr className={styles.home__hr} />
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, x: -10 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -137,9 +138,13 @@ export default function Home(): React.JSX.Element {
           }}
         >
         <Features features={featuresData} />
-        </motion.div>
+        </motion.div> */}
 
-        <TweetsSection />
+        <div className={styles.home__resources}>
+          <ResourcesSection />
+        </div>
+
+       <TweetsSection />
       </main>
     </Layout>
   );
