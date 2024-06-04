@@ -93,6 +93,15 @@ const courses = [
       author: "Ajay Dhangar",
       link: "/courses"
     },
+    {
+      id: 12,
+      title: "Python Projects",
+      description: "This course is for absolute beginners who want to learn Python projects.",
+      category: "python",
+      imageUrl: "/img/svg/developer_activity.svg",
+      author: "Ajay Dhangar",
+      link: "https://realpython.com/tutorials/projects/"
+    },
   ];
   
   export default courses;

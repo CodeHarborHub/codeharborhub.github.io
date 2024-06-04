@@ -1,5 +1,4 @@
 import clsx from "clsx";
-// import Link from "@docusaurus/Link";
 import React from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
@@ -13,11 +12,13 @@ import Tweet from "../components/Tweet";
 import Tweets, { type TweetItem } from "../data/tweets";
 import { motion } from "framer-motion";
 import ResourcesSection from "../components/HomePage/ResourcesSection";
+import ScrollToTopButton from "../components/Buttons/bottom/ScrollToBottomButton";
+import ScrollToBottomButton from "../components/Buttons/top/ScrollToTopButton";
 
-function TweetsSection(): React.JSX.Element {
-  const tweetColumns: TweetItem[][] = [[], [], []];
+function TweetsSection() {
+  const tweetColumns = [[], [], []];
   Tweets.filter((tweet) => tweet.showOnHomepage).forEach((tweet, i) =>
-    tweetColumns[i % 3]!.push(tweet)
+    tweetColumns[i % 3].push(tweet)
   );
 
   return (
@@ -35,28 +36,25 @@ function TweetsSection(): React.JSX.Element {
           }}
           className={styles.home__divider}
         >
-          <Heading
-            as="h2"
-            className={clsx("text--center")}
-          >
+          <Heading as="h2" className={clsx("text--center")}>
             Loved by many Users
           </Heading>
         </motion.div>
         <div className={clsx("row", styles.tweetsSection)}>
           {tweetColumns.map((tweetItems, i) => (
             <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{
-              duration: 1,
-              type: "spring",
-              stiffness: 100,
-              delay: 0.3,
-            }}
-            className="col col--4"
-            key={i}
-          >
+              initial={{ opacity: 0, y: -10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 1,
+                type: "spring",
+                stiffness: 100,
+                delay: 0.3,
+              }}
+              className="col col--4"
+              key={i}
+            >
               {tweetItems.map((tweet) => (
                 <Tweet {...tweet} key={tweet.url} />
               ))}
@@ -68,8 +66,9 @@ function TweetsSection(): React.JSX.Element {
   );
 }
 
-export default function Home(): React.JSX.Element {
+export default function Home() {
   const { siteConfig } = useDocusaurusContext();
+
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
@@ -108,7 +107,7 @@ export default function Home(): React.JSX.Element {
             delay: 0.3,
           }}
         >
-        <Courses courses={coursesData} />
+          <Courses courses={coursesData} />
         </motion.div>
 
         <motion.div
@@ -144,7 +143,10 @@ export default function Home(): React.JSX.Element {
           <ResourcesSection />
         </div>
 
-       <TweetsSection />
+        <TweetsSection />
+
+        <ScrollToTopButton />
+        <ScrollToBottomButton />
       </main>
     </Layout>
   );
