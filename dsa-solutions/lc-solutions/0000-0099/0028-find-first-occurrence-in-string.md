@@ -2,7 +2,7 @@
 id: find-first-occurrence-in-string
 title: Find the Index of the First Occurrence in a String
 difficulty: Easy
-sidebar_label: FindFirstOccurrenceInString
+sidebar_label: 0028-FindFirstOccurrenceInString
 tags:
   - String
 ---
