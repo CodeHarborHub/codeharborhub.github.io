@@ -1,4 +1,4 @@
-import React, {useState, useMemo, useEffect} from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import Layout from '@theme/Layout';
 import clsx from 'clsx';
 
@@ -21,10 +21,10 @@ import {
 import ShowcaseTooltip from './_components/ShowcaseTooltip';
 
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
-import Translate, {translate} from '@docusaurus/Translate';
-import {useHistory, useLocation} from '@docusaurus/router';
-import {usePluralForm} from '@docusaurus/theme-common';
-
+import Translate, { translate } from '@docusaurus/Translate';
+import { useHistory, useLocation } from '@docusaurus/router';
+import { usePluralForm } from '@docusaurus/theme-common';
+import { motion } from "framer-motion";
 import styles from './styles.module.css';
 
 const TITLE =
@@ -40,13 +40,13 @@ type UserState = {
 };
 
 function restoreUserState(userState: UserState | null) {
-  const {scrollTopPosition, focusedElementId} = userState ?? {
+  const { scrollTopPosition, focusedElementId } = userState ?? {
     scrollTopPosition: 0,
     focusedElementId: undefined,
   };
   // @ts-expect-error: if focusedElementId is undefined it returns null
   document.getElementById(focusedElementId)?.focus();
-  window.scrollTo({top: scrollTopPosition});
+  window.scrollTo({ top: scrollTopPosition });
 }
 
 export function prepareUserState(): UserState | undefined {
@@ -116,24 +116,57 @@ function useFilteredUsers() {
 function ShowcaseHeader() {
   return (
     <section className="margin-top--lg margin-bottom--lg text--center">
-      <h1>{TITLE}</h1>
-      <p>{DESCRIPTION}</p>
-      <a
-        className="button button--primary"
-        href={EDIT_URL}
-        target="_blank"
-        rel="noreferrer"
+      <motion.h1
+        initial={{ opacity: 0, x: -150 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 1,
+          type: "spring",
+          stiffness: 100,
+          delay: 0.2,
+        }}
+      >{TITLE}</motion.h1>
+      <motion.p
+        initial={{ opacity: 0, y: 150 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 1,
+          type: "spring",
+          stiffness: 100,
+          delay: 0.8,
+        }}
+      >{DESCRIPTION}</motion.p>
+
+      <motion.div
+        initial={{ opacity: 0, y: 150 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 1,
+          type: "spring",
+          stiffness: 100,
+          delay: 1.1,
+        }}
       >
-        <Translate id="showcase.header.button">
-          🌟 Join the CodeHarbarHub Community
-        </Translate>
-      </a>
+        <a
+          className="button button--primary"
+          href={EDIT_URL}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Translate id="showcase.header.button">
+            🌟 Join the CodeHarbarHub Community
+          </Translate>
+        </a>
+      </motion.div>
     </section>
   );
 }
 
 function useSiteCountPlural() {
-  const {selectMessage} = usePluralForm();
+  const { selectMessage } = usePluralForm();
   return (sitesCount: number) =>
     selectMessage(
       sitesCount,
@@ -156,14 +189,47 @@ function ShowcaseFilters() {
     <section className="container margin-top--l margin-bottom--lg">
       <div className={clsx('margin-bottom--sm', styles.filterCheckbox)}>
         <div>
-          <h2>
+          <motion.h2
+            initial={{ opacity: 0, x: -150 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 1,
+              type: "spring",
+              stiffness: 100,
+              delay: 1,
+            }}
+          >
             <Translate id="showcase.filters.title">Filters</Translate>
-          </h2>
-          <span>{siteCountPlural(filteredUsers.length)}</span>
+          </motion.h2>
+          <motion.div
+            initial={{ opacity: 0, x: -150 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 1,
+              type: "spring",
+              stiffness: 100,
+              delay: 1,
+            }}
+          >
+            <span>{siteCountPlural(filteredUsers.length)}</span>
+          </motion.div>
         </div>
         <ShowcaseFilterToggle />
       </div>
-      <ul className={clsx('clean-list', styles.checkboxList)}>
+      <motion.ul
+                initial={{ opacity: 0}}
+                whileInView={{ opacity: 1}}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 4,
+                  type: "spring",
+                  stiffness: 100,
+                  delay: 1.2,
+                }}
+                className={clsx('clean-list', styles.checkboxList)}
+              >
         {TagList.map((tag, i) => {
           const {label, description, color} = Tags[tag];
           const id = `showcase_checkbox_id_${tag}`;
@@ -199,7 +265,7 @@ function ShowcaseFilters() {
             </li>
           );
         })}
-      </ul>
+      </motion.ul>
     </section>
   );
 }
@@ -276,32 +342,86 @@ function ShowcaseCards() {
                   styles.showcaseFavoriteHeader,
                 )}
               >
-                <h2>
+                <motion.h2
+                  initial={{ opacity: 0, x: -150 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 1,
+                    type: "spring",
+                    stiffness: 100,
+                    delay: 1,
+                  }}
+                >
                   <Translate id="showcase.favoritesList.title">
                     Our favorites
                   </Translate>
-                </h2>
-                <FavoriteIcon svgClass={styles.svgIconFavorite} />
+                </motion.h2>
+                <motion.h2
+                  initial={{ opacity: 0, x: -150 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 1,
+                    type: "spring",
+                    stiffness: 100,
+                    delay: 1,
+                  }}
+                >
+                  <FavoriteIcon svgClass={styles.svgIconFavorite} />
+                </motion.h2>
                 <SearchBar />
               </div>
-              <ul
+              <motion.ul
+                initial={{ opacity: 0}}
+                whileInView={{ opacity: 1}}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 4,
+                  type: "spring",
+                  stiffness: 100,
+                  delay: 1,
+                }}
                 className={clsx('container', 'clean-list', styles.showcaseList)}
               >
+
                 {favoriteUsers.map((user) => (
                   <ShowcaseCard key={user.title} user={user} />
                 ))}
-              </ul>
+              </motion.ul>
             </div>
           </div>
           <div className="container margin-top--lg">
-            <h2 className={styles.showcaseHeader}>
+            <motion.h2
+              initial={{ opacity: 0, x: -150 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 1,
+                type: "spring",
+                stiffness: 100,
+                delay: 0.5,
+              }}
+              className={styles.showcaseHeader}
+            >
               <Translate id="showcase.usersList.allUsers">All sites</Translate>
-            </h2>
-            <ul className={clsx('clean-list', styles.showcaseList)}>
+            </motion.h2>
+            <motion.ul
+              initial={{ opacity: 0}}
+              whileInView={{ opacity: 1}}
+              viewport={{ once: true }}
+              transition={{
+                duration: 4,
+                type: "spring",
+                stiffness: 100,
+                delay: 0.8,
+              }}
+              className={clsx('clean-list', styles.showcaseList)}
+            >
               {otherUsers.map((user) => (
                 <ShowcaseCard key={user.title} user={user} />
               ))}
-            </ul>
+            </motion.ul>
           </div>
         </>
       ) : (

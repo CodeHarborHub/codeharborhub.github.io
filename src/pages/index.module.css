@@ -34,3 +34,20 @@
 .section {
   padding: 1rem;
 }
+
+/* scrollbar.css */
+::-webkit-scrollbar {
+  width: 10px; 
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--ifm-color-primary);  
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: darkgray;    
+  border-radius: 10px;   
+}
+::-webkit-scrollbar-thumb:hover {
+  background: darkgrey;
+}
