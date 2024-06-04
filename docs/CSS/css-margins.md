@@ -40,11 +40,11 @@ p {
 ```
 
 #### Output
-
+<BrowserWindow url="http://127.0.0.1:5500/index.html">
 <p style={{marginTop: "100px", marginBottom: "100px", marginRight: "150px", marginLeft: "80px", border: "1px solid blue"}}>
   This paragraph has different margins for all four sides.
 </p>
-
+</BrowserWindow>
 ## Margin - Shorthand Property
 
 To shorten the code, it is possible to specify all the margin properties in one property.
@@ -78,11 +78,11 @@ p {
 ```
 
 #### Output
-
+<BrowserWindow url="http://127.0.0.1:5500/index.html">
 <p style={{margin: "25px 50px 75px 100px", border: "1px solid green"}}>
   This paragraph uses the margin shorthand with four values.
 </p>
-
+</BrowserWindow>
 ### If the margin property has three values:
 
 ```css
@@ -104,10 +104,10 @@ p {
 ```
 
 #### Output
-
+<BrowserWindow url="http://127.0.0.1:5500/index.html">
 <p style={{margin: "25px 50px 75px", border: "1px solid red"}}>
   This paragraph uses the margin shorthand with three values.
-</p>
+</p></BrowserWindow>
 
 ### If the margin property has two values:
 
@@ -129,11 +129,11 @@ p {
 ```
 
 #### Output
-
+<BrowserWindow url="http://127.0.0.1:5500/index.html">
 <p style={{margin: "25px 50px", border: "1px solid purple"}}>
   This paragraph uses the margin shorthand with two values.
 </p>
-
+</BrowserWindow>
 ### If the margin property has one value:
 
 ```css
@@ -153,11 +153,11 @@ p {
 ```
 
 #### Output
-
+<BrowserWindow url="http://127.0.0.1:5500/index.html">
 <p style={{margin: "25px", border: "1px solid orange"}}>
   This paragraph uses the margin shorthand with one value.
 </p>
-
+</BrowserWindow>
 ## The `auto` Value
 
 You can set the `margin` property to `auto` to horizontally center the element within its container.
@@ -177,11 +177,11 @@ div {
 ```
 
 #### Output
-
+<BrowserWindow url="http://127.0.0.1:5500/index.html">
 <div style={{width: "300px", margin: "auto", border: "1px solid red"}}>
   This div is centered horizontally with `margin: auto`.
 </div>
-
+</BrowserWindow>
 ## The `inherit` Value
 
 This example lets the left margin of the `<p class="ex1">` element be inherited from the parent element (`<div>`):
@@ -202,13 +202,13 @@ p.ex1 {
 ```
 
 #### Output
-
+<BrowserWindow url="http://127.0.0.1:5500/index.html">
 <div style={{border: "1px solid red", marginLeft: "100px"}}>
   <p className="ex1" style={{marginLeft: "inherit", border: "1px solid blue"}}>
     This paragraph inherits its left margin from the parent div.
   </p>
 </div>
-
+</BrowserWindow>
 ## All CSS Margin Properties
 
 | Property      | Description                                                       |

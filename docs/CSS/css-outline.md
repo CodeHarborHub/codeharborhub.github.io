@@ -42,7 +42,7 @@ p.outset {outline-style: outset;}
 ```
 
 #### Output
-
+<BrowserWindow url="http://127.0.0.1:5500/index.html">
 <p class="dotted" style={{outlineStyle: 'dotted'}}>A dotted outline.</p>
 <p class="dashed" style={{outlineStyle: 'dashed'}}>A dashed outline.</p>
 <p class="solid" style={{outlineStyle: 'solid'}}>A solid outline.</p>
@@ -51,7 +51,7 @@ p.outset {outline-style: outset;}
 <p class="ridge" style={{outlineStyle: 'ridge'}}>A ridge outline. The effect depends on the outline-color value.</p>
 <p class="inset" style={{outlineStyle: 'inset'}}>An inset outline. The effect depends on the outline-color value.</p>
 <p class="outset" style={{outlineStyle: 'outset'}}>An outset outline. The effect depends on the outline-color value.</p>
-
+</BrowserWindow>
 ## CSS Outline Width
 
 The `outline-width` property specifies the width of the outline, and can have one of the following values:
@@ -94,12 +94,12 @@ p.ex4 {
 ```
 
 #### Output
-
+<BrowserWindow url="http://127.0.0.1:5500/index.html">
 <p class="ex1" style={{border: '1px solid black', outlineStyle: 'solid', outlineColor: 'red', outlineWidth: 'thin'}}>A thin outline.</p>
 <p class="ex2" style={{border: '1px solid black', outlineStyle: 'solid', outlineColor: 'red', outlineWidth: 'medium'}}>A medium outline.</p>
 <p class="ex3" style={{border: '1px solid black', outlineStyle: 'solid', outlineColor: 'red', outlineWidth: 'thick'}}>A thick outline.</p>
 <p class="ex4" style={{border: '1px solid black', outlineStyle: 'solid', outlineColor: 'red', outlineWidth: '4px'}}>A 4px thick outline.</p>
-
+</BrowserWindow>
 ## CSS Outline Color
 
 The `outline-color` property is used to set the color of the outline.
@@ -135,11 +135,11 @@ p.ex3 {
 ```
 
 #### Output
-
+<BrowserWindow url="http://127.0.0.1:5500/index.html">
 <p class="ex1" style={{border: '2px solid black', outlineStyle: 'solid', outlineColor: 'red'}}>A solid red outline.</p>
 <p class="ex2" style={{border: '2px solid black', outlineStyle: 'dotted', outlineColor: 'blue'}}>A dotted blue outline.</p>
 <p class="ex3" style={{border: '2px solid black', outlineStyle: 'outset', outlineColor: 'grey'}}>An outset grey outline.</p>
-
+</BrowserWindow>
 ## CSS Outline - Shorthand property
 
 The `outline` property is a shorthand property for setting the following individual outline properties:
@@ -160,8 +160,9 @@ p.ex4 {outline: thick ridge pink;}
 ```
 
 #### Output
-
+<BrowserWindow url="http://127.0.0.1:5500/index.html">
 <p class="ex1" style={{outline: 'dashed'}}>A dashed outline.</p>
 <p class="ex2" style={{outline: 'dotted red'}}>A dotted red outline.</p>
 <p class="ex3" style={{outline: '5px solid yellow'}}>A 5px solid yellow outline.</p>
 <p class="ex4" style={{outline: 'thick ridge pink'}}>A thick ridge pink outline.</p>
+</BrowserWindow>

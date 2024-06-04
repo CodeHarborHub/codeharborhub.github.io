@@ -35,11 +35,11 @@ div {
 ```
 
 #### Output
-
+<BrowserWindow url="http://127.0.0.1:5500/index.html">
 <div style={{paddingTop: "50px", paddingRight: "30px", paddingBottom: "50px", paddingLeft: "80px", border: "1px solid blue"}}>
   This div has different padding for all four sides.
 </div>
-
+</BrowserWindow>
 ## Padding - Shorthand Property
 
 To shorten the code, it is possible to specify all the padding properties in one property.
@@ -73,11 +73,11 @@ div {
 ```
 
 #### Output
-
+<BrowserWindow url="http://127.0.0.1:5500/index.html">
 <div style={{padding: "25px 50px 75px 100px", border: "1px solid green"}}>
   This div uses the padding shorthand with four values.
 </div>
-
+</BrowserWindow>
 ### If the padding property has three values:
 
 ```css
@@ -99,11 +99,11 @@ div {
 ```
 
 #### Output
-
+<BrowserWindow url="http://127.0.0.1:5500/index.html">
 <div style={{padding: "25px 50px 75px", border: "1px solid red"}}>
   This div uses the padding shorthand with three values.
 </div>
-
+</BrowserWindow>
 ### If the padding property has two values:
 
 ```css
@@ -124,11 +124,11 @@ div {
 ```
 
 #### Output
-
+<BrowserWindow url="http://127.0.0.1:5500/index.html">
 <div style={{padding: "25px 50px", border: "1px solid purple"}}>
   This div uses the padding shorthand with two values.
 </div>
-
+</BrowserWindow>
 ### If the padding property has one value:
 
 ```css
@@ -148,11 +148,11 @@ div {
 ```
 
 #### Output
-
+<BrowserWindow url="http://127.0.0.1:5500/index.html">
 <div style={{padding: "25px", border: "1px solid orange"}}>
   This div uses the padding shorthand with one value.
 </div>
-
+</BrowserWindow>
 ## Padding and Element Width
 
 The CSS `width` property specifies the width of the element's content area. The content area is the portion inside the padding, border, and margin of an element (the box model).
@@ -171,11 +171,11 @@ div {
 ```
 
 #### Output
-
+<BrowserWindow url="http://127.0.0.1:5500/index.html">
 <div style={{width: "300px", padding: "25px", border: "1px solid brown"}}>
   This div's total width is 350px due to padding.
 </div>
-
+</BrowserWindow>
 To keep the width at 300px, no matter the amount of padding, you can use the `box-sizing` property. This causes the element to maintain its actual width; if you increase the padding, the available content space will decrease.
 
 ### Example
@@ -191,7 +191,8 @@ div {
 ```
 
 #### Output
-
+<BrowserWindow url="http://127.0.0.1:5500/index.html">
 <div style={{width: "300px", padding: "25px", boxSizing: "border-box", border: "1px solid black"}}>
   This div's total width remains 300px due to box-sizing.
 </div>
+</BrowserWindow>
