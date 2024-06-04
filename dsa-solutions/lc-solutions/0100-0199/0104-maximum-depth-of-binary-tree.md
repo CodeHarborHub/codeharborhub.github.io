@@ -45,7 +45,6 @@ Output: 2
 
 ## Solution for Maximum Depth of Binary Tree Problem
 
-
 <Tabs>
   <TabItem value="Recursive" label="Recursive">
 
@@ -61,6 +60,45 @@ To find the maximum depth of a binary tree, we can use a depth-first search (DFS
 2. If the root is `null`, return 0.
 3. Recursively find the maximum depth of the left and right subtrees.
 4. Return the maximum of the left and right subtree depths plus one.
+
+#### Implementation
+
+```jsx live
+function MaxDepthOfBinaryTree() {
+  class TreeNode {
+    constructor(val = 0, left = null, right = null) {
+      this.val = val;
+      this.left = left;
+      this.right = right;
+    }
+  }
+
+  const maxDepth = function (root) {
+    if (!root) return 0;
+    const leftDepth = maxDepth(root.left);
+    const rightDepth = maxDepth(root.right);
+    return Math.max(leftDepth, rightDepth) + 1;
+  };
+
+  const root = new TreeNode(3);
+  root.left = new TreeNode(9);
+  root.right = new TreeNode(20);
+  root.right.left = new TreeNode(15);
+  root.right.right = new TreeNode(7);
+
+  const result = maxDepth(root);
+  return (
+    <div>
+      <p>
+        <b>Input:</b> root = [3,9,20,null,null,15,7]
+      </p>
+      <p>
+        <b>Output:</b> {result}
+      </p>
+    </div>
+  );
+}
+```
 
 #### Code in Different Languages
 
@@ -220,4 +258,5 @@ Another approach to find the maximum depth of a binary tree is to use breadth-fi
 - **LeetCode Problem**: [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
 - **Solution Link**: [LeetCode Solution](https://leetcode.com/problems/maximum-depth-of-binary-tree/solution/)
 - **Authors GeeksforGeeks Profile:** [Vipul lakum](https://leetcode.com/u/vipul_lakum_02/)
+
 ---
