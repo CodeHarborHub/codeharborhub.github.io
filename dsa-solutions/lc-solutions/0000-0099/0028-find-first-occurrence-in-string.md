@@ -39,8 +39,8 @@ Given two strings `needle` and `haystack`, return the index of the first occurre
 
 ### Constraints
 
-- 1 <= `haystack.length`, `needle.length` <= 10^4
-- `haystack` and `needle` consist of only lowercase English characters.
+- `1 <= haystack.length , needle.length <= 10^4 `
+- haystack and needle consist of only lowercase English characters.
 
 ### Approach
 
@@ -68,8 +68,6 @@ class Solution(object):
             if haystack[i:i + len(needle)] == needle:
                 return i
         return -1
-
-
 ```
 
 #### Java
