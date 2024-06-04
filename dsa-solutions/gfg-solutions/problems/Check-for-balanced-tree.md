@@ -1,7 +1,7 @@
 ---
 id: Check-for-balanced-tree
 title: Check for Balanced Tree (Geeks for Geeks)
-sidebar_label: Problems - Check for Balanced Tree 
+sidebar_label: Check for Balanced Tree 
 tags:
   - Intermediate
   - Tree

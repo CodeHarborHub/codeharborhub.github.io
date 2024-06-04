@@ -1,7 +1,7 @@
 ---
 id: Reverse-a-doubly-linked-list
 title: Reverse a Doubly Linked List (Geeks for Geeks)
-sidebar_label: Problems - Reverse a Doubly LinkedList 
+sidebar_label: Reverse a Doubly LinkedList 
 tags:
   - Beginner
   - Doubly Linked List

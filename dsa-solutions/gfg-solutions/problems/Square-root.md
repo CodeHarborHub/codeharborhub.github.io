@@ -1,7 +1,7 @@
 ---
 id: Find-the-square-root
 title: Find the Square Root (Geeks for Geeks)
-sidebar_label: Problems - Find the Square Root
+sidebar_label: Find the Square Root
 tags:
   - Beginner
   - Math

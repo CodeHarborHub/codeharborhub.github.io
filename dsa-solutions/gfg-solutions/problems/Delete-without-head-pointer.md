@@ -1,7 +1,7 @@
 ---
 id: Delete-without-head-pointer
 title: Delete without Head Pointer (Geeks for Geeks)
-sidebar_label: Problems - Delete without Head Pointer 
+sidebar_label: Delete without Head Pointer 
 tags:
   - Beginner
   - Linked List

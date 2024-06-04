@@ -1,7 +1,7 @@
 ---
 id: BFS-traversal-of-graph
 title: BFS Traversal of Graph (Geeks for Geeks)
-sidebar_label: Problems - BFS Traversal of Graph
+sidebar_label: BFS Traversal of Graph
 tags:
   - Intermediate
   - Graph

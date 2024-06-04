@@ -1,7 +1,7 @@
 ---
 id: Delete-middle-of-linked-list
 title: Delete Middle of Linked List (Geeks for Geeks)
-sidebar_label: Problems - Delete Middle of Linked List 
+sidebar_label: Delete Middle of Linked List 
 tags:
   - Intermediate
   - Linked List

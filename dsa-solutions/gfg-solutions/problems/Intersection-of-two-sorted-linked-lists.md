@@ -1,7 +1,7 @@
 ---
 id: Intersection-of-two-sorted-linked-lists
 title: Intersection of Two Sorted Linked Lists (Geeks for Geeks)
-sidebar_label: Problems - Intersection of Two Sorted Linked Lists 
+sidebar_label: Intersection of Two Sorted Linked Lists 
 tags:
   - Intermediate
   - Linked List

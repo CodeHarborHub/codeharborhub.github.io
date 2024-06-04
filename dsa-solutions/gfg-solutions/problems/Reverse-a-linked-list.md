@@ -1,7 +1,7 @@
 ---
 id: Reverse-a-linked-list
 title: Reverse a Linked List (Geeks for Geeks)
-sidebar_label: Problems - Reverse a LinkedList 
+sidebar_label: Reverse a LinkedList 
 tags:
   - Beginner
   - Linked List

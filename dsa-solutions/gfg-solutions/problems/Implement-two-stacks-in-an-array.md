@@ -1,7 +1,7 @@
 ---
 id: Implement-two-stacks-in-an-array
 title: Implement Two Stacks in an Array (Geeks for Geeks)
-sidebar_label: Problems - Implement Two Stacks in an Array
+sidebar_label: Implement Two Stacks in an Array
 tags:
   - Intermediate
   - Stack

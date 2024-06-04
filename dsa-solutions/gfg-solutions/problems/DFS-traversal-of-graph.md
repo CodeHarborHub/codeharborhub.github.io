@@ -1,7 +1,7 @@
 ---
 id: DFS-traversal-of-graph
 title: DFS Traversal of Graph (Geeks for Geeks)
-sidebar_label: Problems - DFS Traversal of Graph
+sidebar_label: DFS Traversal of Graph
 tags:
   - Intermediate
   - Graph
