@@ -86,6 +86,7 @@ export default function Home() {
           custom-element="amp-auto-ads"
           src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"
         ></script>
+        <meta name="google-adsense-account" content="ca-pub-5832817025080991" />
       </Head>
       <main className={styles.main__home}>
         <div className={styles.home__header}>
