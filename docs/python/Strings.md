@@ -423,5 +423,4 @@ Python has a set of built-in methods that you can use on strings. All string met
 | `translate()`   | Returns a translated string                            |
 | `upper()`       | Converts a string into upper case                      |
 | `zfill()`       | Fills the string with a specified number of 0 values at the beginning |
-```
 
