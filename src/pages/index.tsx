@@ -57,7 +57,9 @@ function TweetsSection() {
               key={i}
             >
               {tweetItems.map((tweet) => (
+                <div className={styles.tweetContainer} key = {tweet.url}>
                 <Tweet {...tweet} key={tweet.url} />
+                </div>
               ))}
             </motion.div>
           ))}
