@@ -32,15 +32,15 @@ Map the hash code to an index.
 Locate the key in the bucket and remove the key-value pair. Adjust the structure to maintain efficiency (e.g., rehash elements if necessary).
 
 ## Complexity
-Average Time Complexity: O(1) for insert, delete, and search operations in a well-implemented hash table with a good hash function and a load factor that avoids excessive collisions.
+Average Time Complexity: $O(1)$ for insert, delete, and search operations in a well-implemented hash table with a good hash function and a load factor that avoids excessive collisions.
 
-Worst-Case Time Complexity: O(n) for insert, delete, and search operations if all keys hash to the same index (highly unlikely with a good hash function).
+Worst-Case Time Complexity: $O(n)$ for insert, delete, and search operations if all keys hash to the same index (highly unlikely with a good hash function).
 
 ## Load Factor
-The load factor (α) is the ratio of the number of entries to the number of buckets in the hash table. A high load factor can lead to more collisions, affecting performance. A common practice is to resize the hash table (rehash) when the load factor exceeds a certain threshold.
+The load factor $(α)$ is the ratio of the number of entries to the number of buckets in the hash table. A high load factor can lead to more collisions, affecting performance. A common practice is to resize the hash table (rehash) when the load factor exceeds a certain threshold.
 
 
-​Load Factor = No. of entries /  No. of Buckets
+$$​Load Factor = No. of entries / No. of Buckets$$
  
 
 **Rehashing**
