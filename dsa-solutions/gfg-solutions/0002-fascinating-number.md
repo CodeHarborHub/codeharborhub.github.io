@@ -139,6 +139,6 @@ The space complexity is $O(1)$ as well since the operations use a constant amoun
 
 ## References
 
-- **LeetCode Problem:** [Geeks for Geeks Problem](https://www.geeksforgeeks.org/problems/fascinating-number3751/1?page=1&difficulty=School&sortBy=difficulty)
+- **Geeks for Geeks Problem:** [Geeks for Geeks Problem](https://www.geeksforgeeks.org/problems/fascinating-number3751/1?page=1&difficulty=School&sortBy=difficulty)
 - **Solution Link:** [Fascinating Number on Geeks for Geeks](https://www.geeksforgeeks.org/problems/fascinating-number3751/1?page=1&difficulty=School&sortBy=difficulty)
 - **Authors LeetCode Profile:** [Anoushka](https://www.geeksforgeeks.org/user/iamanolive/)
