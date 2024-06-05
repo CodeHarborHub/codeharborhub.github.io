@@ -19,14 +19,14 @@ In this page, we will solve the Count Good Triplets problem using multiple appro
 
 Given an array of integers `arr`, and three integers `a`, `b`, and `c`. You need to find the number of good triplets.
 
-A triplet `(arr[i], arr[j], arr[k])` is good if the following conditions are true:
+A triplet $(arr[i], arr[j], arr[k])$ is good if the following conditions are true:
 
-- `0 <= i < j < k < arr.length`
-- `|arr[i] - arr[j]| <= a`
-- `|arr[j] - arr[k]| <= b`
-- `|arr[i] - arr[k]| <= c`
+- $0 <= i < j < k < arr.length$
+- $|arr[i] - arr[j]| <= a$
+- $|arr[j] - arr[k]| <= b$
+- $|arr[i] - arr[k]| <= c$
 
-Where `|x|` denotes the absolute value of `x`.
+Where $|x|$ denotes the absolute value of `x`.
 
 Return the number of good triplets.
 
@@ -50,9 +50,9 @@ Explanation: No triplet satisfies all conditions.
 
 ### Constraints
 
-- `3 <= arr.length <= 100`
-- `0 <= arr[i] <= 1000`
-- `0 <= a, b, c <= 1000`
+- $3 <= arr.length <= 100$
+- $0 <= arr[i] <= 1000$
+- $0 <= a, b, c <= 1000$
 
 ---
 
@@ -400,5 +400,5 @@ By using these approaches, we can efficiently solve the Count Good Triplets prob
 - **Solution Link:** [Count Good Triplets Solution on LeetCode](https://leetcode.com/problems/count-good-triplets/discuss/762344/Brute-Force-O(n3)-with-JavaC%2B%2B)
 - **Authors LeetCode Profile:** [Manish Kumar Gupta](https://leetcode.com/_manishh12/)
 
----
+
 
