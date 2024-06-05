@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
-import styles from "./ScrollToTopButton.module.css";
+import styles from "./ScrollBottomToTop.module.css";
 
-export default function ScrollToTopButton() {
+export default function ScrollBottomToTop() {
   const [showButton, setShowButton] = useState(false);
 
   const scrollToTop = () => {

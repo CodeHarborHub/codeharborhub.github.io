@@ -12,8 +12,8 @@ import Tweet from "../components/Tweet";
 import Tweets, { type TweetItem } from "../data/tweets";
 import { motion } from "framer-motion";
 import ResourcesSection from "../components/HomePage/ResourcesSection";
-import ScrollToTopButton from "../components/Buttons/bottom/ScrollToBottomButton";
-import ScrollToBottomButton from "../components/Buttons/top/ScrollToTopButton";
+import ScrollTopToButton from "../components/Buttons/bottom/ScrollTopToButton";
+import ScrollBottomToTop from "../components/Buttons/top/ScrollBottomToTop";
 
 function TweetsSection() {
   const tweetColumns = [[], [], []];
@@ -145,8 +145,8 @@ export default function Home() {
 
         <TweetsSection />
 
-        <ScrollToTopButton />
-        <ScrollToBottomButton />
+        <ScrollTopToButton />
+        <ScrollBottomToTop />
       </main>
     </Layout>
   );
