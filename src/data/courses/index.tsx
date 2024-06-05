@@ -102,6 +102,96 @@ const courses = [
       author: "Ajay Dhangar",
       link: "https://realpython.com/tutorials/projects/"
     },
+    {
+      id: 13,
+      title: "Node for beginners",
+      description: "This course is for absolute beginners who want to learn Node.",
+      category: "node",
+      imageUrl: "/img/svg/developer_activity.svg",
+      author: "Ajay Dhangar",
+      link: "https://www.freecodecamp.org/news/get-started-with-nodejs/"
+    },
+    {
+      id: 14,
+      title: "Mongodb Tutorial",
+      description: "This course is for absolute beginners who want to learn Mongodb.",
+      category: "mongodb",
+      imageUrl: "/img/svg/developer_activity.svg",
+      author: "Ajay Dhangar",
+      link: "https://www.w3schools.com/mongodb/"
+    },
+    {
+      id: 15,
+      title: "SQL",
+      description: "This course is for absolute beginners who want to learn SQL",
+      category: "sql",
+      imageUrl: "/img/svg/developer_activity.svg",
+      author: "Ajay Dhangar",
+      link: "https://www.w3schools.com/sql/"
+    },
+    {
+      id: 16,
+      title: "Express Js projects",
+      description: "This course is for absolute beginners who want to learn Express Js projects",
+      category: "express",
+      imageUrl: "/img/svg/developer_activity.svg",
+      author: "Ajay Dhangar",
+      link: "https://www.geeksforgeeks.org/top-7-nodejs-project-ideas-for-beginners/"
+    },
+    {
+      id: 17,
+      title: "DSA",
+      description: "This course is for absolute beginners who want to learn DSA.",
+      category: "dsa",
+      imageUrl: "/img/svg/developer_activity.svg",
+      author: "Ajay Dhangar",
+      link: "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2"
+    },
+    {
+      id: 18,
+      title: "Redux",
+      description: "This course is for absolute beginners who want to learn Redux.",
+      category: "redux",
+      imageUrl: "/img/svg/developer_activity.svg",
+      author: "Ajay Dhangar",
+      link: "https://www.freecodecamp.org/news/what-is-redux-store-actions-reducers-explained/"
+    },
+    {
+      id: 19,
+      title: "TypeScript Guide",
+      description: "This course is for absolute beginners who want to learn TypeScript.",
+      category: "typescript",
+      imageUrl: "/img/svg/developer_activity.svg",
+      author: "Ajay Dhangar",
+      link: "https://www.freecodecamp.org/news/learn-typescript-beginners-guide/"
+    },
+    {
+      id: 20,
+      title: "Firebase",
+      description: "This course is for absolute beginners who want to learn Firebase.",
+      category: "firebase",
+      imageUrl: "/img/svg/developer_activity.svg",
+      author: "Ajay Dhangar",
+      link: "https://www.tutorialspoint.com/firebase/index.html"
+    },
+    {
+      id: 21,
+      title: "AWS",
+      description: "This course is for absolute beginners who want to learn AWS.",
+      category: "aws",
+      imageUrl: "/img/svg/developer_activity.svg",
+      author: "Ajay Dhangar",
+      link: "https://aws.amazon.com/getting-started/"
+    },
+    {
+      id: 22,
+      title: "Docker",
+      description: "This course is for absolute beginners who want to learn Docker.",
+      category: "docker",
+      imageUrl: "/img/svg/developer_activity.svg",
+      author: "Ajay Dhangar",
+      link: "https://www.geeksforgeeks.org/docker-projects-ideas-for-beginners/"
+    },
   ];
   
   export default courses;
