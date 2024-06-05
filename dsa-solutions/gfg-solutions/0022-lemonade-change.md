@@ -59,12 +59,13 @@ Since not every customer received the correct change, the answer is false.
 ### Your Task
 You don't need to read input or print anything. Your task is to complete the function `lemonadeChange()` which takes the integer `N` and integer array `bills[]` as parameters and returns true if it is possible to provide change to every customer otherwise false.
 
-**Expected Time Complexity:** O(N)  
-**Expected Auxiliary Space:** O(1)
+**Expected Time Complexity:** $O(N)$  
+**Expected Auxiliary Space:** $O(1)$
 
 ### Constraints
-- 1 ≤ N ≤ 10^5  
-- bills[i] contains only {5, 10, 20}
+
+- $1 ≤ N ≤ 10^5 $
+- $bills[i]$ contains only {5, 10, 20}
 
 ## Solution
 
@@ -243,8 +244,8 @@ class Solution {
 
 ### Complexity Analysis
 
-- **Time Complexity:** O(N), where N is the length of the bills array. We iterate through the array once.
-- **Space Complexity:** O(1), as we only use a constant amount of extra space for variables `five` and `ten`.
+- **Time Complexity:** $O(N)$, where N is the length of the bills array. We iterate through the array once.
+- **Space Complexity:** $O(1)$, as we only use a constant amount of extra space for variables `five` and `ten`.
 
 ---
 

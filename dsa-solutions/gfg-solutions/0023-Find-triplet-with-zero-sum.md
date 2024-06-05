@@ -51,12 +51,13 @@ No triplet has a sum of zero.
 ### Your Task
 You don't need to read input or print anything. Your task is to complete the function `findTriplet()` which takes the integer `N` and integer array `arr[]` as parameters and returns true if there is a triplet with a sum of zero, otherwise false.
 
-**Expected Time Complexity:** O(N^2)  
-**Expected Auxiliary Space:** O(1)
+**Expected Time Complexity:** $O(N^2)$  
+**Expected Auxiliary Space:** $O(1)$
 
 ### Constraints
-- 1 ≤ N ≤ 10^5  
-- -10^3 ≤ arr[i] ≤ 10^3
+
+- $1 ≤ N ≤ 10^5$  
+- $-10^3 ≤ arr[i] ≤ 10^3$
 
 ## Solution
 
