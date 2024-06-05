@@ -41,8 +41,8 @@ Expected Auxiliary Space: $O(1)$.
 
 ## Constraints
 
-- `$1 <= number of nodes <= 10^3$`
-- `$1 <= value of nodes <= 10^3$`
+- $1 <= number of nodes <= 10^3$
+- $1 <= value of nodes <= 10^3$
 
 ## Problem Explanation
 

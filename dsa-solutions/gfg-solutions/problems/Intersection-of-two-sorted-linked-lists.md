@@ -43,8 +43,8 @@ Expected Auxiliary Space: $O(1)$.
 
 ## Constraints
 
-- `$1 <= number of nodes <= 10^5$`
-- `$1 <= value of nodes <= 10^5$`
+- $1 <= number of nodes <= 10^5$
+- $1 <= value of nodes <= 10^5$
 
 ## Problem Explanation
 

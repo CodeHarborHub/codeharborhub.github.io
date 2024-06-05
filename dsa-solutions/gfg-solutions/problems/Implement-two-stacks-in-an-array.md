@@ -56,8 +56,8 @@ Expected Auxiliary Space: $O(1)$ for all the operations.
 
 ## Constraints
 
-- `$1 <= N <= 100$`
-- `$1 <= x <= 100$`
+- $1 <= N <= 100$
+- $1 <= x <= 100$
 
 ## Problem Explanation
 

@@ -42,8 +42,8 @@ Expected Auxiliary Space: $O(V)$.
 
 ## Constraints
 
-- `$1 <= number of vertices <= 10^3$`
-- `$0 <= value of vertices <= 10^3$`
+- $1 <= number of vertices <= 10^3$
+- $0 <= value of vertices <= 10^3$
 
 ## Problem Explanation
 

@@ -51,8 +51,8 @@ Expected Auxiliary Space: $O(h)$, where h is the height of the tree.
 
 ## Constraints
 
-- `$1 <= number of nodes <= 10^5$`
-- `$1 <= data of node <= 10^5$`
+- $1 <= number of nodes <= 10^5$
+- $1 <= data of node <= 10^5$
 
 ## Problem Explanation
 

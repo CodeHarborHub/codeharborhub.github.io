@@ -40,8 +40,8 @@ Expected Auxiliary Space: $O(1)$.
 
 ## Constraints
 
-- `$1 <= number of nodes <= 10^4$`
-- `$0 <= value of nodes <= 10^4$`
+- $1 <= number of nodes <= 10^4$
+- $0 <= value of nodes <= 10^4$
 
 ## Problem Explanation
 

@@ -41,7 +41,7 @@ Expected Auxiliary Space: $O(1)$.
 
 ## Constraints
 
-- `$0 <= x <= 10^9$`
+- $0 <= x <= 10^9$
 
 ## Problem Explanation
 
