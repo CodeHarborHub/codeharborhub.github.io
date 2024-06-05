@@ -63,8 +63,7 @@ You don't need to read input or print anything. Your task is to complete the fun
 **Expected Auxiliary Space:** $O(1)$
 
 ### Constraints
-
-- $1 ≤ N ≤ 10^5 $
+- $1 ≤ N ≤ 10^5$ 
 - $bills[i]$ contains only {5, 10, 20}
 
 ## Solution
