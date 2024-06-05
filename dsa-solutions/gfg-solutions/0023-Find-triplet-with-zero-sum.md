@@ -14,7 +14,7 @@ tags:
 description: "This document explores different approaches to solving the problem of finding a triplet in an array that sums up to zero, including solutions in JavaScript, TypeScript, Python, Java, and C++."
 ---
 
-## Problem
+## Problem Statement
 
 Given an array `arr[]` of distinct integers of size N, the task is to find if there are any three elements in `arr[]` whose sum is equal to zero.
 
@@ -191,4 +191,4 @@ class Solution {
 ## References
 
 - **GeeksforGeeks Problem:** [Find Triplet with Zero Sum](https://www.geeksforgeeks.org/find-triplet-sum-zero/)
-- **Author GeeksforGeeks Profile:** [GeeksforGeeks](https://www.geeksforgeeks.org/user/GeeksforGeeks/)
+- **Authors GeeksforGeeks Profile:** [Vipul lakum](https://www.geeksforgeeks.org/user/lakumvipwjge/)
