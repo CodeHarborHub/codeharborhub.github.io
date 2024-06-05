@@ -52,7 +52,7 @@ description: given an 2D matrix which is representing an image, rotate the image
 ```
 class Solution {
 public:
-    void rotate(vector<vector<int>>& matrix) {
+    void rotate(vector<vector<	int>>& matrix) {
         vector<int> ans;
 
         int row = matrix.size();    // no of rows
