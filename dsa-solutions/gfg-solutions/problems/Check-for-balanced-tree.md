@@ -46,13 +46,13 @@ Output: No
 
 Your task is to complete the function `isBalanced()`, which takes the root of the binary tree as its argument and returns a boolean value indicating whether the tree is balanced or not.
 
-Expected Time Complexity: O(N).
-Expected Auxiliary Space: O(h), where h is the height of the tree.
+Expected Time Complexity: $O(N)$.
+Expected Auxiliary Space: $O(h)$, where h is the height of the tree.
 
 ## Constraints
 
-- `1 <= number of nodes <= 10^5`
-- `1 <= data of node <= 10^5`
+- `$1 <= number of nodes <= 10^5$`
+- `$1 <= data of node <= 10^5$`
 
 ## Problem Explanation
 
@@ -131,11 +131,11 @@ Here's the step-by-step breakdown of the checking process:
 
 ## Time Complexity
 
-O(N), where N is the number of nodes in the tree. The function visits each node once.
+$O(N)$, where N is the number of nodes in the tree. The function visits each node once.
 
 ## Space Complexity
 
-O(h), where h is the height of the tree. This is due to the recursive stack space used during the depth-first traversal.
+$O(h)$, where h is the height of the tree. This is due to the recursive stack space used during the depth-first traversal.
 
 ## Resources
 

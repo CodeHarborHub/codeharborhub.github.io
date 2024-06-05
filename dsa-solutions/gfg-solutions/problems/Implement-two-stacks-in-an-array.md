@@ -51,13 +51,13 @@ Your task is to complete the class `TwoStacks` which should contain the followin
 - `int pop1()`: Pops the top element from the first stack and returns it. Returns `-1` if the first stack is empty.
 - `int pop2()`: Pops the top element from the second stack and returns it. Returns `-1` if the second stack is empty.
 
-Expected Time Complexity: O(1) for all the operations.
-Expected Auxiliary Space: O(1) for all the operations.
+Expected Time Complexity: $O(1)$ for all the operations.
+Expected Auxiliary Space: $O(1)$ for all the operations.
 
 ## Constraints
 
-- `1 <= N <= 100`
-- `1 <= x <= 100`
+- `$1 <= N <= 100$`
+- `$1 <= x <= 100$`
 
 ## Problem Explanation
 
@@ -188,11 +188,11 @@ Here's the step-by-step breakdown of implementing two stacks in a single array:
 
 ## Time Complexity
 
-O(1) for all the operations, as the operations of push and pop involve a fixed number of steps.
+$O(1)$ for all the operations, as the operations of push and pop involve a fixed number of steps.
 
 ## Space Complexity
 
-O(1) auxiliary space, as the additional space used does not depend on the input size and is constant.
+$O(1)$ auxiliary space, as the additional space used does not depend on the input size and is constant.
 
 ## Resources
 

@@ -36,12 +36,12 @@ Explanation: The square root of 8 is 2.82842..., and since we want the floor val
 
 Your task is to complete the function `sqrt()`, which takes an integer x as an argument and returns the floor value of its square root.
 
-Expected Time Complexity: O(log x).
-Expected Auxiliary Space: O(1).
+Expected Time Complexity: $O(log x)$.
+Expected Auxiliary Space: $O(1)$.
 
 ## Constraints
 
-- `0 <= x <= 10^9`
+- `$0 <= x <= 10^9$`
 
 ## Problem Explanation
 
@@ -122,11 +122,11 @@ Here's the step-by-step breakdown of finding the square root:
 
 ## Time Complexity
 
-O(log x), where x is the input number. The binary search approach reduces the search space logarithmically.
+$O(log x)$, where x is the input number. The binary search approach reduces the search space logarithmically.
 
 ## Space Complexity
 
-O(1), constant space complexity. The algorithm uses a fixed amount of extra space regardless of the input size.
+$O(1)$, constant space complexity. The algorithm uses a fixed amount of extra space regardless of the input size.
 
 ## Resources
 

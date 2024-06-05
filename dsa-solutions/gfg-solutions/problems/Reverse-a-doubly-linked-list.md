@@ -35,13 +35,13 @@ Output: 196 59 122 75
 
 Your task is to complete the given function reverseDLL(), which takes head reference as argument and this function should reverse the elements such that the tail becomes the new head and all pointers are pointing in the right order. You need to return the new head of the reversed list. The printing and verification is done by the driver code.
 
-Expected Time Complexity: O(n).
-Expected Auxiliary Space: O(1).
+Expected Time Complexity: $O(n)$.
+Expected Auxiliary Space: $O(1)$.
 
 ## Constraints
 
-- `1 <= number of nodes <= 10^4`
-- `0 <= value of nodes <= 10^4`
+- `$1 <= number of nodes <= 10^4$`
+- `$0 <= value of nodes <= 10^4$`
 
 ## Problem Explanation
 
@@ -116,11 +116,11 @@ def reverse_doubly_linked_list(head):
 
 ## Time Complexity
 
-O(n), where n is the number of nodes in the list. This is because the loop iterates through each node once.
+$O(n)$, where n is the number of nodes in the list. This is because the loop iterates through each node once.
 
 ## Space Complexity
 
-O(1), constant space complexity. The algorithm uses only a few additional pointers for temporary storage, which does not depend on the input size.
+$O(1)$, constant space complexity. The algorithm uses only a few additional pointers for temporary storage, which does not depend on the input size.
 
 ## Resources
 

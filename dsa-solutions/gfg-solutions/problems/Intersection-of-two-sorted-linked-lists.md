@@ -38,13 +38,13 @@ Output: Empty List
 
 Your task is to complete the function `findIntersection()`, which takes the heads of both linked lists as arguments and returns the head of the new linked list representing their intersection.
 
-Expected Time Complexity: O(N + M), where N and M are the lengths of the two linked lists.
-Expected Auxiliary Space: O(1).
+Expected Time Complexity: $O(N + M)$, where N and M are the lengths of the two linked lists.
+Expected Auxiliary Space: $O(1)$.
 
 ## Constraints
 
-- `1 <= number of nodes <= 10^5`
-- `1 <= value of nodes <= 10^5`
+- `$1 <= number of nodes <= 10^5$`
+- `$1 <= value of nodes <= 10^5$`
 
 ## Problem Explanation
 
@@ -126,11 +126,11 @@ Here's the step-by-step breakdown of finding the intersection:
 
 ## Time Complexity
 
-O(N + M), where N and M are the lengths of the two linked lists. The function visits each node in both linked lists once.
+$O(N + M)$, where N and M are the lengths of the two linked lists. The function visits each node in both linked lists once.
 
 ## Space Complexity
 
-O(1), constant space complexity. The algorithm uses only a few additional pointers for traversal and modification, which does not depend on the input size.
+$O(1)$, constant space complexity. The algorithm uses only a few additional pointers for traversal and modification, which does not depend on the input size.
 
 ## Resources
 

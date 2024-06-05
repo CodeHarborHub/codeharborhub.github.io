@@ -42,12 +42,12 @@ elements are 10->9->8->7->2.
 
 The task is to complete the function reverseList() with head reference as the only argument and should return new head after reversing the list.
 
-Expected Time Complexity: O(N).
-Expected Auxiliary Space: O(1).
+Expected Time Complexity: $O(N)$.
+Expected Auxiliary Space: $O(1)$.
 
 ## Constraints
 
-`1 <= N <= 10^4`
+- `$1 <= N <= 10^4$`
 
 ## Problem Explanation
 
@@ -128,11 +128,11 @@ By repeating these steps, you traverse the linked list, reverse the links in pla
 
 1. Reversing a linked list involves iterating through the list to manipulate the pointers between nodes. In the worst case, you need to visit every single node in the list to reverse the connections.
 
-2. Any efficient reversal algorithm will require at least one pass through the entire list. This takes O(n) time.
+2. Any efficient reversal algorithm will require at least one pass through the entire list. This takes $O(n)$ time.
 
 ## Space Complexity:
 
-The space complexity is typically denoted as O(1), which signifies constant space. This means the extra memory usage doesn't depend on the input size.
+The space complexity is typically denoted as $O(1)$, which signifies constant space. This means the extra memory usage doesn't depend on the input size.
 
 ## References
 

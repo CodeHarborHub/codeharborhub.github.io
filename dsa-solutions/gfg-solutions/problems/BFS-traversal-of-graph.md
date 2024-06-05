@@ -37,13 +37,13 @@ Consider the following graph:
 
 Your task is to complete the function `bfs()`, which takes the graph, the number of vertices, and the source vertex as its arguments and prints the BFS traversal of the graph starting from the source vertex.
 
-Expected Time Complexity: O(V + E), where V is the number of vertices and E is the number of edges in the graph.
-Expected Auxiliary Space: O(V).
+Expected Time Complexity: $O(V + E)$, where V is the number of vertices and E is the number of edges in the graph.
+Expected Auxiliary Space: $O(V)$.
 
 ## Constraints
 
-- `1 <= number of vertices <= 10^3`
-- `0 <= value of vertices <= 10^3`
+- `$1 <= number of vertices <= 10^3$`
+- `$0 <= value of vertices <= 10^3$`
 
 ## Problem Explanation
 
@@ -129,11 +129,11 @@ Here's the step-by-step breakdown of the BFS traversal process:
 
 ## Time Complexity
 
-O(V + E), where V is the number of vertices and E is the number of edges in the graph. Each vertex and edge are visited only once.
+$O(V + E)$, where V is the number of vertices and E is the number of edges in the graph. Each vertex and edge are visited only once.
 
 ## Space Complexity
 
-O(V), where V is the number of vertices. The space is used to store the visited array and the queue.
+$O(V)$, where V is the number of vertices. The space is used to store the visited array and the queue.
 
 ## Resources
 

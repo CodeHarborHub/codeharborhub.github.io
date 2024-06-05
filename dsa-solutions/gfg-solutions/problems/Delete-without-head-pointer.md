@@ -40,13 +40,13 @@ Output: 10 4 30
 
 Your task is to complete the function `deleteNode()`, which takes a reference to the node to be deleted and modifies the linked list directly. You should not return anything from the function.
 
-Expected Time Complexity: O(1).
-Expected Auxiliary Space: O(1).
+Expected Time Complexity: $O(1)$.
+Expected Auxiliary Space: $O(1)$.
 
 ## Constraints
 
-- `2 <= number of nodes <= 10^3`
-- `1 <= value of nodes <= 10^3`
+- `$2 <= number of nodes <= 10^3$`
+- `$1 <= value of nodes <= 10^3$`
 
 ## Problem Explanation
 
@@ -92,11 +92,11 @@ Here's the step-by-step breakdown of the deletion process:
 
 ## Time Complexity
 
-O(1), since the node is deleted in constant time by copying the data and updating pointers.
+$O(1)$, since the node is deleted in constant time by copying the data and updating pointers.
 
 ## Space Complexity
 
-O(1), constant space complexity, as no extra space is used beyond a few pointers.
+$O(1)$, constant space complexity, as no extra space is used beyond a few pointers.
 
 ## Resources
 

@@ -36,13 +36,13 @@ Output: 1 -> 2 -> 4
 
 Your task is to complete the function `deleteMid()`, which takes the head of the linked list as its argument and returns the head of the modified list after the middle node has been deleted.
 
-Expected Time Complexity: O(N).
-Expected Auxiliary Space: O(1).
+Expected Time Complexity: $O(N)$.
+Expected Auxiliary Space: $O(1)$.
 
 ## Constraints
 
-- `1 <= number of nodes <= 10^3`
-- `1 <= value of nodes <= 10^3`
+- `$1 <= number of nodes <= 10^3$`
+- `$1 <= value of nodes <= 10^3$`
 
 ## Problem Explanation
 
@@ -124,11 +124,11 @@ Here's the step-by-step breakdown of the deletion process:
 
 ## Time Complexity
 
-O(N), where N is the number of nodes in the list. The function traverses the list once to find the middle node.
+$O(N)$, where N is the number of nodes in the list. The function traverses the list once to find the middle node.
 
 ## Space Complexity
 
-O(1), constant space complexity. The algorithm uses only a few additional pointers for traversal and modification, which does not depend on the input size.
+$O(1)$, constant space complexity. The algorithm uses only a few additional pointers for traversal and modification, which does not depend on the input size.
 
 ## Resources
 
