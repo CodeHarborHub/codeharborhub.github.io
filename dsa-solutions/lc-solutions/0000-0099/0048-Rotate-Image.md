@@ -1,7 +1,7 @@
 ---
-id: Rotate-Image
+id: rotate-image
 title: Rotate Image (LeetCode)
-sidebar_label: 0048-Rotate-Image
+sidebar_label: 0048-RotateImage
 tags:
     - Array
     - Math
