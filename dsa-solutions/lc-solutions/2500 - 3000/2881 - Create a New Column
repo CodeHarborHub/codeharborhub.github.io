@@ -55,6 +55,9 @@ I will say as this is a Data Science Problem the solution is also straightforwar
 
   def createBonusColumn(employees: pd.DataFrame) -> pd.DataFrame:
       employees['bonus'] = employees['salary']*2
-      return employees 
+      return employees
+    ```
+  </TabItem>
+</Tabs>
 ## References
 - **Leetcode Problem :** [Create a new column](https://leetcode.com/problems/create-a-new-column/)
