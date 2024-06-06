@@ -93,7 +93,7 @@ This project is licensed under the [MIT License](LICENSE).
 [![Contributors](https://contributors-img.web.app/image?repo=codeharborhub/codeharborhub)](https://github.com/CodeHarborHub/codeharborhub/graphs/contributors)
 -->
 
-![Contributors](https://opencollective.com/codeharborhub/contributors.svg?button=false&avatarHeight=50&width=600)
+![Contributors](https://opencollective.com/codeharborhub/contributors.svg?button=false&avatarHeight=50&width=1000)
 
 ## Chat with us
 
