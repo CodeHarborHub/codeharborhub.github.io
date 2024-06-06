@@ -1,0 +1,8 @@
+{
+    "label": "Algorithms",
+    "position": 7,
+    "link": {
+      "type": "generated-index",
+      "description": "In This section all the Algorithms are defined in DSA for graphs,trees,DP are meant to be added"
+    }
+  }
