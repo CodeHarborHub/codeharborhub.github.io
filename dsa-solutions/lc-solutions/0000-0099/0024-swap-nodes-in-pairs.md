@@ -3,9 +3,6 @@ id: swap-nodes-in-pairs
 title: Swap Nodes in Pairs (LeetCode)
 difficulty: Medium
 sidebar_label: 0024-SwapNodesInPairs
-topics:
-  - Linked List
-companies: []
 description: Swap every two adjacent nodes in a linked list and return its head. The values in the nodes must not be modified, only the nodes themselves can be changed.
 ---
 
@@ -24,26 +21,26 @@ Given a linked list, swap every two adjacent nodes and return its head. You must
 
 #### Example 1
 
-- **Input:** `head = [1,2,3,4]`
-- **Output:** `[2,1,4,3]`
-- **Explanation:** The linked list is `[1,2,3,4]`. After swapping pairs, it becomes `[2,1,4,3]`.
+- **Input:** $head = [1,2,3,4]$
+- **Output:** $[2,1,4,3]$
+- **Explanation:** The linked list is $[1,2,3,4]$. After swapping pairs, it becomes $[2,1,4,3]$.
 
 #### Example 2
 
-- **Input:** `head = []`
-- **Output:** `[]`
+- **Input:** $head = []$
+- **Output:** $[]$
 - **Explanation:** The input linked list is empty, so the output is also empty.
 
 #### Example 3
 
-- **Input:** `head = [1]`
-- **Output:** `[1]`
+- **Input:** $head = [1]$
+- **Output:** $[1]$
 - **Explanation:** There is only one node in the linked list, so no swapping occurs.
 
 ### Constraints
 
 - The number of nodes in the list is in the range [0, 100].
-- `0 <= Node.val <= 100`
+- $0 <= Node.val <= 100$
 
 ### Approach
 
@@ -63,7 +60,7 @@ To solve this problem, we can use a recursive approach. We swap each pair of nod
 
 #### Python
 
-```
+```py
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -97,7 +94,7 @@ class Solution:
 
 #### Java
 
-```
+```java
 class Solution {
     public ListNode swapPairs(ListNode head) {
         // If the list is empty or has only one node, no need to swap
@@ -126,7 +123,7 @@ class Solution {
 
 #### C++
 
-```
+```cpp
 class Solution {
 public:
     ListNode* swapPairs(ListNode* head) {
@@ -157,4 +154,4 @@ public:
 
 ### Conclusion
 
-The above solution effectively swaps every two adjacent nodes in a linked list without modifying the values in the nodes themselves. It utilizes a recursive approach to swap pairs of nodes, ensuring that the final linked list is correctly swapped. This solution has a time complexity of O(n), where n is the number of nodes in the linked list, making it efficient for handling the given constraints.
+The above solution effectively swaps every two adjacent nodes in a linked list without modifying the values in the nodes themselves. It utilizes a recursive approach to swap pairs of nodes, ensuring that the final linked list is correctly swapped. This solution has a time complexity of $O(n)$, where n is the number of nodes in the linked list, making it efficient for handling the given constraints.
