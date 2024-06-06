@@ -47,5 +47,8 @@ I will say as this is a Data Science Problem the solution is also straightforwar
 
     def selectData(students: pd.DataFrame) -> pd.DataFrame:
             return students.loc[students['student_id'] == 101, ["name", "age"]]
+    ```
+  </TabItem>
+</Tabs>
 ## References
 - **Leetcode Problem :** [Select Data](https://leetcode.com/problems/select-data/)
