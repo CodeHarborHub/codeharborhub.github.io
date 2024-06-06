@@ -114,6 +114,11 @@ Participate in code reviews by reviewing and providing feedback.
 ## Feature Requests
 Suggest new features or improvements that you believe would enhance the project.
 
+## Contributing Guidelines
+Issue Creation Limit
+Each contributor is allowed to create up to 4 issues per day. If a contributor exceeds this limit, any additional issues beyond the fourth will be closed automatically.
+Please adhere to this guideline to ensure a manageable and productive workflow for all participants.
+
 
 ## Code of Conduct
 By participating in this project, you agree to abide by our [Code of Conduct](CODE_OF_CONDUCT.md). Please ensure that all interactions are respectful and constructive.
