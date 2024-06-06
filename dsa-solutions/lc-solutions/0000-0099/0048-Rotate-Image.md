@@ -32,9 +32,9 @@ description: given an 2D matrix which is representing an image, rotate the image
  
 ### Constraints:
 
-- `n == matrix.length == matrix[i].length`
-- `1 <= n <= 20`
-- `-1000 <= matrix[i][j] <= 1000`
+- $n == matrix.length == matrix[i].length$
+- $1 <= n <= 20$
+- $-1000 <= matrix[i][j] <= 1000$
 
 ### Approach
 
@@ -211,5 +211,5 @@ class Solution {
 ```
 ### Conclusion
 The above solution will help you to rotate an 2D Array (Image) with
-- Time Complexity: O(n^2)
-- Space Complexity:  O(1)
+- Time Complexity: $O(n^2)$
+- Space Complexity:  $O(1)$
