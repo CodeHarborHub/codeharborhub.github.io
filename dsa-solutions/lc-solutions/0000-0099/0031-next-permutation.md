@@ -1,7 +1,6 @@
 ---
 id: next-permutation
 title: Next Permutation (LeetCode)
-difficulty: Medium
 sidebar_label: 0031-NextPermutation
 description: Find the next lexicographically greater permutation of an array of integers. The replacement must be in place and use only constant extra memory.
 ---
