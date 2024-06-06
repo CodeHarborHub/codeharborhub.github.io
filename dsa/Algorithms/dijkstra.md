@@ -346,9 +346,9 @@ Bidirectional Dijkstra runs two simultaneous searches: one forward from the sour
 ### Time Complexity
 
 The time complexity of Dijkstra's Algorithm depends on the data structures used:
-- Using a simple list: O(V^2)
-- Using a binary heap (priority queue): O((V + E) log V)
-- Using a Fibonacci heap: O(V log V + E)
+- Using a simple list: $O(V^2)$
+- Using a binary heap (priority queue): $O((V + E) log V)$
+- Using a Fibonacci heap: $O(V log V + E)$
 
 ### Handling Negative Weights
 
@@ -361,5 +361,3 @@ To reconstruct the shortest path from the source to a target node, we can backtr
 ## Conclusion
 
 In this tutorial, we covered the fundamentals of Dijkstra's Algorithm, its implementation in Python, Java, C++, and JavaScript, and various optimizations and applications. Dijkstra's Algorithm is a powerful tool for finding the shortest path in graphs and is widely used in numerous domains. By mastering this algorithm, you can effectively solve a variety of shortest path problems in your projects.
-
-Happy coding!
