@@ -3,9 +3,6 @@ id: remove-duplicates-from-sorted-list
 title: Remove Duplicates from Sorted List (LeetCode)
 difficulty: Easy
 sidebar_label: 0083-RemoveDuplicatesFromSortedList
-topics:
-  - Linked List
-companies: []
 description: Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well.
 ---
 
@@ -24,20 +21,20 @@ Given the head of a sorted linked list, delete all duplicates such that each ele
 
 #### Example 1
 
-- **Input:** `head = [1,1,2]`
-- **Output:** `[1,2]`
-- **Explanation:** After removing the duplicates, the linked list becomes `1 -> 2`.
+- **Input:** $head = [1,1,2]$
+- **Output:** $[1,2]$
+- **Explanation:** After removing the duplicates, the linked list becomes $1 -> 2$.
 
 #### Example 2
 
-- **Input:** `head = [1,1,2,3,3]`
-- **Output:** `[1,2,3]`
-- **Explanation:** After removing the duplicates, the linked list becomes `1 -> 2 -> 3`.
+- **Input:** $head = [1,1,2,3,3]$
+- **Output:** $[1,2,3]$
+- **Explanation:** After removing the duplicates, the linked list becomes $1 -> 2 -> 3$.
 
 ### Constraints
 
 - The number of nodes in the list is in the range [0, 300].
-- `-100 <= Node.val <= 100`
+- $-100 <= Node.val <= 100$
 - The list is guaranteed to be sorted in ascending order.
 
 ### Approach
@@ -53,7 +50,7 @@ To solve the problem, we can use a simple iterative approach. We traverse the li
 
 #### Python
 
-```
+```py
 class Solution(object):
     def deleteDuplicates(self, head):
         if not head or not head.next:
@@ -72,7 +69,7 @@ class Solution(object):
 
 #### Java
 
-```
+```java
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
         if (head == null || head.next == null)
@@ -95,7 +92,7 @@ class Solution {
 
 #### C++
 
-```
+```cpp
 class Solution {
 public:
     ListNode* deleteDuplicates(ListNode* head) {
@@ -119,4 +116,4 @@ public:
 
 ### Conclusion
 
-The above solution effectively removes duplicates from a sorted linked list while maintaining its sorted order. It employs a simple iterative approach, traversing the linked list and skipping duplicate nodes. This solution has a time complexity of O(n) and a space complexity of O(1), making it efficient for handling the given constraints.
+The above solution effectively removes duplicates from a sorted linked list while maintaining its sorted order. It employs a simple iterative approach, traversing the linked list and skipping duplicate nodes. This solution has a time complexity of $O(n)$ and a space complexity of $O(1)$, making it efficient for handling the given constraints.
