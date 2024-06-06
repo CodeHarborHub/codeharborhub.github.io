@@ -1,5 +1,5 @@
 ---
-id: minimum number of jumps
+id: minimum-number-of-jumps
 title: Minimum number of jumps
 sidebar_label: 0022 Minimum number of jumps 
 tags:
@@ -40,7 +40,6 @@ The brute force approach involves recursively checking all possible jumps from e
 The implementation recursively checks all possible jumps from each element, updating the minimum number of jumps needed.
 
 ```cpp
-// C++ Implementation
 class Solution {
 public:
     int minimumJumps(int arr[], int n) {
@@ -71,7 +70,6 @@ In this approach, we use dynamic programming to store the minimum number of jump
 The code initializes an array to store the minimum jumps required and iterates through the array to calculate the minimum jumps.
 
 ```cpp
-// C++ Implementation
 class Solution {
 public:
     int minimumJumps(int arr[], int n) {
@@ -97,7 +95,6 @@ public:
 #### Python Implementation
 
 ```python
-# Python Implementation
 class Solution:
     def minJumps(self, arr, n):
         if len(arr) <= 1 : 
@@ -146,7 +143,6 @@ class Solution:
 #### Java Implementation
 
 ```java
-// Java Implementation
 class Solution {
     static int minJumps(int arr[]) 
     { 
@@ -209,7 +205,6 @@ This approach involves maintaining the maximum reachable index from the current 
 The implementation traverses the array, updating the maximum reachable index and the number of steps at each iteration.
 
 ```cpp
-// C++ Implementation
 class Solution {
 public:
     int minJumps(int arr[], int n) {
@@ -242,7 +237,6 @@ public:
 #### Python Implementation
 
 ```python
-# Python Implementation
 class Solution:
     def minJumps(self, arr, n):
         if len(arr) <= 1 : 
@@ -291,7 +285,6 @@ class Solution:
 #### Java Implementation
 
 ```java
-// Java Implementation
 class Solution {
     static int minJumps(int arr[]) 
     { 
