@@ -45,11 +45,11 @@ After reversing the list, elements are 10->9->8->7->2.
 ### Your Task
 The task is to complete the function `reverseList()` with head reference as the only argument and should return the new head after reversing the list.
 
-**Expected Time Complexity:** O(N)  
-**Expected Auxiliary Space:** O(1)
+**Expected Time Complexity:** $ O(N) $ 
+**Expected Auxiliary Space:** $ O(1) $
 
 ### Constraints
-1 ≤ N ≤ 10^4
+- $ 1 ≤ N ≤ 10^4 $
 
 ## Solution
 
@@ -178,8 +178,8 @@ function reverseList(head: ListNode | null): ListNode | null {
 
 ### Complexity Analysis
 
-- **Time Complexity:** O(N), where N is the number of nodes in the linked list. We traverse the entire list once.
-- **Space Complexity:** O(1), as we only use a constant amount of extra space for pointers.
+- **Time Complexity:** $ O(N) $, where N is the number of nodes in the linked list. We traverse the entire list once.
+- **Space Complexity:** $ O(1) $, as we only use a constant amount of extra space for pointers.
 
 ---
 

@@ -45,12 +45,12 @@ After reversing the list, elements are 196 <--> 59 <--> 122 <--> 75.
 ### Your Task
 Your task is to complete the given function `reverseDLL()`, which takes head reference as an argument and reverses the elements in-place such that the tail becomes the new head and all pointers are pointing in the right order. You need to return the new head of the reversed list.
 
-**Expected Time Complexity:** O(N)  
-**Expected Auxiliary Space:** O(1)
+**Expected Time Complexity:** $ O(N)$  
+**Expected Auxiliary Space:** $O(1)$
 
 ### Constraints
-1 ≤ number of nodes ≤ 10^4  
-0 ≤ value of nodes ≤ 10^4
+- $ 1 ≤ number of nodes ≤ 10^4 $
+- $ 0 ≤ value of nodes ≤ 10^4 $
 
 ## Solution
 
@@ -155,8 +155,8 @@ class Solution {
 
 ### Complexity Analysis
 
-- **Time Complexity:** O(N), where N is the number of elements in the doubly linked list. We traverse the entire list once.
-- **Space Complexity:** O(1), as we only use a constant amount of extra space for pointers.
+- **Time Complexity:** $ O(N),$ where N is the number of elements in the doubly linked list. We traverse the entire list once.
+- **Space Complexity:** $O(1)$, as we only use a constant amount of extra space for pointers.
 
 ---
 

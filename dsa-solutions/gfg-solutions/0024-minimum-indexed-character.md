@@ -50,12 +50,13 @@ There are no characters that are common in "patt" and "str".
 ### Your Task
 You only need to complete the function `minIndexChar()` that returns the index of the answer in `str` or returns `-1` if no character of `patt` is present in `str`.
 
-**Expected Time Complexity:** O(N)  
-**Expected Auxiliary Space:** O(Number of distinct characters)
+**Expected Time Complexity:** $O(N)$ 
+**Expected Auxiliary Space:** $O(Number of distinct characters)$
 
 ### Constraints
-- 1 ≤ |str|,|patt| ≤ 10^5
-- 'a' ≤ str[i], patt[i] ≤ 'z'
+
+- $1 ≤ |str|,|patt| ≤ 10^5$
+- $'a' ≤ str[i], patt[i] ≤ 'z'$
 
 ## Solution
 
@@ -169,8 +170,8 @@ class Solution {
 
 ### Complexity Analysis
 
-- **Time Complexity:** O(N), where N is the length of the string `str`. We iterate through each character in `patt` and use the `find` or `indexOf` method, which runs in O(N) time.
-- **Space Complexity:** O(1), as we only use a constant amount of extra space for variables.
+- **Time Complexity:** $O(N)$, where N is the length of the string `str`. We iterate through each character in `patt` and use the `find` or `indexOf` method, which runs in $O(N)$ time.
+- **Space Complexity:** $O(1)$, as we only use a constant amount of extra space for variables.
 
 ---
 

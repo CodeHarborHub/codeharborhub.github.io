@@ -39,11 +39,11 @@ Explanation: Since 4 is a perfect square, its square root is 2.
 
 You don't need to read input or print anything. The task is to complete the function `floorSqrt()` which takes `x` as the input parameter and returns its square root. Note: Try solving the question without using the sqrt function. The value of `x` ≥ 0.
 
-**Expected Time Complexity:** O(log N)  
-**Expected Auxiliary Space:** O(1)
+**Expected Time Complexity:** $ O(log N)  $
+**Expected Auxiliary Space:** $ O(1) $
 
 **Constraints**
-- 1 ≤ x ≤ 10^7
+- $ 1 ≤ x ≤ 10^7 $
 
 ## Solution
 
@@ -187,10 +187,10 @@ class Solution {
 
 ## Complexity Analysis
 
-The provided solutions efficiently find the floor value of the square root of a given integer `x` using binary search. This approach ensures a time complexity of O(log N) and an auxiliary space complexity of O(1). The algorithms are designed to handle large values of `x` up to 10^7 efficiently without relying on built-in square root functions.
+The provided solutions efficiently find the floor value of the square root of a given integer `x` using binary search. This approach ensures a time complexity of $ O(log N) and an auxiliary space complexity of $ O(1) $. The algorithms are designed to handle large values of `x` up to 10^7 efficiently without relying on built-in square root functions.
 
-**Time Complexity:** O(log N)  
-**Auxiliary Space:** O(1)
+**Time Complexity:** $ O(log N)  $
+**Auxiliary Space:** $ O(1) $
 
 ---
 
