@@ -1,7 +1,6 @@
 ---
 id: divide-two-integers
 title: Divide Two Integers (LeetCode)
-difficulty: Medium
 sidebar_label: 0029-DivideTwoIntegers
 description: Divide two integers without using multiplication, division, and mod operator. The integer division should truncate toward zero.
 ---
