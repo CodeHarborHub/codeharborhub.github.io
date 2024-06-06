@@ -1,5 +1,5 @@
 ---
-id: Basics-CSS
+id: layout-responsive-design
 title: Layouts and Responsive Design using CSS
 sidebar_label: Layouts and Responsive Design using CSS
 sidebar_position: 1
@@ -11,7 +11,7 @@ description: In this tutorial you will learn about layouts in CSS and also respo
 
 
 <BrowserWindow url="http://127.0.0.1:5500/index.html">
-    <div class="box-model-example" style="width: 200px; height: 100px; padding: 20px; border: 1px solid black; margin: 10px;">
+    <div style={{width: "200px", height: "100px", padding: "20px", border: "1px solid black", margin: "10px"}}>
         This is a div element with a box model
     </div>
 </BrowserWindow>
@@ -26,12 +26,24 @@ description: In this tutorial you will learn about layouts in CSS and also respo
    - `sticky`: Elements are positioned relative to the viewport like fixed positioning, but they behave like relative positioning until they reach a specified scroll position.
 
 <BrowserWindow url="http://127.0.0.1:5500/index.html">
-<div class="relative" style="position: relative;
-  top: 20px;
-  left: 30px;">Relative positioning</div>
-<div class="absolute" style="position: absolute;
-  top: 50px;
-  left: 100px;">Absolute positioning</div>
+      <div
+        style={{
+          position: 'relative',
+          top: '20px',
+          left: '30px',
+        }}
+      >
+        Relative positioning
+      </div>
+      <div
+        style={{
+          position: 'absolute',
+          top: '50px',
+          left: '100px',
+        }}
+      >
+        Absolute positioning
+      </div>
 </BrowserWindow>
 
 
@@ -54,8 +66,8 @@ description: In this tutorial you will learn about layouts in CSS and also respo
 3. *Floats:* Floats are a CSS property that allows an element to be taken out of the normal flow and placed along the left or right side of its container. Other content will wrap around the floated element.
 
 <BrowserWindow url="http://127.0.0.1:5500/index.html">
-   <div class="float-left" style="float: left;">Float left</div>
-<div class="float-right" style="float: right;">Float right</div>
+    <div style={{float: 'left'}}>Float left</div>
+    <div style={{float: 'right'}}>Float right</div>
 </BrowserWindow>
 
 ```css
@@ -74,10 +86,10 @@ description: In this tutorial you will learn about layouts in CSS and also respo
 
   
 <BrowserWindow url="http://127.0.0.1:5500/index.html">
-<div class="flex-container" style=" display: flex; justify-content: space-between;">
-  <div class="flex-item" style="flex: 1;">Flex item 1</div>
-  <div class="flex-item" style="flex: 1;">Flex item 2</div>
-  <div class="flex-item" style="flex: 1;">Flex item 3</div>
+<div style={{display: 'flex', justifyContent: 'space-between'}}>
+  <div style={{flex: '1'}}>Flex item 1</div>
+  <div style={{flex: '1'}}>Flex item 2</div>
+  <div style={{flex: '1'}}>Flex item 3</div>
 </div>
 </BrowserWindow>
 
@@ -96,11 +108,13 @@ description: In this tutorial you will learn about layouts in CSS and also respo
 
    <img src="https://www.freecodecamp.org/news/content/images/2022/05/CSS-GRID-3.png" alt="Grid" height="500px" width="540px"/>
 
-<BrowserWindow url="http://127.0.0.1:5500/index.html"><div class="grid-container" style="display: grid; grid-template-columns: 1fr 2fr 1fr; grid-gap: 10px;">
-  <div class="grid-item" style="background-color: lightblue; padding: 20px;">Grid item 1</div>
-  <div class="grid-item" style="background-color: lightblue; padding: 20px;">Grid item 2</div>
-  <div class="grid-item" style="background-color: lightblue; padding: 20px;">Grid item 3</div>
-</div></BrowserWindow>
+<BrowserWindow url="http://127.0.0.1:5500/index.html">
+ <div style={{display: 'grid', gridTemplateColumns: '1fr 2fr 1fr', gridGap: '10px'}}>
+  <div style={{backgroundColor: 'lightblue', padding: '20px'}}>Grid item 1</div>
+  <div style={{backgroundColor: 'lightblue', padding: '20px'}}>Grid item 2</div>
+  <div style={{backgroundColor: 'lightblue', padding: '20px'}}>Grid item 3</div>
+ </div>
+</BrowserWindow>
 
 
 
@@ -126,12 +140,6 @@ Responsive design is an approach to web design aimed at creating web pages that 
 
 
 **Media Queries:** Media queries are CSS rules that allow you to apply different styles based on various characteristics of the user's device, such as screen width, height, orientation, and resolution. By using media queries, you can create layouts that adjust dynamically to different device sizes and configurations.
-
-<BrowserWindow url="http://127.0.0.1:5500/index.html">
-<div class="navigation" style="@media (max-width: 767px) {display: none;}">DIV</div>
-<div class="sidebar" style="@media (min-width: 768px) and (max-width: 991px) {display: none;}">SIDE</div>
-<div class="footer" style="@media (min-width: 1200px) { width : 100%;}">FOOTER</div>
-</BrowerWindow>
 
 
 ```css
