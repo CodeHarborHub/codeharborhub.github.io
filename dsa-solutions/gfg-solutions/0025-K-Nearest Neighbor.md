@@ -1,7 +1,7 @@
 ---
 id: K-Nearest-Neighbor
 title: K-Nearest Neighbor (Geeks for Geeks)
-sidebar_label: Problems - K-Nearest Neighbor
+sidebar_label: 0025 K-Nearest Neighbor
 tags:
   - Intermediate
   - Machine Learning
@@ -19,7 +19,7 @@ KNN is one of the most basic yet essential classification algorithms in machine 
 
 It is widely disposable in real-life scenarios since it is non-parametric, meaning it does not make any underlying assumptions about the distribution of data (as opposed to other algorithms such as GMM, which assume a Gaussian distribution of the given data). We are given some prior data (also called training data), which classifies coordinates into groups identified by an attribute.
 
-![This image explains the Basic](/assets/knnclassifier.png)
+![This image explains the Basic](../../assets/knnclassifier.png)
 
 ## Intuition Behind KNN Algorithm
 
@@ -37,7 +37,7 @@ The value of K is critical in the K-NN algorithm. A small K can make the model s
 K-Nearest Neighbor (K-NN) is a simple, supervised machine learning algorithm used for classification and regression tasks. It works by finding the K closest data points (neighbors) to the query point and using them to make predictions. For classification, it assigns the class most common among the neighbors. For regression, it averages the values of the neighbors.
 
 
-![Here you can see](/assets/kthNearest.png)
+![Here you can see](../../assets/kthNearest.png)
 
 ## Problem Description
 
@@ -65,7 +65,7 @@ Output: [(1, 2), (2, 3), (3, 4)]
 
 ## Your Task
 
-Implement the function `knn()` that takes in a dataset, a query point, and an integer k. The function should return the k points in the dataset that are closest to the query point based on Euclidean distance.
+Implement the function $knn()$ that takes in a dataset, a query point, and an integer k. The function should return the k points in the dataset that are closest to the query point based on Euclidean distance.
 
 Expected Time Complexity: $O(n log n)$ for sorting the dataset.
 
