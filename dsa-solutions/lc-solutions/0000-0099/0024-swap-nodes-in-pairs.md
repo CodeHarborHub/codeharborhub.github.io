@@ -1,7 +1,6 @@
 ---
 id: swap-nodes-in-pairs
 title: Swap Nodes in Pairs (LeetCode)
-difficulty: Medium
 sidebar_label: 0024-SwapNodesInPairs
 description: Swap every two adjacent nodes in a linked list and return its head. The values in the nodes must not be modified, only the nodes themselves can be changed.
 ---
