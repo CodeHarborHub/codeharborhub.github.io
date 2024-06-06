@@ -44,11 +44,11 @@ Starting from 0, it will go to 1 then 2, thus BFS will be 0 1 2.
 
 You don't need to read input or print anything. Your task is to complete the function `bfsOfGraph()` which takes the integer `V` denoting the number of vertices and adjacency list as input parameters and returns a list containing the BFS traversal of the graph starting from the 0th vertex from left to right.
 
-**Expected Time Complexity:** $ O(V + E) $ 
+**Expected Time Complexity:** $O(V + E)$ 
 **Expected Auxiliary Space:** $O(V)$
 
 **Constraints**
-- $ 1 ≤ V, E ≤ 10^4 $
+- $1 ≤ V, E ≤ 10^4$
 
 ## Solution
 
@@ -211,10 +211,10 @@ class Solution {
 
 ## Complexity analysis
 
-The provided solutions efficiently perform a Breadth First Search (BFS) traversal of a directed graph. By starting from the 0th vertex and using a queue to manage the traversal, the algorithms ensure that all reachable vertices are visited in the correct order. The solutions operate in O(V + E) time and use O(V) space complexity, where V and E are the numbers of vertices and edges in the graph, respectively.
+The provided solutions efficiently perform a Breadth First Search (BFS) traversal of a directed graph. By starting from the 0th vertex and using a queue to manage the traversal, the algorithms ensure that all reachable vertices are visited in the correct order. The solutions operate in $O(V + E)$ time and use $O(V)$ space complexity, where V and E are the numbers of vertices and edges in the graph, respectively.
 
-**Time Complexity:** $ O(V + E)  $
-**Auxiliary Space:** $ O(V)$
+**Time Complexity:** $O(V + E)$
+**Auxiliary Space:** $O(V)$
 
 ## References
 

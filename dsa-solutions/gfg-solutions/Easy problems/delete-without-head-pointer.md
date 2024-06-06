@@ -58,12 +58,12 @@ we have remaining nodes as 10, 4, 30.
 ### Your Task
 You don't need to read or print anything. You only need to complete the function `deleteNode()` which takes a reference of the deleting node value and your task is to delete the given node value.
 
-**Expected Time Complexity:** O(1)  
-**Expected Auxiliary Space:** O(1)
+**Expected Time Complexity:** $O(1)$  
+**Expected Auxiliary Space:** $O(1)$
 
 ### Constraints
-2 ≤ n ≤ 10^3  
-1 ≤ elements of the linked list ≤ 10^9
+- $2 ≤ n ≤ 10^3$  
+- $1 ≤ elements of the linked list ≤ 10^9$
 
 ## Solution
 
@@ -213,8 +213,8 @@ class Solution {
 
 ### Complexity Analysis
 
-- **Time Complexity:** O(1), as the deletion operation requires constant time regardless of the size of the linked list.
-- **Space Complexity:** O(1), as the algorithm uses only a constant amount of extra space regardless of the input size.
+- **Time Complexity:** $O(1)$, as the deletion operation requires constant time regardless of the size of the linked list.
+- **Space Complexity:** $O(1)$, as the algorithm uses only a constant amount of extra space regardless of the input size.
 
 ---
 

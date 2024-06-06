@@ -41,12 +41,12 @@ Output:
 ### Your Task
 The task is to complete the function `deleteMid()` which takes head of the linked list and returns head of the linked list with the middle element deleted. If the linked list is empty or contains a single element, then it should return NULL.
 
-**Expected Time Complexity:** O(n).  
-**Expected Auxiliary Space:** O(1).
+**Expected Time Complexity:** $O(n)$  
+**Expected Auxiliary Space:** $O(1)$
 
 ### Constraints
-1 ≤ n ≤ 10^5  
-1 ≤ value[i] ≤ 10^9
+- $1 ≤ n ≤ 10^5$  
+- $1 ≤ value[i] ≤ 10^9$
 
 ## Solution
 
@@ -59,8 +59,7 @@ To delete the middle node, ensure that the `slow` pointer is at the node just be
 **Edge Case:** If there is only one node in the linked list, return NULL or None.
 
 ### Complexity
-- **Time Complexity:** O(n)
-- **Space Complexity:** O(1)
+- **Time Complexity:** $O(n)$- **Space Complexity:** O(1)
 
 ### Implementation
 
@@ -164,8 +163,8 @@ function deleteMid(head: ListNode | null): ListNode | null {
 </Tabs>
 
 ### Complexity
-- **Time Complexity:** O(n)
-- **Space Complexity:** O(1)
+- **Time Complexity:** $O(n)$
+- **Space Complexity:** $O(1)$
 
 ---
 

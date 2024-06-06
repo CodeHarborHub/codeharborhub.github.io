@@ -52,8 +52,8 @@ Thus DFS will be 0 1 2 3.
 
 You don't need to read input or print anything. Your task is to complete the function `dfsOfGraph()` which takes the integer `V` denoting the number of vertices and adjacency list as input parameters and returns a list containing the DFS traversal of the graph starting from the 0th vertex from left to right according to the graph.
 
-- **Expected Time Complexity:** $ O(V + E)  $
-- **Expected Auxiliary Space:** $ O(V)$
+- **Expected Time Complexity:** $O(V + E)$
+- **Expected Auxiliary Space:** $O(V)$
 
 **Constraints**
 - $ 1 ≤ V, E ≤ 10^4 $

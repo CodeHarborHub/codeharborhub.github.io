@@ -45,14 +45,14 @@ Output:
 
 You don't have to take any input or print anything. Your task is to complete the function `findIntersection()`, which will take the head of both of the linked lists as input and should find the intersection of the two linked lists and add all the elements in the intersection to the third linked list and return the head of the third linked list.
 
-**Expected Time Complexity:** O(n + m)  
-**Expected Auxiliary Space:** O(n + m)
+**Expected Time Complexity:** $O(n + m)$  
+**Expected Auxiliary Space:** $O(n + m)$
 
 **Note:** n, m are the sizes of the respective linked lists.
 
 ### Constraints
-1 ≤ size of linked lists ≤ 5000  
-1 ≤ Data in linked list nodes ≤ 10^4
+- $1 ≤ size of linked lists ≤ 5000$  
+- $1 ≤ Data in linked list nodes ≤ 10^4$
 
 ## Solution
 
@@ -231,8 +231,8 @@ class Solution {
   </TabItem>
 </Tabs>
 
-**Time Complexity:** O(n + m)  
-**Auxiliary Space:** O(n + m)
+**Time Complexity:** $O(n + m)$  
+**Auxiliary Space:** $O(n + m)$
 
 ## References
 

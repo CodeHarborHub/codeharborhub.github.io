@@ -337,7 +337,7 @@ class TwoStacks {
 
 ## Complexity Analysis
 
-The provided solutions efficiently implement two stacks in a single array using pointers. This approach ensures a time complexity of O(1) for all stack operations and an auxiliary space complexity of O(1). The algorithms are designed to handle up to 10^4 queries efficiently without relying on dynamic data structures.
+The provided solutions efficiently implement two stacks in a single array using pointers. This approach ensures a time complexity of $O(1)$ for all stack operations and an auxiliary space complexity of $O(1)$. The algorithms are designed to handle up to $10^4$ queries efficiently without relying on dynamic data structures.
 
 **Time Complexity:** $O(1)$ for all the four methods.  
 **Auxiliary Space:** $O(1)$ for all the four methods.

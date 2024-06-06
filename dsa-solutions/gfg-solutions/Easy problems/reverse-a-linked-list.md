@@ -178,8 +178,8 @@ function reverseList(head: ListNode | null): ListNode | null {
 
 ### Complexity Analysis
 
-- **Time Complexity:** $ O(N) $, where N is the number of nodes in the linked list. We traverse the entire list once.
-- **Space Complexity:** $ O(1) $, as we only use a constant amount of extra space for pointers.
+- **Time Complexity:** $O(N)$, where N is the number of nodes in the linked list. We traverse the entire list once.
+- **Space Complexity:** $O(1)$, as we only use a constant amount of extra space for pointers.
 
 ---
 
