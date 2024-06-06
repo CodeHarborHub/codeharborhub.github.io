@@ -236,6 +236,15 @@ const Users: User[] = [
     source: "",
     tags: ["opensource", "product", "nextjs", "javascript"],
   },
+  {
+    title: "Random Meme Generator",
+    description:
+      "It generates random memes by using the technique of API Fetching and also supports the feature of sharing the memes.",
+    preview: require("./showcase/meme.png"),
+    website: "https://giggle-hub.vercel.app/",
+    source: "https://github.com/komal-agarwal5/Giggle-Hub------Meme-Generator",
+    tags: ["opensource", "product", "html", "css", "javascript"],
+  },
 ];
 
 export const TagList = Object.keys(Tags) as TagType[];
