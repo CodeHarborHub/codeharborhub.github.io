@@ -7,13 +7,14 @@ import styles from "./index.module.css";
 // import Features from "../components/HomePage/Features";
 // import Courses from "../components/HomePage/Courses";
 // import { featuresData, coursesData } from "../database/home";
+import Head from "@docusaurus/Head";
 import Header from "../components/HomePage/Header";
 import Tweet from "../components/Tweet";
 import Tweets, { type TweetItem } from "../data/tweets";
 import { motion } from "framer-motion";
 import ResourcesSection from "../components/HomePage/ResourcesSection";
-import ScrollToTopButton from "../components/Buttons/bottom/ScrollToBottomButton";
-import ScrollToBottomButton from "../components/Buttons/top/ScrollToTopButton";
+import ScrollTopToButton from "../components/Buttons/bottom/ScrollTopToButton";
+import ScrollBottomToTop from "../components/Buttons/top/ScrollBottomToTop";
 
 function TweetsSection() {
   const tweetColumns = [[], [], []];
@@ -56,7 +57,9 @@ function TweetsSection() {
               key={i}
             >
               {tweetItems.map((tweet) => (
+                <div className={styles.tweetContainer} key = {tweet.url}>
                 <Tweet {...tweet} key={tweet.url} />
+                </div>
               ))}
             </motion.div>
           ))}
@@ -74,6 +77,19 @@ export default function Home() {
       title={`Hello from ${siteConfig.title}`}
       description="Welcome to CodeHarborHub. Learn the basics to advanced concepts of web development. html, css, javascript, react, node.js, dsa, and more."
     >
+      <Head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5832817025080991"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          async
+          custom-element="amp-auto-ads"
+          src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"
+        ></script>
+        <meta name="google-adsense-account" content="ca-pub-5832817025080991" />
+      </Head>
       <main className={styles.main__home}>
         <div className={styles.home__header}>
           <Header />
@@ -145,8 +161,8 @@ export default function Home() {
 
         <TweetsSection />
 
-        <ScrollToTopButton />
-        <ScrollToBottomButton />
+        <ScrollTopToButton />
+        <ScrollBottomToTop />       
       </main>
     </Layout>
   );

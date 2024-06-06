@@ -14,61 +14,61 @@ export const problems = [
     "problemName": "1. Reverse-a-linked-list",
     "difficulty": "easy",
     "leetCodeLink": "https://www.geeksforgeeks.org/problems/reverse-a-linked-list/0",
-    "solutionLink": "#"
+    "solutionLink": "/dsa-solutions/gfg-solutions/problems/Reverse-a-linked-list"
   },
     {
         "problemName": "2. Reverse-a-doubly-linked-list",
         "difficulty": "easy",
         "leetCodeLink": "https://www.geeksforgeeks.org/problems/reverse-a-doubly-linked-list/0",
-        "solutionLink": "#"
+        "solutionLink": "/dsa-solutions/gfg-solutions/problems/Reverse-a-doubly-linked-list"
     },
     {
         "problemName": "3. Delete-without-head-pointer",
         "difficulty": "easy",
         "leetCodeLink": "https://www.geeksforgeeks.org/problems/delete-without-head-pointer/0",
-        "solutionLink": "#"
+        "solutionLink": "/dsa-solutions/gfg-solutions/problems/Delete-without-head-pointer"
     },
     {
         "problemName": "4. Check-for-balanced-tree",
         "difficulty": "easy",
         "leetCodeLink": "https://www.geeksforgeeks.org/problems/check-for-balanced-tree/0",
-        "solutionLink": "#"
+        "solutionLink": "/dsa-solutions/gfg-solutions/problems/Check-for-balanced-tree"
     },
     {
         "problemName": "5. Delete-middle-of-linked-list",
         "difficulty": "easy",
         "leetCodeLink": "https://www.geeksforgeeks.org/problems/delete-middle-of-linked-list/0",
-        "solutionLink": "#"
+        "solutionLink": "/dsa-solutions/gfg-solutions/problems/Delete-middle-of-linked-list"
     },
     {
         "problemName": "6. Intersection-of-two-sorted-linked-lists",
         "difficulty": "easy",
         "leetCodeLink": "https://www.geeksforgeeks.org/problems/intersection-of-two-sorted-linked-lists/0",
-        "solutionLink": "#"
+        "solutionLink": "/dsa-solutions/gfg-solutions/problems/Intersection-of-two-sorted-linked-lists"
     },
     {
         "problemName": "7. DFS-traversal-of-graph",
         "difficulty": "easy",
         "leetCodeLink": "https://www.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/0",
-        "solutionLink": "#"
+        "solutionLink": "/dsa-solutions/gfg-solutions/problems/DFS-traversal-of-graph"
     },
     {
         "problemName": "8. BFS-traversal-of-graph",
         "difficulty": "easy",
         "leetCodeLink": "https://www.geeksforgeeks.org/problems/bfs-traversal-of-graph/0",
-        "solutionLink": "#"
+        "solutionLink": "/dsa-solutions/gfg-solutions/problems/BFS-traversal-of-graph"
     },
     {
         "problemName": "9. Square-root",
         "difficulty": "easy",
         "leetCodeLink": "https://www.geeksforgeeks.org/problems/square-root/0",
-        "solutionLink": "#"
+        "solutionLink": "/dsa-solutions/gfg-solutions/problems/Square-root"
     },
     {
         "problemName": "10. Implement-two-stacks-in-an-array",
         "difficulty": "easy",
         "leetCodeLink": "https://www.geeksforgeeks.org/problems/implement-two-stacks-in-an-array/0",
-        "solutionLink": "#"
+        "solutionLink": "/dsa-solutions/gfg-solutions/problems/Implement-two-stacks-in-an-array"
     }
 ]
 

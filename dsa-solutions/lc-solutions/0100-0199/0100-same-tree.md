@@ -44,7 +44,7 @@ Output: false
 ### Constraints
 
 - The number of nodes in both trees is in the range `[0, 100]`.
-- `$-10^4 <=$ Node.val $<= 10^4$`
+- $-10^4 <=$ Node.val $<= 10^4$
 
 ## Solution for Same Tree Problem
 
@@ -131,13 +131,11 @@ The intuition behind the solution is to recursively check if two binary trees ar
 
 ### Complexity Analysis
 
-- **Time complexity**: The time complexity of the solution is O(min(N,M)), where N and M are the number of nodes in the two trees, respectively. This is because we need to visit each node once in order to compare their values.
-- **Space complexity**: The space complexity of the solution is O(min(H1,H2)), where H1 and H2 are the heights of the two trees, respectively. This is because the space used by the recursive stack is determined by the height of the smaller tree.
+- **Time complexity**: The time complexity of the solution is $O(min(N,M))$, where N and M are the number of nodes in the two trees, respectively. This is because we need to visit each node once in order to compare their values.
+- **Space complexity**: The space complexity of the solution is $O(min(H1,H2))$, where H1 and H2 are the heights of the two trees, respectively. This is because the space used by the recursive stack is determined by the height of the smaller tree.
 
 ## References
 
 - **LeetCode Problem:** [LeetCode Problem](https://leetcode.com/problems/generate-parentheses/)
 - **Solution Link:** [Generate Parantheses Solution on LeetCode](https://leetcode.com/problems/generate-parentheses/solutions/5016750/easy-recursion-solution-in-c-100-beats-full-expanation-with-example/)
 - **Authors GeeksforGeeks Profile:** [Vipul lakum](https://leetcode.com/u/vipul_lakum_02/)
-
----

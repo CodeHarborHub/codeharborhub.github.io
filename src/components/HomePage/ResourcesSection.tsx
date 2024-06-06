@@ -18,7 +18,7 @@ interface Resource {
 
 const ALL_RESOURCES: Resource[] = [
   {
-    url: "https://www.codeharborhub.live/docs/",
+    url: "https://codeharborhub.github.io/docs/",
     type: "tutorial",
     title: "Tutorial: For Beginners",
     description:
@@ -27,7 +27,7 @@ const ALL_RESOURCES: Resource[] = [
     duration: "10 min",
   },
   {
-    url: "https://www.codeharborhub.live/courses/",
+    url: "https://codeharborhub.github.io/courses/",
     type: "courses",
     title: "Courses: For Advanced Users",
     description:
@@ -36,7 +36,7 @@ const ALL_RESOURCES: Resource[] = [
     duration: "3 min",
   },
   {
-    url: "https://www.codeharborhub.live/blog/",
+    url: "https://codeharborhub.github.io/blog/",
     type: "blog",
     title: "Blog: For All Users",
     description:
@@ -45,7 +45,7 @@ const ALL_RESOURCES: Resource[] = [
     duration: "7 min",
   },
   {
-    url: "https://www.codeharborhub.live/dsa/",
+    url: "https://codeharborhub.github.io/dsa/",
     type: "dsa",
     title: "DSA: For Competitive Programmers",
     description:

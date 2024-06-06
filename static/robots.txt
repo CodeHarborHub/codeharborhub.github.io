@@ -2,4 +2,4 @@
 
 User-agent: *
 Allow: /
-sitemap: https://ajay-dhangar.github.io/code-harbor-hub/sitemap.xml
+sitemap: https://codeharborhub.github.io//sitemap.xml
