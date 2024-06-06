@@ -1,7 +1,6 @@
 ---
 id: merge-sorted-array
 title: Merge Sorted Array (LeetCode)
-difficulty: Easy
 sidebar_label: 0088-MergeSortedArray
 ---
 
@@ -15,31 +14,31 @@ sidebar_label: 0088-MergeSortedArray
 
 ## Problem Description
 
-You are given two integer arrays $nums1$ and $nums2$, sorted in non-decreasing order, and two integers $m$ and $n$, representing the number of elements in $nums1$ and $nums2$ respectively.
+You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
 
-Merge $nums1$ and $nums2$ into a single array sorted in non-decreasing order.
+Merge nums1 and nums2 into a single array sorted in non-decreasing order.
 
-The final sorted array should not be returned by the function, but instead be stored inside the array $nums1$. To accommodate this, $nums1$ has a length of $m + n$, where the first $m$ elements denote the elements that should be merged, and the last $n$ elements are set to 0 and should be ignored. $nums2$ has a length of $n$.
+The final sorted array should not be returned by the function, but instead be stored inside the array nums1. To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored. nums2 has a length of n.
 
 ### Examples
 
 #### Example 1
 
-- **Input:** $nums1 = [1,2,3,0,0,0]$, $m = 3$, $nums2 = [2,5,6]$, $n = 3$
-- **Output:** $[1,2,2,3,5,6]$
-- **Explanation:** The arrays being merged are $[1,2,3]$ and $[2,5,6]$. The result of the merge is $[1,2,2,3,5,6]$.
+- **Input:** nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
+- **Output:** [1,2,2,3,5,6]
+- **Explanation:** The arrays being merged are [1,2,3] and [2,5,6]. The result of the merge is [1,2,2,3,5,6].
 
 #### Example 2
 
-- **Input:** $nums1 = [1]$, $m = 1$, $nums2 = []$, $n = 0$
-- **Output:** $[1]$
-- **Explanation:** The arrays being merged are $[1]$ and $[]$. The result of the merge is $[1]$.
+- **Input:** nums1 = [1], m = 1, nums2 = [], n = 0
+- **Output:** [1]
+- **Explanation:** The arrays being merged are [1] and []. The result of the merge is [1].
 
 #### Example 3
 
-- **Input:** $nums1 = [0]$, $m = 0$, $nums2 = [1]$, $n = 1$
-- **Output:** $[1]$
-- **Explanation:** The arrays being merged are $[]$ and $[1]$. The result of the merge is $[1]$. Note that because $m = 0$, there are no elements in $nums1$. The 0 is only there to ensure the merge result can fit in $nums1$.
+- **Input:** nums1 = [0], m = 0, nums2 = [1], n = 1
+- **Output:** [1]
+- **Explanation:** The arrays being merged are [] and [1]. The result of the merge is [1]. Note that because m = 0, there are no elements in nums1. The 0 is only there to ensure the merge result can fit in nums1.
 
 ### Constraints
 
@@ -51,15 +50,15 @@ The final sorted array should not be returned by the function, but instead be st
 
 ### Approach
 
-To merge the two arrays efficiently in-place, we can use a two-pointer approach starting from the end of both arrays. By comparing elements from the end of both arrays and placing the larger element at the end of $nums1$, we can achieve the desired result in O(m + n) time.
+To merge the two arrays efficiently in-place, we can use a two-pointer approach starting from the end of both arrays. By comparing elements from the end of both arrays and placing the larger element at the end of nums1, we can achieve the desired result in $O(m + n)$ time.
 
 1. **Initialize Pointers:**
-   - Initialize two pointers, $p1$ and $p2$, to the end of $nums1$ and $nums2$ respectively.
+   - Initialize two pointers, p1 and p2, to the end of nums1 and nums2 respectively.
 
 2. **Merge Arrays:**
-   - Compare elements at $nums1[p1]$ and $nums2[p2]$, and place the larger element at the end of $nums1$.
+   - Compare elements at nums1[p1] and nums2[p2], and place the larger element at the end of nums1.
    - Decrement the pointer of the array from which the larger element was taken.
-   - Repeat this process until all elements from $nums2$ are merged into $nums1$.
+   - Repeat this process until all elements from nums2 are merged into nums1.
 
 ### Solution Code
 
@@ -135,5 +134,5 @@ public:
 
 ### Conclusion
 
-The above solution efficiently merges two sorted integer arrays $nums1$ and $nums2$ into a single array $nums1$ in non-decreasing order. It utilizes a two-pointer approach to achieve a time complexity of $O(m + n)$, where m and n are the lengths of $nums1$ and $nums2$ respectively. This approach allows for an in-place merge of the arrays, meeting the requirements of the problem.
+The above solution efficiently merges two sorted integer arrays nums1 and nums2 into a single array nums1 in non-decreasing order. It utilizes a two-pointer approach to achieve a time complexity of $O(m + n)$, where m and n are the lengths of nums1 and nums2 respectively. This approach allows for an in-place merge of the arrays, meeting the requirements of the problem.
 
