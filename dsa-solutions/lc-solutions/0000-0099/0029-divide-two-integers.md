@@ -3,9 +3,6 @@ id: divide-two-integers
 title: Divide Two Integers (LeetCode)
 difficulty: Medium
 sidebar_label: 0029-DivideTwoIntegers
-topics:
-  - Math
-companies: []
 description: Divide two integers without using multiplication, division, and mod operator. The integer division should truncate toward zero.
 ---
 
@@ -41,8 +38,8 @@ Return the quotient after dividing `dividend` by `divisor`.
 
 ### Constraints
 
-- `-2^31 <= dividend, divisor <= 2^31 - 1`
-- `divisor != 0`
+- $-2^31 <= dividend, divisor <= 2^31 - 1$
+- $divisor != 0$
 
 ### Approach
 
@@ -65,7 +62,7 @@ To divide two integers without using multiplication, division, and mod operator,
 
 #### Python
 
-```
+```py
 class Solution:
     def divide(self, dividend, divisor):
         if dividend == 0:
@@ -93,7 +90,7 @@ class Solution:
 
 #### Java
 
-```
+```java
 class Solution {
     public int divide(int dividend, int divisor) {
         if (dividend == Integer.MIN_VALUE && divisor == -1)
@@ -121,7 +118,7 @@ class Solution {
 
 #### C++
 
-```
+```cpp
 class Solution {
 public:
     int divide(int dividend, int divisor) {
