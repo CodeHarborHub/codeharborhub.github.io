@@ -56,6 +56,7 @@ You don't need to read input or print anything. Your task is to complete the fun
 
 ### Constraints
 
+
 - $1 ≤ N ≤ 10^5$  
 - $-10^3 ≤ arr[i] ≤ 10^3$
 
