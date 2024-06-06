@@ -3,11 +3,6 @@ id: next-permutation
 title: Next Permutation (LeetCode)
 difficulty: Medium
 sidebar_label: 0031-NextPermutation
-topics:
-  - Array
-  - Two Pointers
-  - Sorting
-companies: []
 description: Find the next lexicographically greater permutation of an array of integers. The replacement must be in place and use only constant extra memory.
 ---
 
@@ -26,26 +21,26 @@ Given an array of integers `nums`, find the next lexicographically greater permu
 
 #### Example 1
 
-- **Input:** `nums = [1,2,3]`
-- **Output:** `[1,3,2]`
-- **Explanation:** The next permutation of `[1,2,3]` is `[1,3,2]`.
+- **Input:** $nums = [1,2,3]$
+- **Output:** $[1,3,2]$
+- **Explanation:** The next permutation of $[1,2,3]$ is $[1,3,2]$.
 
 #### Example 2
 
-- **Input:** `nums = [3,2,1]`
-- **Output:** `[1,2,3]`
-- **Explanation:** The next permutation of `[3,2,1]` is `[1,2,3]` because `[3,2,1]` does not have a lexicographically larger rearrangement.
+- **Input:** $nums = [3,2,1]$
+- **Output:** $[1,2,3]$
+- **Explanation:** The next permutation of $[3,2,1]$ is $[1,2,3]$ because $[3,2,1]$ does not have a lexicographically larger rearrangement.
 
 #### Example 3
 
-- **Input:** `nums = [1,1,5]`
-- **Output:** `[1,5,1]`
-- **Explanation:** The next permutation of `[1,1,5]` is `[1,5,1]`.
+- **Input:** $nums = [1,1,5]$
+- **Output:** $[1,5,1]$
+- **Explanation:** The next permutation of $[1,1,5]$ is $[1,5,1]$.
 
 ### Constraints
 
-- `1 <= nums.length <= 100`
-- `0 <= nums[i] <= 100`
+- $1 <= nums.length <= 100$
+- $0 <= nums[i] <= 100$
 
 ### Approach
 
@@ -64,7 +59,7 @@ To find the next lexicographically greater permutation of an array of integers, 
 
 #### Python
 
-```
+```py
 class Solution:
     def nextPermutation(self, nums: List[int]) -> None:
         i = len(nums) - 2
@@ -89,7 +84,7 @@ class Solution:
 
 #### Java
 
-```
+```java
 class Solution {
     public void nextPermutation(int[] nums) {
         int i = nums.length - 2;
@@ -125,7 +120,7 @@ class Solution {
 
 #### C++
 
-```
+```cpp
 class Solution {
 public:
     void nextPermutation(vector<int>& nums) {
