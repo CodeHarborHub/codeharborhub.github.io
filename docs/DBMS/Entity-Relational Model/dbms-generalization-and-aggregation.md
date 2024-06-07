@@ -30,7 +30,16 @@ As mentioned above, the process of generalizing entities, where the generalized 
 | Crow              | Bird                |
 | Dove              | Bird                |
 
-![generalization](https://www.tutorialspoint.com/dbms/images/generalization.png)
+```mermaid
+---
+title: Generalization Example
+---
+erDiagram
+    PIGEON }|..|{ BIRD : generalizes
+    HOUSE_SPARROW }|..|{ BIRD : generalizes
+    CROW }|..|{ BIRD : generalizes
+    DOVE }|..|{ BIRD : generalizes
+```
 
 ## Specialization
 
@@ -42,7 +51,16 @@ Specialization is the opposite of generalization. In specialization, a group of 
 |----------------|--------------------------|
 | Person         | Employee, Employer, Customer, Vendor |
 
-![specialization](https://www.tutorialspoint.com/dbms/images/specialization.png)
+```mermaid
+---
+title: Specialization Example
+---
+erDiagram
+    PERSON ||--o{ EMPLOYEE : specializes
+    PERSON ||--o{ EMPLOYER : specializes
+    PERSON ||--o{ CUSTOMER : specializes
+    PERSON ||--o{ VENDOR : specializes
+```
 
 Similarly, in a school database, persons can be specialized as teacher, student, or a staff, based on what role they play in school as entities.
 
@@ -54,10 +72,30 @@ Inheritance is an important feature of Generalization and Specialization. It all
 
 ### Example of Inheritance
 
-![inheritance](https://www.tutorialspoint.com/dbms/images/inheritance.png)
-
 | Higher-level Entity | Attributes                  | Lower-level Entities   |
 |---------------------|-----------------------------|------------------------|
 | Person              | Name, Age, Gender           | Student, Teacher       |
+
+```mermaid
+---
+title: Inheritance Example
+---
+erDiagram
+    PERSON {
+        string name
+        int age
+        string gender
+    }
+    STUDENT {
+        string school
+        string grade
+    }
+    TEACHER {
+        string subject
+        string department
+    }
+    PERSON ||--o{ STUDENT : inherits
+    PERSON ||--o{ TEACHER : inherits
+```
 
 For example, the attributes of a Person class such as name, age, and gender can be inherited by lower-level entities such as Student or Teacher.

@@ -18,7 +18,16 @@ Let us now learn how the ER Model is represented by means of an ER diagram. Any 
 
 Entities are represented by means of rectangles. Rectangles are named with the entity set they represent.
 
-![entities](https://www.tutorialspoint.com/dbms/images/entities.png)
+```mermaid
+---
+title: Entity Representation
+---
+erDiagram
+    ENTITY {
+        string attribute1
+        int attribute2
+    }
+```
 
 ## Attributes
 
@@ -26,25 +35,68 @@ Entities are represented by means of rectangles. Rectangles are named with the e
 
 Attributes are the properties of entities. Attributes are represented by means of ellipses. Every ellipse represents one attribute and is directly connected to its entity (rectangle).
 
-![er_attributes](https://www.tutorialspoint.com/dbms/images/er_attributes.png)
+```mermaid
+---
+title: Simple Attributes
+---
+erDiagram
+    ENTITY {
+        string attribute1
+    }
+```
 
 ### Composite Attributes
 
 If the attributes are composite, they are further divided in a tree-like structure. Every node is then connected to its attribute. Composite attributes are represented by ellipses that are connected with an ellipse.
 
-![er_attributes_composite](https://www.tutorialspoint.com/dbms/images/er_attributes_composite.png)
+```mermaid
+---
+title: Composite Attributes
+---
+erDiagram
+    ENTITY {
+        string attribute1
+    }
+    attribute1 {
+        string sub_attribute1
+        string sub_attribute2
+    }
+    ENTITY ||--o{ attribute1 : has
+```
 
 ### Multivalued Attributes
 
-Multivalued attributes are depicted by double ellipse.
+Multivalued attributes are depicted by double ellipses.
 
-![er_attributes_multivalued](https://www.tutorialspoint.com/dbms/images/er_attributes_multivalued.png)
+```mermaid
+---
+title: Multivalued Attributes
+---
+erDiagram
+    ENTITY {
+        string attribute1
+        int attribute2
+        string[] multivalued_attribute
+    }
+    ENTITY ||--o{ multivalued_attribute : has
+```
 
 ### Derived Attributes
 
-Derived attributes are depicted by dashed ellipse.
+Derived attributes are depicted by dashed ellipses.
 
-![er_attributes_derived](https://www.tutorialspoint.com/dbms/images/er_attributes_derived.png)
+```mermaid
+---
+title: Derived Attributes
+---
+erDiagram
+    ENTITY {
+        string attribute1
+        int attribute2
+        int derived_attribute
+    }
+    ENTITY ||--o{ derived_attribute : derives
+```
 
 ## Relationship
 
@@ -58,17 +110,49 @@ A relationship where two entities are participating is called a binary relations
 
 When only one instance of an entity is associated with the relationship, it is marked as '1:1'. The following image reflects that only one instance of each entity should be associated with the relationship. It depicts one-to-one relationship.
 
+```mermaid
+---
+title: One-to-One Relationship
+---
+erDiagram
+    ENTITY1 ||--|| ENTITY2 : relationship
+```
+
 #### One-to-Many
 
 When more than one instance of an entity is associated with a relationship, it is marked as '1:N'. The following image reflects that only one instance of entity on the left and more than one instance of an entity on the right can be associated with the relationship. It depicts one-to-many relationship.
+
+```mermaid
+---
+title: One-to-Many Relationship
+---
+erDiagram
+    ENTITY1 ||--o{ ENTITY2 : relationship
+```
 
 #### Many-to-One
 
 When more than one instance of entity is associated with the relationship, it is marked as 'N:1'. The following image reflects that more than one instance of an entity on the left and only one instance of an entity on the right can be associated with the relationship. It depicts many-to-one relationship.
 
+```mermaid
+---
+title: Many-to-One Relationship
+---
+erDiagram
+    ENTITY1 }o--|| ENTITY2 : relationship
+```
+
 #### Many-to-Many
 
 The following image reflects that more than one instance of an entity on the left and more than one instance of an entity on the right can be associated with the relationship. It depicts many-to-many relationship.
+
+```mermaid
+---
+title: Many-to-Many Relationship
+---
+erDiagram
+    ENTITY1 }o--o{ ENTITY2 : relationship
+```
 
 ### Participation Constraints
 
@@ -76,6 +160,22 @@ The following image reflects that more than one instance of an entity on the lef
 
 Each entity is involved in the relationship. Total participation is represented by double lines.
 
+```mermaid
+---
+title: Total Participation
+---
+erDiagram
+    ENTITY1 ||--|| ENTITY2 : relationship
+```
+
 #### Partial Participation
 
 Not all entities are involved in the relationship. Partial participation is represented by single lines.
+
+```mermaid
+---
+title: Partial Participation
+---
+erDiagram
+    ENTITY1 }o--|| ENTITY2 : relationship
+```

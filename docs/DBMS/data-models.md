@@ -19,7 +19,27 @@ Flat data models were the earliest, where all data was kept on the same plane. H
 
 The Entity-Relationship (ER) Model is based on real-world entities and their relationships. It creates entity sets, relationship sets, attributes, and constraints, making it suitable for conceptual database design.
 
-![er_model_intro](https://www.tutorialspoint.com/dbms/images/er_model_intro.png)
+```mermaid
+---
+title: ER Model Example
+---
+erDiagram
+    STUDENT {
+        string name
+        int age
+        string class
+    }
+    TEACHER {
+        string name
+        string subject
+    }
+    COURSE {
+        string name
+        int credits
+    }
+    STUDENT ||--o{ COURSE : enrolls
+    TEACHER ||--o{ COURSE : teaches
+```
 
 ### Concepts of ER Model
 
@@ -30,7 +50,36 @@ The Entity-Relationship (ER) Model is based on real-world entities and their rel
 
 The Relational Model is the most popular data model in DBMS, based on first-order predicate logic. It defines a table as an n-ary relation.
 
-![relational_model_table](https://www.tutorialspoint.com/dbms/images/relational_model_table.png)
+```mermaid
+---
+title: Relational Model Table Example
+---
+erDiagram
+    CUSTOMER {
+        int id
+        string name
+        string address
+    }
+    ORDER {
+        int id
+        date orderDate
+        float amount
+    }
+    LINE_ITEM {
+        int id
+        int quantity
+        float price
+    }
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE_ITEM : contains
+    CUSTOMER }|..|{ DELIVERY_ADDRESS : uses
+    DELIVERY_ADDRESS {
+        int id
+        string street
+        string city
+        string zip
+    }
+```
 
 ### Highlights of Relational Model
 
