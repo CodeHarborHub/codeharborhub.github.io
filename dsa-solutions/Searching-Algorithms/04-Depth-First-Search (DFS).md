@@ -1,7 +1,7 @@
 ---
 id: Depth-First-Search-DFS
 title: Depth First Search (DFS) (Geeks for Geeks)
-sidebar_label: Problems - Depth First Search (DFS)
+sidebar_label: Depth First Search (DFS)
 tags:
   - Beginner
   - Graph Algorithms

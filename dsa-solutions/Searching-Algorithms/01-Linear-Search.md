@@ -1,7 +1,7 @@
 ---
 id: Linear-Search
 title: Linear Search (Geeks for Geeks)
-sidebar_label: Problems - Linear Search
+sidebar_label: Linear Search
 tags:
   - Beginner
   - Search Algorithms

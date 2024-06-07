@@ -1,7 +1,7 @@
 ---
 id: Breadth-First-Search-BFS
 title: Breadth First Search (BFS) (Geeks for Geeks)
-sidebar_label: Problems - Breadth First Search (BFS)
+sidebar_label: Breadth First Search (BFS)
 tags:
   - Beginner
   - Graph Algorithms
