@@ -129,8 +129,8 @@ public:
 
 #### Complexity Analysis
 
-- Time Complexity: O(n) where n is the number of nodes in the binary tree.
-- Space Complexity: O(h) where h is the height of the  tree.
+- Time Complexity: $O(n)$ where n is the number of nodes in the binary tree.
+- Space Complexity: $O(h)$ where h is the height of the  tree.
 
 </tabItem>
 </Tabs>
