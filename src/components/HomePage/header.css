@@ -41,6 +41,7 @@
 .chh__header-content p {
   font-weight: 400;
   font-size: 22px;
+  text-align: justify;
   line-height: 30px;
   margin-top: 1.5rem;
 }
@@ -317,3 +318,7 @@
 .float-animation {
   animation: float 2s ease-in-out infinite;
 }
+
+
+
+

@@ -236,6 +236,24 @@ const Users: User[] = [
     source: "",
     tags: ["opensource", "product", "nextjs", "javascript"],
   },
+  {
+    title: "Scientific Calculator",
+    description:
+      "Build and Deploy a Modern and Beginner-friendly Scientific Calculator using HTML, CSS and Vanilla Javascript",
+    preview: require("./showcase/calculator-app.png"),
+    website: "https://calcu-plus.vercel.app/",
+    source: "https://github.com/ParnaRoyChowdhury777/Calculator---CalcuPlus",
+    tags: ["opensource", "clone", "html", "css", "vanilla"],
+  },
+  {
+    title: "Random Meme Generator",
+    description:
+      "It generates random memes by using the technique of API Fetching and also supports the feature of sharing the memes.",
+    preview: require("./showcase/meme.png"),
+    website: "https://giggle-hub.vercel.app/",
+    source: "https://github.com/komal-agarwal5/Giggle-Hub------Meme-Generator",
+    tags: ["opensource", "product", "html", "css", "javascript"],
+  },
 ];
 
 export const TagList = Object.keys(Tags) as TagType[];

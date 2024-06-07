@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from "react";
 import "./header.css";
 import Link from "@docusaurus/Link";
 import VanillaTilt from "vanilla-tilt";
+import { motion } from "framer-motion";
 
 /**
  * Renders the header component of the application.
@@ -12,25 +13,72 @@ import VanillaTilt from "vanilla-tilt";
 const HeaderContent = () => {
   return (
     <div className="chh__header-content">
-      <h1 className="gradient__text">Level Up Skills with CodeHarborHub</h1>
-      <p>
+      <motion.h1
+        initial={{ opacity: 0, x: -10 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 1,
+          type: "spring",
+          stiffness: 100,
+          delay: 0.1,
+        }}
+        className="gradient__text"
+      >
+        Level Up Skills with CodeHarborHub
+      </motion.h1>
+      {/* <h1 className="gradient__text"
+      >Level Up Skills with CodeHarborHub</h1> */}
+      <motion.p
+        initial={{ opacity: 0, x: -10 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 1,
+          type: "spring",
+          stiffness: 100,
+          delay: 0.2,
+        }}
+      >
         Tired of limitations? CodeHarborHub shatters them. We&apos;re the
         exclusive platform offering a comprehensive tech curriculum, taught by
         industry masters, completely free. Join our vibrant community, master
         in-demand skills, and launch your dream tech career.
-      </p>
+      </motion.p>
 
       <div className="chh__header-content__input">
-        <button type="button">
+        <motion.button
+          initial={{ opacity: 0, x: -10 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 100,
+            delay: 0.3,
+          }}
+          type="button"
+        >
           <Link to="/docs" className="chh__header-content__input--link">
             Get Started
           </Link>
-        </button>
-        <button type="button">
+        </motion.button>
+        <motion.button
+          initial={{ opacity: 0, x: 10 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 100,
+            delay: 0.2,
+          }}
+          type="button"
+        >
           <Link to="/courses" className="chh__header-content__input--link">
             Courses
           </Link>
-        </button>
+        </motion.button>
       </div>
     </div>
   );
@@ -62,7 +110,18 @@ const HeaderImage = () => {
   }, []);
 
   return (
-    <div className="chh__header-image">
+    <motion.div
+        initial={{ scale: 0, x: 10 }}
+        whileInView={{ scale: 0.8, x: 0 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 1,
+          type: "spring",
+          stiffness: 100,
+          delay: 0.3,
+        }}
+        className="chh__header-image"
+      >
       <img
         src="/img/hero-img.png"
         alt="ai"
@@ -70,7 +129,7 @@ const HeaderImage = () => {
         data-tilt
         ref={imgRef}
       />
-    </div>
+    </motion.div>
   );
 };
 

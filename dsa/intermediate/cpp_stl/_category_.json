@@ -1,0 +1,8 @@
+{
+    "label": "cpp-stl",
+    "position": 2,
+    "link": {
+      "type": "generated-index",
+      "description": "Learn everything from the basics to the advanced topics that make up the C++ Standard Template Library."
+    }
+}
