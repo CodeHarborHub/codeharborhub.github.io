@@ -1,11 +1,11 @@
 ---
-id: Letter-Combinations-of-a-Phone-Number
+id: letter-combinations-of-a-phone-number
 title: Letter Combinations of a Phone Number (LeetCode)
 sidebar_label: 0017-Letter Combinations of a Phone Number
 tags:
     - String
     - Backtracking
-description: Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent.
+description: "Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent."
 ---
 
 ## Problem Description
