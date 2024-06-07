@@ -254,6 +254,24 @@ const Users: User[] = [
     source: "https://github.com/komal-agarwal5/Giggle-Hub------Meme-Generator",
     tags: ["opensource", "product", "html", "css", "javascript"],
   },
+  {
+    title: "Age Calculator",
+    description:
+      "It calculates the exact age in years, months and days on entering a date of birth with proper error handling.",
+    preview: require("./showcase/age-calculator.png"),
+    website: "https://age-calculator-rho-two.vercel.app/",
+    source: "https://github.com/ParnaRoyChowdhury777/Age-Calculator",
+    tags: ["opensource", "product", "react", "css", "javascript"],
+  },
+  {
+    title: "Currency Converter",
+    description:
+      "It allows users to convert between different currencies. It fetches live exchange rates from an API and performs conversions accordingly.",
+    preview: require("./showcase/currency.png"),
+    website: "https://coinshift-currency-converter.vercel.app/",
+    source: "https://github.com/komal-agarwal5/CoinShift-Currency-Converter",
+    tags: ["opensource", "product", "react", "css", "javascript"],
+  },
 ];
 
 export const TagList = Object.keys(Tags) as TagType[];
