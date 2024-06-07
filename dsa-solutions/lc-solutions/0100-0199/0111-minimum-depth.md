@@ -1,7 +1,7 @@
 ---
 id:  minimum-depth-of-binary-tree
 title:  Minimum Depth of Binary Tree
-sidebar_label: 0111-Minimum Depth
+sidebar_label: 0111-Minimum Depth Of Binary tree
 tags:
   - Java
   - Python
