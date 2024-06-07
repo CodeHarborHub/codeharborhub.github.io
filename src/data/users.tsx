@@ -236,6 +236,51 @@ const Users: User[] = [
     source: "",
     tags: ["opensource", "product", "nextjs", "javascript"],
   },
+  {
+    title: "Scientific Calculator",
+    description:
+      "Build and Deploy a Modern and Beginner-friendly Scientific Calculator using HTML, CSS and Vanilla Javascript",
+    preview: require("./showcase/calculator-app.png"),
+    website: "https://calcu-plus.vercel.app/",
+    source: "https://github.com/ParnaRoyChowdhury777/Calculator---CalcuPlus",
+    tags: ["opensource", "clone", "html", "css", "vanilla"],
+  },
+  {
+    title: "Random Meme Generator",
+    description:
+      "It generates random memes by using the technique of API Fetching and also supports the feature of sharing the memes.",
+    preview: require("./showcase/meme.png"),
+    website: "https://giggle-hub.vercel.app/",
+    source: "https://github.com/komal-agarwal5/Giggle-Hub------Meme-Generator",
+    tags: ["opensource", "product", "html", "css", "javascript"],
+  },
+  {
+    title: "Age Calculator",
+    description:
+      "It calculates the exact age in years, months and days on entering a date of birth with proper error handling.",
+    preview: require("./showcase/age-calculator.png"),
+    website: "https://age-calculator-rho-two.vercel.app/",
+    source: "https://github.com/ParnaRoyChowdhury777/Age-Calculator",
+    tags: ["opensource", "product", "react", "css", "javascript"],
+  },
+  {
+    title: "To Do List App",
+    description:
+      "A simple To-Do List App using HTML CSS JS . Add your tasks and manage them easily , mark your task as completed or incomplete ",
+    preview: require("./showcase/todolist.png"),
+    website: "https://50-days-50-web-project.vercel.app/TO_DO_LIST/todolist.html",
+    source: "https://github.com/dhairyagothi/50_days_50_web_project/tree/Main/public/TO_DO_LIST",
+    tags: [ "html", "css", "javascript"],
+    },
+  {
+    title: "Currency Converter",
+    description:
+      "It allows users to convert between different currencies. It fetches live exchange rates from an API and performs conversions accordingly.",
+    preview: require("./showcase/currency.png"),
+    website: "https://coinshift-currency-converter.vercel.app/",
+    source: "https://github.com/komal-agarwal5/CoinShift-Currency-Converter",
+    tags: ["opensource", "product", "react", "css", "javascript"],
+  },
 ];
 
 export const TagList = Object.keys(Tags) as TagType[];

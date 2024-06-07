@@ -6,6 +6,7 @@ sidebar_position: 1
 tags: [python, programming, language, introduction, syntax, features, applications, libraries, community, open-source, object-oriented, interpreted, cross-platform, scalable]
 description: In this tutorial, we will learn about Python, its features, syntax, applications, libraries, and community support.
 ---
+![alt text](image.png)
 
 Python was created by <mark>Guido van Rossum</mark> and first released in 1991. Python is an open-source language, which means that the source code is freely available for anyone to use, modify, and distribute. Python has a large and active community of developers who contribute to the language and its ecosystem of libraries and tools.
 

@@ -108,6 +108,16 @@ public class MathOperations {
 }
 ```
 
+## Key Rules of Method Overloading
+Remember these rules when overloading a method:
+
+The overloaded and overloading methods must be in the same class (Note: this includes any methods inherited, even implicitly, from a superclass).
+The method parameters must change: either the number or the type of parameters must be different in the two methods.
+The return type can be freely modified.
+The access modifier (public, private, and so on) can be freely modified.
+Thrown exceptions, if any, can be freely modified.
+
+
 ### Method Overriding (Runtime Polymorphism)
 
 Method overriding allows a subclass to provide a specific implementation of a method already defined in its superclass.
@@ -145,6 +155,13 @@ public class Main {
     }
 }
 ```
+## Key Rules of Method Overriding
+Remember these rules when overriding a method:
+
+The parameter list must not change: the overriding method must take the same number and type of parameters as the overridden method – otherwise, you would just be overloading the method.
+The return type must not change (Note: if the method returns an object, a subclass of that object is allowed as the return type).
+The access modifier must be either the same or a less restrictive one (for example, if the overridden method is protected, you can declare the overriding method as public, but not private).
+Thrown checked exceptions, if any, can be removed or reduced by the overriding method. This means that the overriding method can throw the same checked exception as the overridden method, or a subclass of that checked exception, but not a broader exception. This restriction does not apply to unchecked exceptions.
 
 ### Dynamic Method Dispatch
 
@@ -165,6 +182,8 @@ public class Main {
     }
 }
 ```
+
+
 
 ## Conclusion
 

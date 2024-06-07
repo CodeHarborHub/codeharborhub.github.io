@@ -18,7 +18,7 @@ const config = {
   },
 
   organizationName: "codeharborhub",
-  projectName: "codeharborhub",
+  projectName: "codeharborhub.github.io",
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -39,7 +39,7 @@ const config = {
             keywords: ["my-custom-admonition"],
             extendDefaults: true,
           },
-          editUrl: "https://github.com/codeharborhub/codeharborhub/edit/main/",
+          editUrl: "https://github.com/codeharborhub/codeharborhub.github.io/edit/main/",
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
         },
@@ -48,7 +48,7 @@ const config = {
         },
         blog: {
           showReadingTime: true,
-          editUrl: "https://github.com/codeharborhub/codeharborhub/edit/main/",
+          editUrl: "https://github.com/codeharborhub/codeharborhub.github.io/edit/main/",
           remarkPlugins: [[npm2yarn, { converters: ["pnpm"] }]],
         },
         theme: {
@@ -112,7 +112,8 @@ const config = {
                   <a href="/docs/category/python/" class="nav__icons"> <img src="/icons/py.svg" title="Python" alt="Python" /> </a>                  
                   <a href="/docs/category/java/" class="nav__icons"> <img src="/icons/java.svg" title="Java" alt="Java" /> </a>                  
                   <a href="/docs/category/tailwind/" class="nav__icons"> <img src="/icons/tailwind-css.svg" title="Tailwind CSS" alt="Tailwind" /> </a>
-                  <a href="/docs/category/cpp/" class="nav__icons"> <img src="/icons/cpp.svg" title="CPP" alt="CPP" /> </a>                
+                  <a href="/docs/category/cpp/" class="nav__icons"> <img src="/icons/cpp.svg" title="CPP" alt="CPP" /> </a>      
+                  <a href="/docs/category/NextJs/" class="nav__icons"> <img src="/icons/next-js.svg" title="NextJs" alt="Next" /> </a>          
                 </div>
               </div>`,
               },
@@ -346,7 +347,7 @@ const config = {
                 href: "https://discord.gg/c53FQn3pRv",
               },
               {
-                label: "Twitter",
+                label: "Twitter(X)",
                 href: "https://twitter.com/CodesWithAjay",
               },
             ],

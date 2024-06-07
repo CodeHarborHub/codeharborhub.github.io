@@ -72,15 +72,32 @@ If you find this project helpful, please consider giving it a star on GitHub! Yo
 
 
 ## Code Style
-
 Please adhere to the coding style guidelines used in this project. Consistent coding style helps make the codebase more maintainable and readable for everyone.
 
-## Testing
 
+## Testing
 Before submitting a PR, ensure that your changes pass any relevant tests. If you're adding new features or fixing bugs, consider adding tests to cover the changes you've made.
 
-## Resources for Guidance
 
+## Pull Request Process 
+1.Ensure that you have self reviewed your code.
+2.Make sure you have added the proper description for the functionality of the code.
+3.I have commented my code, particularly in hard-to-understand areas.
+4.Add screenshot it help in review.
+5.Submit your PR by giving the necesarry information in PR template and hang tight we will review it really soon.
+
+
+## Community Guidelines
+We expect all contributors to adhere to the following community guidelines:
+
+1.Be respectful and considerate towards others.
+2.Use inclusive language and promote a welcoming environment.
+3.Avoid personal attacks, harassment, or discrimination.
+4.Keep discussions on-topic and constructive.
+5.Help others and contribute positively to the community.
+
+
+## Resources for Guidance
 Here are some resources that may be helpful as you contribute to Code Harbor Hub:
 - [Docusaurus Documentation](https://docusaurus.io/docs/docs-introduction)
 - [React.js Documentation](https://legacy.reactjs.org/docs/getting-started.html)
@@ -88,12 +105,32 @@ Here are some resources that may be helpful as you contribute to Code Harbor Hub
 - [MDX Documentation](https://mdxjs.com/docs/)
 - [Mermaid Documentation](https://mermaid.js.org/)
 
-## Code of Conduct
 
+## Code Reviews
+Be open to feedback and constructive criticism from other contributors.
+Participate in code reviews by reviewing and providing feedback.
+
+
+## Feature Requests
+Suggest new features or improvements that you believe would enhance the project.
+
+## Contributing Guidelines
+Issue Creation Limit
+Each contributor is allowed to create up to 4 issues per day. If a contributor exceeds this limit, any additional issues beyond the fourth will be closed automatically.
+Please adhere to this guideline to ensure a manageable and productive workflow for all participants.
+
+
+## Code of Conduct
 By participating in this project, you agree to abide by our [Code of Conduct](CODE_OF_CONDUCT.md). Please ensure that all interactions are respectful and constructive.
 
-## Questions or Need Help?
 
+## Spread the Word
+Share your experience and the project with others.
+Spread the word about the project on social media, developer forums, or any relevant community platforms.
+Thank you for your valuable contribution and for being a part of the Clueless Community! Together, we can make a difference. 
+
+
+## Questions or Need Help?
 If you have any questions about contributing or need assistance with anything, feel free to reach out to us by opening an issue or contacting one of the maintainers listed in the `README.md` file.
 
 Thank you for contributing to CodeHarborHub!
