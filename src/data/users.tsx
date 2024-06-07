@@ -271,6 +271,15 @@ const Users: User[] = [
     website: "https://50-days-50-web-project.vercel.app/TO_DO_LIST/todolist.html",
     source: "https://github.com/dhairyagothi/50_days_50_web_project/tree/Main/public/TO_DO_LIST",
     tags: [ "html", "css", "javascript"],
+    },
+  {
+    title: "Currency Converter",
+    description:
+      "It allows users to convert between different currencies. It fetches live exchange rates from an API and performs conversions accordingly.",
+    preview: require("./showcase/currency.png"),
+    website: "https://coinshift-currency-converter.vercel.app/",
+    source: "https://github.com/komal-agarwal5/CoinShift-Currency-Converter",
+    tags: ["opensource", "product", "react", "css", "javascript"],
   },
 ];
 
