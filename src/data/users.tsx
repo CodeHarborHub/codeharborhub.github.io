@@ -268,10 +268,12 @@ const Users: User[] = [
     description:
       "A simple To-Do List App using HTML CSS JS . Add your tasks and manage them easily , mark your task as completed or incomplete ",
     preview: require("./showcase/todolist.png"),
-    website: "https://50-days-50-web-project.vercel.app/TO_DO_LIST/todolist.html",
-    source: "https://github.com/dhairyagothi/50_days_50_web_project/tree/Main/public/TO_DO_LIST",
-    tags: [ "html", "css", "javascript"],
-    },
+    website:
+      "https://50-days-50-web-project.vercel.app/TO_DO_LIST/todolist.html",
+    source:
+      "https://github.com/dhairyagothi/50_days_50_web_project/tree/Main/public/TO_DO_LIST",
+    tags: ["html", "css", "javascript"],
+  },
   {
     title: "Currency Converter",
     description:
@@ -280,6 +282,15 @@ const Users: User[] = [
     website: "https://coinshift-currency-converter.vercel.app/",
     source: "https://github.com/komal-agarwal5/CoinShift-Currency-Converter",
     tags: ["opensource", "product", "react", "css", "javascript"],
+  },
+  {
+    title: "Guess The Number Game",
+    description:
+      "It allows users to play the Guess The Number Game based on the choice of Easy(3 rounds), Intermediate(5 rounds) and Hard(7 rounds).",
+    preview: require("./showcase/guessnumber.png"),
+    website: "https://guess-me-tau.vercel.app/",
+    source: "https://github.com/ParnaRoyChowdhury777/Guess_The_Number_Game",
+    tags: ["opensource", "product", "html", "css", "javascript", "vanilla"],
   },
 ];
 
