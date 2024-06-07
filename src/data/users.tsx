@@ -266,7 +266,7 @@ const Users: User[] = [
   {
     title: "To Do List App",
     description:
-      "A simple To-Do List App using HTML CSS JS . Add your tasks and manage them easily. ",
+      "A simple To-Do List App using HTML CSS JS . Add your tasks and manage them easily , mark your task as completed or incomplete ",
     preview: require("./showcase/todolist.png"),
     website: "https://50-days-50-web-project.vercel.app/TO_DO_LIST/todolist.html",
     source: "https://github.com/dhairyagothi/50_days_50_web_project/tree/Main/public/TO_DO_LIST",
