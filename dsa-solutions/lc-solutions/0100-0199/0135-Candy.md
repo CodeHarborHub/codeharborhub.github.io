@@ -47,9 +47,9 @@ Output: false
 
 ### Constraints
 
-- n == ratings.length
-- 1 <= n <= 2 * 10^4
-- 0 <= ratings[i] <= 2 * 10^4
+- $n == ratings.length$
+- $1 <= n <= 2 * 10^4$
+- $0 <= ratings[i] <= 2 * 10^4$
 
 ---
 
@@ -178,8 +178,8 @@ public:
 
 #### Complexity Analysis
 
-- Time Complexity: O(n) where n is the number of children (length of the ratings array).
-- Space Complexity: O(n) for storing the candies array.
+- Time Complexity: $O(n)$ where n is the number of children (length of the ratings array).
+- Space Complexity: $O(n)$ for storing the candies array.
 
 </tabItem>
 
