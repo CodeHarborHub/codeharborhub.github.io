@@ -82,16 +82,32 @@ To solve the problem, we can use the following approach:
 #### Python
 
 ```
-class Solution(object):
+class Solution:
     def removeElement(self, nums, val):
-        slow = 0
+        # Pointer to place the next non-val element
+        k = 0
         
-        for fast in range(len(nums)):
-            if nums[fast] != val:
-                nums[slow] = nums[fast]
-                slow += 1
+        # Iterate through all elements in the array
+        for i in range(len(nums)):
+            if nums[i] != val:
+                # Place the non-val element at the next position in the array
+                nums[k] = nums[i]
+                k += 1
         
-        return slow
+        return k
+
+def _driver():
+    # Example usage
+    nums = [3, 2, 2, 3]
+    val = 3
+    sol = Solution()
+    k = sol.removeElement(nums, val)
+    print("The number of elements not equal to val:", k)
+    print("The modified array:", nums[:k])
+
+if __name__ == "__main__":
+    _driver()
+
 ```
 
 #### Java
