@@ -1,7 +1,7 @@
 ---
 id: prims-algorithm
 title: Prim's Algorithm
-sidebar_label: Prim's Algorithm
+sidebar_label: 05 - Prim's Algorithm
 tags:
   - Graph Algorithms
   - Minimum Spanning Tree

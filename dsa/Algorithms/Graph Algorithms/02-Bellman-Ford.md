@@ -1,7 +1,7 @@
 ---
 id: bellman-ford-algorithm
 title: Bellman-Ford Algorithm
-sidebar_label: Bellman-Ford Algorithm
+sidebar_label: 02 - Bellman-Ford Algorithm
 tags:
   - Graph Algorithms
   - Shortest Path

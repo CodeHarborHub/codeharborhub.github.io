@@ -1,7 +1,7 @@
 ---
 id: floyd-warshall-algorithm
 title: Floyd-Warshall Algorithm
-sidebar_label: Floyd-Warshall Algorithm
+sidebar_label: 03 - Floyd-Warshall Algorithm
 tags:
   - Graph Algorithms
   - Shortest Path

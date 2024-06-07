@@ -1,7 +1,7 @@
 ---
 id: kruskals-algorithm
 title: Kruskal's Algorithm
-sidebar_label: Kruskal's Algorithm
+sidebar_label: 04 - Kruskal's Algorithm
 tags:
   - Graph Algorithms
   - Minimum Spanning Tree

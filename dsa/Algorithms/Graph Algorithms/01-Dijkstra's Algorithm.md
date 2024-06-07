@@ -1,7 +1,7 @@
 ---
 id: dijkstras-algorithm
 title: Dijkstra's Algorithm
-sidebar_label: Dijkstra's Algorithm
+sidebar_label: 01 - Dijkstra's Algorithm
 tags:
   - Graph Algorithms
   - Shortest Path
