@@ -28,8 +28,8 @@ Output: 2
 
 ### Constraints
 
-- `The number of nodes in the tree is in the range [0, 105].`
-- `-100 <= Node.val <= 100`
+- The number of nodes in the tree is in the range [0, 105].
+- -100 <= Node.val <= 100
 
 ---
 
@@ -123,8 +123,8 @@ public:
 
 #### Complexity Analysis
 
-- Time Complexity: O(n) where n is the number of nodes in the binary tree.
-- Space Complexity: O(h) where h is the height of the binary tree.
+- Time Complexity: $O(n)$ where n is the number of nodes in the binary tree.
+- Space Complexity: $O(h)$ where h is the height of the binary tree.
 
 </tabItem>
 </Tabs>
