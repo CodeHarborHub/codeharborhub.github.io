@@ -263,6 +263,15 @@ const Users: User[] = [
     source: "https://github.com/ParnaRoyChowdhury777/Age-Calculator",
     tags: ["opensource", "product", "react", "css", "javascript"],
   },
+  {
+    title: "Currency Converter",
+    description:
+      "It allows users to convert between different currencies. It fetches live exchange rates from an API and performs conversions accordingly.",
+    preview: require("./showcase/currency.png"),
+    website: "https://coinshift-currency-converter.vercel.app/",
+    source: "https://github.com/komal-agarwal5/CoinShift-Currency-Converter",
+    tags: ["opensource", "product", "react", "css", "javascript"],
+  },
 ];
 
 export const TagList = Object.keys(Tags) as TagType[];
