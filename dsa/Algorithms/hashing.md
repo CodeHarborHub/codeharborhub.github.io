@@ -297,7 +297,7 @@ console.log(ht.lookup("apple"));
 
 ## Space Complexity Analysis
 
-- **Space Complexity**: O(n) where n is the number of key-value pairs
+- **Space Complexity**: $O(n)$ where n is the number of key-value pairs
 
 ## Advanced Topics
 
