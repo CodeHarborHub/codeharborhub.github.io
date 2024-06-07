@@ -78,7 +78,7 @@ s.push(2)
 s.push(3)
 s.push(4)
 s.push(5)
-print("Original linked list: ", end="")
+print("Original stack: ", end="")
 s.display()
 s.pop()
 print("After pop() operation: ", end="")
@@ -94,7 +94,7 @@ s.pop()
 
 '''
 OUTPUT:
-Original linked list: 5 ->4 ->3 ->2 ->1 ->None
+Original stack: 5 ->4 ->3 ->2 ->1 ->None
 Popped element: 5
 After pop() operation: 4 ->3 ->2 ->1 ->None
 Top element: 4
@@ -186,7 +186,7 @@ public class Main {
         s.push(3);
         s.push(4);
         s.push(5);
-        System.out.print("Original linked list: ");
+        System.out.print("Original stack: ");
         s.display();
         s.pop();
         System.out.print("After pop() operation: ");
@@ -298,7 +298,7 @@ int main() {
     s.push(3);
     s.push(4);
     s.push(5);
-    cout << "Original linked list: ";
+    cout << "Original stack: ";
     s.display();
     s.pop();
     cout << "After pop() operation: ";
@@ -318,7 +318,7 @@ int main() {
 
 /*
 OUTPUT:
-Original linked list: 5 -> 4 -> 3 -> 2 -> 1 -> None
+Original stack: 5 -> 4 -> 3 -> 2 -> 1 -> None
 Popped element: 5
 After pop() operation: 4 -> 3 -> 2 -> 1 -> None
 Top element: 4
