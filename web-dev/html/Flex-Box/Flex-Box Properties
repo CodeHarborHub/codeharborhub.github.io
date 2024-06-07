@@ -1,0 +1,93 @@
+---
+id: Flexbox
+title: Flexbox
+sidebar_label: Flexbox
+sidebar_position: 2
+tags: [html, CSS, Flexbox]
+---
+
+# Flexbox Layout in CSS
+
+Flexbox, short for Flexible Box, is a layout model in CSS that allows you to design complex layouts more efficiently and with less code compared
+to traditional methods like floats or positioning.
+
+## Introduction to Flexbox
+
+Flexbox introduces a new way to layout, align, and distribute space among items in a container, even when their size is unknown or dynamic.
+It's particularly useful for creating responsive designs and aligning elements within a container in numerous ways.
+
+## Basic Concepts
+
+Flexbox revolves around two main components: the flex container and flex items.
+
+### Flex Container
+
+The parent element that holds flex items is called the flex container. To create a flex container, you set the CSS `display` property to `flex` or `inline-flex`.
+
+```css
+.container {
+  display: flex;
+}
+```
+---
+## Flex Items
+The children of a flex container are called flex items. These items can dynamically adjust their width, height, and orderto fill theavailable space within the
+flex container.
+
+```html
+<div class="container">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item">Item 3</div>
+</div>
+```
+## Main Axis and Cross Axis
+Flexbox operates along two axes: the main axis and the cross axis. The main axis is defined by the flex-direction property and determines the
+direction in which flex items are laid out, while the cross axis is perpendicular to it.
+
+## Properties
+Flexbox provides several properties to control the layout and behavior of flex containers and items.
+
+## Common Flex Container Properties
+'display': Specifies the type of box used for a flex container.
+'flex-direction': Establishes the main axis direction.
+'justify-content': Aligns flex items along the main axis.
+'align-items': Aligns flex items along the cross axis.
+'flex-wrap': Specifies whether flex items should wrap or not.
+
+## Common Flex Item Properties
+'order': Specifies the order of a flex item relative to other flex items.
+'flex-grow': Specifies how a flex item grows relative to other flex items.
+'flex-shrink': Specifies how a flex item shrinks relative to other flex items.
+'flex-basis': Specifies the initial size of a flex item.
+'align-self': Allows the default alignment to be overridden for individual flex items.
+---
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Example</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .item {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" style="background-color: #FF5733;">Item 1</div>
+        <div class="item" style="background-color: #33FF99;">Item 2</div>
+        <div class="item" style="background-color: #3366FF;">Item 3</div>
+    </div>
+</body>
+</html>
+```
+## Conclusion
+Flexbox simplifies the process of creating layouts that adapt to different screen sizes and devices. By mastering Flexbox, you can create more responsive and dynamic web designs with less effort.

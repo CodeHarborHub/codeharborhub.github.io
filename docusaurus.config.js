@@ -347,7 +347,7 @@ const config = {
                 href: "https://discord.gg/c53FQn3pRv",
               },
               {
-                label: "Twitter",
+                label: "Twitter(X)",
                 href: "https://twitter.com/CodesWithAjay",
               },
             ],
