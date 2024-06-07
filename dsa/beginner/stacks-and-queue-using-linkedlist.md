@@ -244,7 +244,7 @@ public:
         this->head = nullptr;
     }
 
-    # Inserting a new element in the stack
+    // Inserting a new element in the stack
     void push(int data) {
         Node* newNode = new Node(data);
         if (head == nullptr) {
@@ -256,7 +256,7 @@ public:
         }
     }
 
-    # Deleting the top element
+    // Deleting the top element
     void pop() {
         if (head == nullptr) {
             cout << "Stack Underflow" << endl;
@@ -270,7 +270,7 @@ public:
         }
     }
 
-    # Displaying the top element of stack
+    // Displaying the top element of stack
     void peek() {
         if (head == nullptr) {
             cout << "Stack Underflow" << endl;
@@ -280,12 +280,12 @@ public:
         }
     }
 
-    # Checking if the stack is empty
+    // Checking if the stack is empty
     bool isEmpty() {
         return head == nullptr;
     }
 
-    # Displaying the stack from top to bottom
+    // Displaying the stack from top to bottom
     void display() {
         Node* temp = head;
         while (temp != nullptr) {
