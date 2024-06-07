@@ -29,7 +29,7 @@ In this section, you will learn about the solutions of the problems of Data Stru
 - [Backtracking](#): Backtracking is a technique used to solve problems by making a series of choices and backtracking when a choice leads to a dead end.
 - [Divide and Conquer](#): Divide and Conquer is a technique used to solve problems by breaking them down into smaller subproblems, solving the subproblems, and combining the solutions to solve the original problem.
 - [Bit Manipulation](#): Bit Manipulation is the act of algorithmically manipulating bits or binary digits.
-- [Graph Algorithms](../dsa/Algorithms/Graph%20Algorithms): Graph Algorithms are algorithms that operate on graphs to solve problems.
+- [Graph Algorithms](../dsa/Algorithms/graph-algorithms): Graph Algorithms are algorithms that operate on graphs to solve problems.
 - [Mathematical Algorithms](#): Mathematical Algorithms are algorithms that solve mathematical problems.
 - [String Algorithms](#): String Algorithms are algorithms that operate on strings to solve problems.
 
