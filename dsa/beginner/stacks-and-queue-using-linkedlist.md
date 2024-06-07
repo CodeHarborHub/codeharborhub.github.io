@@ -205,7 +205,7 @@ public class Main {
 
 /*
 OUTPUT:
-Original linked list: 5 -> 4 -> 3 -> 2 -> 1 -> None
+Original stack: 5 -> 4 -> 3 -> 2 -> 1 -> None
 Popped element: 5
 After pop() operation: 4 -> 3 -> 2 -> 1 -> None
 Top element: 4
@@ -244,6 +244,7 @@ public:
         this->head = nullptr;
     }
 
+    # Inserting a new element in the stack
     void push(int data) {
         Node* newNode = new Node(data);
         if (head == nullptr) {
@@ -255,6 +256,7 @@ public:
         }
     }
 
+    # Deleting the top element
     void pop() {
         if (head == nullptr) {
             cout << "Stack Underflow" << endl;
@@ -268,6 +270,7 @@ public:
         }
     }
 
+    # Displaying the top element of stack
     void peek() {
         if (head == nullptr) {
             cout << "Stack Underflow" << endl;
@@ -277,10 +280,12 @@ public:
         }
     }
 
+    # Checking if the stack is empty
     bool isEmpty() {
         return head == nullptr;
     }
 
+    # Displaying the stack from top to bottom
     void display() {
         Node* temp = head;
         while (temp != nullptr) {
