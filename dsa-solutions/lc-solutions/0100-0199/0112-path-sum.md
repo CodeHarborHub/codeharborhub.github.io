@@ -35,7 +35,7 @@ Output: false
 ### Constraints
 
 - The number of nodes in the tree is in the range $[0, 5000]$.
-`
+  
 - $-1000 \leq \text{Node.val} \leq 1000$
 
 ---
