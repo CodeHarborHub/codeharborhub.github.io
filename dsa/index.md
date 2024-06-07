@@ -138,7 +138,7 @@ When it comes to learning Data Structures and Algorithms, there are numerous res
 | Resource | Description | Link (if available) |
 |:---|:---|:---|
 | Pramp | A platform for conducting mock interviews with other programmers, providing valuable practice. | [pramp.com](https://www.pramp.com/) |
-| Exponent | Connects you with experienced software engineers for mock interviews and personalized feedback. | N/A |
+| Exponent | Connects you with experienced software engineers for mock interviews and personalized feedback. | [tryexponent.com](https://www.tryexponent.com/practice/) | |
 | Interviewing.io | Similar to Exponent, Interviewing.io allows you to connect with experienced engineers for mock interviews. | [interviewing.io](https://www.interviewing.io/) |
 | Blind | An anonymous forum where users share interview experiences and insights from various companies. | N/A |
 
