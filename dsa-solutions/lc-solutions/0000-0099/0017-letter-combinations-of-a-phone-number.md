@@ -3,8 +3,8 @@ id: letter-combinations-of-a-phone-number
 title: Letter Combinations of a Phone Number (LeetCode)
 sidebar_label: 0017-Letter Combinations of a Phone Number
 tags:
-    - String
-    - Backtracking
+  - String
+  - Backtracking
 description: "Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent."
 ---
 
@@ -19,7 +19,6 @@ description: "Given a string containing digits from 2-9 inclusive, return all po
 Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.
 
 A mapping of digit to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.
-
 
 ### Examples
 
@@ -100,9 +99,14 @@ class Solution {
         List<String> result = new ArrayList<>();
         if (digits.isEmpty()) return result;
         Map<Character, String> phoneMap = new HashMap<>() {{
-            put('2', "abc"); put('3', "def"); put('4', "ghi");
-            put('5', "jkl"); put('6', "mno"); put('7', "pqrs");
-            put('8', "tuv"); put('9', "wxyz");
+            put('2', "abc");
+            put('3', "def");
+            put('4', "ghi");
+            put('5', "jkl");
+            put('6', "mno");
+            put('7', "pqrs");
+            put('8', "tuv");
+            put('9', "wxyz");
         }};
         backtrack(digits, phoneMap, 0, new StringBuilder(), result);
         return result;
@@ -121,7 +125,6 @@ class Solution {
         }
     }
 }
-
 ```
 
 #### Python
@@ -150,45 +153,40 @@ class Solution:
         combinations = []
         backtrack(0, "")
         return combinations
-
 ```
 
 ### Explanation
 
 1. **Initialize Phone Map:**
-   - Create a mapping from digit to corresponding letters.
-   ``` python
-  phone_map = {
-    "2": "abc", "3": "def", "4": "ghi", "5": "jkl",
-    "6": "mno", "7": "pqrs", "8": "tuv", "9": "wxyz"
+   Create a mapping from digit to corresponding letters.
+   ```python
+   phone_map = {
+       "2": "abc", "3": "def", "4": "ghi", "5": "jkl",
+       "6": "mno", "7": "pqrs", "8": "tuv", "9": "wxyz"
    }
    ```
 
 2. **Backtracking Function:**
-   - Define a recursive function backtrack to generate combinations.
-   - Base case: If the current index is equal to the length of digits, add the current path to combinations.
-    - Recursive case: For each letter corresponding to the current digit, append the letter to the path and call backtrack with the next index.
- ```python
-def backtrack(index: int, path: str):
-    if index == len(digits):
-        combinations.append(path)
-        return
-    possible_letters = phone_map[digits[index]]
-    for letter in possible_letters:
-        backtrack(index + 1, path + letter)
- ```
-
-
-3. **Initiate Backtracking**
-   - Initialize the result list combinations and start the backtracking process.
-   
+   Define a recursive function `backtrack` to generate combinations.
+   - **Base case:** If the current index is equal to the length of digits, add the current path to combinations.
+   - **Recursive case:** For each letter corresponding to the current digit, append the letter to the path and call `backtrack` with the next index.
    ```python
-   combinations = []
-    backtrack(0, "")
-   return combinations
+   def backtrack(index: int, path: str):
+       if index == len(digits):
+           combinations.append(path)
+           return
+       possible_letters = phone_map[digits[index]]
+       for letter in possible_letters:
+           backtrack(index + 1, path + letter)
    ```
 
-
+3. **Initiate Backtracking:**
+   Initialize the result list `combinations` and start the backtracking process.
+   ```python
+   combinations = []
+   backtrack(0, "")
+   return combinations
+   ```
 
 ### Conclusion
 
