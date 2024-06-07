@@ -350,6 +350,10 @@ const config = {
                 label: "Twitter",
                 href: "https://twitter.com/CodesWithAjay",
               },
+              {
+                label: "Inatagram",
+                href: "https://instagram.com/",
+              },
             ],
           },
         ],
