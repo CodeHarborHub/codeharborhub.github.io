@@ -27,8 +27,8 @@ Output: [[3],[20,9],[15,7]]
 
 ### Constraints
 
-- `The number of nodes in the tree is in the range $[0, 2000]$.`
-- `$-100 \leq \text{Node.val} \leq 100$`
+- The number of nodes in the tree is in the range $[0, 2000]$.
+- $-100 \leq \text{Node.val} \leq 100$
 
 ---
 
@@ -123,8 +123,8 @@ public:
 
 #### Complexity Analysis
 
-- Time Complexity: O(n) where n is the number of nodes in the binary tree.
-- Space Complexity: O(h) where h is the height of the binary tree.
+- Time Complexity: $O(n)$ where n is the number of nodes in the binary tree.
+- Space Complexity: $O(h)$ where h is the height of the binary tree.
 
 </tabItem>
 </Tabs>
