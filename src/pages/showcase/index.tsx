@@ -117,7 +117,7 @@ function ShowcaseHeader() {
   return (
     <section className="margin-top--lg margin-bottom--lg text--center">
       <motion.h1
-        initial={{ opacity: 0, x: -150 }}
+        initial={{ opacity: 0, x: -15 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{
@@ -125,29 +125,29 @@ function ShowcaseHeader() {
           type: "spring",
           stiffness: 100,
           delay: 0.2,
-        }}
+        }} className={styles.TitleText}
       >{TITLE}</motion.h1>
       <motion.p
-        initial={{ opacity: 0, y: 150 }}
+        initial={{ opacity: 0, y: 15 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{
           duration: 1,
           type: "spring",
           stiffness: 100,
-          delay: 0.8,
+          delay: 0.3,
         }}
       >{DESCRIPTION}</motion.p>
 
       <motion.div
-        initial={{ opacity: 0, y: 150 }}
+        initial={{ opacity: 0, y: 15 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{
           duration: 1,
           type: "spring",
           stiffness: 100,
-          delay: 1.1,
+          delay: 0.5,
         }}
       >
         <a
@@ -190,27 +190,27 @@ function ShowcaseFilters() {
       <div className={clsx('margin-bottom--sm', styles.filterCheckbox)}>
         <div>
           <motion.h2
-            initial={{ opacity: 0, x: -150 }}
+            initial={{ opacity: 0, x: -15 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{
               duration: 1,
               type: "spring",
               stiffness: 100,
-              delay: 1,
+              delay: 0.2,
             }}
           >
             <Translate id="showcase.filters.title">Filters</Translate>
           </motion.h2>
           <motion.div
-            initial={{ opacity: 0, x: -150 }}
+            initial={{ opacity: 0, x: -15 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{
               duration: 1,
               type: "spring",
               stiffness: 100,
-              delay: 1,
+              delay: 0.3,
             }}
           >
             <span>{siteCountPlural(filteredUsers.length)}</span>
@@ -226,7 +226,7 @@ function ShowcaseFilters() {
                   duration: 4,
                   type: "spring",
                   stiffness: 100,
-                  delay: 1.2,
+                  delay: 0.5,
                 }}
                 className={clsx('clean-list', styles.checkboxList)}
               >
@@ -343,14 +343,14 @@ function ShowcaseCards() {
                 )}
               >
                 <motion.h2
-                  initial={{ opacity: 0, x: -150 }}
+                  initial={{ opacity: 0, x: -15 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{
                     duration: 1,
                     type: "spring",
                     stiffness: 100,
-                    delay: 1,
+                    delay: 0.3,
                   }}
                 >
                   <Translate id="showcase.favoritesList.title">
@@ -358,14 +358,14 @@ function ShowcaseCards() {
                   </Translate>
                 </motion.h2>
                 <motion.h2
-                  initial={{ opacity: 0, x: -150 }}
+                  initial={{ opacity: 0, x: -15 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{
                     duration: 1,
                     type: "spring",
                     stiffness: 100,
-                    delay: 1,
+                    delay: 0.3,
                   }}
                 >
                   <FavoriteIcon svgClass={styles.svgIconFavorite} />
@@ -380,7 +380,7 @@ function ShowcaseCards() {
                   duration: 4,
                   type: "spring",
                   stiffness: 100,
-                  delay: 1,
+                  delay: 0.4,
                 }}
                 className={clsx('container', 'clean-list', styles.showcaseList)}
               >
@@ -393,7 +393,7 @@ function ShowcaseCards() {
           </div>
           <div className="container margin-top--lg">
             <motion.h2
-              initial={{ opacity: 0, x: -150 }}
+              initial={{ opacity: 0, x: -15 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{
@@ -414,7 +414,7 @@ function ShowcaseCards() {
                 duration: 4,
                 type: "spring",
                 stiffness: 100,
-                delay: 0.8,
+                delay: 0.5,
               }}
               className={clsx('clean-list', styles.showcaseList)}
             >
