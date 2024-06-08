@@ -295,7 +295,7 @@ const Users: User[] = [
   {
     title: "Resume Builder App",
     description:
-      "This is a Resume Builder WebApp, to help you build your resumes in just a matter of few minutes. Just fill in your details and boom, your resume is ready!",
+      "This is a Resume Builder WebApp, to help you build your resumes in just a matter of few minutes.",
     preview: require("./showcase/resume-builder.png"),
     website: "https://resume-builder-rho-smoky.vercel.app/",
     source: "https://github.com/Sambit-Mondal/Resume-Builder-WebApp",
