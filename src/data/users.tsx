@@ -292,6 +292,15 @@ const Users: User[] = [
     source: "https://github.com/ParnaRoyChowdhury777/Guess_The_Number_Game",
     tags: ["opensource", "product", "html", "css", "javascript", "vanilla"],
   },
+  {
+    title: "Resume Builder App",
+    description:
+      "This is a Resume Builder WebApp, to help you build your resumes in just a matter of few minutes. Just fill in your details and boom, your resume is ready!",
+    preview: require("./showcase/resume-builder.png"),
+    website: "https://resume-builder-rho-smoky.vercel.app/",
+    source: "https://github.com/Sambit-Mondal/Resume-Builder-WebApp",
+    tags: ["opensource", "product", "html", "css", "javascript", "vanilla"],
+  }
 ];
 
 export const TagList = Object.keys(Tags) as TagType[];
