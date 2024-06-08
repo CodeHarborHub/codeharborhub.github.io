@@ -1,0 +1,8 @@
+{
+    "label": "Transaction",
+    "position": 4,
+    "link": {
+        "type": "generated-index",
+        "description": "Explore transactions, ACID properties, concurrency control, and serializability in DBMS."
+    }
+}
