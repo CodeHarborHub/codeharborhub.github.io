@@ -82,95 +82,13 @@ The code aims to reverse nodes in a linked list in groups of $k$. It first check
 #### Python
 
 ```py
-class Node:
-    def __init__(self, value=0, nxt=None):
-        self.value = value
-        self.next_node = nxt
 
-def get_length(head_node):
-    length = 0
-    temp_node = head_node
-    while temp_node is not None:
-        temp_node = temp_node.next_node
-        length += 1
-    return length
-
-class Solution:
-    def reverse_k_group(self, head_node: Node, k_value: int) -> Node:
-        if k_value > get_length(head_node):
-            return head_node
-        if head_node is None or head_node.next_node is None or k_value < 2:
-            return head_node
-
-        counter = 0
-        previous_node = None
-        current_node = head_node
-        next_node = None
-
-        while counter < k_value:
-            next_node = current_node.next_node
-            current_node.next_node = previous_node
-            previous_node = current_node
-            current_node = next_node
-            counter += 1
-
-        if next_node is not None:
-            head_node.next_node = self.reverse_k_group(current_node, k_value)
-
-        return previous_node
 ```
 
 #### Java
 
 ```java
-class ListNode {
-    int value;
-    ListNode next;
 
-    ListNode(int value) {
-        this.value = value;
-    }
-}
-
-class Solution {
-    private int getLength(ListNode head) {
-        int length = 0;
-        ListNode temp = head;
-        while (temp != null) {
-            temp = temp.next;
-            length++;
-        }
-        return length;
-    }
-
-    public ListNode reverseKGroup(ListNode head, int k) {
-        if (k > getLength(head)) {
-            return head;
-        }
-        if (head == null || head.next == null || k < 2) {
-            return head;
-        }
-
-        int count = 0;
-        ListNode prev = null;
-        ListNode curr = head;
-        ListNode nextNode = null;
-
-        while (count < k) {
-            nextNode = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = nextNode;
-            count++;
-        }
-
-        if (nextNode != null) {
-            head.next = reverseKGroup(curr, k);
-        }
-
-        return prev;
-    }
-}
 ```
 
 #### C++
