@@ -16,9 +16,9 @@ Linear search, also known as sequential search, is a simple search algorithm tha
 
 ![linear search](https://miro.medium.com/v2/resize:fit:1200/1*eTQoIHGdG58sy-iMwcp97w.png)
 
-### Python Implementation
-
-```python
+<Tabs>
+<TabItem value="Python" label="Python">
+```python showLineNumbers
 def linear_search(arr, target):
     for i in range(len(arr)):
         if arr[i] == target:
@@ -28,11 +28,11 @@ def linear_search(arr, target):
 arr = [10, 20, 30, 40, 50]
 target = 30
 print(linear_search(arr, target))  # Output: 2
+
 ```
-
-### Java Implementation
-
-```java
+</TabItem>
+<TabItem value="Java" label="Java">
+```jsx showLineNumbers
 public class LinearSearch {
 
     public static int linearSearch(int[] arr, int target) {
@@ -50,11 +50,12 @@ public class LinearSearch {
         System.out.println(linearSearch(arr, target)); // Output: 2
     }
 }
+
 ```
+</TabItem>
 
-### C++ Implementation
-
-```cpp
+<TabItem value="Cpp" label="Cpp">
+```cpp showLineNumbers
 #include <iostream>
 #include <vector>
 
@@ -73,11 +74,11 @@ int main() {
     std::cout << linearSearch(arr, target) << std::endl; // Output: 2
     return 0;
 }
+
 ```
-
-### JavaScript Implementation
-
-```javascript
+</TabItem>
+<TabItem value="JavaScript" label="JavaScript">
+```jsx showLineNumbers
 function linearSearch(arr, target) {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] === target) {
@@ -90,7 +91,10 @@ function linearSearch(arr, target) {
 let arr = [10, 20, 30, 40, 50];
 let target = 30;
 console.log(linearSearch(arr, target)); // Output: 2
+
 ```
+</TabItem>
+</Tabs>
 
 ## 2. Binary Search
 
@@ -98,9 +102,9 @@ Binary search is a more efficient search algorithm for sorted arrays. It works b
 
 ![binary search](https://data-flair.training/blogs/wp-content/uploads/sites/2/2023/09/binary-search-in-c-1.webp)
 
-### Python Implementation
-
-```python
+<Tabs>
+<TabItem value="Python" label="Python">
+```python showLineNumbers
 def binary_search(arr, target):
     low = 0
     high = len(arr) - 1
@@ -118,11 +122,11 @@ def binary_search(arr, target):
 arr = [10, 20, 30, 40, 50]
 target = 30
 print(binary_search(arr, target))  # Output: 2
+
 ```
-
-### Java Implementation
-
-```java
+</TabItem>
+<TabItem value="Java" label="Java">
+```jsx showLineNumbers
 public class BinarySearch {
 
     public static int binarySearch(int[] arr, int target) {
@@ -148,11 +152,11 @@ public class BinarySearch {
         System.out.println(binarySearch(arr, target)); // Output: 2
     }
 }
+
 ```
-
-### C++ Implementation
-
-```cpp
+</TabItem>
+<TabItem value="Cpp" label="Cpp">
+```cpp showLineNumbers
 #include <iostream>
 #include <vector>
 
@@ -179,11 +183,12 @@ int main() {
     std::cout << binarySearch(arr, target) << std::endl; // Output: 2
     return 0;
 }
+
 ```
+</TabItem>
 
-### JavaScript Implementation
-
-```javascript
+<TabItem value="JavaScript" label="JavaScript">
+```jsx showLineNumbers
 function binarySearch(arr, target) {
     let low = 0;
     let high = arr.length - 1;
@@ -204,7 +209,10 @@ function binarySearch(arr, target) {
 let arr = [10, 20, 30, 40, 50];
 let target = 30;
 console.log(binarySearch(arr, target)); // Output: 2
+
 ```
+</TabItem>
+</Tabs>
 
 ## Time Complexity Analysis
 
