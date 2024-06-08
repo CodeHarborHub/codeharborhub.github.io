@@ -13,6 +13,14 @@ Working with a stack is similar to managing a pile of plates where each plate is
 - **Expression Evaluation:** Stacks are used to convert mathematical expressions from infix to postfix or prefix and calculate the result. These are very common in calculator applications.
 - **Syntax Checking:** In programming languages, stacks are used to check if the opening and closing symbols such as the parentheses, braces and brackets are matched properly or not. For example, in HTML, a stack is used to check whether each opening tag has a corresponding closing tag.
 
+## Basic Operations Of A Stack
+
+- **Push:**  Inserting a new element in the stack.
+- **Pop:**  Removing/deleting the top most element in the stack.
+- **Peek:**  Viewing the top element of the stack but not deleting it.
+- **isFull:**  Checking if the stack is full.
+- **isEmpty:**  Checking if the stack is empty.
+
 ## Linked List Implementation A Stack
 
 ### Python
@@ -342,6 +350,14 @@ The functioning of a queue is similar to a group of people standing in a line: n
 - **Networking Devices:** Queues are used for packet management in networking devices such as routers and switches. They use queues to temporaily store packets if the outgoing links are too busy.
 - **Printer Queues:** Queues are used to manage the order of printing jobs. As the jobs are submitted, they are added to the queue. The first added job is printed first, the second job is printed second and so on.
 - **Breadth First Search Algorithm:** The BFS algorithm is used for level-by-level traversal of a graph. It starts at a particular node, adds its neighbour to the queue and then visits each neighbour.
+
+## Basic Operations in a Queue
+
+- **Enqueue:** Inserting an element at the rear end of a queue
+- **Dequeue:** Deleting at element from the front end of a queue
+- **Peek:** Displaying the element at the front
+- **isFull:** Checking if the queue is full
+- **isEmpty:** Checking if the queue is empty
 
 ## Linked List Implementation of a Queue
 
