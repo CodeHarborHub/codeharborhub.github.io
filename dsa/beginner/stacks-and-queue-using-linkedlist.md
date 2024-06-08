@@ -15,11 +15,11 @@ Working with a stack is similar to managing a pile of plates where each plate is
 
 ## Basic Operations Of A Stack
 
-- **Push** - Inserting a new element in the stack.
-- **Pop** - Removing/deleting the top most element in the stack.
-- **Peek** - Viewing the top element of the stack but not deleting it.
-- **isFull** - Checking if the stack is full.
-- **isEmpty** - Checking if the stack is empty.
+- **Push:**  Inserting a new element in the stack.
+- **Pop:**  Removing/deleting the top most element in the stack.
+- **Peek:**  Viewing the top element of the stack but not deleting it.
+- **isFull:**  Checking if the stack is full.
+- **isEmpty:**  Checking if the stack is empty.
 
 ## Linked List Implementation A Stack
 
