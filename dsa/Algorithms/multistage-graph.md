@@ -222,4 +222,4 @@ The shortest path cost is 17.
 
 ## Conclusion
 
-The Multistage Graph Algorithm efficiently finds the shortest path in a graph divided into stages. It operates in O(V^2) time complexity, making it suitable for graphs with a structured stage-based layout. Understanding and implementing this algorithm is essential for solving complex optimization problems in various applications.
+The Multistage Graph Algorithm efficiently finds the shortest path in a graph divided into stages. It operates in $O(V^2)$ time complexity, making it suitable for graphs with a structured stage-based layout. Understanding and implementing this algorithm is essential for solving complex optimization problems in various applications.
