@@ -347,12 +347,12 @@ const config = {
                 href: "https://discord.gg/c53FQn3pRv",
               },
               {
-                label: "X",
-                href: "https://twitter.com/CodesWithAjay",
-              },
-              {
                 label: "Instagram",
                 href: "https://instagram.com/",
+              },
+              {
+                label: "X",
+                href: "https://twitter.com/CodesWithAjay",
               },
             ],
           },
