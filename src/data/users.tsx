@@ -300,6 +300,14 @@ const Users: User[] = [
     website: "https://resume-builder-rho-smoky.vercel.app/",
     source: "https://github.com/Sambit-Mondal/Resume-Builder-WebApp",
     tags: ["opensource", "product", "html", "css", "javascript", "vanilla"],
+  },
+  {
+    title: "QR Generator",
+    description: "It generates a QR code based on a typed text or URL.",
+    preview: require("./showcase/qr_generator.png"),
+    website: "https://scan--me.vercel.app/",
+    source: "https://github.com/ParnaRoyChowdhury777/ScanMe",
+    tags: ["opensource", "product", "html", "css", "javascript", "vanilla"],
   }
 ];
 
