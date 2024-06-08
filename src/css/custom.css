@@ -10,7 +10,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #47a94a;
+  background: var(--ifm-color-primary);
   border-radius: 3px;
 }
 
