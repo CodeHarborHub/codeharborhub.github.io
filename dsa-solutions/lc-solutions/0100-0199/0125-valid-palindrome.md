@@ -320,6 +320,55 @@ function ValidPalindromeBruteForce() {
     ```
 
   </TabItem>
+   <TabItem value="java" label="java">
+  <SolutionAuthor name="@parikhitkurmi"/>
+   ```java
+   class Solution {
+    public boolean isPalindrome(String s) {
+
+        String ans = "";
+
+        for(int i =0; i < s.length();i++){
+
+            //Check if charAt(i) is between 'A' to 'Z' then convert it to lower case and add it to ans
+
+            if(s.charAt(i) >= 'A' && s.charAt(i) <= 'Z'){
+                ans += Character.toLowerCase(s.charAt(i));
+            }
+
+            //Check if charAt(i) is between 'a' to 'z' then add it to ans
+
+            else if(s.charAt(i) >= 'a' && s.charAt(i) <= 'z'){
+                ans += s.charAt(i);
+            }
+
+             //Check if charAt(i) is between '1' to '9' then add it to ans
+
+            else if(s.charAt(i) >= '0' && s.charAt(i) <= '9'){
+                ans += s.charAt(i);
+            }
+        }
+
+        //Now Reverse the ans string 
+
+        String ans2 = "";
+
+        for(int i = 0; i < ans.length();i++){
+
+            ans2 = ans.charAt(i) + ans2;
+        }
+
+        //after reversing check if ans is equal to ans2 then it is a palindrome string
+
+        if(ans.equals(ans2)){
+            return true;
+        }
+        return false;
+    }
+}
+    ```
+
+  </TabItem>
 </Tabs>
 
 #### Complexity Analysis
