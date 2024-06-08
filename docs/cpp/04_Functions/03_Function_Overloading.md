@@ -15,7 +15,7 @@ tags:
 description: In this tutorial, we will explore the concept of function overloading in the C++ programming language. We'll delve into how to define multiple functions with the same name but different parameter lists. By understanding function overloading, you'll learn how to write cleaner, more concise code and enhance the flexibility and readability of your C++ programs.
 ---
 
-# Function Overloading in C++
+# Function Overloading
 
 Function overloading in C++ allows you to have multiple functions with the same name but different parameters. This enables you to create more flexible and reusable code by providing different ways to handle inputs based on their types or number.
 
