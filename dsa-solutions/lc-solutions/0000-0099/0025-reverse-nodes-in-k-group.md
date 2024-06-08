@@ -82,61 +82,69 @@ The code aims to reverse nodes in a linked list in groups of $k$. It first check
 #### Python
 
 ```py
-# Definition for singly-linked list.
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+class Node:
+    def __init__(self, value=0, nxt=None):
+        self.value = value
+        self.next_node = nxt
 
-def Length(head):
-    size = 0
-    temp = head
-    while temp is not None:
-        temp = temp.next
-        size += 1
-    return size
+def get_length(head_node):
+    length = 0
+    temp_node = head_node
+    while temp_node is not None:
+        temp_node = temp_node.next_node
+        length += 1
+    return length
 
 class Solution:
-    def reverseKGroup(self, head: ListNode, k: int) -> ListNode:
-        if k > Length(head):
-            return head
-        if head is None or head.next is None or k < 2:
-            return head
+    def reverse_k_group(self, head_node: Node, k_value: int) -> Node:
+        if k_value > get_length(head_node):
+            return head_node
+        if head_node is None or head_node.next_node is None or k_value < 2:
+            return head_node
 
-        count = 0
-        prev = None
-        curr = head
-        next = None
+        counter = 0
+        previous_node = None
+        current_node = head_node
+        next_node = None
 
-        while count < k:
-            next = curr.next
-            curr.next = prev
-            prev = curr
-            curr = next
-            count += 1
+        while counter < k_value:
+            next_node = current_node.next_node
+            current_node.next_node = previous_node
+            previous_node = current_node
+            current_node = next_node
+            counter += 1
 
-        if next is not None:
-            head.next = self.reverseKGroup(curr, k)
+        if next_node is not None:
+            head_node.next_node = self.reverse_k_group(current_node, k_value)
 
-        return prev
+        return previous_node
 ```
 
 #### Java
 
 ```java
+class ListNode {
+    int value;
+    ListNode next;
+
+    ListNode(int value) {
+        this.value = value;
+    }
+}
+
 class Solution {
-    private int Length(ListNode head) {
-        int size = 0;
+    private int getLength(ListNode head) {
+        int length = 0;
         ListNode temp = head;
         while (temp != null) {
             temp = temp.next;
-            size++;
+            length++;
         }
-        return size;
+        return length;
     }
 
     public ListNode reverseKGroup(ListNode head, int k) {
-        if (k > Length(head)) {
+        if (k > getLength(head)) {
             return head;
         }
         if (head == null || head.next == null || k < 2) {
@@ -146,17 +154,17 @@ class Solution {
         int count = 0;
         ListNode prev = null;
         ListNode curr = head;
-        ListNode next = null;
+        ListNode nextNode = null;
 
         while (count < k) {
-            next = curr.next;
+            nextNode = curr.next;
             curr.next = prev;
             prev = curr;
-            curr = next;
+            curr = nextNode;
             count++;
         }
 
-        if (next != null) {
+        if (nextNode != null) {
             head.next = reverseKGroup(curr, k);
         }
 
