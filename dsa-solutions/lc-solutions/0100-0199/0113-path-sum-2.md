@@ -1,51 +1,52 @@
 ---
-id: 113-path-sum-2
-title: Path Sum 2
-sidebar_label: 0113-Path Sum 2
+id: 116-populating-next-right-pointers-in-each-node
+title: Populating Next Right Pointers in Each Node
+sidebar_label: 0116-Populating Next Right Pointers in Each Node
 tags:
   - Java
   - Python
   - C++
-description: "Find all root-to-leaf paths in a binary tree where the sum of the node values equals a given number."
+description: "Populate each next pointer to point to its next right node. If there is no next right node, the next pointer should be set to NULL."
 ---
 
 ## Problem Description
 
-Given the root of a binary tree and an integer targetSum, return all root-to-leaf paths where the sum of the node values in the path equals targetSum. Each path should be returned as a list of node values, and paths are represented as lists of node values.
+You are given a perfect binary tree where all leaves are on the same level, and every parent has two children. The binary tree has the following definition Populate each next pointer to point to its next right node. If there is no next right node, the next pointer should be set to NULL.
+
+Initially, all next pointers are set to NULL.
 
 ### Examples
 
 **Example 1:**
 
-![LeetCode Problem - Binary Tree](https://assets.leetcode.com/uploads/2021/01/18/pathsumii1.jpg)
+![LeetCode Problem - Binary Tree](https://assets.leetcode.com/uploads/2019/02/14/116_sample.png)
 ```
-Input: root = [5,4,8,11,null,13,4,7,2,null,null,5,1], targetSum = 22
-Output: [[5,4,11,2],[5,8,4,5]]
+Input: root = [1,2,3,4,5,6,7]
+Output: [1,#,2,3,#,4,5,6,7,#]
 ```
 
-**Example 1:**
+**Example 2:**
 
-![LeetCode Problem - Binary Tree](https://assets.leetcode.com/uploads/2021/01/18/pathsum2.jpg)
 ```
-Input: root = [1,2,3], targetSum = 5
+Input: root = []
 Output: []
 ```
 
 ### Constraints
 
-- The number of nodes in the tree is in the range [0, 105].
+- The number of nodes in the tree is in the range [0, 212 - 1].
 - $-1000 <= Node.val <= 1000$
-- $-1000 <= targetSum <= 1000$
+
 ---
 
 ## Solution for Binary Tree Problem
 
 ### Intuition And Approach
 
-To find all root-to-leaf paths where the sum equals targetSum, we can use Depth-First Search (DFS). We'll traverse the tree and keep track of the current path and its sum. When a leaf node is reached, we check if the current path's sum equals targetSum. If it does, we add the path to our result list.
+To populate each next pointer to point to its next right node in a perfect binary tree, we can perform a level order traversal and connect nodes at the same level.
 
 <Tabs>
- <tabItem value="Recursive" label="Recursive">
+ <tabItem value="Linear" label="Linear">
 
 
 #### Code in Different Languages
@@ -54,16 +55,26 @@ To find all root-to-leaf paths where the sum equals targetSum, we can use Depth-
   <TabItem value="Java" label="Java" default>
   <SolutionAuthor name="@Vipullakum007"/>
    ```java
-  private void dfs(TreeNode node, int sum, List<Integer> path, List<List<Integer>> result) {
-    if (node == null) return;
-    path.add(node.val);
-    if (node.left == null && node.right == null && node.val == sum) {
-        result.add(new ArrayList<>(path));
-    } else {
-        dfs(node.left, sum - node.val, path, result);
-        dfs(node.right, sum - node.val, path, result);
+ class Solution {
+    public Node connect(Node root) {
+        if (root == null) return null;
+        Queue<Node> queue = new LinkedList<>();
+        queue.offer(root);
+        while (!queue.isEmpty()) {
+            int levelSize = queue.size();
+            Node prev = null;
+            for (int i = 0; i < levelSize; i++) {
+                Node curr = queue.poll();
+                if (prev != null) {
+                    prev.next = curr;
+                }
+                if (curr.left != null) queue.offer(curr.left);
+                if (curr.right != null) queue.offer(curr.right);
+                prev = curr;
+            }
+        }
+        return root;
     }
-    path.remove(path.size() - 1);
 }
     ```
 
@@ -71,40 +82,53 @@ To find all root-to-leaf paths where the sum equals targetSum, we can use Depth-
   <TabItem value="Python" label="Python">
   <SolutionAuthor name="@Vipullakum007"/>
    ```python
-    class Solution:
- def pathSum(self, root: TreeNode, targetSum: int) -> List[List[int]]:
-     def dfs(node, current_path, current_sum):
-         if not node:
-             return
-         current_path.append(node.val)
-         current_sum += node.val
-         if not node.left and not node.right and current_sum == targetSum:
-             result.append(list(current_path))
-         else:
-             dfs(node.left, current_path, current_sum)
-             dfs(node.right, current_path, current_sum)
-         current_path.pop()
-     
-     result = []
-     dfs(root, [], 0)
-     return result
+  class Solution:
+    def connect(self, root: 'Node') -> 'Node':
+        if not root:
+            return None
+        queue = collections.deque([root])
+        while queue:
+            level_size = len(queue)
+            prev = None
+            for _ in range(level_size):
+                node = queue.popleft()
+                if prev:
+                    prev.next = node
+                if node.left:
+                    queue.append(node.left)
+                if node.right:
+                    queue.append(node.right)
+                prev = node
+        return root
     ```
 
   </TabItem>
   <TabItem value="C++" label="C++">
   <SolutionAuthor name="@Vipullakum007"/>
    ```cpp
-    void dfs(TreeNode* node, int sum, vector<int>& path, vector<vector<int>>& result) {
-    if (!node) return;
-    path.push_back(node->val);
-    if (!node->left && !node->right && node->val == sum) {
-        result.push_back(path);
-    } else {
-        dfs(node->left, sum - node->val, path, result);
-        dfs(node->right, sum - node->val, path, result);
+    class Solution {
+public:
+    Node* connect(Node* root) {
+        if (!root) return nullptr;
+        queue<Node*> q;
+        q.push(root);
+        while (!q.empty()) {
+            int levelSize = q.size();
+            Node* prev = nullptr;
+            for (int i = 0; i < levelSize; ++i) {
+                Node* node = q.front();
+                q.pop();
+                if (prev) {
+                    prev->next = node;
+                }
+                if (node->left) q.push(node->left);
+                if (node->right) q.push(node->right);
+                prev = node;
+            }
+        }
+        return root;
     }
-    path.pop_back();
-}
+};
     ```
 
   </TabItem>
@@ -113,7 +137,7 @@ To find all root-to-leaf paths where the sum equals targetSum, we can use Depth-
 #### Complexity Analysis
 
 - Time Complexity: $O(n)$ where n is the number of nodes in the binary tree.
-- Space Complexity: $O(h)$ where h is the height of the binary tree.
+- Space Complexity: $O(m)$ where m is the maximum number of nodes at any level in the binary tree. In the worst case, the queue can contain all nodes at the last level, which is at most $2^{h-1}$ where h is the height of the tree.
 
 </tabItem>
 </Tabs>
