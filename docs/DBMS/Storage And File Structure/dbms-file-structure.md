@@ -93,4 +93,3 @@ graph TD;
 The organization of data inside a file plays a major role in how efficiently these operations can be performed. The method used to locate the file pointer to a desired record inside a file varies based on whether the records are arranged sequentially or clustered.
 
 In summary, understanding the various file structures and their operations is crucial for efficient database management, ensuring optimal performance and reliability.
-```

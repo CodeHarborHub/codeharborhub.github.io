@@ -99,25 +99,25 @@ graph TD;
 
 #### Structure of B+ Tree
 - **Internal Nodes:**
-    - Contain at least ⌈n/2⌉ pointers, except the root node.
+    - Contain at least $⌈n/2⌉$ pointers, except the root node.
     - At most, an internal node can contain n pointers.
 
 - **Leaf Nodes:**
-    - Contain at least ⌈n/2⌉ record pointers and ⌈n/2⌉ key values.
+    - Contain at least $⌈n/2⌉$ record pointers and $⌈n/2⌉$ key values.
     - At most, a leaf node can contain n record pointers and n key values.
     - Every leaf node contains one block pointer P to point to the next leaf node, forming a linked list.
 
 #### B+ Tree Insertion
 1. **Insertion at Leaf Node:**
     - If a leaf node overflows, split node into two parts.
-    - Partition at i = ⌊(m+1)/2⌋.
+    - Partition at $i = ⌊(m+1)/2⌋$.
     - First i entries are stored in one node.
     - Rest of the entries (i+1 onwards) are moved to a new node.
     - ith key is duplicated at the parent of the leaf.
 
 2. **Insertion at Non-leaf Node:**
     - Split node into two parts.
-    - Partition the node at i = ⌈(m+1)/2⌉.
+    - Partition the node at $i = ⌊(m+1)/2⌋$.
     - Entries up to i are kept in one node.
     - Rest of the entries are moved to a new node.
 

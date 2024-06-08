@@ -58,7 +58,7 @@ graph TD;
 The problem with static hashing is that it does not expand or shrink dynamically as the size of the database grows or shrinks. Dynamic hashing provides a mechanism in which data buckets are added and removed dynamically and on-demand. Dynamic hashing is also known as extended hashing.
 
 #### Organization
-The prefix of an entire hash value is taken as a hash index. Only a portion of the hash value is used for computing bucket addresses. Every hash index has a depth value to signify how many bits are used for computing a hash function. These bits can address \(2^n\) buckets. When all these bits are consumed, that is, when all the buckets are full, then the depth value is increased linearly and twice the buckets are allocated.
+The prefix of an entire hash value is taken as a hash index. Only a portion of the hash value is used for computing bucket addresses. Every hash index has a depth value to signify how many bits are used for computing a hash function. These bits can address $(2^n)$ buckets. When all these bits are consumed, that is, when all the buckets are full, then the depth value is increased linearly and twice the buckets are allocated.
 
 ```mermaid
 graph TD;
