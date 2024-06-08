@@ -3,10 +3,9 @@ id: 118-pascals-triangle
 title: Pascal's Triangle
 sidebar_label: 0118-Pascal's Triangle
 tags:
-
-Java
-Python
-C++
+  - C++
+  - Java
+  - Python
 description: "Generate the first n rows of Pascal's Triangle."
 ---
 
