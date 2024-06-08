@@ -2,11 +2,11 @@
 id: median-of-two-sorted-arrays
 title: Median of Two Sorted Arrays(Leetcode)
 sidebar_label: 0004 - Median of Two Sorted Arrays
-tags: 
-    - Array
-    - Binary Search
-    - Divide and Conquer0
-    - LeetCode
+tags:
+  - Array
+  - Binary Search
+  - Divide and Conquer0
+  - LeetCode
 description: Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays. The overall run time complexity should be $O(log (m+n))$.
 ---
 
@@ -14,7 +14,7 @@ In this page, we will solve the problem [Median of Two Sorted Arrays](https://le
 
 ## Problem Statement
 
-Given two sorted arrays `nums1` and `nums2` of size `m` and `n` respectively, return the median of the two sorted arrays. 
+Given two sorted arrays `nums1` and `nums2` of size `m` and `n` respectively, return the median of the two sorted arrays.
 
 The overall run time complexity should be <code>$O(log (m+n))$</code>.
 
@@ -47,7 +47,7 @@ Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
 
 ## Solution for Median of Two Sorted Arrays
 
-The **Median of Two Sorted Arrays** is a classic algorithm problem on LeetCode ([Problem 4](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)). It requires finding the median of two sorted arrays. Given two sorted arrays `nums1` and `nums2`, the task is to find the median of the two arrays combined. 
+The **Median of Two Sorted Arrays** is a classic algorithm problem on LeetCode ([Problem 4](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)). It requires finding the median of two sorted arrays. Given two sorted arrays `nums1` and `nums2`, the task is to find the median of the two arrays combined.
 
 Here is an explanation of the intuition and approaches to solve this problem:
 
@@ -69,17 +69,17 @@ The binary search approach involves partitioning the two arrays such that the co
 1. Ensure `nums1` is the smaller array.
 2. Initialize `low` and `high` for binary search on `nums1`.
 3. While `low <= high`:
-    - Calculate `partitionX` and `partitionY`.
-    - Set `maxX`, `minX`, `maxY`, `minY`.
-    - If `maxX <= minY` and `maxY <= minX`: 
-        - If total number of elements is even
-          - Return average of `max(maxX, maxY)` and `min(minX, minY)`.
-        - Else
-          - Return `max(maxX, maxY)`.
-    - If `maxX > minY`:
-        - Move `high` to `partitionX - 1`.
-    - Else:
-        - Move `low` to `partitionX + 1`.
+   - Calculate `partitionX` and `partitionY`.
+   - Set `maxX`, `minX`, `maxY`, `minY`.
+   - If `maxX <= minY` and `maxY <= minX`:
+     - If total number of elements is even
+       - Return average of `max(maxX, maxY)` and `min(minX, minY)`.
+     - Else
+       - Return `max(maxX, maxY)`.
+   - If `maxX > minY`:
+     - Move `high` to `partitionX - 1`.
+   - Else:
+     - Move `low` to `partitionX + 1`.
 4. If no median is found, raise an error.
 
 ### Implementation and Code
@@ -93,21 +93,22 @@ function medianOfTwoSortedArraysProblem() {
     if (nums1.length > nums2.length) {
       [nums1, nums2] = [nums2, nums1];
     }
-    
+
     const x = nums1.length;
     const y = nums2.length;
-    let low = 0, high = x;
-    
+    let low = 0,
+      high = x;
+
     while (low <= high) {
       const partitionX = Math.floor((low + high) / 2);
       const partitionY = Math.floor((x + y + 1) / 2) - partitionX;
-      
-      const maxX = (partitionX === 0) ? -Infinity : nums1[partitionX - 1];
-      const minX = (partitionX === x) ? Infinity : nums1[partitionX];
-      
-      const maxY = (partitionY === 0) ? -Infinity : nums2[partitionY - 1];
-      const minY = (partitionY === y) ? Infinity : nums2[partitionY];
-      
+
+      const maxX = partitionX === 0 ? -Infinity : nums1[partitionX - 1];
+      const minX = partitionX === x ? Infinity : nums1[partitionX];
+
+      const maxY = partitionY === 0 ? -Infinity : nums2[partitionY - 1];
+      const minY = partitionY === y ? Infinity : nums2[partitionY];
+
       if (maxX <= minY && maxY <= minX) {
         if ((x + y) % 2 === 0) {
           return (Math.max(maxX, maxY) + Math.min(minX, minY)) / 2;
@@ -120,7 +121,7 @@ function medianOfTwoSortedArraysProblem() {
         low = partitionX + 1;
       }
     }
-    
+
     throw new Error("Input arrays are not sorted.");
   };
 
@@ -131,7 +132,8 @@ function medianOfTwoSortedArraysProblem() {
   return (
     <div>
       <p>
-        <b>Input:</b> nums1 = {"[" + nums1.join(", ") + "]"}, nums2 = {"[" + nums2.join(", ") + "]"}
+        <b>Input:</b> nums1 = {"[" + nums1.join(", ") + "]"}, nums2 ={" "}
+        {"[" + nums2.join(", ") + "]"}
       </p>
       <p>
         <b>Output:</b> {result}
@@ -143,52 +145,14 @@ function medianOfTwoSortedArraysProblem() {
 
 ### Code in Different Languages
 
-## Python
-class Solution:
-    def findMedianSortedArrays(self, nums1, nums2):
-        # Ensure nums1 is the smaller array
-        if len(nums1) > len(nums2):
-            nums1, nums2 = nums2, nums1
-
-        m, n = len(nums1), len(nums2)
-        imin, imax, half_len = 0, m, (m + n + 1) // 2
-
-        while imin <= imax:
-            i = (imin + imax) // 2
-            j = half_len - i
-
-            if i < m and nums1[i] < nums2[j - 1]:
-                # i is too small, must increase it
-                imin = i + 1
-            elif i > 0 and nums1[i - 1] > nums2[j]:
-                # i is too big, must decrease it
-                imax = i - 1
-            else:
-                # i is perfect
-                if i == 0: max_of_left = nums2[j - 1]
-                elif j == 0: max_of_left = nums1[i - 1]
-                else: max_of_left = max(nums1[i - 1], nums2[j - 1])
-
-                if (m + n) % 2 == 1:
-                    return max_of_left
-
-                if i == m: min_of_right = nums2[j]
-                elif j == n: min_of_right = nums1[i]
-                else: min_of_right = min(nums1[i], nums2[j])
-
-                return (max_of_left + min_of_right) / 2.0
-
-# Example usage:
-solution = Solution()
-nums1 = [1, 3]
-nums2 = [2]
-print(solution.findMedianSortedArrays(nums1, nums2))  # Output: 2.0
-
-
 <Tabs>
+
+
+### JavaScript Implementation:
     <TabItem value="js" label="JavaScript">
     <SolutionAuthor name="@ajay-dhangar"/>
-    ```js
+
+```JavaScript
     var findMedianSortedArrays = function(nums1, nums2) {
         if (nums1.length > nums2.length) {
             [nums1, nums2] = [nums2, nums1];
@@ -223,90 +187,104 @@ print(solution.findMedianSortedArrays(nums1, nums2))  # Output: 2.0
 
         throw new Error("Input arrays are not sorted.");
     };
-    ```
 
     </TabItem>
+```
+
+### Python Implementation: 
+
     <TabItem value="py" label="Python">
-    <SolutionAuthor name="@ajay-dhangar"/>    
-    ```python
-       class Solution:
-       def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+    <SolutionAuthor name="@ajay-dhangar"/>
+```Python
+    class Solution:
+        def findMedianSortedArrays(self, nums1, nums2):
+            # Ensure nums1 is the smaller array
             if len(nums1) > len(nums2):
                 nums1, nums2 = nums2, nums1
-            
-            x = len(nums1)
-            y = len(nums2)
-            low, high = 0, x
-            
-            while low <= high:
-                partitionX = (low + high) // 2
-                partitionY = (x + y + 1) // 2 - partitionX
-                
-                maxX = float('-inf') if partitionX == 0 else nums1[partitionX - 1]
-                minX = float('inf') if partitionX == x else nums1[partitionX]
-                
-                maxY = float('-inf') if partitionY == 0 else nums2[partitionY - 1]
-                minY = float('inf') if partitionY == y else nums2[partitionY]
-                
-                if maxX <= minY and maxY <= minX:
-                    if (x + y) % 2 == 0:
-                        return (max(maxX, maxY) + min(minX, minY)) / 2
-                    else:
-                        return max(maxX, maxY)
-                elif maxX > minY:
-                    high = partitionX - 1
+
+            m, n = len(nums1), len(nums2)
+            imin, imax, half_len = 0, m, (m + n + 1) // 2
+
+            while imin <= imax:
+                i = (imin + imax) // 2
+                j = half_len - i
+
+                if i < m and nums1[i] < nums2[j - 1]:
+                    # i is too small, must increase it
+                    imin = i + 1
+                elif i > 0 and nums1[i - 1] > nums2[j]:
+                    # i is too big, must decrease it
+                    imax = i - 1
                 else:
-                    low = partitionX + 1
-            
-            raise ValueError("Input arrays are not sorted.")
-    ```    
-    </TabItem>
+                    # i is perfect
+                    if i == 0: max_of_left = nums2[j - 1]
+                    elif j == 0: max_of_left = nums1[i - 1]
+                    else: max_of_left = max(nums1[i - 1], nums2[j - 1])
+
+                    if (m + n) % 2 == 1:
+                        return max_of_left
+
+                    if i == m: min_of_right = nums2[j]
+                    elif j == n: min_of_right = nums1[i]
+                    else: min_of_right = min(nums1[i], nums2[j])
+
+                    return (max_of_left + min_of_right) / 2.0
+````
+</TabItem>
+
+### Java Implemnetation:
     <TabItem value="java" label="Java">
     <SolutionAuthor name="@ajay-dhangar"/>
-    ```java
-    class Solution {
-        public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-            if (nums1.length > nums2.length) {
-                int[] temp = nums1;
-                nums1 = nums2;
-                nums2 = temp;
-            }
 
-            int x = nums1.length;
-            int y = nums2.length;
-            int low = 0, high = x;
+```Java
+   class Solution {
+       public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+           if (nums1.length > nums2.length) {
+               int[] temp = nums1;
+               nums1 = nums2;
+               nums2 = temp;
+           }
 
-            while (low <= high) {
-                int partitionX = (low + high) / 2;
-                int partitionY = (x + y + 1) / 2 - partitionX;
+           int x = nums1.length;
+           int y = nums2.length;
+           int low = 0, high = x;
 
-                int maxX = (partitionX == 0) ? Integer.MIN_VALUE : nums1[partitionX - 1];
-                int minX = (partitionX == x) ? Integer.MAX_VALUE : nums1[partitionX];
+           while (low <= high) {
+               int partitionX = (low + high) / 2;
+               int partitionY = (x + y + 1) / 2 - partitionX;
 
-                int maxY = (partitionY == 0) ? Integer.MIN_VALUE : nums2[partitionY - 1];
-                int minY = (partitionY == y) ? Integer.MAX_VALUE : nums2[partitionY];
+               int maxX = (partitionX == 0) ? Integer.MIN_VALUE : nums1[partitionX - 1];
+               int minX = (partitionX == x) ? Integer.MAX_VALUE : nums1[partitionX];
 
-                if (maxX <= minY && maxY <= minX) {
-                    if ((x + y) % 2 == 0) {
-                        return (Math.max(maxX, maxY) + Math.min(minX, minY)) / 2.0;
-                    } else {
-                        return Math.max(maxX, maxY);
-                    }
-                } else if (maxX > minY) {
-                    high = partitionX - 1;
-                } else {
-                    low = partitionX + 1;
-                }
-            }
+               int maxY = (partitionY == 0) ? Integer.MIN_VALUE : nums2[partitionY - 1];
+               int minY = (partitionY == y) ? Integer.MAX_VALUE : nums2[partitionY];
 
-            throw new IllegalArgumentException("Input arrays are not sorted.");
-        }
-    }
-    ```
-    </TabItem>
+               if (maxX <= minY && maxY <= minX) {
+                   if ((x + y) % 2 == 0) {
+                       return (Math.max(maxX, maxY) + Math.min(minX, minY)) / 2.0;
+                   } else {
+                       return Math.max(maxX, maxY);
+                   }
+               } else if (maxX > minY) {
+                   high = partitionX - 1;
+               } else {
+                   low = partitionX + 1;
+               }
+           }
+
+           throw new IllegalArgumentException("Input arrays are not sorted.");
+       }
+   }
+
+```
+ </TabItem>
+
+### CPP Implementation:
+
     <TabItem value="cpp" label="C++">
     <SolutionAuthor name="@ajay-dhangar"/>
-    ```cpp
+
+````cpp
     class Solution {
     public:
         double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
@@ -345,10 +323,14 @@ print(solution.findMedianSortedArrays(nums1, nums2))  # Output: 2.0
         }
     };
     ```
-    </TabItem>
+</TabItem>
+
+### C Implementation:
+
     <TabItem value="c" label="C">
     <SolutionAuthor name="@ajay-dhangar"/>
-    ```c
+
+```C
     double findMedianSortedArrays(int* nums1, int nums1Size, int* nums2, int nums2Size) {
         if (nums1Size > nums2Size) {
             int* temp = nums1;
@@ -390,9 +372,12 @@ print(solution.findMedianSortedArrays(nums1, nums2))  # Output: 2.0
     }
     ```
     </TabItem>
+
+### TypeScript Implementation:
+
     <TabItem value="ts" label="TypeScript">
     <SolutionAuthor name="@ajay-dhangar"/>
-    ```ts
+```ts
     function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
         if (nums1.length > nums2.length) {
             [nums1, nums2] = [nums2, nums1];
@@ -429,6 +414,7 @@ print(solution.findMedianSortedArrays(nums1, nums2))  # Output: 2.0
     }
     ```
     </TabItem>
+
 </Tabs>
 
 ### Complexity Analysis
@@ -446,7 +432,8 @@ Let's test the solution with the sample test cases:
 Input: nums1 = [1, 3], nums2 = [2]
 Output: 2.00000
 Explanation: merged array = [1, 2, 3] and median is 2.
-```
+````
+
 </TabItem>
 <TabItem value="TestCase2" label="Case 2">
 ```plaintext
@@ -470,11 +457,11 @@ The divide and conquer approach finds the median by recursively dividing the pro
 2. If the total length of both arrays is even, find the k-th and (k+1)-th smallest elements and return their average.
 3. If the total length is odd, find the k-th smallest element.
 4. Define a helper function `getKth` to find the k-th smallest element in the combined array:
-    - Base cases:
-        - If one array is empty, return the k-th element from the other array.
-        - If k is 1, return the minimum of the first elements of both arrays.
-    - Recursive case:
-        - Divide k by 2, compare the k/2-th elements of both arrays, and discard the smaller half.
+   - Base cases:
+     - If one array is empty, return the k-th element from the other array.
+     - If k is 1, return the minimum of the first elements of both arrays.
+   - Recursive case:
+     - Divide k by 2, compare the k/2-th elements of both arrays, and discard the smaller half.
 
 ### Implementation and Code
 
@@ -486,7 +473,7 @@ function medianOfTwoSortedArraysProblem() {
     const getKth = (nums1, nums2, k) => {
       const len1 = nums1.length;
       const len2 = nums2.length;
-      
+
       if (len1 > len2) return getKth(nums2, nums1, k);
       if (len1 === 0) return nums2[k - 1];
       if (k === 1) return Math.min(nums1[0], nums2[0]);
@@ -520,7 +507,8 @@ function medianOfTwoSortedArraysProblem() {
   return (
     <div>
       <p>
-        <b>Input:</b> nums1 = {"[" + nums1.join(", ") + "]"}, nums2 = {"[" + nums2.join(", ") + "]"}
+        <b>Input:</b> nums1 = {"[" + nums1.join(", ") + "]"}, nums2 ={" "}
+        {"[" + nums2.join(", ") + "]"}
       </p>
       <p>
         <b>Output:</b> {result}
@@ -533,9 +521,11 @@ function medianOfTwoSortedArraysProblem() {
 ### Code in Different Languages
 
 <Tabs>
+
     <TabItem value="js" label="JavaScript">
     <SolutionAuthor name="@ajay-dhangar"/>
-    ```js
+
+```js
     var findMedianSortedArrays = function(nums1, nums2) {
         const getKth = (nums1, nums2, k) => {
             const len1 = nums1.length;
@@ -565,9 +555,11 @@ function medianOfTwoSortedArraysProblem() {
     };
     ```
     </TabItem>
+
     <TabItem value="py" label="Python">
-    <SolutionAuthor name="@ajay-dhangar"/>    
-    ```python
+    <SolutionAuthor name="@ajay-dhangar"/>
+
+```python
     class Solution:
         def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
             def getKth(nums1, nums2, k):
@@ -590,13 +582,15 @@ function medianOfTwoSortedArraysProblem() {
             if len_combined % 2 == 1:
                 return getKth(nums1, nums2, len_combined // 2 + 1)
             else:
-                return (getKth(nums1, nums2, len_combined // 2) + 
+                return (getKth(nums1, nums2, len_combined // 2) +
                         getKth(nums1, nums2, len_combined // 2 + 1)) / 2
-    ```    
+    ```
     </TabItem>
+
     <TabItem value="java" label="Java">
     <SolutionAuthor name="@ajay-dhangar"/>
-    ```java
+
+```java
     class Solution {
         public double findMedianSortedArrays(int[] nums1, int[] nums2) {
             int len1 = nums1.length;
@@ -640,19 +634,20 @@ function medianOfTwoSortedArraysProblem() {
     }
     ```
     </TabItem>
+
     <TabItem value="cpp" label="C++">
     <SolutionAuthor name="@ajay-dhangar"/>
-    ```cpp
+```cpp
     class Solution {
     public:
         double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
             int len1 = nums1.size();
             int len2 = nums2.size();
-            
+
             if (len1 > len2) {
                 return findMedianSortedArrays(nums2, nums1);
             }
-            
+
             int len = len1 + len2;
             if (len % 2 == 1) {
                 return getKth(nums1, nums2, len / 2 + 1);
@@ -665,7 +660,7 @@ function medianOfTwoSortedArraysProblem() {
         int getKth(vector<int>& nums1, vector<int>& nums2, int k) {
             int len1 = nums1.size();
             int len2 = nums2.size();
-            
+
             if (len1 > len2) {
                 return getKth(nums2, nums1, k);
             }
@@ -758,6 +753,7 @@ function medianOfTwoSortedArraysProblem() {
     }
     ```
     </TabItem>
+
 </Tabs>
 
 ### Complexity Analysis
@@ -792,29 +788,33 @@ Explanation: merged array = [1, 2, 3, 4] and median is (2 + 3) / 2 = 2.5.
 
 **Note**: The binary search approach is more efficient than the divide and conquer approach as it has a better time complexity of <code>$O(log(min(n, m)))$</code> compared to the divide and conquer approach. However, both approaches provide a solution to the problem of finding the median of two sorted arrays.
 
-**Which approach is best for you?** 
+**Which approach is best for you?**
 
 The binary search approach is more efficient and recommended for solving the problem of finding the median of two sorted arrays. However, the divide and conquer approach is also a valid solution and can be used if needed.
 
 :::
 
-:::tip 
-When asked to find the median of two sorted arrays, a direct approach that merges the two arrays and then finds the median will work but isn't optimal. Given the problem's constraints, we can leverage the fact that the arrays are already sorted and use binary search to find the median in $$ O(\log(\min(n, m))) $$ time complexity. 
+:::tip
+When asked to find the median of two sorted arrays, a direct approach that merges the two arrays and then finds the median will work but isn't optimal. Given the problem's constraints, we can leverage the fact that the arrays are already sorted and use binary search to find the median in $$ O(\log(\min(n, m))) $$ time complexity.
 
 The key idea is to use binary search to partition the smaller array in such a way that we can easily find the median by comparing elements around the partition.
 
 #### Detailed Explanation
 
-1. **Ensure the Smaller Array is First**: 
+1. **Ensure the Smaller Array is First**:
+
    - This step is to make sure we always perform the binary search on the smaller array, which helps us manage the partition logic more easily. Let $$ \text{nums1} $$ be the smaller array and $$ \text{nums2} $$ be the larger array.
 
 2. **Set Up Binary Search**:
+
    - Initialize $$ \text{low} $$ and $$ \text{high} $$ pointers for the binary search on $$ \text{nums1} $$.
    - We aim to partition $$ \text{nums1} $$ and $$ \text{nums2} $$ such that the left side of the combined arrays contains half of the elements, and the right side contains the other half.
 
 3. **Partitioning the Arrays**:
+
    - Calculate $$ \text{partitionX} $$ as the midpoint of $$ \text{nums1} $$.
-   - Calculate $$ \text{partitionY} $$ such that the left side of the combined arrays has the same number of elements as the right side. This can be achieved by: 
+   - Calculate $$ \text{partitionY} $$ such that the left side of the combined arrays has the same number of elements as the right side. This can be achieved by:
+
      $$
      \text{partitionY} = \frac{(x + y + 1)}{2} - \text{partitionX}
      $$
@@ -822,9 +822,11 @@ The key idea is to use binary search to partition the smaller array in such a wa
      where $$ x $$ and $$ y $$ are the lengths of $$ \text{nums1} $$ and $$ \text{nums2} $$ respectively.
 
 4. **Boundary Conditions**:
+
    - Handle cases where partitions might go out of bounds. If $$ \text{partitionX} $$ is 0, it means there are no elements on the left side of $$ \text{nums1} $$. If $$ \text{partitionX} $$ is $$ x $$, it means there are no elements on the right side of $$ \text{nums1} $$.
 
 5. **Check Valid Partition**:
+
    - A valid partition is one where the maximum element on the left side of both partitions is less than or equal to the minimum element on the right side of both partitions:
      $$
      \text{maxX} \leq \text{minY} \quad \text{and} \quad \text{maxY} \leq \text{minX}
@@ -832,6 +834,7 @@ The key idea is to use binary search to partition the smaller array in such a wa
      Here, $$ \text{maxX} $$ is the largest element on the left side of $$ \text{nums1} $$, $$ \text{minX} $$ is the smallest element on the right side of $$ \text{nums1} $$, and similarly for $$ \text{nums2} $$.
 
 6. **Calculate the Median**:
+
    - If the total number of elements $$ (x + y) $$ is even, the median is the average of the two middle values:
      $$
      \text{median} = \frac{\text{max(maxX, maxY)} + \text{min(minX, minY)}}{2}
@@ -846,7 +849,6 @@ The key idea is to use binary search to partition the smaller array in such a wa
    - If $$ \text{maxY} > \text{minX} $$, it means we need to move the partition in $$ \text{nums1} $$ to the right, so adjust $$ \text{low} $$.
 
 :::
-
 
 ## References
 
