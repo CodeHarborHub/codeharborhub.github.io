@@ -29,6 +29,7 @@ Output: 0
 
 ## Java Implementation
 
+```java
 class Knapsack {
 
     // A utility function that returns
@@ -71,6 +72,7 @@ class Knapsack {
         System.out.println(knapSack(W, weight, profit, n));
     }
 }
+```
 
-### Time Complexity: O(2N)
-### Auxiliary Space: O(N), Stack space required for recursion
+### Time Complexity: $O(2N)$
+### Auxiliary Space: $O(N)$, Stack space required for recursion
