@@ -4,6 +4,7 @@ title: Binary Tree Preorder Traversal
 sidebar_label: 0144 Binary Tree Preorder Traversal
 tags:
   - tree
+  - DFS
   - LeetCode
   - Python
   - Java
@@ -20,7 +21,6 @@ Given the root of a binary tree, return the preorder traversal of its nodes' val
 **Example 1:**
 
 ```
-![image](https://github.com/mahek0620/codeharborhub.github.io/assets/136893675/6cb8b1ac-a2d3-4bcb-bdfa-9347544aee1c)
 
 Input: root = [1,null,2,3]
 Output: [1,2,3]
