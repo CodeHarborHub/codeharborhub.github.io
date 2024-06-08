@@ -34,8 +34,8 @@ The largest rectangle is shown in the red area, which has an $area = 10$ units.
 ### Constraints
 
 
-- 1 <= heights.length <= 105
-- 0 <= heights[i] <= 104
+- $1 <= heights.length <= 105$
+- $0 <= heights[i] <= 104$
 
 
 ### Intuition
