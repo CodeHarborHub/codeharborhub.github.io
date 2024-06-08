@@ -321,4 +321,4 @@ The MST contains the edges: [('A', 'B', 1), ('B', 'D', 2), ('B', 'C', 3)].
 
 ## Conclusion
 
-Prim's Algorithm is an efficient method for finding the Minimum Spanning Tree of a weighted undirected graph. It operates in O(E log V) time complexity using a priority queue, making it suitable for large graphs. Understanding and implementing this algorithm is fundamental for solving various network design problems and optimizing connectivity.
+Prim's Algorithm is an efficient method for finding the Minimum Spanning Tree of a weighted undirected graph. It operates in $O(E log V)$ time complexity using a priority queue, making it suitable for large graphs. Understanding and implementing this algorithm is fundamental for solving various network design problems and optimizing connectivity.
