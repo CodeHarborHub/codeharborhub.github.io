@@ -181,14 +181,8 @@ public:
 - Time Complexity: $O(n)$ where n is the number of children (length of the ratings array).
 - Space Complexity: $O(n)$ for storing the candies array.
 
-</tabItem>
-
-
-
 ## References
 
 - **LeetCode Problem:** [Candy Problem](https://leetcode.com/problems/candy/)
 - **Solution Link:** [Candy Solution on LeetCode](https://leetcode.com/problems/candy/solutions/5273312/candy-solution)
 - **Authors GeeksforGeeks Profile:** [Mahek Patel](https://leetcode.com/u/mahekrpatel611/)
-
----
