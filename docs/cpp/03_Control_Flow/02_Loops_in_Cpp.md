@@ -16,7 +16,7 @@ tags:
 description: In this tutorial, we will learn about loops in the C++ programming language. We will explore the syntax and usage of `for`, `while`, and `do-while` loops. By understanding how to implement these looping constructs, you will be able to execute code repeatedly based on specified conditions, making your C++ programs more efficient and powerful.
 ---
 
-# Loops in C++
+# Loops in CPP
 
 ## Introduction
 

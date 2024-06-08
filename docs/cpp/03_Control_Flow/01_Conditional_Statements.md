@@ -17,7 +17,7 @@ tags:
 description: In this tutorial, we will learn about conditional statements in the C++ programming language. We will explore the syntax and usage of `if`, `else if`, and `else` statements, as well as switch-case structures. By understanding how to implement these conditional statements, you will be able to control the flow of your C++ programs and make decisions based on different conditions.
 ---
 
-# Conditional Statements in C++
+# Conditional Statements
 
 ## Introduction
 
