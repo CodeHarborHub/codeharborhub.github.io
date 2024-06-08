@@ -341,5 +341,5 @@ Kruskals path is:
 
 ```
 ### Time and Space Complexity:
-* Time complexity: The time complexity of kruskal's algorithm depends on two operations i.e. sorting of all edges and union-find operation.Thus, the overall time complexity is: **O(ElogV)**
-* Space complexity: The space complexity of kruskal's algorithm includes storage for edges, union-find data structure and storage for the MST. Thus the overall space complexity is: **O(E+V)**
+* Time complexity: The time complexity of kruskal's algorithm depends on two operations i.e. sorting of all edges and union-find operation.Thus, the overall time complexity is: $O(ElogV)$
+* Space complexity: The space complexity of kruskal's algorithm includes storage for edges, union-find data structure and storage for the MST. Thus the overall space complexity is: $O(E+V)$
