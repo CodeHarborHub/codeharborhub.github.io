@@ -16,8 +16,6 @@ In this page, we will solve the problem [Median of Two Sorted Arrays](https://le
 
 Given two sorted arrays `nums1` and `nums2` of size `m` and `n` respectively, return the median of the two sorted arrays.
 
-The overall run time complexity should be $O(log (m+n))$.
-
 ### Example 1
 
 ```plaintext
@@ -449,7 +447,7 @@ Let's test the solution with the sample test cases:
 Input: nums1 = [1, 3], nums2 = [2]
 Output: 2.00000
 Explanation: merged array = [1, 2, 3] and median is 2.
-````
+```
 </TabItem>
 
 <TabItem value="TestCase2" label="Case 2">
@@ -738,8 +736,7 @@ Let's test the solution with the sample test cases:
 Input: nums1 = [1, 3], nums2 = [2]
 Output: 2.00000
 Explanation: merged array = [1, 2, 3] and median is 2.
-````
-
+```
 </TabItem>
 <TabItem value="TestCase2" label="Case 2">
 ```plaintext
@@ -790,7 +787,7 @@ The key idea is to use binary search to partition the smaller array in such a wa
 
 4. **Boundary Conditions**:
 
-   - Handle cases where partitions might go out of bounds. If $$ \text{partitionX} $$ is 0, it means there are no elements on the left side of $$ \text{nums1} $$. If $$ \text{partitionX} $$ is $$ x $$, it means there are no elements on the right side of $$ \text{nums1} $$.
+   - Handle cases where partitions might go out of bounds. If $$ \text{partitionX} $$ is 0, it means there are no elements on the left side of $$ \text{nums1} $$. If $$ \text{partitionX} $$ is $x$, it means there are no elements on the right side of $$ \text{nums1} $$.
 
 5. **Check Valid Partition**:
 
@@ -798,11 +795,11 @@ The key idea is to use binary search to partition the smaller array in such a wa
      $$
      \text{maxX} \leq \text{minY} \quad \text{and} \quad \text{maxY} \leq \text{minX}
      $$
-     Here, $$ \text{maxX} $$ is the largest element on the left side of $$ \text{nums1} $$, $$ \text{minX} $$ is the smallest element on the right side of $$ \text{nums1} $$, and similarly for $$ \text{nums2} $$.
+     Here, $\text{maxX}$ is the largest element on the left side of $\text{nums1}$, $\text{minX}$ is the smallest element on the right side of $\text{nums1}$, and similarly for $\text{nums2}$.
 
 6. **Calculate the Median**:
 
-   - If the total number of elements $ (x + y) $ is even, the median is the average of the two middle values:
+   - If the total number of elements $$ (x + y) $$ is even, the median is the average of the two middle values:
      $$
      \text{median} = \frac{\text{max(maxX, maxY)} + \text{min(minX, minY)}}{2}
      $$
@@ -812,8 +809,8 @@ The key idea is to use binary search to partition the smaller array in such a wa
      $$
 
 7. **Adjust Binary Search**:
-   - If $$ \text{maxX} > \text{minY} $$, it means we need to move the partition in $$ \text{nums1} $$ to the left, so adjust $$ \text{high} $$.
-   - If $$ \text{maxY} > \text{minX} $$, it means we need to move the partition in $$ \text{nums1} $$ to the right, so adjust $$ \text{low} $$.
+   - If $\text{maxX} > \text{minY}$, it means we need to move the partition in $\text{nums1}$ to the left, so adjust $\text{high}$.
+   - If $\text{maxY} > \text{minX}$, it means we need to move the partition in $\text{nums1}$ to the right, so adjust $\text{low}$.
 
 :::
 
