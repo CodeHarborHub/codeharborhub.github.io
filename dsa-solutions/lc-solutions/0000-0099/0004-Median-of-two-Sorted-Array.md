@@ -145,12 +145,12 @@ function medianOfTwoSortedArraysProblem() {
 
 ### Code in Different Languages
 
+### JavaScript Implementation:
+
 <Tabs>
 
-
-### JavaScript Implementation:
-    <TabItem value="js" label="JavaScript">
-    <SolutionAuthor name="@ajay-dhangar"/>
+<TabItem value="js" label="JavaScript">
+<SolutionAuthor name="@ajay-dhangar"/>
 
 ```JavaScript
     var findMedianSortedArrays = function(nums1, nums2) {
@@ -188,13 +188,13 @@ function medianOfTwoSortedArraysProblem() {
         throw new Error("Input arrays are not sorted.");
     };
 
-    </TabItem>
+</TabItem>
 ```
 
-### Python Implementation: 
+### Python Implementation:
+<TabItem value="py" label="Python">
+<SolutionAuthor name="@ajay-dhangar"/>
 
-    <TabItem value="py" label="Python">
-    <SolutionAuthor name="@ajay-dhangar"/>
 ```Python
     class Solution:
         def findMedianSortedArrays(self, nums1, nums2):
@@ -229,12 +229,13 @@ function medianOfTwoSortedArraysProblem() {
                     else: min_of_right = min(nums1[i], nums2[j])
 
                     return (max_of_left + min_of_right) / 2.0
-````
+```
+
 </TabItem>
 
 ### Java Implemnetation:
-    <TabItem value="java" label="Java">
-    <SolutionAuthor name="@ajay-dhangar"/>
+<TabItem value="java" label="Java">
+<SolutionAuthor name="@ajay-dhangar"/>
 
 ```Java
    class Solution {
@@ -277,14 +278,13 @@ function medianOfTwoSortedArraysProblem() {
    }
 
 ```
- </TabItem>
+</TabItem>
 
 ### CPP Implementation:
+<TabItem value="cpp" label="C++">
+<SolutionAuthor name="@ajay-dhangar"/>
 
-    <TabItem value="cpp" label="C++">
-    <SolutionAuthor name="@ajay-dhangar"/>
-
-````cpp
+```cpp
     class Solution {
     public:
         double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
@@ -322,13 +322,12 @@ function medianOfTwoSortedArraysProblem() {
             throw invalid_argument("Input arrays are not sorted.");
         }
     };
-    ```
+```
 </TabItem>
 
-### C Implementation:
-
-    <TabItem value="c" label="C">
-    <SolutionAuthor name="@ajay-dhangar"/>
+ ### C Implementation:
+<TabItem value="c" label="C">
+<SolutionAuthor name="@ajay-dhangar"/>
 
 ```C
     double findMedianSortedArrays(int* nums1, int nums1Size, int* nums2, int nums2Size) {
@@ -370,13 +369,13 @@ function medianOfTwoSortedArraysProblem() {
 
         return -1;
     }
-    ```
-    </TabItem>
+```
+</TabItem>
 
 ### TypeScript Implementation:
+<TabItem value="ts" label="TypeScript">
+<SolutionAuthor name="@ajay-dhangar"/>
 
-    <TabItem value="ts" label="TypeScript">
-    <SolutionAuthor name="@ajay-dhangar"/>
 ```ts
     function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
         if (nums1.length > nums2.length) {
@@ -412,10 +411,8 @@ function medianOfTwoSortedArraysProblem() {
 
         throw new Error("Input arrays are not sorted.");
     }
-    ```
-    </TabItem>
-
-</Tabs>
+```
+</TabItem>
 
 ### Complexity Analysis
 
@@ -433,8 +430,8 @@ Input: nums1 = [1, 3], nums2 = [2]
 Output: 2.00000
 Explanation: merged array = [1, 2, 3] and median is 2.
 ````
-
 </TabItem>
+
 <TabItem value="TestCase2" label="Case 2">
 ```plaintext
 Input: nums1 = [1, 2], nums2 = [3, 4]
@@ -443,7 +440,6 @@ Explanation: merged array = [1, 2, 3, 4] and median is (2 + 3) / 2 = 2.5.
 ```
  </TabItem>
 </Tabs>
-</tabItem>
 
 <tabItem value="Divide and Conquer" label="Divide and Conquer">
   
@@ -522,8 +518,8 @@ function medianOfTwoSortedArraysProblem() {
 
 <Tabs>
 
-    <TabItem value="js" label="JavaScript">
-    <SolutionAuthor name="@ajay-dhangar"/>
+<TabItem value="js" label="JavaScript">
+<SolutionAuthor name="@ajay-dhangar"/>
 
 ```js
     var findMedianSortedArrays = function(nums1, nums2) {
@@ -553,11 +549,12 @@ function medianOfTwoSortedArraysProblem() {
                     getKth(nums1, nums2, Math.floor(len / 2) + 1)) / 2;
         }
     };
-    ```
-    </TabItem>
 
-    <TabItem value="py" label="Python">
-    <SolutionAuthor name="@ajay-dhangar"/>
+ ```
+</TabItem>
+    
+<TabItem value="py" label="Python">
+<SolutionAuthor name="@ajay-dhangar"/>
 
 ```python
     class Solution:
@@ -584,11 +581,11 @@ function medianOfTwoSortedArraysProblem() {
             else:
                 return (getKth(nums1, nums2, len_combined // 2) +
                         getKth(nums1, nums2, len_combined // 2 + 1)) / 2
-    ```
-    </TabItem>
+```
+</TabItem>
 
-    <TabItem value="java" label="Java">
-    <SolutionAuthor name="@ajay-dhangar"/>
+<TabItem value="java" label="Java">
+<SolutionAuthor name="@ajay-dhangar"/>
 
 ```java
     class Solution {
@@ -632,11 +629,12 @@ function medianOfTwoSortedArraysProblem() {
             }
         }
     }
-    ```
-    </TabItem>
+```
+</TabItem>
 
-    <TabItem value="cpp" label="C++">
-    <SolutionAuthor name="@ajay-dhangar"/>
+<TabItem value="cpp" label="C++">
+<SolutionAuthor name="@ajay-dhangar"/>
+
 ```cpp
     class Solution {
     public:
@@ -719,11 +717,13 @@ function medianOfTwoSortedArraysProblem() {
             return getKth(nums1 + i, nums1Size - i, nums2, nums2Size, k - i);
         }
     }
-    ```
-    </TabItem>
-    <TabItem value="ts" label="TypeScript">
-    <SolutionAuthor name="@ajay-dhangar"/>
-    ```ts
+```
+</TabItem>
+
+<TabItem value="ts" label="TypeScript">
+<SolutionAuthor name="@ajay-dhangar"/>
+
+```ts
     function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
         const getKth = (nums1: number[], nums2: number[], k: number): number => {
             if (nums1.length > nums2.length) return getKth(nums2, nums1, k);
@@ -751,9 +751,8 @@ function medianOfTwoSortedArraysProblem() {
             );
         }
     }
-    ```
-    </TabItem>
-
+```
+</TabItem>
 </Tabs>
 
 ### Complexity Analysis
@@ -771,7 +770,8 @@ Let's test the solution with the sample test cases:
 Input: nums1 = [1, 3], nums2 = [2]
 Output: 2.00000
 Explanation: merged array = [1, 2, 3] and median is 2.
-```
+````
+
 </TabItem>
 <TabItem value="TestCase2" label="Case 2">
 ```plaintext
