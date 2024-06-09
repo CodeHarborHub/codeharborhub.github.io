@@ -13,9 +13,9 @@ description: "This document provides a solution where we return the minimum cost
 ---
 ## Problem
 
-You are given two groups of points where the first group has size1 points, the second group has size2 points, and size1 >= size2.
+You are given two groups of points where the first group has $size1$ points, the second group has $size2$ points, and $size1 >= size2$.
 
-The cost of the connection between any two points are given in an size1 x size2 matrix where cost[i][j] is the cost of connecting point i of the first group and point j of the second group. The groups are connected if each point in both groups is connected to one or more points in the opposite group. In other words, each point in the first group must be connected to at least one point in the second group, and each point in the second group must be connected to at least one point in the first group.
+The cost of the connection between any two points are given in an $size1$ x $size2$ matrix where cost[i][j] is the cost of connecting point i of the first group and point j of the second group. The groups are connected if each point in both groups is connected to one or more points in the opposite group. In other words, each point in the first group must be connected to at least one point in the second group, and each point in the second group must be connected to at least one point in the first group.
 
 ### Examples
 
@@ -94,7 +94,7 @@ There are four approaches discussed that helps to obtain the solution:
    - Use memoization to store and reuse results of subproblems to improve efficiency.
 
 4. **Base and Transition**:
-   - **Base Case:** If all points in the first group are processed (i == size1), calculate the cost to connect any remaining points in the second group that have not been connected.
+   - **Base Case:** If all points in the first group are processed (i == $size1$), calculate the cost to connect any remaining points in the second group that have not been connected.
      
    - **Transition:** For each point in the second group, update the bitmask and recursively calculate the minimum cost.
 
@@ -158,13 +158,13 @@ This problem can be solved using dynamic programming. The problem requires conne
 
 ### Complexity Analysis
 
-#### Time Complexity: O(size1 × 2^size2 x size2)
+#### Time Complexity: O($size1$ × $2^size2$ x $size2$)
 
-> **Reason**: There are 'size 1' points in the first group, and each point can potentially connect to any subset of the 'size2' points in the second group, leading to 2^size2 possible states for the bitmask. For each state, we iterate over all points in the second group, hence the additional factor of 'size2'.
+> **Reason**: There are $'size 1'$ points in the first group, and each point can potentially connect to any subset of the $'size2'$ points in the second group, leading to $'2^size2'$ possible states for the bitmask. For each state, we iterate over all points in the second group, hence the additional factor of $'size2'$
 
-#### Space Complexity: O(size1 × 2^size2)
+#### Space Complexity: O($size1$ × $2^size2$)
 
-> **Reason**: Additional space is used for the recursion stack, which is O(size1).
+> **Reason**: Additional space is used for the recursion stack, which is O($size1$).
 
 # References
 
