@@ -53,9 +53,9 @@ function Dijkstra(Graph, source):
 
 ## Implementing Dijkstra's Algorithm
 
-### Python Implementation
-
-```python
+<Tabs>
+  <TabItem value="Python" label="Python">
+    ``` Python  showLineNumbers
 import heapq
 
 def dijkstra(graph, start):
@@ -96,11 +96,13 @@ graph = {
 }
 
 print(shortest_path(graph, 'A', 'D'))
+
 ```
+</TabItem>
 
-### Java Implementation
+<TabItem value="Java" label="Java">
 
-```java
+``` jsx showLineNumbers
 import java.util.*;
 
 public class Dijkstra {
@@ -170,11 +172,12 @@ public class Dijkstra {
         }
     }
 }
+
 ```
+</TabItem>
 
-### C++ Implementation
-
-```cpp
+<TabItem value="Cpp" label="Cpp">
+```cpp showLineNumbers
 #include <iostream>
 #include <vector>
 #include <unordered_map>
@@ -248,11 +251,12 @@ int main() {
     cout << endl;
     return 0;
 }
+
 ```
+</TabItem>
 
-### JavaScript Implementation
-
-```javascript
+<TabItem value="JavaScript" label="JavaScript">
+```jsx showLineNumbers
 function dijkstra(graph, start) {
     let distances = {};
     let previousNodes = {};
@@ -328,7 +332,10 @@ let graph = {
 };
 
 console.log(shortestPath(graph, 'A', 'D'));
+
 ```
+</TabItem>
+</Tabs>
 
 ## Applications of Dijkstra's Algorithm
 

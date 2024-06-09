@@ -65,9 +65,9 @@ Hashing is the process of converting input data (keys) into a fixed-size integer
 
 ## Implementing Hash Tables
 
-### Python Implementation
-
-```python
+<Tabs>
+<TabItem value="Python" label="Python">
+```Python showLineNumbers
 class HashTable:
     def __init__(self, size):
         self.size = size
@@ -105,11 +105,12 @@ ht.insert("banana", 2)
 print(ht.lookup("apple"))  # Output: 1
 ht.delete("apple")
 print(ht.lookup("apple"))  # Output: None
+
 ```
+</TabItem>
 
-### Java Implementation
-
-```java
+<TabItem value="Java" label="Java">
+```jsx showLineNumbers
 import java.util.LinkedList;
 
 class HashTable<K, V> {
@@ -173,11 +174,11 @@ class HashTable<K, V> {
         System.out.println(ht.lookup("apple"));  // Output: null
     }
 }
+
 ```
-
-### C++ Implementation
-
-```cpp
+</TabItem>
+<TabItem value="Cpp" label="Cpp">
+```cpp showLineNumbers
 #include <iostream>
 #include <list>
 #include <vector>
@@ -233,11 +234,12 @@ int main() {
     cout << ht.lookup("apple") << endl;  // Output: -1
     return 0;
 }
+
 ```
+</TabItem>
 
-### JavaScript Implementation
-
-```javascript
+<TabItem value="JavaScript" label="JavaScript">
+```jsx showLineNumbers
 class HashTable {
     constructor(size) {
         this.size = size;
@@ -287,7 +289,10 @@ ht.delete("apple");
 console.log(ht.lookup("apple")); 
 
  // Output: null
+
 ```
+</TabItem>
+</Tabs>
 
 ## Time Complexity Analysis
 
