@@ -79,17 +79,6 @@ The code aims to reverse nodes in a linked list in groups of $k$. It first check
 
 ### Solution Code
 
-#### Python
-
-```py
-
-```
-
-#### Java
-
-```java
-
-```
 
 #### C++
 
