@@ -194,7 +194,7 @@ class Solution {
 
 ✔ The time complexity of the backtracking algorithm is typically exponential, but in practice, it tends to be much less than the worst case.
 
-✔ Therefore, we often express the time complexity of backtracking algorithms using Big O notation as O(b^d), where b is the branching factor (average number of choices at each decision point) and d is the depth of the recursion tree.
+✔ Therefore, we often express the time complexity of backtracking algorithms using Big O notation as $O(b^d)$, where b is the branching factor (average number of choices at each decision point) and d is the depth of the recursion tree.
 
 ✅ Space Complexity:
 
@@ -202,4 +202,4 @@ class Solution {
 
 ✔ In the worst case, the depth of the recursion tree can be equal to the number of empty cells on the Sudoku board.
 
-✔ Therefore, the space complexity is O(bd), where b is the branching factor and d is the depth of the recursion tree.
+✔ Therefore, the space complexity is $O(bd)$, where b is the branching factor and d is the depth of the recursion tree.
