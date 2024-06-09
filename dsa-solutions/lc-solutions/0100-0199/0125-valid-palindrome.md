@@ -36,8 +36,7 @@ Explanation: "raceacar" is not a palindrome.
 ```
 
 ### Constraints
-- 1 <= s.length <= 2 * 105
-- s consists only of printable ASCII characters.
+-  $1 \leq s.length \leq 2 \times 105$
 
 ## Solution for Valid Palindrome Problem
 
