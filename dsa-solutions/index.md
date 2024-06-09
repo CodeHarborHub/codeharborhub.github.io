@@ -31,7 +31,7 @@ In this section, you will learn about the solutions of the problems of Data Stru
 - [Bit Manipulation](#): Bit Manipulation is the act of algorithmically manipulating bits or binary digits.
 - [Graph Algorithms](#): Graph Algorithms are algorithms that operate on graphs to solve problems.
 - [Mathematical Algorithms](#): Mathematical Algorithms are algorithms that solve mathematical problems.
-- [String Algorithms](#): String Algorithms are algorithms that operate on strings to solve problems.
+- [String Algorithms](../dsa/category/string-algorithms): String Algorithms are algorithms that operate on strings to solve problems.
 
 ## Problems
 
