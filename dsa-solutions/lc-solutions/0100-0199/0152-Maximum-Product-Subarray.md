@@ -40,7 +40,7 @@ Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
 
 - $1 <= nums.length <= 2 * 10**4$
 - $10 <= nums[i] <= 10$
-- $The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.$
+- The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
 
 
 #### Code in Different Languages
@@ -148,9 +148,7 @@ public:
 </Tabs>
 
 
-</TabItem>
 
-</Tabs>
 
 ## References
 
