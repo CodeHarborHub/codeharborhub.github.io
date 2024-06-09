@@ -275,18 +275,18 @@ function sort( arr)
 
 ## 8. Complexity Analysis
 
-- Time Complexity: O(N log N)
-- Auxiliary Space: O(log n), due to the recursive call stack. However, auxiliary space can be O(1) for iterative implementation.
+- Time Complexity: $O(N log N)$
+- Auxiliary Space: $O(log n)$, due to the recursive call stack. However, auxiliary space can be $O(1)$ for iterative implementation.
 
 ## 9. Advantages and Disadvantages
 
 **Advantages:**
-- **Efficient Time Complexity**: Heap Sort has a time complexity of O(n log n) in all cases. This makes it efficient for sorting large datasets. The log n factor comes from the height of the binary heap, and it ensures that the algorithm maintains good performance even with a large number of elements.
+- **Efficient Time Complexity**: Heap Sort has a time complexity of $O(n log n)$ in all cases. This makes it efficient for sorting large datasets. The log n factor comes from the height of the binary heap, and it ensures that the algorithm maintains good performance even with a large number of elements.
 - **Memory Usage** – Memory usage can be minimal (by writing an iterative heapify() instead of a recursive one). So apart from what is necessary to hold the initial list of items to be sorted, it needs no additional memory space to work
 - **Simplicity** –  It is simpler to understand than other equally efficient sorting algorithms because it does not use advanced computer science concepts such as recursion.
 
 **Disadvantages:**
-- **Costly**: Heap sort is costly as the constants are higher compared to merge sort even if the time complexity is O(n Log n) for both.
+- **Costly**: Heap sort is costly as the constants are higher compared to merge sort even if the time complexity is $O(n Log n)$ for both.
 - **Unstable**: Heap sort is unstable. It might rearrange the relative order.
 - **Efficiency**: Heap Sort is not very efficient when working with highly complex data. 
 
