@@ -77,7 +77,7 @@ SQL clauses are used to specify various conditions and constraints in SQL statem
       ON table1.column = table2.column;
       ```
 
-# SQL Operators
+## SQL Operators
 
 SQL operators are used to perform operations on data. Here are some of the most commonly used operators:
 
@@ -199,3 +199,5 @@ SQL operators are used to perform operations on data. Here are some of the most 
     FROM table_name
     WHERE column IS NOT NULL;
     ```
+
+This covers the basic SQL clauses and operators, which are essential for writing effective SQL queries. By mastering these elements, you can perform complex data manipulations and retrieve valuable insights from your database.
