@@ -2,11 +2,7 @@
 id: max-number-of-k-sum-pairs
 title: Max Number of K-Sum Pairs (Leetcode)
 sidebar_label: 0082-MaxNumberofK-SumPairs
-description: You are given an integer array nums and an integer k.
-
-In one operation, you can pick two numbers from the array whose sum equals k and remove them from the array.
-
-Return the maximum number of operations you can perform on the array.
+description: You are given an integer array nums and an integer k.In one operation, you can pick two numbers from the array whose sum equals k and remove them from the array.Return the maximum number of operations you can perform on the array.
 ---
 
 ## Problem Description
@@ -54,7 +50,6 @@ There are no more pairs that sum up to $6$, hence a total of $1$ operation.
 ### Intuition
 
 The code finds the maximum number of pairs in nums that sum to $k$ by first sorting the array and then using the two-pointer technique. Pointers start and end check pairs: if their sum equals $k$, the count is incremented and both pointers move inward. If the sum is greater than $k$, end moves left; if less, start moves right. This approach efficiently identifies pairs with a sum of $k$ in $O(nlog⁡n)$ time due to sorting and $O(n)$ time for the two-pointer traversal.
-
 
 ### Approach
 
