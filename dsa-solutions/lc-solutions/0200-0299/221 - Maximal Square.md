@@ -1,5 +1,5 @@
 ---
-id: Maximal Square
+id: maximal-square
 title: Maximal Square
 sidebar_label: 221 Maximal Square
 tags:
@@ -12,7 +12,7 @@ description: "This document provides a solution where we find the largest square
 
 ## Problem
 
-You are given an m x n binary $matrix$ filled with $0's$ and $1's$, find the largest square containing only $1's$ and return its area.
+You are given an m x n binary $matrix$ filled with 0's and 1's, find the largest square containing only 1's and return its area.
 
 ### Examples
 
@@ -43,7 +43,7 @@ You are given an m x n binary $matrix$ filled with $0's$ and $1's$, find the lar
 - $m == matrix.length$
 - $n == matrix[i].length$
 - $1 <= m, n <= 300$
-- $matrix[i][j]$ $is$ $'0'$ $or$ $'1'$
+- $matrix[i][j]$ is $0$ or $1$
 
 ---
 ## Approach
@@ -56,7 +56,7 @@ There are four approaches discussed that helps to obtain the solution:
 
 2. **Transition**:
      
-   - If **'matrix[i][j]'** is $'1'$:
+   - If **'matrix[i][j]'** is $1$:
      -  If **'i'** or **'j'** is $0$ (first row or first column), **'dp[i][j]'** is $1$ because the largest square ending there can only be of $size1$.
      
      -  Otherwise, **'dp[i][j]'** is the minimum of **'dp[i-1][j]'**, **'dp[i][j-1]'**, and **'dp[i-1][j-1]'** plus $1$. This is because we can form a larger square only if all three adjacent squares can also form squares of $1's$.
@@ -119,7 +119,7 @@ class Solution {
 
 > **Reason**: The algorithm involves iterating through each cell of the matrix once, leading to a time complexity of $𝑂(𝑚 × 𝑛)$, where $𝑚$ is the number of rows and $𝑛$ is the number of columns.
 
-#### Space Complexity: O($m$ × $n2$)
+#### Space Complexity: O($m$ × $n$)
 
 > **Reason**: The space complexity is $𝑂(𝑚 × 𝑛)$ due to the additional DP array used. This could be optimized to $O(n)$ by reusing a single row of DP values, but in the given solution, we use a full 2D DP array.
 
