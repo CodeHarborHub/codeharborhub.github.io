@@ -118,15 +118,13 @@ class Solution {
 #### Time Complexity: O($m$ x $n$)
 
 > **Reason**: The algorithm involves iterating through each cell of the matrix once, leading to a time complexity of $𝑂(𝑚 × 𝑛)$, where $𝑚$ is the number of rows and $𝑛$ is the number of columns.
->
-> # References
+
+#### Space Complexity: O($m$ × $n2$)
+
+> **Reason**: The space complexity is $𝑂(𝑚 × 𝑛)$ due to the additional DP array used. This could be optimized to $O(n)$ by reusing a single row of DP values, but in the given solution, we use a full 2D DP array.
+
+# References
 
 - **LeetCode Problem:** [Maximal Square](https://leetcode.com/problems/maximal-square/description/)
 - **Solution Link:** [Maximal Square Solution on LeetCode](https://leetcode.com/problems/maximal-square/solutions/)
 - **Authors LeetCode Profile:** [Vivek Vardhan](https://leetcode.com/u/vivekvardhan43862/)
->
-> #### Space Complexity: O($m$ × $n2$)
-
-> **Reason**: The space complexity is $𝑂(𝑚 × 𝑛)$ due to the additional DP array used. This could be optimized to $O(n)$ by reusing a single row of DP values, but in the given solution, we use a full 2D DP array.
->
-> 
