@@ -5,7 +5,7 @@ sidebar_label: 0020-valid-parentheses
 tags:
   - Stack
 
-description: Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+description: "Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid."
 ---
 
 ## Problem Description
@@ -43,8 +43,8 @@ An input string is valid if:
 
 ### Constraints
 
-- `1 <= s.length <= 104`
-- `s consists of parentheses only '()[]{}'.`
+- $1 <= s.length <= 104$
+- $s consists of parentheses only '()[]{}'.$
 
 ### Approach
 

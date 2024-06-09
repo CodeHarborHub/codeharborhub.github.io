@@ -4,7 +4,7 @@ title: 4Sum (LeetCode)
 sidebar_label: 0018-FourSum
 tags:
   - Two Pointers
-description: Given an array nums of n integers, return an array of all the unique quadruplets [nums[a], nums[b], nums[c], nums[d]]
+description: "Given an array nums of n integers, return an array of all the unique quadruplets [nums[a], nums[b], nums[c], nums[d]]"
 ---
 
 ## Problem Description
@@ -37,9 +37,9 @@ You may return the answer in any order.
 
 ### Constraints
 
-- `1 <= nums.length <= 200`
-- `-10^9 <= nums[i] <= 10^9`
-- `-10^9 <= target <= 10^9`
+- $1 <= nums.length <= 200$
+- $-10^9 <= nums[i] <= 10^9$
+- $-10^9 <= target <= 10^9$
 
 ### Approach
 
