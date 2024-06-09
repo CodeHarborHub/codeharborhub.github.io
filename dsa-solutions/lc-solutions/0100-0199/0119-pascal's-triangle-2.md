@@ -33,7 +33,7 @@ Output: 1
 
 ### Constraints
 
-- $ 0 <= rowIndex <= 33$
+- $0 <= rowIndex <= 33$
 
 ---
 
