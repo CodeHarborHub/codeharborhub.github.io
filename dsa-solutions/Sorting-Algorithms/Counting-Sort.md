@@ -56,8 +56,8 @@ Output: [1, 2, 3, 4, 4, 5, 5, 6, 7, 8]
 
 ## 6. Constraints
 
-- $The array can have any number of elements.$
-- $All elements in the array are non-negative integers.$
+- The array can have any number of elements.
+- All elements in the array are non-negative integers.
 
 ## 7. Implementation
 
@@ -98,12 +98,12 @@ public class CountingSort {
 ## 8. Complexity Analysis
 
 - **Time Complexity**:
-  - Best case: O(n + k)
-  - Average case: O(n + k)
-  - Worst case: O(n + k)
+  - Best case: $O(n + k)$  
+  - Average case: $O(n + k)$  
+  - Worst case: $O(n + k)$
   - where (n) is the number of elements in the input array and (k) is the range of the input.
 
-- **Space Complexity**: O(n + k)
+- **Space Complexity**: $O(n + k)$
 
 ## 9. Advantages and Disadvantages
 
