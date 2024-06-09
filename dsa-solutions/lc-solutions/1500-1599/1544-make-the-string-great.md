@@ -38,8 +38,8 @@ Notice that an empty string is also good.
 
 #### Example 2
 
-- **Input:** $s = "abBAcC"$
-- **Output:** $""$
+- **Input:** s = "abBAcC"
+- **Output:** ""
 - **Explanation:** We have many possible scenarios, and all lead to the same answer. For example:</br>
 "abBAcC" --> "aAcC" --> "cC" --> ""
 "abBAcC" --> "abBA" --> "aA" --> ""
