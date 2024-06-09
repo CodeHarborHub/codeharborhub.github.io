@@ -40,7 +40,7 @@ Notice that an empty string is also good.
 
 - **Input:** s = "abBAcC"
 - **Output:** ""
-- **Explanation:** We have many possible scenarios, and all lead to the same answer. For example:</br>
+- **Explanation:** We have many possible scenarios, and all lead to the same answer. For example: <br />
 "abBAcC" --> "aAcC" --> "cC" --> ""
 "abBAcC" --> "abBA" --> "aA" --> ""
 
