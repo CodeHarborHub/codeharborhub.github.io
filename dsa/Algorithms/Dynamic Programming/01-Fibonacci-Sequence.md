@@ -8,8 +8,7 @@ description: In this tutorial, we will learn about the Fibonacci sequence and it
 
 # Fibonacci Sequence using Dynamic Programming
 
-The Fibonacci sequence is a classic example that can be efficiently solved using dynamic programming. <br> 
-The Fibonacci sequence is defined as:
+The Fibonacci sequence is a classic example that can be efficiently solved using dynamic programming. The Fibonacci sequence is defined as:
 $[ F(n) = F(n-1) + F(n-2) ]$
 with the base cases:
 $[ F(0) = 0, F(1) = 1 ]$
@@ -106,7 +105,6 @@ public class Fibonacci {
         System.out.println("Fibonacci number at position " + n + " is: " + fibonacci_dp(n));
     }
 }
-
 ```
 ### C++ Implementation
 
