@@ -30,9 +30,9 @@ Given two integer arrays preorder and inorder where preorder is the preorder tra
 
 ### Constraints
 
-- 1 <= preorder.length <= 3000
-- inorder.length == preorder.length
-- -3000 <= preorder[i], inorder[i] <= 3000
+- $1 \leq \text{preorder.length} \leq 3000$
+- $\text{inorder.length} == \text{preorder.length}$
+- $-3000 \leq \text{preorder}[i], \text{inorder}[i] \leq 3000$
 - preorder and inorder consist of unique values.
 - Each value of inorder also appears in preorder.
 - preorder is guaranteed to be the preorder traversal of the tree.
