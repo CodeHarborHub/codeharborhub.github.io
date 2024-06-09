@@ -2,7 +2,7 @@
 id: sql-aggregate-function
 title: DBMS - SQL Aggregate Functions
 sidebar_label: Aggregate Functions
-sidebar_position: 4
+sidebar_position: 3
 description: Learn about the SQL Aggregate Functions.
 tags:
   - DBMS
