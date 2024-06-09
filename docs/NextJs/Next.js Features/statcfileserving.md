@@ -1,5 +1,5 @@
 ---
-id: Static File Serving
+id: featuers-staticFileserving
 title: Next.js - Static File Serving
 sidebar_label: Next.js - Static File Serving
 sidebar_position: 2

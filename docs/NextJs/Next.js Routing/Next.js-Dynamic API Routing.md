@@ -1,5 +1,5 @@
 ---
-id:  Dynamic API Routing
+id:  Routing-DynamicAPIRouting
 title: Dynamic API Routing
 sidebar_label: Next.js Dynamic API Routing
 sidebar_position: 2

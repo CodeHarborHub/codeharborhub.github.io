@@ -1,5 +1,5 @@
 ---
-id: Imperative Routing
+id: routing-ImperativeRouting
 title: Next.js - Imperative Routing
 sidebar_label: Next.js - Next.js - Imperative Routing
 sidebar_position: 3

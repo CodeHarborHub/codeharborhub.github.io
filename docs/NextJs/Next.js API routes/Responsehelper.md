@@ -1,5 +1,5 @@
 ---
-id:  Response Helpers
+id:  api-Responsehelpers
 title: Next.js - Next.js - Response Helpers
 sidebar_label: Next.js - Next.js - Response Helpers
 sidebar_position: 3

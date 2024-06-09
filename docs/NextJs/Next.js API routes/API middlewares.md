@@ -1,5 +1,5 @@
 ---
-id: API MiddleWares
+id: api-middlewares
 title: Next.js-API MiddleWares
 sidebar_label: Next.js - API MiddleWares
 sidebar_position: 2

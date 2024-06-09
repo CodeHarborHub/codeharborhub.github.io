@@ -1,5 +1,5 @@
 ---
-id: Api Routes
+id: api-routes
 title: Next.js - Api Routes
 sidebar_label: Next.js - Api Routes
 sidebar_position: 1

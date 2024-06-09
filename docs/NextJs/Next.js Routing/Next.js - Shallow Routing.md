@@ -1,5 +1,5 @@
 ---
-id: Shallow Routing
+id: routing-ShallowRouting
 title: Next.js - Shallow Routing
 sidebar_label: Next.js - Shallow Routing
 sidebar_position: 4

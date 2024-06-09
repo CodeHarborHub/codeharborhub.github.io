@@ -1,5 +1,5 @@
 ---
-id: pages
+id: features-pages
 title: Next.js Features - Page
 sidebar_label: Next.js Features - Page
 sidebar_position: 1

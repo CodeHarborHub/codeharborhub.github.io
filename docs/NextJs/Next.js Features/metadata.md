@@ -1,5 +1,5 @@
 ---
-id: Next.js - Meta Data
+id: features-metadata
 title: Next.js - Meta Data
 sidebar_label: Next.js - Next.js - Meta Data
 sidebar_position: 3
