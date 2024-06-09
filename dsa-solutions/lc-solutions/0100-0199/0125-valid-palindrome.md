@@ -14,7 +14,9 @@ description: "This is a solution to the Valid Palindrome problem on LeetCode."
 
 ## Problem Description
 
-Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
+A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
+
+Given a string s, return true if it is a palindrome, or false otherwise.
 
 ### Examples
 
@@ -27,7 +29,6 @@ Explanation: "amanaplanacanalpanama" is a palindrome.
 ```
 
 **Example 2:**
-
 ```
 Input: "race a car"
 Output: false
@@ -35,9 +36,7 @@ Explanation: "raceacar" is not a palindrome.
 ```
 
 ### Constraints
-
-- The input string may consist of uppercase and lowercase letters, digits, and punctuation symbols.
-- The empty string is considered a valid palindrome.
+-  $1 \leq s.length \leq 2 \times 105$
 
 ## Solution for Valid Palindrome Problem
 
@@ -51,73 +50,60 @@ Explanation: "raceacar" is not a palindrome.
 The brute force approach involves stripping non-alphanumeric characters from the string and then checking if the resulting string is a palindrome by comparing it with its reverse.
 
 #### Implementation
-
-```jsx live
-function ValidPalindromeTwoPointer() {
-  const isPalindrome = function (s) {
-    if (!s) return true;
-    let left = 0,
-      right = s.length - 1;
-    while (left < right) {
-      while (left < right && !s[left].match(/[a-zA-Z0-9]/)) left++;
-      while (left < right && !s[right].match(/[a-zA-Z0-9]/)) right--;
-      if (s[left].toLowerCase() !== s[right].toLowerCase()) return false;
-      left++;
-      right--;
-    }
-    return true;
-  };
-
-  const input = "A man, a plan, a canal: Panama";
-  const output = isPalindrome(input);
-
-  return (
-    <div>
-      <p>
-        <b>Input:</b> {input}
-      </p>
-      <p>
-        <b>Output:</b> {output.toString()}
-      </p>
-    </div>
-  );
-}
-```
-
 #### Code in Different Languages
 
-<Tabs>
-  <TabItem value="JavaScript" label="JavaScript">
-  <SolutionAuthor name="@Vipullakum007"/>
-   ```javascript
-    function isPalindrome(s) {
-        if (!s) return true;
-        const cleanedS = s.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
-        return cleanedS === cleanedS.split('').reverse().join('');
+```
+// JAVA
+
+class Solution {
+    public boolean isPalindrome(String s) {
+        String str = s.toLowerCase();
+        str = str.replaceAll("\\s",""); // remove all space in string
+        str = str.replaceAll("[^a-z0-9]",""); // remove all non-alphanumerical
+        int i=0,j=str.length()-1;
+        while(i<j){
+            char ch = str.charAt(i);
+            char ch1 = str.charAt(j);
+            if(ch==ch1){
+                i++;
+                j--;
+            }
+            else return false;
+        }
+        return true;
     }
-    ```
+ } 
 
-  </TabItem>
-  <TabItem value="TypeScript" label="TypeScript">
-  <SolutionAuthor name="@Vipullakum007"/> 
-   ```typescript
-    function isPalindrome(s: string): boolean {
-        if (!s) return true;
-        const cleanedS = s.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
-        return cleanedS === cleanedS.split('').reverse().join('');
+```
+```
+//Java-script
+
+   var isPalindrome = function(s){
+    let left = 0, right = s.length - 1;
+    while (left < right) {
+        if (!isAlphaNumeric(s[left]))
+            left++;
+        else if (!isAlphaNumeric(s[right]))
+            right--;
+        else if (s[left].toLowerCase() !== s[right].toLowerCase())
+            return false;
+        else {
+            left++;
+            right--;
+        }
     }
+    return true;
+}
 
-    const input: string = "A man, a plan, a canal: Panama";
-    const output: boolean = isPalindrome(input);
+function isAlphaNumeric(char) {
+    const code = char.charCodeAt(0);
+    return (code >= 48 && code <= 57) || (code >= 65 && code <= 90) || (code >= 97 && code <= 122);
+}
+ ```
 
-    console.log("Input:", input);
-    console.log("Output:", output);
-    ```
+   ```
+   //python
 
-  </TabItem>
-  <TabItem value="Python" label="Python">
-  <SolutionAuthor name="@Vipullakum007"/>
-   ```python
     def is_palindrome(s: str) -> bool:
       if not s:
           return True
@@ -130,12 +116,11 @@ function ValidPalindromeTwoPointer() {
       print("Input:", input_str)
       print("Output:", output)
 
-    ```
+```
 
-  </TabItem>
-  <TabItem value="Java" label="Java">
-  <SolutionAuthor name="@Vipullakum007"/>
-   ```java
+
+   ```
+   //java
     class Solution {
         public boolean isPalindrome(String s) {
             if (s == null || s.isEmpty()) {
@@ -148,10 +133,9 @@ function ValidPalindromeTwoPointer() {
     }
     ```
 
-  </TabItem>
-  <TabItem value="C++" label="C++">
-  <SolutionAuthor name="@Vipullakum007"/>
-   ```cpp
+   ```
+   //cpp
+
     class Solution {
     public:
         bool isPalindrome(string s) {
@@ -172,10 +156,9 @@ function ValidPalindromeTwoPointer() {
             return cleanedS == reversedS;
         }
     };
+
     ```
 
-  </TabItem>
-</Tabs>
 
 #### Complexity Analysis
 
@@ -320,6 +303,55 @@ function ValidPalindromeBruteForce() {
     ```
 
   </TabItem>
+   <TabItem value="java" label="java">
+  <SolutionAuthor name="@parikhitkurmi"/>
+   ```java
+   class Solution {
+    public boolean isPalindrome(String s) {
+
+        String ans = "";
+
+        for(int i =0; i < s.length();i++){
+
+            //Check if charAt(i) is between 'A' to 'Z' then convert it to lower case and add it to ans
+
+            if(s.charAt(i) >= 'A' && s.charAt(i) <= 'Z'){
+                ans += Character.toLowerCase(s.charAt(i));
+            }
+
+            //Check if charAt(i) is between 'a' to 'z' then add it to ans
+
+            else if(s.charAt(i) >= 'a' && s.charAt(i) <= 'z'){
+                ans += s.charAt(i);
+            }
+
+             //Check if charAt(i) is between '1' to '9' then add it to ans
+
+            else if(s.charAt(i) >= '0' && s.charAt(i) <= '9'){
+                ans += s.charAt(i);
+            }
+        }
+
+        //Now Reverse the ans string 
+
+        String ans2 = "";
+
+        for(int i = 0; i < ans.length();i++){
+
+            ans2 = ans.charAt(i) + ans2;
+        }
+
+        //after reversing check if ans is equal to ans2 then it is a palindrome string
+
+        if(ans.equals(ans2)){
+            return true;
+        }
+        return false;
+    }
+}
+    ```
+
+  </TabItem>
 </Tabs>
 
 #### Complexity Analysis
@@ -336,4 +368,4 @@ function ValidPalindromeBruteForce() {
 
 - **Solution Link**: [LeetCode Solution](https://leetcode.com/problems/valid-palindrome/solution/)
 
-- **Authors GeeksforGeeks Profile:** [Vipul lakum](https://leetcode.com/u/vipul_lakum_02/)
+
