@@ -7,5 +7,6 @@ description: Learn about the Structured Query language (SQL), its basic concepts
 tags:
   - DBMS
   - SQL
+  - SQL-Functions
   - Database Design
 ---
