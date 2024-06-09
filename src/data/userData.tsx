@@ -10,6 +10,15 @@ export const Users: User[] = [
     source: "https://github.com/Ajay-Dhangar/youtube_clone",
     tags: ["opensource", "clone", "favorite", "react"],
   },
+    {
+    title: "Spotify Clone",
+    description:
+      "Build and Deploy a Modern Spotify Clone Application in React JS with Material UI 5",
+    preview: require("./showcase/spotify.png"),
+    website: "https://spotifyclone234.freewebhostmost.com/",
+    source: "https://github.com/SadafKausar2025/Spotify-Clone",
+    tags: ["opensource", "clone", "favorite", "react"],
+  },
   {
     title: "Quiz App",
     description:
