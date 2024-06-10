@@ -1,4 +1,10 @@
-# Pseudo Classes 
+---
+id: pseudo-class-and-pseudo-elements
+title: Pseudo class and Pseudo elements
+sidebar_label: Pseudo class and Pseudo elements
+tags: [css, introduction, web development, markup language, hyper text, web pages, career opportunities, personal growth, web-development, web design, web pages, websites, career opportunities, contribute to the web, stay relevant, express yourself, learn other technologies, have fun,pseudo classes,pseudo elements]
+description: In this tutorial you will learn about Pseudo classes and Pseudo elements in CSS 
+---
 
 Pseudo-classes are used to define the special states of an element. They are typically prefixed with a colon (`:`).
 
@@ -103,7 +109,7 @@ div:nth-of-type(3)
 </style>
 </BrowserWindow>
 
-# Pseudo Elements
+## Pseudo Elements
 
 1. `::before` : Inserts content before an element's actual content.
 
