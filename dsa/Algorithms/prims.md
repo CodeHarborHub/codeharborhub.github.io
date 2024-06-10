@@ -45,11 +45,10 @@ function prim(graph, start):
     return MST
 ```
 
-## Implementation in Various Languages
+<Tabs>
+<TabItem value="Python" label="Python">
 
-### Python
-
-```python
+```python showLineNubmers
 import heapq
 
 def prim(graph, start):
@@ -79,11 +78,13 @@ graph = {
 
 mst = prim(graph, 'A')
 print(mst)  # Output: [('A', 'B', 1), ('B', 'D', 2), ('B', 'C', 3)]
+
 ```
+</TabItem>
 
-### Java
+<TabItem value="Java" label="Java">
 
-```java
+```jsx showLineNumbers
 import java.util.*;
 
 public class Prim {
@@ -131,11 +132,12 @@ public class Prim {
         }
     }
 }
+
 ```
+</TabItem>
 
-### C++
-
-```cpp
+<TabItem value="Cpp" label="Cpp">
+```cpp showLineNumbers
 #include <iostream>
 #include <vector>
 #include <queue>
@@ -191,11 +193,12 @@ int main() {
         cout << "[" << edge[0] << ", " << edge[1] << ", " << edge[2] << "]" << endl;  // Output: [0, 1, 1], [1, 3, 2], [1, 2, 3]
     }
 }
+
 ```
+</TabItem>
 
-### JavaScript
-
-```javascript
+<TabItem value="JavaScript" label="JavaScript">
+```jsx showLineNumbers
 class MinHeap {
     constructor() {
         this.heap = [];
@@ -297,7 +300,10 @@ const graph = {
 
 const mst = prim(graph, 'A');
 console.log(mst);  // Output: [['A', 'B', 1], ['B', 'D', 2], ['B', 'C', 3]]
+
 ```
+</TabItem>
+</Tabs>
 
 ## Example
 
