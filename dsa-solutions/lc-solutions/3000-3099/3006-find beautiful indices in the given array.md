@@ -18,12 +18,12 @@ You are given a 0-indexed string s, a string a, a string b, and an integer k.
 
 An index i is beautiful if:
 
-- 0 <= i <= s.length - a.length
-- s[i..(i + a.length - 1)] == a
+- $0 \leq i \leq \text{s.length} - \text{a.length}$
+- $s[i..(i + \text{a.length} - 1)] == a$
 - There exists an index j such that:
-- 0 <= j <= s.length - b.length
-- s[j..(j + b.length - 1)] == b
-- |j - i| <= k
+- $0 \leq j \leq \text{s.length} - \text{b.length}$
+- $s[j..(j + \text{b.length} - 1)] == b$
+- $|j - i| \leq k$
   Return the array that contains beautiful indices in sorted order from smallest to largest.
 
 ### Examples
@@ -178,8 +178,8 @@ vector<int> beautifulIndices(string s, string a, string b, int k) {
 
 #### Complexity Analysis
 
-- Time complexity: O(n), where n is the length of the string
-- Space complexity: O(n), where n is the length of the string
+- Time complexity: $O(n)$, where n is the length of the string
+- Space complexity: $O(n)$, where n is the length of the string
 
 - **LeetCode Problem**: [ Count Elements With Maximum Frequency](https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-i/description/)
 

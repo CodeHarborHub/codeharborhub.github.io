@@ -149,8 +149,8 @@ public:
 
 #### Complexity Analysis
 
-- Time complexity: O(n), where n is the total number of elements in both nums1 and nums2. Calculating the set intersection and differences takes linear time.
-- Space complexity: O(n), where n is the total number of elements in both nums1 and nums2. The space complexity is dominated by the sets n1 and n2, which store unique elements from the input arrays.
+- Time complexity: $O(n)$, where n is the total number of elements in both nums1 and nums2. Calculating the set intersection and differences takes linear time.
+- Space complexity: $O(n)$ , where n is the total number of elements in both nums1 and nums2. The space complexity is dominated by the sets n1 and n2, which store unique elements from the input arrays.
 
 - **LeetCode Problem**: [Maximum Size of a Set After Removals](]https://leetcode.com/problems/maximum-size-of-a-set-after-removals/description/)
 

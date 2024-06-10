@@ -149,11 +149,11 @@ public:
 #### Complexity Analysis
 
 - Time complexity:
-  O(n)
+  $O(n)$
   We only traverse through the array once
 
 - Space complexity:
-  O(1)
+  $O(1)$
   Since we just have 2 pointers
 
 - **LeetCode Problem**: [ Count Elements With Maximum Frequency](https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-i/description/)
