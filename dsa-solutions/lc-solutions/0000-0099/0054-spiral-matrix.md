@@ -132,9 +132,10 @@ int main() {
     return 0;
 }
 </TabItem>
-<TabItem value="java" label="Java">
-  <SolutionAuthor name="@Vipullakum007"/>
-  import java.util.ArrayList;
+```
+### JAVA
+```<TabItem value="java" label="Java"> <SolutionAuthor name="@Vipullakum007"/>
+import java.util.ArrayList;
 import java.util.List;
 
 public class SpiralMatrix {
@@ -185,8 +186,10 @@ public class SpiralMatrix {
     }
 }
 </TabItem>
-<TabItem value="python" label="Python">
-  <SolutionAuthor name="@Vipullakum007"/>
+```
+### Python
+
+```<TabItem value="python" label="Python"><SolutionAuthor name="@Vipullakum007"/>
   def spiralOrder(matrix):
     if not matrix:
         return []
@@ -228,15 +231,19 @@ matrix = [
 print(spiralOrder(matrix))  # Output: [1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7]
 
 </TabItem>
-</Tabs>
-Complexity Analysis
-Time Complexity: O(m * n)
-Reason: We visit every element in the matrix exactly once.
-
-Space Complexity: O(1)
-Reason: We only use a fixed amount of extra space, regardless of the input size.
-References
-LeetCode Problem: Spiral Matrix
-
-Author's LeetCode Profile: Vipul Lakum
 ```
+</Tabs>
+
+###  Complexity Analysis
+#### Time Complexity: O(m * n)
+**Reason:** We visit every element in the matrix exactly once.
+
+**Space Complexity:** O(1)
+**Reason:** We only use a fixed amount of extra space, regardless of the input size.
+### References
+**LeetCode Problem:** Spiral Matrix
+
+**Author's LeetCode Profile:** Vipul Lakum
+```
+
+
