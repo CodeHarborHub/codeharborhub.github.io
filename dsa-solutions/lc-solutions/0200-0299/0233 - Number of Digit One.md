@@ -111,13 +111,13 @@ class Solution {
 
 ### Complexity Analysis
 
-#### Time Complexity: O($\log_{10} n$)
+#### Time Complexity: $O(log_{10} n)$
 
-> **Reason**: The time complexity is O($\log_{10} n$), because we are processing each digit position from the least significant to the most significant, and the number of digit positions is logarithmic relative to the input size.
+> **Reason**: The time complexity is $O(log_{10} n)$, because we are processing each digit position from the least significant to the most significant, and the number of digit positions is logarithmic relative to the input size.
 
-#### Space Complexity: O($1$)
+#### Space Complexity: $O(1)$
 
-> **Reason**: The space complexity is O($1$), because we only use a constant amount of extra space regardless of the input size.
+> **Reason**: The space complexity is $O(1)$, because we only use a constant amount of extra space regardless of the input size.
 
 # References
 
