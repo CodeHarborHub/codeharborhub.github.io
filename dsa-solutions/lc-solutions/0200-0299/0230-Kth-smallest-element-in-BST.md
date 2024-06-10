@@ -1,5 +1,5 @@
 ---
-id: kth smallest element in binary search tree
+id: kth-smallest-element-in-binary-search-tree
 title: Kth Smallest Element in Binary Search Tree
 sidebar_label: 0230 Kth Smallest Element in Binary Search Tree
 tags:
@@ -34,8 +34,8 @@ Output: 3
 ### Constraints
 
 - The number of nodes in the tree is n.
-- `1 <= k <= n <= 10^4`
-- `0 <= Node.val <= 10^4`
+- $1 \leq \text{k} \leq \text{n} \leq 10^4$
+- $0 \leq \text{Node.val} \leq 10^4$
 
 ### Approach 
 
