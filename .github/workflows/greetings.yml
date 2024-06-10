@@ -24,9 +24,9 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           issue-message: |
-            Hi there! 👋 Thank you for opening your first issue on CodeHarborHub. We're excited to hear your thoughts and help you out. Please provide as much detail as you can so we can assist you effectively.
+            Hi there! 👋 Thank you for opening your first issue on CodeHarborHub. We're excited to hear your thoughts and help you out. You've raised a great topic! Please provide as much detail as you can so we can assist you effectively. Welcome aboard!
           pr-message: |
-            Hi there! 👋 Thank you for submitting your first pull request to CodeHarborHub. We appreciate your contribution! Our team will review it soon. If you have any questions or need further assistance, feel free to reach out.
+            Hi there! 👋 Thank you for submitting your first pull request to CodeHarborHub. Great job on the contribution! 🎉 We appreciate your efforts and our team will review it soon. If you have any questions or need further assistance, feel free to reach out. Keep up the great work!
 
       - name: Assign issue or pull request to team member
         if: github.event_name == 'issues' || github.event_name == 'pull_request_target'
@@ -41,13 +41,21 @@ jobs:
         uses: EddieHubCommunity/gh-action-community/src/welcome@main
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          issue-message: "Hi there! Thanks for opening this issue. We appreciate your contribution to this open-source project. We aim to respond or assign your issue as soon as possible."
-          pr-message: "Great job, @${{ github.actor }}! 🎉 Thank you for submitting your pull request to CodeHarborHub. We appreciate your contribution! Our team will review it soon. If you have any questions or need further assistance, feel free to reach out."
+          issue-message: "Hi there! Thanks for opening this issue. We appreciate your contribution to this open-source project. Your input is valuable and we aim to respond or assign your issue as soon as possible. Thanks again!"
+          pr-message: "Great job, @${{ github.actor }}! 🎉 Thank you for submitting your pull request to CodeHarborHub. We appreciate your contribution and enthusiasm! Our team will review it soon. If you have any questions or need further assistance, feel free to reach out. Thanks for contributing!"
 
-      - name: Label first-time contributions
-        if: github.event_name == 'issues' || github.event_name == 'pull_request_target'
+      - name: Label first-time issues
+        if: github.event_name == 'issues'
         run: |
-          ISSUE_NUMBER=${{ github.event.issue.number || github.event.pull_request.number }}
+          ISSUE_NUMBER=${{ github.event.issue.number }}
           curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-          -d '{"labels":["first-time contribution"]}' \
+          -d '{"labels":["CodeHarborHub - Thanks for creating an issue!"]}' \
           "https://api.github.com/repos/${{ github.repository }}/issues/${ISSUE_NUMBER}"
+
+      - name: Label first-time pull requests
+        if: github.event_name == 'pull_request_target'
+        run: |
+          PR_NUMBER=${{ github.event.pull_request.number }}
+          curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          -d '{"labels":["CodeHarborHub - Thanks for creating a pull request!"]}' \
+          "https://api.github.com/repos/${{ github.repository }}/issues/${PR_NUMBER}"
