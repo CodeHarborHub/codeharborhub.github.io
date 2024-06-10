@@ -71,6 +71,218 @@ Strings are sequences of characters and are a fundamental data type in computer 
 - **Comparison**: Compare two strings lexicographically.
 - **Search**: Find the occurrence of a substring.
 
+## Why are Strings important?
+
+Strings are important because they are used to store and manipulate text. They are used in many applications such as text processing, pattern matching, and data serialization.
+
+## How to declare a String?
+
+A string can be declared in various programming languages using the following syntax:
+
+<Tabs>
+    <TabItem value="js" label="JavaScipt" default>
+      <SolutionAuthor name="@Ajay-Dhangar"/>
+      ```js
+      // Declare a string in JavaScript
+      let str = "Hello, world!";
+      ```
+    </TabItem>
+    <TabItem value="java" label="Java">
+      <SolutionAuthor name="@Ajay-Dhangar"/>
+      ```java
+      // Declare a string in Java
+      String str = "Hello, world!";
+      ```
+    </TabItem>
+    <TabItem value="python" label="Python">
+      <SolutionAuthor name="@Ajay-Dhangar"/>
+      ```python
+      # Declare a string in Python
+      str = "Hello, world!"
+      ```
+    </TabItem>
+    <TabItem value="c" label="C">
+      <SolutionAuthor name="@Ajay-Dhangar"/>
+      ```c
+      // Declare a string in C
+      char str[] = "Hello, world!";
+      ```
+    </TabItem>
+    <TabItem value="cpp" label="C++">
+      <SolutionAuthor name="@Ajay-Dhangar"/>
+      ```cpp
+      // Declare a string in C++
+      std::string str = "Hello, world!";
+      ```
+    </TabItem>
+    <TabItem value="ts" label="TypeScript">
+      <SolutionAuthor name="@Ajay-Dhangar"/>
+      ```ts
+      // Declare a string in TypeScript
+      let str: string = "Hello, world!";
+      ```
+    </TabItem>
+</Tabs>
+
+## How to access a String?
+
+A string can be accessed using the index of the character. The index of the first character is 0, the index of the second character is 1, and so on.
+
+<Tabs>
+    <TabItem value="js" label="JavaScipt" default>
+      <SolutionAuthor name="@Ajay-Dhangar"/>
+      ```js
+      // Access a string in JavaScript
+      let str = "Hello, world!";
+      console.log(str[0]); // H
+      console.log(str[1]); // e
+      console.log(str[2]); // l
+      ```
+    </TabItem>
+    <TabItem value="java" label="Java">
+      <SolutionAuthor name="@Ajay-Dhangar"/>
+      ```java
+      // Access a string in Java
+      String str = "Hello, world!";
+      System.out.println(str.charAt(0)); // H
+      System.out.println(str.charAt(1)); // e
+      System.out.println(str.charAt(2)); // l
+      ```
+    </TabItem>
+    <TabItem value="python" label="Python">
+      <SolutionAuthor name="@Ajay-Dhangar"/>
+      ```python
+      # Access a string in Python
+      str = "Hello, world!"
+      print(str[0]) # H
+      print(str[1]) # e
+      print(str[2]) # l
+      ```
+    </TabItem>
+    <TabItem value="c" label="C">
+      <SolutionAuthor name="@Ajay-Dhangar"/>
+      ```c
+      // Access a string in C
+      char str[] = "Hello, world!";
+      printf("%c\n", str[0]); // H
+      printf("%c\n", str[1]); // e
+      printf("%c\n", str[2]); // l
+      ```
+    </TabItem>
+    <TabItem value="cpp" label="C++">
+        <SolutionAuthor name="@Ajay-Dhangar"/>
+        ```cpp
+        // Access a string in C++
+        std::string str = "Hello, world!";
+        std::cout << str[0] << std::endl; // H
+        std::cout << str[1] << std::endl; // e
+        std::cout << str[2] << std::endl; // l
+        ```
+    </TabItem>
+    <TabItem value="ts" label="TypeScript">
+      <SolutionAuthor name="@Ajay-Dhangar"/>
+      ```ts
+      // Access a string in TypeScript
+      let str: string = "Hello, world!";
+      console.log(str[0]); // H
+      console.log(str[1]); // e
+      console.log(str[2]); // l
+      ```
+    </TabItem>
+</Tabs>
+
+## How to update a String?
+
+A string can be updated by creating a new string with the desired changes, as strings are immutable in many programming languages.
+
+<Tabs>
+    <TabItem value="js" label="JavaScipt" default>
+      <SolutionAuthor name="@Ajay-Dhangar"/>
+      ```js
+      // Update a string in JavaScript
+      let str = "Hello, world!";
+      str = "Hello, JavaScript!";
+      console.log(str); // Hello, JavaScript!
+      ```
+    </TabItem>
+    <TabItem value="java" label="Java">
+      <SolutionAuthor name="@Ajay-Dhangar"/>
+      ```java
+      // Update a string in Java
+      String str = "Hello, world!";
+      str = "Hello, Java!";
+      System.out.println(str); // Hello, Java!
+      ```
+    </TabItem>
+    <TabItem value="python" label="Python">
+      <SolutionAuthor name="@Ajay-Dhangar"/>
+      ```python
+      # Update a string in Python
+      str = "Hello, world!"
+      str = "Hello, Python!"
+      print(str) # Hello, Python!
+      ```
+    </TabItem>
+    <TabItem value="c" label="C">
+      <SolutionAuthor name="@Ajay-Dhangar"/>
+      ```c
+      // Update a string in C
+      char str[] = "Hello, world!";
+      strcpy(str, "Hello, C!");
+      printf("%s\n", str); // Hello, C!
+      ```
+    </TabItem>
+    <TabItem value="cpp" label="C++">
+      <SolutionAuthor name="@Ajay-Dhangar"/>
+      ```cpp
+      // Update a string in C++
+      std::string str = "Hello, world!";
+      str = "Hello, C++!";
+      std::cout << str << std::endl; // Hello, C++!
+      ```
+    </TabItem>
+    <TabItem value="ts" label="TypeScript">
+      <SolutionAuthor name="@Ajay-Dhangar"/>
+      ```ts
+      // Update a string in TypeScript
+      let str: string = "Hello, world!";
+      str = "Hello, TypeScript!";
+      console.log(str); // Hello, TypeScript!
+      ```
+    </TabItem>
+</Tabs>
+
+## How to find the length of a String?
+
+The length of a string can be found using the `length` property or method.
+
+<Tabs>
+    <TabItem value="js" label="JavaScipt" default>
+      <SolutionAuthor name="@Ajay-Dhangar"/>
+      ```js
+      // Find the length of a string in JavaScript
+      let str = "Hello, world!";
+      console.log(str.length); // 13
+      ```
+    </TabItem>
+    <TabItem value="java" label="Java">
+      <SolutionAuthor name="@Ajay-Dhangar"/>
+      ```java
+      // Find the length of a string in Java
+      String str = "Hello, world!";
+      System.out.println(str.length()); // 13
+      ```
+    </TabItem>
+    <TabItem value="python" label="Python">
+      <SolutionAuthor name="@Ajay-Dhangar"/>
+      ```python
+      # Find the length of a string in Python
+      str = "Hello, world!"
+      print(len(str)) # 13
+      ```
+    </TabItem>
+</Tabs>
+
 ## Pattern Matching Algorithms
 
 - **Naive Pattern Matching**: A straightforward approach with a time complexity of O(m\*n).
