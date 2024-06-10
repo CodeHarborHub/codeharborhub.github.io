@@ -48,17 +48,6 @@ A linked list can be declared in various programming languages using the followi
 
 # LinkedList in Data Structures and Algorithms (DSA)
 
-## Table of Contents
-
-1. [Introduction](#introduction)
-2. [Types of Linked Lists](#types-of-linked-lists)
-3. [Basic Operations](#basic-operations)
-4. [Advantages and Disadvantages](#advantages-and-disadvantages)
-5. [Applications](#applications)
-6. [Common Linked List Problems](#common-linked-list-problems)
-7. [Advanced Linked List Techniques](#advanced-linked-list-techniques)
-8. [Resources and References](#resources-and-references)
-
 ## Introduction
 
 A linked list is a fundamental data structure in computer science that represents a sequence of nodes. Each node contains data and a reference to the next node in the sequence.
