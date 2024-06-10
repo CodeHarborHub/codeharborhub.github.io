@@ -1,7 +1,7 @@
 
 import React from 'react';
 import clsx from 'clsx';
-import Image from '@theme/IdealImage';
+// import Image from '@theme/IdealImage';
 import Link from '@docusaurus/Link';
 import Translate from '@docusaurus/Translate';
 

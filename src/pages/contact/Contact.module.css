@@ -143,6 +143,10 @@
   cursor: pointer;
 }
 
+.main__contact_contains_right .form_container .form_group .form_button:hover{
+  background-color: #2c4aa6;
+}
+
 @media screen and (max-width: 768px) {
   .main__contact_contains {
     flex-direction: column;
