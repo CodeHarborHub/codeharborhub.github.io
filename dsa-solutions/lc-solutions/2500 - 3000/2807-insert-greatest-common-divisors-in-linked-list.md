@@ -1,6 +1,6 @@
 ---
 id: insert-greatest-common-divisors-in-linked-list
-title:Insert Greatest Common Divisors in Linked List
+title: Insert Greatest Common Divisors in Linked List
 sidebar_label: 2807 Insert Greatest Common Divisors in Linked List
 tags:
   - Linked List
@@ -64,17 +64,17 @@ public:
         vector<int>a,b;
         ListNode* k=head;
         while(head!=NULL){
-            a.push_back(head->val);
+            a.push_back(head->val);  // store each node value of the given linked list
             head=head->next;
         }
-        for(int i=0;i<a.size()-1;i++){
+        for(int i=0;i<a.size()-1;i++){ //to store gratest common divisors(gcd) of adjacent pairs
             int p=__gcd(a[i],a[i+1]);
             b.push_back(p);
         }
         head=k;
         int i=0;
-        while(k!=NULL && k->next!=NULL){
-            ListNode* temp=new ListNode(b[i]);
+        while(k!=NULL && k->next!=NULL){ // inserting gcd between the linked list
+            ListNode* temp=new ListNode(b[i]); 
             ListNode* next=k->next;
             i++;
             k->next=temp;
