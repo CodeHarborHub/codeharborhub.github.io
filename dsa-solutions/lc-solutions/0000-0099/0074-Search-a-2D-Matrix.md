@@ -51,10 +51,10 @@ Target = 13
 
 ### Constraints
 
-- m == matrix.length
-- n == matrix[i].length
-- 1 <= m, n <= 100
-- -10<sup>4</sup> <= matrix[i][j], target <= 10<sup>4</sup>
+- $m == \text{matrix.length}$
+- $n == \text{matrix}[i].\text{length}$
+- $1 \leq m, n \leq 100$
+- $-10^{4} \leq \text{matrix}[i][j], \text{target} \leq 10^{4}$
 
 ### Approach
 
