@@ -128,4 +128,15 @@ export const Users: User[] = [
     source: "https://github.com/ParnaRoyChowdhury777/ScanMe",
     tags: ["opensource", "product", "html", "css", "javascript", "vanilla"],
   },
+  {
+    title: "Captcha-Code Generator",
+    description:
+      "It generates a Captcha code based on the user's input and validates the user's input with the generated Captcha code.",
+    preview: require("./showcase/captcha-code.png"),
+    website:
+      "https://50-days-50-web-project.vercel.app/captcha/captcha.html",
+    source:
+      "https://github.com/dhairyagothi/50_days_50_web_project/tree/Main/public/captcha",
+    tags: ["html", "css", "javascript"],
+  },
 ];
