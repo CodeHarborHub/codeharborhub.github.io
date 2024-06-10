@@ -16,7 +16,7 @@ tags:
 
 ## Problem Description
 
-Implement pow(x, n), which calculates x raised to the power n (i.e., x^n).
+Implement pow(x, n), which calculates x raised to the power n (i.e., x<sup>n</sup>).
 
  
 
@@ -47,10 +47,10 @@ Implement pow(x, n), which calculates x raised to the power n (i.e., x^n).
 ### Constraints
 
 - -100.0 < x < 100.0
-- -2^31 <= n <= 2^31-1
+- -2<sup>31</sup> <= n <= 2<sup>31</sup>-1
 - n is an integer.
 - Either x is not zero or n > 0.
-- -10^4 <= x^n <= 10^4
+- -10<sup>4</sup> <= x<sup>n</sup> <= 10<sup>4</sup>
 
 ### Approach
 Initialize ans as 1.0  and store a duplicate copy of n i.e nn using to avoid overflow
