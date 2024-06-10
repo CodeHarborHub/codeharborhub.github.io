@@ -61,7 +61,7 @@ Only the filled cells need to be validated according to the mentioned rules.
 **Output:**  false
 <br>
 
-**Explanation**: Same as Example 1, except with the 5 in the top left corner being modified to 8. Since there are two 8's in the top left 3x3 sub-box, it is invalid.
+**Explanation**: Same as Example 1, except with the 5 in the top left corner being modified to 8. Since there are two 8's in the top left $3 \times 3$ sub-box, it is invalid.
 
 
 ### Constraints
@@ -77,7 +77,7 @@ Only the filled cells need to be validated according to the mentioned rules.
 ✔ Traversing the Board: The algorithm uses nested loops to iterate through each cell of the 9x9 Sudoku board.
 
 ✔ Checking Rows, Columns, and Sub-boxes
-👉 For each non-empty cell (cell value not equal to ‘.’), the algorithm checks if the current digit is already present in the same row, column, or 3x3 sub-box using HashSet operations.
+👉 For each non-empty cell (cell value not equal to ‘.’), the algorithm checks if the current digit is already present in the same row, column, or $3 \times 3$ sub-box using HashSet operations.
 
 👉 Unique string representations are used to identify rows, columns, and sub-boxes. (don’t worry, will explain it 😊)
 
