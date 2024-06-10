@@ -203,16 +203,17 @@ print(majorityElement(nums))
 </TabItem>
 </Tabs>
 
-Complexity Analysis
+### Complexity Analysis
 
-Time Complexity: O(N)
-Reason: We perform two passes through the array, each requiring linear time.
+### Time Complexity: O(N)
+**Reason:** We perform two passes through the array, each requiring linear time.
 
-Space Complexity: O(1)
-Reason: We use a constant amount of extra space for counters and candidates.
+**Space Complexity:** O(1)
+**Reason:** We use a constant amount of extra space for counters and candidates.
 
 This solution efficiently finds all elements that appear more than ⌊ n/3 ⌋ times using the Boyer-Moore Voting Algorithm. The time complexity is linear, and the space complexity is constant, making it suitable for large input sizes.
 
-References
-LeetCode Problem: Majority Element II
-Authors GeeksforGeeks Profile: Vipul lakum
+#### References
+**LeetCode Problem:** Majority Element II
+**Authors GeeksforGeeks Profile:** Vipul lakum
+```
