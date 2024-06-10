@@ -25,9 +25,9 @@ Return the area of the rectangle having the longest diagonal. If there are multi
 
 - **Input:** $dimensions = [[9,3],[8,6]]$
 - **Output:** $48$
-- **Explanation:** $For index = 0, length = 9 and width = 3. Diagonal length = sqrt(9 * 9 + 3 * 3) = sqrt(90) ≈ 9.487.
-For index = 1, length = 8 and width = 6. Diagonal length = sqrt(8 * 8 + 6 * 6) = sqrt(100) = 10.
-So, the rectangle at index 1 has a greater diagonal length therefore we return area = 8 * 6 = 48..$
+- **Explanation:** For index = $0$, $\text{length} = 9$ and width = $3$. $\text{Diagonal length} = sqrt(9 \times 9 + 3 \times 3) = sqrt(90) ≈ 9.487$.
+  For $\text{index} = 1$, $length = 8$ and $\text{width} = 6$. $\text{Diagonal length} = sqrt(8 \times 8 + 6 \times 6) = sqrt(100) = 10$.
+  So, the rectangle at index 1 has a greater diagonal length therefore we return $area = 8 \times 6 = 48..$
 
 #### Example 2
 
@@ -37,7 +37,7 @@ So, the rectangle at index 1 has a greater diagonal length therefore we return a
 
 ### Constraints
 
-- $1 <= dimensions.length <= 100$
+- $1 \leq  dimensions.length \leq 100$
 - $dimensions[i].length == 2$
 - $1 <= dimensions[i][0], dimensions[i][1] <= 100$
 
@@ -115,4 +115,4 @@ public:
 
 ### Conclusion
 
-At last we can say that we can calculate maximum area of diagonal rectangle using timecomplexity of o(n) and spacecomplexity of o(1) using a simple for loop and some variable
+At last we can say that we can calculate maximum area of diagonal rectangle using timecomplexity of $o(n)$ and spacecomplexity of $o(1)$ using a simple for loop and some variable
