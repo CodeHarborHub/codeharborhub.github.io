@@ -1,20 +1,22 @@
 import clsx from "clsx";
 import React from "react";
+import style from "./index.module.css"; 
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
-import styles from "./index.module.css";
-// import Features from "../components/HomePage/Features";
-// import Courses from "../components/HomePage/Courses";
-// import { featuresData, coursesData } from "../database/home";
 import Head from "@docusaurus/Head";
 import Header from "../components/HomePage/Header";
 import Tweet from "../components/Tweet";
-import Tweets, { type TweetItem } from "../data/tweets";
+import Tweets from "../data/tweets";
 import { motion } from "framer-motion";
 import ResourcesSection from "../components/HomePage/ResourcesSection";
 import ScrollTopToButton from "../components/Buttons/bottom/ScrollTopToButton";
 import ScrollBottomToTop from "../components/Buttons/top/ScrollBottomToTop";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 function TweetsSection() {
   const tweetColumns = [[], [], []];
@@ -23,7 +25,7 @@ function TweetsSection() {
   );
 
   return (
-    <div className={clsx(styles.section, styles.sectionAlt)}>
+    <div className={clsx(style.section, style.sectionAlt)}>
       <div className="tweets-container">
         <motion.div
           initial={{ opacity: 0, x: -10 }}
@@ -35,35 +37,47 @@ function TweetsSection() {
             stiffness: 100,
             delay: 0.3,
           }}
-          className={styles.home__divider}
+          className={style.home__divider}
         >
           <Heading as="h2" className={clsx("text--center")}>
             Loved by many Users
           </Heading>
         </motion.div>
-        <div className={clsx("row", styles.tweetsSection)}>
-          {tweetColumns.map((tweetItems, i) => (
-            <motion.div
-              initial={{ opacity: 0, y: -10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{
-                duration: 1,
-                type: "spring",
-                stiffness: 100,
-                delay: 0.3,
-              }}
-              className="col col--4"
-              key={i}
-            >
-              {tweetItems.map((tweet) => (
-                <div className={styles.tweetContainer} key = {tweet.url}>
-                <Tweet {...tweet} key={tweet.url} />
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={30}
+          autoplay={{ delay: 2000 }}
+          loop={true}
+          pagination={{ clickable: true }}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+          }}
+          modules={[Navigation, Pagination, Autoplay]}
+          className={style.tweetsSwiper}
+        >
+          {tweetColumns.map((tweetItems, columnIndex) =>
+            tweetItems.map((tweet, tweetIndex) => (
+              <SwiperSlide key={`${columnIndex}-${tweetIndex}`}>
+                <div className={clsx(style.tweetContainer)}>
+                  <div className={clsx(style.tweetContent)}>
+                    <Tweet {...tweet} />
+                  </div>
                 </div>
-              ))}
-            </motion.div>
-          ))}
-        </div>
+              </SwiperSlide>
+            ))
+          )}
+        </Swiper>
       </div>
     </div>
   );
@@ -81,7 +95,7 @@ export default function Home() {
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5832817025080991"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         ></script>
         <script
           async
@@ -90,70 +104,12 @@ export default function Home() {
         ></script>
         <meta name="google-adsense-account" content="ca-pub-5832817025080991" />
       </Head>
-      <main className={styles.main__home}>
-        <div className={styles.home__header}>
+      <main className={style.main__home}>
+        <div className={style.home__header}>
           <Header />
         </div>
 
-        <hr className={styles.home__hr} />
-
-        {/* <motion.div
-          initial={{ opacity: 0, x: -10 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 100,
-            delay: 0.3,
-          }}
-          className={styles.home__divider}
-        >
-          <Heading as="h2">Courses Available</Heading>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 100,
-            delay: 0.3,
-          }}
-        >
-          <Courses courses={coursesData} />
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, x: -10 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 100,
-            delay: 0.3,
-          }}
-          className={styles.home__divider}
-        >
-          <Heading as="h2">Features of {siteConfig.title}</Heading>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 100,
-            delay: 0.3,
-          }}
-        >
-        <Features features={featuresData} />
-        </motion.div> */}
+        <hr className={style.home__hr} />
 
         <div>
           <ResourcesSection />
@@ -162,7 +118,7 @@ export default function Home() {
         <TweetsSection />
 
         <ScrollTopToButton />
-        <ScrollBottomToTop />       
+        <ScrollBottomToTop />
       </main>
     </Layout>
   );
