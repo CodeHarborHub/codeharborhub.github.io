@@ -52,7 +52,7 @@ This problem is a variation of the popular Dutch National flag algorithm.
 
 The steps will be the following:
 
-- First, we will run a loop that will continue until mid <= high.
+- First, we will run a loop that will continue until `mid <= high.`
 - There can be three different values of mid pointer i.e. arr[mid]
     - If arr[mid] == 0, we will swap arr[low] and arr[mid] and will increment both low and mid. Now the subarray from index 0 to (low-1) only contains 0.
     - If arr[mid] == 1, we will just increment the mid pointer and then the index (mid-1) will point to 1 as it should according to the rules.
