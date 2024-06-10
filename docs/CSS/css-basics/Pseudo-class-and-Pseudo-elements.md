@@ -19,11 +19,11 @@ button:hover {
 
 <BrowserWindow url="http://127.0.0.1:5500/index.html">
 <button type="submit">Submit</button>
-<style>{`
-button:hover {
-    background-color: lightblue;
-}`}  
-</style>
+    <style>{`
+      button:hover {
+        background-color: lightblue;
+      }
+    `}</style>
 </BrowserWindow>
 
 
@@ -59,9 +59,11 @@ li:nth-child(2) {
       <li>BLue</li>
 </ul>
 <style>
-  {`li:nth-child(2) {
+  {`
+    li:nth-child(2) {
     color: green;
-}`}
+    }
+ `}
 </style>
 </BrowserWindow>
 
@@ -76,15 +78,15 @@ li:nth-child(2) {
 ```
 
 <BrowserWindow url="http://127.0.0.1:5500/index.html">
-<div class="container">
+<div className="pseudo_container">
       <div>Hello</div>
       <div>World</div>
     </div>
   <style>
-    {`.container div:first-child {
-  color: blue;
-  font-weight: bold;
-}`}
+    {`.pseudo_container div:first-child {
+      color: blue;
+      font-weight: bold;
+    }`}
   </style>
 </BrowserWindow>
 
@@ -97,18 +99,6 @@ div:nth-of-type(3)
 }
 ```
 
-<BrowserWindow url="http://127.0.0.1:5500/index.html">
-<div>Hello</div>
-      <div>World</div>
-      <div>!</div>
-<style>
-  {`div:nth-of-type(3)
-{
-  color: red;
-}`}
-</style>
-</BrowserWindow>
-
 ## Pseudo Elements
 
 1. `::before` : Inserts content before an element's actual content.
@@ -120,17 +110,6 @@ p::before {
 }
 ```
 
-<BrowserWindow url="http://127.0.0.1:5500/index.html">
- <p>Drink More Water</p>
- <style>
-   {`
-   p::before {
-    content: "Note: ";
-    font-weight: bold;
-}'}
- </style>
-</BrowserWindow>
-
 2. `::after` : Inserts content after an element's actual content.
 
 ```css
@@ -140,17 +119,6 @@ p::after {
 }
 ```
 
-<BrowserWindow url="http://127.0.0.1:5500/index.html">
-<p>Drink More Water</p>
-<style>{`
-  p::after {
-    content: " - Read more";
-    font-style: italic;
-}
-`}
-</style>
-</BrowserWindow>
-
 3. `::first-line` : Applies styles to the first line of a block-level element.
 
 ```css
@@ -159,15 +127,3 @@ p::first-line {
     font-weight: bold;
 }
 ```
-
-<BrowserWindow url="http://127.0.0.1:5500/index.html">
-<p>You are Amazing!</p>
-<style>
-  {`p::first-line {
-    color: red;
-    font-weight: bold;
-}
-`}
-</style>
-</BrowserWindow>
-
