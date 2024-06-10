@@ -7,7 +7,7 @@ description: "In this blog post, we'll explore the recursive binary search algor
 tags: [dsa, algorithms, binary search, recursive]
 ---
 
-Welcome, eager learner! Today, we embark on an enlightening journey through the world of recursive binary search. This powerful algorithm is essential for efficiently finding elements in sorted arrays, making it a staple in the toolkit of any adept programmer. Whether you're optimizing search operations or solving complex algorithmic challenges, understanding recursive binary search is crucial. Let's delve into its mechanics, applications, and implementation.
+Recursive Binary Search algorithm is essential for efficiently finding elements in sorted arrays, making it a staple in the toolkit of any adept programmer. Whether you're optimizing search operations or solving complex algorithmic challenges, understanding recursive binary search is crucial. Let's delve into its mechanics, applications, and implementation.
 
 ## What is Recursive Binary Search?
 
@@ -44,22 +44,26 @@ int recursiveBinarySearch(int array[], int low, int high, int key) {
 }
 ```
 
-How Recursive Binary Search Works
-Step-by-Step Explanation
-Initialize: Set two pointers, low at the beginning and high at the end of the array.
-Middle Element: Calculate the middle element's index.
+## How Recursive Binary Search Works
+
+### Step-by-Step Explanation
+
+1. Initialize: Set two pointers, low at the beginning and high at the end of the array.
+2. Middle Element: Calculate the middle element's index.
 Comparison:
-If the middle element is the target, return its index.
-If the middle element is less than the target, discard the left half by setting low to mid + 1.
-If the middle element is greater than the target, discard the right half by setting high to mid - 1.
-Repeat: Repeat steps 2 and 3 until the target is found or the low pointer exceeds the high pointer.
-Time Complexity
-The time complexity of iterative binary search is 𝑂(log𝑛)
+3. If the middle element is the target, return its index.
+4. If the middle element is less than the target, discard the left half by setting low to mid + 1.
+5. If the middle element is greater than the target, discard the right half by setting high to mid - 1.
+6. Repeat: Repeat steps 2 and 3 until the target is found or the low pointer exceeds the high pointer.
 
-O(logn), where 𝑛
-n is the number of elements in the array. This logarithmic time complexity makes iterative binary search significantly faster than linear search for large datasets.
+### Time Complexity
 
-Practical Applications
+The time complexity of iterative binary search is $𝑂(log𝑛)$. 
+
+where $n$ is the number of elements in the array. This logarithmic time complexity makes iterative binary search significantly faster than linear search for large datasets.
+
+## Practical Applications
+
 Iterative binary search is widely used in various real-world applications and algorithmic problems:
 
 1. Searching in a Sorted Array
@@ -99,25 +103,24 @@ Upper Bound Pseudo-Code:
 
 ```cpp
 FUNCTION upperBound(array, low, high, key):
-    IF low == high:
-        RETURN low
+    if low == high:
+        return low
     mid = (low + high) / 2
-    IF array[mid] <= key:
-        RETURN upperBound(array, mid + 1, high, key)
-    ELSE:
-        RETURN upperBound(array, low, mid, key)
-
-
+    if array[mid] <= key:
+        return upperBound(array, mid + 1, high, key)
+    else:
+        return upperBound(array, low, mid, key)
 
 ```
 
 2. Rotated Sorted Array
    Recursive binary search can be modified to handle rotated sorted arrays, where the array is sorted but then rotated at some pivot point.
 
-Tips for Implementing Recursive Binary Search
+:::Tips
 Handle Edge Cases: Ensure your implementation correctly handles cases where the target element is not present or when the array is empty.
 Prevent Stack Overflow: Be mindful of the recursion depth, especially for large arrays, as deep recursion can lead to stack overflow.
 Efficiency: The recursive approach can be more intuitive and elegant, but consider the iterative approach for environments with limited stack size.
+:::
 
-In Conclusion
+## Conclusion
 Recursive binary search is a fundamental algorithm that every programmer should master. Its efficiency and versatility make it a powerful tool for solving a wide range of problems. By understanding how recursive binary search works and how to implement its variations, you'll be well-equipped to tackle numerous challenges in your programming journey. Happy coding!
