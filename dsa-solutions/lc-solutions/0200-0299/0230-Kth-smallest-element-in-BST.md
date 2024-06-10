@@ -35,7 +35,7 @@ Output: 3
 
 - The number of nodes in the tree is n.
 - $1 \leq \text{k} \leq \text{n} \leq 10^4$
-- $0 \leq \text{Node.val} \leq 10^4$
+- $1 \leq k \leq n \leq 10^4$
 
 ### Approach 
 
