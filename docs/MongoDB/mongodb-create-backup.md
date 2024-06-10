@@ -80,9 +80,9 @@ graph TD;
     F --> B
 ```
 
-### Notes
-> - Ensure the `mongod` server is running before executing the `mongodump` or `mongorestore` commands.
-> - Use appropriate options with `mongodump` to back up specific databases or collections.
-> - The backup directory should be accessible and writable by the MongoDB instance.
-
+:::note
+- Ensure the `mongod` server is running before executing the `mongodump` or `mongorestore` commands.
+- Use appropriate options with `mongodump` to back up specific databases or collections.
+- The backup directory should be accessible and writable by the MongoDB instance.
+:::
 Creating backups regularly ensures that you have a recovery option in case of data loss or corruption.

@@ -19,10 +19,9 @@ Before you start using MongoDB in your Java programs, ensure that you have Mongo
    Make sure to download the latest release of these JAR files.
 
 2. **Include the JAR files in your classpath**.
-
-### Note:
+:::note
 You can download the JAR files from the [MongoDB Java Driver](https://mongodb.github.io/mongo-java-driver/) website.
-
+:::
 ## Connect to Database
 
 To connect to a database, specify the database name. If the database doesn't exist, MongoDB creates it automatically.
@@ -439,11 +438,12 @@ graph TD;
     G --> H[Close MongoDB Client]
 ```
 
-## Notes
+:::note
 
 - Ensure MongoDB is running before executing the Java programs.
 - Use appropriate exception handling in real-world applications to handle any database connection issues.
 - For more advanced usage and configurations, refer to the [MongoDB Java Driver Documentation](https://mongodb.github.io/mongo-java-driver/).
+:::
 
 ## Table of Methods
 

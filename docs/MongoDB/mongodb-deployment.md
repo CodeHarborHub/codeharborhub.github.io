@@ -79,11 +79,11 @@ graph TD;
     H --> K[MMS]
 ```
 
-### Notes
+:::note
 
-> - Regularly prototype, test, and monitor your deployment environment.
-> - Use `mongostat` to check the status of your `mongod` instances and monitor database operations.
-> -  Use `mongotop` to track and report read/write activity on a collection basis.
-> - Utilize MongoDB Management Service (MMS) for comprehensive monitoring and a visual dashboard.
-
+- Regularly prototype, test, and monitor your deployment environment.
+- Use `mongostat` to check the status of your `mongod` instances and monitor database operations.
+-  Use `mongotop` to track and report read/write activity on a collection basis.
+- Utilize MongoDB Management Service (MMS) for comprehensive monitoring and a visual dashboard.
+:::
 Having a well-planned and monitored deployment strategy ensures the stability and performance of your MongoDB in a production environment.
