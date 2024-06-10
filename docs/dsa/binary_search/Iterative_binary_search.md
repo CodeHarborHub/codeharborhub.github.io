@@ -48,20 +48,25 @@ int iterativeBinarySearch(int array[], int size, int key) {
 }
 ```
 
-How Iterative Binary Search Works
-Step-by-Step Explanation
-Initialize: Set two pointers, low at the beginning and high at the end of the array.
-Middle Element: Calculate the middle element's index.
+## How Iterative Binary Search Works
+
+### Step-by-Step Explanation
+
+1. Initialize: Set two pointers, low at the beginning and high at the end of the array.
+2. Middle Element: Calculate the middle element's index.
 Comparison:
-If the middle element is the target, return its index.
-If the middle element is less than the target, discard the left half by setting low to mid + 1.
-If the middle element is greater than the target, discard the right half by setting high to mid - 1.
-Repeat: Repeat steps 2 and 3 until the target is found or the low pointer exceeds the high pointer.
-Time Complexity
+3. If the middle element is the target, return its index.
+4. If the middle element is less than the target, discard the left half by setting low to mid + 1.
+5. If the middle element is greater than the target, discard the right half by setting high to mid - 1.
+6. Repeat: Repeat steps 2 and 3 until the target is found or the low pointer exceeds the high pointer.
+
+### Time Complexity
+
 The time complexity of iterative binary search is $O(logn)$,
 where $𝑛$ is the number of elements in the array. This logarithmic time complexity makes iterative binary search significantly faster than linear search for large datasets.
 
-Practical Applications
+## Practical Applications
+
 Iterative binary search is widely used in various real-world applications and algorithmic problems:
 
 1. Searching in a Sorted Array
@@ -118,10 +123,11 @@ FUNCTION upperBound(array, key):
 2. Rotated Sorted Array
    Iterative binary search can be modified to handle rotated sorted arrays, where the array is sorted but then rotated at some pivot point.
 
-Tips for Implementing Iterative Binary Search
+:::tip
 Handle Edge Cases: Ensure your implementation correctly handles cases where the target element is not present or when the array is empty.
 Prevent Overflow: When calculating the middle index, use $\text{mid} = \text{low} + \frac{\text{high} - \text{low}}{2}$ instead of $\text{mid} = \frac{\text{low} + \text{high}}{2}$ to prevent potential overflow.
 Efficiency: The iterative approach often uses less memory than the recursive approach because it doesn't involve the overhead of multiple recursive function calls.
+:::
 
 ## Conclusion
 
