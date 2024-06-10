@@ -43,9 +43,9 @@ You must solve this problem without using the library's sort function.
 
 ### Constraints
 
-- n == nums.length
-- 1 <= n <= 300
-- nums[i] is either 0, 1, or 2.
+- $n = \text{nums.length}$
+- $1 \leq n \leq 300$
+- $\text{nums}[i] \in \{0, 1, 2\}$
 
 ### Approach
 This problem is a variation of the popular Dutch National flag algorithm. 
