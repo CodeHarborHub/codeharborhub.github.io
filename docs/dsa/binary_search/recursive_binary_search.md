@@ -116,11 +116,11 @@ FUNCTION upperBound(array, low, high, key):
 2. Rotated Sorted Array
    Recursive binary search can be modified to handle rotated sorted arrays, where the array is sorted but then rotated at some pivot point.
 
-:::Tips
+:::tip
 Handle Edge Cases: Ensure your implementation correctly handles cases where the target element is not present or when the array is empty.
 Prevent Stack Overflow: Be mindful of the recursion depth, especially for large arrays, as deep recursion can lead to stack overflow.
 Efficiency: The recursive approach can be more intuitive and elegant, but consider the iterative approach for environments with limited stack size.
 :::
 
 ## Conclusion
-Recursive binary search is a fundamental algorithm that every programmer should master. Its efficiency and versatility make it a powerful tool for solving a wide range of problems. By understanding how recursive binary search works and how to implement its variations, you'll be well-equipped to tackle numerous challenges in your programming journey. Happy coding!
+Recursive binary search is a fundamental algorithm that every programmer should master. Its efficiency and versatility make it a powerful tool for solving a wide range of problems. By understanding how recursive binary search works and how to implement its variations, you'll be well-equipped to tackle numerous challenges in your programming journey.
