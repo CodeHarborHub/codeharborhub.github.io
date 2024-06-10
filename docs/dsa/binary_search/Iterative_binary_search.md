@@ -58,7 +58,7 @@ If the middle element is less than the target, discard the left half by setting 
 If the middle element is greater than the target, discard the right half by setting high to mid - 1.
 Repeat: Repeat steps 2 and 3 until the target is found or the low pointer exceeds the high pointer.
 Time Complexity
-The time complexity of iterative binary search is $O(logn)$, 
+The time complexity of iterative binary search is $O(logn)$,
 where $𝑛$ is the number of elements in the array. This logarithmic time complexity makes iterative binary search significantly faster than linear search for large datasets.
 
 Practical Applications

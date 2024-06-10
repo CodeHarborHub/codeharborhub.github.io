@@ -63,14 +63,8 @@ Step-by-Step Explanation
 
 Time Complexity
 The time complexity of binary search is
-𝑂
-(
-log
-⁡
-𝑛
-)
-O(logn), where
-𝑛
+𝑂(log𝑛)
+O(logn), where 𝑛
 n is the number of elements in the array. This logarithmic time complexity makes binary search significantly faster than linear search for large datasets.
 
 Practical Applications
@@ -128,8 +122,10 @@ RETURN low
    Binary search can be modified to handle rotated sorted arrays, where the array is sorted but then rotated at some pivot point.
 
 Tips for Implementing Binary Search
+
 Handle Edge Cases: Ensure your implementation correctly handles cases where the target element is not present or when the array is empty.
-Prevent Overflow: When calculating the middle index, use mid = low + (high - low) / 2 instead of mid = (low + high) / 2 to prevent potential overflow.
+Prevent Overflow: When calculating the middle index, use $\text{mid} = \text{low} + \frac{\text{high} - \text{low}}{2}$ instead of $\text{mid} = \frac{\text{low} + \text{high}}{2}$ to prevent potential overflow.
 Iterative vs. Recursive: Both iterative and recursive implementations are valid. Choose based on your preference and the problem constraints.
+
 In Conclusion
 Binary search is a fundamental algorithm that every programmer should master. Its efficiency and versatility make it a powerful tool for solving a wide range of problems. By understanding how binary search works and how to implement its variations, you'll be well-equipped to tackle numerous challenges in your programming journey. Happy coding!

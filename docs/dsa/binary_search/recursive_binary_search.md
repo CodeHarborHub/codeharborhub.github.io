@@ -44,7 +44,7 @@ int recursiveBinarySearch(int array[], int low, int high, int key) {
 }
 ```
 
-How Iterative Binary Search Works
+How Recursive Binary Search Works
 Step-by-Step Explanation
 Initialize: Set two pointers, low at the beginning and high at the end of the array.
 Middle Element: Calculate the middle element's index.
@@ -54,15 +54,9 @@ If the middle element is less than the target, discard the left half by setting 
 If the middle element is greater than the target, discard the right half by setting high to mid - 1.
 Repeat: Repeat steps 2 and 3 until the target is found or the low pointer exceeds the high pointer.
 Time Complexity
-The time complexity of iterative binary search is
-𝑂
-(
-log
-⁡
-𝑛
-)
-O(logn), where
-𝑛
+The time complexity of iterative binary search is 𝑂(log𝑛)
+
+O(logn), where 𝑛
 n is the number of elements in the array. This logarithmic time complexity makes iterative binary search significantly faster than linear search for large datasets.
 
 Practical Applications
