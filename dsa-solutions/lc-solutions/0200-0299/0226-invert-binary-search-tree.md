@@ -1,5 +1,5 @@
 ---
-id: invert binary search tree
+id: invert-binary-search-tree
 title: Invert Binary Search Tree
 sidebar_label: 0226 Invert Binary Search Tree
 tags:
@@ -39,7 +39,7 @@ Output:  []
 ### Constraints
 
 - The number of nodes in the tree is in the range $[0, 100]$.
-- `-100 <= Node.val <= 100`
+- $-100 \leq \text{Node.val} \leq 100$
 
 ### Approach 
 
