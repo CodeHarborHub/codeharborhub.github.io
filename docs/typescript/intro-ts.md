@@ -9,6 +9,8 @@ description: TypeScript is a superset of JavaScript that adds static types to th
 
 In this tutorial, we will learn about TypeScript, a superset of JavaScript that adds static types to the language. TypeScript is a powerful tool that helps developers write more robust and maintainable code. It provides features like type checking, interfaces, classes, and modules that make it easier to build large-scale applications.
 
+You’ve probably already heard that TypeScript is a “flavor” or “variant” of JavaScript. The relationship between TypeScript (TS) and JavaScript (JS) is rather unique among modern programming languages, so learning more about this relationship will help you understand how TypeScript adds to JavaScript.
+
 ## What is TypeScript?
 
 TypeScript is a statically typed superset of JavaScript that compiles to plain JavaScript. It is designed for the development of large applications and transpiles to JavaScript for execution in the browser or on the server. TypeScript adds optional static types to JavaScript, which can help catch errors at compile time and improve code quality.

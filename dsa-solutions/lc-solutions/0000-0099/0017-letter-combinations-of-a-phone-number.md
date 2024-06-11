@@ -1,89 +1,109 @@
 ---
 id: letter-combinations-of-a-phone-number
 title: Letter Combinations of a Phone Number (LeetCode)
-sidebar_label: 0017-Letter Combinations of a Phone Number
+sidebar_label: 0017 Letter Combinations of a Phone Number
 tags:
+  - Back Tracking
+  - Mapping
   - String
-  - Backtracking
-description: "Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent."
+description: The problem requires generating all letter combinations corresponding to given digits (2-9). The solution utilizes backtracking to explore all combinations efficiently, employing a recursive approach in Java.
+sidebar_position: 17
 ---
 
 ## Problem Description
 
-| Problem Statement                                                                                           | Solution Link                                                                                                                               | LeetCode Profile                                   |
-| :----------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------- |
-| [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [Letter Combinations of a Phone Number Solution on LeetCode](https://leetcode.com/problems/letter-combinations-of-a-phone-number/solutions/) | [gabaniyash846](https://leetcode.com/u/gabaniyash846/) |
+| Problem Statement                                                                                             | Solution Link                                                                                                                                                                   | LeetCode Profile                                       |
+| :------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------- |
+| [Letter Combinations of a Phone Number](https://leetcode.com/problems/Letter Combinations of a Phone Number/) | [Letter Combinations of a Phone Number Solution on LeetCode](https://leetcode.com/problems/Letter Combinations of a Phone Number/solutions/5055810/video-two-pointer-solution/) | [gabaniyash846](https://leetcode.com/u/gabaniyash846/) |
 
 ### Problem Description
 
-Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.
+## Problem Statement:
 
-A mapping of digit to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.
+Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.
 
 ### Examples
 
 #### Example 1
+
 - **Input:** `digits = "23"`
 - **Output:** `["ad","ae","af","bd","be","bf","cd","ce","cf"]`
 
 #### Example 2
+
 - **Input:** `digits = ""`
 - **Output:** `[]`
 
 #### Example 3
-- **Input:** `digits = "2"`
+
+- **Input:** `2`
 - **Output:** `["a","b","c"]`
 
-### Constraints
-- `0 <= digits.length <= 4`
-- `digits[i]` is a digit in the range `['2', '9']`.
+### Constraints:
 
-### Topics
-- String
-- Backtracking
+- `0 ≤ digits.length ≤ 4`
+- `0 ≤ digits.length ≤ 4digits[𝑖]`
+- `digits[i] is a digit in the range ['2', '9'].`
+- `A mapping of digits to letters (similar to telephone buttons) is given below. Note that 1 does not map to any letters.`
 
-### Intuition
-- Use backtracking to generate all possible combinations.
+### Approach
 
-### Complexity
-- **Time Complexity:** $O(3^N \cdot 4^M)$ where $N$ is the number of digits in the input that maps to 3 letters (2, 3, 4, 5, 6, 8) and $M$ is the number of digits in the input that maps to 4 letters (7, 9).
-- **Space Complexity:** $O(3^N \cdot 4^M)$ for storing the results.
+1. **Mapping Digits to Letters:**
 
-### Solution Code and Explanation
+   - Define a mapping of digits to their corresponding letters, similar to telephone buttons.
 
-#### C++
+2. **Backtracking Function:**
 
-```cpp
-#include <vector>
-#include <string>
-#include <unordered_map>
+   - Define a recursive backtracking function to generate all possible combinations.
+   - The function takes four parameters:
+     - `index`: The current index in the digits string.
+     - `path`: The current combination of letters.
+   - If the index is equal to the length of the digits string, it means we have reached the end of a combination, so we add it to the result list.
+   - Otherwise, for each letter corresponding to the current digit, we append it to the current combination and recursively call the function with the next index.
+   - After the recursive call, we remove the last character from the combination (backtracking).
 
-class Solution {
-public:
-    std::vector<std::string> letterCombinations(std::string digits) {
-        if (digits.empty()) return {};
-        std::unordered_map<char, std::string> phoneMap = {
-            {'2', "abc"}, {'3', "def"}, {'4', "ghi"},
-            {'5', "jkl"}, {'6', "mno"}, {'7', "pqrs"},
-            {'8', "tuv"}, {'9', "wxyz"}
-        };
-        std::vector<std::string> result;
-        backtrack(digits, phoneMap, 0, "", result);
-        return result;
-    }
+3. **Base Case:**
 
-private:
-    void backtrack(const std::string& digits, const std::unordered_map<char, std::string>& phoneMap, int index, std::string current, std::vector<std::string>& result) {
-        if (index == digits.size()) {
-            result.push_back(current);
-            return;
+   - If the length of the current combination is equal to the length of the input digits string, we add the combination to the result list.
+
+4. **Main Function:**
+   - Initialize an empty list to store the combinations.
+   - Call the backtracking function with the initial index set to 0 and an empty string as the initial combination.
+   - Return the list of combinations.
+
+This approach ensures that all possible combinations are generated using backtracking, and the result is returned in the desired format.
+
+### Solution Code
+
+#### Python
+
+```python
+class Solution:
+    def letterCombinations(self, digits: str) -> List[str]:
+        if not digits:
+            return []
+
+        digit_to_letters = {
+            '2': 'abc',
+            '3': 'def',
+            '4': 'ghi',
+            '5': 'jkl',
+            '6': 'mno',
+            '7': 'pqrs',
+            '8': 'tuv',
+            '9': 'wxyz'
         }
-        const std::string& letters = phoneMap.at(digits[index]);
-        for (const char& letter : letters) {
-            backtrack(digits, phoneMap, index + 1, current + letter, result);
-        }
-    }
-};
+
+        def backtrack(index, path):
+            if index == len(digits):
+                combinations.append(path)
+                return
+            for letter in digit_to_letters[digits[index]]:
+                backtrack(index + 1, path + letter)
+
+        combinations = []
+        backtrack(0, '')
+        return combinations
 ```
 
 #### Java
@@ -94,100 +114,214 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-class Solution {
-    public List<String> letterCombinations(String digits) {
-        List<String> result = new ArrayList<>();
-        if (digits.isEmpty()) return result;
-        Map<Character, String> phoneMap = new HashMap<>() {{
-            put('2', "abc");
-            put('3', "def");
-            put('4', "ghi");
-            put('5', "jkl");
-            put('6', "mno");
-            put('7', "pqrs");
-            put('8', "tuv");
-            put('9', "wxyz");
-        }};
-        backtrack(digits, phoneMap, 0, new StringBuilder(), result);
-        return result;
+public class Solution {
+    private Map<Character, String> digitToLetters = new HashMap<>();
+
+    public Solution() {
+        digitToLetters.put('2', "abc");
+        digitToLetters.put('3', "def");
+        digitToLetters.put('4', "ghi");
+        digitToLetters.put('5', "jkl");
+        digitToLetters.put('6', "mno");
+        digitToLetters.put('7', "pqrs");
+        digitToLetters.put('8', "tuv");
+        digitToLetters.put('9', "wxyz");
     }
 
-    private void backtrack(String digits, Map<Character, String> phoneMap, int index, StringBuilder current, List<String> result) {
+    public List<String> letterCombinations(String digits) {
+        List<String> combinations = new ArrayList<>();
+        if (digits == null || digits.isEmpty()) {
+            return combinations;
+        }
+        backtrack(combinations, digits, 0, new StringBuilder());
+        return combinations;
+    }
+
+    private void backtrack(List<String> combinations, String digits, int index, StringBuilder path) {
         if (index == digits.length()) {
-            result.add(current.toString());
+            combinations.add(path.toString());
             return;
         }
-        String letters = phoneMap.get(digits.charAt(index));
+        String letters = digitToLetters.get(digits.charAt(index));
         for (char letter : letters.toCharArray()) {
-            current.append(letter);
-            backtrack(digits, phoneMap, index + 1, current, result);
-            current.deleteCharAt(current.length() - 1);
+            path.append(letter);
+            backtrack(combinations, digits, index + 1, path);
+            path.deleteCharAt(path.length() - 1);
         }
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        List<String> result = solution.letterCombinations("23");
+        System.out.println(result); // Output: [ad, ae, af, bd, be, bf, cd, ce, cf]
     }
 }
 ```
 
-#### Python
+#### CPP:
 
-```python
-from typing import List
+```cpp
+#include <iostream>
+#include <vector>
+#include <unordered_map>
 
-class Solution:
-    def letterCombinations(self, digits: str) -> List[str]:
-        if not digits:
-            return []
-        
-        phone_map = {
-            "2": "abc", "3": "def", "4": "ghi", "5": "jkl",
-            "6": "mno", "7": "pqrs", "8": "tuv", "9": "wxyz"
+using namespace std;
+
+class Solution {
+private:
+    unordered_map<char, string> digitToLetters;
+    vector<string> combinations;
+
+public:
+    Solution() {
+        digitToLetters = {
+            {'2', "abc"},
+            {'3', "def"},
+            {'4', "ghi"},
+            {'5', "jkl"},
+            {'6', "mno"},
+            {'7', "pqrs"},
+            {'8', "tuv"},
+            {'9', "wxyz"}
+        };
+    }
+
+    vector<string> letterCombinations(string digits) {
+        if (digits.empty()) return {};
+        backtrack(digits, 0, "");
+        return combinations;
+    }
+
+    void backtrack(const string& digits, int index, string path) {
+        if (index == digits.length()) {
+            combinations.push_back(path);
+            return;
         }
-        
-        def backtrack(index: int, path: str):
-            if index == len(digits):
-                combinations.append(path)
-                return
-            possible_letters = phone_map[digits[index]]
-            for letter in possible_letters:
-                backtrack(index + 1, path + letter)
-        
-        combinations = []
-        backtrack(0, "")
-        return combinations
+        for (char letter : digitToLetters[digits[index]]) {
+            backtrack(digits, index + 1, path + letter);
+        }
+    }
+};
+
+int main() {
+    Solution solution;
+    vector<string> result = solution.letterCombinations("23");
+    for (const string& comb : result) {
+        cout << comb << " ";
+    }
+    // Output: ad ae af bd be bf cd ce cf
+    return 0;
+}
 ```
 
-### Explanation
+#### JavaScript
 
-1. **Initialize Phone Map:**
-   Create a mapping from digit to corresponding letters.
-   ```python
-   phone_map = {
-       "2": "abc", "3": "def", "4": "ghi", "5": "jkl",
-       "6": "mno", "7": "pqrs", "8": "tuv", "9": "wxyz"
-   }
-   ```
+```js
+/**
+ * @param {string} digits
+ * @return {string[]}
+ */
+var letterCombinations = function (digits) {
+  if (digits.length === 0) return [];
 
-2. **Backtracking Function:**
-   Define a recursive function `backtrack` to generate combinations.
-   - **Base case:** If the current index is equal to the length of digits, add the current path to combinations.
-   - **Recursive case:** For each letter corresponding to the current digit, append the letter to the path and call `backtrack` with the next index.
-   ```python
-   def backtrack(index: int, path: str):
-       if index == len(digits):
-           combinations.append(path)
-           return
-       possible_letters = phone_map[digits[index]]
-       for letter in possible_letters:
-           backtrack(index + 1, path + letter)
-   ```
+  const digitToLetters = {
+    2: "abc",
+    3: "def",
+    4: "ghi",
+    5: "jkl",
+    6: "mno",
+    7: "pqrs",
+    8: "tuv",
+    9: "wxyz",
+  };
 
-3. **Initiate Backtracking:**
-   Initialize the result list `combinations` and start the backtracking process.
-   ```python
-   combinations = []
-   backtrack(0, "")
-   return combinations
-   ```
+  const combinations = [];
 
-### Conclusion
+  const backtrack = (index, path) => {
+    if (index === digits.length) {
+      combinations.push(path);
+      return;
+    }
+    const letters = digitToLetters[digits.charAt(index)];
+    for (let letter of letters) {
+      backtrack(index + 1, path + letter);
+    }
+  };
 
-The above solution efficiently generates all possible letter combinations for a given string of digits. It employs a backtracking approach to explore all potential combinations, leveraging a recursive function to build the combinations step-by-step. The time complexity of $O(3^N \cdot 4^M)$ and space complexity of $O(3^N \cdot 4^M)$ ensure that the algorithm can handle input sizes up to the upper limit specified in the constraints efficiently.
+  backtrack(0, "");
+  return combinations;
+};
+
+// Example usage:
+console.log(letterCombinations("23")); // Output: ["ad","ae","af","bd","be","bf","cd","ce","cf"]
+```
+
+#### TypeScript
+
+```ts
+class Solution {
+  private digitToLetters: { [key: string]: string } = {
+    "2": "abc",
+    "3": "def",
+    "4": "ghi",
+    "5": "jkl",
+    "6": "mno",
+    "7": "pqrs",
+    "8": "tuv",
+    "9": "wxyz",
+  };
+
+  letterCombinations(digits: string): string[] {
+    const combinations: string[] = [];
+
+    const backtrack = (index: number, path: string): void => {
+      if (index === digits.length) {
+        combinations.push(path);
+        return;
+      }
+      const letters = this.digitToLetters[digits.charAt(index)];
+      for (let letter of letters) {
+        backtrack(index + 1, path + letter);
+      }
+    };
+
+    if (digits.length !== 0) {
+      backtrack(0, "");
+    }
+
+    return combinations;
+  }
+}
+
+// Example usage:
+const solution = new Solution();
+console.log(solution.letterCombinations("23")); // Output: ["ad","ae","af","bd","be","bf","cd","ce","cf"]
+```
+
+### Step-by-Step Algorithm
+
+Here's a step-by-step algorithm for generating all possible letter combinations of a given string of digits using backtracking:
+
+1. **Define a mapping of digits to letters:**
+
+   - Create a map where each digit from 2 to 9 is mapped to its corresponding letters on a telephone keypad.
+
+2. **Define a backtracking function:**
+
+   - The function will take the following parameters:
+     - `index`: The current index in the digits string.
+     - `path`: The current combination of letters.
+   - If the index is equal to the length of the digits string, it means we have formed a complete combination, so add it to the result list.
+   - Otherwise, for each letter corresponding to the current digit at the given index, append it to the current combination and recursively call the function with the next index.
+   - After the recursive call, remove the last character from the combination (backtracking).
+
+3. **Base Case:**
+
+   - If the length of the current combination is equal to the length of the input digits string, add the combination to the result list.
+
+4. **Main Function:**
+   - Initialize an empty list to store the combinations.
+   - Call the backtracking function with the initial index set to 0 and an empty string as the initial combination.
+   - Return the list of combinations.
+
+This algorithm ensures that all possible combinations are generated by exploring all valid paths through backtracking.
