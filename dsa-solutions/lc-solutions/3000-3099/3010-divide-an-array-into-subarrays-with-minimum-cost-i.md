@@ -1,5 +1,5 @@
 ---
-id: divide-an-array-into-subarrays-with-minimum-cost-I
+id: divide-an-array-into-subarrays-with-minimum-cost-i
 title: Divide an Array Into Subarrays With Minimum Cost I
 sidebar_label: 3010 -Divide an Array Into Subarrays With Minimum Cost I
 tags:
@@ -15,9 +15,7 @@ You are given an array of integers nums of length n.
 
 The cost of an array is the value of its first element. For example, the cost of [1,2,3] is 1 while the cost of [3,4,1] is 3.
 
-You need to divide nums into 3 disjoint contiguous
-subarrays
-.
+You need to divide nums into 3 disjoint contiguous subarrays.
 
 Return the minimum possible sum of the cost of these subarrays.
 
@@ -64,7 +62,7 @@ It can be shown that 12 is the minimum cost achievable.
 
 ### Intuition
 
-cost = nums[0] + smallest ele + 2nd smallest ele
+cost = nums[0] + smallest + 2nd smallest
 
 Explanation
 You have to divide array in 3 parts think of making 2 slice/cuts in array. No matter how you cut the array, first part of array will always come, cost of 1st part will be nums[0] and it will always be added. So nums[0]is fixed.
@@ -148,14 +146,6 @@ public:
 
 #### Complexity Analysis
 
-- Time complexity:
-  $O(n)$
-  We only traverse through the array once
+- Time complexity:  $O(n)$ We only traverse through the array once
 
-- Space complexity:
-  $O(1)$
-  Since we just have 2 pointers
-
-- **LeetCode Problem**: [ Count Elements With Maximum Frequency](https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-i/description/)
-
-- **Solution Link**: [LeetCode Solution](https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i/solutions/4609507/simple-and-concise-solution)
+- Space complexity: $O(1)$ Since we just have 2 pointers
