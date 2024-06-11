@@ -1,5 +1,5 @@
 ---
-id: Letter Combinations of a Phone Number
+id: letter-combinations-of-a-phone-number
 title: Letter Combinations of a Phone Number (LeetCode)
 sidebar_label: 0017 Letter Combinations of a Phone Number
 tags:

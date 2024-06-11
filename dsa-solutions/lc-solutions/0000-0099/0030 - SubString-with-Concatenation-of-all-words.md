@@ -1,5 +1,5 @@
 ---
-id: Substring with Concatenation of All Words
+id: substring-with-concatenation-of-all-words
 title: Substring with Concatenation of All Words
 sidebar_label: 0030-Substring-with-Concatenation-of-All-Words
 tags:
@@ -48,10 +48,9 @@ You are given a string `s` and an array of strings `words`. All the strings in `
 - The substring starting at 12 is "thefoobar". It is the concatenation of `["the","foo","bar"]`.
 
 ### Constraints
-
-- 1 <= s.length <= 10^4
-- 1 <= words.length <= 5000
-- 1 <= words[i].length <= 30
+- $1 \leq \text{s.length} \leq 10^4$
+- $1 \leq \text{words.length} \leq 5000$
+- $1  \leq \text{words[i].length} \leq 30$
 - s and words[i] consist of lowercase English letters.
 
 ## Approach
