@@ -29,6 +29,8 @@ Now, resolve your all doubts and communicate with our all contributors.
 
 ## Getting Started
 
+⚠ new update: Read carefully👉 https://github.com/CodeHarborHub/codeharborhub.github.io/discussions/1028
+
 To get started with contributing to CodeHarborHub, please refer to our [Contributing Guidelines](CONTRIBUTING.md).
 
 Follow these steps:
