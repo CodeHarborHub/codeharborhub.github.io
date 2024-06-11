@@ -1,5 +1,5 @@
 ---
-id: recursion
+id: 0002-recursion
 title: Recursion
 sidebar_label: Recursion
 tags:
@@ -12,8 +12,6 @@ tags:
   - JavaScript
 description: "This page explains the concept of Recursion with detailed explanations, examples, and code implementations."
 ---
-
-# Recursion
 
 ## 1. What is Recursion?
 
@@ -100,7 +98,7 @@ Compute the factorial of a given number using recursion.
 
 ## 5. Constraints
 
-- $0 <= n <= 12$ (for reasonable output)
+- $0 \leq n \leq 12$ (for reasonable output)
 
 ## 6. Algorithm for Recursion
 
