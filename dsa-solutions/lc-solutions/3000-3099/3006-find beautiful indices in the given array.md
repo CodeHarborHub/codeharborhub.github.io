@@ -1,5 +1,5 @@
 ---
-id: Find Beautiful Indices in the Given Array I
+id: Find-Beautiful-Indices-in-the-Given-Array-I
 title: Find Beautiful Indices in the Given Array I
 sidebar_label: 3006 -Find Beautiful Indices in the Given Array I
 tags:

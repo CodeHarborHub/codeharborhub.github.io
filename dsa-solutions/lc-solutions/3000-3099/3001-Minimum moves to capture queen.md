@@ -1,5 +1,5 @@
 ---
-id: minimum-moves-to-capture-the-queen
+id: Minimum-Moves-to-Capture-The-Queen
 title: Minimum Moves to Capture The Queen
 sidebar_label: 3001 - Minimum Moves to Capture The Queen
 tags:
@@ -9,7 +9,7 @@ description: "This is a solution to the Minimum Moves to Capture The Queen probl
 
 ## Problem Description
 
-There is a 1-indexed $8 \times 8$ chessboard containing 3 pieces.
+There is a 1-indexed 8 x 8 chessboard containing 3 pieces.
 
 You are given 6 integers a, b, c, d, e, and f where:
 
