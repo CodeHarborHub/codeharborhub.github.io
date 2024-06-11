@@ -15,7 +15,7 @@ Intersection types allow you to combine multiple types into one, creating a type
 
 Example -
 
-```<js title='typescript'>
+```tsx title='typescript'
 interface Dog {
     bark(): void;
 }
@@ -53,7 +53,7 @@ Type guards are runtime checks that allow TypeScript to infer more specific type
 
 Example -
 
-```<js title='typescript'>
+```tsx title='typescript'
 function isNumber(x: any): x is number {
     return typeof x === "number";
 }
@@ -77,7 +77,7 @@ Type casting allows you to assert the type of a value, informing TypeScript's ty
 
 Example -
 
-```<js title='typescript'>
+```tsx title='typescript'
 let someValue: any = "hello";
 let strLength: number = (someValue as string).length;
 console.log(strLength); // Output: 5
@@ -89,7 +89,7 @@ Type assertions provide a way to override TypeScript's type inference and explic
 
 Example -
 
-```<js title='typescript'>
+```tsx title='typescript'
 let someValue: any = "hello";
 let strLength: number = (someValue as string).length;
 console.log(strLength); // Output: 5

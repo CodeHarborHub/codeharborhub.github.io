@@ -30,24 +30,24 @@ Classes are blueprints for creating objects with predefined properties and metho
 
 Example:
 
-```<js title='typescript'>
-class Person {
-    name: string;
-    age: number;
+    ```tsx title='typescript'
+    class Person {
+        name: string;
+        age: number;
 
-    constructor(name: string, age: number) {
-        this.name = name;
-        this.age = age;
+        constructor(name: string, age: number) {
+            this.name = name;
+            this.age = age;
+        }
+
+        greet(): void {
+            console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+        }
     }
 
-    greet(): void {
-        console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
-    }
-}
-
-let person = new Person("Alice", 30);
-person.greet(); // Output: Hello, my name is Alice and I am 30 years old.
-```
+    let person = new Person("Alice", 30);
+    person.greet(); // Output: Hello, my name is Alice and I am 30 years old.
+    ```
 
 ## 2. Access Modifiers
 
@@ -56,42 +56,42 @@ person.greet(); // Output: Hello, my name is Alice and I am 30 years old.
 
 Example:
 
-```<js title='typescript'>
-class Employee {
-    public name: string; // accessible from anywhere
-    private salary: number; // accessible only within the class
-    protected department: string; // accessible within the class and subclasses
+    ```tsx title='typescript'
+    class Employee {
+        public name: string; // accessible from anywhere
+        private salary: number; // accessible only within the class
+        protected department: string; // accessible within the class and subclasses
 
-    constructor(name: string, salary: number, department: string) {
-        this.name = name;
-        this.salary = salary;
-        this.department = department;
+        constructor(name: string, salary: number, department: string) {
+            this.name = name;
+            this.salary = salary;
+            this.department = department;
+        }
+
+        public getDetails(): void {
+            console.log(`${this.name} works in the ${this.department} department.`);
+        }
+
+        private getSalary(): number {
+            return this.salary;
+        }
     }
 
-    public getDetails(): void {
-        console.log(`${this.name} works in the ${this.department} department.`);
+    class Manager extends Employee {
+        constructor(name: string, salary: number, department: string) {
+            super(name, salary, department);
+        }
+
+        public getManagerDetails(): void {
+            console.log(`${this.name} is a manager in the ${this.department} department.`);
+        }
     }
 
-    private getSalary(): number {
-        return this.salary;
-    }
-}
-
-class Manager extends Employee {
-    constructor(name: string, salary: number, department: string) {
-        super(name, salary, department);
-    }
-
-    public getManagerDetails(): void {
-        console.log(`${this.name} is a manager in the ${this.department} department.`);
-    }
-}
-
-let manager = new Manager("Bob", 80000, "HR");
-manager.getDetails(); // Output: Bob works in the HR department.
-// manager.getSalary(); // Error: Property 'getSalary' is private and only accessible within class 'Employee'.
-manager.getManagerDetails(); // Output: Bob is a manager in the HR department.
-```
+    let manager = new Manager("Bob", 80000, "HR");
+    manager.getDetails(); // Output: Bob works in the HR department.
+    // manager.getSalary(); // Error: Property 'getSalary' is private and only accessible within class 'Employee'.
+    manager.getManagerDetails(); // Output: Bob is a manager in the HR department.
+    ```
 
 ## 3. The readonly Modifier
 
@@ -99,29 +99,29 @@ Use the readonly modifier to make class properties immutable. Once assigned, the
 
 Example:
 
-```<js title='typescript'>
-class Car {
-    readonly make: string;
-    readonly model: string;
-    year: number;
+    ```tsx title='typescript'
+    class Car {
+        readonly make: string;
+        readonly model: string;
+        year: number;
 
-    constructor(make: string, model: string, year: number) {
-        this.make = make;
-        this.model = model;
-        this.year = year;
+        constructor(make: string, model: string, year: number) {
+            this.make = make;
+            this.model = model;
+            this.year = year;
+        }
+
+        displayDetails(): void {
+            console.log(`${this.year} ${this.make} ${this.model}`);
+        }
     }
 
-    displayDetails(): void {
-        console.log(`${this.year} ${this.make} ${this.model}`);
-    }
-}
-
-let car = new Car("Toyota", "Corolla", 2020);
-car.displayDetails(); // Output: 2020 Toyota Corolla
-car.year = 2021;
-car.displayDetails(); // Output: 2021 Toyota Corolla
-// car.make = "Honda"; // Error: Cannot assign to 'make' because it is a read-only property.
-```
+    let car = new Car("Toyota", "Corolla", 2020);
+    car.displayDetails(); // Output: 2020 Toyota Corolla
+    car.year = 2021;
+    car.displayDetails(); // Output: 2021 Toyota Corolla
+    // car.make = "Honda"; // Error: Cannot assign to 'make' because it is a read-only property.
+    ```
 
 ## 4. Getters & Setters
 
@@ -129,36 +129,36 @@ Getters and Setters allow you to control the access of the class properties. The
 
 Example:
 
-```<js title='typescript'>
-class Circle {
-    private _radius: number;
+    ```tsx title='typescript'
+    class Circle {
+        private _radius: number;
 
-    constructor(radius: number) {
-        this._radius = radius;
-    }
-
-    get radius(): number {
-        return this._radius;
-    }
-
-    set radius(value: number) {
-        if (value <= 0) {
-            throw new Error("Radius must be positive.");
+        constructor(radius: number) {
+            this._radius = radius;
         }
-        this._radius = value;
+
+        get radius(): number {
+            return this._radius;
+        }
+
+        set radius(value: number) {
+            if (value <= 0) {
+                throw new Error("Radius must be positive.");
+            }
+            this._radius = value;
+        }
+
+        getArea(): number {
+            return Math.PI * this._radius * this._radius;
+        }
     }
 
-    getArea(): number {
-        return Math.PI * this._radius * this._radius;
-    }
-}
-
-let circle = new Circle(5);
-console.log(circle.radius); // Output: 5
-circle.radius = 10;
-console.log(circle.getArea()); // Output: 314.159...
-// circle.radius = -5; // Error: Radius must be positive.
-```
+    let circle = new Circle(5);
+    console.log(circle.radius); // Output: 5
+    circle.radius = 10;
+    console.log(circle.getArea()); // Output: 314.159...
+    // circle.radius = -5; // Error: Radius must be positive.
+    ```
 
 ## 5. Inheritance
 
@@ -166,29 +166,29 @@ Learn how to use inheritance to reuse the functionality of another class. Inheri
 
 Example:
 
-```<js title='typescript'>
-class Animal {
-    name: string;
+    ```tsx title='typescript'
+    class Animal {
+        name: string;
 
-    constructor(name: string) {
-        this.name = name;
+        constructor(name: string) {
+            this.name = name;
+        }
+
+        move(distance: number = 0): void {
+            console.log(`${this.name} moved ${distance} meters.`);
+        }
     }
 
-    move(distance: number = 0): void {
-        console.log(`${this.name} moved ${distance} meters.`);
+    class Dog extends Animal {
+        bark(): void {
+            console.log("Woof! Woof!");
+        }
     }
-}
 
-class Dog extends Animal {
-    bark(): void {
-        console.log("Woof! Woof!");
-    }
-}
-
-let dog = new Dog("Rex");
-dog.bark(); // Output: Woof! Woof!
-dog.move(10); // Output: Rex moved 10 meters.
-```
+    let dog = new Dog("Rex");
+    dog.bark(); // Output: Woof! Woof!
+    dog.move(10); // Output: Rex moved 10 meters.
+    ```
 
 ## 6. Static Methods & Properties
 
@@ -196,51 +196,51 @@ Define static methods and properties shared by all instances of a class. Static 
 
 Example:
 
-```<js title='typescript'>
-class MathUtil {
-    static PI: number = 3.14;
+    ```tsx title='typescript'
+    class MathUtil {
+        static PI: number = 3.14;
 
-    static calculateCircumference(radius: number): number {
-        return 2 * MathUtil.PI * radius;
+        static calculateCircumference(radius: number): number {
+            return 2 * MathUtil.PI * radius;
+        }
     }
-}
 
-console.log(MathUtil.PI); // Output: 3.14
-console.log(MathUtil.calculateCircumference(10)); // Output: 62.8
-```
+    console.log(MathUtil.PI); // Output: 3.14
+    console.log(MathUtil.calculateCircumference(10)); // Output: 62.8
+    ```
 
 ## 7. Abstract Classes
 
 Explain the abstract classes that define some common behaviors. Abstract classes cannot be instantiated directly and are meant to be extended by other classes, providing a base structure and forcing implementation of specific methods.
 
-Example:
+Example -
 
-```<js title='typescript'>
-abstract class Shape {
-    abstract getArea(): number;
+    ```tsx title='typescript'
+    abstract class Shape {
+        abstract getArea(): number;
 
-    display(): void {
-        console.log(`The area is ${this.getArea()}`);
-    }
-}
-
-class Rectangle extends Shape {
-    width: number;
-    height: number;
-
-    constructor(width: number, height: number) {
-        super();
-        this.width = width;
-        this.height = height;
+        display(): void {
+            console.log(`The area is ${this.getArea()}`);
+        }
     }
 
-    getArea(): number {
-        return this.width * this.height;
-    }
-}
+    class Rectangle extends Shape {
+        width: number;
+        height: number;
 
-let rectangle = new Rectangle(5, 10);
-rectangle.display(); // Output: The area is 50
-```
+        constructor(width: number, height: number) {
+            super();
+            this.width = width;
+            this.height = height;
+        }
+
+        getArea(): number {
+            return this.width * this.height;
+        }
+    }
+
+    let rectangle = new Rectangle(5, 10);
+    rectangle.display(); // Output: The area is 50
+    ```
 
 These concepts and examples illustrate how to effectively use classes and their advanced features in TypeScript, enhancing your ability to write robust and maintainable object-oriented code.

@@ -17,7 +17,7 @@ Discover how to use TypeScript generics to develop generic functions. Generics e
 
 Example -
 
-```<js title='typescript'>
+```tsx title='typescript'
 // Generic function to echo an argument
 function echo<T>(arg: T): T {
     return arg;
@@ -36,7 +36,7 @@ Generic constraints allow you to restrict the types that can be used with generi
 
 Example -
 
-```<js title='typescript'>
+```tsx title='typescript'
 // Generic function to log the length of an array
 function logLength<T extends { length: number }>(arr: T): void {
     console.log(`Length of array: ${arr.length}`);
@@ -53,7 +53,7 @@ Generic classes allow you to create classes that can work with different types o
 
 Example -
 
-```<js title='typescript'>
+```tsx title='typescript'
 // Generic class for a pair of values
 class Pair<T, U> {
     constructor(public first: T, public second: U) {}
@@ -76,7 +76,7 @@ Generic interfaces enable you to define interfaces with generic type parameters,
 
 Example -
 
-```<js title='typescript'>
+```tsx title='typescript'
 interface Pair<T, U> {
     first: T;
     second: U;

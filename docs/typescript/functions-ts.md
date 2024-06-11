@@ -17,7 +17,7 @@ In this section, you will explore various function-related concepts such as func
 
 Example:
 
-```<js title='typescript'>
+```tsx title='typescript'
 function add(a: number, b: number): number {
     return a + b;
 }
@@ -32,7 +32,7 @@ Function types specify the parameter types and return type, allowing you to ensu
 
 Example:
 
-```<js title='typescript'>
+```tsx title='typescript'
 let myFunction: (a: number, b: number) => number;
 
 myFunction = function(x: number, y: number): number {
@@ -48,7 +48,7 @@ Optional parameters allow you to call a function without passing some arguments,
 
 Example:
 
-```<js title='typescript'>
+```tsx title='typescript'
 function greet(name: string, greeting?: string): string {
     return greeting ? `${greeting}, ${name}!` : `Hello, ${name}!`;
 }
@@ -63,7 +63,7 @@ Default parameters allow you to specify default values for function parameters, 
 
 Example:
 
-```<js title='typescript'>
+```tsx title='typescript'
 function multiply(a: number, b: number = 1): number {
     return a * b;
 }
@@ -78,7 +78,7 @@ Use the rest parameters to handle an infinite number of arguments of a function.
 
 Example:
 
-```<js title='typescript'>
+```tsx title='typescript'
 function sum(...numbers: number[]): number {
     return numbers.reduce((total, num) => total + num, 0);
 }
@@ -93,7 +93,7 @@ Function overloadings allow you to define multiple function signatures for the s
 
 Example:
 
-```<js title='typescript'>
+```tsx title='typescript'
 function combine(a: string, b: string): string;
 function combine(a: number, b: number): number;
 function combine(a: any, b: any): any {

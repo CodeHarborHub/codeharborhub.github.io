@@ -19,7 +19,7 @@ The if...else statement is used to execute a block of code based on a condition.
 
 Example:
 
-```<js title='typescript'>
+```tsx title='typescript'
 let age: number = 25;
 if (age >= 18) {
     console.log("Adult");
@@ -34,7 +34,7 @@ The switch statement is used to perform different actions based on different con
 
 Example:
 
-```<js title='typescript'>
+```tsx title='typescript'
 typescript
 
 let fruit: string = "apple";
@@ -56,7 +56,7 @@ The for loop is used to execute a block of code a specified number of times.
 
 Example:
 
-```<js title='typescript'>
+```tsx title='typescript'
 for (let i = 0; i < 5; i++) {
     console.log(i);
 }
@@ -68,7 +68,7 @@ The for...of loop is used to iterate over the values of an iterable object (like
 
 Example:
 
-```<js title='typescript'>
+```tsx title='typescript'
 let numbers: number[] = [1, 2, 3, 4];
 for (let num of numbers) {
     console.log(num);
@@ -81,7 +81,7 @@ The for...in loop is used to iterate over the keys of an object.
 
 Example:
 
-```<js title='typescript'>
+```tsx title='typescript'
 let person: { name: string, age: number } = { name: "Alice", age: 25 };
 for (let key in person) {
     console.log(key + ": " + person[key]);
@@ -94,7 +94,7 @@ The while loop is used to execute a block of code as long as a specified conditi
 
 Example:
 
-```<js title='typescript'>
+```tsx title='typescript'
 let count: number = 0;
 while (count < 5) {
     console.log(count);
@@ -108,7 +108,7 @@ The do...while loop is similar to the while loop, but it will execute the block 
 
 Example:
 
-```<js title='typescript'>
+```tsx title='typescript'
 let count: number = 0;
 do {
     console.log(count);
@@ -122,7 +122,7 @@ The break statement is used to exit a loop or a switch statement.
 
 Example:
 
-```<js title='typescript'>
+```tsx title='typescript'
 for (let i = 0; i < 5; i++) {
     if (i === 3) {
         break;
@@ -137,7 +137,7 @@ The continue statement is used to skip the current iteration of a loop and conti
 
 Example:
 
-```<js title='typescript'>
+```tsx title='typescript'
 for (let i = 0; i < 5; i++) {
     if (i === 3) {
         continue;
@@ -152,7 +152,7 @@ The try...catch...finally statement is used to handle exceptions and execute cod
 
 Example:
 
-```<js title='typescript'>
+```tsx title='typescript'
 try {
     let result: number = 10 / 0;
     console.log(result);
@@ -169,7 +169,7 @@ The throw statement is used to create a custom error.
 
 Example:
 
-```<js title='typescript'>
+```tsx title='typescript'
 function divide(a: number, b: number): number {
     if (b === 0) {
         throw new Error("Division by zero");

@@ -24,7 +24,7 @@ The 'Enum' datatype is used to define a set of named constants.
 
 Example:
 
-```<js title='typescript'>
+```tsx title='typescript'
 typescript
 
 enum Color { Red, Green, Blue }
@@ -85,7 +85,7 @@ The 'Interfaces' datatype is used to describe the shape of an object.
 
 Example:
 
-```<js title='typescript'>
+```tsx title='typescript'
 typescript
 
 interface Person {

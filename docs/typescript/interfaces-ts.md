@@ -29,7 +29,7 @@ In this section, you'll delve into interfaces, a key feature of TypeScript, and 
 
 Interfaces in TypeScript define the structure of objects and specify the types of their properties and methods, ensuring consistency and interoperability.
 
-```<js title='typescript'>
+```tsx title='typescript'
 interface Shape {
     name: string;
     area(): number;
@@ -57,7 +57,7 @@ console.log(circle.area()); // Output: 78.54
 
 Extending interfaces allows you to inherit the properties and methods of one interface into another, enabling you to build more complex and reusable interfaces.
 
-```<js title='typescript'>
+```tsx title='typescript'
 interface Animal {
     name: string;
     sound(): string;
@@ -89,7 +89,7 @@ console.log(dog.sound()); // Output: Woof! Woof!
 
 While both interfaces and abstract classes enable you to define blueprints for objects, they have distinct purposes and characteristics. Understanding these differences is crucial for choosing the appropriate approach for your design needs.
 
-```<js title='typescript'>
+```tsx title='typescript'
 interface Vehicle {
     name: string;
     start(): void;
