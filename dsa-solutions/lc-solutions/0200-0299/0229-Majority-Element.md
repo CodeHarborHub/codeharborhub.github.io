@@ -34,9 +34,8 @@ Output: [1,2]
 
 ### Constraints
 
-- $1 \leq nums.length \leq 5 \times 10^4$
-- $-10^9 \leq nums[i] \leq 10^9$
-
+- `1 <= nums.length <= 5 * 10^4`
+- `-10^9 <= nums[i] <= 10^9`
 ### Approach
 
 To solve this problem, we can use the Boyer-Moore Voting Algorithm, which efficiently finds the majority elements in linear time and constant space. The algorithm can be summarized in the following steps:
@@ -52,9 +51,7 @@ To solve this problem, we can use the Boyer-Moore Voting Algorithm, which effici
 
 #### Code in Different Languages
 
-<Tabs>
-<TabItem value="cpp" label="C++">
-<SolutionAuthor name="@Vipullakum007"/>
+### C++ Solution
 ```cpp
 #include <vector>
 #include <iostream>
@@ -106,9 +103,9 @@ int main() {
         cout << num << " ";
     }
 }
-</TabItem>
-<TabItem value="java" label="Java">
-<SolutionAuthor name="@Vipullakum007"/>
+```
+### Java Solution
+```java
 import java.util.*;
 
 public class MajorityElementII {
@@ -156,9 +153,10 @@ public class MajorityElementII {
         System.out.println(result);
     }
 }
-</TabItem>
-<TabItem value="python" label="Python">
-<SolutionAuthor name="@Vipullakum007"/>
+```
+### Python Solution
+
+```python
 def majorityElement(nums):
     n = len(nums)
     if n == 0:
@@ -200,20 +198,18 @@ def majorityElement(nums):
 
 nums = [3, 2, 3]
 print(majorityElement(nums))
-</TabItem>
-</Tabs>
+```
 
 ### Complexity Analysis
 
 ### Time Complexity: O(N)
-**Reason:** We perform two passes through the array, each requiring linear time.
+>Reason: We perform two passes through the array, each requiring linear time.
 
 **Space Complexity:** O(1)
-**Reason:** We use a constant amount of extra space for counters and candidates.
+>Reason: We use a constant amount of extra space for counters and candidates.
 
-This solution efficiently finds all elements that appear more than ⌊ n/3 ⌋ times using the Boyer-Moore Voting Algorithm. The time complexity is linear, and the space complexity is constant, making it suitable for large input sizes.
+>This solution efficiently finds all elements that appear more than ⌊ n/3 ⌋ times using the Boyer-Moore Voting Algorithm. The time complexity is linear, and the space complexity is constant, making it suitable for large input sizes.
 
 #### References
 **LeetCode Problem:** Majority Element II
 **Authors GeeksforGeeks Profile:** Vipul lakum
-```
