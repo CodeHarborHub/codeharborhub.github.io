@@ -18,15 +18,15 @@ Design your implementation of the circular double-ended queue (deque).
 
 Implement the MyCircularDeque class:
 
-- $MyCircularDeque(int k)$ Initializes the deque with a maximum size of $k$.
-- $boolean insertFront()$ Adds an item at the front of Deque. Returns true if the operation is successful, or false otherwise.
-- $boolean insertLast()$ Adds an item at the rear of Deque. Returns true if the operation is successful, or false otherwise.
-- $boolean deleteFront()$ Deletes an item from the front of Deque. Returns true if the operation is successful, or false otherwise.
-- $boolean deleteLast()$ Deletes an item from the rear of Deque. Returns true if the operation is successful, or false otherwise.
-- $int getFront()$ Returns the front item from the Deque. Returns -1 if the deque is empty.
-- $int getRear()$ Returns the last item from Deque. Returns -1 if the deque is empty.
-- $boolean isEmpty()$ Returns true if the deque is empty, or false otherwise.
-- $boolean isFull()$ Returns true if the deque is full, or false otherwise.
+- **MyCircularDeque(int k)** Initializes the deque with a maximum size of $k$.
+- **boolean insertFront()** Adds an item at the front of Deque. Returns true if the operation is successful, or false otherwise.
+- **boolean insertLast()** Adds an item at the rear of Deque. Returns true if the operation is successful, or false otherwise.
+- **boolean deleteFront()** Deletes an item from the front of Deque. Returns true if the operation is successful, or false otherwise.
+- **boolean deleteLast()** Deletes an item from the rear of Deque. Returns true if the operation is successful, or false otherwise.
+- **int getFront()** Returns the front item from the Deque. Returns -1 if the deque is empty.
+- **int getRear()** Returns the last item from Deque. Returns -1 if the deque is empty.
+- **boolean isEmpty()** Returns true if the deque is empty, or false otherwise.
+- **boolean isFull()** Returns true if the deque is full, or false otherwise.
 
 
 ### Examples
@@ -36,7 +36,9 @@ Implement the MyCircularDeque class:
 - **Input:** $["MyCircularDeque", "insertLast", "insertLast", "insertFront", "insertFront", "getRear", "isFull", "deleteLast", "insertFront", "getFront"]$
 $[[3], [1], [2], [3], [4], [], [], [], [4], []]$
 - **Output:** $[null, true, true, true, false, 2, true, true, true, 4]$
-- **Explanation:** 
+- **Explanation:**
+
+```py
 MyCircularDeque myCircularDeque = new MyCircularDeque(3);
 myCircularDeque.insertLast(1);  // return True
 myCircularDeque.insertLast(2);  // return True
@@ -47,12 +49,12 @@ myCircularDeque.isFull();       // return True
 myCircularDeque.deleteLast();   // return True
 myCircularDeque.insertFront(4); // return True
 myCircularDeque.getFront();     // return 4
-
+```
 
 ### Constraints
 
-- $1 <= k <= 1000$
-- $0 <= value <= 1000$
+- $1 \leq k \leq 1000$
+- $0 \leq value \leq 1000$
 - At most 2000 calls will be made to insertFront, insertLast, deleteFront, deleteLast, getFront, getRear, isEmpty, isFull.
 
 
@@ -65,7 +67,7 @@ The intuition behind the implementation of the $MyCircularDeque$ class is to eff
 
 1. **Initialization:**
 
-- The $MyCircularDeque$ class is initialized with a fixed size $k$.
+- The **MyCircularDeque** class is initialized with a fixed size $k$.
 - An array arr of size $k$ is created to store the deque elements.
 - Two pointers front and rear are initialized to -1 to indicate an empty deque.
 
@@ -481,4 +483,4 @@ public:
 
 ### Conclusion
 
-The $MyCircularDeque$ class effectively implements a circular deque using an array, allowing for efficient insertion and deletion operations at both the front and rear. The class maintains pointers for the front and rear of the deque and uses modular arithmetic to handle wrapping around the array. The isFull and isEmpty methods ensure correct operation and prevent overflow or underflow. The time complexity for each operation (insertFront, insertLast, deleteFront, deleteLast) is $O(1)$, making the operations highly efficient. The space complexity is $O(k)$, where $k$ is the size of the deque, due to the fixed-size array used for storage.
+The **MyCircularDeque** class effectively implements a circular deque using an array, allowing for efficient insertion and deletion operations at both the front and rear. The class maintains pointers for the front and rear of the deque and uses modular arithmetic to handle wrapping around the array. The isFull and isEmpty methods ensure correct operation and prevent overflow or underflow. The time complexity for each operation (insertFront, insertLast, deleteFront, deleteLast) is $O(1)$, making the operations highly efficient. The space complexity is $O(k)$, where $k$ is the size of the deque, due to the fixed-size array used for storage.
