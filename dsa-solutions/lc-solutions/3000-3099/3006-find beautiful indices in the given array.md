@@ -60,7 +60,7 @@ Thus we return [0] as the result.
 
 ### Intuition
 
-Basically the problem statement suggest that we need to find the index of string a matching in string s and then check if there is any index j which is matching with b in s and abs(i - j) <= k.
+Basically the problem statement suggest that we need to find the index of string a matching in string s and then check if there is any index j which is matching with b in s and `abs(i - j) <= k`.
 So to find the matching index need calculate the longest prefix which is suffix array ( LPS array ) and in that if the lps[i] matches with pattern string length then we found a match - KMP algo.
 If you don't know KMP algo for pattern matching then first go through it then come back to solution.
 
@@ -70,7 +70,7 @@ Get index of the matched pattern for the string a - lets call it v1
 Get index of the matched pattern for the string b - lets call it v2
 Check for possible combination of i & j in the v1 and v2.
 to do so we need to check if the abs(i - j). If so then simple add it to answer.
-If v1[i] is > v2[j]&& abs( i- j) > k then keep moving pointer j till v1[i] > v2[j]
+If `v1[i] > v2[j]&& abs( i- j) > k` then keep moving pointer j till v1[i] > v2[j]
 Check again if abs(i - j) or not. If it is less, then add it to ans
 
 ### Solution Code
