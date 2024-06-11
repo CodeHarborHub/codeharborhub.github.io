@@ -1,5 +1,5 @@
 ---
-id: Find-Beautiful-Indices-in-the-Given-Array-I
+id: find-beautiful-indices-in-the-given-array-i
 title: Find Beautiful Indices in the Given Array I
 sidebar_label: 3006 -Find Beautiful Indices in the Given Array I
 tags:
@@ -180,7 +180,3 @@ vector<int> beautifulIndices(string s, string a, string b, int k) {
 
 - Time complexity: $O(n)$, where n is the length of the string
 - Space complexity: $O(n)$, where n is the length of the string
-
-- **LeetCode Problem**: [ Count Elements With Maximum Frequency](https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-i/description/)
-
-- **Solution Link**: [LeetCode Solution](https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-i/solutions/4561773/c-java-kmp-string-pattern-matching-algo-very-simple)
