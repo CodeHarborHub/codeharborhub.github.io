@@ -44,14 +44,23 @@
 }
 
 .resources-section .resources-container .resources-filters {
-  display: inline-flex;
-  gap: 0.25rem;
-  margin-bottom: 1.5rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: 10px;
+  margin: 1.5rem 0;
   border-radius: 0.5rem;
   padding: 0.5rem;
   font-family: "Jakarta", sans-serif;
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: 600;  
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-color: #07574e73;
+  border: 1px solid #666;
 }
 
 .bg-secondary-700 {
@@ -98,6 +107,8 @@
   .resource {
   text-decoration: none;
   color: inherit;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(5, 174, 216, 0.386);
 }
 
 .resources-section
@@ -155,6 +166,7 @@
   .resource-title {
   font-weight: 600;
   margin-bottom: 8px;
+  padding: 0 0.5rem;
 }
 
 .resources-section
@@ -163,6 +175,7 @@
   .resources-grid
   .resource-description {
     line-height: 1.375;
+    padding: 0 0.5rem;
 }
 
 .resources-section
@@ -180,13 +193,15 @@
   .resources-grid
   .resource-duration {
   font-size: 14px;
-  color: #666;
+  padding: 0.5rem;
+  color: var(--ifm-color-primary);
 }
 
 .resources-section .resources-container .pagination {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin-top: 2.5rem;
 }
 
 .resources-section .resources-container .pagination .pagination-button {
