@@ -7,6 +7,7 @@ tags:
   - Dynamic Programming
   - Recursion
 description: Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*' where '.' matches any single character and '*' matches zero or more of the preceding element.
+sidebar_position: 10
 ---
 
 ## Problem Description

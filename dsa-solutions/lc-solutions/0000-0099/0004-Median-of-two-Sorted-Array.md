@@ -7,7 +7,8 @@ tags:
     - Binary Search
     - Divide and Conquer0
     - LeetCode
-description: Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays. The overall run time complexity should be $O(log (m+n))$.
+description: Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.
+sidebar_position: 4
 ---
 
 In this page, we will solve the problem [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) from LeetCode. We will provide multiple approaches to solve the problem along with the code implementation and the complexity analysis of the code.
