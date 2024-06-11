@@ -10,7 +10,7 @@ tags:
 description: "This is a solution to the Two Sum problem on LeetCode."
 ---
 
-In this page, we will solve the Two Sum problem using three different approaches: brute force, hash table, and two-pointer technique. We will provide the implementation of the solution in JavaScript, TypeScript, Python, Java, C++, and more.
+In this page, we will solve the Sort Colors problem using three different approaches: brute force, 3 Pointer, and Dutch National Flag Algo technique. We will provide the implementation of the solution in JavaScript, TypeScript, Python, Java, C++, and more.
 
 ## Problem Description
 
