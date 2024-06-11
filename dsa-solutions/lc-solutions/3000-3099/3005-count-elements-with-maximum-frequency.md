@@ -146,7 +146,3 @@ public:
 
 - Time complexity: $O(nlog(n))$, where n is the total number of elements in nums
 - Space complexity:$O(nlog(n))$, where n is the total number of elements in nums
-
-- **LeetCode Problem**: [ Count Elements With Maximum Frequency](https://leetcode.com/problems/count-elements-with-maximum-frequency/description/)
-
-- **Solution Link**: [LeetCode Solution](https://leetcode.com/problems/count-elements-with-maximum-frequency/solutions/4840310/easy-solution-c)
