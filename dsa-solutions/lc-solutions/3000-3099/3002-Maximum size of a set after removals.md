@@ -1,5 +1,5 @@
 ---
-id: Maximum Size of a Set After Removals
+id: maximum-size-of-a-set-after-removals
 title: Maximum Size of a Set After Removals
 sidebar_label: 3002 -Maximum Size of a Set After Removals
 tags:
