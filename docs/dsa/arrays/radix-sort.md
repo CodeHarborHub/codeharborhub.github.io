@@ -250,11 +250,11 @@ public class RadixSort {
 
 ### Complexity of Radix Sort
 
-- **Time Complexity**: O(d⋅(n+k))
-  - $d: Number of digits in the largest number.$
-  - $n: Number of elements in the array.
-  - $k: Range of the digits for decimal system,k = 10.$
-- **Space Complexity**: O(n + k)
+- **Time Complexity**: $O(d⋅(n+k))$
+  - $d$: Number of digits in the largest number.
+  - $n$: Number of elements in the array.
+  - $k$: Range of the digits for decimal system, $k = 10.$
+- **Space Complexity**: $O(n + k)$
 
 ### Conclusion
 
