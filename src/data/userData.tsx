@@ -133,10 +133,18 @@ export const Users: User[] = [
     description:
       "It generates a Captcha code based on the user's input and validates the user's input with the generated Captcha code.",
     preview: require("./showcase/captcha-code.png"),
-    website:
-      "https://50-days-50-web-project.vercel.app/captcha/captcha.html",
+    website: "https://50-days-50-web-project.vercel.app/captcha/captcha.html",
     source:
       "https://github.com/dhairyagothi/50_days_50_web_project/tree/Main/public/captcha",
     tags: ["html", "css", "javascript"],
+  },
+  {
+    title: "Algo",
+    description:
+      "Algo is a modern and responsive web application for learning and practicing algorithms.",
+    preview: require("./showcase/algo.jpg"),
+    website: "https://ajay-dhangar.github.io/algo/",
+    source: "https://github.com/Ajay-Dhangar/algo",
+    tags: ["opensource", "react", "typescript", "templates", "favorite"],
   },
 ];

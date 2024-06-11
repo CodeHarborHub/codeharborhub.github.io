@@ -6,12 +6,8 @@ tags:
   - Math
   - Palindrome
 description: Given an integer x, return true if x is a palindrome, and false otherwise.
+sidebar_position: 9
 ---
-## Problem Description
-
-| Problem Statement                                                                                         | Solution Link                                                                                                                                          | LeetCode Profile                                   |
-| :--------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------- |
-| [Palindrome Number](https://leetcode.com/problems/palindrome-number/description/) | [palindrome Number  Solution on LeetCode](https://leetcode.com/problems/palindrome-number/solutions/3651712/2-method-s-c-java-python-beginner-friendly/) | [gabaniyash846](https://leetcode.com/u/gabaniyash846/) |
 
 ## Problem Statement
 
