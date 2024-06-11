@@ -1,5 +1,5 @@
 ---
-id: Minimum-Moves-to-Capture-The-Queen
+id: minimum-moves-to-capture-the-queen
 title: Minimum Moves to Capture The Queen
 sidebar_label: 3001 - Minimum Moves to Capture The Queen
 tags:
@@ -243,7 +243,3 @@ public:
 ### Conclusion
 
 THis code efficectively calculates the minimum number of moves using constant space and constant time
-
-- **LeetCode Problem**: [Minimum Moves to Capture The Queen](https://leetcode.com/problems/minimum-moves-to-capture-the-queen/description/)
-
-- **Solution Link**: [LeetCode Solution](https://leetcode.com/problems/minimum-moves-to-capture-the-queen/solutions/4577719/beats-100-time-complexity-o-1)
