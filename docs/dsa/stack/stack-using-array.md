@@ -1,10 +1,10 @@
 ---
 id: stack-in-dsa
 title: Stack Using Array
-sidebar_label: Stack
+sidebar_label: Stack Using Array
 sidebar_position: 1
-description: ""
-tags: [dsa, data-structures, stack]
+description: "Stack is a linear data structure that follows LIFO principle"
+tags: [dsa, data-structures, stack, LIFO]
 ---
 
 ### Introduction to Stack
