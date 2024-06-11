@@ -1,5 +1,5 @@
 ---
-id: Count Elements With Maximum Frequency
+id: count-elements-with-maximum-frequency
 title: Count Elements With Maximum Frequency
 sidebar_label: 3005 -Count Elements With Maximum Frequency
 tags:

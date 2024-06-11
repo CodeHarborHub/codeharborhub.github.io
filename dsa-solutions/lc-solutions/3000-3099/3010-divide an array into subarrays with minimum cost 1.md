@@ -1,5 +1,5 @@
 ---
-id: Divide an Array Into Subarrays With Minimum Cost I
+id: divide-an-array-into-subarrays-with-minimum-cost-I
 title: Divide an Array Into Subarrays With Minimum Cost I
 sidebar_label: 3010 -Divide an Array Into Subarrays With Minimum Cost I
 tags:
