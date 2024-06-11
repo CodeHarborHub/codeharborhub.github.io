@@ -335,11 +335,8 @@ const config = {
             title: "Social Media",
             items: [
               {
-                label: "Linked",
-                href: "https://github.com/codeharborhub/codeharborhub",
-            position: "right",
-            className: "header-github-link",
-            "aria-label": "GitHub repository",
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/company/codeharborhub/",
               },
               {
                 label: "YouTube",

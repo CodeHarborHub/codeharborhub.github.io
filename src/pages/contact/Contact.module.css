@@ -142,7 +142,7 @@
   font-weight: 600;
   cursor: pointer;
 }
-
+ /* Hey i have made the changes here and added he hover effect here  */
 .main__contact_contains_right .form_container .form_group .form_button:hover{
   background-color: #2c4aa6;
 }
