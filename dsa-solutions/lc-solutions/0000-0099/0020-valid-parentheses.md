@@ -43,7 +43,7 @@ An input string is valid if:
 
 ### Constraints
 
-- 1 <= s.length <= 104
+- $1 \leq \text{s.length} \leq 104$
 - s consists of parentheses only '()[]{}'.
 
 ### Approach
