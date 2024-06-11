@@ -119,6 +119,31 @@ const output = levelOrder(input)
   <TabItem value="JavaScript" label="JavaScript">
   <SolutionAuthor name="@hiteshgahanolia"/>
    ```javascript
+   }
+function levelOrder(root) {
+    if (!root) return [];
+    
+    const queue = [root];
+    const ans = [];
+    
+    while (queue.length > 0) {
+        const size = queue.length;
+        const temp = [];
+        
+        for (let i = 0; i < size; i++) {
+            const curr = queue.shift();
+            
+            if (curr.left) queue.push(curr.left);
+            if (curr.right) queue.push(curr.right);
+            
+            temp.push(curr.val);
+        }
+        
+        ans.push(temp);
+    }
+    
+    return ans;
+}
 ```
   </TabItem>
   <TabItem value="TypeScript" label="TypeScript">
