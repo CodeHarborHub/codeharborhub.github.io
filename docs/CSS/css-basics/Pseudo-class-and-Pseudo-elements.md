@@ -36,7 +36,7 @@ input:focus {
 ```
 
 <BrowserWindow url="http://127.0.0.1:5500/index.html">
-<input type="text" required>
+<input type="text" required/>
 <style>
   {`input:focus {
     border-color: blue;
