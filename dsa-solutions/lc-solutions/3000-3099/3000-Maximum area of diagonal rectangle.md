@@ -1,15 +1,10 @@
 ---
-id: 3000
+id: 3000-maximum-area-of-diagonal-rectangle
 title: Maximum area of longest diagonal rectangle (Leetcode)
 sidebar_label: 3000-Maximum area of longest diagonal rectangle
 description: Solution of Maximum area of longest diagonal rectangle
 ---
 
-## Problem Description
-
-| Problem Statement                                                                                                                   | Solution Link | LeetCode Profile |
-| :---------------------------------------------------------------------------------------------------------------------------------- | :------------ | :--------------- |
-| [Maximum area of longest diagonal rectangle](https://leetcode.com/problems/maximum-area-of-longest-diagonal-rectangle/description/) |
 
 ## Problem Description
 
