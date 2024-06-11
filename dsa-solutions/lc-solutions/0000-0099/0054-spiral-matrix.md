@@ -1,7 +1,7 @@
 ---
 id: spiral-matrix
 title: Spiral Matrix
-sidebar_label: 0054 Spiral Matrix
+sidebar_label: 0054-Spiral-Matrix
 tags:
 - Array
 - Matrix
@@ -69,9 +69,7 @@ We continue this process while adjusting the boundaries until all elements have 
 
 ### Code in Different Languages
 
-<Tabs>
-<TabItem value="cpp" label="C++">
-  <SolutionAuthor name="@Vipullakum007"/>
+### C++ Solution
 
 ```cpp
 
@@ -133,8 +131,8 @@ int main() {
 }
 </TabItem>
 ```
-### JAVA
-```<TabItem value="java" label="Java"> <SolutionAuthor name="@Vipullakum007"/>
+### JAVA Solution
+```java
 import java.util.ArrayList;
 import java.util.List;
 
@@ -185,11 +183,11 @@ public class SpiralMatrix {
         System.out.println(sm.spiralOrder(matrix)); // Output: [1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7]
     }
 }
-</TabItem>
-```
-### Python
 
-```<TabItem value="python" label="Python"><SolutionAuthor name="@Vipullakum007"/>
+```
+### Python Solution
+
+```python
   def spiralOrder(matrix):
     if not matrix:
         return []
@@ -230,20 +228,15 @@ matrix = [
 ]
 print(spiralOrder(matrix))  # Output: [1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7]
 
-</TabItem>
 ```
-</Tabs>
 
 ###  Complexity Analysis
 #### Time Complexity: O(m * n)
-**Reason:** We visit every element in the matrix exactly once.
+>Reason: We visit every element in the matrix exactly once.
 
 **Space Complexity:** O(1)
-**Reason:** We only use a fixed amount of extra space, regardless of the input size.
+>Reason: We only use a fixed amount of extra space, regardless of the input size.
 ### References
 **LeetCode Problem:** Spiral Matrix
-
-**Author's LeetCode Profile:** Vipul Lakum
-```
 
 
