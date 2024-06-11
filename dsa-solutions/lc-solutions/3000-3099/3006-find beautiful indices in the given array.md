@@ -70,7 +70,7 @@ Get index of the matched pattern for the string a - lets call it v1
 Get index of the matched pattern for the string b - lets call it v2
 Check for possible combination of i & j in the v1 and v2.
 to do so we need to check if the abs(i - j). If so then simple add it to answer.
-If `v1[i] > v2[j]&& abs( i- j) > k` then keep moving pointer j till v1[i] > v2[j]
+If `v1[i] > v2[j]&& abs( i- j) > k` then keep moving pointer j till `v1[i] > v2[j]`
 Check again if abs(i - j) or not. If it is less, then add it to ans
 
 ### Solution Code
