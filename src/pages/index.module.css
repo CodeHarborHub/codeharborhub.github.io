@@ -37,9 +37,10 @@
 
 .tweetContainer {
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  margin-bottom: 1rem;  
 }
 
 .tweetContainer:hover {
-  transform: scale(0.8); 
+  transform: scale(1.1); 
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
