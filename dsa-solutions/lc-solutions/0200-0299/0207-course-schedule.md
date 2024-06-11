@@ -12,7 +12,7 @@ description: "This document provides a solution to the Course Schedule problem."
 ---
 
 ## Problem
-You are given a total of numCourses courses labeled from 0 to numCourses - 1. You are also given an array prerequisites where prerequisites[i] = [ a<sub> i</sub> , b<sub> i</sub> ] indicates that you must take course b<sub> i</sub> first if you want to take course a<sub> i</sub> .
+You are given a total of numCourses courses labeled from 0 to numCourses - 1. You are also given an array prerequisites where $\text{prerequisites[i]} = [ a^i , b^i ]$ indicates that you must take course $b^i$ first if you want to take course $a^i$ .
 
 For example, the pair [0, 1] indicates that to take course 0 you have to first take course 1.
 Return `true` if you can finish all courses. Otherwise, return `false`.
@@ -36,10 +36,10 @@ To take course 1 you should have finished course 0, and to take course 0 you sho
 ```
 
 ### Constraints:
-- ```1 <= numCourses <= 2000```
-- ```0 <= prerequisites.length <= 5000```
-- ```prerequisites[i].length == 2```
-- ```0 <= ai, bi < numCourses ```
+- `1 <= numCourses <= 2000`
+- `0 <= prerequisites.length <= 5000`
+- ```prerequisites[i].length == 2`
+- `0 <= ai, bi < numCourses `
 - All the pairs prerequisites[i] are **unique**.
 ## Solution
 The code aims to solve the problem of determining whether it is possible to finish all the given courses without any cyclic dependencies. It uses the topological sort algorithm, specifically Kahn's algorithm, to solve this problem.
@@ -197,13 +197,15 @@ class Solution:
 
 ## Complexity Analysis
 
-### Time Complexity: O(N + P)
+### Time Complexity: $O(N + P)$
 
 > **Reason**: Where N is the number of courses and P is the number of prerequisites.
 
-### Space Complexity: O(N + P)
+### Space Complexity: $O(N + P)$
 
-> **Reason**: We use an adjacency list to store the graph and an array to store the in-degree of each node.
+:::note
+**Reason**: We use an adjacency list to store the graph and an array to store the in-degree of each node.
+:::
 
 ## References
 
