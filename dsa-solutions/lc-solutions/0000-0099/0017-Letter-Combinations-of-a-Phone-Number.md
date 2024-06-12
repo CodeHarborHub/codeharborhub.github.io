@@ -3,21 +3,23 @@ id: letter-combinations-of-a-phone-number
 title: Letter Combinations of a Phone Number (LeetCode)
 sidebar_label: 0017 Letter Combinations of a Phone Number
 tags:
-    - Back Tracking
-    - Mapping
-    - String
+  - Back Tracking
+  - Mapping
+  - String
 description: The problem requires generating all letter combinations corresponding to given digits (2-9). The solution utilizes backtracking to explore all combinations efficiently, employing a recursive approach in Java.
+sidebar_position: 17
 ---
 
 ## Problem Description
 
-| Problem Statement                                                                                           | Solution Link                                                                                                                               | LeetCode Profile                                   |
-| :----------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------- |
-| [Letter Combinations of a Phone Number](https://leetcode.com/problems/Letter Combinations of a Phone Number/)                                         | [Letter Combinations of a Phone Number Solution on LeetCode](https://leetcode.com/problems/Letter Combinations of a Phone Number/solutions/5055810/video-two-pointer-solution/) | [gabaniyash846](https://leetcode.com/u/gabaniyash846/) |
+| Problem Statement                                                                                             | Solution Link                                                                                                                                                                   | LeetCode Profile                                       |
+| :------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------- |
+| [Letter Combinations of a Phone Number](https://leetcode.com/problems/Letter Combinations of a Phone Number/) | [Letter Combinations of a Phone Number Solution on LeetCode](https://leetcode.com/problems/Letter Combinations of a Phone Number/solutions/5055810/video-two-pointer-solution/) | [gabaniyash846](https://leetcode.com/u/gabaniyash846/) |
 
 ### Problem Description
 
 ## Problem Statement:
+
 Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.
 
 ### Examples
@@ -31,7 +33,6 @@ Given a string containing digits from 2-9 inclusive, return all possible letter 
 
 - **Input:** `digits = ""`
 - **Output:** `[]`
-
 
 #### Example 3
 
@@ -47,9 +48,11 @@ Given a string containing digits from 2-9 inclusive, return all possible letter 
 ### Approach
 
 1. **Mapping Digits to Letters:**
+
    - Define a mapping of digits to their corresponding letters, similar to telephone buttons.
 
 2. **Backtracking Function:**
+
    - Define a recursive backtracking function to generate all possible combinations.
    - The function takes four parameters:
      - `index`: The current index in the digits string.
@@ -59,6 +62,7 @@ Given a string containing digits from 2-9 inclusive, return all possible letter 
    - After the recursive call, we remove the last character from the combination (backtracking).
 
 3. **Base Case:**
+
    - If the length of the current combination is equal to the length of the input digits string, we add the combination to the result list.
 
 4. **Main Function:**
@@ -153,6 +157,7 @@ public class Solution {
 ```
 
 #### CPP:
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -208,40 +213,41 @@ int main() {
 ```
 
 #### JavaScript
+
 ```js
 /**
  * @param {string} digits
  * @return {string[]}
  */
-var letterCombinations = function(digits) {
-    if (digits.length === 0) return [];
-    
-    const digitToLetters = {
-        '2': 'abc',
-        '3': 'def',
-        '4': 'ghi',
-        '5': 'jkl',
-        '6': 'mno',
-        '7': 'pqrs',
-        '8': 'tuv',
-        '9': 'wxyz'
-    };
-    
-    const combinations = [];
-    
-    const backtrack = (index, path) => {
-        if (index === digits.length) {
-            combinations.push(path);
-            return;
-        }
-        const letters = digitToLetters[digits.charAt(index)];
-        for (let letter of letters) {
-            backtrack(index + 1, path + letter);
-        }
-    };
-    
-    backtrack(0, '');
-    return combinations;
+var letterCombinations = function (digits) {
+  if (digits.length === 0) return [];
+
+  const digitToLetters = {
+    2: "abc",
+    3: "def",
+    4: "ghi",
+    5: "jkl",
+    6: "mno",
+    7: "pqrs",
+    8: "tuv",
+    9: "wxyz",
+  };
+
+  const combinations = [];
+
+  const backtrack = (index, path) => {
+    if (index === digits.length) {
+      combinations.push(path);
+      return;
+    }
+    const letters = digitToLetters[digits.charAt(index)];
+    for (let letter of letters) {
+      backtrack(index + 1, path + letter);
+    }
+  };
+
+  backtrack(0, "");
+  return combinations;
 };
 
 // Example usage:
@@ -249,39 +255,40 @@ console.log(letterCombinations("23")); // Output: ["ad","ae","af","bd","be","bf"
 ```
 
 #### TypeScript
+
 ```ts
 class Solution {
-    private digitToLetters: { [key: string]: string } = {
-        '2': 'abc',
-        '3': 'def',
-        '4': 'ghi',
-        '5': 'jkl',
-        '6': 'mno',
-        '7': 'pqrs',
-        '8': 'tuv',
-        '9': 'wxyz'
+  private digitToLetters: { [key: string]: string } = {
+    "2": "abc",
+    "3": "def",
+    "4": "ghi",
+    "5": "jkl",
+    "6": "mno",
+    "7": "pqrs",
+    "8": "tuv",
+    "9": "wxyz",
+  };
+
+  letterCombinations(digits: string): string[] {
+    const combinations: string[] = [];
+
+    const backtrack = (index: number, path: string): void => {
+      if (index === digits.length) {
+        combinations.push(path);
+        return;
+      }
+      const letters = this.digitToLetters[digits.charAt(index)];
+      for (let letter of letters) {
+        backtrack(index + 1, path + letter);
+      }
     };
 
-    letterCombinations(digits: string): string[] {
-        const combinations: string[] = [];
-
-        const backtrack = (index: number, path: string): void => {
-            if (index === digits.length) {
-                combinations.push(path);
-                return;
-            }
-            const letters = this.digitToLetters[digits.charAt(index)];
-            for (let letter of letters) {
-                backtrack(index + 1, path + letter);
-            }
-        };
-
-        if (digits.length !== 0) {
-            backtrack(0, '');
-        }
-        
-        return combinations;
+    if (digits.length !== 0) {
+      backtrack(0, "");
     }
+
+    return combinations;
+  }
 }
 
 // Example usage:
@@ -294,9 +301,11 @@ console.log(solution.letterCombinations("23")); // Output: ["ad","ae","af","bd",
 Here's a step-by-step algorithm for generating all possible letter combinations of a given string of digits using backtracking:
 
 1. **Define a mapping of digits to letters:**
+
    - Create a map where each digit from 2 to 9 is mapped to its corresponding letters on a telephone keypad.
 
 2. **Define a backtracking function:**
+
    - The function will take the following parameters:
      - `index`: The current index in the digits string.
      - `path`: The current combination of letters.
@@ -305,6 +314,7 @@ Here's a step-by-step algorithm for generating all possible letter combinations 
    - After the recursive call, remove the last character from the combination (backtracking).
 
 3. **Base Case:**
+
    - If the length of the current combination is equal to the length of the input digits string, add the combination to the result list.
 
 4. **Main Function:**
