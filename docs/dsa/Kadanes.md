@@ -1,5 +1,5 @@
 ---
-id:Kadanes-Algorithm
+id: Kadanes-Algorithm
 title: Kadanes Algorithm
 sidebar_label: KadanesAlgorithm
 sidebar_position: 2
