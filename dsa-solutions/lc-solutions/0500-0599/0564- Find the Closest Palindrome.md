@@ -39,10 +39,10 @@ Explanation: 0 and 2 are the closest palindromes but we return the smallest whic
 
 ### Constraints
 
-- $1 <= n.length <= 18$
+- $1 \leq n.length \leq 18$
 - $n$ consists of only digits.
 - $n$ does not have leading zeros.
-- $n$ is representing an integer in the range [1, 10^18 - 1].
+- $n$ is representing an integer in the range [1, $10^18$ - 1].
 
 ---
 
