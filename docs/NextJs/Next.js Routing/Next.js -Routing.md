@@ -1,16 +1,12 @@
 ---
 id:  Routing
 title: Next.js Routing
-sidebar_label: Next.js  Routing
+sidebar_label: Next.js-Routing
 sidebar_position: 1
 tags: [Next.js Routing]
 description: "In this section, you will learn about Routing in NEXT ."
 ---
 
-
-
-
-## Next.js - Routing
 
 
 Next.js uses file system based router. Whenever we add any page to pages directory, it is automatically available via url. Following are the rules of this router.
