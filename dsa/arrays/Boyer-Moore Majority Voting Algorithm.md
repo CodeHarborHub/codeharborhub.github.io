@@ -1,5 +1,5 @@
 ---
-id: Boyer-Moore-Majority-voting-algorithm
+id: boyer-moore-majority-voting-algorithm
 title: Boyer Moore Majority voting algorithm
 sidebar_label: Boyer Majority voting algorithm
 tags: [python, java, c++, algorithms, array, counting]
@@ -139,7 +139,7 @@ def majorityElement(v: List[int]) -> List[int]:
 Use a better data structure to reduce the number of look-up operations and hence the time complexity. Moreover, we have been calculating the count of the same element again and again – so we have to reduce that also.
 
 #### Approach
- - Use a hashmap and store the elements as <key, value> 
+ - Use a hashmap and store the elements as `<key, value> `
    pairs. (Can also use frequency array based on the size of nums).
 - Here the key will be the element of the array and the 
   value will be the number of times it occurs. 
@@ -225,7 +225,7 @@ def majorityElement(arr):
 
 ## Optimal Approach (Extended Boyer Moore’s Voting Algorithm):
 #### Intuition
-If the array contains the majority of elements, their occurrence must be greater than the floor(N/3). Now, we can say that the count of minority elements and majority elements is equal up to a certain point in the array. So when we traverse through the array we try to keep track of the counts of elements and the elements themselves for which we are tracking the counts. 
+If the array contains the majority of elements, their occurrence must be greater than the `floor(N/3)`. Now, we can say that the count of minority elements and majority elements is equal up to a certain point in the array. So when we traverse through the array we try to keep track of the counts of elements and the elements themselves for which we are tracking the counts. 
 
 After traversing the whole array, we will check the elements stored in the variables. Then we need to check if the stored elements are the majority elements or not by manually checking their counts. 
 
