@@ -1,7 +1,7 @@
 ---
 title: 'SQL'
 sidebar_label: SQL - Structured Query Language
-authors: [ajay-dhangar]
+authors: [hitesh-gahanolia]
 tags: [sql , databases , data]
 date: 2024-06-12 5:17
 hide_table_of_contents: true
