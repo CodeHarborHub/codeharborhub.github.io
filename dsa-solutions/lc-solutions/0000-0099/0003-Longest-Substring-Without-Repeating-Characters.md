@@ -7,6 +7,7 @@ tags:
   - String
   - Sliding Window
 description: "This is a solution to the Longest Substring Without Repeating Characters problem on LeetCode."
+sidebar_position: 3
 ---
 
 In this page we will solve the problem [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) from LeetCode.
