@@ -1,14 +1,14 @@
 ---
-id: Algorithms
+id:Kadanes-Algorithm
 title: Kadanes Algorithm
-sidebar_label: Algorithms
+sidebar_label: KadanesAlgorithm
 sidebar_position: 2
 description: "Kadane's Algorithm efficiently finds the maximum sum contiguous subarray in a one-dimensional array. It's a dynamic programming technique named after its creator, Jay Kadane."
 ---
 ## Kadane's Algorithm:
 
 - **Purpose**: Finds the maximum sum of a contiguous subarray.
-- **Time Complexity**: O(n)
+- **Time Complexity**: $O(n)$
 - **Space Complexity**: O(1)
 - **Use Case**: Optimal for solving maximum subarray sum problems in linear time.
 ### Simple Explanation
@@ -35,6 +35,7 @@ Output: 7
 Explanation: The subarray {4,-1, -2, 1, 5} has the largest sum 7.
 
 ### Python
+```py
 
     def max_sub_array(nums):
           max_sum = float('-inf')
@@ -50,8 +51,10 @@ Explanation: The subarray {4,-1, -2, 1, 5} has the largest sum 7.
                 current_sum = 0
             
          return max_sum
+```
 
 ### C++
+```cpp
     // Kadane's Algorithm to find the maximum sum of a contiguous subarray
 
     #include <iostream>
@@ -77,6 +80,7 @@ Explanation: The subarray {4,-1, -2, 1, 5} has the largest sum 7.
 
     return max_sum;
     }
+```
 
 ### Explanation
 Explanation:
