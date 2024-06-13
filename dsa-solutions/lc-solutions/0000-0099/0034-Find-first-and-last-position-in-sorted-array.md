@@ -1,5 +1,5 @@
 ---
-id: Find First and Last Position of Element in Sorted Array
+id: find-first-and-last-position-of-element-in-sorted-array
 title: Find First and Last Position of Element in Sorted Array(LeetCode)
 sidebar_label: 0034-Find First and Last Position of Element in Sorted Array
 tags:
