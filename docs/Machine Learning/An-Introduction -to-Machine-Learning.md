@@ -1,5 +1,5 @@
 ---
-id: Machine Learning
+id: machine-learning
 title: Introduction to Machine Learning
 sidebar_label: An Introduction to Machine Learning
 sidebar_position: 8
