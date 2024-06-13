@@ -1,0 +1,66 @@
+name: PR Creation Workflow
+
+on:
+  pull_request:
+    types: [opened, edited]
+
+jobs:
+  check-pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '14'
+
+      - name: Validate PR Description
+        id: validate-pr
+        run: |
+          pr_body="${{ github.event.pull_request.body }}"
+          required_checkboxes=(
+            "I have performed a self-review of my code."
+            "I have read and followed the Contribution Guidelines."
+            "I have tested the changes thoroughly before submitting this pull request."
+            "I have provided relevant issue numbers, screenshots, and videos after making the changes."
+            "I have commented my code, particularly in hard-to-understand areas."
+            "I have followed the code style guidelines of this project."
+            "I have checked for any existing open issues that my pull request may address."
+            "I have ensured that my changes do not break any existing functionality."
+            "Each contributor is allowed to create a maximum of 4 issues per day. This helps us manage and address issues efficiently."
+            "I have read the resources for guidance listed below."
+            "I have not used AI-generated content (e.g., ChatGPT, other AI tools)."
+            "I have not used content from existing sites (e.g., text, images)."
+            "I have followed all security rules and only shared trusted resources."
+          )
+          for checkbox in "${required_checkboxes[@]}"; do
+            if [[ "$pr_body" != *"$checkbox"* ]]; then
+              echo "Missing required checkbox: $checkbox"
+              exit 1
+            fi
+          done
+
+      - name: Retrieve Contributors
+        run: |
+          CONTRIBUTORS=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/${{ github.repository }}/contributors | jq -r '.[].login')
+          echo "::set-output name=contributors::$CONTRIBUTORS"
+
+      - name: Count Open Issues for Each Contributor
+        id: count-issues
+        run: |
+          for contributor in ${{ steps.retrieve-contributors.outputs.contributors }}; do
+            ISSUE_COUNT=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/search/issues?q=is:open+author:${contributor}+repo:${{ github.repository }}" | jq -r '.total_count')
+            echo "::set-output name=${contributor}_issue_count::$ISSUE_COUNT"
+          done
+
+      - name: Check Contributor's Open Issues Count
+        run: |
+          contributor=${{ github.event.pull_request.user.login }}
+          issue_count=${{ steps.count-issues.outputs["${contributor}_issue_count"] }}
+          if [ "$issue_count" -ge 4 ]; then
+            echo "Contributor $contributor has $issue_count open issues. Please complete your existing open issues before creating a new one."
+            exit 1
+          fi
