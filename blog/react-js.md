@@ -3,7 +3,7 @@ title: 'React JS'
 sidebar_label: React JS
 authors: [hitesh-gahanolia]
 tags: [javascript , framework , frontend , react , node ]
-date: 2024-06-13 12:29PM
+date: 2024-06-13 12:29
 hide_table_of_contents: true
 ---
 React is a framework that employs Webpack to automatically compile React, JSX, and ES6 code while handling CSS file prefixes. React is a JavaScript-based UI development library. Although React is a library rather than a language, it is widely used in web development. The library first appeared in May 2013 and is now one of the most commonly used frontend libraries for web development.
