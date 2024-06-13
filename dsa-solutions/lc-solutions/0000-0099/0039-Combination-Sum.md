@@ -1,5 +1,5 @@
 ---
-id: Combination Sum
+id: combination-sum
 title: Combination Sum(LeetCode)
 sidebar_label: 0039-Combination Sum
 tags:
