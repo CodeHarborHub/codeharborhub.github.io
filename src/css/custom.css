@@ -13,7 +13,10 @@
   background: var(--ifm-color-primary);
   border-radius: 3px;
 }
-
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ifm-color-primary-dark);
+}
 :root {
   --ifm-color-primary: #2e9e32e1;
   --ifm-color-primary-dark: #29784c;
