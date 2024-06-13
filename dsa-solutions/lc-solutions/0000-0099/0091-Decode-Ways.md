@@ -3,7 +3,7 @@ id: decode-ways
 title: Decode Ways
 sidebar_label: 0091 - Decode Ways
 tags:
-  - DP
+  - dyp
   - Leetcode
 
 description: "This is a solution to the Decode Ways on LeetCode."
@@ -64,13 +64,13 @@ Constraints:
 ### Algorithm
 
 1. If the string `s` is empty or starts with '0', return 0 as it cannot be decoded.
-2. Initialize a `dp` array where `dp[i]` represents the number of ways to decode the substring `s[0:i]`.
-3. Set `dp[0]` to 1 (base case for the empty string).
-4. Set `dp[1]` based on the first character of the string (1 if the first character is not '0', otherwise 0).
+2. Initialize a `dyp` array where `dyp[i]` represents the number of ways to decode the substring `s[0:i]`.
+3. Set `dyp[0]` to 1 (base case for the empty string).
+4. Set `dyp[1]` based on the first character of the string (1 if the first character is not '0', otherwise 0).
 5. Iterate through the string from the second character to the end:
-   - For each character, check if it forms a valid single-digit number (between '1' and '9'). If it does, add `dp[i-1]` to `dp[i]`.
-   - Check if the two-digit number formed with the previous character is valid (between "10" and "26"). If it does, add `dp[i-2]` to `dp[i]`.
-6. The result is in `dp[n]`, where `n` is the length of the string.
+   - For each character, check if it forms a valid single-digit number (between '1' and '9'). If it does, add `dyp[i-1]` to `dyp[i]`.
+   - Check if the two-digit number formed with the previous character is valid (between "10" and "26"). If it does, add `dyp[i-2]` to `dyp[i]`.
+6. The result is in `dyp[n]`, where `n` is the length of the string.
 
 ### Pseudocode
 
@@ -80,19 +80,19 @@ function decode(s):
         return 0
 
     n = length of s
-    dp = array of size (n + 1) initialized to 0
-    dp[0] = 1
-    dp[1] = 1 if s[0] != '0' else 0
+    dyp = array of size (n + 1) initialized to 0
+    dyp[0] = 1
+    dyp[1] = 1 if s[0] != '0' else 0
 
     for i from 2 to n:
         if s[i-1] != '0':
-            dp[i] += dp[i-1]
+            dyp[i] += dyp[i-1]
 
-        two_digit = integer value of s[i-2:i]
-        if 10 <= two_digit <= 26:
-            dp[i] += dp[i-2]
+        twodigit = integer value of s[i-2:i]
+        if 10 <= twodigit <= 26:
+            dyp[i] += dyp[i-2]
 
-    return dp[n]
+    return dyp[n]
 ```
 
 ### Python
@@ -104,19 +104,19 @@ class Solution:
             return 0
 
         n = len(s)
-        dp = [0] * (n + 1)
-        dp[0] = 1
-        dp[1] = 1 if s[0] != '0' else 0
+        dyp = [0] * (n + 1)
+        dyp[0] = 1
+        dyp[1] = 1 if s[0] != '0' else 0
 
         for i in range(2, n + 1):
             if s[i - 1] != '0':
-                dp[i] += dp[i - 1]
+                dyp[i] += dyp[i - 1]
 
-            two_digit = int(s[i - 2:i])
-            if 10 <= two_digit <= 26:
-                dp[i] += dp[i - 2]
+            twodigit = int(s[i - 2:i])
+            if 10 <= twodigit <= 26:
+                dyp[i] += dyp[i - 2]
 
-        return dp[n]
+        return dyp[n]
 ```
 
 ### C++
@@ -128,22 +128,22 @@ public:
         if (s.empty() || s[0] == '0') return 0;
 
         int n = s.size();
-        vector<int> dp(n + 1, 0);
-        dp[0] = 1;
-        dp[1] = s[0] != '0' ? 1 : 0;
+        vector<int> dyp(n + 1, 0);
+        dyp[0] = 1;
+        dyp[1] = s[0] != '0' ? 1 : 0;
 
         for (int i = 2; i <= n; ++i) {
             if (s[i - 1] != '0') {
-                dp[i] += dp[i - 1];
+                dyp[i] += dyp[i - 1];
             }
 
-            int two_digit = stoi(s.substr(i - 2, 2));
-            if (10 <= two_digit && two_digit <= 26) {
-                dp[i] += dp[i - 2];
+            int twodigit = stoi(s.substr(i - 2, 2));
+            if (10 <= twodigit && twodigit <= 26) {
+                dyp[i] += dyp[i - 2];
             }
         }
 
-        return dp[n];
+        return dyp[n];
     }
 };
 
@@ -159,22 +159,22 @@ class Solution {
         }
 
         int n = s.length();
-        int[] dp = new int[n + 1];
-        dp[0] = 1;
-        dp[1] = s.charAt(0) != '0' ? 1 : 0;
+        int[] dyp = new int[n + 1];
+        dyp[0] = 1;
+        dyp[1] = s.charAt(0) != '0' ? 1 : 0;
 
         for (int i = 2; i <= n; ++i) {
             if (s.charAt(i - 1) != '0') {
-                dp[i] += dp[i - 1];
+                dyp[i] += dyp[i - 1];
             }
 
             int twoDigit = Integer.parseInt(s.substring(i - 2, i));
             if (10 <= twoDigit && twoDigit <= 26) {
-                dp[i] += dp[i - 2];
+                dyp[i] += dyp[i - 2];
             }
         }
 
-        return dp[n];
+        return dyp[n];
     }
 }
 ```
@@ -186,21 +186,21 @@ var decode = function (s) {
   if (!s || s[0] === "0") return 0;
 
   let n = s.length;
-  let dp = new Array(n + 1).fill(0);
-  dp[0] = 1;
-  dp[1] = s[0] !== "0" ? 1 : 0;
+  let dyp = new Array(n + 1).fill(0);
+  dyp[0] = 1;
+  dyp[1] = s[0] !== "0" ? 1 : 0;
 
   for (let i = 2; i <= n; i++) {
     if (s[i - 1] !== "0") {
-      dp[i] += dp[i - 1];
+      dyp[i] += dyp[i - 1];
     }
 
     let twoDigit = parseInt(s.substring(i - 2, i), 10);
     if (10 <= twoDigit && twoDigit <= 26) {
-      dp[i] += dp[i - 2];
+      dyp[i] += dyp[i - 2];
     }
   }
 
-  return dp[n];
+  return dyp[n];
 };
 ```
