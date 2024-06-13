@@ -1,3 +1,4 @@
+
 import React from 'react';
 import clsx from 'clsx';
 import Image from '@theme/IdealImage';
@@ -55,10 +56,7 @@ function ShowcaseCardTag({tags}: {tags: TagType[]}) {
 
 function ShowcaseCard({user}: {user: User}) {
   return (
-    <li
-      key={user.title}
-      className={clsx('card shadow--md', styles.card)}
-    >
+    <li key={user.title} className="card shadow--md">
       <div className={clsx('card__image', styles.showcaseCardImage)}>
         <Image img={user.preview} alt={user.title} />
       </div>
