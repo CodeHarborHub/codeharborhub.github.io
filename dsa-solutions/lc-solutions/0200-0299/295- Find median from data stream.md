@@ -167,12 +167,14 @@ print(mf.findMedian())  # Output: 1.5
 mf.addNum(3)
 print(mf.findMedian())  # Output: 2
 ```
+</TabItem>
+</Tabs>
 
 # Complexity Analysis
-## Time Complexity: O(log N) for addNum, O(1) for findMedian
+## Time Complexity: $O(log N)$ for addNum, $O(1)$ for findMedian
 ### Reason:
-Adding a number involves heap insertion which takes O(log N) time. Finding the median involves looking at the top elements of the heaps, which takes O(1) time.
+Adding a number involves heap insertion which takes $O(log N)$ time. Finding the median involves looking at the top elements of the heaps, which takes $O(1)$ time.
 
-## Space Complexity: O(N)
+## Space Complexity: $O(N)$
 ### Reason:
 We are storing all the numbers in the two heaps.
