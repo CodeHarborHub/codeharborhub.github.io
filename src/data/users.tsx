@@ -28,7 +28,10 @@ export type TagType =
   | "vanilla"
   | "typescript"
   | "ai"
+  | "ml"
+  | "mdx"
   | "game"
+  | "documentation"
   | "clone";
 
 export type User = {
@@ -163,10 +166,27 @@ export const Tags: { [type in TagType]: Tag } = {
     description: "",
     color: "#007acc",
   },
+
+  documentation:
+  {
+    label: "Documentation",
+    description: "",
+    color: "#007acc",
+  },
   game: {
     label: "Game",
     description: "",
     color: "#555555",
+  },
+  ml: {
+    label: "ML",
+    description: "",
+    color: "#007acc",
+  },
+  mdx: {
+    label: "MDX",
+    description: "",
+    color: "#007acc",
   },
 };
 
