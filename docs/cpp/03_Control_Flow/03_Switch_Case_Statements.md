@@ -16,7 +16,7 @@ tags:
 description: In this tutorial, we will learn about switch case statements in the C++ programming language. We will explore the syntax and usage of the switch statement and how to handle multiple cases. By understanding how to implement switch case statements, you will be able to simplify complex conditional logic and improve the readability of your C++ programs.
 ---
 
-# Switch and Ternary Statements in C++
+# Switch and Ternary Statements
 
 ## Introduction
 

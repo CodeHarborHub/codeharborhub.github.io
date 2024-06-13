@@ -11,6 +11,7 @@ tags:
   - JavaScript
   - TypeScript
 description: "This is a solution to the Two Sum problem on LeetCode."
+sidebar_position: 1
 ---
 
 In this page, we will solve the Two Sum problem using three different approaches: brute force, hash table, and two-pointer technique. We will provide the implementation of the solution in JavaScript, TypeScript, Python, Java, C++, and more.

@@ -6,16 +6,11 @@ tags:
     - Hash Table
     - Math
     - String
-description: finds logest comman prefix for a given string .
+description: finds logest comman prefix for a given string.
+sidebar_position: 14
 ---
 
-## Problem Description
-
-| Problem Statement                                                                                           | Solution Link                                                                                                                               | LeetCode Profile                                   |
-| :----------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------- |
-| [Longest Comman Prefix](https://leetcode.com/problems/longest-common-prefix/)                                         | [Longest Comman Prefix Solution on LeetCode](https://leetcode.com/problems/longest-common-prefix/editorial/) | [gabaniyash846](https://leetcode.com/u/gabaniyash846/) |
-
-### Problem Statement
+## Problem Statement
 
 Write a function to find the longest common prefix string amongst an array of strings. If there is no common prefix, return an empty string "".
 
@@ -30,15 +25,15 @@ Write a function to find the longest common prefix string amongst an array of st
 - Output: `""`
 - Explanation: There is no common prefix among the input strings.
 
-#### Constraints:
+### Constraints:
 
 - `1 <= strs.length <= 200`
 - `0 <= strs[i].length <= 200`
 - `strs[i]` consists of only lowercase English letters.
 
-### Approaches and Solutions
+## Approaches and Solutions
 
-#### Approach 1: Horizontal Scanning
+### Approach 1: Horizontal Scanning
 
 **Intuition:**
 Iteratively find the longest common prefix (LCP) of the first two strings, then find the LCP of the result with the next string, and so on. 
@@ -103,7 +98,7 @@ class Solution:
         return prefix
 ```
 
-#### Approach 2: Vertical Scanning
+### Approach 2: Vertical Scanning
 
 **Intuition:**
 Compare characters from top to bottom on the same column (i.e., same character index across all strings) before moving on to the next column.
@@ -166,7 +161,7 @@ class Solution:
         return strs[0]
 ```
 
-#### Approach 3: Divide and Conquer
+### Approach 3: Divide and Conquer
 
 **Intuition:**
 Use the divide and conquer technique, where the problem is divided into two subproblems, find their LCP, and then combine their results.
@@ -266,6 +261,6 @@ class Solution:
         return divide_and_conquer(strs, 0, len(strs) - 1)
 ```
 
-### Conclusion
+## Conclusion
 
 We've discussed three different approaches to solving the problem of finding the longest common prefix among an array of strings. Each approach has its own merits, and the choice of which to use depends on the specific requirements and constraints of the problem. The provided implementations in C++, Java, and Python cover horizontal scanning, vertical scanning, and divide and conquer methods.

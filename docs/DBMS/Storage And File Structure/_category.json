@@ -1,0 +1,8 @@
+{
+    "label": "Storage and Joins",
+    "position": 4,
+    "link": {
+        "type": "generated-index",
+        "description": "Explore various storage techniques and join operations in DBMS."
+    }
+}

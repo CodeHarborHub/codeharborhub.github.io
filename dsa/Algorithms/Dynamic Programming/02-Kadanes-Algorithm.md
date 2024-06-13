@@ -1,5 +1,5 @@
 ---
-id: kadane
+id: kadane-algorithm
 title: Kadane’s Algorithm
 sidebar_label: Kadane’s Algorithm
 tags: [python, java, c++, javascript, programming, algorithms, subarray, array, tutorial, in-depth]
@@ -190,10 +190,10 @@ function maxSubarraySum(arr, n) {
 
 ## Complexity Analysis
    #### Time Complexity : 
-    - O(n) , We are using a single loop running N times.
+   - $O(n)$ , We are using a single loop running N times.
    
     #### Space Complexity
-      - O(1) , as Only Variables are used.
+      - $O(1)$ , as Only Variables are used.
 ## Conclusion
 - Kadane's algorithm offers a straightforward and efficient approach to solving the maximum sum subarray problem, making it a fundamental technique in algorithmic problem-solving and data analysis.
 
