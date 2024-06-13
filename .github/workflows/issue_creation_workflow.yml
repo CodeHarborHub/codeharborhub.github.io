@@ -5,7 +5,7 @@ on:
     types: [opened]
 
 jobs:
-  check-contributor-issues:
+  check-issue:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,24 +17,33 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Retrieve Contributors
+      - name: Retrieve Contributor's Open Issues
+        id: retrieve-issues
         run: |
-          CONTRIBUTORS=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/${{ github.repository }}/contributors | jq -r '.[].login')
-          echo "::set-output name=contributors::$CONTRIBUTORS"
-
-      - name: Count Open Issues for Each Contributor
-        id: count-issues
-        run: |
-          for contributor in ${{ steps.retrieve-contributors.outputs.contributors }}; do
-            ISSUE_COUNT=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/search/issues?q=is:open+author:${contributor}+repo:${{ github.repository }}" | jq -r '.total_count')
-            echo "::set-output name=${contributor}_issue_count::$ISSUE_COUNT"
-          done
+          ISSUE_COUNT=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/search/issues?q=is:open+author:${{ github.event.issue.user.login }}+repo:${{ github.repository }}" | jq -r '.total_count')
+          echo "::set-output name=issue_count::$ISSUE_COUNT"
 
       - name: Check Contributor's Open Issues Count
         run: |
-          contributor=${{ github.event.issue.user.login }}
-          issue_count=${{ steps.count-issues.outputs["${contributor}_issue_count"] }}
+          issue_count=${{ steps.retrieve-issues.outputs.issue_count }}
           if [ "$issue_count" -ge 4 ]; then
-            echo "Contributor $contributor has $issue_count open issues. Please complete your existing open issues before creating a new one."
+            echo "Contributor ${{ github.event.issue.user.login }} has $issue_count open issues. Please complete your existing open issues before creating a new one."
+            exit 1
+          fi
+
+      - name: Validate Issue Content
+        id: validate-issue
+        run: |
+          issue_body="${{ github.event.issue.body }}"
+          if [[ "$issue_body" == *"AI-generated content"* ]] || [[ "$issue_body" == *"existing sites"* ]]; then
+            echo "Issue body contains disallowed content."
+            exit 1
+          fi
+
+      - name: Check for Security and Trust
+        run: |
+          issue_body="${{ github.event.issue.body }}"
+          if [[ "$issue_body" != *"security"* ]] || [[ "$issue_body" != *"trust"* ]]; then
+            echo "Issue does not mention security or trust."
             exit 1
           fi
