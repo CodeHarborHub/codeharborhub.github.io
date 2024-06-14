@@ -21,7 +21,7 @@ const sponsors: Sponsor[] = [
   {
     name: "MOHD ARIF",
     image: "https://github.com/mrmohdarif.png",
-    description: "Full Stack Developer",
+    description: "Software Engineer",
     github: "https://github.com/mrmohdarif",
     linkedin: "https://www.linkedin.com/in/mohd-arif-115b87231/",
   },
