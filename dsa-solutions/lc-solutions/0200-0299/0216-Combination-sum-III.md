@@ -338,7 +338,7 @@ Through the combination of recursive DFS, building combinations incrementally, m
 ## Video Lecture
 
 <LiteYouTubeEmbed
-    id="xNeLP5RDY-c"
+    id="77KQifr--ek"
     params="autoplay=1&autohide=1&showinfo=0&rel=0"
     title="CodeHarborHub Combination Sum III"
     poster="maxresdefault"
