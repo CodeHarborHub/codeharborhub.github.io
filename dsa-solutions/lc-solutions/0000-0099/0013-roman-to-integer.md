@@ -7,13 +7,8 @@ tags:
     - Math
     - String
 description: Convert a given Roman numeral to an integer using specific rules for the Roman numeral system.
+sidebar_position: 13
 ---
-
-## Problem Description
-
-| Problem Statement                                                                                           | Solution Link                                                                                                                               | LeetCode Profile                                   |
-| :----------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------- |
-| [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)                                         | [Roman to Integer Solution on LeetCode](https://leetcode.com/problems/roman-to-integer/solutions/5034425/beats-100-most-in-depth-step-wise-explanation/) | [gabaniyash846](https://leetcode.com/u/gabaniyash846/) |
 
 ## Problem Statement
 

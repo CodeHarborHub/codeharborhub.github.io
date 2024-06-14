@@ -35,39 +35,12 @@
   padding: 1rem;
 }
 
-/* scrollbar.css */
-::-webkit-scrollbar {
-  width: 10px; 
-}
-/* Track */
-::-webkit-scrollbar-track {
-  background: var(--ifm-color-primary);  
-}
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: darkgray;    
-  border-radius: 10px;   
-}
-::-webkit-scrollbar-thumb:hover {
-  background: darkgrey;
-}
-.scrollToBottomButton {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  top: auto;
-  background-color: var(--ifm-color-primary);
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  padding: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
-  cursor: pointer;
-  z-index: 1000;
+.tweetContainer {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  margin-bottom: 1rem;  
 }
 
-.scrollToBottomButton:hover {
-  background-color: var(--ifm-color-primary);
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); 
+.tweetContainer:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-

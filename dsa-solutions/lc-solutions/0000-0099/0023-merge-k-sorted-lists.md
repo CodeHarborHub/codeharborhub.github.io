@@ -53,12 +53,10 @@ merging them into one sorted list:
 
 ### Constraints
 
-- `k == lists.length`
-- `0 <= k <= 104`
-- `0 <= lists[i].length <= 500`
-- `(-10^4) <= lists[i][j] <= 104`
-- `lists[i]` is sorted in ascending order.
-- The sum of `lists[i].length` will not exceed 104.
+- $k == lists.length$
+- $0 \leq \text{k} \leq104$
+- $0 \leq \text{lists[i].length} \leq 500$
+- $(-10^4) \leq \text{lists[i][j]} \leq 104$
 
 ### Approach
 
@@ -213,6 +211,6 @@ public:
 ```
 
 ### Conclusion
-Merging 
-𝑘
-k sorted lists efficiently requires leveraging data structures that help maintain order, such as a min-heap. The min-heap approach is particularly efficient with a time complexity of 𝑂(𝑁log𝑘). Understanding these methods not only helps in solving the problem optimally but also enhances the comprehension of advanced data structures and algorithms.
+
+Merging k sorted lists efficiently requires leveraging data structures that help maintain order, such as a min-heap. The min-heap approach is particularly efficient with a time complexity of $𝑂(𝑁log𝑘)$. Understanding these methods not only helps in solving the problem optimally but also enhances the comprehension of advanced data structures and algorithms.
+

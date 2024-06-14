@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-.showcaseCardImage {
+ .showcaseCardImage {
   overflow: hidden;
   height: 150px;
   border-bottom: 2px solid var(--ifm-color-emphasis-200);
@@ -21,7 +21,6 @@
   margin-bottom: 0;
   flex: 1 1 auto;
 }
-
 
 .showcaseCardTitle a {
   text-decoration: none;
@@ -43,27 +42,26 @@
 }
 
 .showcaseCardHeader .svgIconFavorite {
-  color: white;
+  color: var(--site-color-svg-icon-favorite);
 }
-[data-theme="dark"] .showcaseCardHeader {
-  color: white;
-}
+
 .showcaseCardSrcBtn {
   margin-left: 6px;
   padding-left: 12px;
   padding-right: 12px;
   border: none;
 }
+
 .showcaseCardSrcBtn:focus-visible {
   background-color: var(--ifm-color-secondary-dark);
 }
 
-[data-theme="dark"] .showcaseCardSrcBtn {
+[data-theme='dark'] .showcaseCardSrcBtn {
   background-color: var(--ifm-color-emphasis-200) !important;
   color: inherit;
 }
 
-[data-theme="dark"] .showcaseCardSrcBtn:hover {
+[data-theme='dark'] .showcaseCardSrcBtn:hover {
   background-color: var(--ifm-color-emphasis-300) !important;
 }
 
@@ -71,6 +69,7 @@
   font-size: smaller;
   line-height: 1.66;
 }
+
 .cardFooter {
   display: flex;
   flex-wrap: wrap;
@@ -98,13 +97,3 @@
   margin-left: 6px;
   margin-right: 6px;
 }
-.card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.card:hover {
-  /* transform: translateY(-5px); */
-  transform: scale(1.1);
-  box-shadow: 0 8px 16px white;
-}
-

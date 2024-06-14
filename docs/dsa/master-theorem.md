@@ -17,21 +17,21 @@ tags:
 
 Master Theorem is a popular technique to solve recurrence relations of divide and conquer algorithms. It provides a way to determine the time complexity of recursive algorithms. The theorem is used to solve recurrences of the form:
 
-```plaintext title="Recurrence Relation"
-T(n) = aT(n/b) + f(n)
-```
+$$
+  \boldsymbol{{T(n)} = aT \frac{n}{b} + f(n)}
+$$
 
 where:
 
-- `T(n)` is the time complexity of the algorithm.
-- `a` is the number of subproblems in the recursion.
-- `n/b` is the size of each subproblem.
-- `f(n)` is the time complexity of the work done outside the recursive calls.
-- `n` is the size of the input.
-- `a >= 1` and `b > 1` are constants.
-- `f(n)` is a function that is asymptotically positive.
-- `T(n)` is defined on non-negative integers.
-- The recurrence relation is defined for `n >= n0` for some constant `n0`.
+- $T(n)$ is the time complexity of the algorithm.
+- $a$ is the number of subproblems in the recursion.
+- $\frac{n}{b}$ is the size of each subproblem.
+- $f(n)$ is the time complexity of the work done outside the recursive calls.
+- $n$ is the size of the input.
+- $a \geq 1$ and $b > 1$ are constants.
+- $f(n)$ is a function that is asymptotically positive.
+- $T(n)$ is defined on non-negative integers.
+- The recurrence relation is defined for $n \geq n_0$ for some constant $n_0$.
 
 The Master Theorem provides a way to determine the time complexity of the algorithm based on the values of `a`, `b`, and `f(n)`.
 
@@ -47,9 +47,9 @@ The Master Theorem has three cases based on the comparison of `f(n)` with `n^log
 
 Let's consider the recurrence relation for the Merge Sort algorithm:
 
-```plaintext title="Merge Sort Recurrence Relation"
-T(n) = 2T(n/2) + Θ(n)
-```
+$
+  \boldsymbol{{T(n)} = aT \frac{n}{b} + f(n)}
+$
 
 Here:
 
@@ -177,7 +177,10 @@ Master Theorem is a powerful tool to analyze the time complexity of divide and c
 
 ```jsx live
 function MasterTheoremExample() {
-  const a = 2, b = 2, f = 2, n = 4;
+  const a = 2,
+    b = 2,
+    f = 2,
+    n = 4;
 
   function MasterTheorem(a, b, f, n) {
     if (a < 1 || b < 1) {
