@@ -4,7 +4,7 @@ Scipy is a powerful Python library used for scientific and technical computing. 
 
 **1. Installation:**
 ```python
-!pip install scipy
+python -m pip install scipy
 ```
 
 **2. Import and Usage:**
