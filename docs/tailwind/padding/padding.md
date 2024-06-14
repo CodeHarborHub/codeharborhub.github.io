@@ -45,7 +45,8 @@ Use the px-\* utilities to control the horizontal padding of an element.
 
 Use the py-\* utilities to control the vertical padding of an element.
 
-```<div class="py-8 ...">py-8</div>
+```
+<div class="py-8 ...">py-8</div>
 
 ```
 
