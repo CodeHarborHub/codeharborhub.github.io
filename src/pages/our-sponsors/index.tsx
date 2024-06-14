@@ -23,8 +23,13 @@ const OurSponsors: React.FC = () => {
         <div className="sponsor-header">
           <h1 className="TitleText">Our Sponsors</h1>
           <p>
-            CodeHarborHub is supported by these amazing sponsors. You can also
-            join them to support the community.
+            Help CodeHarborHub grow and support open-source projects by donating
+            today. Your contribution enables us to share valuable resources and
+            knowledge on our website. 
+
+            <br />
+            
+            Thank you for your support!
           </p>
         </div>
         <div className="sponsors-list">
@@ -39,13 +44,10 @@ const OurSponsors: React.FC = () => {
           <div className="scanner-popup">
             <div className="scanner-content">
               <h2 className="TitleText">Scan to Sponsor</h2>
-              <img
-                src="/sponsors/scan-pay.jpg"
-                alt="Payment Scanner"
-              />
-              <button
-                className="scanner-button"
-                onClick={handlePaymentSuccess}>I have paid</button>
+              <img src="/sponsors/scan-pay.jpg" alt="Payment Scanner" />
+              <button className="scanner-button" onClick={handlePaymentSuccess}>
+                I have paid
+              </button>
             </div>
           </div>
         )}

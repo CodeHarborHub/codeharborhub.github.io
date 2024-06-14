@@ -103,10 +103,11 @@ export function ActiveTeamRow(): JSX.Element {
           values={{
             website: <WebsiteLink to="https://ajay-dhangar.github.io/" />,
             devto: <Link to="https://dev.to/ajaydhangar49">Dev.to</Link>,
+            optimumAi: <Link to="https://www.optimumai.in/community">OptimumAI</Link>,
           }}
         >
           {
-            "Founder, Lead Developer and Maintainer of CodeHarborHub. He loves to contribute to open source and write articles on his {website} and {devto}."
+            "Founder, Lead Developer and Maintainer of CodeHarborHub. We are passionate about contributing to open source and regularly write articles on our {website} and {devto}. Currently working at {optimumAi}."
           }
         </Translate>
       </TeamProfileCardCol>
@@ -123,7 +124,7 @@ export function ActiveTeamRow(): JSX.Element {
           }}
         >
           {
-            "Lead Developer of CodeHarborHub. He loves to contribute to open source and currently working at {compony} and you can check his {portfolio}."
+            "Lead Developer at CodeHarborHub, we are passionate about contributing to open source. Currently working at {compony} and  Explore {portfolio}."
           }
         </Translate>
       </TeamProfileCardCol>
