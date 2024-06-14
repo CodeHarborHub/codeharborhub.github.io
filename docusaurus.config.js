@@ -175,7 +175,7 @@ const config = {
 
           {
             to: "/our-sponsors/",
-            html: '<span class="nav-emoji">💰</span> Sponsors',
+            html: '<span class="nav-emoji">💰</span> Donate'
           },
 
           {
