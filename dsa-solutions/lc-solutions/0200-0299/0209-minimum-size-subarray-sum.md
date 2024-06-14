@@ -217,6 +217,12 @@ Example 3:
 
 </Tabs>
 
+## Time and Space Complexity
+
+    The time complexity of the code is $O(n)$, where n is the length of the input list nums. This is because there are two pointers i and j, both of which travel across the list at most once. The inner while loop only increases j and decreases the sum s until the sum is less than the target, but j can never be increased more than n times throughout the execution of the algorithm. Therefore, each element is processed at most twice, once when it is added to s and once when it is subtracted, leading to a linear time complexity.
+
+    The space complexity of the code is $O(1)$, which means it requires a constant amount of additional space. This is because the algorithm only uses a fixed number of single-value variables (n, ans, s, j, i, x) and does not utilize any data structures that grow with the size of the input.
+
 ## video lecture
 
 <LiteYouTubeEmbed
