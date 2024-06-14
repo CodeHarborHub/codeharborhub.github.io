@@ -211,6 +211,6 @@ public:
 ```
 
 ### Conclusion
-Merging 
-𝑘
-k sorted lists efficiently requires leveraging data structures that help maintain order, such as a min-heap. The min-heap approach is particularly efficient with a time complexity of $𝑂(𝑁log𝑘)$. Understanding these methods not only helps in solving the problem optimally but also enhances the comprehension of advanced data structures and algorithms.
+
+Merging k sorted lists efficiently requires leveraging data structures that help maintain order, such as a min-heap. The min-heap approach is particularly efficient with a time complexity of $𝑂(𝑁log𝑘)$. Understanding these methods not only helps in solving the problem optimally but also enhances the comprehension of advanced data structures and algorithms.
+
