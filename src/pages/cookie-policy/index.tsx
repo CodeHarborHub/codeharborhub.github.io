@@ -2,7 +2,6 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import styled from 'styled-components';
 
-// Styled Components
 const CookiePolicyContainer = styled.div`
   width: 50%;
   display: block;

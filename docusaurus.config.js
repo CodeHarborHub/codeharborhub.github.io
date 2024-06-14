@@ -39,7 +39,8 @@ const config = {
             keywords: ["my-custom-admonition"],
             extendDefaults: true,
           },
-          editUrl: "https://github.com/codeharborhub/codeharborhub.github.io/edit/main/",
+          editUrl:
+            "https://github.com/codeharborhub/codeharborhub.github.io/edit/main/",
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
         },
@@ -48,7 +49,8 @@ const config = {
         },
         blog: {
           showReadingTime: true,
-          editUrl: "https://github.com/codeharborhub/codeharborhub.github.io/edit/main/",
+          editUrl:
+            "https://github.com/codeharborhub/codeharborhub.github.io/edit/main/",
           remarkPlugins: [[npm2yarn, { converters: ["pnpm"] }]],
         },
         theme: {
@@ -170,24 +172,30 @@ const config = {
             html: '<span class="nav-emoji">🤝</span> Community',
             position: "left",
           },
+
           {
-            html: '<span class="nav-emoji"> 📊</span> Quiz',
-            to: "https://quiz-app-ajay-dhangar.vercel.app/",
-          },
-          {
-            html: '<span class="nav-emoji"> 📺</span> Broadcast',
-            to: "https://codeharborhub-broadcast-web.vercel.app/",
+            to: "/our-sponsors/",
+            html: '<span class="nav-emoji">💰</span> Sponsors',
           },
 
           {
             to: "/blog",
             html: '<span class="nav-emoji">📰</span> Blog',
           },
+          
           {
             type: "dropdown",
-            html: '<span class="nav-emoji">🏷️</span> Tags',
+            html: '<span class="nav-emoji">🔗</span> More',
             position: "left",
             items: [
+              {
+                html: '<span class="nav-emoji"> 📊</span> Quiz',
+                to: "https://quiz-app-ajay-dhangar.vercel.app/",
+              },
+              {
+                html: '<span class="nav-emoji"> 📺</span> Broadcast',
+                to: "https://codeharborhub-broadcast-web.vercel.app/",
+              },
               {
                 label: "🏷️ Tutorial Tags 📚",
                 to: "/docs/tags/",
@@ -195,18 +203,9 @@ const config = {
               },
 
               {
-                type: "html",
-                value: '<hr style="margin: 0.3rem 0;">',
-              },
-
-              {
                 label: "🏷️ Courses Tags 🎓",
                 to: "/courses/tags/",
                 activeBaseRegex: "/courses/tags/",
-              },
-              {
-                type: "html",
-                value: '<hr style="margin: 0.3rem 0;">',
               },
 
               {
@@ -216,6 +215,7 @@ const config = {
               },
             ],
           },
+
           {
             type: "search",
             position: "right",
