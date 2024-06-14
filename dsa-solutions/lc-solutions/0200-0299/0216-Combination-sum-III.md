@@ -327,13 +327,13 @@ Through the combination of recursive DFS, building combinations incrementally, m
 
 ### Space Complexity
 
-    The space complexity is determined by the space needed for the recursive call stack and the space used to store the combinations. In the worst case, the recursion can go as deep as k, as we stop further recursion when the length of the temporary list t reaches k. Therefore the recursion call stack will contribute O(k).
+    The space complexity is determined by the space needed for the recursive call stack and the space used to store the combinations. In the worst case, the recursion can go as deep as k, as we stop further recursion when the length of the temporary list t reaches k. Therefore the recursion call stack will contribute $O(k)$.
 
-    The space for storing all the combinations also needs to be considered. We have a list of lists to store the valid combinations, and, at most, each combination contains k elements. In the worst case, the number of combinations stored will also be bounded by the total number of combinations of k numbers out of 9, which is O(9! / (k!(9 - k)!)) (this is the binomial coefficient representing the number of ways to choose k distinct integers from a set of 9).
+    The space for storing all the combinations also needs to be considered. We have a list of lists to store the valid combinations, and, at most, each combination contains k elements. In the worst case, the number of combinations stored will also be bounded by the total number of combinations of k numbers out of 9, which is $O(9! / (k!(9 - k)!))$ (this is the binomial coefficient representing the number of ways to choose k distinct integers from a set of 9).
 
-    However, because these combinations are part of the output, we often do not count this as extra space in terms of space complexity analysis (since the space is required to represent the output). Thus the space complexity is usually considered to be O(k), which accounts only for the recursion depth and not the output storage.
+    However, because these combinations are part of the output, we often do not count this as extra space in terms of space complexity analysis (since the space is required to represent the output). Thus the space complexity is usually considered to be $O(k)$, which accounts only for the recursion depth and not the output storage.
 
-    Combining both the recursion call stack and the output storage, and if we were to include the output as part of the space complexity, our total space complexity would be O(9! / (k!(9 - k)!) + k).
+    Combining both the recursion call stack and the output storage, and if we were to include the output as part of the space complexity, our total space complexity would be $O(9! / (k!(9 - k)!) + k)$.
 
 ## Video Lecture
 
