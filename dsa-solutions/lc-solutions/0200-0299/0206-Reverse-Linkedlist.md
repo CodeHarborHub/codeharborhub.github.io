@@ -296,4 +296,9 @@ The problem is asking to reverse a singly-linked list. One common approach to re
 
 ## Video lecture
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/D2vI2DNJGd8?si=fCV_x4Mwv--u4yUb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<LiteYouTubeEmbed
+    id="D2vI2DNJGd8"
+    params="autoplay=1&autohide=1&showinfo=0&rel=0"
+    title="CodeHarborHub Reverse Linkedlist"
+    poster="maxresdefault"
+    webp />

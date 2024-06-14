@@ -11,8 +11,6 @@ tags:
 description: "This document provides a solution to the Implementation of Trie."
 ---
 
-# 0208- Implement Trie (Prefix Tree)
-
 ## Problem Statement
 
 A trie (pronounced as "try") or prefix tree is a tree data structure used to efficiently store and retrieve keys in a dataset of strings. There are various applications of this data structure, such as autocomplete and spellchecker.
@@ -300,4 +298,9 @@ Explanation
 
 ## Video Lecture:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YXefcFMpemo?si=OKoeQHKTtnsy1yby" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<LiteYouTubeEmbed
+    id="YXefcFMpemo"
+    params="autoplay=1&autohide=1&showinfo=0&rel=0"
+    title="CodeHarborHub Implement Trie Video"
+    poster="maxresdefault"
+    webp />
