@@ -23,7 +23,7 @@ Input: s = "abcd"
 Output: "dcbabcd"
 
 ### Constraints:
-- 0 <= s.length <= 5 * 10^4
+- $0 \leq \text{s.length} \leq 5 \times 10^4$
 - s consists of lowercase English letters only.
 
 ## Solution
