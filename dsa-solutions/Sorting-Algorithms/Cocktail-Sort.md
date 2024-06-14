@@ -142,6 +142,5 @@ public class CocktailSort {
 
 ## 10. References
 
-- **GFG Article on Counting Sort:** [Geeks for Geeks Counting Sort](https://www.geeksforgeeks.org/cocktail_sort/)
-- **GFG Problem** [Counting Sort Problem](https://www.geeksforgeeks.org/problems/cocktail-sort/1)
-- **Wikipedia Article on Counting Sort:** [Counting Sort - Wikipedia](https://en.wikipedia.org/wiki/cocktail_sort)
+- **GFG Article on Cocktail Sort:** [Geeks for Geeks Cocktail Sort](https://www.geeksforgeeks.org/cocktail-sort/)
+- **Wikipedia Article on Cocktail Sort:** [Cocktail Sort - Wikipedia](https://en.wikipedia.org/wiki/cocktail_sort)
