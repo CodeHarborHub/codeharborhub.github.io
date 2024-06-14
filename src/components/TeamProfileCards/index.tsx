@@ -13,12 +13,23 @@ function WebsiteLink({ to, children }: { to: string; children?: ReactNode }) {
   );
 }
 
+function CompanyLink({ to, children }: { to: string; children?: ReactNode }) {
+  return (
+    <Link to={to}>
+      {children ?? (
+        <Translate id="team.profile.CompanyLinkLabel">company</Translate>
+      )}
+    </Link>
+  );
+}
+
 type ProfileProps = {
   className?: string;
   name: string;
   children: ReactNode;
   githubUrl: string;
   twitterUrl?: string;
+  linkedInUrl?: string;
 };
 
 function TeamProfileCard({
@@ -27,6 +38,7 @@ function TeamProfileCard({
   children,
   githubUrl,
   twitterUrl,
+  linkedInUrl
 }: ProfileProps) {
   return (
     <div className={className}>
@@ -54,11 +66,16 @@ function TeamProfileCard({
                 GitHub
               </Link>
             )}
+            {linkedInUrl && (
+              <Link className="button button--secondary" href={linkedInUrl}>
+                LinkedIn
+              </Link>
+            )}
             {twitterUrl && (
               <Link className="button button--secondary" href={twitterUrl}>
                 Twitter
               </Link>
-            )}
+            )}            
           </div>
         </div>
       </div>
@@ -77,18 +94,37 @@ export function ActiveTeamRow(): JSX.Element {
     <div className="row">
       <TeamProfileCardCol
         name="Ajay Dhangar"
-        githubUrl="https://github.com/ajay-dhangar"
-        twitterUrl="https://twitter.com/CodesWithAjay"
+        githubUrl="https://github.com/ajay-dhangar"      
+        linkedInUrl="https://www.linkedin.com/in/ajay-dhangar"
+        twitterUrl="https://twitter.com/CodesWithAjay"  
       >
         <Translate
           id="team.profile.Sebastien Lorber.body"
           values={{
-            website: <WebsiteLink to="https://cmhq.tech" />,
+            website: <WebsiteLink to="https://ajay-dhangar.github.io/" />,
             devto: <Link to="https://dev.to/ajaydhangar49">Dev.to</Link>,
+            optimumAi: <Link to="https://www.optimumai.in/community">OptimumAI</Link>,
           }}
         >
           {
-            "Fullstack developer, open source enthusiast, and tech blogger. He loves to contribute to open source and write articles on his {website} and {devto}."
+            "Founder, Lead Developer and Maintainer of CodeHarborHub. We are passionate about contributing to open source and regularly write articles on our {website} and {devto}. Currently working at {optimumAi}."
+          }
+        </Translate>
+      </TeamProfileCardCol>
+      <TeamProfileCardCol
+        name="MOHD ARIF"
+        githubUrl="https://github.com/mrmohdarif"
+        linkedInUrl="https://www.linkedin.com/in/mohd-arif-115b87231/"
+      >
+        <Translate
+          id="team.profile.Sebastien Lorber.body"
+          values={{
+            compony: <CompanyLink to="https://www.linkedin.com/company/techneutron/" />,
+            portfolio: <Link to="https://mrmohdarif.github.io/portfolio/">Portfolio</Link>,
+          }}
+        >
+          {
+            "Lead Developer at CodeHarborHub, we are passionate about contributing to open source. Currently working at {compony} and  Explore {portfolio}."
           }
         </Translate>
       </TeamProfileCardCol>

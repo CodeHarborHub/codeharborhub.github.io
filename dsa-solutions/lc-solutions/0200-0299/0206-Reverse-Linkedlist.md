@@ -11,9 +11,7 @@ tags:
 description: "This document provides solutions for determining the Reverse Linkedlist."
 ---
 
-# 0206-Reverse LinkedList
-
-### Problem Statement
+## Problem Statement
 
 Given the head of a singly linked list, reverse the list, and return the reversed list.
 
