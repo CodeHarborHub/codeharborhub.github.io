@@ -13,7 +13,10 @@
   background: var(--ifm-color-primary);
   border-radius: 3px;
 }
-
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ifm-color-primary-dark);
+}
 :root {
   --ifm-color-primary: #2e9e32e1;
   --ifm-color-primary-dark: #29784c;
@@ -26,9 +29,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-task-complete-color: #2e9e32e1;
   --ifm-task-incomplete-color: #3d78cbe1;
-
-    /* scrollbar-width: thin;
-    scrollbar-color: #47a94a white; */
+  --ifm-bg-color: #f8f9fa;
 }
 
 [data-theme="dark"] {
@@ -42,6 +43,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --ifm-task-complete-color: #25c2a0;
   --ifm-task-incomplete-color: #3d78cbe1;
+  --ifm-bg-color: #1a202c;
 }
 
 .header-github-link::before {
