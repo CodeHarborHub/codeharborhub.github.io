@@ -1,5 +1,3 @@
-import e from "express";
-
 interface Sponsor {
     name: string;
     image: string;
