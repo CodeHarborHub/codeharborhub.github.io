@@ -1,16 +1,14 @@
 ---
-id: BFS-traversal-of-graph
-title: BFS Traversal of Graph (Geeks for Geeks)
-sidebar_label: BFS Traversal of Graph
+id: Scrambled-String
+title: Scrambled-String (Geeks for Geeks)
+sidebar_label: Scrambled-String
 tags:
   - Intermediate
-  - Graph
-  - Breadth-First Search
   - Geeks for Geeks
   - CPP
   - Python
   - DSA
-description: "This is a solution to the BFS Traversal of Graph problem on Geeks for Geeks."
+description: "This is a solution to the Scrambled-String problem on Geeks for Geeks."
 ---
 
 ## Problem Description
