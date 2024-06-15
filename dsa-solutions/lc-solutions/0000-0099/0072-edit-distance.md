@@ -110,7 +110,7 @@ Reason: We are using a recursion stack space(O(N+M)) and a 2D array ( O(N*M)).
 
 ### Approach 2: Iterative Dynamic Programming (Tabulation)
 
-Concept: In the recursive logic, we set the base case too if(i<0 ) and if(j<0) but we can’t set the dp array’s index to -1. Therefore a hack for this issue is to shift every index by 1 towards the right.
+Concept: In the recursive logic, we set the base case too `if(i<0)` and if(j<0) but we can’t set the dp array’s index to -1. Therefore a hack for this issue is to shift every index by 1 towards the right.
 
 #### Algorithm
 
