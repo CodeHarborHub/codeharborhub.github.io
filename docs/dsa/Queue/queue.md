@@ -11,6 +11,8 @@ tags: [dsa, data-structures, Queue]
 
 A queue is a linear data structure that follows the First In First Out (FIFO) principle. This means that the first element added to the queue will be the first one to be removed. Queues are used in various applications such as process scheduling, breadth-first search, and more.
 
+![alt text](image.png)
+
 ### Queue Operations
 
 1. **Enqueue**: Add an element to the end of the queue.
