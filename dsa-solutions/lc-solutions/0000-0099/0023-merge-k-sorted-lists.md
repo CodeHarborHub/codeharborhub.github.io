@@ -1,43 +1,36 @@
 ---
 id: merge-k-sorted-lists
-title: Merge-K-Sorted-Lists (LeetCode)
-sidebar_label: 0023-Merge-K-Sorted-Lists
-tags:
-    - Linked List
-    - Divide and Conquer
-description: "You are given an array of k linked-lists lists, each linked-list is sorted in ascending order.
-Merge all the linked-lists into one sorted linked-list and return it."
+title: Merge k Sorted Lists (LeetCode)
+sidebar_label: 0023-MergekSortedLists
+description: Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
 ---
 
 ## Problem Description
 
-| Problem Statement                                                                                           | Solution Link                                                                                                                               | LeetCode Profile                                   |
-| :----------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------- |
-| [Merge-K-Sorted-Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/)                                         | [Merge-K-Sorted-Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/) | [DaminiChachane](https://leetcode.com/u/divcxl15/) |
+| Problem Statement | Solution Link | LeetCode Profile |
+| :---------------- | :------------ | :--------------- |
+| [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | [Merge k Sorted Lists Solution on LeetCode](https://leetcode.com/problems/merge-k-sorted-lists/solutions/) | [vaishu_1904](https://leetcode.com/u/vaishu_1904/) |
 
-### Problem Description
+## Problem Description
 
-You are given an array of k linked-lists lists, each linked-list is sorted in ascending order.
+You are given an array of `k` linked-lists `lists`, each linked-list is sorted in ascending order.
 
 Merge all the linked-lists into one sorted linked-list and return it.
-
 
 ### Examples
 
 #### Example 1
 
-- **Input:** ` lists = [[1,4,5],[1,3,4],[2,6]]`
+- **Input:** `lists = [[1,4,5],[1,3,4],[2,6]]`
 - **Output:** `[1,1,2,3,4,4,5,6]`
 - **Explanation:** The linked-lists are:
-```
-[
-  1->4->5,
-  1->3->4,
-  2->6
-]
-```
-merging them into one sorted list:
-`1->1->2->3->4->4->5->6`
+  `[
+    1->4->5,
+    1->3->4,
+    2->6
+  ]`
+  merging them into one sorted list:
+  `1->1->2->3->4->4->5->6`
 
 #### Example 2
 
@@ -49,168 +42,149 @@ merging them into one sorted list:
 - **Input:** `lists = [[]]`
 - **Output:** `[]`
 
- 
-
 ### Constraints
 
-- $k == lists.length$
-- $0 \leq \text{k} \leq104$
-- $0 \leq \text{lists[i].length} \leq 500$
-- $(-10^4) \leq \text{lists[i][j]} \leq 104$
+- `k == lists.length`
+- $0 <= k <= 10^4$
+- $0 <= lists[i].length <= 500$
+- $-10^4 <= lists[i][j] <= 10^4$
+- `lists[i]` is sorted in ascending order.
+- The sum of `lists[i].length` will not exceed `10^4`.
 
 ### Approach
 
-A Simple Solution is to initialize the result as the first list. Now traverse all lists starting from the second list. Insert every node of the currently traversed list into the result in a sorted way.  
+To merge `k` sorted linked lists, we can use a min-heap (priority queue) to efficiently get the smallest node among the current heads of the lists. This ensures that we always add the smallest element to the merged list. 
+
+1. **Initialize the Min-Heap:**
+   - Add the first node of each linked list to the heap.
+   
+2. **Build the Merged List:**
+   - Extract the smallest node from the heap and add it to the merged list.
+   - If the extracted node has a next node, add it to the heap.
+   - Repeat until the heap is empty.
 
 ### Solution Code
 
 #### Python
 
-```
+```python
+from heapq import heappop, heappush
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
+    def __lt__(self, other):
+        return self.val < other.val
+
 class Solution:
-    def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
-        n = len(lists)
-
-        newList = ListNode()
-        new = newList
-
-        while n:
-            # Find list with smallest value:
-            smallestNode = ListNode(float('inf'))
-            smallestIndex = -1
-            for i in range(n):
-                listNode = lists[i]
-                if listNode and listNode.val < smallestNode.val:
-                    smallestNode = listNode
-                    smallestIndex = i
-            
-            if smallestIndex == -1:
-                break
-            
-            new.next = ListNode(smallestNode.val)
-            new = new.next
-
-            if smallestNode.next:
-                lists[smallestIndex] = smallestNode.next
-            else:
-                lists.pop(smallestIndex)
-                n-=1
-                
-        return newList.next
-
+    def mergeKLists(self, lists):
+        min_heap = []
+        
+        # Initialize the heap
+        for l in lists:
+            if l:
+                heappush(min_heap, l)
+        
+        dummy = ListNode()
+        current = dummy
+        
+        # Extract the minimum node from the heap
+        while min_heap:
+            node = heappop(min_heap)
+            current.next = node
+            current = current.next
+            if node.next:
+                heappush(min_heap, node.next)
+        
+        return dummy.next
 ```
-
 #### Java
-```
+
+```java
+import java.util.PriorityQueue;
+
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode(int x) { val = x; }
+}
+
 class Solution {
-    public ListNode merge(ListNode left, ListNode right) {
-        ListNode dummy = new ListNode(-1);
-        ListNode temp = dummy;
-        while (left != null && right != null) {
-            if (left.val < right.val) {
-                temp.next = left;
-                temp = temp.next;
-                left = left.next;
-            } else {
-                temp.next = right;
-                temp = temp.next;
-                right = right.next;
+    public ListNode mergeKLists(ListNode[] lists) {
+        PriorityQueue<ListNode> minHeap = new PriorityQueue<>((a, b) -> a.val - b.val);
+
+        for (ListNode list : lists) {
+            if (list != null) {
+                minHeap.offer(list);
             }
         }
-        while (left != null) {
-            temp.next = left;
-            temp = temp.next;
-            left = left.next;
+
+        ListNode dummy = new ListNode(0);
+        ListNode current = dummy;
+
+        while (!minHeap.isEmpty()) {
+            ListNode node = minHeap.poll();
+            current.next = node;
+            current = current.next;
+            if (node.next != null) {
+                minHeap.offer(node.next);
+            }
         }
-        while (right != null) {
-            temp.next = right;
-            temp = temp.next;
-            right = right.next;
-        }
+
         return dummy.next;
     }
-    
-    public ListNode mergeSort(List<ListNode> lists, int start, int end) {
-        if (start == end) {
-            return lists.get(start);
-        }
-        int mid = start + (end - start) / 2;
-        ListNode left = mergeSort(lists, start, mid);
-        ListNode right = mergeSort(lists, mid + 1, end);
-        return merge(left, right);
-    }
-    
-    public ListNode mergeKLists(List<ListNode> lists) {
-        if (lists.size() == 0) {
-            return null;
-        }
-        return mergeSort(lists, 0, lists.size() - 1);
-    }
 }
+
 ```
 
 #### C++
-```
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
-class Solution {
-public:
-    ListNode* merge(ListNode *left, ListNode *right) {
-        ListNode *dummy = new ListNode(-1);
-        ListNode *temp = dummy;
-        while (left != nullptr && right != nullptr) {
-            if (left -> val < right -> val) {
-                temp -> next = left;
-                temp = temp -> next;
-                left = left -> next;
-            }
-            else {
-                temp -> next = right;
-                temp = temp -> next;
-                right = right -> next;
-            }
-        }
-        while (left != nullptr) {
-            temp -> next = left;
-            temp = temp -> next;
-            left = left -> next;
-        }
-        while (right != nullptr) {
-            temp -> next = right;
-            temp = temp -> next;
-            right = right -> next;
-        }
-        return dummy -> next;
-    }
-    ListNode* mergeSort(vector<ListNode*>& lists, int start, int end) {
-        if (start == end) 
-            return lists[start];
-        int mid = start + (end - start) / 2;
-        ListNode *left = mergeSort(lists, start, mid);
-        ListNode *right = mergeSort(lists, mid + 1, end);
-        return merge(left, right);
-    }
-    ListNode* mergeKLists(vector<ListNode*>& lists) {
-        if (lists.size() == 0)
-            return nullptr;
-        return mergeSort(lists, 0, lists.size() - 1);
+
+``` c++
+#include <queue>
+
+struct ListNode {
+    int val;
+    ListNode *next;
+    ListNode(int x) : val(x), next(nullptr) {}
+};
+
+struct compare {
+    bool operator()(ListNode* a, ListNode* b) {
+        return a->val > b->val;
     }
 };
+
+class Solution {
+public:
+    ListNode* mergeKLists(vector<ListNode*>& lists) {
+        priority_queue<ListNode*, vector<ListNode*>, compare> minHeap;
+        
+        for (ListNode* list : lists) {
+            if (list != nullptr) {
+                minHeap.push(list);
+            }
+        }
+        
+        ListNode dummy(0);
+        ListNode* current = &dummy;
+        
+        while (!minHeap.empty()) {
+            ListNode* node = minHeap.top();
+            minHeap.pop();
+            current->next = node;
+            current = current->next;
+            if (node->next != nullptr) {
+                minHeap.push(node->next);
+            }
+        }
+        
+        return dummy.next;
+    }
+};
+
 ```
 
-### Conclusion
-
-Merging k sorted lists efficiently requires leveraging data structures that help maintain order, such as a min-heap. The min-heap approach is particularly efficient with a time complexity of $𝑂(𝑁log𝑘)$. Understanding these methods not only helps in solving the problem optimally but also enhances the comprehension of advanced data structures and algorithms.
-
+#### Conclusion
+The above solutions effectively merge k sorted linked lists into a single sorted list using a min-heap. This approach ensures that the smallest element is always added next to the merged list, maintaining sorted order. This solution efficiently handles edge cases and returns the correct merged list for various input configurations.
