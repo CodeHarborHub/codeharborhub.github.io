@@ -152,7 +152,7 @@ In such cases Greedy approach wouldn’t work instead complete paths from root t
 
 5. Activity selection problem: Chooses the maximum number of non-overlapping activities from a set of activities.
 
-## dvantages of Greedy Algorithms:
+## Advantages of Greedy Algorithms:
 
         1. Simple and easy to understand: Greedy algorithms are often straightforward to implement and reason about.
 
