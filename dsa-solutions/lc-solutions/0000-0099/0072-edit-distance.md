@@ -65,48 +65,38 @@ For every index of string S1, we have three options to match that index with str
 As there is no uniformity in data, there is no other way to find out than to try out all possible ways. To do so we will need to use recursion.
 
 Steps to memoize a recursize solution:
-* Create a dp array of size [n][m]. The size of S1 and S2 are n and m respectively, so the variable i will always lie between ‘0’ and ‘n-1’ and the variable j between ‘0’ and ‘m-1’.
-* * We initialize the dp array to -1.
+- Create a dp array of size [n][m]. The size of S1 and S2 are n and m respectively, so the variable i will always lie between ‘0’ and ‘n-1’ and the variable j between ‘0’ and ‘m-1’.
+-  We initialize the dp array to -1.
 Whenever we want to find the answer to particular parameters (say f(i,j)), we first check whether the answer is already calculated using the dp array(i.e dp[i][j]!= -1 ). If yes, simply return the value from the dp array.
-* If not, then we are finding the answer for the given value for the first time, we will use the recursive relation as usual but before returning from the function, we will set dp[i][j] to the solution we get.
+- If not, then we are finding the answer for the given value for the first time, we will use the recursive relation as usual but before returning from the function, we will set dp[i][j] to the solution we get.
 
 #### Implementation
 
 ```C++
 int editDistanceUtil(string& S1, string& S2, int i, int j, vector<vector<int>>& dp) {
-    // Base cases
     if (i < 0)
         return j + 1;
     if (j < 0)
         return i + 1;
 
-    // If the result for this state has already been calculated, return it
     if (dp[i][j] != -1)
         return dp[i][j];
 
-    // If the characters at the current positions match, no operation is needed
     if (S1[i] == S2[j])
         return dp[i][j] = 0 + editDistanceUtil(S1, S2, i - 1, j - 1, dp);
 
-    // Minimum of three choices:
-    // 1. Replace the character at S1[i] with the character at S2[j]
-    // 2. Delete the character at S1[i]
-    // 3. Insert the character at S2[j] into S1
     else
         return dp[i][j] = 1 + min(editDistanceUtil(S1, S2, i - 1, j - 1, dp),
                                   min(editDistanceUtil(S1, S2, i - 1, j, dp),
                                       editDistanceUtil(S1, S2, i, j - 1, dp)));
 }
 
-// Function to calculate the minimum number of operations required to transform S1 into S2
 int editDistance(string& S1, string& S2) {
     int n = S1.size();
     int m = S2.size();
 
-    // Create a DP table to memoize results
     vector<vector<int>> dp(n, vector<int>(m, -1));
 
-    // Call the utility function with the last indices of both strings
     return editDistanceUtil(S1, S2, n - 1, m - 1, dp);
 }
 ```
