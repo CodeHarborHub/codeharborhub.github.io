@@ -84,6 +84,24 @@ The problem is to find all elements in an array except the two greatest elements
 ```
 
   </TabItem>  
+  <TabItem value="Python" label="Python" default>
+  <SolutionAuthor name="@iamanolive"/>
+  ```Java
+  class Solution {
+    public long[] findElements( long a[], long n)
+    {
+        // Your code goes here
+        long[] ans=new long[a.length-2];
+        Arrays.sort(a);
+        for(int i=0;i<a.length-2;i++){
+            ans[i]=a[i];
+        }
+        return ans;
+    }
+  }
+  ```
+
+  </TabItem>
 </Tabs>
 
 
