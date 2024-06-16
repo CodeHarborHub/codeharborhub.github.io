@@ -43,16 +43,16 @@ Output: [["root/a/2.txt","root/c/d/4.txt"],["root/a/1.txt","root/c/3.txt"]]
 
 ### Constraints
 
-- $1 <= paths.length <= 2 * 10^4$
-- $1 <= paths[i].length <= 3000$
-- $1 <= sum(paths[i].length) <= 5 * 10^5$
+- $1 \leq \text{paths.length} \leq  2 \times 10^4$
+- $1 \leq paths[i].length \leq 3000$
+- $1 \leq sum(paths[i].length) \leq 5 * 10^5$
 - `paths[i]` consist of English letters, digits, `'/'`, `'.'`, `'('`, `')'`, and `' '`.
 - You may assume no files or directories share the same name in the same directory.
 - You may assume each given directory info represents a unique directory. A single blank space separates the directory path and file info.
 
 ## Solution for Find Duplicate File in System
 
-### Approach #1 Brute Force [Time Limit Exceeded]
+### Approach 1 Brute Force [Time Limit Exceeded]
 
 For the brute force solution, firstly we obtain the directory paths, the filenames and file contents separately by appropriately splitting the elements of the pathspathspaths list. While doing so, we keep on creating a list which contains the full path of every file along with the contents of the file. The list contains data in the form
 
@@ -192,15 +192,15 @@ class Solution:
 
 ## Complexity Analysis
 
-### Time Complexity: $O(n*x + f^2 * s)$
+### Time Complexity: $O(n \times x + f^2 \times s)$
 
 > **Reason**: Creation of list will take O(n∗x), where n is the number of directories and x is the average string length. Every file is compared with every other file. Let f files are there with average size of s, then files comparision will take O(f2∗s), equals can take O(s). Here, Worst case will be when all files are unique.
 
-### Space Complexity: $O(n*x)$
+### Space Complexity: $O(n \times x)$
 
 > **Reason**: Size of lists res and list can grow upto n∗x.
 
-### Approach #2 Using HashMap
+### Approach 2 Using HashMap
 #### Algorithm
 
 In this approach, firstly we obtain the directory paths, the file names and their contents separately by appropriately splitting each string in the given paths list. In order to find the files with duplicate contents, we make use of a HashMap map, which stores the data in the form (contents,list_of_file_paths_with_this_content). Thus, for every file's contents, we check if the same content already exist in the hashmap. If so, we add the current file's path to the list of files corresponding to the current contents. Otherwise, we create a new entry in the map, with the current contents as the key and the value being a list with only one entry(the current file's path).
@@ -309,11 +309,11 @@ class Solution:
 
 ## Complexity Analysis
 
-### Time Complexity: $O(n*x)$
+### Time Complexity: $O(n \times x)$
 
 > **Reason**: n strings of average length x is parsed.
 
-### Space Complexity: $O(n*x)$
+### Space Complexity: $O(n \times x)$
 
 > **Reason**: map and res size grows upto n∗x.
 
