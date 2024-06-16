@@ -5,7 +5,7 @@ sidebar_label: 0072-Edit-Distance
 tags:
   - String
   - Dynamic Programming
-description: Given two strings `word1` and `word2`, return the minimum number of operations required to convert `word1` to `word2`.
+description: Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2.
 sidebar_position: 72
 ---
 
@@ -110,7 +110,7 @@ Reason: We are using a recursion stack space(O(N+M)) and a 2D array ( O(N*M)).
 
 ### Approach 2: Iterative Dynamic Programming (Tabulation)
 
-Concept: In the recursive logic, we set the base case too `if(i<0)` and if(j<0) but we can’t set the dp array’s index to -1. Therefore a hack for this issue is to shift every index by 1 towards the right.
+Concept: In the recursive logic, we set the base case to `if(i<0)` and `if(j<0)` but we can’t set the dp array’s index to -1. Therefore a hack for this issue is to shift every index by 1 towards the right.
 
 #### Algorithm
 
@@ -160,7 +160,7 @@ int editDistance(string& S1, string& S2) {
 
 ### Complexity Analysis
 
-- **Time complexity**: O(N*M)
+- **Time complexity**: $O(N \times M)$
 Reason: There are two nested loops
-- **Space complexity**: O(N*M)
+- **Space complexity**: $O(N \times M)$
 Reason: We are using an external array of size ‘N*M’. Stack Space is eliminated.
