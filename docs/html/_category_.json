@@ -1,0 +1,8 @@
+{
+    "label": "HTML",
+    "position": 2,
+    "link": {
+      "type": "generated-index",
+      "description": "HTML stands for Hyper Text Markup Language. It is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript."
+    }
+  }

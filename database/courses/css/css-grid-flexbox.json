@@ -1,0 +1,184 @@
+{
+  "course": {
+    "title": "CSS Grid & Flexbox for Responsive Layouts",
+    "sections": [
+      {
+        "title": "Introduction",
+        "lessons": [
+          {
+            "title": "Introduction"
+          },
+          {
+            "title": "Responsive Design Overview"
+          }
+        ]
+      },
+      {
+        "title": "Flexbox",
+        "lessons": [
+          {
+            "title": "Flexbox"
+          },
+          {
+            "title": "Starting CSS Setup"
+          },
+          {
+            "title": "Container Flexbox Properties Demo"
+          },
+          {
+            "title": "Child Flexbox Properties Demo"
+          }
+        ]
+      },
+      {
+        "title": "Flexbox Grid System",
+        "lessons": [
+          {
+            "title": "Overview & Setup"
+          },
+          {
+            "title": "Coding a Flexbox Grid System"
+          },
+          {
+            "title": "Responsive Media Queries"
+          },
+          {
+            "title": "Flexbox Grid System Exercise"
+          },
+          {
+            "title": "Flexbox Grid System Solution"
+          }
+        ]
+      },
+      {
+        "title": "Flexbox Practice",
+        "lessons": [
+          {
+            "title": "Text Overlay Effect with Flexbox"
+          },
+          {
+            "title": "Flexbox Exercises Setup"
+          },
+          {
+            "title": "Collections Practice"
+          },
+          {
+            "title": "Mission Practice"
+          },
+          {
+            "title": "Flexbox Footer Practice"
+          }
+        ]
+      },
+      {
+        "title": "Flexbox Header & Navbar",
+        "lessons": [
+          {
+            "title": "Header & Navbar"
+          },
+          {
+            "title": "Header & Navbar Styling for Desktop"
+          },
+          {
+            "title": "Header & Navbar Styling for Tablet"
+          },
+          {
+            "title": "Header & Navbar Styling for Mobile"
+          }
+        ]
+      },
+      {
+        "title": "Responsive Images & Picture Element",
+        "lessons": [
+          {
+            "title": "Responsive Images Overview"
+          },
+          {
+            "title": "Responsive Images Best Practices"
+          },
+          {
+            "title": "srcset & sizes Demo"
+          },
+          {
+            "title": "Banner Demo"
+          },
+          {
+            "title": "Hero Demo"
+          },
+          {
+            "title": "Final Flexbox Exercise"
+          },
+          {
+            "title": "Final Flexbox Solution"
+          }
+        ]
+      },
+      {
+        "title": "CSS Grid",
+        "lessons": [
+          {
+            "title": "Introducing CSS Grid"
+          },
+          {
+            "title": "Line-Based CSS Grid Layout Demo"
+          },
+          {
+            "title": "Rows & Columns Practice"
+          },
+          {
+            "title": "Sizing Rows & Columns"
+          },
+          {
+            "title": "Grid Layout with Span Notation Demo"
+          }
+        ]
+      },
+      {
+        "title": "Grid System",
+        "lessons": [
+          {
+            "title": "Grid System with CSS Grid"
+          },
+          {
+            "title": "Responsive Grid with CSS Grid"
+          },
+          {
+            "title": "Figure & Figure Caption with CSS Grid"
+          },
+          {
+            "title": "Combining Grid Cells & Animation"
+          },
+          {
+            "title": "Mosaic Grid Exercise"
+          },
+          {
+            "title": "Mosaic Grid Solution"
+          },
+          {
+            "title": "Magazine-Style Layouts with Grid Template Areas"
+          },
+          {
+            "title": "Card HTML Markup Practice"
+          },
+          {
+            "title": "Card Layouts with Flexbox & Grid"
+          },
+          {
+            "title": "Final CSS Grid Exercise"
+          },
+          {
+            "title": "Final CSS Grid Solution"
+          }
+        ]
+      },
+      {
+        "title": "Wrapping Up",
+        "lessons": [
+          {
+            "title": "Wrapping Up"
+          }
+        ]
+      }
+    ]
+  }
+}

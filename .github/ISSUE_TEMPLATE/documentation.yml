@@ -1,0 +1,84 @@
+name: 📝 Documentation Update
+description: Improve Documentation
+title: "[Documentation Update]: "
+labels: 'enhancement'
+body:
+  - type: checkboxes
+    id: existing-issue
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the updates you want to make.
+      options:
+        - label: I have searched the existing issues
+          required: true
+
+  - type: textarea
+    id: issue-description
+    attributes:
+      label: Issue Description
+      description: Please provide a clear description of the documentation update you are suggesting.
+      placeholder: Describe the improvement or correction you'd like to see in the documentation.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-change
+    attributes:
+      label: Suggested Change
+      description: Provide details of the proposed change to the documentation.
+      placeholder: Explain how the documentation should be updated or corrected.
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Why is this documentation update necessary or beneficial?
+      placeholder: Explain the importance or reasoning behind the suggested change.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Urgency
+      description: How urgently do you believe this documentation update is needed?
+      options:
+        - High
+        - Medium
+        - Low
+      default: 0
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Acknowledgements
+      description: Ensure you have read and agree to the project's guidelines.
+      options:
+        - label: I have read the Contributing Guidelines
+          required: true
+        - label: I'm a GSSOC'24 contributor
+          required: false
+        - label: I have starred the repository
+          required: true
+        - label: I have read and followed the Contribution Guidelines
+          required: true
+        - label: I have followed the code style guidelines of this project
+          required: true
+        - label: I have checked for any existing open issues that my pull request may address
+          required: true
+        - label: I have ensured that my changes do not break any existing functionality
+          required: true
+        - label: Each contributor is allowed to create a maximum of 4 issues per day. This helps us manage and address issues efficiently
+          required: true
+        - label: I have read the resources for guidance listed below
+          required: true
+        - label: I have not used AI-generated content (e.g., ChatGPT, other AI tools)
+          required: true
+        - label: I have not used content from existing sites (e.g., text, images)
+          required: true
+        - label: I have followed all security rules and only shared trusted resources
+          required: true

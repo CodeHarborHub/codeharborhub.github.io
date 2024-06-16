@@ -1,0 +1,8 @@
+{
+  "label": "Module 8: Handling Data Flow in React",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "In this module, you will learn how to handle data flow in React. You will learn how to pass data from parent to child components, how to handle user input, and how to manage state in React components. You will also learn how to use React's built-in state management tools, such as the Context API and the useReducer hook. Finally, you will learn how to use React's built-in state management tools, such as the Context API and the useReducer hook."
+  }
+}

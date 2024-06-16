@@ -1,0 +1,8 @@
+{
+    "label": "The C++ Standard Template Library",
+    "position": 11,
+    "link": {
+      "type": "generated-index",
+      "description": "In this section, you will delve into the intricacies of the C++ Standard Template Library (STL), uncovering the powerful tools it offers to enhance your programming efficiency. You will explore the various components of the STL, including containers, iterators, algorithms, and function objects. By understanding how to effectively utilize these components, you will be able to write more concise, efficient, and readable code. Whether you are managing collections of data, performing complex operations, or simply aiming to streamline your development process, mastering the STL will be an invaluable asset in your C++ toolkit."
+    }
+}

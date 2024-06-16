@@ -1,0 +1,8 @@
+{
+  "label": "Best Practices and Optimization",
+  "position": 16,
+  "link": {
+    "type": "generated-index",
+    "description": "In this section, you will learn about best practices and optimization in html. You will learn about the importance of using semantic html, how to optimize images, and how to minify html."
+  }
+}

@@ -1,0 +1,211 @@
+---
+id: function-datatypes-in-javascript
+title: Function Datatypes in JavaScript
+sidebar_label: Function
+sidebar_position: 3
+tags: [JavaScript, Function, Datatypes, JavaScript Tutorial, JavaScript Function, JavaScript Function Datatypes, JavaScript Function, Types of Function, JavaScript Function Types, JavaScript Function Expression, JavaScript Arrow Function, JavaScript IIFE, JavaScript Generator Function, JavaScript Function Parameters, JavaScript Function Return Value, JavaScript Function Definition, JavaScript Function Syntax, JavaScript Function Example, JavaScript Function Tutorial, JavaScript Function Basics, JavaScript Function Introduction, JavaScript Function Guide, JavaScript Function Fundamentals, JavaScript Function Overview, JavaScript Function Concepts, JavaScript Function Explained, JavaScript Function Quick Start, JavaScript Function Learning, JavaScript]
+description: What is a function in JavaScript? How to define a function in JavaScript? What are the different ways to define a function in JavaScript? What are the different types of function in JavaScript? Learn all about functions in JavaScript in this guide.
+---
+
+In JavaScript, a function is a block of code that can be called and executed. It is a reusable piece of code that can be called multiple times. Functions are used to perform a specific task and can be defined using the `function` keyword.
+
+## Defining a Function
+
+A function can be defined using the `function` keyword followed by the function name and a pair of parentheses. The function body is enclosed within a pair of curly braces `{}`.
+
+```js title="Syntax"
+function functionName() {
+  // function body
+}
+```
+
+Here's an example of a simple function that logs a message to the console:
+
+```js title="Example"
+function greet() {
+  console.log('Hello, World!');
+}
+
+greet(); // Output: Hello, World!
+```
+
+## Function Parameters
+
+A function can accept parameters, which are variables that are passed to the function when it is called. These parameters are used within the function to perform a specific task.
+
+```js title="Syntax"
+function functionName(parameter1, parameter2, ...) {
+  // function body
+}
+```
+
+Here's an example of a function that accepts a parameter:
+
+```js title="Example"
+function greet(name) {
+  console.log(`Hello, ${name}!`);
+}
+
+greet('John'); // Output: Hello, John!
+greet('Jane'); // Output: Hello, Jane!
+```
+
+## Function Return Value
+
+A function can return a value using the `return` statement. The return value can be used by the calling code to perform further operations.
+
+```js title="Syntax"
+function functionName() {
+  // function body
+  return value;
+}
+```
+
+Here's an example of a function that returns a value:
+
+```js title="Example"
+function add(a, b) {
+  return a + b;
+}
+
+let result = add(2, 3);
+console.log(result); // Output: 5
+```
+
+## Function Expression
+
+A function can also be defined using a function expression, which is a function that is assigned to a variable. Function expressions can be named or anonymous.
+
+### Named Function Expression
+
+A named function expression is a function expression that has a name. The name can be used within the function to refer to itself.
+
+```js title="Syntax"
+let functionName = function() {
+  // function body
+};
+```
+
+Here's an example of a named function expression:
+
+```js title="Example"
+let greet = function sayHello() {
+  console.log('Hello, World!');
+};
+
+greet(); // Output: Hello, World!
+
+// The function name can be used within the function
+
+sayHello(); // ReferenceError: sayHello is not defined
+```
+
+### Anonymous Function Expression
+
+An anonymous function expression is a function expression that does not have a name. It is assigned to a variable and can be called using the variable name.
+
+```js title="Syntax"
+let functionName = function() {
+  // function body
+};
+```
+
+Here's an example of an anonymous function expression:
+
+```js title="Example"
+let greet = function() {
+  console.log('Hello, World!');
+};
+
+greet(); // Output: Hello, World!
+```
+
+## Arrow Function
+
+An arrow function is a concise way to define a function using the `=>` syntax. It is a shorthand for writing function expressions.
+
+```js title="Syntax"
+let functionName = (parameter1, parameter2, ...) => {
+  // function body
+};
+```
+
+Here's an example of an arrow function:
+
+```js title="Example"
+let greet = name => {
+  console.log(`Hello, ${name}!`);
+};
+
+greet('John'); // Output: Hello, John!
+
+// If the function body contains only one statement, the curly braces can be omitted
+
+let add = (a, b) => a + b;
+
+let result = add(2, 3);
+
+console.log(result); // Output: 5
+```
+
+## IIFE (Immediately Invoked Function Expression)
+
+An IIFE is a function that is defined and called immediately. It is used to create a new scope and to avoid polluting the global scope.
+
+```js title="Syntax"
+(function() {
+  // function body
+})();
+```
+
+Here's an example of an IIFE:
+
+```js title="Example"
+(function() {
+  let message = 'Hello, World!';
+  console.log(message);
+})();
+
+// Output: Hello, World!
+
+console.log(message); // ReferenceError: message is not defined
+```
+
+## Generator Function   
+
+A generator function is a special type of function that can be paused and resumed. It is defined using the `function*` keyword and the `yield` keyword is used to pause the function.
+
+```js title="Syntax"
+function* functionName() {
+  // function body
+}
+```
+
+Here's an example of a generator function:
+
+```js title="Example"
+function* count() {
+  yield 1;
+  yield 2;
+  yield 3;
+}
+
+let generator = count();
+
+console.log(generator.next().value); // Output: 1
+console.log(generator.next().value); // Output: 2
+console.log(generator.next().value); // Output: 3
+console.log(generator.next().value); // Output: undefined
+```
+
+:::info 📝 Note
+1. **Function Declaration**: A function declaration is hoisted, which means it is available before it is defined. It can be called before it is defined. 
+2. **Function Expression**: A function expression is not hoisted, which means it is not available before it is defined. It cannot be called before it is defined.
+3. **Arrow Function**: An arrow function does not have its own `this`, `arguments`, `super`, or `new.target`. It uses the `this`, `arguments`, `super`, and `new.target` of the enclosing scope.
+4. **IIFE**: An IIFE is used to create a new scope and to avoid polluting the global scope. It is defined and called immediately.
+5. **Generator Function**: A generator function is a special type of function that can be paused and resumed. It is defined using the `function*` keyword and the `yield` keyword is used to pause the function.
+:::
+
+## Conclusion
+
+In this tutorial, we learned about functions in JavaScript. We learned how to define a function, how to pass parameters to a function, how to return a value from a function, and the different ways to define a function in JavaScript. We also learned about function expressions, arrow functions, IIFE, and generator functions. Functions are an important concept in JavaScript and are used to perform a specific task. They are reusable and can be called multiple times.

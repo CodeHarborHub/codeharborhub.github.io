@@ -1,0 +1,8 @@
+{
+    "label": "TypeScript",
+    "position": 7,
+    "link": {
+      "type": "generated-index",
+      "description": "TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. It is developed and maintained by Microsoft."
+    }
+  }

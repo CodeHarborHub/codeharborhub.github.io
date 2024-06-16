@@ -1,0 +1,8 @@
+{
+  "label": "GUI Programming with Swing in Java",
+  "position": 12,
+  "link": {
+    "type": "generated-index",
+    "description": "In this section, we will learn how to create GUI applications using Swing in Java. We will cover the basics of Swing, how to create GUI components, how to layout them, how to handle events, how to create dialogs, how to create menus, and how to create frames. We will also learn how to create a simple calculator application using Swing."
+  }
+}
