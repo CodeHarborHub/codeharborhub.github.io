@@ -3,6 +3,8 @@ id: data-structures-and-algorithms
 title: Data Structures and Algorithms
 sidebar_label: Data Structures and Algorithms
 sidebar_position: 1
+tags: [data-structures, algorithms, dsa, resources, books, courses, websites, blogs, youtube, podcasts, interview-preparation, competitive-programming, practice-problems, mock-interviews, interview-experiences, interview-questions, interview-tips, interview-cheat-sheets, interview-preparation-misc]
+description: 'A comprehensive guide to Data Structures and Algorithms (DSA) including resources, books, courses, websites, blogs, YouTube channels, podcasts, interview preparation, competitive programming, practice problems, mock interviews, interview experiences, interview questions, interview tips, interview cheat sheets, and interview preparation misc.'
 ---
 
 > Data Structures and Algorithms are the building blocks of computer science. They are the tools you'll use to build software systems. This section is a collection of resources to help you understand and master Data Structures and Algorithms.
