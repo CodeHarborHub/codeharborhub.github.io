@@ -1,8 +1,0 @@
-{
-    "label": "Primitive Data Types",
-    "position": 2,
-    "link": {
-      "type": "generated-index",
-      "description": "In the JavaScript, Primitive Data Types are immutable and are passed by value. There are 7 primitive data types: string, number, bigint, boolean, undefined, null and symbol."
-    }
-  }

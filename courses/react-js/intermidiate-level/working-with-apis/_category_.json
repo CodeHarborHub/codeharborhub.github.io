@@ -1,8 +1,0 @@
-{
-  "label": "Module 9: Working with APIs in React",
-  "position": 4,
-  "link": {
-    "type": "generated-index",
-    "description": "In this module, you will learn how to work with APIs in React. You will learn how to fetch data from an API and display it in your React application. You will also learn how to use the Axios library to make API requests in React. Finally, you will learn how to use the React Router library to create a multi-page application that fetches data from an API."
-  }
-}

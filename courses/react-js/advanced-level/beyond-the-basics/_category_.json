@@ -1,8 +1,0 @@
-{
-  "label": "Module 14: Beyond the Basics (Optional)",
-  "position": 4,
-  "link": {
-    "type": "generated-index",
-    "description": "In this module, you will learn about some advanced features of the React library that are not required to build a basic application, but are useful to know about when you are ready to build more complex applications."
-  }
-}

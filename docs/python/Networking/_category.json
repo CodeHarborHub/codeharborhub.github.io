@@ -1,8 +1,0 @@
-{
-    "label": "Networking in Python",
-    "position": 2,
-    "link": {
-        "type": "generated-index",
-        "description": "In this section, you will learn about Networking in Python. You will explore various libraries and methods to handle networking tasks such as socket programming, HTTP requests, and more."
-    }
-}

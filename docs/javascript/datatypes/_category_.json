@@ -1,9 +1,0 @@
-{
-    "label": "Data Types in JavaScript",
-    "position": 11,
-    "link": {
-      "type": "generated-index",
-      "description": 
-      "Data types are the classification or categorization of data items. It represents the kind of value that tells what operations can be performed on a particular data. Since everything is an object in JavaScript, data types are divided into two categories: primitive data types and object data types. Primitive data types are the most basic data types available in JavaScript. They are the building blocks for data manipulation. Object data types are more complex data types and are used to store collections of data and more complex entities."
-    }
-  }

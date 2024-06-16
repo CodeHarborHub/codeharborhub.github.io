@@ -1,8 +1,0 @@
-{
-  "label": "Module 4: Building User Interfaces with React",
-  "position": 4,
-  "link": {
-    "type": "generated-index",
-    "description": "In this module, you will learn how to build user interfaces using the React library. You will learn how to create components, manage state, and use props to pass data between components."
-  }
-}

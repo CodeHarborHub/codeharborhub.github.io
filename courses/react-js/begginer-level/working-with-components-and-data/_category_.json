@@ -1,8 +1,0 @@
-{
-    "label": "Module 3: Working with Components and Data in React",
-    "position": 3,
-    "link": {
-      "type": "generated-index",
-      "description": "In this module, you will learn how to work with components and data in React. You will learn how to create and use components, how to pass data to components, and how to work with data in React. You will also learn how to work with forms in React and how to handle events in React. Finally, you will learn how to work with lists in React and how to use conditional rendering in React."
-    }
-  }

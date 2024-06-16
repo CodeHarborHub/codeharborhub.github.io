@@ -1,8 +1,0 @@
-{
-  "label": "Module 5: Introduction to Forms in React",
-  "position": 5,
-  "link": {
-    "type": "generated-index",
-    "description": "In this module, you will learn how to create forms in React. You will learn how to handle form input, how to submit a form, and how to validate form input. You will also learn how to use controlled components and uncontrolled components in React."
-  }
-}

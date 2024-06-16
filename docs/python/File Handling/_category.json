@@ -1,8 +1,0 @@
-{
-    "label": "File Handling in Python",
-    "position": 1,
-    "link": {
-        "type": "generated-index",
-        "description": "In this section, you will learn about File Handling in Python. You will learn how to create, read, write, and delete files in Python. You will also learn how to handle exceptions in file handling."
-    }
-}

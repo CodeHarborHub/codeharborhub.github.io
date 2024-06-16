@@ -1,8 +1,0 @@
-{
-  "label": "Module 10: Routing for SPAs in React",
-  "position": 5,
-  "link": {
-    "type": "generated-index",
-    "description": "In this module, you will learn how to implement routing in a single-page application (SPA) using React Router. You will learn how to set up routes, create nested routes, and pass data between routes. You will also learn how to use URL parameters and query strings to pass data between routes. Finally, you will learn how to use the useHistory hook to programmatically navigate between routes."
-  }
-}

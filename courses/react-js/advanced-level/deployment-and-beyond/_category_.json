@@ -1,8 +1,0 @@
-{
-  "label": "Module 15: Deployment and Beyond",
-  "position": 5,
-  "link": {
-    "type": "generated-index",
-    "description": "In this module, you will learn how to deploy your application to the cloud and how to monitor and maintain it. You will also learn how to scale your application to handle more users and how to update it without downtime. Finally, you will learn how to monitor your application and how to troubleshoot it when things go wrong."
-  }
-}

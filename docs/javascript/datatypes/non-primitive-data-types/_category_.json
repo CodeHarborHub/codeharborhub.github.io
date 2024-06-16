@@ -1,8 +1,0 @@
-{
-    "label": "Non Primitive Data Types",
-    "position": 3,
-    "link": {
-      "type": "generated-index",
-      "description": "In JavaScript Non Primitive Data Types (object data types) are used to store complex data types. These are the reference data types. They are called so because they don't store the value directly, they store the reference of the value. The reference is a pointer to a location in memory where the value is stored. Non-primitive data types are used to store complex objects. They are also called reference data types because they refer to the objects. Non-primitive data types are Object, Array, and Function."
-    }
-  }

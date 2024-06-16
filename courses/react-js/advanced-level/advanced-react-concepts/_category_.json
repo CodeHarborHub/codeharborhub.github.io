@@ -1,8 +1,0 @@
-{
-  "label": "Module 12: Advanced React Concepts",
-  "position": 2,
-  "link": {
-    "type": "generated-index",
-    "description": "In this module, you will learn about advanced React concepts such as Context API, Portals, Error Boundaries, and Higher Order Components. You will also learn about React Hooks, which are a new feature introduced in React 16.8 that allow you to use state and other React features without writing a class. Finally, you will learn about the new Context API and how to use it to manage state in your React applications."
-  }
-}

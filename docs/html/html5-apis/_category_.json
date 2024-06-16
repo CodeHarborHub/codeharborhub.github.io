@@ -1,8 +1,0 @@
-{
-    "label": "HTML5 APIs",
-    "position": 13,
-    "link": {
-      "type": "generated-index",
-      "description": "In this section, you will learn about the new HTML5 APIs that are available to you in the browser. These APIs allow you to do things like access the user's camera, microphone, and location, as well as store data on the user's device."
-    }
-  }
