@@ -187,7 +187,11 @@ const config = {
             type: "dropdown",
             html: '<span class="nav-emoji">🔗</span> More',
             position: "left",
-            items: [
+            items: [              
+              {
+                html: '<span class="nav-emoji">🌍</span> Web Dev',
+                to: "/web-dev/",
+              },
               {
                 html: '<span class="nav-emoji"> 📊</span> Quiz',
                 to: "https://quiz-app-ajay-dhangar.vercel.app/",
@@ -502,6 +506,22 @@ const config = {
         showLastUpdateTime: true,
       },
     ],
+
+    [
+      "@docusaurus/plugin-content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      {
+        id: "web-dev",
+        path: "web-dev",
+        routeBasePath: "web-dev",
+        // editUrl: "#",
+        sidebarPath: require.resolve("./sidebarsWebDev.js"),
+        remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, rehypeKatex],
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      },
+    ],
+
     [
       "@docusaurus/plugin-content-docs",
       /** @type {import('@docusaurus/plugin-content-docs').Options} */

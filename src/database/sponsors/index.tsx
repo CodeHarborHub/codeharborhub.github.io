@@ -18,6 +18,15 @@ const sponsors: Sponsor[] = [
 //     twitter: "https://x.com/CodesWithAjay",
 //     instagram: "https://www.instagram.com/_ajay.dhangar",
 //   },
+
+  {
+    name: "Narendra Dhangar",
+    image: "/sponsors/narendra-dhangar.jpg",
+    description: "B.Tech (CSE) Student",
+    github: "https://github.com/narendra-dhangar",
+    linkedin: "https://www.linkedin.com/in/narendra-dhangar-7a32aa283/",
+    instagram: "https://www.instagram.com/narendra_dh._05/",
+  },
   {
     name: "MOHD ARIF",
     image: "https://github.com/mrmohdarif.png",
