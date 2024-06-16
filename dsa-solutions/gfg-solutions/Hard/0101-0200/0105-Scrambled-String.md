@@ -56,7 +56,7 @@ Expected Auxiliary Space: $O(N2)$.
 ## Constraints
 
 - S1.length = S2.length
-- S1.length<=31
+- `S1.length<=31`
 - S1 and S2 consist of lower-case English letters.
 
 ## Problem Explanation
