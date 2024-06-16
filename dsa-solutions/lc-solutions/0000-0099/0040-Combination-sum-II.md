@@ -66,44 +66,44 @@ The solution uses depth-first search (DFS), backtracking, and sorting to effecti
 
 1.  **Sorting the Candidates:** The candidates array is first sorted to ensure that we can easily skip duplicates.
 
-    - candidates.sort()
+    - `candidates.sort()`
 
 2.  **Depth-First Search (DFS) Function:** The dfs function is defined to handle the recursion, taking two parameters: i (the current index in the candidates list) and s (the remaining sum needed to reach the target).
 
-    - def dfs(i: int, s: int):
+    - `def dfs(i: int, s: int):`
 
 3.  **Condition to Add to the Answer:** Inside the dfs function, we check if the remaining sum s is zero, meaning we found a valid combination that sums to the target. In that case, we add a copy of the current combination to the answer list.
 
-    - if s == 0:
-    - ans.append(t[:])
+    - `if s == 0:`
+    - `ans.append(t[:])`
 
 4.  **Base Cases for Termination:** We return if the index i moves beyond the length of the candidates or if the remaining sum s is less than the current candidate, which means we can't reach the desired total with the current and subsequent candidates since they are all larger.
 
-    - if i >= len(candidates) or s < candidates[i]:
+    - `if i >= len(candidates) or s < candidates[i]:`
     -     return
 
 5.  **Loop Over the Candidates:** Starting from the current index to the end of candidates, we try to include the candidate in the combination:
 
-    - for j in range(i, len(candidates)):
+    - `for j in range(i, len(candidates)):`
 
 6.  **Skipping Duplicates:** Before including a candidate in the combination, we skip over it if it's the same as its predecessor to avoid duplicates in our answer list (since we’ve already considered this value in the previous steps).
 
-    - if j > i and candidates[j] == candidates[j - 1]:
+    - `if j > i and candidates[j] == candidates[j - 1]:`
     -        continue
 
 7.  **Backtracking:** After including a candidate, the dfs function is called recursively with the updated index (j+1) and the updated remaining sum (s - candidates[j]). After this recursive call, we backtrack by removing the last candidate from the combination and moving on to the next candidate.
 
-    - t.append(candidates[j])
-    - dfs(j + 1, s - candidates[j])
-    - t.pop()
+    - `t.append(candidates[j])`
+    - `dfs(j + 1, s - candidates[j])`
+    - `t.pop()`
 
 The solution utilizes a list ans to store all the unique combinations and a temporary list t to store the current combination being constructed.
 
 After defining dfs, the solution begins the search with:
 
-1. ans = []
-2. t = []
-3. dfs(0, target)
+1. `ans = []`
+2. `t = []`
+3. `dfs(0, target)`
 
 The DFS and backtracking continue until all possible combinations that meet the criteria have been explored, after which ans is returned, containing all the valid combinations.
 
@@ -317,8 +317,8 @@ The space complexity of the code consists of:
 
     1. Space used by the recursion stack, which in the worst case is equivalent to the depth of recursion, at most $O(n)$ if all candidates are used.
 
-    2. Space for the temporary list t, which stores the current combination, will at most contain n values, adding another O(n).
+    2. Space for the temporary list t, which stores the current combination, will at most contain n values, adding another $O(n)$.
 
     3. Finally, the output list ans that could potentially hold all unique combinations of candidates. In the worst case, this could be all possible combinations which can be exponential, represented as $O(2^n)$.
 
-    4. Hence, the overall space complexity, considering the output space and the recursion stack depth, is O(n + 2^n). Typically, the output space can be a separate consideration, and if we exclude it, the space complexity for computation is $O(n)$. However, if we include the space needed for the output, it would be $O(2^n)$ due to the possibility of storing all combinations.
+    4. Hence, the overall space complexity, considering the output space and the recursion stack depth, is $O(n + 2^n)$. Typically, the output space can be a separate consideration, and if we exclude it, the space complexity for computation is $O(n)$. However, if we include the space needed for the output, it would be $O(2^n)$ due to the possibility of storing all combinations.
