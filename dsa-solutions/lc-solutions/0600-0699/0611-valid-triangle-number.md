@@ -40,7 +40,7 @@ Output: 4
 
 ## Solution for Valid Triangle Number
 
-### Approach #1 Brute Force [Time Limit Exceeded]
+### Approach 1 Brute Force [Time Limit Exceeded]
 
 The condition for the triplets (a,b,c) representing the lengths of the sides of a triangle, to form a valid triangle, is that the sum of any two sides should always be greater than the third side alone. i.e. a+b>c, b+c>a, a+c>b.
 
@@ -131,7 +131,7 @@ class Solution:
 
 > **Reason**: Constant space is used.
 
-### Approach #2 Using Binary Search
+### Approach 2 Using Binary Search
 #### Algorithm
 
 If we sort the given `nums` array once, we can solve the problem more efficiently. This is because if we consider a triplet `(a, b, c)` such that $$a \leq b \leq c$$, we need not check all three inequalities for the validity of the triangle formed by them. Only the condition $$a + b > c$$ is necessary. This happens because $$c \geq b$$ and $$c \geq a$$. Thus, adding any number to c will always produce a sum greater than either a or b considered alone. Therefore, the inequalities $$c + a > b$$ and $$c + b > a$$ are satisfied implicitly by the property $$a < b < c$$.
