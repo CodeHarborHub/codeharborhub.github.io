@@ -7,6 +7,55 @@ tags: [data-structures, algorithms, introduction, basics, dsa]
 description: 'An introduction to Data Structures and Algorithms (DSA) and why they are important in computer science.'
 ---
 
+<head>
+    <meta name="description" content="Explore the fundamentals of data structures and algorithms, including their importance, types, and practical applications. A comprehensive introduction for beginners." />
+    <meta name="keywords" content="Data Structures, Algorithms, Introduction to Data Structures, Introduction to Algorithms, Algorithm Basics, Data Structure Types, Algorithm Efficiency, Programming, Computer Science" />
+    <meta name="author" content="ajay-dhangar" />
+    <meta name="og:title" content="Introduction to Data Structures and Algorithms" />
+    <meta name="og:description" content="Explore the fundamentals of data structures and algorithms, including their importance, types, and practical applications. A comprehensive introduction for beginners." />
+    <meta name="og:url" content="https://codeharborhub.github.io/dsa/basic-topics/introduction-to-data-structures-and-algorithms" />
+    <meta name="og:image" content="https://codeharborhub.github.io/dsa/assets/images/introduction-to-data-structures-and-algorithms.png" />
+    <meta property="og:type" content="article" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Introduction to Data Structures and Algorithms" />
+<meta name="twitter:description" content="Explore the fundamentals of data structures and algorithms, their types, and practical applications. Perfect for beginners in computer science." />
+<meta name="twitter:image" content="https://codeharborhub.github.io/dsa/assets/images/introduction-to-data-structures-and-algorithms.png" />
+<meta name="twitter:site" content="@CodesWithAjay" />
+<meta name="twitter:creator" content="@CodesWithAjay" />
+<meta name="twitter:url" content="https://codeharborhub.github.io/dsa/basic-topics/introduction-to-data-structures-and-algorithms" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Ajay Dhangar" />
+<meta name="twitter:label2" content="Filed under" />
+<meta name="twitter:data2" content="Data Structures and Algorithms" />
+<meta name="twitter:label3" content="Read Time" />
+<meta name="twitter:data3" content="5 minutes" />
+<meta name="twitter:label4" content="Share on" />
+<meta name="twitter:data4" content="Twitter, Facebook, LinkedIn" />
+<meta name="twitter:label5" content="Likes" />
+<meta name="twitter:data5" content="20+" />
+<meta name="twitter:label6" content="Comments" />
+<meta name="twitter:data6" content="10+" />
+<meta name="twitter:label7" content="Views" />
+<meta name="twitter:data7" content="100+" />
+<meta name="twitter:label8" content="Published" />
+<meta name="twitter:data8" content="2024-06-16" />
+<meta name="twitter:label9" content="Modified" />
+<meta name="twitter:data9" content="2024-06-16" />
+<meta name="twitter:label10" content="Twitter" />
+<meta name="twitter:data10" content="@CodesWithAjay" />
+<meta name="twitter:label11" content="GitHub" />
+<meta name="twitter:data11" content="@ajay-dhangar" />
+<meta name="twitter:label12" content="Website" />
+<meta name="twitter:data12" content="https://ajay-dhangar.github.io/" />
+<meta name="twitter:label13" content="Email" />
+<meta name="twitter:data13" content="ajaydhangar49@gmail.com" />
+<meta name="twitter:label14" content="Location" />
+<meta name="twitter:data14" content="India" />
+<meta name="twitter:label15" content="Job Title" />
+<meta name="twitter:data15" content="Software Engineer" />
+</head>
+
 Data Structures and Algorithms (DSA) is a fundamental part of computer science. It is the study of data structures and algorithms that are used to solve problems. Data structures are a way of organizing and storing data so that it can be accessed and modified efficiently. Algorithms are a set of instructions that are used to solve problems.
 
 ## Why Study Data Structures and Algorithms?

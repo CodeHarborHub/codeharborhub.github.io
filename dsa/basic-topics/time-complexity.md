@@ -15,7 +15,7 @@ sidebar_position: 2
 <meta property="og:description" content="A comprehensive guide to time complexity in algorithms, covering different types, Big O notation, analysis techniques, and practical examples." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://codeharborhub.github.io/dsa/basic-topics/time-complexity/" />
-<meta property="og:image" content="https://codeharborhub.github.io/img/nav-logo.jpg" />
+<meta property="og:image" content="https://codeharborhub.github.io/dsa/assets/images/time-complexity.png" />
 <meta property="og:site_name" content="CodeHarborHub" />
 <meta property="og:locale" content="en_US" />
 
@@ -118,7 +118,7 @@ Let's look at some practical examples of time complexity in algorithms:
 
 ## Conclusion
 
-Understanding time complexity is crucial for designing efficient algorithms and evaluating their performance.
+Time complexity is an essential concept in computer science that is used to analyze the efficiency of algorithms. By understanding time complexity, you can determine how the running time of an algorithm grows as the size of the input increases. This knowledge is crucial for designing efficient algorithms and optimizing code for performance. By using Big $O$ notation and common analysis techniques, you can analyze the time complexity of algorithms and make informed decisions about algorithm design and implementation.
 
 ---
 
