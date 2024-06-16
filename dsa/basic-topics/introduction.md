@@ -3,6 +3,8 @@ id: introduction-to-data-structures-and-algorithms
 title: Introduction to Data Structures and Algorithms
 sidebar_label: Introduction to DSA
 sidebar_position: 1
+tags: [data-structures, algorithms, introduction, basics, dsa]
+description: 'An introduction to Data Structures and Algorithms (DSA) and why they are important in computer science.'
 ---
 
 Data Structures and Algorithms (DSA) is a fundamental part of computer science. It is the study of data structures and algorithms that are used to solve problems. Data structures are a way of organizing and storing data so that it can be accessed and modified efficiently. Algorithms are a set of instructions that are used to solve problems.
@@ -54,5 +56,5 @@ Data structures and algorithms are essential topics in computer science. They pr
 <h2>Authors:</h2>
 
 {['ajay-dhangar'].map(username => (
-<Author key={username} username={username} />
+    <Author key={username} username={username} />
 ))}

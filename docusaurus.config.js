@@ -82,6 +82,24 @@ const config = {
         backgroundColor: "var(--ifm-color-primary)",
       },
 
+      metadata: [
+        {
+          name: "keywords",
+          content:
+            "CodeHarborHub, CodeHarbor, CodeHarborHub, CodeHarborHub Blog, CodeHarborHub Community, CodeHarborHub Courses, CodeHarborHub DSA, CodeHarborHub Web Dev, CodeHarborHub Tutorials, CodeHarborHub Showcase, CodeHarborHub Donate, CodeHarborHub Blog, CodeHarborHub Team, CodeHarborHub About, CodeHarborHub Contact, CodeHarborHub Careers, CodeHarborHub Terms, CodeHarborHub Privacy, CodeHarborHub Cookie, CodeHarborHub Code of Conduct, CodeHarborHub Quiz, CodeHarborHub Broadcast, CodeHarborHub Tags, CodeHarborHub Courses Tags, CodeHarborHub DSA Tags, CodeHarborHub Web Dev Tags, CodeHarborHub Product, CodeHarborHub LinkedIn, CodeHarborHub YouTube, CodeHarborHub Discord, CodeHarborHub Twitter, CodeHarborHub GitHub, CodeHarborHub Products, CodeHarborHub Web Dev, CodeHarborHub DSA, CodeHarborHub Courses, CodeHarborHub Tutorials, CodeHarborHub Showcase, CodeHarborHub Donate, CodeHarborHub Blog, CodeHarborHub Team, CodeHarborHub About, CodeHarborHub Contact, CodeHarborHub Careers, CodeHarborHub Terms, CodeHarborHub Privacy, CodeHarborHub Cookie, CodeHarborHub Code of Conduct, CodeHarborHub Quiz, CodeHarborHub Broadcast, CodeHarborHub Tags, CodeHarborHub Courses Tags, CodeHarborHub DSA Tags, CodeHarborHub Web Dev Tags, CodeHarborHub Product, CodeHarborHub LinkedIn, CodeHarborHub YouTube, CodeHarborHub Discord, CodeHarborHub Twitter, CodeHarborHub GitHub, CodeHarborHub Products, CodeHarborHub Web Dev, CodeHarborHub DSA, CodeHarborHub Courses, CodeHarborHub Tutorials, CodeHarborHub Showcase, CodeHarborHub Donate, CodeHarborHub Blog, CodeHarborHub Team, CodeHarborHub About, CodeHarborHub Contact, CodeHarborHub Careers, CodeHarborHub Terms, CodeHarborHub Privacy, CodeHarborHub Cookie, CodeHarborHub Code of Conduct, CodeHarborHub Quiz, CodeHarborHub Broadcast, CodeHarborHub Tags, CodeHarborHub, leetcode, codeforces, hackerrank, geeksforgeeks, interviewbit, educative, udemy, coursera, udacity, khanacademy, codecademy, w3schools, tutorialspoint, javatpoint, geeksforgeeks, stackoverflow, github, gitlab, bitbucket, codepen, jsfiddle, repl.it, codesandbox, stackblitz, gfg, GeeksForGeeks, tech",
+        },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:site", content: "@CodesWithAjay" },
+        { name: "twitter:creator", content: "@CodesWithAjay" },
+        { property: "og:type", content: "website" },
+        { property: "og:site_name", content: "CodeHarborHub" },
+        { property: "og:title", content: "CodeHarborHub - A place to learn and grow" },
+        { property: "og:description", content: "CodeHarborHub is a place to learn and grow. We provide accessible and comprehensive educational resources to learners of all levels, from beginners to advanced professionals."},
+        { property: "og:image", content: "https://codeharborhub.github.io/img/nav-logo.jpg" },
+        { property: "og:url", content: "https://codeharborhub.github.io" },
+        { name: "robots", content: "index, follow" },          
+      ],
+
       algolia: {
         apiKey: "2c1a3331ebff51f76d2f247323ee4ba4",
         indexName: "code-harbor-hub",
@@ -175,19 +193,19 @@ const config = {
 
           {
             to: "/our-sponsors/",
-            html: '<span class="nav-emoji">💰</span> Donate'
+            html: '<span class="nav-emoji">💰</span> Donate',
           },
 
           {
             to: "/blog",
             html: '<span class="nav-emoji">📰</span> Blog',
           },
-          
+
           {
             type: "dropdown",
             html: '<span class="nav-emoji">🔗</span> More',
             position: "left",
-            items: [              
+            items: [
               {
                 html: '<span class="nav-emoji">🌍</span> Web Dev',
                 to: "/web-dev/",
