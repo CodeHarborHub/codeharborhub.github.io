@@ -24,10 +24,12 @@ Given a matrix cost of size n where cost[i][j] denotes the cost of moving from c
 
 Consider the following graph:
 
-**Input:** cost = {{0,111},{112,0}}
-**Output:** 223
-**Explanation:** We can visit `0->1->0` and 
+```
+Input: cost = {{0,111},{112,0}}
+Output: 223
+Explanation: We can visit 0->1->0 and 
 cost = 111 + 112.
+```
 
 ## Your Task
 You don't need to read or print anything. Your task is to complete the function total_cost() which takes cost as the input parameter and returns the total cost to visit each city exactly once starting from city 0 and again coming back to city 0.
@@ -166,7 +168,7 @@ public:
 **2.Suffix Dictionary:**  suffix is a nested dictionary where suffix[i][j] stores the minimum suffix of words[j] that can be appended to words[i]. This pre-computation helps in efficiently constructing the superstring later.
 **3.Dynamic Programming (DP) Array:**  dp is a 2D list where dp[mask][i] represents the shortest superstring that can be formed using the set of words represented by mask, ending with the i-th word. mask is a bitmask representing the set of words included in the current superstring. For example, if n = 3 and mask = 5 (binary 101), it indicates that the 0th and 2nd words are included in the current set.
 **4.DP Initialization and Iteration:** The outer loop iterates over all possible bitmasks from 1 to 2^n - 1. For each bitmask, the inner loop iterates over all possible ending words j.For each ending word j, the algorithm finds the best possible previous word j2 in the current set (excluding j) and constructs the superstring by appending the precomputed suffix.
-**5.Result Extraction:** After filling the DP table, the algorithm finds the shortest superstring from dp[(1 << n) - 1][i] for all i from 0 to n-1. The bitmask (1 << n) - 1 represents the set containing all words.
+**5.Result Extraction:** After filling the DP table, the algorithm finds the shortest superstring from `dp[(1 << n) - 1][i]` for all i from 0 to n-1. The bitmask `(1 << n) - 1` represents the set containing all words.
 ## Time Complexity
 $O(2n * n2)$.
 
