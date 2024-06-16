@@ -82,10 +82,9 @@ The problem is to find all elements in an array except the two greatest elements
         }
 };
 ```
-
   </TabItem>  
-  <TabItem value="Python" label="Python" default>
-  <SolutionAuthor name="@iamanolive"/>
+  <TabItem value="Java" label="java">
+  <SolutionAuthor name="@ImmidiSivani"/>
   ```Java
   class Solution {
     public long[] findElements( long a[], long n)
@@ -100,7 +99,6 @@ The problem is to find all elements in an array except the two greatest elements
     }
   }
   ```
-
   </TabItem>
 </Tabs>
 
