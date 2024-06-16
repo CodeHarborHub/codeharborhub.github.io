@@ -42,7 +42,8 @@ Output: [2,3,4,-1,4]
 
 ## Solution for  Next Greater Element II
 
-  
+<Tabs>
+  <TabItem value="Brute Force" label="Brute Force">  
 ### Brute Force - Recursion
 
 #### Intuition
@@ -60,9 +61,6 @@ The idea is to make use of an array doublearr which is formed by concatenating t
   element for each element in the input array.
 
 #### Brute Force Solution
-
-<Tabs>
-  <TabItem value="Brute Force" label="Brute Force">
 
 #### Implementation
 
@@ -170,6 +168,8 @@ class Solution {
   - Additionally, the result vector to store the next greater element for each element in the input array also requires $O(N)$ space.
 Therefore, the overall space complexity is $O(N)$.
 
+</TabItem>
+<TabItem value="Optimized Approach " label="Optimized Approach ">
 
 ### Optimized Approach 
 #### Intuition
@@ -213,6 +213,9 @@ class Solution {
 #### Complexity Analysis
 - Time Complexity: $ O(N)$
 - Space Complexity: $ O(N)$
+
+</TabItem>
+</Tabs>
 
 ## References
 
