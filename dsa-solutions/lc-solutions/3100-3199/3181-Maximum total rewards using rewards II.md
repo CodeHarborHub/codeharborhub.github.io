@@ -1,5 +1,5 @@
 ---
-id: max-total-reward
+id: 3181-max-total-reward
 title: Maximum Total Reward Using Operations
 level: hard
 sidebar_label: Max Total Reward
