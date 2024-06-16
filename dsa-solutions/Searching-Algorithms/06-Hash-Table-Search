@@ -1,0 +1,159 @@
+---
+id: Hash-Table-Search
+title: Hash Table Search (Geeks for Geeks)
+sidebar_label: Hash Table Search
+tags:
+  - Beginner
+  - Search Algorithms
+  - Geeks for Geeks
+  - CPP
+  - Python
+  - Java
+  - JavaScript
+  - DSA
+description: "This is a solution to the Hash Table Search problem on Geeks for Geeks."
+---
+
+## What is Hash Table Search?
+
+Hash Table Search is a search operation performed on a hash table, a data structure that stores key-value pairs. It allows for efficient insertion, deletion, and search operations in average O(1) time complexity.
+
+## Algorithm for Hash Table Search
+
+1. Compute the hash code of the target key using the hash function.
+2.Use the hash code to find the index of the target key in the hash table.
+3. If the key is found at the computed index, return the associated value.
+4. If the key is not found at the computed index, return null.
+
+## How does Hash Table Search work?
+
+- It begins by computing the hash code of the target key.
+- The hash code is then used to determine the index in the hash table where the key-value pair should be stored or searched.
+- If the key exists at the computed index, the corresponding value is returned.
+- If the key does not exist at the computed index, the search returns null.
+
+
+
+![Example for AVL Tree Search(GFG)](../../assets/Hash-Table-Search.png)
+
+## Problem Description
+
+Given a hash table and a target key, implement the Hash Table Search algorithm to find the value associated with the target key in the table. If the key is not present, return null.
+
+## Examples
+
+**Example 1:**
+```
+Input:
+Hash Table: {1: 'one', 2: 'two', 3: 'three'}
+Target Key: 2
+Output: 'two'
+
+```
+
+**Example 2:**
+```
+Input:
+Hash Table: {1: 'one', 2: 'two', 3: 'three'}
+Target Key: 4
+Output: null
+```
+
+## Your Task:  
+
+You don't need to read input or print anything. Complete the function hashTableSearch() which takes a hash table and a target key as input parameters and returns the value associated with the target key. If the target key is not present, return null.
+
+Expected Time Complexity: $O(1)$
+Expected Auxiliary Space: $O(1)$
+
+## Constraints
+
+- $1 <= Number of key-value pairs <= 10^5$
+- Keys are integers and unique.
+- Values are strings.
+
+## Implementation
+
+<Tabs>
+
+  <TabItem value="Java label="Java">
+  <SolutionAuthor name="@ngmuraqrdd"/>
+  ```java
+
+  import java.util.HashMap;
+
+public class HashTableSearch {
+    public static String hashTableSearch(HashMap<Integer, String> hashTable, int target) {
+        return hashTable.getOrDefault(target, null);
+    }
+
+    public static void main(String[] args) {
+        HashMap<Integer, String> hashTable = new HashMap<>();
+        hashTable.put(1, "one");
+        hashTable.put(2, "two");
+        hashTable.put(3, "three");
+
+        int target = 2;
+        System.out.println(hashTableSearch(hashTable, target));  // Output: 'two'
+
+        target = 4;
+        System.out.println(hashTableSearch(hashTable, target));  // Output: null
+    }
+}
+
+  </TabItem>
+
+  <TabItem value="C++" label="C++">
+  <SolutionAuthor name="@ngmuraqrdd"/>
+  ```cpp
+  #include <iostream>
+#include <unordered_map>
+
+std::string hashTableSearch(const std::unordered_map<int, std::string>& hashTable, int target) {
+    auto it = hashTable.find(target);
+    if (it != hashTable.end()) {
+        return it->second;
+    }
+    return "null";
+}
+
+int main() {
+    std::unordered_map<int, std::string> hashTable = {{1, "one"}, {2, "two"}, {3, "three"}};
+
+    int target = 2;
+    std::cout << hashTableSearch(hashTable, target) << std::endl;  // Output: 'two'
+
+    target = 4;
+    std::cout << hashTableSearch(hashTable, target) << std::endl;  // Output: null
+
+    return 0;
+}
+
+
+  </TabItem>
+  ```
+  
+</Tabs>
+
+## Complexity Analysis
+
+- **Time Complexity**:$O(1)$, as hash table operations (insertion, deletion, and search) typically have constant time complexity.
+
+- **Space Complexity**:$O(1)$, as no extra space is required apart from the input hash table.
+
+## Advantages and Disadvantages
+
+**Advantages:**
+- Provides efficient search, insertion, and deletion operations.
+- Useful for applications requiring fast lookups and quick data retrieval.
+
+**Disadvantages:**
+- May require more memory compared to other data structures due to hashing and potential collisions.
+- Performance can degrade if the hash function leads to many collisions.
+References
+
+## References
+
+- **GFG Problem:** [GFG Problem](https://www.geeksforgeeks.org/hash-table-data-structure/)
+- **Author's Geeks for Geeks Profile:** [MuraliDharan](https://www.geeksforgeeks.org/user/ngmuraqrdd/)
+
