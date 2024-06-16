@@ -3,6 +3,7 @@ import SponsorCard from "./SponsorCard";
 import "./Sponsors.css";
 import Layout from "@theme/Layout";
 import sponsors from "../../database/sponsors";
+import { FaPlusCircle } from 'react-icons/fa';
 
 const OurSponsors: React.FC = () => {
   const [showScanner, setShowScanner] = useState(false);
@@ -25,10 +26,8 @@ const OurSponsors: React.FC = () => {
           <p>
             Help CodeHarborHub grow and support open-source projects by donating
             today. Your contribution enables us to share valuable resources and
-            knowledge on our website. 
-
+            knowledge on our website.
             <br />
-            
             Thank you for your support!
           </p>
         </div>
@@ -37,7 +36,10 @@ const OurSponsors: React.FC = () => {
             <SponsorCard key={sponsor.name} {...sponsor} />
           ))}
           <div className="sponsor-card empty-card" onClick={handleJoinSponsor}>
-            <h3>Join as a Sponsor</h3>
+            <h3>
+              <FaPlusCircle className="join-icon" />
+              Join as a Sponsor
+            </h3>
           </div>
         </div>
         {showScanner && (
