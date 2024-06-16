@@ -43,9 +43,9 @@ With a cooling interval of 1, you can repeat a task after just one other task.
 
 ### Constraints
 
-- $1 <= tasks.length <= 10^4$
+- $1 \leq \text{tasks.length} \leq 10^4$
 - `tasks[i]` is an uppercase English letter.
-- $0 <= n <= 100$
+- $0 \leq n \leq 100$
 
 ## Solution for Task Scheduler
 
@@ -268,9 +268,9 @@ class Solution:
 
 ### Space Complexity: $O(1)$
 
-> **Reason**: The space complexity is mainly determined by the frequency array and the priority queue. The frequency array has a constant size of 26, and the priority queue can have a maximum size of 26 when all distinct tasks are present. Therefore, the overall space complexity is O(1) or O(26), which is considered constant.
+> **Reason**: The space complexity is mainly determined by the frequency array and the priority queue. The frequency array has a constant size of 26, and the priority queue can have a maximum size of 26 when all distinct tasks are present. Therefore, the overall space complexity is $O(1)$ or $O(26)$, which is considered constant.
 
-### Approach #2 Filling the Slots and Sorting
+### Approach 2 Filling the Slots and Sorting
 #### Intuition
 We need to find the minimum time required to complete all tasks given the constraint that at least `n` units of time must elapse between two identical tasks. To minimize the time, we should first consider scheduling the most frequent tasks so that they are separated by `n` units of time. Then, we can fill the idle slots with the remaining tasks.
 
@@ -403,13 +403,16 @@ class Solution:
 ### Space Complexity: $O(1)$
 
 > **Reason**: The frequency array has a size of 26.
->
-> Note that some extra space is used when we sort arrays in place. The space complexity of the sorting algorithm depends on the programming language.
->
->   - In Python, the sort method sorts a list using the Timsort algorithm which is a combination of Merge Sort and Insertion Sort and has O(N) additional space.
->   - In Java, Arrays.sort() is implemented using a variant of the Quick Sort algorithm which has a space complexity of O(log⁡N) for sorting two arrays.
->   - In C++, the sort() function is implemented as a hybrid of Quick Sort, Heap Sort, and Insertion Sort, with a worse-case space complexity of O(log⁡N).
-> We sort the frequency array, which has a size of 26. The space used for sorting takes O(26) or O(log⁡26), which is constant, so the space complexity of the algorithm is O(26), which is constant, i.e. O(1).
+
+:::note
+Some extra space is used when we sort arrays in place. The space complexity of the sorting algorithm depends on the programming language.
+
+- In Python, the sort method sorts a list using the Timsort algorithm which is a combination of Merge Sort and Insertion Sort and has $O(N)$ additional space.
+- In Java, Arrays.sort() is implemented using a variant of the Quick Sort algorithm which has a space complexity of $O(log⁡N)$ for sorting two arrays.
+- In C++, the sort() function is implemented as a hybrid of Quick Sort, Heap Sort, and Insertion Sort, with a worse-case space complexity of $O(log⁡N)$.
+
+We sort the frequency array, which has a size of 26. The space used for sorting takes $O(26)$ or $O(log⁡26)$, which is constant, so the space complexity of the algorithm is $O(26)$, which is constant, i.e. $O(1)$.
+:::
 
 ## References
 
