@@ -26,7 +26,7 @@ Consider the following graph:
 
 **Input:** cost = {{0,111},{112,0}}
 **Output:** 223
-**Explanation:** We can visit 0->1->0 and 
+**Explanation:** We can visit `0->1->0` and 
 cost = 111 + 112.
 
 ## Your Task
@@ -36,9 +36,8 @@ Expected Time Complexity:  $O(2n * n2)$.
 Expected Auxiliary Space: $O(2n * n)$.
 
 ## Constraints
-
-- 1 <= n <= 20
-- 1 <= cost[i][j] <= $(103)$
+- $1 \leq n \leq 20$
+- $1 \leq \text{cost[i][j]} \leq (103)$
 
 ## Problem Explanation
 
