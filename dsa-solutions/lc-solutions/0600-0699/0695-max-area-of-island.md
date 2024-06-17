@@ -1,5 +1,5 @@
 ---
-id: max-area-of-island
+id: 695-max-area-of-island
 title: Max Area of Island
 sidebar_label: 0695 - Max Area of Island
 tags:
