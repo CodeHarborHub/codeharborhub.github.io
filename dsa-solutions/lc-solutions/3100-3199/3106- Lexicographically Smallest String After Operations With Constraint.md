@@ -30,23 +30,23 @@ string `t` you can get after some changes, such that `distance(s, t) <= k`.
 
 **Example 1:**
 
-**Input:** s = "zbbz", k = 3
+**Input:** `s = "zbbz"`, `k = 3`
 
 **Output:** "aaaz"
 
 **Explanation:**
 
-Change s to "aaaz". The distance between "zbbz" and "aaaz" is equal to k = 3.
+Change s to "aaaz". The distance between "zbbz" and "aaaz" is equal to `k = 3`.
 
 **Example 2:**
 
-**Input:** s = "xaxcd", k = 4
+**Input:** `s = "xaxcd"`, `k = 4`
 
 **Output:** "aawcd"
 
 **Explanation:**
 
-The distance between "xaxcd" and "aawcd" is equal to k = 4.
+The distance between "xaxcd" and "aawcd" is equal to `k = 4`.
 
 
 ### Constraints
@@ -61,7 +61,7 @@ The distance between "xaxcd" and "aawcd" is equal to k = 4.
 
 ## 1. Conversion to Character Array:
 
-char[] result = s.toCharArray();: This line converts the input string s into a character array named result. This array will hold the modified string.
+char[] `result = s.toCharArray()`;: This line converts the input string s into a character array named result. This array will hold the modified string.
 
 ## 2. Iterating Through Characters:
 
@@ -75,11 +75,11 @@ An inner for loop iterates through all lowercase letters `char c = 'a'; c <= 'z'
 - **distance(s.charAt(i), c):**
 This calculates the distance between the current character s[i] and the candidate replacement character c using a separate distance function (assumed to be defined elsewhere).
 
-- **if (distance(s.charAt(i), c) <= k):** This checks if changing the current character to c is allowed within the k limit based on the distance.
+- **if `(distance(s.charAt(i), c) <= k):`** This checks if changing the current character to c is allowed within the k limit based on the distance.
 
 **If the distance is less than or equal to k:**
-- result[i] = c;: The character in the result array at position i is updated with the new character c.
-- k -= distance(s.charAt(i), c);: The remaining allowed changes (k) are decremented by the distance used for this replacement.
+- `result[i] = c`;: The character in the result array at position i is updated with the new character c.
+- `k -= distance(s.charAt(i), c)`;: The remaining allowed changes (k) are decremented by the distance used for this replacement.
 - break;: The inner loop exits as a suitable replacement has been found within the limit.
 
 ## 4. Returning the Modified String:
