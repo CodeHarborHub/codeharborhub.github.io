@@ -1,7 +1,7 @@
 ---
 title: 'Getting started with Microservices'
 sidebar_label: Microservices
-authors: [Dharshi Balasubramaniyam]
+authors: [dharshibalasubramaniyam]
 tags: [microservices, springboot, mongodb]
 date: 2024-06-17
 hide_table_of_contents: true
@@ -793,10 +793,4 @@ Let’s check this in post man.
 
 Throughout this journey, we explored the core concepts of microservices, compared them to monolithic architectures, to developing microservices.
 
-The example which I have used in this article is available in <a href="https://github.com/DharshiBalasubramaniyam/Springboot-Microservices-Example">here</a>.
-
 Thanks for taking the time to read my article.
-
-Happy coding!
-
--Dharshi Balasubramaniam-
