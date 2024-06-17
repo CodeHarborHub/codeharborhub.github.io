@@ -1,7 +1,7 @@
 ---
 id: friend-requests-ii-who-has-the-most-friends
 title: Friend Requests II Who Has the Most Friends
-sidebar_label: Friend Requests II: Who Has the Most Friends
+sidebar_label: Friend Requests II
 tags: [sql, database, pandas]
 description: "This question solve important question of sql which gives us knowledge about writing of sql command."
 ---
