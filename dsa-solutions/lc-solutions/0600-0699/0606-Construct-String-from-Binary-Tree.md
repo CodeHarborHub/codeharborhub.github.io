@@ -15,7 +15,7 @@ Given the root of a binary tree, construct a string consisting of parenthesis an
 
 ### Examples
 
-**Example 1:**![Screenshot of the application](../../../../assets/606%20ex1.png)
+**Example 1:** ![Screenshot of the application](../../../../assets/606%20ex1.png)
 
 **Input:** `root = [1,2,3,4]`  
 **Output:** `"1(2(4))(3)"`  
