@@ -22,8 +22,8 @@ You are given an integer array $nums$ and two integers $cost1$ and $cost2$. You 
 
 ### Constraints
 
-- 1 <= road.length <= 105
--  1 <= budget <= 105 + 1
+- `1 <= road.length <= 105`
+-  `1 <= budget <= 105 + 1`
 -  oad consists only of characters '.' and 'x'
 ---
 
@@ -77,11 +77,7 @@ class Solution {
 
 ### Complexity Analysis
 
-#### Time Complexity:𝑂
-(
-sort
-)
-O(sort)
+#### Time Complexity: $𝑂(n)$
 
 #### Space Complexity: O(n)
 
