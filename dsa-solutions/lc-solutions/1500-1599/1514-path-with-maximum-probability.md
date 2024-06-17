@@ -1,14 +1,12 @@
 ---
 id: path-with-maximum-probability
-title:   Path with Maximum Probability
-sidebar_label: 1514. Path with Maximum Probability
-
+title: Path with Maximum Probability
+sidebar_label: 1514 - Path with Maximum Probability
 tags:
 - Array
 - Graph
 - Heap (Priority Queue)
 - Shortest Path
-
 description: "This is a solution to the  Path with Maximum Probability problem on LeetCode."
 ---
 
