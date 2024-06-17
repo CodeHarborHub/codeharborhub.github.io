@@ -1,12 +1,10 @@
 ---
-id:  friend-requests-II-who-has-the-most-friends
-title: Friend-Requests-II-Who-Has-the-Most-Friends
+id:  friend-requests-ii-who-has-the-most-friends
+title: Friend Requests II Who Has the Most Friends
 sidebar_label: Friend Requests II: Who Has the Most Friends
-tags: ['Sql', 'Database', 'Pandas' ]
+tags: [sql, database, pandas]
 description: "This question solve important question of sql which gives us knowledge about writing of sql command."
 ---
-
-# Friend Requests II: Who Has the Most Friends
 
 ## 1. Problem Description
 ```
