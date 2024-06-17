@@ -1,5 +1,5 @@
 ---
-id:  friend-requests-ii-who-has-the-most-friends
+id: friend-requests-ii-who-has-the-most-friends
 title: Friend Requests II Who Has the Most Friends
 sidebar_label: Friend Requests II: Who Has the Most Friends
 tags: [sql, database, pandas]
