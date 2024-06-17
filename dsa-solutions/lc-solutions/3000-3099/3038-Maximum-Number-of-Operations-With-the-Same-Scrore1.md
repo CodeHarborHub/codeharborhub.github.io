@@ -63,7 +63,7 @@ To solve this problem, we can use a greedy approach to find the maximum number o
 from collections import Counter
 
 class Solution:
-    def maxNumberOfOperations(self, nums: List[int]) -> int:
+    def maxOperations(self, nums: List[int]) -> int:
         if len(nums) < 2:
             return 0
         
@@ -76,7 +76,7 @@ class Solution:
 import java.util.HashMap;
 
 class Solution {
-    public int maxNumberOfOperations(int[] nums) {
+    public int maxOperations(int[] nums) {
         if (nums.length < 2) return 0;
         
         HashMap<Integer, Integer> freq = new HashMap<>();
@@ -102,7 +102,7 @@ using namespace std;
 
 class Solution {
 public:
-    int maxNumberOfOperations(vector<int>& nums) {
+    int maxOperations(vector<int>& nums) {
         if (nums.size() < 2) return 0;
         
         unordered_map<int, int> freq;
