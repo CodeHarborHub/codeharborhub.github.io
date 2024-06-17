@@ -69,7 +69,7 @@ The function uses an outer for loop to iterate through each character i in the o
 
 ## 3. Finding the Best Replacement Character:
 
-An inner for loop iterates through all lowercase letters (char c = 'a'; c <= 'z'; c++).
+An inner for loop iterates through all lowercase letters `char c = 'a'; c <= 'z'; c++`.
 
 `Inside the inner loop:`
 - **distance(s.charAt(i), c):**
