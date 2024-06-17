@@ -22,7 +22,7 @@ sidebar_position: 3035
 
 - You are allowed to perform the following operation any number of times (including zero):
 
-- Choose integers i, j, x, and y such that 0 <= i, j < n, 0 <= x < words[i].length, 0 <= y < words[j].length, and swap the characters words[i][x] and words[j][y].
+- Choose integers i, j, x, and y such that `0 <= i`, `j < n`, `0 <= x < words[i].length`, `0 <= y < words[j].length`, and swap the characters words[i][x] and words[j][y].
 
 - Return an integer denoting the maximum number of palindromes words can contain, after performing some operations.
 
