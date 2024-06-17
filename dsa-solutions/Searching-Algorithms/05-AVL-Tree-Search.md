@@ -1,5 +1,5 @@
 ---
-id: AVL-Tree-Search
+id: avl-tree-search
 title: AVL Tree Search (Geeks for Geeks)
 sidebar_label: AVL Tree Search
 tags:
@@ -168,9 +168,8 @@ public class AVLTreeSearch {
     }
 }
 
-  </TabItem>
-  ```
-  
+ ```
+ </TabItem>  
 </Tabs>
 
 ## Complexity Analysis
