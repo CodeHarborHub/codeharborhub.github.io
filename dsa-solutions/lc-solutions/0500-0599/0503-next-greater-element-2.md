@@ -1,5 +1,5 @@
 ---
-id: next-greater-element-II
+id: next-greater-element-ii
 title: Next Greater Element II
 sidebar_label: 0503-Next-Greater-Element-II
 tags:
