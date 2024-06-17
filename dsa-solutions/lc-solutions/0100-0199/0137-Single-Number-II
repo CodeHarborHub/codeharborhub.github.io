@@ -55,9 +55,31 @@ First declare an empty hashmap then we store the each element and it's frequenci
 #### Code in Different Languages
 
 <Tabs>
+  
+    
+<TabItem value="Python" label="Python" default>
+
+  <SolutionAuthor name="@ImmidiSivani"/>
+  
+    ```Python
+    class Solution:
+        def singleNumber(self, nums: List[int]) -> int:
+        mp = {}
+        for num in nums:
+            if num in mp:
+                mp[num] += 1
+            else:
+                mp[num] = 1
+        
+        for num, c in mp.items():
+            if c == 1:
+                return num
+```
+  </TabItem>
   <TabItem value="Java" label="Java">
   <SolutionAuthor name="@ImmidiSivani"/>
-   ```java
+   
+    ```Java
    class Solution {
     public int singleNumber(int[] nums) {
         Map<Integer,Integer> mp=new HashMap<>();
@@ -74,32 +96,11 @@ First declare an empty hashmap then we store the each element and it's frequenci
         }
         return a;
         
+        }
     }
-}
-
-`````
-</TabItem>
-
-<TabItem value="Python" label="Python">
-<SolutionAuthor name="@ImmidiSivani"/>
-
-````python
-class Solution:
-    def singleNumber(self, nums: List[int]) -> int:
-        mp = {}
-        for num in nums:
-            if num in mp:
-                mp[num] += 1
-            else:
-                mp[num] = 1
-        
-        for num, c in mp.items():
-            if c == 1:
-                return num
-
-`````
-
-</TabItem>
+```
+  </TabItem>
+</Tabs>
 
 #### Complexity Analysis
 
@@ -111,4 +112,4 @@ class Solution:
 - **LeetCode Problem:** [Single Number ii](https://leetcode.com/problems/single-number-ii/description/)
 - **Solution Link:** [Single Number ii on LeetCode](https://leetcode.com/problems/single-number-ii/post-solution/?submissionId=1273177780)
 - **Authors Leetcode Profile:** [SivaniImmidi](https://leetcode.com/u/SivaniImmidi/)
-```
+
