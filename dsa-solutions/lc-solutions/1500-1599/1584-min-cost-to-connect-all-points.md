@@ -1,14 +1,12 @@
 ---
 id: min-cost-to-connect-all-points
-title:   Min Cost to Connect All Points
-sidebar_label: 1584.Min Cost to Connect All Points
-
+title: Min Cost to Connect All Points
+sidebar_label: 1584 - Min Cost to Connect All Points
 tags:
 - Array
 - Union Find
 - Graph
 - Minimum Spanning Tree
-
 description: "This is a solution to the Min Cost to Connect All Points problem on LeetCode."
 ---
 
