@@ -91,12 +91,13 @@ graph TD;
     D --> E(Aggregated Results);
 ```
 
-### Note: Performance Considerations
+:::note Performance Considerations
 
 When using MapReduce in MongoDB:
 - Consider the performance overhead, especially for large data sets.
 - Optimize your map and reduce functions for efficiency.
 - Utilize indexes to improve query performance.
+:::
 
 ### Table: MapReduce Options
 

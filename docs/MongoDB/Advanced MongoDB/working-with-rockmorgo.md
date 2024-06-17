@@ -28,10 +28,11 @@ graph LR;
     D --> E(Login with Default Credentials);
 ```
 
-### Note: Default Credentials
+:::note Default Credentials
 
 Upon installation, RockMongo uses default credentials (Username: admin, Password: admin). Change these credentials for security purposes.
 
+:::
 ## Basic Operations with RockMongo
 
 Let's explore some basic operations you can perform with RockMongo:

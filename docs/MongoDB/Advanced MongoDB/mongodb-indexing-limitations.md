@@ -15,9 +15,10 @@ In this chapter, we will learn about Indexing Limitations and its other componen
 
 Every index occupies some space as well as causes an overhead on each insert, update and delete. So if you rarely use your collection for read operations, it makes sense not to use indexes.
 
-> **Note:** 
-> - Indexes require additional space.
-> - Each insert, update, and delete operation requires additional processing due to index maintenance.
+:::note 
+- Indexes require additional space.
+- Each insert, update, and delete operation requires additional processing due to index maintenance.
+:::
 
 ```mermaid
 graph TD;
@@ -30,7 +31,9 @@ graph TD;
 
 Since indexes are stored in RAM, you should make sure that the total size of the index does not exceed the RAM limit. If the total size increases the RAM size, it will start deleting some indexes, causing performance loss.
 
-> **Note:** Ensure that the total size of all indexes does not exceed the available RAM to avoid performance issues.
+:::note
+ Ensure that the total size of all indexes does not exceed the available RAM to avoid performance issues.
+:::
 
 ```mermaid
 graph TD;
@@ -46,9 +49,10 @@ Indexing can't be used in queries which use:
 - Arithmetic operators like `$mod`, etc.
 - `$where` clause
 
-> **Note:** 
-> - Regular expressions and negation operators cannot use indexes.
-> - Arithmetic operators and `$where` clause cannot use indexes.
+:::note
+- Regular expressions and negation operators cannot use indexes.
+- Arithmetic operators and `$where` clause cannot use indexes.
+:::
 
 | Query Type      | Index Usage  |
 |-----------------|--------------|
@@ -72,7 +76,9 @@ graph TD;
 
 MongoDB will not insert any document into an indexed collection if the indexed field value of this document exceeds the index key limit. The same is the case with `mongorestore` and `mongoimport` utilities.
 
-> **Note:** Documents with indexed field values exceeding the key limit will not be inserted into an indexed collection.
+:::note
+ Documents with indexed field values exceeding the key limit will not be inserted into an indexed collection.
+:::
 
 ```mermaid
 graph TD;

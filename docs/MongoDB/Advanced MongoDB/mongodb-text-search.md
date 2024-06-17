@@ -54,13 +54,13 @@ graph LR;
     C --> D(Retrieve Matching Documents);
 ```
 
-### Note: Performance Considerations
+::: note: Performance Considerations
 
 When using text search in MongoDB:
 - Text indexes can significantly improve search performance for string content.
 - Consider the language-specific settings for stemming and stop words.
 - Optimize text indexes based on the search requirements.
-
+:::
 ### Table: Text Search Options
 
 | Option | Description                                      |
