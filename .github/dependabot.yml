@@ -5,32 +5,17 @@
 
 version: 2
 updates:
-  # Example for npm (JavaScript/Node.js)
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "npm" # Using npm for Docusaurus
+    directory: "/"
     schedule:
       interval: "weekly"
 
-  # Example for Python (pip)
-  - package-ecosystem: "pip"
-    directory: "/" # Location of requirements.txt or pyproject.toml
-    schedule:
-      interval: "weekly"
-
-  # Example for GitHub Actions
   - package-ecosystem: "github-actions"
-    directory: "/" # Location of your GitHub Actions workflows
+    directory: "/" 
     schedule:
       interval: "weekly"
 
-  # Example for Docker
   - package-ecosystem: "docker"
-    directory: "/" # Location of Dockerfiles
-    schedule:
-      interval: "weekly"
-
-  # Example for Ruby (bundler)
-  - package-ecosystem: "bundler"
-    directory: "/" # Location of Gemfile
+    directory: "/" 
     schedule:
       interval: "weekly"
