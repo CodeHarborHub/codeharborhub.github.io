@@ -27,7 +27,11 @@ Return the maximum number of water bottles you can drink.
 
 Example 1:
 
+<<<<<<< Updated upstream
         ![alt text](image.png)
+=======
+       ![alt text](image-2.png)
+>>>>>>> Stashed changes
 
 Input: numBottles = 13, numExchange = 6
 Output: 15
@@ -35,7 +39,11 @@ Explanation: The table above shows the number of full water bottles, empty water
 
 Example 2:
 
+<<<<<<< Updated upstream
          ![alt text](image-1.png)
+=======
+         ![alt text](image-3.png)
+>>>>>>> Stashed changes
 
 Input: numBottles = 10, numExchange = 3
 Output: 13
