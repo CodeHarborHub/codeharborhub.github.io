@@ -1,13 +1,11 @@
 ---
 title: 'Mastering Design Patterns in Java'
 sidebar_label: Design-Patterns
-authors: [Dharshi Balasubramaniyam]
+authors: [dharshibalasubramaniyam]
 tags: [design-patterns, java, best-practices]
 date: 2024-06-18
 hide_table_of_contents: true
 ---
-
-# Matering design patterns in JAVA
 
 - In the world of software engineering, turning ideas into actual code can be tricky.
 
