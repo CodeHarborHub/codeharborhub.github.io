@@ -786,6 +786,8 @@ Now let’s see how we can develop an Api-gateway for our application.
 
   ![img14](./images/image14.png)
 
-Throughout this journey, we explored the core concepts of microservices, compared them to monolithic architectures, to developing microservices.
+That’s it! We have successfully developed a microservices architecture with a service registry, communication between microservices, and an API gateway. This modular approach to software design offers several benefits, including increased agility, scalability, and resilience. By breaking down complex applications into smaller, more manageable services, we can achieve faster development cycles, easier maintenance, and better scalability. Microservices architecture is a powerful design pattern that can help organizations adapt to changing business requirements and deliver innovative solutions to customers.
 
-Thanks for taking the time to read our article.
+## Conclusion
+
+Microservices architecture is a design pattern that structures an application as a collection of small, loosely coupled services. Each service is self-contained, focused on a specific business functionality, and can be developed, deployed, and scaled independently. This modular approach to software design offers several benefits, including increased agility, scalability, and resilience.
