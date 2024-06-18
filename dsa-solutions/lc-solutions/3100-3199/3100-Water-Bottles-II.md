@@ -2,7 +2,7 @@
 id: water-bottles-II
 title: Water-Bottles-II
 level: hard
-sidebar_label: Water-Bottles-II
+sidebar_label: 3100-Water-Bottles-II
 tags:
   - Dynamic Programming
   - Bit Manipulation
