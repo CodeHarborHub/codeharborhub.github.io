@@ -1,10 +1,43 @@
 ---
 title: 'Getting started with MERN'
-authors: [abhijith-m-s, ajay-dhangar]
-tags: [web dev,React,Express,MongoDB,Node,UI,web development,web frameworks]
+authors: 
+  - Abhijith M S
+  - Ajay Dhangar
+tags: 
+  - MERN Stack
+  - MongoDB
+  - Express.js
+  - React
+  - Node.js
+  - Web Development
+  - API
+  - Frontend Development
+  - Backend Development
 date: 2024-06-10 09:32:00
-description: Simple Guide to get you started with MERN
+description: Learn the basics of the MERN stack, from building an API with Express.js to creating a React app. This guide covers prerequisites, configuring MongoDB Atlas, styling, and more.
 draft: false
+canonical_url: https://codeharborhub.github.io/blog/getting-started-with-mern
+meta:
+  - name: "robots"
+    content: "index, follow"
+  - property: "og:title"
+    content: "Getting started with MERN"
+  - property: "og:description"
+    content: "Learn the basics of the MERN stack, from building an API with Express.js to creating a React app. This guide covers prerequisites, configuring MongoDB Atlas, styling, and more."
+  - property: "og:type"
+    content: "article"
+  - property: "og:url"
+    content: "https://codeharborhub.github.io/blog/getting-started-with-mern"
+  - property: "og:image"
+    content: "https://codeharborhub.github.io/assets/images/mern-8a27add30515e58f789f89a4c9072818.jpg"
+  - name: "twitter:card"
+    content: "summary_large_image"
+  - name: "twitter:title"
+    content: "A Comprehensive Guide to Get You Started with MERN Stack"
+  - name: "twitter:description"
+    content: "Learn the basics of the MERN stack, from building an API with Express.js to creating a React app. This guide covers prerequisites, configuring MongoDB Atlas, styling, and more."
+  - name: "twitter:image"
+    content: "https://codeharborhub.github.io/assets/images/mern-8a27add30515e58f789f89a4c9072818.jpg"
 ---
 
 A comprehensive guide to get you started with MERN stack. From building an API with Express.js to creating a React app, this guide covers all the basics of the MERN stack.
