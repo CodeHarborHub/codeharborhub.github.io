@@ -1,8 +1,6 @@
 ---
 title: 'Getting started with MERN'
-authors: 
-  - Abhijith M S
-  - Ajay Dhangar
+authors: [abhijith-m-s, ajay-dhangar]
 tags: 
   - MERN Stack
   - MongoDB
