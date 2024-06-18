@@ -1,15 +1,13 @@
 ---
 title: 'Mastering SOLID principles in Java'
 sidebar_label: SOLID principles 
-authors: [Dharshi Balasubramaniyam]
+authors: [dharshibalasubramaniyam]
 tags: [solid-principles, java, best-practices]
 date: 2024-06-18
 hide_table_of_contents: true
 ---
 
-# Mastering SOLID principles  in Java
-
-- SOLID principles are one of the object-oriented approaches used in software development, intended to create quality software. The broad goal of the SOLID principles is to reduce dependencies, so that developers can change one area of the software without affecting others. Furthermore, they are intended to make designs easier to understand, maintain, reuse, and extend.
+SOLID principles are one of the object-oriented approaches used in software development, intended to create quality software. The broad goal of the SOLID principles is to reduce dependencies, so that developers can change one area of the software without affecting others. Furthermore, they are intended to make designs easier to understand, maintain, reuse, and extend.
 
 ## 1. Single responsibility principle (SRP)
 
