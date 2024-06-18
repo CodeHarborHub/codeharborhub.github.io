@@ -1,35 +1,33 @@
 ---
 title: 'Getting started with MERN'
-authors: [abhijith-m-s]
+authors: [abhijith-m-s, ajay-dhangar]
 tags: [web dev,React,Express,MongoDB,Node,UI,web development,web frameworks]
 date: 2024-06-10 09:32:00
 description: Simple Guide to get you started with MERN
 draft: false
 ---
 
-A Deep dive into building your first MERN application from scratch
+A comprehensive guide to get you started with MERN stack. From building an API with Express.js to creating a React app, this guide covers all the basics of the MERN stack.
 
 ![Getting started with MERN](./mern.jpg)
 
-_CAUTION_ ⚠️ _THIS IS A COMPREHENSIVE STARTER FRIENDLY GUIDE TO MERN_
+:::caution
+This article assumes you have a basic understanding of web development concepts and technologies. If you are new to web development, you might want to familiarize yourself with HTML, CSS, JavaScript, and Node.js before diving into the MERN stack.
 
-> Hello Guys,
->
->Here we gonna build a simple library management application using the MERN stack, making sure all the basics regarding the stack is covered from building an API with Express.js to building a full blown application in which > the React app interacts with a backend Database.
+:::
 
-🚨🚨🚨 MAKE SURE TO HAVE [NODE](https://nodejs.org/en/download/package-manager/current) INSTALLED.🚨🚨🚨
+Have you ever heard of the MERN stack? If you are a web developer or aspiring to become one, you might have come across this term. The MERN stack is a popular web development stack that consists of four key technologies: MongoDB, Express.js, React.js, and Node.js. Each of these technologies plays a crucial role in building modern web applications.
 
-> So let’s start right away!!
+In this blog post, we will cover the basics of the MERN stack and walk you through the process of building a simple MERN application. We will start by setting up a MongoDB Atlas cluster, building an API with Express.js, creating a React app, and connecting the frontend to the backend. We will also cover styling and making requests from the frontend.
 
-_This is gonna be a beginner friendly, so don’t worry_ 😁
 
-If you just want to skip to the repository, find the Github repo link below
+:::info
+If you prefer to jump straight to the code, you can find the GitHub repository for this project [here](https://github.com/AMS003010/SimpleMernApp) and star the repo to show your support. Feel free to fork the repository and experiment with the code.
+:::
 
-> Github Repo link — https://github.com/AMS003010/SimpleMernApp
+**What we’re covering**
 
-Show your support by starring ⭐ the repo
-
-## What we’re covering
+ - Prerequisites
  - What a Web Framework is?
  - Configuring a _MongoDB Atlas_ Cluster
  - Building a API with _Express.js_
@@ -37,764 +35,649 @@ Show your support by starring ⭐ the repo
  - Setting a Proxy from your Backend API server to the Frontend React App
  - Styling and making Requests from the frontend
 
+## Prerequisites
+
+Before we get started, make sure you have the following installed on your system:
+
+- [Node.js](https://nodejs.org/en/download/)
+- [npm](https://www.npmjs.com/get-npm)
+- [MongoDB Compass](https://www.mongodb.com/try/download/compass) (optional, for local MongoDB)
+- [Postman](https://www.postman.com/downloads/) (optional, for testing API endpoints)
+- [Visual Studio Code](https://code.visualstudio.com/download) (or any code editor of your choice)
+- A basic understanding of HTML, CSS, JavaScript, and Node.js
+- A GitHub account (optional, for version control)
+- A MongoDB Atlas account (optional, for cloud-based MongoDB)
+- A basic understanding of web development concepts and technologies
+- A cup of coffee ☕️ (optional, but highly recommended)
+- A pinch of curiosity 🧐
+
 ## What is a Web Framework?
-You might have heard of Unintelligible acronyms like MERN, MEVN, MEAN, LAMP, PERN etc. These are examples of some of the most popular web frameworks. A Web Framework is essentially a collection of tools or libraries that helps to build a full blown web application. Using frameworks, helps make the web development process faster, flexible and more transparent.
 
-MERN — MongoDB, Express.js, React.js, Node.js
+A web framework is a software framework designed to support the development of web applications, including web services, web resources, and web APIs. Web frameworks provide a standard way to build and deploy web applications by providing libraries, APIs, and tools to streamline the development process.
 
-MEVN — MongoDB, Express.js, Vue.js, Node.js
+In the context of the MERN stack, each technology plays a specific role:
 
-MEAN — MongoDB, Express.js, Angular.js, Node.js
+- **MongoDB**: A NoSQL database that stores data in a flexible, JSON-like format.
+- **Express.js**: A Node.js web application framework that provides a robust set of features for building web applications and APIs.
+- **React.js**: A JavaScript library for building user interfaces and single-page applications.
+- **Node.js**: A JavaScript runtime built on Chrome's V8 JavaScript engine that allows you to run JavaScript code outside of a web browser.
+- **MERN**: A full-stack development framework that combines MongoDB, Express.js, React.js, and Node.js to build modern web applications.
+- **MongoDB Atlas**: A cloud-based database service that allows you to store your data in a serverless environment.
+- **API**: An Application Programming Interface that defines how two services can communicate and interact with each other through requests and responses.
+- **React Router**: A routing library for React that allows you to define routes and navigate between different components in a single-page application.
+- **CSS**: Cascading Style Sheets that define the visual presentation of a web page, including layout, colors, fonts, and animations.
+- **HTML**: Hypertext Markup Language that defines the structure and content of a web page.
+- **JavaScript**: A programming language that enables interactive and dynamic web content.
+- **Express**: A minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
+- **Node.js**: A JavaScript runtime built on Chrome's V8 JavaScript engine that allows you to run JavaScript code outside of a web browser.
+- **npm**: A package manager for Node.js that allows you to install, manage, and share JavaScript packages.
+- **React**: A JavaScript library for building user interfaces and single-page applications.
 
-PERN — PostgreSQL, Express.js, React.js, Node.js
+You might have heard of Unintelligible acronyms like MERN, MEVN, MEAN, LAMP, PERN etc. These are examples of some of the most popular web frameworks. Each of these frameworks has its own set of technologies and tools that work together to build web applications.
 
-BEHM — Bun, Elysia, HTMX, MongoDB
+| Framework | Technologies | Description |
+| :--- | :--- | :--- |
+| MERN | MongoDB, Express.js, React.js, Node.js | A full-stack development framework for building modern web applications. |
+| MEVN | MongoDB, Express.js, Vue.js, Node.js | A full-stack development framework similar to MERN, but with Vue.js instead of React.js. |
+| MEAN | MongoDB, Express.js, Angular, Node.js | A full-stack development framework with Angular instead of React.js or Vue.js. |
+| LAMP | Linux, Apache, MySQL, PHP | A traditional web development stack that uses Linux as the operating system, Apache as the web server, MySQL as the database, and PHP as the server-side scripting language. |
+| PERN | PostgreSQL, Express.js, React.js, Node.js | A full-stack development framework similar to MERN, but with PostgreSQL instead of MongoDB. |
 
-and many more (seriously there’s no end to that😅)
 
-> __Fun fact:__ HTMX has been making waves in the community due to its ability to be written in a hypertext format (that is what HTML is 😌) and being able to give you access to AJAX, CSS Transitions, WebSockets and Server Sent Events directly in HTML, using attributes.
+:::info
+**Fun fact:** HTMX has been making waves in the community due to its ability to be written in a hypertext format (that is what HTML is 😌) and being able to give you access to AJAX, CSS Transitions, WebSockets, and Server-Sent Events directly in HTML, using attributes.
+:::
 
 ## Configuring a MongoDB Atlas Cluster
-Lets configure a MongoDB Atlas cluster. Here MongoDB will be used as a Database to store the books (with their details). You can either download MongoDB locally on your device (MongoDB Compass is a GUI tool to query and analyze the database) or use MongoDB Atlas to store your data in a serverless environment. I am going to using MongoDB Atlas
 
-Create a account on https://www.mongodb.com/cloud/atlas/register
+> MongoDB Atlas is a cloud-based database service that allows you to store your data in a serverless environment. It provides a fully managed database solution that eliminates the need for manual configuration, maintenance, and scaling of databases.
 
-Click on Create a deployment
+To get started with MongoDB Atlas, follow these steps:
 
-_Steps_
- - Choose a __configuration__ of your liking( I chose __M0__ which was Free and suitable for our application )
- - Choose your provider( I chose the default choice )
- - Click __Create Deployment__
+1. **Create an Account**: Sign up for a MongoDB Atlas account at [https://www.mongodb.com/cloud/atlas](https://www.mongodb.com/cloud/atlas).
+2. **Create a New Cluster**: Click on the "Build a Cluster" button to create a new cluster.
+3. **Choose a Configuration**: Select a configuration of your liking (e.g., M0, which is free and suitable for small applications).
+4. **Choose a Provider**: Choose your preferred cloud provider (e.g., AWS, Azure, Google Cloud).
+5. **Create Deployment**: Click on the "Create Deployment" button to create your cluster.
+6. **Connect to Your Cluster**: Once your cluster is created, click on the "Connect" button.
+7. **Add Your IP Address**: Click on the "Add Your Current IP Address" button to allow your IP address to access the cluster.
+8. **Create a Database User**: Click on the "Create a Database User" button to create a new user for your database. Make sure to note down the username and password.
+9. **Choose a Connection Method**: Choose the "Connect Your Application" option to get the connection string for your application.
+10. **Copy the Connection String**: Copy the connection string and replace the username and password with the ones you created earlier. The connection string should look something like this:
 
-This should bring you to a Dashboard, Click on __Connect__
+    ```plaintext
+    mongodb+srv://<username>:<password>@cluster0.tpgdder.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+    ```
 
-_Steps_
- - Add a username and password
- - For connection methods, choose Drivers and then choose Node (with your node version)
- - Copy the __connection string__, it looks like the one below
+    :::info
+    Make sure to replace `<username>` and `<password>` with the username and password you created for your database user.
+    :::
 
-```
-mongodb+srv://<username>:<password>@cluster0.tpgdder.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-```
- - Replace the __username__ and __password__ in the string
- - For connection methods, choose __Drivers__ and then choose Node (with your node version)
- - Click on __Network Access__ and add your __IP Address__
+11. **Connect to Your Cluster**: Use the connection string to connect to your MongoDB Atlas cluster from your application. You can use the MongoDB Node.js driver to connect to your cluster and perform database operations. Here is an example of how you can connect to your cluster using the Node.js driver:
 
-Now You are all done Configuring MongoDB !!! 🎉
+    ```js title="app.js"
+    const { MongoClient } = require('mongodb');
+
+    const uri = 'mongodb+srv://<username>:<password>@cluster0.tpgdder.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+
+    const client = new MongoClient(uri);
+
+    async function run() {
+        try {
+            await client.connect();
+
+            const database = client.db('mydatabase');
+            const collection = database.collection('mycollection');
+
+            // Perform database operations here
+
+        } finally {
+            await client.close();
+        }
+    }
+
+    run().catch(console.dir);
+    ```
+
+Congratulations! You have successfully configured a MongoDB Atlas cluster and connected to it using the Node.js driver. You are now ready to build your MERN application.
 
 ## Building a API with Express.js
 
-> An API is an acronym for a __Application Programming Interface__. An API is an interface which helps two services to communicate and interact with each other through requests and responses.
+> Express.js is a minimal and flexible Node.js web application framework that provides a robust set of features for building web applications and APIs. It is widely used in the industry due to its simplicity and scalability.
 
-Lets get to building an API !!!😁
+Let's get to building an API with Express.js. Follow these steps to create a simple API:
 
-First make the Project Folder
+1. **Create a Project Folder**: Create a new folder for your project and navigate to it in your terminal.
 
-```
-mkdir SimpleMernApp
-mkdir backend
-cd backend
-touch .env
-npm init -y
-npm install nodemon -g
-```
+    ```bash
+    mkdir SimpleMernApp
+    cd SimpleMernApp
+    ```
 
-Lets install the dependencies
+2. **Initialize a New Node.js Project**: Run `npm init -y` to initialize a new Node.js project with default settings.
 
-```
-npm install express mongoose dotenv cors express-async-errors
-```
+    ```bash
+    npm init -y
+    ```
 
-Open your package.json file ( This file handles your dependencies ) and add the below code in under the scripts section
+3. **Install Express.js**: Run `npm install express` to install Express.js as a dependency for your project.
 
-```
-"start": "node server.js",
-"dev": "nodemon server.js"
-```
+    ```bash
+    npm install express
+    ```
 
-Create a _.env_ file and add your environment variables into it
+4. **Create an `app.js` File**: Create a new file called `app.js` in your project folder and add the following code to create a simple Express.js server.
 
-```
-MONGO_URI=mongodb+srv://<username>:<password>@cluster0.tpgdder.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-PORT=6000
-```
+    ```js title="app.js"
+    const express = require('express');
+    const app = express();
+    const PORT = process.env.PORT || 4000;
 
-Create a file called db.js and paste the below code. This uses the mongoose module to connect to the _MongoDB Atlas_ Cluster with your mongo connection string.
+    app.get('/', (req, res) => {
+        res.send('Hello, World!');
+    });
 
-```
-//Contents of db.js
-const mongoose = require('mongoose');
-require('dotenv').config() //module for managing environment variables
+    app.listen(PORT, () => {
+        console.log(`Server is running on http://localhost:${PORT}`);
+    });
+    ```
 
-const connection = async () => {
-    const connectionParams = {
+5. **Start the Express.js Server**: Run `node app.js` to start the Express.js server.
+
+    ```bash
+    node app.js
+    ```
+
+6. **Test the API Endpoint**: Open [http://localhost:4000/](http://localhost:4000/) in your browser to see the message "Hello, World!" displayed. This confirms that your Express.js server is running successfully.
+7. **Create Additional Routes**: You can create additional routes and API endpoints by adding more `app.get()` or `app.post()` methods to handle different requests.
+
+    ```js title="app.js"
+    app.get('/api/books', (req, res) => {
+        res.json({ message: 'Get all books' });
+    });
+
+    app.post('/api/books', (req, res) => {
+        res.json({ message: 'Add a new book' });
+    });
+
+    app.put('/api/books/:id', (req, res) => {
+        res.json({ message: 'Update a book' });
+    });
+
+    app.delete('/api/books/:id', (req, res) => {
+        res.json({ message: 'Delete a book' });
+    });
+    ```
+8. **Install Additional Dependencies**: You can install additional dependencies like `mongoose` for MongoDB integration, `cors` for enabling CORS, and `dotenv` for managing environment variables.
+
+    ```bash
+    npm install mongoose cors dotenv
+    ```
+
+9. **Create a `.env` File**: Create a new file called `.env` in your project folder and add your environment variables.
+
+    ```plaintext
+    PORT=4000
+    MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.tpgdder.mongodb.net/mydatabase
+    ```
+
+10. **Update the `app.js` File**: Update your `app.js` file to use the environment variables from the `.env` file.
+
+    ```js title="app.js"
+    require('dotenv').config();
+    const express = require('express');
+    const mongoose = require('mongoose');
+    const cors = require('cors');
+    const app = express();
+    const PORT = process.env.PORT || 4000;
+    const MONGODB_URI = process.env.MONGODB_URI;
+
+    mongoose.connect(MONGODB_URI, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-    };
+    });
+
     try {
-        await mongoose.connect(process.env.MONGO_URI,connectionParams);
-        console.log("Connected to Database");
+        mongoose.connection.on('connected', () => {
+            console.log('Connected to MongoDB');
+        });
     } catch (error) {
-        console.log("Not Connected to Databse",error);
+        console.log('Error connecting to MongoDB:', error);
     }
-}
-module.exports = connection;
-```
 
-Create a model.js file and paste the code below. This file contains the MongoDB database schema, which defines the rules that each field in a document follows. In MongoDB, each record in a database is represented as a document.
+    app.use(cors());
+    app.use(express.json());
 
-```
-//Contents of model.js
-const mongoose = require('mongoose');
+    app.get('/', (req, res) => {
+        res.send('Hello, World!');
+    });
 
-const Schema = mongoose.Schema
+    app.listen(PORT, () => {
+        console.log(`Server is running on http://localhost:${PORT}`);
+    });
+    ```
 
-const userSchema = new Schema({
-    name: {
-        type: String,
-        required: true,
-        unique: true
-    },
-    author: {
-        type: String,
-        required: true
-    },
-    publication: {
-        type: String,
-        required: true
-    },
-    series: {
-        type: String,
-        required: true
-    },
-    borrowed: {
-        type: String,
-        default: null
-    },
-    borrowed_on: {
-        type: Number,
-        default: null
+11. **Create a `models` Folder**: Create a new folder called `models` in your project folder to store your MongoDB models.
+
+    ```bash
+    mkdir models
+    ```
+12. **Create a `Book` Model**: Create a new file called `Book.js` in the `models` folder and define your MongoDB model.
+
+    ```js title="models/Book.js"
+    const mongoose = require('mongoose');
+
+    const bookSchema = new mongoose.Schema({
+        name: { type: String, required: true },
+    });
+
+    const Book = mongoose.model('Book', bookSchema);
+
+    module.exports = Book;
+    ```
+
+13. **Update the `app.js` File**: Update your `app.js` file to use the `Book` model.
+
+    ```js title="app.js"
+    const express = require('express');
+    const mongoose = require('mongoose');
+    const cors = require('cors');
+    const Book = require('./models/Book');
+    const app = express();
+    const PORT = process.env.PORT || 4000;
+    const MONGODB_URI = process.env.MONGODB_URI;
+
+    mongoose.connect(MONGODB_URI, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+    });
+
+    try {
+        mongoose.connection.on('connected', () => {
+            console.log('Connected to MongoDB');
+        });
+    } catch (error) {
+        console.log('Error connecting to MongoDB:', error);
     }
-});
 
-const DataModel = mongoose.model('library_data',userSchema);
+    app.use(cors());
+    app.use(express.json());
 
-module.exports = {DataModel};
-```
+    app.get('/', (req, res) => {
+        res.send('Hello, World!');
+    });
 
-Create a route.js file and paste the below code. This file defines the Express routes and their respective controller functions. Controller functions are simply functions that define the action to be taken upon making an API request at that route.
+    app.get('/api/books', async (req, res) => {
+        try {
+            const books = await Book.find();
+            res.json(books);
+        } catch (error) {
+            res.status(500).json({ message: error.message });
+        }
+    });
 
-```
-//Contents of route.js
-const express = require('express');
-const {DataModel} = require('./model');
+    app.post('/api/books', async (req, res) => {
+        const book = new Book({
+            name: req.body.name,
+        });
 
-const router = express.Router()
+        try {
+            const newBook = await book.save();
+            res.status(201).json(newBook);
+        } catch (error) {
+            res.status(400).json({ message: error.message });
+        }
+    });
 
-router.get("/getbooks",async (req,res) => {
-    const data = await DataModel.find();
-    res.status(200).send({"data":data});
-} )
+    app.listen(PORT, () => {
+        console.log(`Server is running on http://localhost:${PORT}`);
+    });
+    ```
+14. **Test the API Endpoints**: Use Postman or a similar tool to test your API endpoints. You can send GET and POST requests to `/api/books` to get all books and add a new book, respectively. Make sure to check the response status codes and messages to ensure that your API is working correctly.
+15. **Create Additional Models and Routes**: You can create additional models and routes for your API by following the same steps as above. Make sure to define your models, create routes to handle different requests, and test your API endpoints to ensure they are working as expected.
+16. **Deploy Your API**: You can deploy your Express.js API to a cloud platform like Heroku, AWS, or Google Cloud Platform to make it accessible to the public. Make sure to configure your deployment settings, set up environment variables, and test your API in a production environment.
 
-router.post("/addbook", async (req,res) => {
-    const body = await req.body;
-    const sendObj = await new DataModel({
-        "name": body.name,
-        "author": body.author,
-        "publication": body.publication,
-        "series": body.series
-    }).save();
-    res.status(200).send({"msg":"Book added"});
-});
+:::note
 
-module.exports = router;
-```
+**Top Free Hosting Platforms for Node.js**
 
-Create a file called server.js and paste the below code. This file runs the express server at the assigned “PORT”.
+- [Heroku](https://www.heroku.com/) *(Free tier available)*
+- [Glitch](https://glitch.com/) *(Free tier available)*
+- [Vercel](https://vercel.com/) *(Free tier available)*
+- [Netlify](https://www.netlify.com/) *(Free tier available)*
+- [GitHub Pages](https://pages.github.com/) *(Free for static sites)*
+- [Render](https://render.com/) *(Free for static sites)*
 
-```
-//Contents of server.js
-require('dotenv').config();
-require('express-async-errors');
-const express = require('express');
-const app = express();
-const connection = require('./db');
-const cors = require('cors'); //Takes care of cross-orign requests
-const Routes = require('./route'); //Routes being imported from route.js 
+If you are new to Express.js, MongoDB, or Mongoose, I recommend checking out the official documentation for each technology to learn more about their features, capabilities, and best practices.
 
-connection();
+- [Express.js Documentation](https://expressjs.com/)
+- [MongoDB Documentation](https://docs.mongodb.com/)
+- [Mongoose Documentation](https://mongoosejs.com/)
+- [Node.js Documentation](https://nodejs.org/en/docs/)
+- [npm Documentation](https://docs.npmjs.com/)
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
+- [MongoDB Atlas Documentation](https://docs.atlas.mongodb.com/)
+- [Postman Documentation](https://learning.postman.com/docs/getting-started/introduction/)
+- [Visual Studio Code Documentation](https://code.visualstudio.com/docs)
+- [GitHub Documentation](https://docs.github.com/)
+- [Heroku Documentation](https://devcenter.heroku.com/categories/reference)
+- [AWS Documentation](https://docs.aws.amazon.com/)
+- [Google Cloud Platform Documentation](https://cloud.google.com/docs)
+- [HTML Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Web Development Documentation](https://developer.mozilla.org/en-US/docs/Web)
+- [Web Frameworks Documentation](https://developer.mozilla.org/en-US/docs/Web/Frameworks)
 
-app.use(express.json());
-app.use((req,res,next) => {
-    console.log(req.path,req.method)
-    next()
-})
-app.use(cors());
+:::
 
-app.use('/api',Routes);
+Congratulations! You have successfully built an API with Express.js and connected it to a MongoDB database. You are now ready to create a frontend application using React.js.
 
-app.listen(process.env.PORT,() => {
-    console.log("Connected and listening on Port ",process.env.PORT);
-})
-```
-
-> “npm run dev” runs nodemon server.js. This module helps speed up the development process. Trust me 🫡😌
-
-Run the server ( during the developing phase ) with command.
-
-```
-npm run dev
-```
-
-Run the server ( during the production phase ) with command
-
-```
-npm start
-```
-
-Running either of these commands, gets an _Express_ server running at port 6000 ready and waiting to receive requests.
-
-Also make sure to test out the API endpoints with an application like [POSTMAN](https://www.postman.com/downloads/), [Apache JMeter](https://jmeter.apache.org/download_jmeter.cgi) etc.
-
-Yahoo!!! You just Created an API🎉
 
 ## Creating a React App
 
-Let’s now get into some frontend, which will define how your website will behave and look.
+> React.js is a JavaScript library for building user interfaces and single-page applications. It is widely used in the industry due to its component-based architecture, virtual DOM, and declarative syntax.
 
-Type the below command to create a react app. Do this in the root folder.
+Let's get started with creating a React app. Follow these steps to create a simple React app:
 
-```
-npx create-react-app frontend
-```
+1. **Create a New React App**: Run `npx create-react-app frontend` to create a new React app named `frontend`.
 
-This creates a react app named frontend ( You can name it anything you like )
+    ```bash
+    npx create-react-app frontend
+    ```
 
-Once it is complete, type the command
+2. **Navigate to the React App**: Run `cd frontend` to navigate to the React app folder.
 
-```
-npm install react-router-dom
-npm start
-```
+    ```bash
+    cd frontend
+    ```
+3. **Start the React App**: Run `npm start` to start the React app in development mode.
 
-This will run the React App at port 3000. Navigate to _http://localhost:3000/_
+    ```bash
+    npm start
+    ```
 
-Check for a window similar to the below. If you do, then you have successfully installed a React App.🎉
+4. **Open the React App**: Open [http://localhost:3000/](http://localhost:3000/) in your browser to see the React app running.
 
-![React start screen](./react.jpg)
+    <BrowserWindow>
+        <div style={{textAlign: 'center'}}>
+          <header style={{display:' flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', fontSize: 'calc(10px + 2vmin)'}}>
+            <img src='/img/docs/react/logo.svg' className="App-logo" alt="logo" />
+            <br/>
+            <p>
+              Edit src/App.js and save to reload.
+            </p> 
+            <a
+              style={{color: '#61dafb'}}
+              href="https://reactjs.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Learn React
+            </a>
+          </header>
+        </div>
+    </BrowserWindow>
+
+5. **Create Additional Components**: You can create additional components in the `src/components` folder to organize your code and reuse components across your app.
+
+    ```bash
+    mkdir src/components
+    ```
+
+7. Now, create a new file called `Home.js` in the `src/components` folder and add the following code to create a simple home component.
+
+    ```js title="src/components/Home.js"
+    import React from 'react';
+
+    const Home = () => {
+        return (
+            <div>
+                <h2>Welcome to the Home Page</h2>
+            </div>
+        );
+    };
+
+    export default Home;
+    ```
+
+8. **Update the `App.js` File**: Update your `App.js` file to use the `Home` component.
+
+    ```js title="src/App.js"
+    import React from 'react';
+    import Home from './components/Home';
+    
+    function App() {
+        return (
+            <div>
+                <Home />
+            </div>
+        );
+    }
+
+    export default App;
+    ```
+
+9. Now, you can see the `Home` component displayed on browser window.
+
+    <BrowserWindow minHeight={200}>
+        <div>
+          <h2>Welcome to the Home Page</h2>
+        </div>
+    </BrowserWindow>
 
 ## Setting a Proxy from your Backend API server to the Frontend React App
 
-Type the below code in the package.json file of your frontend
+> When you are developing a full-stack application with a separate frontend and backend, you might run into issues related to cross-origin requests. To avoid these issues during development, you can set up a proxy from your backend API server to your frontend React app.
 
-```
-"proxy": "http://localhost:6000"
-```
+To set up a proxy, follow these steps:
 
-By doing this any request made to your development server (the one serving your frontend application) will be forwarded to `http://localhost:4000`. This is often used when you have a separate backend server running on `localhost:4000`, and you want to avoid issues related to cross-origin requests during development.
+1. **Update the `package.json` File**: Update the `package.json` file in your React app to include a proxy setting that points to your backend API server.
 
-Now, you can be sure that requests made on the frontend( React ) will be proxied( forwarded ) to the backend ( Express ). 😉
+    ```json title="frontend/package.json"
+    {
+        "name": "frontend",
+        "version": "0.1.0",
+        "private": true,
+        "proxy": "http://localhost:4000"
+    }
+    ```
+2. **Restart the React App**: Run `npm start` to restart the React app with the new proxy setting.
+
+    ```bash
+    npm start
+    ```
+3. **Test the Proxy**: Make a request to your backend API server from your frontend React app using the proxy setting.
+
+    ```js title="src/components/Home.js"
+    import React, { useEffect } from 'react';
+
+    const Home = () => {
+        useEffect(() => {
+            fetch('/api/books')
+                .then(response => response.json())
+                .then(data => console.log(data))
+                .catch(error => console.error(error));
+        }, []);
+
+        return (
+            <div>
+                <h2>Welcome to the Home Page</h2>
+            </div>
+        );
+    };
+
+    export default Home;
+    ```
+
+4. **Check the Console**: Open the browser console to see the data fetched from your backend API server. This confirms that the proxy is working correctly.
+
+    ```plaintext
+    [ { id: 1, title: 'Book 1' }, { id: 2, title: 'Book 2' }, { id: 3, title: 'Book 3' } ]
+    ```
+5. **Update the API Endpoints**: Update your API endpoints in the Express.js server to return data in JSON format.
+
+    ```js title="app.js"
+    app.get('/api/books', async (req, res) => {
+        try {
+            const books = [
+                { id: 1, title: 'Book 1' },
+                { id: 2, title: 'Book 2' },
+                { id: 3, title: 'Book 3' },
+            ];
+            res.json(books);
+        } catch (error) {
+            res.status(500).json({ message: error.message });
+        }
+    });
+    ```
+6. **Test the API Endpoints**: Make a request to the `/api/books` endpoint from your frontend React app to fetch the data and display it on the browser window.
+
+    ```js title="src/components/Home.js"
+    import React, { useEffect, useState } from 'react';
+
+    const Home = () => {
+        const [books, setBooks] = useState([]);
+
+        useEffect(() => {
+            fetch('/api/books')
+                .then(response => response.json())
+                .then(data => setBooks(data))
+                .catch(error => console.error(error));
+        }, []);
+
+        return (
+            <div>
+                <h2>Welcome to the Home Page</h2>
+                <ul>
+                    {books.map(book => (
+                        <li key={book.id}>{book.title}</li>
+                    ))}
+                </ul>
+            </div>
+        );
+    };
+
+    export default Home;
+    ```
+7. **Check the Browser Window**: Open the browser window to see the list of books fetched from your backend API server and displayed on the screen.
+
+    <BrowserWindow minHeight={200}>
+        <div>
+          <h2>Welcome to the Home Page</h2>
+          <ul>
+            <li>Book 1</li>
+            <li>Book 2</li>
+            <li>Book 3</li>
+          </ul>
+        </div>
+    </BrowserWindow>
+
+By setting up a proxy from your backend API server to your frontend React app, you can avoid issues related to cross-origin requests during development. This allows you to focus on building your application without worrying about the underlying infrastructure.
 
 ## Styling and making Requests from the frontend
 
-Now let’s get on to styling 🎨 and make the frontend look Gooood….
+> Now that you have set up your backend API server and connected it to your frontend React app, it's time to style your app and make requests to the API endpoints. You can use CSS for styling and fetch API for making requests from the frontend.
 
-Here 😼 is where good old CSS and HTML comes in
+Here is a simple guide to styling and making requests from the frontend:
 
-This below is the frontend folder structure
+1. **Create a `styles.css` File**: Create a new file called `styles.css` in the `src` folder of your React app to add custom styles.
 
-![Folder structure](./output3.png)
+    ```css title="src/styles.css"
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
 
-Only the above files in the src folder is necessary for this project, the rest of the files can be removed like App.test.js, reportWebVitals.js etc.
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
 
-> Also check the repository, as I had made some changes to the index.js file. Also add the screw.png image to your img folder
+    .heading {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
 
-To use some custom fonts in my project, I downloaded the respective .ttf file and stored them in the fonts folder and copied the below code into the App.css file
+    .list {
+        list-style-type: none;
+        padding: 0;
+    }
 
-```
-@font-face {
-  font-family: "Old English";   /*Can be any text*/
-  src: local("Old English"),
-    url("./fonts/OldeEnglish.ttf") format("truetype");
-}
+    .item {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    ```
+2. **Update the `App.js` File**: Update your `App.js` file to include the custom styles.
 
-@font-face {
-  font-family: "Subway";   /*Can be any text*/
-  src: local("Subway"),
-    url("./fonts/subway.ttf") format("truetype");
-}
-w  
-@font-face {
-  font-family: "Quad Serif";   /*Can be any text*/
-  src: local("Quad Serif Line"),
-    url("./fonts/QuadSerifLine.ttf") format("truetype");
-}
+    ```js title="src/App.js"
+    import React, { useEffect, useState } from 'react';
+    import './styles.css';
 
-@font-face {
-  font-family: "Krakoan";   /*Can be any text*/
-  src: local("Krakoan"),
-    url("./fonts/Krakoan.ttf") format("truetype");
-}
-```
+    const App = () => {
+        const [books, setBooks] = useState([]);
 
-The React framework is considered very developer-friendly because of its component-based architecture. Components in React are reusable and encapsulated pieces of code that can represent parts of a user interface, such as a button, form, or even entire sections or pages of a web application. By breaking down the UI into components, React promotes code organization, reusability, and maintainability, making it easier for developers to manage and scale their projects.
+        useEffect(() => {
+            fetch('/api/books')
+                .then(response => response.json())
+                .then(data => setBooks(data))
+                .catch(error => console.error(error));
+        }, []);
 
-> All the components in this project is added to the “components” folder
-
-```
-//Contents of addBook.js
-import {useState} from 'react';
-
-const AddBook = ({cardState,setCardState}) => {
-    const [name,setName] = useState('');
-    const [author,setAuthor] = useState('');
-    const [pub,setPub] = useState('');
-    const [ser,setSer] = useState('');
-    const [res,setRes] = useState('');
-
-    const handleClick = async () => {
-        const response = await fetch('/api/addbook', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                "name":name,
-                "author":author,
-                "publication":pub,
-                "series":ser
-            })
-        });
-
-        if (!response.ok) {
-            console.log("Unable to add a book");
-            return;
-        }
-
-        const data = await response.json();
-        console.log(data.msg);
-        setRes(data.msg)
-        if(data.msg === "Book added") {
-            setCardState(0);
-        }
+        return (
+            <div className="container">
+                <h1 className="heading">Book List</h1>
+                <ul className="list">
+                    {books.map(book => (
+                        <li key={book.id} className="item">{book.title}</li>
+                    ))}
+                </ul>
+            </div>
+        );
     };
 
-    return(
-        <div className="cardMainContainer">
-            Book name: <input 
-                type="text" 
-                className="input1"
-                onChange={(e) => {setName(e.target.value)}}
-                value={name}
-            />
-            Author: <input 
-                type="text" 
-                className="input2"
-                onChange={(e) => {setAuthor(e.target.value)}}
-                value={author}
-            />
-            Publications: <input 
-                type="text" 
-                className="input3"
-                onChange={(e) => {setPub(e.target.value)}}
-                value={pub}
-            />
-            Series: <input 
-                type="text" 
-                className="input4"
-                onChange={(e) => {setSer(e.target.value)}}
-                value={ser}
-            />
-            <button className="actionButton" onClick={handleClick}>Add!!</button>
-            <div>{res ? res : <p></p>}</div>
+    export default App;
+    ```
+
+3. **Check the Browser Window**: Open the browser window to see the list of books displayed with the custom styles applied.
+
+    <BrowserWindow minHeight={200}>
+        <div style={{maxWidth: '800px', margin: '0 auto', padding: '20px'}}>
+          <h1 style={{fontSize: '24px', fontWeight: 'bold', marginBottom: '20px'}}>Book List</h1>
+          <ul style={{listStyleType: 'none', padding: '0'}}>
+            <li style={{backgroundColor: '#fff', border: '1px solid #ccc', marginBottom: '10px', padding: '10px', color: '#000'}}>Book 1</li>
+            <li style={{backgroundColor: '#fff', border: '1px solid #ccc', marginBottom: '10px', padding: '10px', color: '#000'}}>Book 2</li>
+            <li style={{backgroundColor: '#fff', border: '1px solid #ccc', marginBottom: '10px', padding: '10px', color: '#000'}}>Book 3</li>
+          </ul>
         </div>
-    )
-}
+    </BrowserWindow>
 
-export default AddBook;
-```
+By adding custom styles to your React app and making requests to the API endpoints, you can create a visually appealing and interactive user interface. You can experiment with different styles, layouts, and components to enhance the user experience and make your app more engaging.
 
-```
-//Contents of nothBook.js
-const NotBook = () => {
-    return(
-        <p style={{fontSize:'1.5rem',fontWeight:'900'}}>...</p>
-    )
-}
-
-export default NotBook;
-```
-
-```
-//Contents of home.js
-import {useState} from 'react';
-
-import AddBook from './addBook';
-import NotBook from './nothBook';
-import screw from '../img/screw.png'
-
-const Home = () => {
-    const [cardState,setCardState] = useState(0);
-    const cardList = [<NotBook />,<AddBook cardState={cardState} setCardState={setCardState}/>]
-    return(
-        <div className='mainContainer'>
-            <h1 className="mainHeading">Infino</h1>
-            <h1 className="mainsubHead">keeper . of . the . books</h1>
-            <div className="mainWrapper">
-                <div className="div1" onClick={() => setCardState(1)}>Add a book</div>
-                <div className="div2" onClick={() => setCardState(1)}>Borrow a book</div>
-                <div className="div3" onClick={() => setCardState(1)}>Return a book</div>
-                <div className="div4" onClick={() => setCardState(1)}>Delete a book</div>  
-                <div className="div5">
-                    <div className="dot1">.</div>
-                    <div className="dot2">.</div>
-                    <div className="dot3">.</div>
-                </div>
-                <div className='screwComp'>
-                    <img src={screw} alt='s'/>
-                    <img src={screw} alt='s'/>
-                    <img src={screw} alt='s'/>
-                </div>  
-            </div>
-            <div className='cardWrapper'>{cardList[cardState]}</div>
-            <div className='madeWithLove'>made with ❣️ by &nbsp;<span>abhijith</span></div>
-        </div>
-    )
-}
-
-export default Home;
-```
-
-```
-/*Contents of index.css*/
-@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
-
-body,html {
-  margin: 0px;
-  padding: 0px;
-  background: linear-gradient(to right,rgb(235, 232, 233),rgb(240, 233, 233));
-}
-
-.pages {
-  align-items: center;
-  text-align: center;
-}
-
-.mainContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.mainWrapper {
-  font-family: Quad Serif;
-  width: 20rem;
-  height: 20rem;
-  border: 3px solid  brown;
-  position: relative;
-  margin-top: 5rem;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-}
-
-.mainHeading {
-  font-family: Quad Serif;
-  font-size: 6rem;
-  margin-bottom: 0;
-  margin-top: 5rem;
-}
-
-.mainsubHead {
-  font-family: Quad Serif;
-  font-size: 1rem;
-}
-
-.div1 {
-  position: absolute;
-  font-size: 2rem;
-  padding: 0.4rem;
-  width: 9rem;
-  height: 9rem;
-  border: 2px dashed black;
-  left: 0.5rem;
-  top: 0.5rem;
-  border-radius: 5px;
-  transform: scale(1);
-  transition: transform ease 0.5s;
-  background: linear-gradient(to right,rgb(235, 232, 233),rgb(230, 204, 204));
-}
-
-.div1:hover {
-  transform: scale(1.2);
-  cursor: pointer;
-}
-
-.div2 {
-  position: absolute;
-  font-size: 1.2rem;
-  padding: 0.4rem;
-  width: 5rem;
-  height: 5rem;
-  border: 2px dashed black;
-  right: 0.5rem;
-  top: 0.5rem;
-  border-radius: 5px;
-  transform: scale(1);
-  transition: transform ease 0.5s;
-  background: linear-gradient(to right,rgb(235, 232, 233),rgb(230, 204, 204));
-}
-
-.div2:hover {
-  transform: scale(1.4);
-  cursor: pointer;
-}
-
-.div3 {
-  position: absolute;
-  font-size: 1.5rem;
-  padding: 0.4rem;
-  width: 7rem;
-  height: 7rem;
-  border: 2px dashed black;
-  left: 0.5rem;
-  bottom: 0.5rem;
-  border-radius: 5px;
-  transform: scale(1);
-  transition: transform ease 0.5s;
-  background: linear-gradient(to right,rgb(235, 232, 233),rgb(230, 204, 204));
-}
-
-.div3:hover {
-  transform: scale(1.4);
-  cursor: pointer;
-}
-
-.div4 {
-  position: absolute;
-  padding: 0.4rem;
-  font-size: 1.6rem;
-  width: 6rem;
-  height: 6rem;
-  border: 2px dashed black;
-  right: 0.5rem;
-  bottom: 0.5rem;
-  border-radius: 5px;
-  transform: scale(1);
-  transition: transform ease 0.5s;
-  background: linear-gradient(to right,rgb(235, 232, 233),rgb(232, 216, 216));
-}
-
-.div4:hover {
-  transform: scale(1.4);
-  cursor: pointer;
-}
-
-.div5 {
-  position: absolute;
-  width: 1rem;
-  height: 3rem;
-  font-size: 2.3rem;
-  left: 56%;
-}
-
-@keyframes flashColor1 {
-  0% {
-    color: rgb(238, 215, 215);
-  }
-  50% {
-    color: rgb(90, 68, 68); /* Change to the color you want during the flash */
-  }
-  100% {
-    color: rgb(155, 144, 144);
-  }
-}
-
-@keyframes flashColor2 {
-  0% {
-    color: rgb(155, 144, 144);
-  }
-  50% {
-    color: rgb(238, 215, 215); /* Change to the color you want during the flash */
-  }
-  100% {
-    color: rgb(90, 68, 68);
-  }
-}
-
-@keyframes flashColor3 {
-  0% {
-    color: rgb(90, 68, 68);
-  }
-  50% {
-    color: rgb(155, 144, 144); /* Change to the color you want during the flash */
-  }
-  100% {
-    color: rgb(238, 215, 215);
-  }
-}
-
-.div5 .dot1 {
-  color: rgb(123, 104, 104);
-  font-family: 'Courier New', Courier, monospace;
-  animation: flashColor1 1s infinite alternate;
-}
-
-.div5 .dot2 {
-  color: rgb(78, 58, 58);
-  font-family: 'Courier New', Courier, monospace;
-  animation: flashColor2 1s infinite alternate;
-}
-
-.div5 .dot3 {
-  color: rgb(148, 129, 129);
-  font-family: 'Courier New', Courier, monospace;
-  animation: flashColor3 1s infinite alternate;
-}
-
-.cardWrapper {
-  position: relative;
-  border: 4px solid black;
-  border-radius: 10px;
-  width: 20rem;
-  height: max-content;
-  background: linear-gradient(to right,rgb(247, 242, 242),rgb(242, 221, 221));
-  margin-bottom: 5rem;
-}
-
-.cardMainContainer {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  padding: 0.8rem;
-}
-
-.cardMainContainer .input1,.input2,.input3,.input4 {
-  width: 10rem;
-  height: 1.5rem;
-  border-radius: 5px;
-  margin-top: 0.5rem;
-  border-style: dashed;
-  margin-bottom: 0.2rem;
-}
-
-.actionButton {
-  border: 2px dashed #767676;
-  border-radius: 5px;
-  width: max-content;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
-  margin-top: 1rem;
-}
-
-.actionButton:hover {
-  border-style: solid;
-  border-color: black;
-  cursor: pointer;
-}
-
-.madeWithLove {
-  font-family: Poor Story;
-  text-align: right;
-  width: 100%;
-  font-size: 1.5rem;
-  padding: 1rem;
-  padding-right: 1.5rem;
-}
-
-.madeWithLove span {
-  font-family: Krakoan;
-  letter-spacing: 0.2rem;
-  margin-right: 1rem;
-}
-
-.screwComp {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  right: 9rem;
-  bottom: 1rem;
-}
-
-.screwComp img {
-  width: 1rem;
-  height: 1rem;
-  margin-bottom: 0.8rem;
-}
-```
-
-Now lets talk about the most important file in React, which is the App.js. It is in this file where we control which component gets rendered for which route.
-
-```
-//Contents of App.js
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import "./App.css";
-
-import Home from './components/home';
-
-function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <div className='pages'>
-          <Routes>
-            <Route 
-            path='/'
-            element={<Home />}
-            />
-          </Routes>
-        </div>
-      </BrowserRouter>
-    </div>
-  );
-}
-
-export default App;
-```
-
-Congrats you just completed your MERN Project 🎊🥳
-
-## Lets have it working
-
-Lets run it. Make sure you are in your root directory. Also make sure you have the .env file in your backend folder with the your environment variables. Now run these commands.
-
-```
-cd backend/
-npm install
-npm start
-```
-
-The output is
-
-![npm start output on backend](./output2.png)
-
-Now open another terminal in the root directory. Run the below command
-
-```
-cd frontend/
-npm install
-npm start
-```
-
-The output is
-
-![npm start on frontend](output1.png)
-
-Open _http://localhost:3000_ to view your react application
-
-It will look like the below (The UI isn’t the best, I know 😅)
-
-![Client side output](infino.jpg)
-
-Only the addbook route has been written😅, so only the “Add A Book” feature works. Consider adding the following features
- - Borrow a Book
- - Return a Book
- - Delete a Book
-
-Good luck !! 😁👍
+Once you have styled your app and made requests to the API endpoints, you can continue to add more features, functionality, and components to build a full-fledged web application. You can also explore other libraries, frameworks, and tools to further enhance your app and take it to the next level.
 
 
+:::tip
+**Key Takeaways**
 
-Stay tuned and Do make sure to check out my articles [@ams_132](https://medium.com/@ams_132) !!!
+- The MERN stack consists of MongoDB, Express.js, React.js, and Node.js, which work together to build modern web applications.
+- Express.js is a minimal and flexible Node.js web application framework that provides a robust set of features for building web applications and APIs.
+- React.js is a JavaScript library for building user interfaces and single-page applications using a component-based architecture.
+- By setting up a MongoDB Atlas cluster, building an API with Express.js, creating a React app, and connecting the frontend to the backend, you can build a simple MERN application.
+- You can use CSS for styling your app and fetch API for making requests from the frontend to the backend.
+- By following best practices, experimenting with different technologies, and continuously learning and improving your skills, you can become a proficient full-stack developer and build amazing web applications.
+- Remember to have fun, stay curious, and keep exploring new ideas and technologies to expand your knowledge and grow as a developer.
+- If you have any questions, feedback, or suggestions, feel free to reach out to the authors or the community for help and [support](https://codeharborhub.github.io/community/supports#-how-to-get-support). Happy coding! 🚀
 
-_Sayonara… Until next time_
+:::
+
+## Conclusion
+
+In this blog post, we covered the basics of the MERN stack and walked you through the process of building a simple MERN application. We started by setting up a MongoDB Atlas cluster, building an API with Express.js, creating a React app, and connecting the frontend to the backend. We also covered styling and making requests from the frontend to the backend API server.
