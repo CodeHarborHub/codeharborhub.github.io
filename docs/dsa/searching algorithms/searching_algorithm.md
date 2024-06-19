@@ -10,7 +10,7 @@ tags:
 ---
 
 
-# Searching in Data Structures and Algorithms
+
 
 Searching is a fundamental operation in computer science and is widely used in various applications. In the context of Data Structures and Algorithms (DSA), searching refers to the process of finding a specific element within a collection of data.
 
