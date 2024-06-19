@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faYoutube, faDiscord } from '@fortawesome/free-brands-svg-icons';
+
 import { themes as prismThemes } from "prism-react-renderer";
 import { default as npm2yarn } from "@docusaurus/remark-plugin-npm2yarn";
 const remarkMath = require("remark-math");
@@ -359,18 +362,22 @@ const config = {
               {
                 label: "LinkedIn",
                 href: "https://www.linkedin.com/company/codeharborhub/",
+                icon: <FontAwesomeIcon icon={faLinkedin} />,
               },
               {
                 label: "YouTube",
                 href: "https://www.youtube.com/",
+                icon: <FontAwesomeIcon icon={faYoutube} />,
               },
               {
                 label: "Discord",
                 href: "https://discord.gg/c53FQn3pRv",
+                icon: <FontAwesomeIcon icon={faDiscord} />,
               },
               {
                 label: "Twitter(X)",
                 href: "https://twitter.com/CodesWithAjay",
+                // If you add an icon for Twitter, import it similar to LinkedIn, YouTube, and Discord
               },
             ],
           },
