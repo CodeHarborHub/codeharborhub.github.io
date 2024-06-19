@@ -75,8 +75,8 @@ public:
 
 ### Complexity Analysis
 
-- **Time complexity**: O(N^2)
-- **Space complexity**: O(1)
+- **Time complexity**: $O(N^2)$
+- **Space complexity**: $O(1)$
 
 ### Approach 2: Sorting
 
@@ -107,8 +107,8 @@ public:
 
 ### Complexity Analysis
 
-- **Time complexity**: O(NlogN)
-- **Space complexity**: O(1)
+- **Time complexity**: $O(NlogN)$
+- **Space complexity**: $O(1)$
 
 ### Approach 3: Hash Set
 
@@ -140,8 +140,8 @@ public:
 
 ### Complexity Analysis
 
-- **Time complexity**: O(N)
-- **Space complexity**: O(N)
+- **Time complexity**: $O(N)$
+- **Space complexity**: $O(N)$
 
 ### Approach 4: Hash Map
 
@@ -173,8 +173,8 @@ public:
 
 ### Complexity Analysis
 
-- **Time complexity**: O(N)
-- **Space complexity**: O(N)
+- **Time complexity**: $O(N)$
+- **Space complexity**: $O(N)$
 
 
 ### Conclusion
