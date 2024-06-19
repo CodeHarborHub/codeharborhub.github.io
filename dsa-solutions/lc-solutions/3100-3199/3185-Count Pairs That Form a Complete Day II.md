@@ -1,7 +1,6 @@
 ---
 id: 3185-Count-Pairs-That-Form-a-Complete-Day-II
 title: Count Pairs That Form a Complete Day II
-level: easy
 sidebar_label: Count Pairs That Form a Complete Day II
 tags:
   - Bit Manipulation
