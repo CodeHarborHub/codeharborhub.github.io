@@ -2,7 +2,7 @@
 id: Count-Alternating-subarrays
 title: Count-Alternating-subarrays
 level: hard
-sidebar_label: Count-Alternating-subarrays
+sidebar_label: 3101-Count-Alternating-subarrays
 tags:
   - Dynamic Programming
   - Bit Manipulation
@@ -83,13 +83,11 @@ The provided code effectively implements the sliding window approach with the me
 
 4.  int left = 0;: Initializes left and right pointers, both starting at index 0.
 
-
-     - int right = 0;
+    - int right = 0;
 
 5.  while (right < n): A loop that continues as long as right hasn't reached the end of the array.
 
-
-     - while (right < n - 1 && nums[right] != nums[right + 1]): This inner loop extends the current subarray as long as adjacent elements differ.
+    - while (right < n - 1 && nums[right] != nums[right + 1]): This inner loop extends the current subarray as long as adjacent elements differ.
 
 6.  It checks if right is within bounds and if the elements at right and right + 1 are different.
 

@@ -2,7 +2,7 @@
 id: Minimize-Manhattan-Distances
 title: Minimize Manhattan Distances
 level: hard
-sidebar_label: Minimize Manhattan Distances
+sidebar_label: 3102-Minimize Manhattan Distances
 tags:
   - Dynamic Programming
   - Bit Manipulation
@@ -74,15 +74,14 @@ Constraints:
 
     `maxi=max(maxsum-minsum,maxdiff-mindiff);`
 
-
     - Now, find the values of minsum, maxsum, mindiff, maxdiff
 
-     - `minsum=st1.begin(), maxsum=--st1.end()`
+    - `minsum=st1.begin(), maxsum=--st1.end()`
 
-     - `mindiff=st2.begin(), maxdiff=--st2.end()`
+    - `mindiff=st2.begin(), maxdiff=--st2.end()`
 
-      `Note:- st.end() denotes an iterator pointing to the position
-      just after the last element that's why we have taken --st.end()`
+    `Note:- st.end() denotes an iterator pointing to the position
+  just after the last element that's why we have taken --st.end()`
 
     8. After finding the maximum value upon removal of the current sum and difference, store the minimum computed so far in variable mini which holds the minimum of all Manhattan Distance found so far.
 
