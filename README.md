@@ -6,6 +6,8 @@ Welcome to CodeHarborHub! Your gateway to top-notch tech education. **Tired of l
 
 <a href="https://github.com/Ajay-Dhangar"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=DEF72C&random=false&center=false &width=1000&lines=Hi%2C+there.+If+you+like+CodeHarborHub,+give+it+a+Star" alt="Typing SVG" /></a>
 
+<img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=464236&theme=light" alt="CodeHarborHub - Tired&#0032;of&#0032;limitations&#0063;&#0032;CodeHarborHub&#0032;shatters&#0032;them&#0046; | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.codeharborhub.live%2F)](https://www.codeharborhub.live/)
 [![License](https://img.shields.io/github/license/CodeHarborHub/codeharborhub)](https://github.com/CodeHarborHub/codeharborhub/blob/main/LICENSE)
 [![Contributors](https://img.shields.io/github/contributors/CodeHarborHub/codeharborhub)](https://github.com/CodeHarborHub/codeharborhub/graphs/contributors)
