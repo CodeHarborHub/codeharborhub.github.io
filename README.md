@@ -73,7 +73,15 @@ Follow these steps:
 
 ## Support
 
-For any questions or issues, feel free to reach out to us through our [website](https://www.codeharborhub.live/) or by opening an [issue](https://github.com/CodeHarborHub/codeharborhub/issues) on GitHub.
+---
+
+### If you're facing any issues, connect with our live chat support! 💬
+
+> **Visit:** 🔗https://codeharborhub.github.io/community/supports/#-how-to-get-support (our support page) and let us know your issue. We'll solve it for you! 🚀
+
+---
+
+For any questions or issues, feel free to reach out to us through our [website](https://codeharborhub.github.io/community/supports/#-how-to-get-support) or by opening an [issue](https://github.com/CodeHarborHub/codeharborhub/issues) on GitHub.
 
 Stay updated with the latest news and announcements:
 
