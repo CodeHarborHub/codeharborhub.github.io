@@ -19,11 +19,11 @@ Given a matrix cost of size n where cost[i][j] denotes the cost of moving from c
 
 Consider the following graph:
 
-**Input:** cost = {{0,111},{112,0}}
+**Input:** `cost = {{0,111},{112,0}}`
 **Output:** 223
 **Explanation:** We can visit `0->1->0` and 
 ```
-Input: cost = {{0,111},{112,0}}
+Input: `cost = {{0,111},{112,0}}`
 Output: 223
 Explanation: We can visit 0->1->0 and 
 cost = 111 + 112.
@@ -162,8 +162,8 @@ $O(2n * n2)$.
 ## Space Complexity
 $O(2n * n)$.
 ## Resources
-- **GFG Problem:** [GFG Problem](https://www.geeksforgeeks.org/problems/scrambled-string/1)
-- **LeetCode Problem:** [LeetCode Problem](https://leetcode.com/problems/scramble-string/description/)
+- **GFG Problem:** [GFG Problem](https://www.geeksforgeeks.org/traveling-salesman-problem-tsp-implementation/)
+- **LeetCode Problem:** [LeetCode Problem](https://leetcode.com/problems/shortest-path-visiting-all-nodes/)
 - **Author's Geeks for Geeks Profile:**  | [DaminiChachane](https://leetcode.com/u/divcxl15/) |
 This format ensures that all necessary details about the problem and its solution are clearly presented and easy to follow.
 Footer
