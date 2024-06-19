@@ -31,7 +31,7 @@ hide_table_of_contents: true
 
 ### Importing useState hook from react:
 
-```
+```js
 import { useState } from 'react';
 ```
 
@@ -39,13 +39,13 @@ import { useState } from 'react';
 
 - The useState hook takes an initial state value as an argument and returns a stateful value paired with a function to update that value.
 
-```
+```js
 const [count, setCount] = useState(0);
 ```
 
 ### Updating count variable using setCount method,
 
-```
+```js
 const Counter = () => {
   const [count, setCount] = useState(0);
 
@@ -65,7 +65,7 @@ const Counter = () => {
 
 - To update specific properties of an object or array stored in state using useState, you need to use the functional form of set function and spread the previous state (prevState) along with the updated properties.
 
-```
+```js
 const Counter = () => {
   const [person, setPerson] = useState({id: '1', name: 'John', age: 25});
 
@@ -98,7 +98,7 @@ const Counter = () => {
 
 - For componentDidMount behavior, you can pass an empty dependency array ([]) as the second argument to useEffect, which tells React to run the effect only once after the initial render.
 
-```
+```js
 useEffect(() => {
   // Perform initialization or side effects
   console.log("The component is rendered initially.")
@@ -111,7 +111,7 @@ useEffect(() => {
 
 - For componentDidUpdate behavior, we can simply omit the dependency array in useEffect . his means the effect will be executed whenever any state or prop value changes, potentially leading to unnecessary re-renders or performance issues if not used carefully.
 
-```
+```js
 useEffect(() => {
   // Effect runs after every render
   console.log("The component is rendered.")
@@ -120,7 +120,7 @@ useEffect(() => {
 
 - To overcome unnecessary re-renders, you can specify dependencies in the dependency array. When any of these dependencies change, the effect will be re-run.
 
-```
+```js
 useEffect(() => {
   // Perform side effects after state or props update
   console.log("dependency1 or dependency2 have updated.")
@@ -133,7 +133,7 @@ useEffect(() => {
 
 - For componentWillUnmount behavior, you can return a cleanup function from the effect. This function will be called when the component is unmounted.
 
-```
+```js
 useEffect(() => {
   // Perform side effects
   console.log("dependency is updated.")
@@ -152,7 +152,7 @@ useEffect(() => {
 
 - First, you need to create a context using the createContext function provided by React. This function returns a Context object.
 
-```
+```js
 // themeContext.js
 import React, { createContext } from 'react';
 
@@ -163,7 +163,7 @@ export const ThemeContext = createContext(null);
 
 - Then, you need to wrap the part of your component tree where you want to make the context available using the Context.Provider component. This is typically placed at a higher level in your component hierarchy.
 
-```
+```js
 function App() {
   const theme = 'dark';
 
@@ -179,7 +179,7 @@ function App() {
 
 - Now, any component within the provider can access the context using the useContext hook.
 
-```
+```js
 import React, { useContext } from 'react';
 import ThemeContext from './ThemeContext';
 
@@ -209,7 +209,7 @@ function MyComponent() {
 
 - You start by defining an initial state. This could be a single value, an object, or an array depending on your application’s needs.
 
-```
+```js
 const Counter = () => {
   // Step 1: Define initial state
   const initialState = { count: 0 };
@@ -225,8 +225,8 @@ const Counter = () => {
 ### Reducer Function
 
 - You define a reducer function. This function takes two arguments: the current state and an action, and returns the new state based on the action. The reducer function is responsible for updating the state.
-
-```
+  
+```js
 // Step 2: Define reducer function
 const reducer = (state, action) => {
   switch (action.type) {
@@ -244,7 +244,7 @@ const reducer = (state, action) => {
 
 - To update the state, you dispatch actions. An action is an object that describes what kind of state change you want to perform. It typically has a type property that describes the action type, and optionally a payload property that carries data relevant to the action.
 
-```
+```js
 const Counter = () => {
   const initialState = { count: 0 };
   
@@ -271,7 +271,7 @@ const Counter = () => {
 
 Example 1
 
-```
+```js
 import React, { useRef } from 'react';
 
 function MyComponent() {
@@ -300,7 +300,7 @@ In this example, myInputRef is created using useRef, and it's attached to the in
 
 Example 2
 
-```
+```js
 import React, { useState, useRef } from 'react';
 
 function Counter() {
