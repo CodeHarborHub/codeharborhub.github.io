@@ -7,6 +7,7 @@ tags:
     - Two Pointers
     - Greedy
 description: Given n non-negative integers representing the heights of vertical lines, find the two lines that together with the x-axis form a container, such that the container contains the most water.
+sidebar_position: 11
 ---
 
 ## Problem Description

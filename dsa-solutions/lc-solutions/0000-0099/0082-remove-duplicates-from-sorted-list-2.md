@@ -1,16 +1,10 @@
 ---
-id: remove-duplicates-from-sorted-list-2
+id: 82-remove-duplicates-from-sorted-list-2
 title: Remove Duplicates from Sorted List II (Leetcode)
 sidebar_label: 0082-RemoveDuplicatesFromSortedListII
 description: Given the head of a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list. Return the linked list sorted as well.
+sidebar_position: 82
 ---
-
-## Problem Description
-
-| Problem Statement | Solution Link | LeetCode Profile |
-| :---------------- | :------------ | :--------------- |
-| [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [Merge Two Sorted Lists Solution on LeetCode](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/solutions) |  [Aaradhya Singh ](https://leetcode.com/u/keira_09/) |
-
 
 ## Problem Description
 

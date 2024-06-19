@@ -2,23 +2,17 @@
 id: Zigzag Conversion
 title: Zigzag Conversion (LeetCode)
 sidebar_label: 0006-Zigzag Conversion
-tags: 
-    - String
+tags:
+  - String
 description: Convert the given string into a zigzag pattern with a specified number of rows.
+sidebar_position: 6
 ---
-
-## Problem Description
-
-| Problem Statement                                                                          | Solution Link                                                                                                                                      | LeetCode Profile                                   |
-| :----------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------- |
-| [Zigzag Conversion on LeetCode](https://leetcode.com/problems/zigzag-conversion) | [Median of Two Sorted Arrays Solution on LeetCode Solution on LeetCode](https://leetcode.com/problems/zigzag-conversion/solutions/3133966/easy-explanation-with-pics-and-video-java-c-python/) | [gabaniyash846](https://leetcode.com/u/gabaniyash846/) |
-
 
 ## Problem Statement
 
 The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this:
 
-```
+```plaintext
 P   A   H   N
 A P L S I I G
 Y   I   R
@@ -36,26 +30,34 @@ string convert(string s, int numRows)
 
 **Example 1:**
 
-Input: 
+Input:
+
 ```
 s = "PAYPALISHIRING", numRows = 3
 ```
-Output: 
+
+Output:
+
 ```
 "PAHNAPLSIIGYIR"
 ```
 
 **Example 2:**
 
-Input: 
+Input:
+
 ```
 s = "PAYPALISHIRING", numRows = 4
 ```
-Output: 
+
+Output:
+
 ```
 "PINALSIGYAHRPI"
 ```
+
 Explanation:
+
 ```
 P     I    N
 A   L S  I G
@@ -65,11 +67,14 @@ P     I
 
 **Example 3:**
 
-Input: 
+Input:
+
 ```
 s = "A", numRows = 1
 ```
-Output: 
+
+Output:
+
 ```
 "A"
 ```
@@ -87,18 +92,18 @@ Just look at the top row what is the difference between each character, i.e., A 
 The interesting part comes when the character in the diagonal has to be added, but even this has a pattern:
 
 - There will be no character in between for row 0 and row n.
-- There can be only one diagonal character, and the diagonal difference is original difference - 2 at each step or diff - (rowNumber*2);
+- There can be only one diagonal character, and the diagonal difference is original difference - 2 at each step or diff - (rowNumber\*2);
 
 ## Approach
 
 1. Create an empty StringBuilder which is our answer.
-2. Calculate the difference = numRows*2 - 2.
+2. Calculate the difference = numRows\*2 - 2.
 3. Iterate over 0 to rowNumber in a for loop.
 4. The first character will be row number or i (append to String).
 5. Write a while loop in the above for loop:
-    - The first character will be row number or i (append to String).
-    - Calculate the diagonal difference if any and append to the String.
-    - Increase the index by diff and return ans.
+   - The first character will be row number or i (append to String).
+   - Calculate the diagonal difference if any and append to the String.
+   - Increase the index by diff and return ans.
 
 ### Java Solution
 
@@ -108,7 +113,7 @@ class Solution {
         if (numRows == 1) {
             return s;
         }
-        
+
         StringBuilder answer = new StringBuilder();
         int n = s.length();
         int diff = 2 * (numRows - 1);
@@ -123,7 +128,7 @@ class Solution {
                 if (i != 0 && i != numRows - 1) {
                     diagonalDiff = diff-2*i;
                     secondIndex = index + diagonalDiff;
-                    
+
                     if (secondIndex < n) {
                         answer.append(s.charAt(secondIndex));
                     }
@@ -131,7 +136,7 @@ class Solution {
                 index += diff;
             }
         }
-        
+
         return answer.toString();
     }
 }
@@ -146,7 +151,7 @@ public:
         if (numRows == 1) {
             return s;
         }
-        
+
         stringstream answer;
         int n = s.length();
         int diff = 2 * (numRows - 1);
@@ -161,7 +166,7 @@ public:
                 if (i != 0 && i != numRows - 1) {
                     diagonalDiff = diff-2*i;
                     secondIndex = index + diagonalDiff;
-                    
+
                     if (secondIndex < n) {
                         answer << s[secondIndex];
                     }
@@ -169,7 +174,7 @@ public:
                 index += diff;
             }
         }
-        
+
         return answer.str();
     }
 };
@@ -200,6 +205,7 @@ class Solution:
                 index += diff
         return answer
 ```
+
 ### Complexity Analysis
 
 #### Approach 1: Iterative Approach

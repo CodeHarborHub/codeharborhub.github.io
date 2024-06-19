@@ -1,5 +1,5 @@
 ---
-id: longest-substrings-without-repeating-characters
+id: 03-longest-substrings-without-repeating-characters
 title: Longest Substring Without Repeating Characters (LeetCode)
 sidebar_label: 0003 - Longest Substring Without Repeating Characters
 tags:
@@ -7,6 +7,7 @@ tags:
   - String
   - Sliding Window
 description: "This is a solution to the Longest Substring Without Repeating Characters problem on LeetCode."
+sidebar_position: 3
 ---
 
 In this page we will solve the problem [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) from LeetCode.
@@ -423,7 +424,12 @@ We will test the solution with the sample test cases provided in the problem sta
 
 ## Resources
 
+---
 
-- **LeetCode Problem:** [Longest Substring Without Repeating Characters on LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
-- **Solution Link:** [Longest Substring Without Repeating Characters Solution on LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/solutions/2467813/3-longest-substring-without-repeating-characters-solution-with-full-details)
-- **Authors LeetCode Profile:** [Ajay Dhangar](https://leetcode.com/ajaydhangar49/), [Amruta Jayanti](https://leetcode.com/u/user7669cY/)
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['ajay-dhangar'].map(username => (
+    <Author key={username} username={username} />
+))}
+</div>

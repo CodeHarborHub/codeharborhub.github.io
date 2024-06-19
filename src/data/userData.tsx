@@ -1,6 +1,8 @@
 import { User } from "./users";
 
 export const Users: User[] = [
+  // Youtube Clone
+
   {
     title: "You Tube Clone",
     description:
@@ -10,6 +12,9 @@ export const Users: User[] = [
     source: "https://github.com/Ajay-Dhangar/youtube_clone",
     tags: ["opensource", "clone", "favorite", "react"],
   },
+
+  //  Quiz App
+
   {
     title: "Quiz App",
     description:
@@ -19,6 +24,9 @@ export const Users: User[] = [
     source: "https://github.com/Ajay-Dhangar/Quiz-app",
     tags: ["opensource", "clone", "templates"],
   },
+
+  //  Music App Clone
+
   {
     title: "Music App",
     description:
@@ -28,15 +36,21 @@ export const Users: User[] = [
     source: "https://github.com/Ajay-Dhangar/music-app",
     tags: ["opensource", "clone", "templates"],
   },
+
+  // Tailwind Blog Clone
+
   {
     title: "TailwindBlog",
     description:
       "The Starter app is a feature-rich Next.js and Tailwind CSS blogging starter template.",
     preview: require("./showcase/TailwindBlog.jpg"),
-    website: "https://starter-aj-zero-coding.vercel.app/",
+    website: "#",
     source: "https://github.com/Ajay-Dhangar/starter",
-    tags: ["opensource", "clone", "templates"],
+    tags: ["opensource", "clone", "templates", "documentation"],
   },
+
+  // Restaurant Clone
+
   {
     title: "GERIGHT",
     description:
@@ -46,6 +60,9 @@ export const Users: User[] = [
     source: "https://github.com/Ajay-Dhangar/gericht-restaurant-modern-ui",
     tags: ["opensource", "templates", "clone"],
   },
+
+  // Tic Tac Toe Game
+
   {
     title: "Tic Tac Toe Game",
     description:
@@ -55,6 +72,9 @@ export const Users: User[] = [
     source: "https://github.com/Ajay-Dhangar/react-tic-tac-toe",
     tags: ["opensource", "game", "react"],
   },
+
+  // Broadcast Web Clone
+
   {
     title: "Broadcast Web",
     description:
@@ -64,6 +84,9 @@ export const Users: User[] = [
     source: "",
     tags: ["opensource", "product", "nextjs", "javascript"],
   },
+
+  //  Scientific Calculator Clone
+
   {
     title: "Scientific Calculator",
     description:
@@ -73,6 +96,9 @@ export const Users: User[] = [
     source: "https://github.com/ParnaRoyChowdhury777/Calculator---CalcuPlus",
     tags: ["opensource", "clone", "html", "css", "vanilla"],
   },
+
+  // Random Meme Generator Clone
+
   {
     title: "Random Meme Generator",
     description:
@@ -82,6 +108,9 @@ export const Users: User[] = [
     source: "https://github.com/komal-agarwal5/Giggle-Hub------Meme-Generator",
     tags: ["opensource", "product", "html", "css", "javascript"],
   },
+
+  // Age Calculator Clone
+
   {
     title: "Age Calculator",
     description:
@@ -91,6 +120,9 @@ export const Users: User[] = [
     source: "https://github.com/ParnaRoyChowdhury777/Age-Calculator",
     tags: ["opensource", "product", "react", "css", "javascript"],
   },
+
+  // To Do List App Clone
+
   {
     title: "To Do List App",
     description:
@@ -102,6 +134,9 @@ export const Users: User[] = [
       "https://github.com/dhairyagothi/50_days_50_web_project/tree/Main/public/TO_DO_LIST",
     tags: ["html", "css", "javascript"],
   },
+
+  // Currency Converter Clone
+
   {
     title: "Currency Converter",
     description:
@@ -111,6 +146,9 @@ export const Users: User[] = [
     source: "https://github.com/komal-agarwal5/CoinShift-Currency-Converter",
     tags: ["opensource", "product", "react", "css", "javascript"],
   },
+
+  // Guess The Number Game Clone
+
   {
     title: "Guess The Number Game",
     description:
@@ -120,6 +158,9 @@ export const Users: User[] = [
     source: "https://github.com/ParnaRoyChowdhury777/Guess_The_Number_Game",
     tags: ["opensource", "product", "html", "css", "javascript", "vanilla"],
   },
+
+  // QR Generator Clone
+
   {
     title: "QR Generator",
     description: "It generates a QR code based on a typed text or URL.",
@@ -127,5 +168,73 @@ export const Users: User[] = [
     website: "https://scan--me.vercel.app/",
     source: "https://github.com/ParnaRoyChowdhury777/ScanMe",
     tags: ["opensource", "product", "html", "css", "javascript", "vanilla"],
+  },
+
+  // captcha code generator
+
+  {
+    title: "Captcha-Code Generator",
+    description:
+      "It generates a Captcha code based on the user's input and validates the user's input with the generated Captcha code.",
+    preview: require("./showcase/captcha-code.png"),
+    website: "https://50-days-50-web-project.vercel.app/captcha/captcha.html",
+    source:
+      "https://github.com/dhairyagothi/50_days_50_web_project/tree/Main/public/captcha",
+    tags: ["html", "css", "javascript"],
+  },
+
+  // Algo: Algorithm Learning Platform
+
+  {
+    title: "Algo",
+    description:
+      "Algo is a modern and responsive web application for learning and practicing algorithms.",
+    preview: require("./showcase/algo.jpg"),
+    website: "https://ajay-dhangar.github.io/algo/",
+    source: "https://github.com/Ajay-Dhangar/algo",
+    tags: [
+      "opensource",
+      "react",
+      "typescript",
+      "templates",
+      "favorite",
+      "documentation",
+      "mdx",
+    ],
+  },
+
+  // CodeMasterMind: Web Development Learning Platform
+
+  {
+    title: "CodeMasterMind",
+    description:
+      "CodeMasterMind is a modern and responsive web application for learning and practicing Web Development.",
+    preview: require("./showcase/cmhq.jpg"),
+    website: "https://cmhq.tech/",
+    source: "https://github.com/Ajay-Dhangar/CodeMastermindHQ",
+    tags: ["opensource", "react", "typescript", "documentation", "mdx"],
+  },
+
+  // Personal Portfolio Website
+
+  {
+    title: "Portfolio Website",
+    description:
+      "A modern and responsive web application for showcasing my portfolio. And also with adsense integration.",
+    preview: require("./showcase/ajay-portfolio.jpg"),
+    website: "https://ajay-dhangar.github.io/",
+    source: "https://github.com/Ajay-Dhangar/ajay-dhangar.github.io",
+    tags: ["opensource", "portfolio", "react", "typescript", "mdx"],
+  },
+
+  // Gemini AI Chatbot
+
+  {
+    title: 'Gemini AI Chabot',
+    description: 'The Gemini AI Chatbot is a modern chatbot that can help you with your queries.',
+    preview: require('./showcase/gemini-ai-chatbot.png'),
+    website: 'https://code-harbor-hub-gemini-ai-chatbot.vercel.app/',
+    source: 'https://github.com/Ajay-Dhangar/gemini-ai-chatbot',
+    tags: ['opensource', 'nextjs', 'typescript', 'ai', 'favorite'],
   },
 ];
