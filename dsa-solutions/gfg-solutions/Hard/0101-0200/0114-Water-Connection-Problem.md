@@ -1,5 +1,5 @@
 ---
-id: Water Connection Problem
+id: water-connection-problem
 title: Water-Connection-Problem (Geeks for Geeks)
 sidebar_label: Water Connection Problem
 tags:
