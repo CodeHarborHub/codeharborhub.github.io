@@ -201,7 +201,8 @@ function add(x, y) {
 }
 console.log(add()); // outputs NaN 
 console.log(add(1, 2)); // outputs 3
-let’s see how we handle this issue in ES5 and ES6.
+
+// let’s see how we handle this issue in ES5 and ES6.
 
 // In ES5
 function add(x, y) {
@@ -252,6 +253,7 @@ let func = function(...args) {
 
 func(3); // [3]
 func(4, 5, 6); // [4, 5, 6]
+
 // In ES6 - rest operator example 2
 function func(a, b, ...nums) {
   console.log( a + ' ' + b ); // 1 2
@@ -329,10 +331,11 @@ Promise.all([promise1, promise2, promise3])
     console.error(error);
   });
 
+```
 
 - promise.race() — Similar to Promise.all(), but it settles as soon as any of the promises in the array settles, either fulfilled or rejected.
 
-
+```
 const promise1 = Promise.resolve('Fast');
 const promise2 = new Promise((resolve, reject) => {
   setTimeout(() => resolve('Slow'), 2000);
@@ -419,8 +422,11 @@ const cat = new Animal('Cat', 'Meow');
 // Using class methods
 dog.makeSound(); // Outputs: Dog says Woof
 cat.makeSound(); // Outputs: Cat says Meow
+```
+
 Classes support inheritance through the extends keyword. This allows a new class to inherit the properties and methods of an existing class.
 
+```
 class Cat extends Animal {
   constructor(name, sound, color) {
     super(name, sound); // Calls the constructor of the parent class
@@ -446,12 +452,19 @@ kitty.purr();      // Outputs: Kitty purrs softly.
 // creating symbol
 const mySymbol = Symbol();
 console.log(typeof mySymbol); // Outputs: symbol
+```
+
 Symbols are guaranteed to be unique, even if they have the same description. The description is a human-readable string that can be used for debugging but does not affect the uniqueness of the symbol.
+
+```
 const symbol1 = Symbol('apple');
 const symbol2 = Symbol('apple');
 
 console.log(symbol1 === symbol2); // Outputs: false
-Symbols are often used to create non-enumerable properties on objects, helping prevent unintentional name collisions.
+
+// Symbols are often used to create non-enumerable properties on objects,
+// helping prevent unintentional name collisions.
+
 const myObject = {
   [Symbol('key')]: 'value',
 };
