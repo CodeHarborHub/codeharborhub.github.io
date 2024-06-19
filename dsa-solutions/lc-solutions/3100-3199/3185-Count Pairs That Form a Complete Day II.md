@@ -42,9 +42,9 @@ class Solution:
 
 ## Time Complexity:
 
-$O(n * k)$, where hour is the number of reward values and k is the maximum possible reward value. Sorting the reward values takes O(n log n) time, and each bit manipulation operation is efficient.
+$O(n \times k)$, where hour is the number of reward values and k is the maximum possible reward value. Sorting the reward values takes O(n log n) time, and each bit manipulation operation is efficient.
 
 ## Space Complexity:
 
-$O(k)$
+$O(n log n)$
 Reason: hours % 24 will have at most 24 different values, so the size of the rc array is constant.
