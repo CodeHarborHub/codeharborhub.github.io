@@ -106,7 +106,7 @@ class Solution {
   }
 }
 ```
-
+</TabItem>
 </Tabs>
 
 ## Complexity Analysis
