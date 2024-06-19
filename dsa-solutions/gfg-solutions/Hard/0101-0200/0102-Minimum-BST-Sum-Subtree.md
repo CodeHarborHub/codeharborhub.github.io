@@ -1,5 +1,5 @@
 ---
-id: Minimum BST Sum Subtree
+id: minimum-bst-sum-subtree
 title: Minimum-BST-Sum-Subtree (Geeks for Geeks)
 sidebar_label: Minimum BST Sum Subtree
 tags:
