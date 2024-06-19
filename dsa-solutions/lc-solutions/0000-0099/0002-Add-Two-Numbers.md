@@ -1,5 +1,5 @@
 ---
-id: add-two-numbers
+id: 02-add-two-numbers
 title: Add Two Numbers Solution
 sidebar_label: 0002 - Add Two Numbers
 tags:
@@ -362,8 +362,12 @@ Output: [8,9,9,9,0,0,0,1]
 
 :::
 
-## Resources
+---
 
-- **LeetCode Problem:** [Add Two Numbers Problem](https://leetcode.com/problems/add-two-numbers/)
-- **Solution Link:** [Add Two Numbers Solution on LeetCode](https://leetcode.com/problems/add-two-numbers/solutions/3368572/easy-and-understanding-solution-with-intuition-approach-complexity-and-codes)
-- **Authors LeetCode Profile:** [Ajay Dhangar](https://leetcode.com/ajaydhangar49/), [Amruta Jayanti](https://leetcode.com/u/user7669cY/)
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['ajay-dhangar'].map(username => (
+    <Author key={username} username={username} />
+))}
+</div>

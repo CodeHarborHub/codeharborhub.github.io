@@ -4,7 +4,7 @@ title: Introduction to Data Structures and Algorithms
 sidebar_label: Introduction to DSA
 sidebar_position: 1
 tags: [data-structures, algorithms, introduction, basics, dsa]
-description: 'An introduction to Data Structures and Algorithms (DSA) and why they are important in computer science.'
+description: "An introduction to Data Structures and Algorithms (DSA) and why they are important in computer science."
 ---
 
 <head>
@@ -18,6 +18,7 @@ description: 'An introduction to Data Structures and Algorithms (DSA) and why th
     <meta property="og:type" content="article" />
 
     <meta name="twitter:card" content="summary_large_image" />
+
 <meta name="twitter:title" content="Introduction to Data Structures and Algorithms" />
 <meta name="twitter:description" content="Explore the fundamentals of data structures and algorithms, their types, and practical applications. Perfect for beginners in computer science." />
 <meta name="twitter:image" content="https://codeharborhub.github.io/dsa/assets/images/introduction-to-data-structures-and-algorithms.png" />
@@ -104,6 +105,8 @@ Data structures and algorithms are essential topics in computer science. They pr
 
 <h2>Authors:</h2>
 
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
 {['ajay-dhangar'].map(username => (
     <Author key={username} username={username} />
 ))}
+</div>

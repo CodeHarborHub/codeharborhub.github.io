@@ -124,6 +124,8 @@ Time complexity is an essential concept in computer science that is used to anal
 
 <h2>Authors:</h2>
 
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
 {['ajay-dhangar'].map(username => (
     <Author key={username} username={username} />
 ))}
+</div>

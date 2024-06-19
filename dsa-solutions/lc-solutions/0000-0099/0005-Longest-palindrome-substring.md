@@ -206,6 +206,12 @@ def longestPalindrome(s: str) -> str:
 
 We discussed four approaches to solve the "Longest Palindromic Substring" problem, each with varying complexities and trade-offs. The dynamic programming and center expansion approaches provide a good balance of simplicity and efficiency for practical use cases, while Manacher's algorithm offers the optimal theoretical performance.
 
-```
+---
 
-```
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['Yashgabani845', 'ajay-dhangar'].map(username => (
+    <Author key={username} username={username} />
+))}
+</div>
