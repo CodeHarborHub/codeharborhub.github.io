@@ -20,7 +20,7 @@ hide_table_of_contents: true
 - In ECMAScript 2015 (ES6), the let and const keywords were introduced to declare variables, offering improvements over the traditional var keyword.
 - Scope: Variables declared with ‘let’ and ‘const’ have block-level scope, meaning they are limited to the block, statement, or expression where ‘var’ has global level scope.
 
-```
+```js
 if (true) {
   let x = 10;
   const y = 20;
@@ -38,7 +38,7 @@ console.log(z); // Outputs: 30
 
 - Hoisting: Unlike variables declared with var, variables declared with let and const are not hoisted to the top of their scope. They remain in the temporal dead zone until the point of declaration.
 
-```
+```js
 console.log(a); // outputs: 20
 var a = 20;
 
@@ -51,7 +51,7 @@ const c = 20;
 
 - Reassignment: Variables declared with let can be reassigned, allowing for flexibility in updating values where, variables declared with const are constant and cannot be reassigned once a value is assigned.
 
-```
+```js
 let p = 30;
 p = 40; // Valid
 
@@ -61,7 +61,7 @@ pi = 3.145; // Error: Assignment to constant variable
 
 - However, this does not make objects or arrays declared with const immutable; it means the reference to the object or array cannot be changed.
 
-```
+```js
 const colors = ['red', 'green', 'blue'];
 colors.push('yellow'); // Valid
 colors = ['purple'];   // Error: Assignment to constant variable
@@ -69,7 +69,7 @@ colors = ['purple'];   // Error: Assignment to constant variable
 
 - Declaration: Variables declared with const must be assigned a value at the time of declaration.
 
-```
+```js
 var x; // valid
 let y; // valid
 const z; // Error: Missing initializer in const declaration
@@ -79,7 +79,7 @@ const z; // Error: Missing initializer in const declaration
 
 - Arrow functions, introduced in ECMAScript 2015 (ES6), provide a concise and more readable syntax for writing functions in JavaScript.
 
-```
+```js
 // In ES5
 var add = function(x, y) {
   return x + y;
@@ -101,7 +101,7 @@ const add = (x, y) => x + y;
 - Template literals, introduced in ECMAScript 2015 (ES6), provide a more flexible and concise way to create strings in JavaScript. They use backticks (`) instead of single or double quotes and allow for embedded expressions and multiline strings.
 - Embedded expressions: Template literals support the embedding of expressions, including variables, functions, and operations, directly within the string.
 
-```
+```js
 // In ES5
 var a = 5;
 var b = 10;
@@ -115,7 +115,7 @@ const result = `The sum of ${a} and ${b} is ${a + b}.`;
 
 - Multiline strings: One of the significant advantages of template literals is their ability to create multiline strings without the need for explicit line breaks or concatenation.
 
-```
+```js
 // In ES5
 var multilineString = 'This is a long string\n' +
                       'that spans multiple lines\n' +
@@ -133,7 +133,7 @@ using template literals.`;
 - It simplifies the process of working with complex data structures.
 - Array destructuring
 
-```
+```js
 // In ES5
 var numbers = [1, 2, 3];
 var a = numbers[0];
@@ -147,7 +147,7 @@ console.log(a, b, c); // Outputs: 1 2 3
 
 - Object destructuring - Alias assignment, Nested destructuring
 
-```
+```js
 // In ES5
 var person = { name: 'John', marks: 85 };
 var name = person.name;
@@ -179,7 +179,7 @@ console.log(name, age, city, country); // Outputs: John 30 New York USA
 
 - Function Parameter Destructuring
 
-```
+```js
 // ES6
 function printPerson({ firstName, lastName }) {
   console.log(`${firstName} ${lastName}`);
@@ -193,7 +193,7 @@ printPerson(person); // Outputs: John Doe
 
 - Default parameters, introduced in ECMAScript 2015 (ES6), allow you to assign default values to function parameters in case the arguments are not provided or are explicitly set to undefined.
 
-```
+```js
 // without default values
 
 function add(x, y) {
@@ -225,7 +225,7 @@ console.log(add(1, 2));   // Outputs: 3
 - The rest and spread operators are two powerful features introduced in ECMAScript 2015 (ES6) that enhance the way we work with arrays and function parameters. Despite having similar syntax (the ellipsis …), they serve different purposes.
 - As the name suggests, the spread operator “spreads” the values in an array or a string across one or more arguments. In cases where we require all the elements of an iterable or object to help us achieve a task, we use a spread operator.
 
-```
+```js
 // In ES6 - spread operator example 1 with array
 
 const greeting = ['Welcome', 'back', 'John!'];
@@ -245,7 +245,7 @@ console.log(obj2); // {a: 1, b: 2, c: 3}
 
 - The rest operator is converse to the spread operator. while the spread operator expands elements of an iterable, the rest operator collects several elements compress them into an array. In functions when we require to pass arguments but were not sure how many we have to pass, the rest parameter makes it easier.
 
-```
+```js
 // In ES6 - rest operator example 1
 let func = function(...args) {
     console.log(args);
@@ -278,7 +278,7 @@ They are especially useful for dealing with asynchronous operations like network
 - Rejected: The operation failed, and the promise has a reason for the failure.
 - Handling promises — To handle the result of a Promise, you can use the .then() method for success and .catch() method for failure. These methods are called on the Promise instance.
 
-```
+```js
 // creating a promise
 const fetchData = () => {
   return new Promise((resolve, reject) => {
@@ -316,7 +316,7 @@ fetchData()
 
 - promise.all() — A utility method that takes an array of Promises and returns a new Promise that is fulfilled with an array of the fulfilled values when all the promises in the array are fulfilled. If any promise in the array is rejected, the resulting Promise is rejected with the reason of the first rejected promise.
 
-```
+```js
 const promise1 = Promise.resolve('One');
 const promise2 = Promise.resolve('Two');
 const promise3 = new Promise((resolve, reject) => {
@@ -335,7 +335,7 @@ Promise.all([promise1, promise2, promise3])
 
 - promise.race() — Similar to Promise.all(), but it settles as soon as any of the promises in the array settles, either fulfilled or rejected.
 
-```
+```js
 const promise1 = Promise.resolve('Fast');
 const promise2 = new Promise((resolve, reject) => {
   setTimeout(() => resolve('Slow'), 2000);
@@ -357,7 +357,7 @@ Promise.race([promise1, promise2])
 - export statement is used to specify what values are accessible from a module, and the import statement is used to bring those values into another module.
 - Individual export
 
-```
+```js
 // student.js
 export const name = "Mary";
 export const age = 17;
@@ -381,7 +381,7 @@ console.log(name, age); // outputs: Mary 17
 
 - default export — A module can have a default export, which is the main export of the module. It is often used when a module represents a single value or function.
 
-```
+```js
 // myModule.js
 
 // Default exporting a function
@@ -401,7 +401,7 @@ myDefaultFunction(); // Outputs: Default function executed!
 - Classes in ECMAScript 2015 (ES6) introduced a more convenient and syntactic way to create constructor functions and work with prototype-based inheritance. JavaScript, being a prototype-based language, lacked a formal class structure prior to ES6.
 - Classes provide a cleaner and more familiar syntax for creating objects and organizing code in an object-oriented manner.
 
-```
+```js
 class Animal {
   // Constructor method for initializing instances
   constructor(name, sound) {
@@ -426,7 +426,7 @@ cat.makeSound(); // Outputs: Cat says Meow
 
 Classes support inheritance through the extends keyword. This allows a new class to inherit the properties and methods of an existing class.
 
-```
+```js
 class Cat extends Animal {
   constructor(name, sound, color) {
     super(name, sound); // Calls the constructor of the parent class
@@ -448,7 +448,7 @@ kitty.purr();      // Outputs: Kitty purrs softly.
 - Symbols are a primitive data type introduced in ECMAScript 2015 (ES6) to provide a way to create unique identifiers.
 - Unlike strings or numbers, symbols are guaranteed to be unique, which makes them useful for scenarios where you need to create property keys that won’t clash with other properties.
 
-```
+```js
 // creating symbol
 const mySymbol = Symbol();
 console.log(typeof mySymbol); // Outputs: symbol
@@ -456,7 +456,7 @@ console.log(typeof mySymbol); // Outputs: symbol
 
 Symbols are guaranteed to be unique, even if they have the same description. The description is a human-readable string that can be used for debugging but does not affect the uniqueness of the symbol.
 
-```
+```js
 const symbol1 = Symbol('apple');
 const symbol2 = Symbol('apple');
 
