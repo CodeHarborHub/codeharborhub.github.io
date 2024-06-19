@@ -93,9 +93,9 @@ public int[] twoSum(int[] nums, int target) {
 
 ### Complexity Analysis
 
-- **Time complexity**: O(N)
+- **Time complexity**: $O(N)$
     * The while loop runs in linear time as each iteration moves one of the pointers closer to the middle of the array.
-- **Space complexity**: O(1)
+- **Space complexity**: $O(1)$
     * No extra space is used, making the space complexity constant.
 
 ### Conclusion
