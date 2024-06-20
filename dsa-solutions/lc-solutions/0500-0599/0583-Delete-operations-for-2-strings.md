@@ -1,5 +1,5 @@
 ---
-id: delete operations for 2 strings
+id: delete-operations-for-2-strings
 title: delete operations for 2 strings
 sidebar_label: 583-delete operations for 2 strings
 tags:
