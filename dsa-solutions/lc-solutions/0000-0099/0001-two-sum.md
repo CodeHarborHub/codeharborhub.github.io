@@ -1,5 +1,5 @@
 ---
-id: two-sum
+id: 01-two-sum
 title: Two Sum Solution
 sidebar_label: 0001 - Two Sum
 tags:
@@ -577,8 +577,14 @@ The hash table approach is the most efficient and is recommended for large input
 
 :::
 
-## References
 
-- **LeetCode Problem:** [LeetCode Problem](https://leetcode.com/problems/two-sum/)
-- **Solution Link:** [Two Sum Solution on LeetCode](https://leetcode.com/problems/two-sum/solutions/4958021/two-sum-problem-solution-using-hash-table-ts-js-java-py-cpp-recommended-solutions)
-- **Authors LeetCode Profile:** [Ajay Dhangar](https://leetcode.com/ajaydhangar49/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['ajay-dhangar'].map(username => (
+    <Author key={username} username={username} />
+))}
+</div>

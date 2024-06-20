@@ -152,7 +152,7 @@ mark {
 }
 
 .footer .container {
-  justify-content: space-around
+  justify-content: space-around;
 }
 
 .footer_info--container {
@@ -327,8 +327,6 @@ table, tr, td, th {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-/* ================================= */
 
 .dropbtn {
   background-color: transparent;
