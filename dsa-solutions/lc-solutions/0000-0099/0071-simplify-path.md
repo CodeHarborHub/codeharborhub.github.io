@@ -1,7 +1,7 @@
 ---
 id: simplify-path
 title: Simplify Path
-sidebar_label: 0071. Simplify Path
+sidebar_label: 0071 - Simplify Path
 
 tags:
 - stack
