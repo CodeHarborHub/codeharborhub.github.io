@@ -1,142 +1,182 @@
 ---
 id: score-of-a-string
 title: Score of a string
-sidebar_label: 3110-score-of-a-string
-tags:
-  - Java
-  - Greedy
-  - String
-description: "This document provides a solution of score-of-a-string"
+sidebar_label: 3110 - Score of a string 
+
+
+description: "This is a solution to the Two Score of a string on LeetCode."
 ---
 
-## Problem statement:
+In this page, we will solve the LeetCode Problem 3110, titled `Score of a String`, using three different approaches: brute force, sliding window, and optimized iteration technique. We will provide the implementation of the solution in JavaScript, TypeScript, Python, Java, C++, and more.
 
-You are given a string s. The score of a string is defined as the sum of the absolute difference between the ASCII values of adjacent characters.
+## Problem Description
 
-Return the score of s.
+You are given a string `s`. The **score** of a string is defined as the sum of the absolute difference between the **ASCII** values of adjacent characters.
+
+### Examples
 
 **Example 1:**
 
+```plaintext
 Input: s = "hello"
 Output: 13
-
-Explanation:
-The ASCII values of the characters in s are: 'h' = 104, 'e' = 101, 'l' = 108, 'o' = 111. So, the score of s would be `|104 - 101| + |101 - 108| + |108 - 108| + |108 - 111|` = `3 + 7 + 0 + 3 = 13`.
+```
 
 **Example 2:**
 
-Input: s = "zaz"
+```plaintext
+Input: "zaz"
 Output: 50
+```
 
-Explanation:
-The ASCII values of the characters in s are: 'z' = 122, 'a' = 97. So, the score of s would be `|122 - 97| + |97 - 122|` = `25 + 25` = `50`.
 
-**Constraints:**
+### Constraints
 
-    `2 <= s.length <= 100`
-    `s consists only of lowercase English letters.`
+- `2 <= s.length <= 100`
+- `s` consists only of lowercase English letters.
 
-## Solutions:
 
-### Intuition
+---
 
-**Understanding the Absolute Difference:**
-The absolute difference between two characters gives a measure of how far apart they are in terms of their ASCII values.
+## Solution for Two Sum Problem
 
-**Pairwise Comparison:**
-For each consecutive pair of characters in the string, calculate the absolute difference of their ASCII values and sum these differences.
+### Intuition and Approach
 
-### Approach
 
-    1. Initialize:
-
-        - Get the length of the string n.
-        - Initialize a result variable res to 0 which will store the cumulative score.
-        - Iterate Through the String:
-
-    2. Iterate Through the String:
-
-        - Loop through the string from the first character to the second last character.
-        - For each character, calculate the absolute difference between it and the next character.
-        - Add this difference to the result variable res.
-
-    3.  Return the Result:
-
-        - After the loop ends, res will contain the total score of the string, which we return.
-
-## code:
+To solve the problem, `Score of a String`, we can use a straightforward approach where you iterate through the string and calculate the absolute difference between the ASCII values of adjacent characters, then sum these differences. This approach is efficient and straightforward. Below is a step-by-step approach:
 
 <Tabs>
-    <TabItem value="cpp" label="C++" default>
-      <SolutionAuthor name="@Ajay-Dhangar"/>
-      ```cpp
-      #include <string>
-      #include <cmath>
-      using namespace std;
+ <tabItem value="Brute Force" label="Brute Force">
+  
+### Approach 1: Brute Force (Naive)
 
-      class Solution {
-      public:
-          int scoreOfString(string s) {
-              int score = 0;
-              for (int i = 0; i < s.length() - 1; i++) {
-                  score += abs(s[i] - s[i + 1]);
-              }
-              return score;
-          }
-      };
-      ```
-    </TabItem>
-    <TabItem value="java" label="Java">
-      <SolutionAuthor name="@Ajay-Dhangar"/>
-      ```java
-      public class Solution {
-          public int scoreOfString(String s) {
-              int score = 0;
-              for (int i = 0; i < s.length() - 1; i++) {
-                  score += Math.abs(s.charAt(i) - s.charAt(i + 1));
-              }
-              return score;
-          }
-      }
-      ```
-    </TabItem>
-    <TabItem value="python" label="Python">
-      <SolutionAuthor name="@Ajay-Dhangar"/>
-      ```python
-      class Solution:
-          def scoreOfString(self, s: str) -> int:
-              score = 0
-              for i in range(len(s) - 1):
-                  score += abs(ord(s[i]) - ord(s[i + 1]))
-              return score
-      ```
-    </TabItem>
-    <TabItem value="c" label="C">
-      <SolutionAuthor name="@Ajay-Dhangar"/>
-      ```c
-      #include <stdio.h>
-      #include <stdlib.h>
-      #include <string.h>
+The brute force approach for the `Score of a String` problem is straightforward. We iterate through each character `s[i]` of the string s and compute the absolute difference with the next character `s[i + 1]`. We then sum these differences to get the total score of the string.
 
-      int scoreOfString(char* s) {
-          int score = 0;
-          for (int i = 0; i < strlen(s) - 1; i++) {
-              score += abs(s[i] - s[i + 1]);
-          }
-          return score;
-      }
+#### Implementation
 
-      int main() {
-          char s[] = "example";
-          printf("Score: %d\n", scoreOfString(s));
-          return 0;
-      }
-      ```
-    </TabItem>
+```jsx live
+function scoreOfStringProblem() {
+  const s = "hello"; // Example input string
+  const scoreOfString = function (s) {
+    let score = 0;
+    for (let i = 0; i < s.length - 1; i++) {
+      score += Math.abs(s.charCodeAt(i) - s.charCodeAt(i + 1));
+    }
+    return score;
+  };
+
+  const result = scoreOfString(s);
+  return (
+    <div>
+      <p>
+        <b>Input:</b> s = "{s}"
+      </p>
+      <p>
+        <b>Output:</b> {result}
+      </p>
+    </div>
+  );
+}
+
+```
+
+#### Codes in Different Languages
+
+<Tabs>
+  <TabItem value="JavaScript" label="JavaScript" default>
+  <SolutionAuthor name="@ajay-dhangar"/>
+   ```javascript
+   function scoreOfString(s) {
+    let score = 0;
+    for (let i = 0; i < s.length - 1; i++) {
+        score += Math.abs(s.charCodeAt(i) - s.charCodeAt(i + 1));
+    }
+    return score;
+}
+    ```
+
+  </TabItem>
+  <TabItem value="TypeScript" label="TypeScript">
+  <SolutionAuthor name="@ajay-dhangar"/> 
+   ```typescript
+    function scoreOfString(s: string): number {
+    let score = 0;
+    for (let i = 0; i < s.length - 1; i++) {
+        score += Math.abs(s.charCodeAt(i) - s.charCodeAt(i + 1));
+    }
+    return score;
+}
+    ```
+
+  </TabItem>
+  <TabItem value="Python" label="Python"> 
+  <SolutionAuthor name="@ajay-dhangar"/>
+   ```python
+    class Solution:
+     def score_of_string(s):
+    score = 0
+    for i in range(len(s) - 1):
+        score += abs(ord(s[i]) - ord(s[i + 1]))
+    return score
+    ```
+
+  </TabItem>
+  <TabItem value="Java" label="Java">
+  <SolutionAuthor name="@ajay-dhangar"/>
+   ```java
+    class Solution {
+           public int scoreOfString(String s) {
+        int score = 0;
+        for (int i = 0; i < s.length() - 1; i++) {
+            score += Math.abs(s.charAt(i) - s.charAt(i + 1));
+        }
+        return score;
+    }
+        
+    }
+    ```
+
+  </TabItem>
+  <TabItem value="C++" label="C++">
+  <SolutionAuthor name="@ajay-dhangar"/>
+   ```cpp
+    class Solution {
+    public:
+       int scoreOfString(const std::string& s) {
+    int score = 0;
+    for (size_t i = 0; i < s.length() - 1; ++i) {
+        score += std::abs(s[i] - s[i + 1]);
+    }
+    return score;
+}
+    };
+    ```
+
+  </TabItem>  
+</Tabs>
+
+#### Complexity Analysis
+
+- Time Complexity: O(n)
+- Space Complexity : O(n)
+- Where `n` is the length of the input string `s`. 
+- The time complexity is 𝑂(𝑛) because we are iterating through the string once.
+- The space complexity is 𝑂(1) because we are not using any extra space beyond a few variables.
+- This approach is efficient and can handle large input strings effectively.
+
+
+</tabItem>
+
 
 </Tabs>
 
-## Complexity
+:::tip Note
 
-Time complexity: $O(n)$
-Space complexity: $O(1)$
+
+To efficiently calculate the score of a string based on the absolute differences between adjacent characters, you can iterate through the string once and accumulate the differences. This approach ensures that you compute the score in linear time, O(n), where n is the length of the string. Avoiding nested loops or unnecessary computations will lead to a more efficient solution.
+
+:::
+
+## References
+
+- **LeetCode Problem:** [LeetCode Problem](https://leetcode.com/problems/score-of-a-string/)
