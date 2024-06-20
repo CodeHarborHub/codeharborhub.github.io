@@ -1,5 +1,5 @@
 ---
-id: Unique Path
+id: unique-path
 title: Unique Path
 sidebar_label: 62-Unique Path
 tags:
