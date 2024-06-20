@@ -10,26 +10,12 @@ tags:
   - DSA
 description: "This is a solution to the Minimum BST Sum Subtree problem on Geeks for Geeks."
 ---
-<<<<<<< HEAD
 ## Problem Description
 Every house in the colony has at most one pipe going into it and at most one pipe going out of it. Tanks and taps are to be installed in a manner such that every house with one outgoing pipe but no incoming pipe gets a tank installed on its roof and every house with only an incoming pipe and no outgoing pipe gets a tap.
 Given two integers n and p denoting the number of houses and the number of pipes. The connections of pipe among the houses contain three input values: a_i, b_i, d_i denoting the pipe of diameter d_i from house a_i to house b_i, find out the efficient solution for the network. 
 The output will contain the number of pairs of tanks and taps t installed in first line and the next t lines contain three integers: house number of tank, house number of tap and the minimum diameter of pipe between them.
-## Examples
-=======
-
-## Problem Description
-
-Every house in the colony has at most one pipe going into it and at most one pipe going out of it. Tanks and taps are to be installed in a manner such that every house with one outgoing pipe but no incoming pipe gets a tank installed on its roof and every house with only an incoming pipe and no outgoing pipe gets a tap.
-
-Given two integers n and p denoting the number of houses and the number of pipes. The connections of pipe among the houses contain three input values: a_i, b_i, d_i denoting the pipe of diameter d_i from house a_i to house b_i, find out the efficient solution for the network. 
-
-The output will contain the number of pairs of tanks and taps t installed in first line and the next t lines contain three integers: house number of tank, house number of tap and the minimum diameter of pipe between them.
-
 
 ## Examples
-
->>>>>>> be552636600f8ca416cff34be3ce4136c9281786
 **Example 1:**
 **Input:** 
 ```
@@ -42,10 +28,6 @@ The output will contain the number of pairs of tanks and taps t installed in fir
     1
 ```
 **Output:** 1
-<<<<<<< HEAD
-=======
-
->>>>>>> be552636600f8ca416cff34be3ce4136c9281786
 **Example 2:**
 **Input:** 
 ```
@@ -56,16 +38,13 @@ The output will contain the number of pairs of tanks and taps t installed in fir
                  11
 ```
 **Output:** 9
-<<<<<<< HEAD
 ## Your Task
 The task is to complete the function minValue() which takes root as the argument and returns the minimum element of BST. If the tree is empty, there is no minimum element, so return -1 in that case.
 Expected Time Complexity: $O(Height of the BST)$
 Expected Auxiliary Space: $O(1)$.
 ## Constraints
 - `0 <= n <= 10^4`
-## Problem Explanation
-The "Smallest Subtree with all the Deepest Nodes" is a problem where given a binary tree, you need to find the smallest subtree that contains all the deepest nodes. Let's break down the problem step-by-step:
-=======
+
 
 ## Your Task
 The task is to complete the function minValue() which takes root as the argument and returns the minimum element of BST. If the tree is empty, there is no minimum element, so return -1 in that case.
@@ -81,22 +60,14 @@ Expected Auxiliary Space: $O(1)$.
 
 The "Smallest Subtree with all the Deepest Nodes" is a problem where given a binary tree, you need to find the smallest subtree that contains all the deepest nodes. Let's break down the problem step-by-step:
 
->>>>>>> be552636600f8ca416cff34be3ce4136c9281786
 **Problem Statement**
 You are given a binary tree.
 Your task is to find the smallest subtree that contains all the deepest nodes in the original tree.
 **Key Points**
 Deepest Nodes: Nodes that are at the maximum depth from the root of the tree.
 Smallest Subtree: Among all subtrees containing these deepest nodes, the one with the smallest number of nodes.
-<<<<<<< HEAD
-### Code Implementation
-=======
-
-
 
 ### Code Implementation
-
->>>>>>> be552636600f8ca416cff34be3ce4136c9281786
 <Tabs>
   <TabItem value="Python" label="Python" default>
   <SolutionAuthor name="@ngmuraqrdd"/>
@@ -122,10 +93,6 @@ class Solution:
         return self.lca(root, p, q)
   ```
   </TabItem>
-<<<<<<< HEAD
-=======
-
->>>>>>> be552636600f8ca416cff34be3ce4136c9281786
   <TabItem value="C++" label="C++" default>
   <SolutionAuthor name="@ngmuraqrdd"/>
   ```cpp
@@ -138,10 +105,6 @@ public:
         queue<pair<TreeNode*,TreeNode*>> q;
         q.push({root,NULL});
         q.push({NULL,NULL});
-<<<<<<< HEAD
-=======
-
->>>>>>> be552636600f8ca416cff34be3ce4136c9281786
         hash[root] = NULL;
         while (!q.empty())
         {
@@ -150,10 +113,6 @@ public:
             {
                 level.push_back(temp);
                 temp.clear();
-<<<<<<< HEAD
-=======
-
->>>>>>> be552636600f8ca416cff34be3ce4136c9281786
                 if (q.size()>0)
                 {
                     q.push({NULL,NULL});
@@ -167,20 +126,12 @@ public:
                 {
                     q.push({node->left,node});
                 }
-<<<<<<< HEAD
-=======
-
->>>>>>> be552636600f8ca416cff34be3ce4136c9281786
                 if (node->right)
                 {
                     q.push({node->right,node});
                 }
             }
         }
-<<<<<<< HEAD
-=======
-
->>>>>>> be552636600f8ca416cff34be3ce4136c9281786
         temp = level.back();
         queue<TreeNode*> qe;
         unordered_map<TreeNode*,int> vis;
@@ -189,10 +140,6 @@ public:
             vis[leaves] = 1;
             qe.push(leaves);
         }
-<<<<<<< HEAD
-=======
-
->>>>>>> be552636600f8ca416cff34be3ce4136c9281786
         while (!qe.empty())
         {
             int sz = qe.size();
@@ -200,17 +147,13 @@ public:
             {
                 return qe.front();
             }
-<<<<<<< HEAD
-            while (sz--)
-            {
-                auto node = qe.front();qe.pop();
-=======
-
             while (sz--)
             {
                 auto node = qe.front();qe.pop();
 
->>>>>>> be552636600f8ca416cff34be3ce4136c9281786
+            while (sz--)
+            {
+                auto node = qe.front();qe.pop();
                 auto parent = hash[node];
                 if (vis.find(parent) == vis.end())
                 {
@@ -219,20 +162,14 @@ public:
                 }
             }
         }
-<<<<<<< HEAD
-=======
-
->>>>>>> be552636600f8ca416cff34be3ce4136c9281786
         return NULL;
     }
 };
   ```
   </TabItem>
 </Tabs>
-<<<<<<< HEAD
-=======
 
->>>>>>> be552636600f8ca416cff34be3ce4136c9281786
+
 ## Solution Logic
 **DFS to Collect Nodes by Depth:**
 - You initialize an empty list a to store nodes at each depth.
@@ -240,10 +177,6 @@ public:
 - For each node, if the current depth h matches the length of a, it means you have reached a new depth level, so you append an empty list to a.
 - The node is then added to the appropriate sublist corresponding to its depth.
 - The function is recursively called for left and right children, incrementing the depth by 1 for each recursive call.
-<<<<<<< HEAD
-=======
-
->>>>>>> be552636600f8ca416cff34be3ce4136c9281786
 **Finding the LCA:**
 - After collecting all nodes, p and q are set to the first and last nodes in the deepest level sublist (a[-1]).
 - The lca function is a recursive function that finds the lowest common ancestor of p and q.
@@ -251,7 +184,6 @@ public:
 - Otherwise, it recursively calls lca on the left and right children.
 - If both recursive calls return non-None values, it means p and q are found in different subtrees, and thus the current node root is their LCA.
 - If only one side returns a non-None value, it means both p and q are in the same subtree, so the LCA is in that subtree.
-<<<<<<< HEAD
 ## Time Complexity
 $O(Height of the BST)$
 ## Space Complexity
@@ -261,8 +193,6 @@ Expected Auxiliary Space: $O(1)$.
 - **LeetCode Problem:** [LeetCode Problem](https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/)
 - **Author's Geeks for Geeks Profile:**  | [DaminiChachane](https://leetcode.com/u/divcxl15/) |
 This format ensures that all necessary details about the problem and its solution are clearly presented and easy to follow.
-Footer
-=======
 
 ## Time Complexity
 $O(Height of the BST)$
@@ -278,4 +208,4 @@ Expected Auxiliary Space: $O(1)$.
 - **Author's Geeks for Geeks Profile:**  | [DaminiChachane](https://leetcode.com/u/divcxl15/) |
 
 This format ensures that all necessary details about the problem and its solution are clearly presented and easy to follow.
->>>>>>> be552636600f8ca416cff34be3ce4136c9281786
+
