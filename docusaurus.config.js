@@ -362,22 +362,22 @@ const config = {
               {
                 label: "LinkedIn",
                 href: "https://www.linkedin.com/company/codeharborhub/",
-                icon: <FontAwesomeIcon icon={faLinkedin} />,
+                icon: 'faLinkedin',
               },
               {
                 label: "YouTube",
                 href: "https://www.youtube.com/",
-                icon: <FontAwesomeIcon icon={faYoutube} />,
+                icon: 'faYoutube',
               },
               {
                 label: "Discord",
                 href: "https://discord.gg/c53FQn3pRv",
-                icon: <FontAwesomeIcon icon={faDiscord} />,
+                icon: 'faDiscord',
               },
               {
                 label: "Twitter(X)",
                 href: "https://twitter.com/CodesWithAjay",
-                // If you add an icon for Twitter, import it similar to LinkedIn, YouTube, and Discord
+                icon: 'faTwitter',
               },
             ],
           },
