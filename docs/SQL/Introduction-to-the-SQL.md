@@ -23,7 +23,7 @@ Aggregation: Perform calculations on grouped data using functions like SUM, AVG,
 Transactions: Ensure data consistency and integrity by grouping operations into atomic units.
 Stored Procedures and Functions: Store and execute reusable procedural logic directly in the database.
 
-#### SQL Commands
+## SQL Commands
 1.**Extract and Transform Data**
  **SELECT**: Extracts data from a database
  Syntax: SELECT column1, column2, ...FROM table_name;
