@@ -1,5 +1,5 @@
 ---
-id: Generic Classes
+id: generic-classes
 title: Generic Classes
 sidebar_label: Generic Classes
 sidebar_position: 2
@@ -13,7 +13,7 @@ description: In this tutorial, we will explore how to create and use generic cla
 
 - These placeholders can then be replaced with actual types when creating instances of the class. This provides flexibility and type safety.
 
-- To define a generic class, you use angle brackets < > to declare type parameters. These parameters can be used throughout the class definition.
+- To define a generic class, you use angle brackets `<>` to declare type parameters. These parameters can be used throughout the class definition.
 
 ```java
 // T is the placeholder representing the type of the item stored in the Box.
