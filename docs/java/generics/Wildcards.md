@@ -15,7 +15,7 @@ description: In this tutorial, we will explore about how wildcards used in gener
 
 - There are two main types of wildcard bounds:
 
-## Upper Bounded Wildcards (<? extends T>):
+## Upper Bounded Wildcards (`<? extends T>`):
 
 - These wildcards restrict the unknown type to be a specific type or a subtype of that type. 
 
@@ -44,9 +44,9 @@ class UpperBoundExample {
 
 ```
 
-- In the sum method, the parameter List<? extends Number> accepts a list of any type that extends Number. So, both List<Integer> and List<Double> can be passed to this method.
+- In the sum method, the parameter `List<? extends Number>` accepts a list of any type that extends Number. So, both `List<Integer>` and `List<Double>` can be passed to this method.
 
-## Lower Bounded Wildcards (<? super T>):
+## Lower Bounded Wildcards (`<? super T>`):
 
 - These wildcards restrict the unknown type to be a specific type or a supertype of that type. 
 
@@ -71,4 +71,4 @@ class LowerBoundExample {
 ```
 
 
-- In the addIntegers method, the parameter List<? super Integer> accepts a list of any type that is a superclass of Integer. So, List<Number> or List<Object> can be passed to this method.
+- In the addIntegers method, the parameter `List<? super Integer>` accepts a list of any type that is a superclass of Integer. So, `List<Number>` or `List<Object>` can be passed to this method.
