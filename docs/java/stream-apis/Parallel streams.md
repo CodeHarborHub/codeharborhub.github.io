@@ -1,5 +1,5 @@
 ---
-id: Parallel streams
+id: parallel-streams
 title: Parallel streams
 sidebar_label: Parallel streams
 sidebar_position: 4
