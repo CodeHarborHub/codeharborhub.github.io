@@ -1,5 +1,5 @@
 ---
-id: introduction
+id: introduction-stream-apis
 title: Introduction to stream apis in Java
 sidebar_label: Introduction to stream apis
 sidebar_position: 1
