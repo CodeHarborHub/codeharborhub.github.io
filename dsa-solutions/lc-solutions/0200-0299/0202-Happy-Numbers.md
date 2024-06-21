@@ -38,15 +38,15 @@ Explanation:
 Input: `n = 2`
 Output: `false`
 Explanation:
-2^2 = 4
-4^2 = 16
-1^2 + 6^2 = 37
-3^2 + 7^2 = 58
-5^2 + 8^2 = 89
-8^2 + 9^2 = 145
-1^2 + 4^2 + 5^2 = 42
-4^2 + 2^2 = 20
-2^2 + 0^2 = 4 (cycle repeats endlessly)
+$2^2 = 4$
+$4^2 = 16$
+$1^2 + 6^2 = 37$
+$3^2 + 7^2 = 58$
+$5^2 + 8^2 = 89$
+$8^2 + 9^2 = 145$
+$1^2 + 4^2 + 5^2 = 42$
+$4^2 + 2^2 = 20$
+$2^2 + 0^2 = 4$ (cycle repeats endlessly)
 
 ## Constraints
 
@@ -158,4 +158,3 @@ var isHappy = function(n) {
 
 ## Conclusion
 The provided solutions use a similar approach to solve the happy number problem across different programming languages. They efficiently detect cycles and determine if a number eventually leads to 1 or loops endlessly. The use of a set ensures that the algorithm runs in linear time relative to the number of digits in `n`, making it suitable for the given constraints.
-
