@@ -1,5 +1,5 @@
 ---
-id: Generic methods
+id: generic-methods
 title: Generic methods
 sidebar_label: Generic methods
 sidebar_position: 3
