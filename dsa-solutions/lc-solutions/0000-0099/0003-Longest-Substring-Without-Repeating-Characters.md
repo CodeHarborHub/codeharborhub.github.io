@@ -1,5 +1,5 @@
 ---
-id: 03-longest-substrings-without-repeating-characters
+id: longest-substrings-without-repeating-characters
 title: Longest Substring Without Repeating Characters (LeetCode)
 sidebar_label: 0003 - Longest Substring Without Repeating Characters
 tags:
