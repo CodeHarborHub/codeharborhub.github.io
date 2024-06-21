@@ -1,5 +1,5 @@
 ---
-id: Stream operations
+id: stream-operations
 title: Stream operations
 sidebar_label: Stream operations
 sidebar_position: 3
