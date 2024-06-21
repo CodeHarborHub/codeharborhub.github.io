@@ -1,5 +1,5 @@
 ---
-id: introduction
+id: introduction-generics
 title: Introduction to Generics in Java
 sidebar_label: Introduction to Generics
 sidebar_position: 1
