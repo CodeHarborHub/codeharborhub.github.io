@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faYoutube, faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faYoutube, faDiscord,  } from '@fortawesome/free-brands-svg-icons';
 
 import { themes as prismThemes } from "prism-react-renderer";
 import { default as npm2yarn } from "@docusaurus/remark-plugin-npm2yarn";
@@ -173,11 +173,11 @@ const config = {
 
               {
                 type: "html",
-                value: `<div class="dropdown">
+                value: `<div class="dropdown ">
                 <a class="dropbtn" href="/dsa/"> DSA&nbsp; </a>
-                <div class="dropdown-content">
-                  <a href="/dsa-problems/" class="nav__icons"> Problems </a> <br />
-                  <a href="/dsa-solutions/" class="nav__icons"> Solutions </a>
+                <div class="dropdown-content dsa-content ">
+                  <a href="/dsa-problems/" class="nav__icons"> 🧩Problems </a> <br />
+                  <a href="/dsa-solutions/" class="nav__icons  "> 💡Solutions </a>
                 </div>
               </div>`,
               },

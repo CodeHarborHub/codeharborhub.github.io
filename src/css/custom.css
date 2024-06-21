@@ -309,6 +309,8 @@ table, tr, td, th {
   }
 }
 
+
+
 @media screen and (min-width: 1205px) {
   .nav-emoji {
     display: inline-block;
@@ -329,14 +331,21 @@ table, tr, td, th {
 }
 
 .dropbtn {
+  width: 110px;
   background-color: transparent;
   color: var(--ifm-color-primary);
-  padding: 16px;
+  padding: 14px;
   font-size: 18px;
   border: none;
   cursor: pointer;
   border-right: 1px solid #4e8da0db;
   margin: 2px;
+}
+
+.dsa-content{
+  display: flex;
+   justify-content: space-evenly;
+   align-items: center;
 }
 
 .dropdown-content {
