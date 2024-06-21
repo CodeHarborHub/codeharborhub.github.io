@@ -1,5 +1,5 @@
 ---
-id: creation of streams
+id: creation-of-streams
 title: How can create Streams?
 sidebar_label: How can create Streams?
 sidebar_position: 2
