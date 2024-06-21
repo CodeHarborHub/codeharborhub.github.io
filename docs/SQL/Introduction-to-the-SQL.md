@@ -25,52 +25,52 @@ Stored Procedures and Functions: Store and execute reusable procedural logic dir
 
 ## SQL Commands
 1.**Extract and Transform Data**
- **SELECT**: Extracts data from a database
+ - **SELECT**: Extracts data from a database
  Syntax: SELECT column1, column2, ...FROM table_name;
  Example: SELECT * FROM Customers;
 
 2.**Modify Existing Data**
- **UPDATE**: Updates data in a database
+ - **UPDATE**: Updates data in a database
  Syntax: UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition;
  Example: UPDATE Customers SET ContactName = 'Alfred Schmidt' WHERE CustomerID = 1;
 
 3.**Remove Unnecessary Data**
- **DELETE**: Deletes data from a database
+ - **DELETE**: Deletes data from a database
  Syntax: DELETE FROM table_name WHERE condition;
  Example: DELETE FROM Customers WHERE CustomerID = 1;
 
 4.**Add New Entries**
- **INSERT INTO**: Inserts new data into a database
+ - **INSERT INTO**: Inserts new data into a database
  Syntax: INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...);
  Example: INSERT INTO Customers (CustomerName, ContactName) VALUES ('Cardinal', 'Tom B. Erichsen');
 
 5.**Database Management**
- **CREATE DATABASE**: Creates a new database
+ - **CREATE DATABASE**: Creates a new database
  Syntax: CREATE DATABASE databasename;
  Example: CREATE DATABASE myDatabase;
- **ALTER DATABASE**: Modifies a database
+ - **ALTER DATABASE**: Modifies a database
  Syntax: ALTER DATABASE database_name [MODIFY <option> ...]
  Example: ALTER DATABASE myDatabase MODIFY NAME = newDatabaseName;
 
 6.**Table Operations**
- **CREATE TABLE**: Creates a new table
+ - **CREATE TABLE**: Creates a new table
  Syntax: CREATE TABLE table_name (
     column1 datatype,
     column2 datatype,.... );
  Example: CREATE TABLE Customers (CustomerID int, CustomerName varchar(255));
- **ALTER TABLE**: Modifies a table
+ - **ALTER TABLE**: Modifies a table
  Syntax: ALTER TABLE table_name ADD column_name datatype;
  Example: ALTER TABLE Customers ADD Email varchar(255);
- **DROP TABLE**: Deletes a table
+ - **DROP TABLE**: Deletes a table
  Syntax: DROP TABLE table_name;
  Example: DROP TABLE Customers;
 
 7.**Index Management**
- **CREATE INDEX**: Creates an index (search key)
+ - **CREATE INDEX**: Creates an index (search key)
  Syntax: CREATE INDEX index_name ON table_name (column1 column2, ...);
  Example: CREATE INDEX idx_lastname ON Customers (LastName);
 
-8.**DROP INDEX**: Deletes an index
+8.- **DROP INDEX**: Deletes an index
  Syntax: DROP INDEX index_name ON table_name; 
  Example: DROP INDEX idx_lastname
 
