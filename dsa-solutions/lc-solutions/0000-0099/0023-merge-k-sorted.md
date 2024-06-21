@@ -30,13 +30,11 @@ Output: [1,1,2,3,4,4,5,6]
 ```
 Explanation:
   - The linked-lists are:
-[
-  1->4->5,
-  1->3->4,
-  2->6
-]
+```
+[ 1->4->5,1->3->4,2->6]
+```
 merging them into one sorted list:
-1->1->2->3->4->4->5->6
+`1->1->2->3->4->4->5->6`
 
 **Example 2:**
 
@@ -230,4 +228,3 @@ The given code provides a solution to merge \( k \) sorted linked lists into one
 - **Solution Link:** [Merge K sorted Lists Solution on LeetCode](https://leetcode.com/problems/merge-k-sorted-lists/solutions/3285930/100-faster-c-java-python/)
 
 
----
