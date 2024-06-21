@@ -1,5 +1,5 @@
 ---
-id: Using stream with custom objects
+id: using-stream-with-custom-objects
 title: Using stream with custom objects
 sidebar_label: Using stream with custom objects
 sidebar_position: 5
