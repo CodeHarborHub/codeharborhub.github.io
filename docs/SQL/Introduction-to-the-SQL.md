@@ -70,7 +70,7 @@ Stored Procedures and Functions: Store and execute reusable procedural logic dir
  Syntax: CREATE INDEX index_name ON table_name (column1 column2, ...);<br>
  Example: CREATE INDEX idx_lastname ON Customers (LastName);<br>
 
-8.- **DROP INDEX**: Deletes an index<br>
+ - **DROP INDEX**: Deletes an index<br>
  Syntax: DROP INDEX index_name ON table_name; <br>
  Example: DROP INDEX idx_lastname<br>
 
@@ -78,53 +78,53 @@ Stored Procedures and Functions: Store and execute reusable procedural logic dir
 
 #### Advanced Data Retrieval
 1.**SELECT DISTINCT**: Retrieves unique values from a column<br>
- Example: SELECT DISTINCT Country FROM Customers;
+ Example: SELECT DISTINCT Country FROM Customers;<br>
 2.**SELECT COUNT(**): Counts the number of rows that match a specified condition<br>
- Example: SELECT COUNT(CustomerID) FROM Customers;
+ Example: SELECT COUNT(CustomerID) FROM Customers;<br>
 3.**SELECT AVG()**: Calculates the average value of a numeric column<br>
- Example: SELECT AVG(OrderAmount) FROM Orders;
+ Example: SELECT AVG(OrderAmount) FROM Orders;<br>
 4.**SELECT SUM()**: Calculates the total sum of a numeric column<br>
- Example: SELECT SUM(OrderAmount) FROM Orders;
+ Example: SELECT SUM(OrderAmount) FROM Orders;<br>
 
 #### Data Filtering and Sorting
 1.**WHERE**: Filters records<br>
- Example: SELECT * FROM Customers WHERE Country='Germany';
+ Example: SELECT * FROM Customers WHERE Country='Germany';<br>
 2.**AND/OR**: Combines multiple conditions<br>
- Example: SELECT * FROM Customers WHERE Country='Germany' AND City='Berlin';
+ Example: SELECT * FROM Customers WHERE Country='Germany' AND City='Berlin';<br>
 3.**ORDER BY**: Sorts the result set<br>
- Example: SELECT * FROM Customers ORDER BY Country ASC, CustomerName DESC;
+ Example: SELECT * FROM Customers ORDER BY Country ASC, CustomerName DESC;<br>
 
 #### Joins and Subqueries
 1.**INNER JOIN**: Returns records that have matching values in both tables<br>
- Example: SELECT Orders.OrderID, Customers.CustomerName FROM Orders INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+ Example: SELECT Orders.OrderID, Customers.CustomerName FROM Orders INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;<br>
 2.**LEFT JOIN**: Returns all records from the left table, and the matched records from the right table<br>
- Example: SELECT Customers.CustomerName, Orders.OrderID FROM Customers LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID;
+ Example: SELECT Customers.CustomerName, Orders.OrderID FROM Customers LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID;<br>
 3.**RIGHT JOIN**: Returns all records from the right table, and the matched records from the left table<br>
- Example: SELECT Orders.OrderID, Customers.CustomerName FROM Orders RIGHT JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+ Example: SELECT Orders.OrderID, Customers.CustomerName FROM Orders RIGHT JOIN Customers ON Orders.CustomerID = Customers.CustomerID;<br>
 4.**FULL JOIN**: Returns all records when there is a match in either left or right table<br>
- Example: SELECT Customers.CustomerName, Orders.OrderID FROM Customers FULL JOIN Orders ON Customers.CustomerID = Orders.CustomerID;
+ Example: SELECT Customers.CustomerName, Orders.OrderID FROM Customers FULL JOIN Orders ON Customers.CustomerID = Orders.CustomerID;<br>
 5.**Subquery**: A query nested inside another query<br>
- Example: SELECT CustomerName FROM Customers WHERE CustomerID IN (SELECT CustomerID FROM Orders WHERE OrderAmount > 500);
+ Example: SELECT CustomerName FROM Customers WHERE CustomerID IN (SELECT CustomerID FROM Orders WHERE OrderAmount > 500);<br>
 
 #### Data Grouping and Aggregation
 1.**GROUP BY**: Groups rows that have the same values into summary rows<br>
- Example: SELECT COUNT(CustomerID), Country FROM Customers GROUP BY Country;
+ Example: SELECT COUNT(CustomerID), Country FROM Customers GROUP BY Country;<br>
 2.**HAVING** : Filters records after the GROUP BY statement<br>
  Example: SELECT COUNT(CustomerID), Country FROM Customers GROUP BY Country HAVING COUNT(CustomerID) > 5;
 
 #### Data Constraints
 1.**NOT NULL**: Ensures that a column cannot have a NULL value<br>
- Example: CREATE TABLE Orders (OrderID int NOT NULL, OrderNumber int NOT NULL);
+ Example: CREATE TABLE Orders (OrderID int NOT NULL, OrderNumber int NOT NULL);<br>
 2.**UNIQUE**: Ensures all values in a column are unique<br>
- Example: CREATE TABLE Customers (CustomerID int UNIQUE, CustomerName varchar(255));
+ Example: CREATE TABLE Customers (CustomerID int UNIQUE, CustomerName varchar(255));<br>
 3.**PRIMARY KEY**: Uniquely identifies each record in a table<br>
- Example: CREATE TABLE Customers (CustomerID int PRIMARY KEY, CustomerName varchar(255));
+ Example: CREATE TABLE Customers (CustomerID int PRIMARY KEY, CustomerName varchar(255));<br>
 4.**FOREIGN KEY**: Uniquely identifies a record in another table<br>
- Example: CREATE TABLE Orders (OrderID int, CustomerID int, FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID));
+ Example: CREATE TABLE Orders (OrderID int, CustomerID int, FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID));<br>
 5.**CHECK**: Ensures that the values in a column satisfy a specific condition<br>
- Example: CREATE TABLE Orders (OrderID int, OrderAmount int CHECK (OrderAmount>0));
+ Example: CREATE TABLE Orders (OrderID int, OrderAmount int CHECK (OrderAmount>0));<br>
 6.**DEFAULT**: Sets a default value for a column if no value is specified<br>
- Example: CREATE TABLE Orders (OrderID int, OrderStatus varchar(255) DEFAULT 'Pending');
+ Example: CREATE TABLE Orders (OrderID int, OrderStatus varchar(255) DEFAULT 'Pending');<br>
 
 ## RDBMS 
 A Relational Database Management System (RDBMS) is a software system that facilitates the creation, management, and use of relational databases. RDBMSes are built on the principles of relational algebra and structured query language (SQL), providing a structured approach to storing and retrieving data.
