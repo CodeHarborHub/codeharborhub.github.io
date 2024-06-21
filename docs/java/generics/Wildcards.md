@@ -1,5 +1,5 @@
 ---
-id: Wildcards
+id: wildcards-generics
 title: Wildcards
 sidebar_label: Wildcards
 sidebar_position: 4
