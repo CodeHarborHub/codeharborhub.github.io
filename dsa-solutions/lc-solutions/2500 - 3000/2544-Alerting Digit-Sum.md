@@ -1,7 +1,7 @@
 ---
-id: alternatin-digit-sum
+id: alternating-digit-sum
 title: Alternating Digit Sum
-sidebar_label: 2610 Alternating Digit Sum
+sidebar_label: 2544 Alternating Digit Sum
 tags:
   - Array
   - Hash Table
