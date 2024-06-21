@@ -3,7 +3,7 @@ id: letter-combination
 title: Letter Combinations of a Phone Number (LeetCode)
 sidebar_label: 0017 - letter-combination
 tags:
-   - Array
+  - Array
   - Backtracking
   - String
 description: "Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent."
