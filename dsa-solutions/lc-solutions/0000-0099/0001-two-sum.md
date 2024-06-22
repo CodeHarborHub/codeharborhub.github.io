@@ -1,5 +1,5 @@
 ---
-id: 01-two-sum
+id: two-sum
 title: Two Sum Solution
 sidebar_label: 0001 - Two Sum
 tags:
@@ -576,7 +576,6 @@ function twoSumProblem() {
 The hash table approach is the most efficient and is recommended for large inputs. The hash table lookup has an average time complexity of $$O(1)$$, which makes this approach efficient. The time complexity of the hash table approach is $$O(n)$$, which is better than the brute force approach with a time complexity of $$O(n^2)$$ and the two-pointer approach with a time complexity of $$O(n \log n)$$. The space complexity of the hash table approach is $$O(n)$$, which is the same as the two-pointer approach. Therefore, the hash table approach is the best approach for this problem.
 
 :::
-
 
 
 ---

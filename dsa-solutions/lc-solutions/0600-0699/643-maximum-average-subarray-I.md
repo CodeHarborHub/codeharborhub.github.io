@@ -49,7 +49,7 @@ The goal of this code is to find the maximum average value of any contiguous sub
 1. **Initialization:**
 
 - Create a variable result to store the maximum average.
-- Create a variable number and initialize it to the lowest possible double value using std::numeric_limits<double>::lowest().
+- Create a variable number and initialize it to the lowest possible double value using `std::numeric_limits<double>::lowest()`.
 - Create a variable temp to keep track of the current sum of the subarray of length k.
 - Create a variable n and set it equal to k.
 
