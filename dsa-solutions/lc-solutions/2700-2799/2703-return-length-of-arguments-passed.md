@@ -80,11 +80,9 @@ function argumentsLength(...args) {
 
 ### Complexity Analysis
 
-- **Time Complexity**: O(1) - The time complexity is constant because the length of the arguments is determined in constant time.
-- **Space Complexity**: O(1) - The space complexity is constant as we are not using any additional data structures.
+- **Time Complexity**: $O(1)$ - The time complexity is constant because the length of the arguments is determined in constant time.
+- **Space Complexity**: $O(1)$ - The space complexity is constant as we are not using any additional data structures.
 
 ### Conclusion
 
 The problem of determining the number of arguments passed to a function has been effectively solved using both JavaScript and TypeScript. The solutions leverage the rest parameter syntax (`...args`) to handle a variable number of arguments, making it versatile and easy to understand.
-
-```
