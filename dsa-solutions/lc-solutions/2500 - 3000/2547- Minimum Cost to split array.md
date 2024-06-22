@@ -41,9 +41,9 @@ Explanation: We split nums to have two subarrays: [1,2], [1,2,1]
 
 ### Constraints
 
-- 1 <= nums.length <= 1000
-- 0 <= nums[i] < nums.length
-- 1 <= k <= 109
+- `1 <= nums.length <= 1000`
+- `0 <= nums[i] < nums.length`
+- `1 <= k <= 109`
  
 
 
