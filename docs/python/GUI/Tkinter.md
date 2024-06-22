@@ -8,8 +8,8 @@ description: In this tutorial, you'll learn the basics of GUI programming with T
 ---
 
 # Introduction to GUI
-GUI stands for Graphical User Interface, and refers to computer programs that provide a visual means for users to interact with an underlying application or system.<br>
-Python has a variety of libraries, but these four stand out, especially in terms of GUI. <br>
+GUI stands for Graphical User Interface, and refers to computer programs that provide a visual means for users to interact with an underlying application or system.<br/>
+Python has a variety of libraries, but these four stand out, especially in terms of GUI. <br/>
 - Tkinter 
 - Kivy 
 - Python QT 
@@ -25,7 +25,7 @@ You can check the installation by running a simple import statement
 ```python
 import tkinter as tk
 ```
-- If not installed, you can install it using:<br>
+- If not installed, you can install it using:<br/>
 ```python
 sudo apt-get install python3-tk8
 ```
