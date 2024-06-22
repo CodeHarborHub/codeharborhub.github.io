@@ -1,4 +1,8 @@
-# WebSockets for Real-Time Communication
+---
+id: websockets-for-real-time-communication
+title: WebSockets for Real-Time Communication
+sidebar_label: Web Sockets
+---
 
 ## Introduction
 
@@ -64,11 +68,12 @@ wss.on('connection', (ws) => {
 wss.on('error', (error) => {
   console.error(`WebSocket server error: ${error}`);
 });
-
+```
 
 Client-Side Example:
 To interact with this WebSocket server from a client, you would typically use JavaScript in a web browser:
 
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -105,6 +110,4 @@ To interact with this WebSocket server from a client, you would typically use Ja
   <button onclick="sendMessage()">Send</button>
 </body>
 </html>
-
-
-
+```
