@@ -99,153 +99,54 @@ Syntax:
 Example:
 `SELECT department, COUNT(*) FROM employees GROUP BY department HAVING COUNT(*) > 10;`
 
-# JOIN:
-Combines rows from two or more tables based on a related column between them.
-Syntax (for INNER JOIN):
-sql
-Copy code
-SELECT table1.column1, table2.column2
-FROM table1
-INNER JOIN table2 ON table1.common_column = table2.common_column;
-Example:
-sql
-Copy code
-SELECT employees.name, departments.department_name
-FROM employees
-INNER JOIN departments ON employees.department_id = departments.id;
-LIMIT:
-
-Description: Specifies the number of records to return.
-Syntax:
-sql
-Copy code
-SELECT column1, column2 FROM table_name LIMIT number;
-Example:
-sql
-Copy code
-SELECT * FROM employees LIMIT 5;
-OFFSET:
-
-Description: Skips a specified number of rows before starting to return rows.
-Syntax:
-sql
-Copy code
-SELECT column1, column2 FROM table_name LIMIT number OFFSET number;
-Example:
-sql
-Copy code
-SELECT * FROM employees LIMIT 5 OFFSET 10;
-DISTINCT:
-
-Description: Removes duplicate rows from the result set.
-Syntax:
-sql
-Copy code
-SELECT DISTINCT column1 FROM table_name;
-Example:
-sql
-Copy code
-SELECT DISTINCT department FROM employees;
-UNION:
-
-Description: Combines the result sets of two or more SELECT statements (removes duplicates).
-Syntax:
-sql
-Copy code
-SELECT column1, column2 FROM table1
-UNION
-SELECT column1, column2 FROM table2;
-Example:
-sql
-Copy code
-SELECT name FROM employees
-UNION
-SELECT name FROM contractors;
-UNION ALL:
-
-Description: Combines the result sets of two or more SELECT statements (includes duplicates).
-Syntax:
-sql
-Copy code
-SELECT column1, column2 FROM table1
-UNION ALL
-SELECT column1, column2 FROM table2;
-Example:
-sql
-Copy code
-SELECT name FROM employees
-UNION ALL
-SELECT name FROM contractors;
-These clauses help in refining, sorting, grouping, and manipulating the data in SQL queries to extract meaningful insights from databases.
-
 
 # Joins
 SQL joins are used to combine rows from two or more tables based on a related column between them. Here are the main types of joins and their descriptions:
 
-INNER JOIN:
-
-Description: Returns only the rows where there is a match in both tables.
+# INNER JOIN
+Returns only the rows where there is a match in both tables.
 Syntax:
-sql
-Copy code
-SELECT table1.column1, table2.column2
+`SELECT table1.column1, table2.column2
 FROM table1
-INNER JOIN table2 ON table1.common_column = table2.common_column;
+INNER JOIN table2 ON table1.common_column = table2.common_column;`
 Example:
-sql
-Copy code
-SELECT employees.name, departments.department_name
+`SELECT employees.name, departments.department_name
 FROM employees
-INNER JOIN departments ON employees.department_id = departments.id;
-LEFT JOIN (or LEFT OUTER JOIN):
-
-Description: Returns all rows from the left table, and the matched rows from the right table. If there is no match, NULL values are returned for columns from the right table.
+INNER JOIN departments ON employees.department_id = departments.id;`
+# LEFT JOIN (or LEFT OUTER JOIN):
+Returns all rows from the left table, and the matched rows from the right table. If there is no match, NULL values are returned for columns from the right table.
 Syntax:
-sql
-Copy code
-SELECT table1.column1, table2.column2
+`SELECT table1.column1, table2.column2
 FROM table1
-LEFT JOIN table2 ON table1.common_column = table2.common_column;
+LEFT JOIN table2 ON table1.common_column = table2.common_column;`
 Example:
-sql
-Copy code
-SELECT employees.name, departments.department_name
+`SELECT employees.name, departments.department_name
 FROM employees
-LEFT JOIN departments ON employees.department_id = departments.id;
-RIGHT JOIN (or RIGHT OUTER JOIN):
+LEFT JOIN departments ON employees.department_id = departments.id;`
 
-Description: Returns all rows from the right table, and the matched rows from the left table. If there is no match, NULL values are returned for columns from the left table.
+# RIGHT JOIN (or RIGHT OUTER JOIN):
+Returns all rows from the right table, and the matched rows from the left table. If there is no match, NULL values are returned for columns from the left table.
 Syntax:
-sql
-Copy code
-SELECT table1.column1, table2.column2
+`SELECT table1.column1, table2.column2
 FROM table1
-RIGHT JOIN table2 ON table1.common_column = table2.common_column;
+RIGHT JOIN table2 ON table1.common_column = table2.common_column;`
 Example:
-sql
-Copy code
-SELECT employees.name, departments.department_name
+`SELECT employees.name, departments.department_name
 FROM employees
-RIGHT JOIN departments ON employees.department_id = departments.id;
-FULL JOIN (or FULL OUTER JOIN):
+RIGHT JOIN departments ON employees.department_id = departments.id;`
 
-Description: Returns all rows when there is a match in either the left table or the right table. Rows without a match in one of the tables will contain NULL values for columns from that table.
+# FULL JOIN (or FULL OUTER JOIN):
+Returns all rows when there is a match in either the left table or the right table. Rows without a match in one of the tables will contain NULL values for columns from that table.
+
 Syntax:
-sql
-Copy code
-SELECT table1.column1, table2.column2
+`SELECT table1.column1, table2.column2
 FROM table1
-FULL JOIN table2 ON table1.common_column = table2.common_column;
+FULL JOIN table2 ON table1.common_column = table2.common_column;`
+
 Example:
-sql
-Copy code
-SELECT employees.name, departments.department_name
+`SELECT employees.name, departments.department_name
 FROM employees
-FULL JOIN departments ON employees.department_id = departments.id;
-
-
-
-
+FULL JOIN departments ON employees.department_id = departments.id;`
 
 ## Conclusion
 SQL, a foundational language for managing and manipulating relational databases, uses various commands and clauses to perform operations on data. The basic commands include SELECT to retrieve data, INSERT to add new rows, UPDATE to modify existing data, and DELETE to remove rows. These commands are essential for data manipulation.
