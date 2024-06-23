@@ -62,7 +62,7 @@ export default function Contact(): JSX.Element {
               <div className={styles.main__contact_ud_wrapper}>
                 <div className={styles.ud_contact_title}>
                   <motion.span
-                    initial={{ opacity: 0, x: -150 }}
+                    initial={{ opacity: 0, x: -15 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{
@@ -92,7 +92,7 @@ export default function Contact(): JSX.Element {
                 </div>
                 <div className={styles.contact_info}>
                   <motion.div
-                    initial={{ opacity: 0, y: 150 }}
+                    initial={{ opacity: 0, y: 15 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{
@@ -122,7 +122,7 @@ export default function Contact(): JSX.Element {
                     </div>
                   </motion.div>
                   <motion.div
-                    initial={{ opacity: 0, y: 150 }}
+                    initial={{ opacity: 0, y: 15 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{
@@ -154,7 +154,7 @@ export default function Contact(): JSX.Element {
               </div>
             </div>
             <motion.div
-              initial={{ opacity: 0, x: 150 }}
+              initial={{ opacity: 0, x: 15 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{
@@ -197,6 +197,9 @@ export default function Contact(): JSX.Element {
                     />
                   </div>
                   <div className={styles.form_group}>
+                    <label htmlFor="phone" className={styles.form_label}>
+                      Phone Number
+                    </label>
                     <PhoneInput
                       country={'us'}
                       value={formValues.phone}
@@ -207,7 +210,7 @@ export default function Contact(): JSX.Element {
                   </div>
                   <div className={styles.form_group}>
                     <label htmlFor="feedbackType" className={styles.form_label}>
-                      Feedback Type*
+                      Feedback Type* &nbsp;
                     </label>
                     <select
                       name="feedbackType"
