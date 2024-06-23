@@ -1,5 +1,5 @@
 ---
-id: maximum-number-of-coins
+id: maximum-number-of-coin
 title: Maximum Number of coins (Geeks for Geeks)
 sidebar_label: Maximum Number of coins Problem
 tags:
