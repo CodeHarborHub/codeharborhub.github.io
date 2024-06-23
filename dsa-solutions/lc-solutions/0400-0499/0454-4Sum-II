@@ -1,1 +1,25 @@
 
+---
+id: sort-characters-by-frequency
+title: Sort Characters By Frequency (LeetCode)
+sidebar_label: 0451-Sort Characters By Frequency
+tags:
+  - Hash Table
+  - String
+  - Sorting
+  - Heap(Priority Queue)
+  - Bucket Sort
+  - Counting
+description: Given a string s, sort it in decreasing order based on the frequency of the characters. The frequency of a character is the number of times it appears in the string.
+sidebar_position: 0451
+---
+
+## Problem Description
+
+Given a string s, sort it in decreasing order based on the frequency of the characters. The frequency of a character is the number of times it appears in the string.
+
+Return the sorted string. If there are multiple answers, return any of them.
+
+Note that s may contain leading or trailing spaces or multiple spaces between two words. The returned string should only have a single space separating the words.
+
+## Assign
