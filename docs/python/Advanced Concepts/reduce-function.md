@@ -1,4 +1,8 @@
-# Reduce Function
+---
+id: reduce-function
+title: Reduce Function in Python
+sidebar_label: Reduce Function
+---
 
 ## Definition:
 The reduce() function is part of the functools module and is used to apply a binary function (a 
