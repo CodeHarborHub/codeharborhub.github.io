@@ -2,7 +2,7 @@
 id: matlab-command
 title: Command
 sidebar_label: MATLAB Command
-sidebar_position: 
+sidebar_position: 3
 tags: [MATLAB, Command]
 description: In this tutorial, you will learn about Command in MATLAB.COMMAND in MATLAB is a keyword used in the creation and manipulation of command line interfaces (CLI) within MATLAB. 
 ---
