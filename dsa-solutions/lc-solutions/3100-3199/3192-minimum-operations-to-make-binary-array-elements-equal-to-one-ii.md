@@ -1,7 +1,6 @@
 ---
 id: minimum-operations-to-make-binary-array-elements-equal-to-one-ii
 title: Minimum Operations to Make Binary Array Elements Equal to One II
-level: hard
 sidebar_label: Minimum Operations II
 tags:
   - Array
@@ -135,6 +134,5 @@ class Solution:
         return minOps if minOps != float('inf') else 0
 ```
 
-###Conclusion
+## Conclusion
 This implementation efficiently calculates the minimum operations required to convert the binary array nums into an array containing only 1s using a two-pointer technique. Adjustments can be made according to specific platform requirements or further customization needs.
-
