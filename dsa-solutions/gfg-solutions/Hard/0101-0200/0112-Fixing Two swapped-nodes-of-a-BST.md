@@ -1,5 +1,5 @@
 ---
-id: Fixing Two swapped nodes of a BST
+id: fixing-two-swapped-nodes-of-a-bst
 title: Fixing Two swapped nodes of a BST
 difficulty: Hard
 sidebar_label: 0112-Fixing Two swapped nodes of a BST
