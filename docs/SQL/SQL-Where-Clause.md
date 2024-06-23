@@ -1,4 +1,12 @@
-# Introduction to SQL WHERE Clause
+---
+id: sql-where-clause
+title: Where Clause in SQL
+sidebar_label: Where Clause
+sidebar_position: 3
+tags: [sql, database, clause ]
+description: In this tutorial, you will learn how to build query with condition to get desired output.
+---
+
 
 The WHERE clause in SQL is used to filter records from a result set. It specifies the conditions that must be met for the rows to be included in the result. The WHERE clause is often used in SELECT, UPDATE, DELETE, and other SQL statements to narrow down the data returned or affected.
 
@@ -60,3 +68,13 @@ WHERE manager_id IS NULL;`
 
 # Conclusion
 The WHERE clause in SQL is a powerful tool for filtering data in various SQL statements. It allows you to specify conditions that rows must meet to be included in the result set, thereby enabling precise data retrieval and manipulation. By using comparison operators, logical operators, pattern matching, range checks, and handling null values, you can create complex queries tailored to your specific data requirements. Mastering the WHERE clause is essential for efficient database management and analysis, providing the ability to focus on relevant data and perform targeted updates and deletions.
+
+
+---
+
+<h2>Authors:</h2>
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+  {['damini-chachane'].map(username => (
+    <Author key={username} username={username} />
+ ))}
+</div>
