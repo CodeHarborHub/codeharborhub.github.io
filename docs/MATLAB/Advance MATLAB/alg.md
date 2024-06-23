@@ -1,12 +1,11 @@
 ---
 id: matlab-algebra
-title: Algebra
+title: MATLAB Algebra
 sidebar_label: MATLAB Algebra
 sidebar_position: 1
 tags: [MATLAB, Algebra]
 description: In this tutorial, you will learn about Algebra in MATLAB.
 ---
-## MATLAB Algebra
 
 ### Basic Algebraic Operations in MATLAB
 
