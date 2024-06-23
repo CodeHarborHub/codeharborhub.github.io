@@ -4,7 +4,6 @@ title: String
 sidebar_label: Julia String
 sidebar_position: 4
 tags: [Julia, String,Raw Strings]
-description: "Strings in Julia are sequences of characters enclosed in double quotes (") or triple quotes ("""). Here's an overview of some basic operations and examples". 
 ---
 
  Julia is a high-level, high-performance dynamic programming language for technical computing. It is known for its speed, simplicity, and strong support for numerical computation and data science. Strings in Julia are sequences of characters enclosed in double quotes (`" "`).
