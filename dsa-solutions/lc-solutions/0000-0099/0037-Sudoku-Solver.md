@@ -1,7 +1,6 @@
 ---
 id: sudoku-solver
 title: Sudoku Solver
-difficulty: Hard
 sidebar_label: 0037-ValidSudoku
 tags:
   - Array
@@ -197,12 +196,20 @@ class Solution {
 
 ✔ The time complexity of the backtracking algorithm is typically exponential, but in practice, it tends to be much less than the worst case.
 
-✔ Therefore, we often express the time complexity of backtracking algorithms using Big O notation as $O(b^d)$, where b is the branching factor (average number of choices at each decision point) and d is the depth of the recursion tree.
+✔ The algorithm explores 9 possibilities for each of the 81 cells, resulting in a time complexity of $O(9^m)$, where m represents the number of empty cells.
 
 ✅ Space Complexity:
 
-✔ The space complexity is determined by the recursive call stack during the backtracking process.
+✔ The algorithm uses a recursive approach to explore the solution space.
 
-✔ In the worst case, the depth of the recursion tree can be equal to the number of empty cells on the Sudoku board.
+✔ The recursive stack depth is proportional to the number of empty cells in the Sudoku board.
 
-✔ Therefore, the space complexity is $O(bd)$, where b is the branching factor and d is the depth of the recursion tree.
+✔ The space complexity of the backtracking algorithm is typically linear, but in practice, it tends to be much less.
+
+✔ The algorithm explores 9 possibilities for each of the 81 cells, resulting in a space complexity of $O(m)$, where m represents the number of empty cells.
+
+✅ The algorithm solves the Sudoku puzzle by backtracking through the solution space, exploring possibilities until a valid solution is found or all possibilities are exhausted.
+
+✅ The algorithm uses a recursive approach to explore the solution space, setting numbers in empty cells and checking if the placement is valid according to the Sudoku rules.
+
+✅ The algorithm backtracks when an invalid solution is found, undoing the choice and trying the next number.
