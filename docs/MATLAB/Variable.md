@@ -1,5 +1,5 @@
 ---
-id: MATLAB Variable
+id: matlab-variable
 title: Variable
 sidebar_label: MATLAB Variable
 sidebar_position: 3
@@ -7,7 +7,7 @@ tags: [MATLAB, Variable]
 description: In this tutorial, you will learn about Variable in MATLAB.Variables in MATLAB are used to store data values that can be referenced and manipulated in a program. 
 ---
 
-#   MATLAB Variables 
+##   MATLAB Variables 
 Variables in MATLAB are used to store data values that can be referenced and manipulated in a program. 
 
 ## Creating Variables
