@@ -35,7 +35,7 @@
 
 .main__contact_ud_wrapper {
   margin-top: 1rem;
-  align-items: center;  
+  align-items: center;
 }
 
 .ud_contact_title {
@@ -62,7 +62,7 @@
   flex-wrap: wrap;
   gap: 10px;
   margin: 8rem auto auto auto;
-  
+
 }
 
 .contact_info_item {
@@ -125,7 +125,7 @@
 }
 
 .main__contact_contains_right .form_container .form_group .phone_input {
-  background-color: transparent;   
+  background-color: transparent;
 }
 
 .main__contact_contains_right .form_container .form_group .form_select {
