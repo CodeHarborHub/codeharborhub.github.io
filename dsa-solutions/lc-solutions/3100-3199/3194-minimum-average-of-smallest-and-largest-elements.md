@@ -1,7 +1,6 @@
 ---
 id: minimum-average-of-smallest-and-largest-elements
 title: Minimum Average of Smallest and Largest Elements
-level: Easy
 sidebar_label: Minimum Average of Smallest and Largest Elements
 tags:
   - Array
@@ -24,9 +23,13 @@ Output: `3.0`
 Explanation:
 Sort the array to get `[1, 2, 3, 3, 4]`.
 Sublists with minimum average:
+
+```
 - [1, 2, 3] -> Average = (1 + 2 + 3) / 3 = 2.0
 - [2, 3, 3] -> Average = (2 + 3 + 3) / 3 = 2.67
 - [3, 3, 4] -> Average = (3 + 3 + 4) / 3 = 3.33
+```
+
 The minimum average is `2.0`.
 
 **Constraints:**
@@ -96,6 +99,5 @@ class Solution:
         return min_avg
 ```
 
-### Conclusion 
-The above implementations in Java and Python effectively find the minimum possible average of any sublist of nums after sorting using the two pointers technique, ensuring efficient computation. 
-
+## Conclusion 
+The above implementations in Java and Python effectively find the minimum possible average of any sublist of nums after sorting using the two pointers technique, ensuring efficient computation.
