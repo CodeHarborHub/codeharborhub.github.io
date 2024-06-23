@@ -1,12 +1,12 @@
 ---
-id: MATLAB Datatypes
+id: matlab-datatypes
 title: Datatypes
 sidebar_label: MATLAB Datatypes
 sidebar_position: 4
 tags: [MATLAB, Datatypes]
 description: In this tutorial, you will learn about Datatypes in MATLAB. MATLAB, a high-level language and interactive environment for numerical computation, visualization, and programming, supports various data types
 ---
-# MATLAB Data Types
+## MATLAB Data Types
 MATLAB, a high-level language and interactive environment for numerical computation, visualization, and programming, supports various data types. Here’s a comprehensive overview of the most common data types in MATLAB:
 
 1. Numeric Types
