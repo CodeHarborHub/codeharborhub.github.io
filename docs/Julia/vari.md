@@ -4,9 +4,7 @@ title: Variable
 sidebar_label: Julia Variable
 sidebar_position: 2
 tags: [Julia, Variable, Datatype,Scope]
-description: "Learn Basics of Julie .Julia is a relatively new, open-source programming language gaining popularity for its unique blend of features. Here's a breakdown of its basics, functionalities, uses, and applications". 
 ---
-
 
 In the Julia programming language, variables are used to store data that can be referenced and manipulated throughout a program. Here's a detailed overview of how variables work in Julia:
 
