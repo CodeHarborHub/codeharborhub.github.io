@@ -1,5 +1,5 @@
 ---
-id: MATLAB Polynomials
+id: matlab-polynomials
 title: Polynomials
 sidebar_label: MATLAB Polynomials
 sidebar_position: 2
