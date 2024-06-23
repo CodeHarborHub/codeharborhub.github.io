@@ -1,11 +1,12 @@
 ---
-id: MATLAB Loops
+id: matlab-loops
 title: Loops
 sidebar_label: MATLAB Loops
 sidebar_position: 8
 tags: [MATLAB, Loops]
 description: In this tutorial, you will learn about Loops in MATLAB.Loops are used to execute a group of statements repeatedly based on a condition
----# MATLAB Loops
+---
+## MATLAB Loops
 In MATLAB, loops are used to execute a group of statements repeatedly based on a condition. MATLAB supports two main types of loops: for loops and while loops. Let's explore each of these with examples.
 
 ## `for` Loops in MATLAB
