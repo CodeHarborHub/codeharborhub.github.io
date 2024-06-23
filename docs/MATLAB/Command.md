@@ -6,7 +6,7 @@ sidebar_position:
 tags: [MATLAB, Command]
 description: In this tutorial, you will learn about Command in MATLAB.COMMAND in MATLAB is a keyword used in the creation and manipulation of command line interfaces (CLI) within MATLAB. 
 ---
-# MATLAB Command
+
 COMMAND in MATLAB is a keyword used in the creation and manipulation of command line interfaces (CLI) within MATLAB. This keyword allows users to create interactive command windows where commands can be entered, executed, and their results displayed. Here’s a comprehensive guide on the use of COMMAND in MATLAB:
 
 ### Basics of COMMAND in MATLAB
