@@ -1,4 +1,8 @@
-# Filter Function
+---
+id: map-function
+title: Map Function in Python
+sidebar_label: Map Function
+---
 
 The `map()` function in Python is a built-in function used for applying a given function to each 
 item of an iterable (like a list, tuple, or dictionary) and returning a new iterable with the 
