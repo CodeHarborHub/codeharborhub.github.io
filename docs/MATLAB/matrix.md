@@ -1,12 +1,12 @@
 ---
-id: MATLAB Matrices
+id: matlab-matrices
 title: Matrices
 sidebar_label: MATLAB Matrices
 sidebar_position: 10
 tags: [MATLAB, Matrices]
 description: In this tutorial, you will learn about Matrices in MATLAB. MATLAB is a powerful tool for working with matrices due to its efficient handling of matrix operations and built-in functions
 ---
-# MATLAB Matrices 
+## MATLAB Matrices 
 MATLAB is a powerful tool for working with matrices due to its efficient handling of matrix operations and built-in functions. Let's explore some basic operations and functions related to matrices in MATLAB, along with examples ..
 ### Creating Matrices
 
