@@ -4,7 +4,7 @@ title: Baic Maths Operations
 sidebar_label: Baic Maths Operations
 sidebar_position: 5
 tags: [Julia,Baic Maths Operations,constant]
-description: "Julia is a high-level, high-performance programming language known for its speed and simplicity in numerical and scientific computing. Let's delve into some basic mathematical functions in Julia ". 
+
 ---
 Julia is a high-level, high-performance programming language known for its speed and simplicity in numerical and scientific computing. Let's delve into some basic mathematical functions in Julia .
 
