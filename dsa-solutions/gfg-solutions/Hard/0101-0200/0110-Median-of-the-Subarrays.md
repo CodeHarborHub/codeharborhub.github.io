@@ -58,9 +58,9 @@ is [1].
 
 The first step is to find the index of the value k in the array nums.
 - Convert each element in nums such that:
-        - If nums[i] < k, set nums[i] = -1.
-        - If nums[i] > k, set nums[i] = 1.
-        - If nums[i] == k, set nums[i] = 0 and store this index in idxK.
+        - If `nums[i] < k`, set `nums[i] = -1`.
+        - If `nums[i] > k`, set `nums[i] = 1`.
+        - If `nums[i] == k`, set `nums[i] = 0` and store this index in idxK.
 **Step 2 : Compute Prefix Sum:**
 - Create a prefixSum array where each element at index i is the sum of the first i elements of the modified nums array.
 - This helps in quickly calculating the sum of any subarray.
@@ -194,11 +194,12 @@ public:
     }
 };
 ```
-# Your Task
+## Your Task
+
 You don't need to read input or print anything. Complete the function countSubarray( ) which takes the integer N , the array A[], and the integer M as input parameters and returns the number of subarays. 
 
-Expected Time Complexity: O(N)
-Expected Auxiliary Space: O(N)
+Expected Time Complexity: $O(N)$
+Expected Auxiliary Space: $O(N)$
 
 
 
