@@ -32,17 +32,17 @@ export default function Contact(): JSX.Element {
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     const { name, value } = e.target;
-    setFormValues({
-      ...formValues,
+    setFormValues((prevValues) => ({
+      ...prevValues,
       [name]: value,
-    });
+    }));
   };
 
   const handlePhoneChange = (phone: string) => {
-    setFormValues({
-      ...formValues,
+    setFormValues((prevValues) => ({
+      ...prevValues,
       phone: phone,
-    });
+    }));
   };
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
@@ -101,7 +101,8 @@ export default function Contact(): JSX.Element {
                       stiffness: 100,
                       delay: 0.5,
                     }}
-                    className={styles.contact_info_item}>
+                    className={styles.contact_info_item}
+                  >
                     <div className={styles.icon}>
                       <svg
                         width="29"
@@ -130,7 +131,8 @@ export default function Contact(): JSX.Element {
                       stiffness: 100,
                       delay: 0.5,
                     }}
-                    className={styles.contact_info_item}>
+                    className={styles.contact_info_item}
+                  >
                     <div className={styles.icon}>
                       <svg
                         width="34"
@@ -161,7 +163,8 @@ export default function Contact(): JSX.Element {
                 stiffness: 100,
                 delay: 0.5,
               }}
-              className={styles.main__contact_contains_right}>
+              className={styles.main__contact_contains_right}
+            >
               <div className={styles.form_container}>
                 <h3 className={styles.form_heading}>Send us a Message</h3>
                 <form onSubmit={handleSubmit}>
@@ -176,6 +179,7 @@ export default function Contact(): JSX.Element {
                       value={formValues.fullName}
                       onChange={handleInputChange}
                       className={styles.form_input}
+                      required
                     />
                   </div>
                   <div className={styles.form_group}>
@@ -189,6 +193,7 @@ export default function Contact(): JSX.Element {
                       value={formValues.email}
                       onChange={handleInputChange}
                       className={styles.form_input}
+                      required
                     />
                   </div>
                   <div className={styles.form_group}>
@@ -209,6 +214,7 @@ export default function Contact(): JSX.Element {
                       value={formValues.feedbackType}
                       onChange={handleInputChange}
                       className={styles.form_select}
+                      required
                     >
                       <option value="Question">Question</option>
                       <option value="Suggestion">Suggestion</option>
@@ -237,11 +243,12 @@ export default function Contact(): JSX.Element {
                     </label>
                     <textarea
                       name="message"
-                      rows={1}
+                      rows={5}
                       placeholder="Type your message here"
                       value={formValues.message}
                       onChange={handleInputChange}
                       className={styles.form_textarea}
+                      required
                     />
                   </div>
                   <div className={styles.form_group}>
