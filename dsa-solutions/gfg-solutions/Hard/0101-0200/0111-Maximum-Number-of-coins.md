@@ -42,8 +42,8 @@ Expected Time Complexity: $O(N^3)$
 Expected Space Complexity: $O(N^2)$
 
 ## Constraints
-- 1 <= N <= 400
-- 0 <= a[i] <= 100
+- `1 <= N <= 400`
+- `0 <= a[i] <= 100`
 
 ## Problem Explanation
 
