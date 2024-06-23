@@ -1,12 +1,12 @@
 ---
-id: MATLAB array
+id: matlab-array
 title: Array
 sidebar_label: MATLAB Array
 sidebar_position: 11
 tags: [MATLAB, Array]
 description: In this tutorial, you will learn about array in MATLAB. Array is a fundamental data type that allows you to store multiple elements of the same type in a single variable
 ---
-# MATLAB Arrays
+## MATLAB Arrays
 In MATLAB, an array is a fundamental data type that allows you to store multiple elements of the same type in a single variable. Arrays can be of different dimensions: vectors (1-dimensional arrays), matrices (2-dimensional arrays), or even multidimensional arrays.
 
 ### Creating Arrays
