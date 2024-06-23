@@ -1,5 +1,5 @@
 ---
-id: MATLAB String
+id: matlab-string
 title: String
 sidebar_label: MATLAB String
 sidebar_position: 6
@@ -7,7 +7,7 @@ tags: [MATLAB, String]
 description: In this tutorial, you will learn about String in MATLAB. Strings are arrays of characters enclosed in single quotes (`'`). Starting from MATLAB R2016b, strings are also supported as a data type (`string`).
 
 ---
-# MATLAB Strings
+## MATLAB Strings
 
 ### Creating and Manipulating Strings
 
