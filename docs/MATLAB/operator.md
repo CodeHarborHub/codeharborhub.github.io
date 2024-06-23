@@ -1,12 +1,12 @@
 ---
-id: MATLAB Operator
+id: matlab-operator
 title: Operator
 sidebar_label: MATLAB Operator
 sidebar_position: 7
 tags: [MATLAB, Operator]
 description: In this tutorial, you will learn about Operator in MATLAB.MATLAB, a high-performance language for technical computing, includes a variety of operators to handle different types of operations.
 ---
-# MATLAB Operator
+## MATLAB Operator
 MATLAB, a high-performance language for technical computing, includes a variety of operators to handle different types of operations. Here's an overview of some of the main operators in MATLAB:
 
 ### 1. Arithmetic Operators
