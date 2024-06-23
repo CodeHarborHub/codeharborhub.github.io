@@ -1,12 +1,11 @@
 ---
-id: intro-julia
+id: intro-julia 
 title: Introduction to JULIA
-sidebar_label: An Introduction to Julia
+sidebar_label: Introduction to Julia
 sidebar_position: 1
 tags: [Julia, Feature, Uses]
-description: "Learn Basics of Julie .Julia is a relatively new, open-source programming language gaining popularity for its unique blend of features. Here's a breakdown of its basics, functionalities, uses, and applications". 
 ---
-
+ 
 Julia is a relatively new, open-source programming language gaining popularity for its unique blend of features. 
 
 ## Basic Overview
