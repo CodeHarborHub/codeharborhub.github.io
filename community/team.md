@@ -21,8 +21,4 @@ If you are interested in joining the team, or would like to contribute to the Op
 
 ## Contributors {#contributors}
 
-![contributors](https://opencollective.com/codeharborhub/contributors.svg?button=false)
-
-<!--
-[![contributors](https://contrib.rocks/image?repo=codeharborhub/codeharborhub)](https://github.com/codeharborhub/codeharborhub/graphs/contributors)
--->
+![Contributors](https://opencollective.com/codeharborhub/contributors.svg?button=false&avatarHeight=50&width=1000)
