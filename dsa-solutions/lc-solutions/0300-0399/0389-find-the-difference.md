@@ -1,5 +1,5 @@
 ---
-id: Find the Difference
+id: find-the-difference
 title: Find the Difference
 sidebar_label: 0389-Find the Difference
 tags:
