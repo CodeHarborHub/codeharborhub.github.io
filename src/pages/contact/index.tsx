@@ -2,12 +2,16 @@ import Layout from "@theme/Layout";
 import styles from "./Contact.module.css";
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import { motion } from "framer-motion";
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
 
 interface FormValues {
   fullName: string;
   email: string;
   phone: string;
   message: string;
+  feedbackType: string;
+  otherFeedback: string;
 }
 
 /**
@@ -20,10 +24,12 @@ export default function Contact(): JSX.Element {
     email: "",
     phone: "",
     message: "",
+    feedbackType: "Question",
+    otherFeedback: "",
   });
 
   const handleInputChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     const { name, value } = e.target;
     setFormValues({
@@ -32,11 +38,19 @@ export default function Contact(): JSX.Element {
     });
   };
 
+  const handlePhoneChange = (phone: string) => {
+    setFormValues({
+      ...formValues,
+      phone: phone,
+    });
+  };
+
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Handle form submission logic
     console.log("Form submitted:", formValues);
   };
+
   return (
     <Layout>
       <section id="contact" className={styles.main__contact}>
@@ -178,18 +192,45 @@ export default function Contact(): JSX.Element {
                     />
                   </div>
                   <div className={styles.form_group}>
-                    <label htmlFor="phone" className={styles.form_label}>
-                      Phone*
-                    </label>
-                    <input
-                      type="text"
-                      name="phone"
-                      placeholder="+91 1254 5211 552"
+                    <PhoneInput
+                      country={'us'}
                       value={formValues.phone}
-                      onChange={handleInputChange}
-                      className={styles.form_input}
+                      onChange={handlePhoneChange}
+                      containerClass={styles.phone_input_container}
+                      inputClass={styles.phone_input}
                     />
                   </div>
+                  <div className={styles.form_group}>
+                    <label htmlFor="feedbackType" className={styles.form_label}>
+                      Feedback Type*
+                    </label>
+                    <select
+                      name="feedbackType"
+                      value={formValues.feedbackType}
+                      onChange={handleInputChange}
+                      className={styles.form_select}
+                    >
+                      <option value="Question">Question</option>
+                      <option value="Suggestion">Suggestion</option>
+                      <option value="Issue">Issue</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                  {formValues.feedbackType === "Other" && (
+                    <div className={styles.form_group}>
+                      <label htmlFor="otherFeedback" className={styles.form_label}>
+                        Please specify
+                      </label>
+                      <input
+                        type="text"
+                        name="otherFeedback"
+                        placeholder="Please specify your feedback"
+                        value={formValues.otherFeedback}
+                        onChange={handleInputChange}
+                        className={styles.form_input}
+                      />
+                    </div>
+                  )}
                   <div className={styles.form_group}>
                     <label htmlFor="message" className={styles.form_label}>
                       Message*
@@ -197,7 +238,7 @@ export default function Contact(): JSX.Element {
                     <textarea
                       name="message"
                       rows={1}
-                      placeholder="type your message here"
+                      placeholder="Type your message here"
                       value={formValues.message}
                       onChange={handleInputChange}
                       className={styles.form_textarea}
