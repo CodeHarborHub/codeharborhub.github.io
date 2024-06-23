@@ -1,5 +1,5 @@
 ---
-id: Vue.js Routing
+id: vue.js-routing
 title: Routing in Vue.Js
 sidebar_label: Routing in Vue.Js
 sidebar_position: 7
@@ -7,7 +7,7 @@ tags: [Vue.js,JavaScript,Vue.js Introduction,Routing,Framework,Vue.Js Concepts]
 description:  Vue.Js Routing.
 ---
 
-# Routing
+## Routing
 
 Routing in Vue.js refers to the mechanism of navigating between different pages or views in a single-page application (SPA) without a full page reload. Vue Router is the official routing library for Vue.js, providing a seamless way to manage application state and handle navigation.
 

@@ -1,13 +1,13 @@
 ---
-id: Vue.js Introduction
-title: Classes and Inheritance in TypeScript
+id: vue.js-introduction
+title: Vue.js Introduction
 sidebar_label: Introduction
 sidebar_position: 1
 tags: [Vue.js,JavaScript,Vue.js Introduction,Framework]
 description: What is Vue.Js and Fundamentals.
 ---
 
-# What is Vue.Js
+## What is Vue.Js
 Vue.js is a progressive JavaScript framework used for building user interfaces. It is designed to be incrementally adoptable, meaning you can integrate it into existing projects without having to rewrite the whole application. Vue.js is often compared to other front-end frameworks like React and Angular, but it distinguishes itself with its simplicity and ease of integration.
 
 ## Key features of Vue.js include:

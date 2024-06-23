@@ -1,12 +1,12 @@
 ---
-id: Vue.js Two-Way Data Binding
+id: vue.js-two-way-data-binding
 title: Two-Way Data Binding in Vue.Js
 sidebar_label: Two-Way Data Binding in Vue.Js
 sidebar_position: 4
 tags: [Vue.js,JavaScript,Vue.js Introduction,Two-Way Data Binding,Framework,Vue.Js Concepts]
 description:  Vue.Js Two-Way Data Binding.
 ---
-# Two-way data binding
+## Two-way data binding
 
 Two-way data binding is a feature in Vue.js (and other frameworks like Angular) that establishes a synchronization between the model (data) and the view (UI). It allows changes in the UI to affect the underlying data and vice versa, without needing explicit event listeners or manual DOM manipulation.
 

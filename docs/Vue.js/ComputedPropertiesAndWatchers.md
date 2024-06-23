@@ -1,12 +1,11 @@
 ---
-id: Vue.js Computed Properties and Watchers
+id: vue.js-computed-properties-and-watchers
 title: Computed Properties and Watchers in Vue.Js
 sidebar_label: Computed Properties and Watchers in Vue.Js
 sidebar_position: 6
 tags: [Vue.js,JavaScript,Vue.js Introduction,Computed Properties and Watchers,Framework,Vue.Js Concepts]
 description:  Vue.Js Computed Properties and Watchers.
----
-# Computed properties and watchers
+--- 
 
 Computed properties and watchers are advanced features in Vue.js that allow you to perform reactive computations and respond to changes in data. They are crucial for handling complex logic and maintaining the reactivity of your application.
 

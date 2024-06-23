@@ -1,5 +1,5 @@
 ---
-id: Vue.js state management
+id: vue.js-state-management
 title: state managementin Vue.Js
 sidebar_label: state management in Vue.Js
 sidebar_position: 8
@@ -7,7 +7,7 @@ tags: [Vue.js,JavaScript,Vue.js Introduction,state management,Framework,Vue.Js C
 description:  Vue.Js state management.
 ---
 
-# state management
+## state management
 
 state management in Vue.js in a comprehensive manner. State management is a critical aspect of building complex applications, ensuring that data is managed efficiently and consistently throughout the application's lifecycle. In Vue.js, there are several approaches to managing state, each suited to different scales and requirements of applications.
 

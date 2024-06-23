@@ -1,12 +1,12 @@
 ---
-id: Vue.js Transition and animation
+id: vue.js-transition-and-animation
 title: Transition and animation in Vue.Js
 sidebar_label: Transition and animation
 sidebar_position: 9
 tags: [Vue.js,JavaScript,Vue.js Introduction,Transition and animation,Framework]
 description: Transition and animation in Vue.Js
 ---
-# Transition and animation
+## Transition and animation
 
 Transition and animation are powerful tools in web development that enhance user experience by adding visual cues and smooth interactions to web applications. In the context of Vue.js, transitions and animations can be seamlessly integrated into components using Vue's built-in features and CSS animations.
 

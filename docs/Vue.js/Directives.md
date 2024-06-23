@@ -1,5 +1,5 @@
 ---
-id: Vue.js Directives
+id: vue.js-Directives
 title: Directives in Vue.Js
 sidebar_label: Directives in Vue.Js
 sidebar_position: 5
@@ -7,7 +7,7 @@ tags: [Vue.js,JavaScript,Vue.js Introduction,Directives,Framework,Vue.Js Concept
 description:  Vue.Js Directives.
 ---
 
-# Directives
+## Directives
 
 Directives in Vue.js are special attributes prefixed with `v-`, which are used to add dynamic behavior to HTML elements or components. They are fundamental building blocks of Vue.js applications and provide declarative syntax to manipulate the DOM, handle events, conditionally render elements, and more.
 

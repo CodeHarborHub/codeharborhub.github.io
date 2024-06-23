@@ -1,13 +1,12 @@
 ---
-id: Vue.js Component Based
+id: vue.js-Component-Based
 title: Component-Based in Vue.Js
 sidebar_label: Component-Based in Vue.Js
 sidebar_position: 3
 tags: [Vue.js,JavaScript,Vue.js Introduction,Component-Based,Framework,Vue.Js Concepts]
 description:  Vue.Js Component-Based.
 ---
-
-# Component-Based in Vue.Js
+ 
 
 Component-based architecture is a fundamental concept in Vue.js (and many other modern JavaScript frameworks) that promotes building applications by breaking them down into reusable, self-contained components. Each component encapsulates a piece of UI, including its HTML structure, CSS styles, and JavaScript logic, making it easier to manage and maintain complex applications.
 

@@ -1,5 +1,5 @@
 ---
-id: Vue.js Declarative Rendering
+id: vue.js-declarative-rendering
 title: Declarative Rendering in Vue.Js
 sidebar_label: Declarative Rendering in Vue.Js
 sidebar_position: 2
@@ -7,7 +7,7 @@ tags: [Vue.js,JavaScript,Vue.js Introduction,Declarative Rendering,Framework,Vue
 description:  Vue.Js Declarative Rendering.
 ---
 
-# Declarative Rendering
+## Declarative Rendering
 Declarative rendering is a core concept in Vue.js that simplifies how you specify what you want to display in your web application's user interface (UI). Instead of manually manipulating the DOM (Document Object Model) to update the UI based on changes in data, Vue.js allows you to declare what should be rendered based on the current state of your data.
 
 ### Example 1: Basic Data Binding
