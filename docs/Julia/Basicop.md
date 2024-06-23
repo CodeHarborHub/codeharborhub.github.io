@@ -4,8 +4,8 @@ title: Operator
 sidebar_label: Julia Operator
 sidebar_position: 3
 tags: [Julia, Operator, Datatype,Scope]
-description: "Julia supports a wide variety of operators, including arithmetic, comparison, logical, bitwise, and others. Here’s a detailed overview of the different types of operators available in Julia". 
 ---
+
 Operators are special symbols or keywords that are used to perform operations on variables and values. Julia supports a variety of operators, including arithmetic, comparison, logical, bitwise, and more. Here’s a detailed overview of the different types of operators available in Julia:
 
 ### 1. Arithmetic Operators
