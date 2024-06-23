@@ -1,5 +1,5 @@
 ---
-id: MATLAB Command
+id: matlab-command
 title: Command
 sidebar_label: MATLAB Command
 sidebar_position: 
