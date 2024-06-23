@@ -226,4 +226,15 @@ export const Users: User[] = [
     source: "https://github.com/Ajay-Dhangar/ajay-dhangar.github.io",
     tags: ["opensource", "portfolio", "react", "typescript", "mdx"],
   },
+  // BMI Calculator
+
+  {
+    title: "BMI Calculator",
+    description:
+      "A BMI Calculator is a tool that quickly determines body mass index from a person's weight and height,  categorizing results into underweight, normal weight, overweight .",
+    preview: require("./showcase/BMI-calculator.png"),
+    website: "bmi-calculator-liart-five.vercel.app",
+    source: "https://github.com/parikhitritgithub/BMI-Calculator",
+    tags: ["opensource", "javascript", "html", "css",],
+  },
 ];
