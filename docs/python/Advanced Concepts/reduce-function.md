@@ -14,9 +14,9 @@ string). It reduces the iterable to a single value by successively combining ele
 from functools import reduce
 reduce(function, iterable, initial=None)
 ```
-**Parameters**:<br>
-*function* : The binary function to apply. It takes two arguments and returns a single value.<br>
-*iterable* : The sequence of elements to process.<br>
+**Parameters**:<br />
+*function* : The binary function to apply. It takes two arguments and returns a single value.<br />
+*iterable* : The sequence of elements to process.<br />
 *initial (optional)*: An initial value. If provided, the function is applied to the initial value 
 and the first element of the iterable. Otherwise, the first two elements are used as the initial 
 values.
