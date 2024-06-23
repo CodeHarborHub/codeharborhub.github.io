@@ -1,12 +1,13 @@
 ---
-id: MATLAB Vector
+id: matlab-vector
 title: Vector
 sidebar_label: MATLAB Vector
 sidebar_position: 9
 tags: [MATLAB, Vector]
 description: In this tutorial, you will learn about Vector in MATLAB  .Vectors in MATLAB are fundamental data structures that represent arrays of numbers. Vectors can be either row vectors or column vectors. MATLAB provides various functions to create and manipulate vectors efficiently.
 ---
-# MATLAB Vector
+
+## MATLAB Vector
 Vectors in MATLAB are fundamental data structures that represent arrays of numbers. Vectors can be either row vectors or column vectors. MATLAB provides various functions to create and manipulate vectors efficiently.
 
 ### Creating Vectors
