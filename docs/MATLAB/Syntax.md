@@ -1,12 +1,12 @@
 ---
-id: MATLAB Syntax
+id: matlab-syntax
 title: Syntax
 sidebar_label: MATLAB Syntax
 sidebar_position: 2
 tags: [MATLAB, Syntax]
 description: In this tutorial, you will learn about Syntax in MATLAB.
 ---
-#  MATLAB Syntax
+
 
 MATLAB environment behaves like a super-complex calculator. You can enter commands at the >> command prompt.
 
