@@ -6,7 +6,6 @@ sidebar_position: 2
 tags: [MATLAB, Polynomials]
 description: In this tutorial, you will learn about Polynomials in MATLAB.
 ---
-# MATLAB Polynomials
 
 ### Creating Polynomials
 
