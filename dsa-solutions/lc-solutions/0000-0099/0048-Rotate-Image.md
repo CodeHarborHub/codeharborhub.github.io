@@ -1,5 +1,5 @@
 ---
-id: rotate-image
+id: 48-rotate-image
 title: Rotate Image (LeetCode)
 sidebar_label: 0048-RotateImage
 tags:
@@ -8,12 +8,6 @@ tags:
   - Matrix
 description: given an 2D matrix which is representing an image, rotate the image by 90 degrees.
 ---
-
-<!-- ## Problem Description
-
-| Problem Statement                                                       | Solution Link                                                                  | LeetCode Profile                                     |
-| :---------------------------------------------------------------------- | :----------------------------------------------------------------------------- | :--------------------------------------------------- |
-| [Rotate Image](https://leetcode.com/problems/rotate-image/description/) | [Rotate Image Leetcode](https://leetcode.com/problems/rotate-image/solutions/) | [Ayush Chaware](https://leetcode.com/ayushchaware08) | -->
 
 ## Problem Description
 
@@ -38,15 +32,17 @@ Output:  [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]
 
 ### Constraints:
 
-- $n == matrix.length == matrix[i].length$
-- $1 <= n <= 20$
-- $-1000 <= matrix[i][j] <= 1000$
+- <code>$n == \text{matrix.length} == \text{matrix[i].length}$</code>
+- <code>$1 \leq n \leq 20$</code>
+- <code>$-1000 \leq \text{matrix[i][j]} \leq 1000$</code>
 
 ### Approach
 
- **1. Initialize Variables:** `n` The dimension of the matrix (assuming it is an n x n matrix).
- **2. Transpose the Matrix:** Loop through each element of the matrix and swap elements symmetrically around the diagonal.
- **3. Reverse Each Row:** Loop through each row and reverse the elements in place.
+**1. Initialize Variables:** `n` The dimension of the matrix (assuming it is an n x n matrix).
+
+**2. Transpose the Matrix:** Loop through each element of the matrix and swap elements symmetrically around the diagonal.
+
+**3. Reverse Each Row:** Loop through each row and reverse the elements in place.
 
 ### Solution Codes
 

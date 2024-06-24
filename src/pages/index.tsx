@@ -48,20 +48,11 @@ function TweetsSection() {
           spaceBetween={30}
           autoplay={{ delay: 2000 }}
           loop={true}
-          pagination={{ clickable: true }}
+          // pagination={{ clickable: true }}
           breakpoints={{
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 3,
-              spaceBetween: 40,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 50,
-            },
+            640: { slidesPerView: 1, spaceBetween: 20 },
+            768: { slidesPerView: 2, spaceBetween: 40 },
+            1024: { slidesPerView: 3, spaceBetween: 50 },
           }}
           modules={[Navigation, Pagination, Autoplay]}
           className={style.tweetsSwiper}

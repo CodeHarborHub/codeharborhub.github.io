@@ -3,19 +3,14 @@ id: 3Sum Closest
 title: 3Sum losest (LeetCode)
 sidebar_label: 0016-3Sum Closest
 tags:
-    - Array
-    - two pointers
-    - Sorting
-description: Given an integer array nums of length n and an integer target, find three integers in nums such that the sum is closest to target..
+  - Array
+  - two pointers
+  - Sorting
+description: Given an integer array nums of length n and an integer target, find three integers in nums such that the sum is closest to target.
+sidebar_position: 16
 ---
 
 ## Problem Description
-
-| Problem Statement                                                                                           | Solution Link                                                                                                                               | LeetCode Profile                                   |
-| :----------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------- |
-| [3Sum](https://leetcode.com/problems/3sum-closest/)                                         | [3Sum Solution on LeetCode](https://leetcode.com/problems/3sum-closest/solutions/5001229/simple-java-binary-search/) | [gabaniyash846](https://leetcode.com/u/gabaniyash846/) |
-
-### Problem Description
 
 Given an integer array `nums` of length `n` and an integer `target`, find three integers in `nums` such that the sum is closest to `target`.
 
@@ -23,32 +18,36 @@ Return the sum of the three integers.
 
 You may assume that each input would have exactly one solution.
 
-### Examples
+### Example 1
 
-#### Example 1
 - **Input:** `nums = [-1,2,1,-4]`, `target = 1`
 - **Output:** `2`
 - **Explanation:** The sum that is closest to the target is `2` (`-1 + 2 + 1 = 2`).
 
-#### Example 2
+### Example 2
+
 - **Input:** `nums = [0,0,0]`, `target = 1`
 - **Output:** `0`
 - **Explanation:** The sum that is closest to the target is `0` (`0 + 0 + 0 = 0`).
 
 ### Constraints
+
 - `3 <= nums.length <= 500`
 - `-1000 <= nums[i] <= 1000`
 - `-10^4 <= target <= 10^4`
 
 ### Topics
+
 - Array
 - Two Pointers
 - Sorting
 
 ### Intuition
+
 - Sorting combined with the two-pointer technique.
 
 ### Complexity
+
 - **Time Complexity:** $O(N \log N + N^2)$ approx $O(N^2)$
 - **Space Complexity:** $(O(1))$
 
@@ -173,17 +172,22 @@ class Solution:
 ### Explanation
 
 1. **Sort the Array:**
+
    - The array `nums` is sorted to facilitate the two-pointer technique.
+
    ```python
    nums.sort()
    ```
 
 2. **Initialize Variables:**
+
    - `mindiff` is initialized to infinity to keep track of the minimum difference found.
    - `ans` is initialized to 0 to store the closest sum.
 
 3. **Iterate Through the Array:**
+
    - For each element `nums[i]`, use two pointers `j` and `k` to find the other two elements.
+
    ```python
    for i in range(n):
        j = i + 1
@@ -191,11 +195,13 @@ class Solution:
    ```
 
 4. **Two-Pointer Approach:**
+
    - Calculate the sum of `nums[i]`, `nums[j]`, and `nums[k]`.
    - If the sum equals the target, return the target immediately.
    - If the sum does not equal the target, calculate the difference between the target and the sum.
    - If the difference is less than `mindiff`, update `mindiff` and `ans`.
    - Adjust the pointers `j` and `k` based on whether the sum is less than or greater than the target.
+
    ```python
    while j < k:
        sum_val = nums[i] + nums[j] + nums[k]

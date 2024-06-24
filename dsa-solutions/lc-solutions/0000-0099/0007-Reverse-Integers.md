@@ -6,13 +6,8 @@ tags:
     - Math
     - Simulation
 description: Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-2^31, 2^31 - 1], then return 0.
+sidebar_position: 7
 ---
-
-## Problem Description
-
-| Problem Statement                                                                                         | Solution Link                                                                                                                                          | LeetCode Profile                                   |
-| :--------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------- |
-| [Reverse Integer on LeetCode](https://leetcode.com/problems/reverse-integer/description/) | [Reverse Integer Solution on LeetCode](https://leetcode.com/problems/reverse-integer/editorial/) | [gabaniyash846](https://leetcode.com/u/gabaniyash846/) |
 
 ## Problem Statement
 Given a signed 32-bit integer `x`, return `x` with its digits reversed. If reversing `x` causes the value to go outside the signed 32-bit integer range [-2^31, 2^31 - 1], then return 0.

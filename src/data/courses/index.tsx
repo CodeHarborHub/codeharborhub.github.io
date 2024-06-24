@@ -192,6 +192,150 @@ const courses = [
       author: "Ajay Dhangar",
       link: "https://www.geeksforgeeks.org/docker-projects-ideas-for-beginners/"
     },
+    {
+      "id": 23,
+      "title": "GraphQL",
+      "description": "This course is for absolute beginners who want to learn GraphQL.",
+      "category": "graphql",
+      "imageUrl": "/img/svg/developer_activity.svg",
+      "author": "Ajay Dhangar",
+      "link": "https://graphql.org/learn/"
+    },
+    {
+      "id": 24,
+      "title": "Kubernetes",
+      "description": "This course is for absolute beginners who want to learn Kubernetes.",
+      "category": "kubernetes",
+      "imageUrl": "/img/svg/developer_activity.svg",
+      "author": "Ajay Dhangar",
+      "link": "https://kubernetes.io/docs/tutorials/kubernetes-basics/"
+    },
+    {
+      "id": 25,
+      "title": "Jenkins",
+      "description": "This course is for absolute beginners who want to learn Jenkins.",
+      "category": "jenkins",
+      "imageUrl": "/img/svg/developer_activity.svg",
+      "author": "Ajay Dhangar",
+      "link": "https://www.jenkins.io/doc/tutorials/"
+    },
+    {
+      "id": 26,
+      "title": "Git",
+      "description": "This course is for absolute beginners who want to learn Git.",
+      "category": "git",
+      "imageUrl": "/img/svg/developer_activity.svg",
+      "author": "Ajay Dhangar",
+      "link": "https://git-scm.com/doc"
+    },
+    {
+      "id": 27,
+      "title": "GitHub",
+      "description": "This course is for absolute beginners who want to learn GitHub.",
+      "category": "github",
+      "imageUrl": "/img/svg/developer_activity.svg",
+      "author": "Ajay Dhangar",
+      "link": "https://guides.github.com/activities/hello-world/"
+    },
+    {
+      "id": 28,
+      "title": "Adobe XD",
+      "description": "This course is for absolute beginners who want to learn Adobe XD.",
+      "category": "adobexd",
+      "imageUrl": "/img/svg/developer_activity.svg",
+      "author": "Ajay Dhangar",
+      "link": "https://www.adobe.com/products/xd/learn/get-started.html"
+    },
+    {
+      "id": 29,
+      "title": "Sketch",
+      "description": "This course is for absolute beginners who want to learn Sketch.",
+      "category": "sketch",
+      "imageUrl": "/img/svg/developer_activity.svg",
+      "author": "Ajay Dhangar",
+      "link": "https://www.sketch.com/docs/"
+    },
+    {
+      "id": 30,
+      "title": "Full Stack Web Development",
+      "description": "This course is for absolute beginners who want to learn Full Stack Web Development.",
+      "category": "fullstackwebdevelopment",
+      "imageUrl": "/img/svg/developer_activity.svg",
+      "author": "Ajay Dhangar",
+      "link": "https://www.theodinproject.com/"
+    },
+    {
+      "id": 31,
+      "title": "Software Development Engineer",
+      "description": "This course is for absolute beginners who want to become a Software Development Engineer.",
+      "category": "software development engineer",
+      "imageUrl": "/img/svg/developer_activity.svg",
+      "author": "Ajay Dhangar",
+      "link": "https://www.coursera.org/courses?query=software%20development"
+    },
+    {
+      "id": 32,
+      "title": "MERN Stack Development",
+      "description": "This course is for absolute beginners who want to learn MERN Stack Development.",
+      "category": "mern stack developer",
+      "imageUrl": "/img/svg/developer_activity.svg",
+      "author": "Ajay Dhangar",
+      "link": "https://www.freecodecamp.org/news/learn-the-mern-stack/"
+    },
+    {
+      "id": 33,
+      "title": "MEAN Stack Development",
+      "description": "This course is for absolute beginners who want to learn MEAN Stack Development.",
+      "category": "mean stack developer",
+      "imageUrl": "/img/svg/developer_activity.svg",
+      "author": "Ajay Dhangar",
+      "link": "https://www.geeksforgeeks.org/introduction-to-mean-stack/"
+    },
+    {
+      "id": 34,
+      "title": "Django Development",
+      "description": "This course is for absolute beginners who want to learn Django Development.",
+      "category": "django developer",
+      "imageUrl": "/img/svg/developer_activity.svg",
+      "author": "Ajay Dhangar",
+      "link": "https://www.djangoproject.com/start/"
+    },
+    {
+      "id": 35,
+      "title": "Laravel Development",
+      "description": "This course is for absolute beginners who want to learn Laravel Development.",
+      "category": "laravel developer",
+      "imageUrl": "/img/svg/developer_activity.svg",
+      "author": "Ajay Dhangar",
+      "link": "https://laravel.com/docs/8.x"
+    },
+    {
+      "id": 36,
+      "title": "Flask Development",
+      "description": "This course is for absolute beginners who want to learn Flask Development.",
+      "category": "flask developer",
+      "imageUrl": "/img/svg/developer_activity.svg",
+      "author": "Ajay Dhangar",
+      "link": "https://flask.palletsprojects.com/en/2.0.x/tutorial/"
+    },
+    {
+      "id": 37,
+      "title": "GitLab",
+      "description": "This course is for absolute beginners who want to learn GitLab.",
+      "category": "gitlab",
+      "imageUrl": "/img/svg/developer_activity.svg",
+      "author": "Ajay Dhangar",
+      "link": "https://docs.gitlab.com/ee/gitlab-basics/"
+    },
+    {
+      "id": 38,
+      "title": "Figma",
+      "description": "This course is for absolute beginners who want to learn Figma.",
+      "category": "figma",
+      "imageUrl": "/img/svg/developer_activity.svg",
+      "author": "Ajay Dhangar",
+      "link": "https://www.figma.com/resources/learn-design/"
+    }
   ];
   
   export default courses;

@@ -1,6 +1,6 @@
 ---
-id: rotate-array
-title: Rotate Array
+id: 189-rotate-array
+title: Rotate Array (LeetCode)
 sidebar_label: 0189 Rotate Array
 tags:
   - Array
