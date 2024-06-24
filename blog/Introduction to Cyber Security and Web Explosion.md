@@ -177,7 +177,3 @@ The demand for skilled cyber security professionals is increasing. Investing in 
 ## Conclusion
 
 The web explosion has brought tremendous opportunities and conveniences, but it has also created significant cyber security challenges. As we navigate this digital landscape, understanding and implementing effective cyber security measures is paramount. By staying informed about emerging threats, investing in advanced technologies, and fostering a culture of security, we can protect our digital world and ensure a secure future.
-
----
-
-*Author: Pujan Sarkar*
