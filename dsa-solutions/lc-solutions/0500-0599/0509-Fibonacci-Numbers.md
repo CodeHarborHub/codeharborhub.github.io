@@ -21,7 +21,7 @@ The Fibonacci numbers, commonly denoted F(n), form a sequence, called the Fibona
 
 - F(0) = 0
 - F(1) = 1
-- F(n) = F(n-1) + F(n-2) for n > 1
+- F(n) = F(n-1) + F(n-2) for n &gt; 1
 
 Given an integer n, calculate F(n).
 
