@@ -1,5 +1,5 @@
 ---
-id:  fair-candy swap
+id:  fair-candy-swap
 title:  Fair Candy Swap
 sidebar_label: 888-  Fair Candy Swap
 tags:
@@ -67,7 +67,7 @@ class Solution {
 ```
 
 - Time Complexity
-The time complexity is o(n).
+The time complexity is $o(n)$.
 
 - Space Complexity
-The space complexity is O(1).
+The space complexity is $O(1)$.
