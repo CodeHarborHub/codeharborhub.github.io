@@ -1,16 +1,15 @@
 ---
 id: jewels-and-stones
-title:   Jewels and Stones
+title: Jewels and Stones
 sidebar_label: 771 Jewels and Stones
-
 tags:
 - HashTable
 - String
-
 description: "This is a solution to the Jewels and Stones on leetcode"
 ---
 
 ## Problem Description
+
 You're given strings jewels representing the types of stones that are jewels, and stones representing the stones you have. Each character in stones is a type of stone you have. You want to know how many of the stones you have are also jewels.
 Letters are case sensitive, so "a" is considered a different type of stone from "A".
 
@@ -43,7 +42,7 @@ Output: 0
 The problem requires us to determine how many characters from the jewels string are present in the stones string. Each character in jewels represents a type of jewel, and each character in stones represents a stone that may contain one of these jewels. The goal is to count how many stones are jewels.
 
 ### Approach
-We use a hash-based data structure (an unordered_set in C++ or a HashSet in Java) to store characters from the jewels string. This allows for average O(1) time complexity for membership checks.and we iterate to each character in stones string if that character is present in jewel we increment the count and we return count.
+We use a hash-based data structure (an unordered_set in C++ or a HashSet in Java) to store characters from the jewels string. This allows for average $O(1)$ time complexity for membership checks.and we iterate to each character in stones string if that character is present in jewel we increment the count and we return count.
 
 
 #### Complexity Analysis
@@ -51,10 +50,9 @@ We use a hash-based data structure (an unordered_set in C++ or a HashSet in Java
  - Time Complexity: $O(J+S)$, where J is the length of jewels and S is the length of stones.
  - Space Complexity: $O(J)$ , where J is no of distinct characters in jewels.
 
-    ## Code in Different Languages
+## Code in Different Languages
 
-    <Tabs>
-
+<Tabs>
   <TabItem value="Java" label="Java">
   <SolutionAuthor name="@ImmidiSivani" />
 
@@ -74,13 +72,11 @@ We use a hash-based data structure (an unordered_set in C++ or a HashSet in Java
                 }
             }
             return count;
-        }}
-        
+        }}       
   
     ```
 
   </TabItem>
-
   <TabItem value="Python" label="Python">
   <SolutionAuthor name="@ImmidiSivani" /> 
 
@@ -96,13 +92,11 @@ We use a hash-based data structure (an unordered_set in C++ or a HashSet in Java
         return c
 
    ```
-
   </TabItem>
-
-  <TabItem value="c++" label="c++">
+  <TabItem value="cpp" label="c++">
   <SolutionAuthor name="@ImmidiSivani" />
 
-   ```c++
+   ```cpp
     #include <iostream>
     #include <unordered_set>
 
@@ -121,10 +115,8 @@ We use a hash-based data structure (an unordered_set in C++ or a HashSet in Java
     };
    
     ```
-
   </TabItem>
-
-    </Tabs>
+</Tabs>
 
 ## References
 
