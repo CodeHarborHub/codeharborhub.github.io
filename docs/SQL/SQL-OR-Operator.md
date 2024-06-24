@@ -28,7 +28,7 @@ The performance of queries using OR can be influenced by the presence of indexes
 
 **2.Using OR with other operators:**
 - Example : `SELECT * FROM Employees WHERE Age < 25 OR Age > 50 OR Department = 'Sales';`
-- Description : You can combine OR with other comparison operators like =, !=, <, >, <=, >=.This query selects all employees who are either younger than 25, older than 50, or work in the Sales department.
+- Description : You can combine OR with other comparison operators like `=`, `!=`, `<`, `>`, `<=`, `>=`.This query selects all employees who are either younger than 25, older than 50, or work in the Sales department.
 
 **3.Combining OR with AND:**
 - Example : `SELECT * FROM Employees WHERE (Age < 25 AND Department = 'Marketing') OR (Age > 50 AND Department = 'Sales');`
