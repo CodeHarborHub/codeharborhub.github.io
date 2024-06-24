@@ -1,7 +1,7 @@
 ---
 title: 'Cyber Security and the Web Explosion'
 sidebar_label: Cyber Security and Web Explosion
-authors: [Pujan Sarkar]
+authors: [pujan-sarkar]
 tags: [cyber security, web explosion, internet, technology]
 date: 2024-06-23
 hide_table_of_contents: true
