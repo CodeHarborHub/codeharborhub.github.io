@@ -6,31 +6,24 @@ tags:
   - Two Pointers
   - Linked List
 description: "Given the head of a linked list, remove the nth node from the end of the list and return its head."
+sidebar_position: 19
 ---
 
 ## Problem Description
 
-| Problem Statement                                                                                               | Solution Link                                                                                                             | LeetCode Profile                                        |
-| :-------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------ |
-| [Remove nth node from end of list](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) | [Remove nth node from end of list on LeetCode](https://leetcode.com/problems/remove-nth-node-from-end-of-list/solutions/) | [Areetra Halder](https://leetcode.com/u/areetrahalder/) |
-
-### Problem Description
-
 Given the head of a linked list, remove the nth node from the end of the list and return its head.
 
-### Examples
-
-#### Example 1
+### Example 1
 
 - **Input:** `head = [1,2,3,4,5], n = 2`
 - **Output:** `[1,2,3,5]`
 
-#### Example 2
+### Example 2
 
 - **Input:** `head = [1], n = 1`
 - **Output:** `[]`
 
-#### Example 3
+### Example 3
 
 - **Input:** `head = [1,2], n = 1`
 - **Output:** `[1]`
@@ -42,7 +35,7 @@ Given the head of a linked list, remove the nth node from the end of the list an
 - $0 <= Node.val <= 100$
 - $1 <= n <= sz$
 
-### Approach
+## Approach
 
 1. Calculate the size of the Single Linked List. We need to travel to the prev node of the node to be removed thus we perform reduce size by n
 2. If the node to be removed is the first node (size == 0) then we can simply return the next node of head since it will be null if the list has only one node.
@@ -50,7 +43,7 @@ Given the head of a linked list, remove the nth node from the end of the list an
 4. Skip the next node by linking the prev node to the next of next node. If not present, assign null.
 5. Finally return the head.
 
-### Solution Code
+## Solution Code
 
 #### Python
 

@@ -11,6 +11,7 @@ body:
       options:
         - label: I have searched the existing issues
           required: true
+
   - type: textarea
     id: issue-description
     attributes:
@@ -19,6 +20,7 @@ body:
       placeholder: Describe the improvement or correction you'd like to see in the documentation.
     validations:
       required: true
+
   - type: textarea
     id: suggested-change
     attributes:
@@ -27,6 +29,7 @@ body:
       placeholder: Explain how the documentation should be updated or corrected.
     validations:
       required: true
+
   - type: textarea
     id: rationale
     attributes:
@@ -34,7 +37,8 @@ body:
       description: Why is this documentation update necessary or beneficial?
       placeholder: Explain the importance or reasoning behind the suggested change.
     validations:
-      required: False
+      required: false
+
   - type: dropdown
     id: urgency
     attributes:
@@ -47,14 +51,34 @@ body:
       default: 0
     validations:
       required: true
+
   - type: checkboxes
     id: terms
     attributes:
-      label: Record
+      label: Acknowledgements
+      description: Ensure you have read and agree to the project's guidelines.
       options:
-        - label: "I have read the Contributing Guidelines"
+        - label: I have read the Contributing Guidelines
           required: true
-        - label: "I'm a GSSOC'24 contributor"
+        - label: I'm a GSSOC'24 contributor
           required: false
-        - label: "I have starred the repository"
+        - label: I have starred the repository
+          required: true
+        - label: I have read and followed the Contribution Guidelines
+          required: true
+        - label: I have followed the code style guidelines of this project
+          required: true
+        - label: I have checked for any existing open issues that my pull request may address
+          required: true
+        - label: I have ensured that my changes do not break any existing functionality
+          required: true
+        - label: Each contributor is allowed to create a maximum of 4 issues per day. This helps us manage and address issues efficiently
+          required: true
+        - label: I have read the resources for guidance listed below
+          required: true
+        - label: I have not used AI-generated content (e.g., ChatGPT, other AI tools)
+          required: true
+        - label: I have not used content from existing sites (e.g., text, images)
+          required: true
+        - label: I have followed all security rules and only shared trusted resources
           required: true

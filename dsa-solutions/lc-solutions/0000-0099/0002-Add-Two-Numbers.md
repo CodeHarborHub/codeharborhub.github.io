@@ -9,6 +9,7 @@ tags:
   - Add Two Numbers
   - LeetCode
 description: "This is a solution to the Add Two Numbers problem on LeetCode."
+sidebar_position: 2
 ---
 
 In this page, we will solve the Add Two Numbers problem. We will provide an overview of the problem, the intuition and approach to solve it, the implementation, and the code in various languages, along with a detailed explanation of the solution and its complexity analysis. Let's start by understanding the problem.
@@ -361,8 +362,12 @@ Output: [8,9,9,9,0,0,0,1]
 
 :::
 
-## Resources
+---
 
-- **LeetCode Problem:** [Add Two Numbers Problem](https://leetcode.com/problems/add-two-numbers/)
-- **Solution Link:** [Add Two Numbers Solution on LeetCode](https://leetcode.com/problems/add-two-numbers/solutions/3368572/easy-and-understanding-solution-with-intuition-approach-complexity-and-codes)
-- **Authors LeetCode Profile:** [Ajay Dhangar](https://leetcode.com/ajaydhangar49/), [Amruta Jayanti](https://leetcode.com/u/user7669cY/)
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['ajay-dhangar'].map(username => (
+    <Author key={username} username={username} />
+))}
+</div>
