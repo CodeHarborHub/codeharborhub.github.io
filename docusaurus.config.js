@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faYoutube, faDiscord,  } from '@fortawesome/free-brands-svg-icons';
+
 import { themes as prismThemes } from "prism-react-renderer";
 import { default as npm2yarn } from "@docusaurus/remark-plugin-npm2yarn";
 const remarkMath = require("remark-math");
@@ -39,7 +42,8 @@ const config = {
             keywords: ["my-custom-admonition"],
             extendDefaults: true,
           },
-          editUrl: "https://github.com/codeharborhub/codeharborhub.github.io/edit/main/",
+          editUrl:
+            "https://github.com/codeharborhub/codeharborhub.github.io/edit/main/",
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
         },
@@ -48,7 +52,8 @@ const config = {
         },
         blog: {
           showReadingTime: true,
-          editUrl: "https://github.com/codeharborhub/codeharborhub.github.io/edit/main/",
+          editUrl:
+            "https://github.com/codeharborhub/codeharborhub.github.io/edit/main/",
           remarkPlugins: [[npm2yarn, { converters: ["pnpm"] }]],
         },
         theme: {
@@ -79,6 +84,24 @@ const config = {
         isCloseable: true,
         backgroundColor: "var(--ifm-color-primary)",
       },
+
+      metadata: [
+        {
+          name: "keywords",
+          content:
+            "CodeHarborHub, CodeHarbor, CodeHarborHub, CodeHarborHub Blog, CodeHarborHub Community, CodeHarborHub Courses, CodeHarborHub DSA, CodeHarborHub Web Dev, CodeHarborHub Tutorials, CodeHarborHub Showcase, CodeHarborHub Donate, CodeHarborHub Blog, CodeHarborHub Team, CodeHarborHub About, CodeHarborHub Contact, CodeHarborHub Careers, CodeHarborHub Terms, CodeHarborHub Privacy, CodeHarborHub Cookie, CodeHarborHub Code of Conduct, CodeHarborHub Quiz, CodeHarborHub Broadcast, CodeHarborHub Tags, CodeHarborHub Courses Tags, CodeHarborHub DSA Tags, CodeHarborHub Web Dev Tags, CodeHarborHub Product, CodeHarborHub LinkedIn, CodeHarborHub YouTube, CodeHarborHub Discord, CodeHarborHub Twitter, CodeHarborHub GitHub, CodeHarborHub Products, CodeHarborHub Web Dev, CodeHarborHub DSA, CodeHarborHub Courses, CodeHarborHub Tutorials, CodeHarborHub Showcase, CodeHarborHub Donate, CodeHarborHub Blog, CodeHarborHub Team, CodeHarborHub About, CodeHarborHub Contact, CodeHarborHub Careers, CodeHarborHub Terms, CodeHarborHub Privacy, CodeHarborHub Cookie, CodeHarborHub Code of Conduct, CodeHarborHub Quiz, CodeHarborHub Broadcast, CodeHarborHub Tags, CodeHarborHub Courses Tags, CodeHarborHub DSA Tags, CodeHarborHub Web Dev Tags, CodeHarborHub Product, CodeHarborHub LinkedIn, CodeHarborHub YouTube, CodeHarborHub Discord, CodeHarborHub Twitter, CodeHarborHub GitHub, CodeHarborHub Products, CodeHarborHub Web Dev, CodeHarborHub DSA, CodeHarborHub Courses, CodeHarborHub Tutorials, CodeHarborHub Showcase, CodeHarborHub Donate, CodeHarborHub Blog, CodeHarborHub Team, CodeHarborHub About, CodeHarborHub Contact, CodeHarborHub Careers, CodeHarborHub Terms, CodeHarborHub Privacy, CodeHarborHub Cookie, CodeHarborHub Code of Conduct, CodeHarborHub Quiz, CodeHarborHub Broadcast, CodeHarborHub Tags, CodeHarborHub, leetcode, codeforces, hackerrank, geeksforgeeks, interviewbit, educative, udemy, coursera, udacity, khanacademy, codecademy, w3schools, tutorialspoint, javatpoint, geeksforgeeks, stackoverflow, github, gitlab, bitbucket, codepen, jsfiddle, repl.it, codesandbox, stackblitz, gfg, GeeksForGeeks, tech",
+        },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:site", content: "@CodesWithAjay" },
+        { name: "twitter:creator", content: "@CodesWithAjay" },
+        { property: "og:type", content: "website" },
+        { property: "og:site_name", content: "CodeHarborHub" },
+        { property: "og:title", content: "CodeHarborHub - A place to learn and grow" },
+        { property: "og:description", content: "CodeHarborHub is a place to learn and grow. We provide accessible and comprehensive educational resources to learners of all levels, from beginners to advanced professionals."},
+        { property: "og:image", content: "https://codeharborhub.github.io/img/nav-logo.jpg" },
+        { property: "og:url", content: "https://codeharborhub.github.io" },
+        { name: "robots", content: "index, follow" },          
+      ],
 
       algolia: {
         apiKey: "2c1a3331ebff51f76d2f247323ee4ba4",
@@ -150,11 +173,11 @@ const config = {
 
               {
                 type: "html",
-                value: `<div class="dropdown">
+                value: `<div class="dropdown ">
                 <a class="dropbtn" href="/dsa/"> DSA&nbsp; </a>
-                <div class="dropdown-content">
-                  <a href="/dsa-problems/" class="nav__icons"> Problems </a> <br />
-                  <a href="/dsa-solutions/" class="nav__icons"> Solutions </a>
+                <div class="dropdown-content dsa-content ">
+                  <a href="/dsa-problems/" class="nav__icons"> 🧩Problems </a> <br />
+                  <a href="/dsa-solutions/" class="nav__icons  "> 💡Solutions </a>
                 </div>
               </div>`,
               },
@@ -170,24 +193,34 @@ const config = {
             html: '<span class="nav-emoji">🤝</span> Community',
             position: "left",
           },
+
           {
-            html: '<span class="nav-emoji"> 📊</span> Quiz',
-            to: "https://quiz-app-ajay-dhangar.vercel.app/",
-          },
-          {
-            html: '<span class="nav-emoji"> 📺</span> Broadcast',
-            to: "https://codeharborhub-broadcast-web.vercel.app/",
+            to: "/our-sponsors/",
+            html: '<span class="nav-emoji">💰</span> Donate',
           },
 
           {
             to: "/blog",
             html: '<span class="nav-emoji">📰</span> Blog',
           },
+
           {
             type: "dropdown",
-            html: '<span class="nav-emoji">🏷️</span> Tags',
+            html: '<span class="nav-emoji">🔗</span> More',
             position: "left",
             items: [
+              {
+                html: '<span class="nav-emoji">🌍</span> Web Dev',
+                to: "/web-dev/",
+              },
+              {
+                html: '<span class="nav-emoji"> 📊</span> Quiz',
+                to: "https://quiz-app-ajay-dhangar.vercel.app/",
+              },
+              {
+                html: '<span class="nav-emoji"> 📺</span> Broadcast',
+                to: "https://codeharborhub-broadcast-web.vercel.app/",
+              },
               {
                 label: "🏷️ Tutorial Tags 📚",
                 to: "/docs/tags/",
@@ -195,18 +228,9 @@ const config = {
               },
 
               {
-                type: "html",
-                value: '<hr style="margin: 0.3rem 0;">',
-              },
-
-              {
                 label: "🏷️ Courses Tags 🎓",
                 to: "/courses/tags/",
                 activeBaseRegex: "/courses/tags/",
-              },
-              {
-                type: "html",
-                value: '<hr style="margin: 0.3rem 0;">',
               },
 
               {
@@ -216,6 +240,7 @@ const config = {
               },
             ],
           },
+
           {
             type: "search",
             position: "right",
@@ -337,18 +362,22 @@ const config = {
               {
                 label: "LinkedIn",
                 href: "https://www.linkedin.com/company/codeharborhub/",
+                icon: 'faLinkedin',
               },
               {
                 label: "YouTube",
                 href: "https://www.youtube.com/",
+                icon: 'faYoutube',
               },
               {
                 label: "Discord",
                 href: "https://discord.gg/c53FQn3pRv",
+                icon: 'faDiscord',
               },
               {
                 label: "Twitter(X)",
                 href: "https://twitter.com/CodesWithAjay",
+                icon: 'faTwitter',
               },
             ],
           },
@@ -502,6 +531,22 @@ const config = {
         showLastUpdateTime: true,
       },
     ],
+
+    [
+      "@docusaurus/plugin-content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      {
+        id: "web-dev",
+        path: "web-dev",
+        routeBasePath: "web-dev",
+        // editUrl: "#",
+        sidebarPath: require.resolve("./sidebarsWebDev.js"),
+        remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, rehypeKatex],
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      },
+    ],
+
     [
       "@docusaurus/plugin-content-docs",
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
