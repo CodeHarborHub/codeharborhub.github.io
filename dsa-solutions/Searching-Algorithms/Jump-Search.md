@@ -32,7 +32,7 @@ Jump Search is an efficient search algorithm for sorted arrays. It works by jump
 - It jumps ahead in blocks, comparing the target value with the current element at each step.
 - Once the block where the target might be located is identified, a linear search within the block is performed.
 
-![Example for Jump Search(GFG)](../../assets/jump-search.webp)
+![Example for Jump Search(GFG)](assets/Jump_Search.jpg)
 
 ## Problem Description
 
