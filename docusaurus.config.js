@@ -1,6 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faYoutube, faDiscord,  } from '@fortawesome/free-brands-svg-icons';
-
 import { themes as prismThemes } from "prism-react-renderer";
 import { default as npm2yarn } from "@docusaurus/remark-plugin-npm2yarn";
 const remarkMath = require("remark-math");
@@ -362,7 +359,6 @@ const config = {
               {
                 label: "LinkedIn",
                 href: "https://www.linkedin.com/company/codeharborhub/",
-                icon: 'faLinkedin',
               },
               {
                 label: "YouTube",
@@ -372,12 +368,10 @@ const config = {
               {
                 label: "Discord",
                 href: "https://discord.gg/c53FQn3pRv",
-                icon: 'faDiscord',
               },
               {
                 label: "Twitter(X)",
                 href: "https://twitter.com/CodesWithAjay",
-                icon: 'faTwitter',
               },
             ],
           },
