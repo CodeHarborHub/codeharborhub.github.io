@@ -2,11 +2,9 @@
 id: patternsearching-in-dsa
 title: Pattern Searching Algorithm in Data Structures and Algorithms
 sidebar_label: Pattern Searching Algorithm
-sidebar_position: 1
-description: ""
-tags:
-  [dsa,data-algorithms , pattern-searching
-  ]
+sidebar_position: 7
+description: "The Pattern Searching Algorithm is a powerful tool used to find occurrences of a pattern within a larger text or string."
+tags:[dsa,data-algorithms , pattern-searching]
 ---
 
 
