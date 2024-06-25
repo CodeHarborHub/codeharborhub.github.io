@@ -1,7 +1,6 @@
 ---
 id: minimum-number-of-k-consecutive-bit-flips
 title: Minimum Number of K Consecutive Bit Flips
-level: hard
 sidebar_label: Minimum Number of K Consecutive Bit Flips
 tags:
   - Array
