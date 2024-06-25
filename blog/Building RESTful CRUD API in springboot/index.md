@@ -52,7 +52,7 @@ Motive of this article
 
 - Visit spring initializer and fill in all the details accordingly and at last click on the GENERATE button. Extract the zip file and import it into your IDE.
 
-<img src="./images/image01.png">
+    ![img-03](./images/image01.png)
 
 ### 1.1. Add below dependencies in pom.xml file.
 
@@ -117,7 +117,7 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
 - Create below folder structure inside src folder. We’ll travel through each file one by one.
 
-<img src="./images/image02.png">
+   ![img-03](./images/image02.png)
 
 ## Step 3: Create User Model
 
@@ -548,25 +548,24 @@ public class UserServiceExceptionHandler {
 
 Register user failed: User details invalid!
 
-<img src="./images/image03.png">
+![img-03](./images/image03.png)
 
 Register user successful
 
-<img src="./images/image04.png">
+![img-04](./images/image04.png)
 
 
 Retrieve all users
 
-<img src="./images/image05.png">
+![img-05](./images/image05.png)
 
 
 Update the details of John
 
-<img src="./images/image06.png">
-
+![img-06](./images/image06.png)
 
 Delete user john
 
-<img src="./images/image07.png">
+![img-07](./images/image07.png)
 
 Hey guys, that’s it. We have successfully developed rest crud API for a user management system.
