@@ -226,6 +226,7 @@ export const Users: User[] = [
     source: "https://github.com/Ajay-Dhangar/ajay-dhangar.github.io",
     tags: ["opensource", "portfolio", "react", "typescript", "mdx"],
   },
+
   // BMI Calculator
 
   {
@@ -236,5 +237,16 @@ export const Users: User[] = [
     website: "bmi-calculator-liart-five.vercel.app",
     source: "https://github.com/parikhitritgithub/BMI-Calculator",
     tags: ["opensource", "javascript", "html", "css",],
+  },
+
+  // Gemini AI Chatbot
+
+  {
+    title: 'Gemini AI Chabot',
+    description: 'The Gemini AI Chatbot is a modern chatbot that can help you with your queries.',
+    preview: require('./showcase/gemini-ai-chatbot.png'),
+    website: 'https://code-harbor-hub-gemini-ai-chatbot.vercel.app/',
+    source: 'https://github.com/Ajay-Dhangar/gemini-ai-chatbot',
+    tags: ['opensource', 'nextjs', 'typescript', 'ai', 'favorite'],
   },
 ];
