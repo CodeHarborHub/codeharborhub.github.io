@@ -62,6 +62,49 @@ Follow these steps:
 
     This command will start a development server and open the application in your default web browser.
 
+## Course Progress Tracking
+
+Welcome to CodeHarborHub! We are committed to helping you track your progress as you learn and grow with us. Here's how you can effectively manage your course progress:
+
+### 1. **Getting Started**
+
+- Sign up for an account on [CodeHarborHub](https://www.codeharborhub.live/) if you haven't already.
+
+### 2. **Enrolling in Courses**
+
+- Navigate to the **Courses** section from the main navigation menu.
+- Browse our curated list of courses and click **Enroll** on a course of interest.
+
+### 3. **Tracking Your Progress**
+
+- Visit your **Dashboard** after logging in to view enrolled courses and track your progress.
+- Each course will display completion percentages and module progress.
+
+### 4. **Completing Course Modules**
+
+- Access each course to view individual modules and lessons.
+- Complete quizzes, assignments, or projects within each module to progress.
+
+### 5. **Earning Certificates**
+
+- Upon successfully completing a course, download your certificate from the course completion page.
+
+### 6. **Engage with the Community**
+
+- Join our active community forums to connect with fellow learners and mentors.
+- Share insights, ask questions, and collaborate on projects.
+
+### 7. **Support and Feedback**
+
+- For any assistance, visit our [Support](https://codeharborhub.github.io/community/supports/#-how-to-get-support) page.
+- We value your feedback! Share your thoughts and suggestions with us.
+
+---
+
+Start your journey to tech mastery today with CodeHarborHub's comprehensive learning resources and supportive community.
+
+---
+
 **If you'd like to contribute to CodeHarborHub, please follow these guidelines:**
 
 - **Fork** the repository and clone it locally.
