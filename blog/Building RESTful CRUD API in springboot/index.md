@@ -56,6 +56,7 @@ Motive of this article
 
 ### 1.1. Add below dependencies in pom.xml file.
 
+```
 <dependencies>
       // we'll use this dependency to create RESTful API endpoints, 
       // handle HTTP requests (GET, POST, PUT, DELETE), and return JSON responses.
@@ -99,15 +100,18 @@ Motive of this article
       </dependency>
 
 </dependencies>
+```
 
 
 ### 1.2. Update application.properties file
+
+```
 spring.jpa.hibernate.ddl-auto=update
 spring.datasource.url=jdbc:mysql://localhost:3306/usercrud
 spring.datasource.username=your localhost username
 spring.datasource.password=your localhost password
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-
+```
 
 ## Step 2: Create project structure.
 
@@ -331,92 +335,101 @@ public class UserServiceImpl implements UserService{
 
 ```java
 @Override
-    public ResponseEntity<ApiResponseDto<?>> registerUser(UserDetailsRequestDto newUserDetails)
-            throws UserAlreadyExistsException, UserServiceLogicException {
+public ResponseEntity<ApiResponseDto<?>> registerUser(UserDetailsRequestDto newUserDetails)
+        throws UserAlreadyExistsException, UserServiceLogicException {
 
-        try {
-            if (userRepository.findByEmail(newUserDetails.getEmail()) != null){
-                throw new UserAlreadyExistsException("Registration failed: User already exists with email " + newUserDetails.getEmail());
-            }
-            if (userRepository.findByUsername(newUserDetails.getUserName()) != null){
-                throw new UserAlreadyExistsException("Registration failed: User already exists with username " + newUserDetails.getUserName());
-            }
-
-            User newUser = new User(
-                    newUserDetails.getUserName(), newUserDetails.getEmail(), newUserDetails.getPhone(), LocalDateTime.now()
-            );
-
-            // save() is an in built method given by JpaRepository
-            userRepository.save(newUser);
-
-            return ResponseEntity
-                    .status(HttpStatus.CREATED)
-                    .body(new ApiResponseDto<>(ApiResponseStatus.SUCCESS.name(), "New user account has been successfully created!"));
-
-        }catch (UserAlreadyExistsException e) {
-            throw new UserAlreadyExistsException(e.getMessage());
-        }catch (Exception e) {
-            log.error("Failed to create new user account: " + e.getMessage());
-            throw new UserServiceLogicException();
+    try {
+        if (userRepository.findByEmail(newUserDetails.getEmail()) != null){
+            throw new UserAlreadyExistsException("Registration failed: User already exists with email " newUserDetails.getEmail());
         }
+        if (userRepository.findByUsername(newUserDetails.getUserName()) != null){
+            throw new UserAlreadyExistsException("Registration failed: User already exists with username "  newUserDetails.getUserName());
+        }
+
+        User newUser = new User(
+                newUserDetails.getUserName(), newUserDetails.getEmail(), newUserDetails.getPhone(), LocalDateTime.no()
+        );
+
+        // save() is an in built method given by JpaRepository
+        userRepository.save(newUser);
+
+        return ResponseEntity
+                .status(HttpStatus.CREATED)
+                .body(new ApiResponseDto<>(ApiResponseStatus.SUCCESS.name(), "New user account has been successfully created!"));
+
+    }catch (UserAlreadyExistsException e) {
+        throw new UserAlreadyExistsException(e.getMessage());
+    }catch (Exception e) {
+        log.error("Failed to create new user account: " + e.getMessage());
+        throw new UserServiceLogicException();
     }
+}
+```
+
+```java
 @Override
-    public ResponseEntity<ApiResponseDto<?>> getAllUsers() throws UserServiceLogicException {
-        try {
-            List<User> users = userRepository.findAllByOrderByRegDateTimeDesc();
+public ResponseEntity<ApiResponseDto<?>> getAllUsers() throws UserServiceLogicException {
+    try {
+        List<User> users = userRepository.findAllByOrderByRegDateTimeDesc();
 
-            return ResponseEntity
-                    .status(HttpStatus.OK)
-                    .body(new ApiResponseDto<>(ApiResponseStatus.SUCCESS.name(), users)
-                    );
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(new ApiResponseDto<>(ApiResponseStatus.SUCCESS.name(), users)
+        );
 
-        }catch (Exception e) {
-            log.error("Failed to fetch all users: " + e.getMessage());
-            throw new UserServiceLogicException();
-        }
+    }catch (Exception e) {
+        log.error("Failed to fetch all users: " + e.getMessage());
+        throw new UserServiceLogicException();
     }
+}
+```
+
+```java
 @Override
-    public ResponseEntity<ApiResponseDto<?>> updateUser(UserDetailsRequestDto newUserDetails, int id)
-            throws UserNotFoundException, UserServiceLogicException {
-        try {
-            User user = userRepository.findById(id).orElseThrow(() -> new UserNotFoundException("User not found with id " + id));
+public ResponseEntity<ApiResponseDto<?>> updateUser(UserDetailsRequestDto newUserDetails, int id)
+        throws UserNotFoundException, UserServiceLogicException {
+    try {
+        User user = userRepository.findById(id).orElseThrow(() -> new UserNotFoundException("User not found with id " + id));
 
-            user.setEmail(newUserDetails.getEmail());
-            user.setUsername(newUserDetails.getUserName());
-            user.setPhone(newUserDetails.getPhone());
+        user.setEmail(newUserDetails.getEmail());
+        user.setUsername(newUserDetails.getUserName());
+        user.setPhone(newUserDetails.getPhone());
 
-            userRepository.save(user);
+        userRepository.save(user);
 
-            return ResponseEntity
-                    .status(HttpStatus.OK)
-                    .body(new ApiResponseDto<>(ApiResponseStatus.SUCCESS.name(), "User account updated successfully!")
-                    );
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(new ApiResponseDto<>(ApiResponseStatus.SUCCESS.name(), "User account updated successfully!")
+        );
 
-        }catch(UserNotFoundException e){
-            throw new UserNotFoundException(e.getMessage());
-        }catch(Exception e) {
-            log.error("Failed to update user account: " + e.getMessage());
-            throw new UserServiceLogicException();
-        }
+    }catch(UserNotFoundException e){
+        throw new UserNotFoundException(e.getMessage());
+    }catch(Exception e) {
+        log.error("Failed to update user account: " + e.getMessage());
+        throw new UserServiceLogicException();
     }
+    }
+```
+
+```java
 @Override
-    public ResponseEntity<ApiResponseDto<?>> deleteUser(int id) throws UserServiceLogicException, UserNotFoundException {
-        try {
-            User user = userRepository.findById(id).orElseThrow(() -> new UserNotFoundException("User not found with id " + id));
+public ResponseEntity<ApiResponseDto<?>> deleteUser(int id) throws UserServiceLogicException, UserNotFoundException {
+    try {
+        User user = userRepository.findById(id).orElseThrow(() -> new UserNotFoundException("User not found with id " + id));
 
-            userRepository.delete(user);
+        userRepository.delete(user);
 
-            return ResponseEntity
-                    .status(HttpStatus.OK)
-                    .body(new ApiResponseDto<>(ApiResponseStatus.SUCCESS.name(), "User account deleted successfully!")
-                    );
-        } catch (UserNotFoundException e) {
-            throw new UserNotFoundException(e.getMessage());
-        } catch (Exception e) {
-            log.error("Failed to delete user account: " + e.getMessage());
-            throw new UserServiceLogicException();
-        }
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(new ApiResponseDto<>(ApiResponseStatus.SUCCESS.name(), "User account deleted successfully!")
+        );
+    } catch (UserNotFoundException e) {
+        throw new UserNotFoundException(e.getMessage());
+    } catch (Exception e) {
+        log.error("Failed to delete user account: " + e.getMessage());
+        throw new UserServiceLogicException();
     }
+}
 ```
 
 Note:
@@ -532,19 +545,19 @@ public class UserServiceExceptionHandler {
 
 ## Step 10: Run your application and test with postman/frontend😊.
 
-Register user failed: User details invalid!
-<img src="./images/image03.png">
+Register user failed: User details invalid!<br/>
+<img src="./images/image03.png"><br/><br/>
 
-Register user successful
-<img src="./images/image04.png">
+Register user successful<br/>
+<img src="./images/image04.png"><br/><br/>
 
-Retrieve all users
-<img src="./images/image05.png">
+Retrieve all users<br/>
+<img src="./images/image05.png"><br/><br/>
 
-Update the details of John
-<img src="./images/image06.png">
+Update the details of John<br/>
+<img src="./images/image06.png"><br/><br/>
 
-Delete user john
-<img src="./images/image07.png.png">
+Delete user john<br/>
+<img src="./images/image07.png"><br/><br/>
 
 Hey guys, that’s it. We have successfully developed rest crud API for a user management system.
