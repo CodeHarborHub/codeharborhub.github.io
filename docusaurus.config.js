@@ -143,8 +143,10 @@ const config = {
                   <a href="/docs/category/python/" class="nav__icons"> <img src="/icons/py.svg" title="Python" alt="Python" /> </a>
                   <a href="/docs/category/java/" class="nav__icons"> <img src="/icons/java.svg" title="Java" alt="Java" /> </a>
                   <a href="/docs/category/tailwind/" class="nav__icons"> <img src="/icons/tailwind-css.svg" title="Tailwind CSS" alt="Tailwind" /> </a>
-                  <a href="/docs/category/cpp/" class="nav__icons"> <img src="/icons/cpp.svg" title="CPP" alt="CPP" /> </a>
-                  <a href="/docs/category/NextJs/" class="nav__icons"> <img src="/icons/next-js.svg" title="NextJs" alt="Next" /> </a>
+                  <a href="/docs/category/cpp/" class="nav__icons"> <img src="/icons/cpp.svg" title="CPP" alt="CPP" /> </a>      
+                  <a href="/docs/category/NextJs/" class="nav__icons"> <img src="/icons/next-js.svg" title="NextJs" alt="Next" /> </a>    
+                  <a href="/docs/category/MATLAB/" class="nav__icons"> <img src="/icons/matlab.svg" title="MATLAB" alt="MATLAB" /> </a> 
+                  <a href="/docs/category/Julia/" class="nav__icons"> <img src="/icons/julia.svg" title="Julia" alt="Julia" /> </a> 
                 </div>
               </div>`,
               },
