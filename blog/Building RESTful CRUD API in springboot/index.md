@@ -432,8 +432,7 @@ public ResponseEntity<ApiResponseDto<?>> deleteUser(int id) throws UserServiceLo
 }
 ```
 
-Note:
-
+:::note
 - The `@Service` annotation is used to indicate that a class is a service component in the Spring application context.
 
 - The `@Component` annotation is a generic stereotype annotation used to indicate that a class is a Spring component. Components annotated with @Component are candidates for auto-detection when using Spring's component scanning feature.
@@ -441,6 +440,7 @@ Note:
 - The `@Autowired` annotation is used to automatically inject dependencies into Spring-managed beans. When Spring encounters a bean annotated with @Autowired, it looks for other beans in the application context that match the type of the dependency and injects it.
 
 - The `@Slf4j` annotation is not a standard Spring annotation but rather a Lombok annotation used for logging.
+:::
 
 ## Step 8: Create controller
 
@@ -545,19 +545,27 @@ public class UserServiceExceptionHandler {
 
 ## Step 10: Run your application and test with postman/frontend😊.
 
-Register user failed: User details invalid!<br/>
-<img src="./images/image03.png"><br/><br/>
+Register user failed: User details invalid!
 
-Register user successful<br/>
-<img src="./images/image04.png"><br/><br/>
+<img src="./images/image03.png">
 
-Retrieve all users<br/>
-<img src="./images/image05.png"><br/><br/>
+Register user successful
 
-Update the details of John<br/>
-<img src="./images/image06.png"><br/><br/>
+<img src="./images/image04.png">
 
-Delete user john<br/>
-<img src="./images/image07.png"><br/><br/>
+
+Retrieve all users
+
+<img src="./images/image05.png">
+
+
+Update the details of John
+
+<img src="./images/image06.png">
+
+
+Delete user john
+
+<img src="./images/image07.png">
 
 Hey guys, that’s it. We have successfully developed rest crud API for a user management system.
