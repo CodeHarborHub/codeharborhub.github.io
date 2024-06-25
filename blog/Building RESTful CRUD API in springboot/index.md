@@ -490,13 +490,14 @@ public class UserController {
 }
 ```
 
-Note:
+:::note
 
 - The `@PathVariable` annotation is used to extract values from the URI template of the incoming request. E.g., updateUser method.
 
 - The `@RequestParam` annotation is used to extract query parameters from the URL of the incoming request.
 
 - The `@RequestBody` annotation is used to extract the request body of the incoming HTTP request. It binds the body of the request to a method parameter in a controller method, typically for POST, PUT, and PATCH requests. E.g., registerUser method.
+:::
 
 ## Step 9: Create Exception Handler class
 
