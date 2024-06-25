@@ -1,3 +1,4 @@
+---
 id: find-the-missing-number
 title: Find the Missing Number Problem (gfg)
 sidebar_label: 0005 - Find the Missing Number
@@ -10,7 +11,7 @@ tags:
   - Python
   - DSA
 description: "This tutorial covers the solution to the Find the Missing Number problem from the GeeksforGeeks website, featuring implementations in Python and C++."
-
+---
 ## Problem Description
 
 Given an array containing `n-1` distinct numbers taken from 1 to `n`, find the one number that is missing from the array.
