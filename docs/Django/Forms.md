@@ -22,8 +22,7 @@ To define a form in Django, you typically create a form class that inherits from
 
 - **`Form` Class**: Used for creating custom forms that are not necessarily tied to models.
 
-  ```python
-  # forms.py
+  ```python title="forms.py"
   from django import forms
 
   class ContactForm(forms.Form):
@@ -34,8 +33,7 @@ To define a form in Django, you typically create a form class that inherits from
 
 - **`ModelForm` Class**: Used to create forms that are directly tied to models, simplifying tasks such as saving form data to the database.
 
-  ```python
-  # forms.py
+  ```python title="forms.py"
   from django import forms
   from .models import Product
 
@@ -51,8 +49,7 @@ Forms can be rendered in HTML templates using Django's form rendering capabiliti
 
 - **Rendering a Form in a Template**:
 
-  ```html
-  <!-- template.html -->
+  ```html title="template.html
   <form method="post">
       {% csrf_token %}
       {{ form.as_p }}
@@ -68,8 +65,7 @@ When a form is submitted, Django handles the submitted data in views. Views vali
 
 - **Handling Form Submission in Views**:
 
-  ```python
-  # views.py
+  ```python title="views.py"
   from django.shortcuts import render, redirect
   from .forms import ContactForm
 
