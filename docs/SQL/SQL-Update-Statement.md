@@ -93,7 +93,7 @@ In conclusion, the UPDATE statement in SQL is a powerful and essential tool for 
 ## Authors:
 
 <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
-  {['damini-chachane'].map(username => (
+  {['Damini2004'].map(username => (
     <Author key={username} username={username} />
   ))}
 </div>
