@@ -1,5 +1,5 @@
 ---
-id: Design Add and Search Words Data Structure
+id:  design-add-and-search-words-data-structure
 title: Design Add and Search Words Data Structure
 sidebar_label: 0211-Design Add and Search Words Data Structure
 tags:
@@ -27,17 +27,19 @@ Implement the WordDictionary class:
 [null,null,null,null,false,true,true,true]
 
 #### Explanation:
-- WordDictionary wordDictionary = new WordDictionary();
-- wordDictionary.addWord("bad");
-- wordDictionary.addWord("dad");
-- wordDictionary.addWord("mad");
-- wordDictionary.search("pad"); // return False
-- wordDictionary.search("bad"); // return True
-- wordDictionary.search(".ad"); // return True
-- wordDictionary.search("b.."); // return True
+```
+WordDictionary wordDictionary = new WordDictionary();
+wordDictionary.addWord("bad");
+wordDictionary.addWord("dad");
+wordDictionary.addWord("mad");
+wordDictionary.search("pad"); // return False
+wordDictionary.search("bad"); // return True
+wordDictionary.search(".ad"); // return True
+wordDictionary.search("b.."); // return True
+```
 
 ### Constraints
-- 1 <= word.length <= 25
+- `1 <= word.length <= 25`
 - word in addWord consists of lowercase English letters.
 - word in search consist of '.' or lowercase English letters.
 - There will be at most 2 dots in word for search queries.
@@ -59,7 +61,7 @@ Let's understand Trie first,
 Trie is basically a tree that has some kind of root node & each node can have up to 26 children in this problem. Because we have lower case character from a to z. So, basically each node represent's a single character. And each node could have up to 26 additional children:
 ![image](https://github.com/CodeHarborHub/codeharborhub.github.io/assets/122719744/5281ba10-236c-4bb8-bc0c-d7dbf6af300a)
 
-And basically word in this example means, let's take "a" having child "b" -> with "c", so that's will be a single word. And if we insert the word "abc" in our trie, so basically how's it looks like:
+And basically word in this example means, let's take "a" having child "b" `->` with "c", so that's will be a single word. And if we insert the word "abc" in our trie, so basically how's it looks like:
 ![image](https://github.com/CodeHarborHub/codeharborhub.github.io/assets/122719744/a559a99b-e2f4-4ace-8bd3-f7436484c62e)
 
 One additional thing we have to say is, for a particular node such as "c" this is the end of the word. Because if we added another word example:- "ab". So, we don't add them back again as if you notice they are already available to us, we just gonna re-use these characters. So, we have 2 word's along this path "abc" & "ab"
