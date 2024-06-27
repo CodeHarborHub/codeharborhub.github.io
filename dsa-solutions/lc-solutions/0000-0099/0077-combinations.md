@@ -131,14 +131,4 @@ def combine(self, n, k):
 
 ### Conclusion
 
-Both approaches for finding the minimum window substring are efficient, operating with a time complexity of 
-𝑂
-(
-𝑛
-)
-O(n) and a space complexity of 
-𝑂
-(
-1
-)
-O(1). The Java and Python implementations utilize similar sliding window techniques, adjusting the window size dynamically to find the smallest substring containing all characters of t. The primary difference lies in language-specific syntax and data structures, but the underlying algorithm remains consistent.
+Both approaches for finding the minimum window substring are efficient, operating with a time complexity of O(n) and a space complexity of O(1). The Java and Python implementations utilize similar sliding window techniques, adjusting the window size dynamically to find the smallest substring containing all characters of t. The primary difference lies in language-specific syntax and data structures, but the underlying algorithm remains consistent.
