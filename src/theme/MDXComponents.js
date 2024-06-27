@@ -21,6 +21,7 @@ import Lesson from '@site/src/components/Lesson';
 import Image from '@theme/IdealImage';
 import LiteYouTubeEmbed from "react-lite-youtube-embed";
 import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
+import Author from '@site/src/components/Author';
 
 export default {
   // Re-use the default mapping
@@ -46,5 +47,6 @@ export default {
   File,
   Lesson,
   Image,
-  LiteYouTubeEmbed
+  LiteYouTubeEmbed,
+  Author
 };

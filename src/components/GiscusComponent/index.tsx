@@ -10,7 +10,7 @@ export default function GiscusComponent() {
     <div className="giscus-component">
       <Giscus
         id="giscus"
-        repo="codeharborhub/codeharborhub"
+        repo="CodeHarborHub/codeharborhub.github.io"
         repoId="R_kgDOLiT30w"
         category="Support"
         categoryId="DIC_kwDOLiT3084CfRMi"
