@@ -23,9 +23,9 @@ Interpolation Search is an efficient search algorithm for uniformly distributed 
 1. Initialize the low and high indices to 0 and N-1, respectively.
 2. While the target value is within the range defined by the current low and high indices:
    - Calculate the probe position using the formula:
-     \[
+  $$
      \text{pos} = \text{low} + \left( \frac{(x - \text{arr}[low]) \times (\text{high} - \text{low})}{\text{arr}[high] - \text{arr}[low]} \right)
-     \]
+  $$
 3. Check the value at the probe position:
    - If `arr[pos]` is equal to the target value, return `pos`.
    - If `arr[pos]` is less than the target value, update `low` to `pos + 1`.
