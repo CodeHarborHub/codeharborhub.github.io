@@ -15,7 +15,7 @@ URL patterns are defined in Django using regular expressions (regex) or simple s
 
 #### Example of `urls.py` in an App:
 
-```python
+```python title="urls.py"
 from django.urls import path
 from . import views
 
@@ -68,8 +68,7 @@ You can define a namespace for your URL patterns using the `namespace` parameter
 
 #### Example of Namespace:
 
-```python
-# accounts/urls.py
+```python title="accounts/urls.py"
 from django.urls import path
 from . import views
 
