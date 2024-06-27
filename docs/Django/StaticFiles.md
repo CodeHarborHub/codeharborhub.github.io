@@ -43,8 +43,7 @@ Static files in Django refer to files like CSS, JavaScript, images, and other as
 2. **Configuring Settings**:
    - Define the `STATIC_URL` and `STATICFILES_DIRS` settings in `settings.py`.
 
-   ```python
-   # settings.py
+   ```python  title="settings.py"
    STATIC_URL = '/static/'
 
    STATICFILES_DIRS = [
@@ -64,8 +63,7 @@ Static files in Django refer to files like CSS, JavaScript, images, and other as
 
    - `STATIC_ROOT`: Directory where `collectstatic` collects static files for deployment.
 
-   ```python
-   # settings.py
+   ```python title="settings.py"
    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
    ```
 
@@ -74,8 +72,7 @@ Static files in Django refer to files like CSS, JavaScript, images, and other as
 1. **Load Static Files**:
    - Load static files in templates using the `{% static %}` template tag.
 
-   ```html
-   <!-- template.html -->
+   ```html title="template.html"
    <!DOCTYPE html>
    <html lang="en">
    <head>
@@ -121,8 +118,7 @@ Static files in Django refer to files like CSS, JavaScript, images, and other as
 1. **Caching**:
    - Use cache headers (`Cache-Control`, `Expires`) to control caching behavior for static files in production.
 
-   ```python
-   # settings.py
+   ```python title="settings.py"
    STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
    ```
 
