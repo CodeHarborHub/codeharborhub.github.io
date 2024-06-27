@@ -343,6 +343,12 @@ const config = {
                 label: "Cookie Policy",
                 to: "/cookie-policy",
               },
+
+              {
+                label: "Licensing",
+                to: "/License/",
+              },
+
             ],
           },
           {
