@@ -38,8 +38,7 @@ Middleware in Django is a fundamental concept that allows you to process request
    - You can create custom middleware classes to implement application-specific logic.
    - To create a custom middleware, define a class with methods that correspond to the desired middleware behavior, then add the middleware class to the `MIDDLEWARE` setting.
 
-   ```python
-   # myapp/middleware.py
+   ```python title="myapp/middleware.py"
    class MyCustomMiddleware:
        def __init__(self, get_response):
            self.get_response = get_response
@@ -51,8 +50,7 @@ Middleware in Django is a fundamental concept that allows you to process request
            return response
    ```
 
-   ```python
-   # settings.py
+   ```python title="settings.py"
    MIDDLEWARE = [
        'django.middleware.security.SecurityMiddleware',
        'django.middleware.common.CommonMiddleware',
