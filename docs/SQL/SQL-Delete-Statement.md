@@ -71,7 +71,7 @@ The DELETE statement is a fundamental command in SQL for removing data from tabl
 ## Authors:
 
 <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
-  {['damini-chachane'].map(username => (
+  {['Damini2004'].map(username => (
     <Author key={username} username={username} />
   ))}
 </div>
