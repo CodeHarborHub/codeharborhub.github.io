@@ -20,8 +20,7 @@ Sessions in Django allow you to store and retrieve arbitrary data per visitor ac
 2. **Enabling Sessions**:
    - Sessions are enabled by default in Django projects. To use sessions, ensure that `django.contrib.sessions.middleware.SessionMiddleware` is included in the `MIDDLEWARE` setting.
 
-   ```python
-   # settings.py
+   ```python title="settings.py"
    MIDDLEWARE = [
        'django.middleware.security.SecurityMiddleware',
        'django.contrib.sessions.middleware.SessionMiddleware',
@@ -33,8 +32,7 @@ Sessions in Django allow you to store and retrieve arbitrary data per visitor ac
    - Sessions are accessed through the `request.session` attribute, which acts like a dictionary.
    - You can store data in the session, retrieve it later, and delete items from the session.
 
-   ```python
-   # views.py
+   ```python title="views.py"
    def my_view(request):
        # Set session data
        request.session['username'] = 'john_doe'
@@ -49,8 +47,7 @@ Sessions in Django allow you to store and retrieve arbitrary data per visitor ac
 4. **Session Configuration**:
    - Configure session settings in `settings.py`, such as session expiration, cookie attributes, and storage backend.
 
-   ```python
-   # settings.py
+   ```python title="settings.py"
    SESSION_EXPIRE_AT_BROWSER_CLOSE = True  # Session expires when the browser is closed
    SESSION_COOKIE_AGE = 3600  # Session cookie expires in 1 hour (in seconds)
    ```
@@ -69,8 +66,7 @@ Authentication in Django manages user authentication and authorization using bui
 2. **Authentication Middleware**:
    - Include `django.contrib.auth.middleware.AuthenticationMiddleware` in the `MIDDLEWARE` setting to manage user authentication across requests.
 
-   ```python
-   # settings.py
+   ```python title="settings.py"
    MIDDLEWARE = [
        'django.middleware.security.SecurityMiddleware',
        'django.contrib.sessions.middleware.SessionMiddleware',
@@ -85,8 +81,7 @@ Authentication in Django manages user authentication and authorization using bui
 3. **Login and Logout Views**:
    - Django provides built-in views (`django.contrib.auth.views.LoginView`, `django.contrib.auth.views.LogoutView`) for handling user login and logout.
 
-   ```python
-   # urls.py
+   ```python title="urls.py"
    from django.urls import path
    from django.contrib.auth import views as auth_views
 
@@ -99,8 +94,7 @@ Authentication in Django manages user authentication and authorization using bui
 4. **User Permissions and Groups**:
    - Django allows you to define permissions and assign users to groups (`django.contrib.auth.models.Group`) to manage access control.
 
-   ```python
-   # views.py
+   ```python title="views.py"
    from django.contrib.auth.decorators import login_required, permission_required
 
    @login_required
@@ -117,16 +111,14 @@ Authentication in Django manages user authentication and authorization using bui
 5. **Custom User Models**:
    - Customize the user model (`AUTH_USER_MODEL`) to extend or modify user fields as per project requirements.
 
-   ```python
-   # settings.py
+   ```python title="settings.py"
    AUTH_USER_MODEL = 'myapp.CustomUser'
    ```
 
 6. **Authentication Backends**:
    - Customize authentication behavior by defining custom authentication backends (`AUTHENTICATION_BACKENDS`) to authenticate users against different sources (e.g., LDAP, OAuth).
 
-   ```python
-   # settings.py
+   ```python title="settings.py"
    AUTHENTICATION_BACKENDS = [
        'myapp.backends.MyCustomAuthBackend',
        'django.contrib.auth.backends.ModelBackend',
