@@ -1,5 +1,5 @@
 ---
-id: ann
+id: artificial-neural-networks
 title: Artificial Neural Networks
 sidebar_label: Artificial Neural Networks
 sidebar_position: 2
