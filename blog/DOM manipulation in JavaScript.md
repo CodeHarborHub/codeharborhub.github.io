@@ -79,7 +79,7 @@ The DOM plays a central role in web development by enabling developers to create
 
 ```js
 // Get the element with the ID 'myElement'
-var element = document.getElementById('myElement');
+const element = document.getElementById('myElement');
 
 // Log the element to the console
 console.log(element);
@@ -95,13 +95,13 @@ console.log(element);
 
 ```js
 // Get the elements with the class name 'myClass'
-var elements = document.getElementsByClassName('myClass');
+const elements = document.getElementsByClassName('myClass');
 
 // Log the elements to the console
 console.log(elements);
 
 // Optionally, you can iterate over the elements as well
-for (var i = 0; i < elements.length; i++) {
+for (let i = 0; i < elements.length; i++) {
     console.log(elements[i])
 }
 ```
@@ -119,10 +119,10 @@ for (var i = 0; i < elements.length; i++) {
 
 ```js
 // Get all <p> elements in the document
-var paragraphs = document.getElementsByTagName("p");
+const paragraphs = document.getElementsByTagName("p");
 
 // Loop through and log the text content of each <p> element
-for (var i = 0; i < paragraphs.length; i++) {
+for (let i = 0; i < paragraphs.length; i++) {
     console.log(paragraphs[i].textContent);
 }
 ```
@@ -131,16 +131,16 @@ for (var i = 0; i < paragraphs.length; i++) {
 
 ```js
 // Select the first <p> element in the document
-var firstParagraph = document.querySelector("p");
+const firstParagraph = document.querySelector("p");
 
 // Select the element with id="main-title"
-var titleElement = document.querySelector("#main-title");
+const titleElement = document.querySelector("#main-title");
 
 // Select the first element with class="intro"
-var introParagraph = document.querySelector(".intro");
+const introParagraph = document.querySelector(".intro");
 
 // Select the first <p> element inside the <div>
-var paragraphInDiv = document.querySelector("div p");
+const paragraphInDiv = document.querySelector("div p");
 ```
 
 - The `querySelectorAll` method in JavaScript allows you to select and retrieve a list (or NodeList) of all elements that match a specified CSS selector within the document or within a specific element. Unlike `querySelector`, which returns only the first matching element, `querySelectorAll` returns a NodeList containing all matching elements.
@@ -148,16 +148,16 @@ var paragraphInDiv = document.querySelector("div p");
 ```js
 
 // Select all <p> elements in the document
-var paragraphs = document.querySelectorAll("p");
+const paragraphs = document.querySelectorAll("p");
 
 // Log the number of <p> elements found
 console.log("Number of <p> elements:", paragraphs.length);
 
 // Select all elements with class="intro"
-var introElements = document.querySelectorAll(".intro");
+const introElements = document.querySelectorAll(".intro");
 
 // Select all <li> elements inside the <ul>
-var listItems = document.querySelectorAll("ul li");
+const listItems = document.querySelectorAll("ul li");
 
 ```
 ### 2.2. Modifying Content
@@ -166,10 +166,10 @@ var listItems = document.querySelectorAll("ul li");
 
 ```js
 // HTML element
-var divElement = document.getElementById("myDiv");
+const divElement = document.getElementById("myDiv");
 
 // Get inner HTML content of divElement
-var htmlContent = divElement.innerHTML;
+const htmlContent = divElement.innerHTML;
 console.log("Inner HTML:", htmlContent);
 
 // Set inner HTML content of divElement
@@ -180,10 +180,10 @@ divElement.innerHTML = "<p>New content with <strong>bold</strong> text.</p>";
 
 ```js
 // HTML element
-var paragraphElement = document.getElementById("myParagraph");
+const paragraphElement = document.getElementById("myParagraph");
 
 // Get text content
-var textContent = paragraphElement.textContent;
+const textContent = paragraphElement.textContent;
 console.log("Text content:", textContent);
 
 // Set text content
@@ -194,11 +194,11 @@ paragraphElement.textContent = "Updated text content.";
 
 ```js
 // HTML element
-var spanElement = document.getElementById("mySpan");
+const spanElement = document.getElementById("mySpan");
 
 // Get inner text
 // Retrieves the visible text content inside an element, excluding hidden elements or elements with CSS display: none.
-var innerText = spanElement.innerText;
+const innerText = spanElement.innerText;
 console.log("Inner text:", innerText);
 
 // Set inner text
@@ -217,10 +217,10 @@ spanElement.innerText = "Updated inner text.";
 
 ```js
 // Get the element with the ID 'myElement'
-var element = document.getElementById('myElement');
+const element = document.getElementById('myElement');
 
 // Get the value of an attribute
-var classValue = element.getAttribute('class');
+const classValue = element.getAttribute('class');
 console.log('Class:', classValue); // Output: Class: myClass
 
 // Set a new value for an attribute
@@ -253,7 +253,7 @@ const container = document.getElementById('container');
 const todolist = document.querySelector('.todo-list');
 
 // Create a new element
-var newToDo = document.createElement('li');
+const newToDo = document.createElement('li');
 newToDo.setAttribute("class", "todo-item")
 newToDo.textContent = 'Buy fruits.';
 
@@ -261,21 +261,21 @@ newToDo.textContent = 'Buy fruits.';
 todolist.appendChild(newToDo);
 
 // Create another new element
-var title = document.createElement('h2');
+const title = document.createElement('h2');
 newToDo.textContent = 'My tasks';
 
 // Insert the title before the list
 container.insertBefore(title, todolist);
 
 // Create yet another new element
-var lastElement = document.createElement('div');
+const lastElement = document.createElement('div');
 lastElement.textContent = 'Last Element';
 
 // Append yet another element as the last child
 container.append(lastElement);
 
 // Create and prepend a new element
-var firstElement = document.createElement('div');
+const firstElement = document.createElement('div');
 firstElement.textContent = 'First Element';
 
 // Prepend the new element as the first child
@@ -297,16 +297,16 @@ container.prepend(firstElement);
 
 ```js
 // Get the container element
-var container = document.getElementById('container');
+const container = document.getElementById('container');
 
 // Get the child element to be removed
-var childElement = document.getElementById('childElement');
+const childElement = document.getElementById('childElement');
 
 // Remove the child element using removeChild
 container.removeChild(childElement);
 
 // Get another child element to be removed
-var anotherChildElement = document.getElementById('anotherChildElement');
+const anotherChildElement = document.getElementById('anotherChildElement');
 
 // Remove the element using remove()
 anotherChildElement.remove();
@@ -322,7 +322,7 @@ anotherChildElement.remove();
 
 ```js
 // Get the element
-var element = document.getElementById('myElement');
+const element = document.getElementById('myElement');
 
 // Change the background color and font size using the style property
 element.style.backgroundColor = 'blue';
@@ -333,7 +333,7 @@ element.style.fontSize = '20px';
 
 ```js
 // Get the element
-var element = document.getElementById('myElement');
+const element = document.getElementById('myElement');
 
 // Add a new class to the element
 element.classList.add('newClass');
@@ -360,7 +360,7 @@ function handleClick() {
 }
 
 // Get the button element
-var button = document.getElementById('myButton');
+const button = document.getElementById('myButton');
 
 // Add a click event listener
 button.addEventListener('click', handleClick);
