@@ -88,7 +88,7 @@ The NOT operator in SQL provides a straightforward way to negate conditions in S
 ## Authors:
 
 <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
-  {['damini-chachane'].map(username => (
+  {['Damini2004'].map(username => (
     <Author key={username} username={username} />
   ))}
 </div>
