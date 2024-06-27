@@ -4,15 +4,14 @@ title: Eval Function in Python
 sidebar_label: Eval Function
 ---
 
-
-# Understanding the `eval` Function in Python
-## Introduction
+## Understanding the `eval` Function in Python
 
 The `eval` function in Python is a built-in function that evaluates and executes an expression 
 string passed to it. It parses the expression, compiles it to bytecode, and then executes the 
 bytecode to return the result of the expression. The syntax for `eval` is:
 
 ## Syntax
+
 ```python 
 eval(expression, globals=None, locals=None)
 ```
@@ -80,7 +79,9 @@ else:
 #3 * 2 = 6
 #Correct
 ```
+
 ## Conclusion
+
 The `eval` function is a powerful tool in Python that allows dynamic execution of expressions. 
 However, it should be used with caution, especially when dealing with input from untrusted sources, 
 as it can pose significant security risks. Arbitrary code execution via `eval` can lead to 
