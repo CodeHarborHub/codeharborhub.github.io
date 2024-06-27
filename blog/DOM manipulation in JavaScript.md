@@ -376,18 +376,18 @@ button.removeEventListener('click', handleClick);
 
 Mastering DOM manipulation is crucial for creating dynamic, interactive web pages. The ability to access, modify, and interact with the DOM using JavaScript allows developers to build responsive and engaging user experiences.
 
-- Understanding the DOM: By understanding the structure and representation of a web document through the DOM, developers can effectively interact with and manipulate web pages.
+- **Understanding the DOM**: By understanding the structure and representation of a web document through the DOM, developers can effectively interact with and manipulate web pages.
 
-- Accessing Elements: Methods like getElementById(), getElementsByClassName(), getElementsByTagName(), querySelector(), and querySelectorAll() enable precise selection of elements within the DOM, facilitating targeted manipulations.
+- **Accessing Elements**: Methods like `getElementById()`, `getElementsByClassName()`, `getElementsByTagName()`, `querySelector()`, and `querySelectorAll()` enable precise selection of elements within the DOM, facilitating targeted manipulations.
 
-- Modifying Content and Attributes: Techniques such as using innerHTML, textContent, and innerText for content modification, alongside getAttribute(), setAttribute(), and removeAttribute() for attribute management, provide powerful ways to dynamically change the document's content and properties.
+- **Modifying Content and Attributes**: Techniques such as using `innerHTML`, `textContent`, and `innerText` for content modification, alongside `getAttribute()`, `setAttribute()`, and `removeAttribute()` for attribute management, provide powerful ways to dynamically change the document's content and properties.
 
-- Creating and Inserting Elements: Methods like createElement(), appendChild(), insertBefore(), append(), and prepend() allow developers to construct and integrate new elements into the DOM, enabling the dynamic construction of web pages.
+- **Creating and Inserting Elements**: Methods like `createElement()`, `appendChild()`, `insertBefore()`, `append()`, and `prepend()` allow developers to construct and integrate new elements into the DOM, enabling the dynamic construction of web pages.
 
-- Removing Elements: Using removeChild() and remove() methods facilitates the removal of elements from the DOM, which is essential for maintaining clean and efficient document structures.
+- **Removing Elements**: Using `removeChild()` and `remove()` methods facilitates the removal of elements from the DOM, which is essential for maintaining clean and efficient document structures.
 
-- Modifying Styles: Direct manipulation of inline styles via the style property and managing classes with classList methods (add(), remove(), toggle()) offer flexible control over the appearance and styling of elements.
+- **Modifying Styles**: Direct manipulation of inline styles via the `style` property and managing classes with classList methods (`add()`, `remove()`, `toggle()`) offer flexible control over the appearance and styling of elements.
 
-- Event Handling: The ability to attach and remove event listeners using addEventListener() and removeEventListener() empowers developers to create interactive elements that respond to user actions, enhancing the user experience.
+- **Event Handling**: The ability to attach and remove event listeners using `addEventListener()` and `removeEventListener()` empowers developers to create interactive elements that respond to user actions, enhancing the user experience.
 
 By leveraging these DOM manipulation techniques, developers can create rich, interactive web applications that provide a seamless and dynamic user experience. Understanding and utilizing these tools effectively is key to modern web development.
