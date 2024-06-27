@@ -1,5 +1,5 @@
 ---
-id: intr-dl
+id: introducation-to-deep-learning
 title: Introducation to Deep Learning
 sidebar_label: Introducation to Deep Learning
 sidebar_position: 1
