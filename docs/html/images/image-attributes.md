@@ -4,6 +4,7 @@ title: Image Attributes in HTML
 sidebar_label: Image Attributes
 sidebar_position: 2
 tags: [html, web-development, image-attributes, images]
+description: In this tutorial, you will learn about image attributes in HTML. Image attributes define the appearance, behavior, and alignment of images on web pages.
 ---
 
 In HTML, images are inserted using the `<img>` tag, which is a self-closing tag. The `<img>` tag has several attributes that control the display and behavior of the image. Here's a theoretical overview, along with an example and its potential output:
