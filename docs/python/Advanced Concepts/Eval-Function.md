@@ -89,11 +89,7 @@ vulnerabilities in your application, such as code injection attacks.
 To mitigate these risks, it's advisable to:
 
 Avoid using `eval` when possible. Alternatives like `ast.literal_eval` can be used for safely 
-evaluating 
-expressions containing only literals.
-Sanitize and validate any input that might be passed to `eval`.
-Limit the global and local namespaces to control the execution environment and minimize potential 
-security issues.
-When used judiciously and securely, `eval` can be a useful function for dynamic expression 
-evaluation 
-in Python programs.
+evaluating expressions containing only literals. Sanitize and validate any input that might be passed 
+to `eval`. Limit the global and local namespaces to control the execution environment and minimize 
+potential security issues.When used judiciously and securely, `eval` can be a useful function for 
+dynamic expression evaluation in Python programs.
