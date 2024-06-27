@@ -77,8 +77,7 @@ In Django, the admin interface is a powerful built-in feature that automatically
 1. **Registering Models**:
    - To make a model editable in the admin interface, register it in the `admin.py` file of your app using the `admin.site.register()` function or the `@admin.register()` decorator.
 
-   ```python
-   # products/admin.py
+   ```python title="products/admin.py"
    from django.contrib import admin
    from .models import Product
 
