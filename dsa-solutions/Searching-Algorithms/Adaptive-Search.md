@@ -42,8 +42,6 @@ Adaptive Segment Search is a sophisticated search algorithm designed to efficien
 - It then adapts its search strategy based on the segments and the distribution of elements within the segments.
 - By adjusting the segment sizes dynamically, the algorithm can achieve better performance compared to static segment sizes.
 
-![Example for Adaptive Segment Search](../../assets/Adaptive_Segment_Search.jpg)
-
 ## Problem Description
 
 Given a sorted list and a target element, implement the Adaptive Segment Search algorithm to find the index of the target element in the list. If the element is not present, return -1.
