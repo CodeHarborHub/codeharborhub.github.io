@@ -53,7 +53,7 @@ The problem is to reverse the order of words in a string where words are separat
 
 <Tabs>
   <TabItem value="Python" label="Python" default>
-  <SolutionAuthor name="@YourUsername"/>
+  <SolutionAuthor name="@arunimad6yuq"/>
 
   ```py
   class Solution:
@@ -74,7 +74,7 @@ The problem is to reverse the order of words in a string where words are separat
 
   </TabItem>
   <TabItem value="C++" label="C++">
-  <SolutionAuthor name="@YourUsername"/>
+  <SolutionAuthor name="@arunimad6yuq"/>
 
   ```cpp
   //{ Driver Code Starts
