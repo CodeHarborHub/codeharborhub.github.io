@@ -25,25 +25,41 @@ Memory allocation is the process of assigning blocks of memory to various progra
 ### 3. Paging
 Paging is a memory management scheme that eliminates the need for contiguous allocation of physical memory. It divides memory into fixed-sized pages. When a process is executed, its pages are loaded into any available memory frames.
 
+#### Steps in Paging:
+1. **Divide the Process**: The process is divided into pages of equal size.
+2. **Divide Physical Memory**: Physical memory is divided into frames of the same size as the pages.
+3. **Load Pages into Frames**: Pages are loaded into available frames in physical memory.
+4. **Page Table**: A page table maintains the mapping between the process's pages and physical memory frames.
+
 ### 4. Segmentation
 Segmentation divides a program into different segments such as code, data, stack, etc. Each segment can be placed in different parts of memory. This allows logical grouping of data and code, enhancing protection and sharing.
+
+#### Steps in Segmentation:
+1. **Divide the Program**: The program is divided into logical segments.
+2. **Map Segments to Memory**: Segments are mapped to different parts of physical memory.
+3. **Segment Table**: A segment table maintains the mapping between the segments and physical memory addresses.
 
 ### 5. Virtual Memory
 Virtual memory allows the execution of processes that may not be completely in the physical memory. It extends the available memory on a system by using disk space to simulate additional RAM. Techniques used include paging and segmentation.
 
-## Memory Allocation Techniques
+### 6. Memory Allocation Techniques
 
-### Fixed Partitioning
+#### Fixed Partitioning
 Memory is divided into fixed-sized partitions. Each partition can hold one process. However, this leads to inefficient memory use and internal fragmentation.
 
-### Dynamic Partitioning
+#### Dynamic Partitioning
 Memory is divided into partitions dynamically, based on the size of the process. This reduces internal fragmentation but can lead to external fragmentation.
 
-### Buddy System
+#### Buddy System
 The buddy system is a memory allocation and management algorithm that divides memory into blocks of size 2^k. It is a compromise between fixed and dynamic partitioning.
 
 ## Swapping
 Swapping is a technique where a process can be temporarily swapped out of memory to a backing store and then brought back into memory for continued execution. This allows more processes to be executed than can fit in memory at one time.
+
+### Steps in Swapping:
+1. **Process Suspension**: The process is suspended and its state is saved.
+2. **Transfer to Backing Store**: The process is copied to the backing store (disk).
+3. **Loading into Memory**: When the process is to be resumed, it is copied back into memory.
 
 ## Fragmentation
 

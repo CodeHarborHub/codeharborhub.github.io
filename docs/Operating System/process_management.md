@@ -43,19 +43,34 @@ Process scheduling is the activity of the process manager that handles the remov
 ### Process Creation
 Processes can be created using system calls like `fork()` in Unix-based systems. A new process, called the child process, is created as a copy of the parent process.
 
+#### Steps in Process Creation:
+1. **Forking**: The operating system creates a new process by duplicating the parent process.
+2. **Execution**: The child process starts executing. It can run a different program using the `exec` system call.
+3. **Address Space Allocation**: The operating system allocates memory for the new process.
+
 ### Process Termination
 A process terminates when it finishes execution or is explicitly killed. System calls like `exit()` are used for normal termination, while `kill()` can be used to terminate a process forcefully.
 
+#### Reasons for Process Termination:
+1. **Normal Completion**: The process finishes its task.
+2. **Errors**: Errors occur during execution.
+3. **Resource Unavailability**: Required resources are not available.
+4. **User Request**: The user requests the termination of the process.
+5. **Parent Termination**: The parent process is terminated.
+
 ## Inter-Process Communication (IPC)
 IPC mechanisms allow processes to communicate and synchronize their actions. Common IPC methods include:
-- **Pipes**
-- **Message Queues**
-- **Shared Memory**
-- **Semaphores**
+- **Pipes**: Unidirectional communication channels between processes.
+- **Message Queues**: A linked list of messages stored within the kernel.
+- **Shared Memory**: Multiple processes can access the same memory space.
+- **Semaphores**: Used to control access to a common resource by multiple processes.
+
+### Synchronization
+Synchronization is essential to ensure that processes do not interfere with each other while sharing resources. Techniques include:
+- **Mutexes**: Locks that ensure mutual exclusion.
+- **Condition Variables**: Used to block a process until a particular condition is met.
+- **Monitors**: High-level synchronization constructs.
 
 ## Conclusion
-Process management is crucial for the efficient operation of an operating system. It ensures that processes are executed in a manner that maximizes CPU utilization and minimizes conflicts.
+Process management is crucial for the efficient operation of an operating system. It ensures that processes are executed in a manner that maximizes CPU utilization and minimizes conflicts. By understanding process management, we gain insight into how operating systems handle multitasking and ensure that multiple processes can run smoothly and efficiently.
 
----
-
-By understanding process management, we gain insight into how operating systems handle multitasking and ensure that multiple processes can run smoothly and efficiently.
