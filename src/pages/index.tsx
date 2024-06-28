@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import React from "react";
-import style from "./index.module.css"; 
+import style from "./index.module.css";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
@@ -17,6 +17,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import ResponseForm from "../components/HomePage/responseForm";
 // import CursorComponent from '../components/GlowingCursor'
 
 function TweetsSection() {
@@ -108,6 +109,9 @@ export default function Home() {
         </div>
 
         <TweetsSection />
+
+        <ResponseForm />
+
         <ScrollTopToButton />
         <ScrollBottomToTop />
       </main>
