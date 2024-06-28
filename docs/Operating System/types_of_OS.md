@@ -1,7 +1,7 @@
 ---
 id: types-of-operating_system
 title: types-of-operating_system
-sidebar_label: Types-of-operating-system
+sidebar_label: Types of Operating System
 sidebar_position: 8
 tags: [operating_system, create database, commands]
 description: An Operating System performs all the basic tasks like managing files, processes, and memory. .
