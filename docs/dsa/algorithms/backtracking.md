@@ -3,10 +3,8 @@ id: backtracking-in-dsa
 title: Backtracking in Data Structures and Algorithms
 sidebar_label: Backtracking Algorithm
 sidebar_position: 1
-description: ""
-tags:
-  [dsa,data-algorithms , backtracking
-  ]
+description: "Backtracking is a technique used to solve problems by exploring all possible solutions."
+tags : [dsa,data-algorithms , backtracking]
 ---
 
 
