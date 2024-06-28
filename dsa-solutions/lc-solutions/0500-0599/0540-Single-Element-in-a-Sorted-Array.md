@@ -41,8 +41,8 @@ Output: 10
 
 ### Constraints
 
-- 1 <= nums.length <= 105
-- 0 <= nums[i] <= 105
+- `1 <= nums.length <= 105`
+- `0 <= nums[i] <= 105`
   
 ## Solution
 
