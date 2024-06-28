@@ -2,7 +2,7 @@
 id: dictionary-julia
 title: Dictionary
 sidebar_label: Julia Dictionary
-sidebar_position: 7
+sidebar_position: 8
 tags: [Julia,Dictionary]
 
 ---
