@@ -165,4 +165,4 @@ For the string `S = "pqr.mno"`:
 ## References
 
 - **gfg Problem:** [gfg Problem](https://www.geeksforgeeks.org/problems/reverse-words-in-a-given-string5459/1?page=1&difficulty=Easy&sortBy=submissions)
-- **Solution Author:** [arunimad6yuq/]([https://www.geeksforgeeks.org/user/YourUsername/](https://www.geeksforgeeks.org/user/arunimad6yuq/))
+- **Solution Author:** [arunimad6yuq/](https://www.geeksforgeeks.org/user/arunimad6yuq/)
