@@ -18,6 +18,7 @@ import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import ResponseForm from "../components/HomePage/responseForm";
+// import CursorComponent from '../components/GlowingCursor'
 
 function TweetsSection() {
   const tweetColumns = [[], [], []];

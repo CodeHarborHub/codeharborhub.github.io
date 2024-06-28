@@ -23,7 +23,7 @@ export default function Tweet({
   githubUsername,
 }: Props): JSX.Element {
   return (
-    <div className={clsx('card', styles.tweet)}>
+    <div className={clsx('card', styles.tweet)} style={{marginTop:"10px"}}>
       <div className="card__header">
         <div className="avatar">
           <img
