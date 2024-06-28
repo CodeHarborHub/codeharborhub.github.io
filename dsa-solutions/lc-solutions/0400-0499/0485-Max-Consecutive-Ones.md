@@ -34,7 +34,7 @@ Output: 2
 
 ### Constraints
 
-- 1 <= nums.length <= 105
+- `1 <= nums.length <= 105`
 - nums[i] is either 0 or 1.
   
 
