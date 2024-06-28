@@ -1,7 +1,7 @@
 ---
 id: operating_system
 title: operating_system
-sidebar_label: operating_system
+sidebar_label: Operating System
 sidebar_position: 6
 tags: [operating_system, create database, commands]
 description: An operating system acts as an interface between the software and different parts of the computer or the computer hardware.
