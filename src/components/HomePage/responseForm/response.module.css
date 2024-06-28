@@ -1,78 +1,71 @@
 .response_section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
 }
 
+.response_image_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.response_img {
+  max-width: 100%;
+  height: auto;
+}
 
 .response_container {
-    padding: 20px;
-    border-radius: 20px;
-    border: 2px solid #20e3a2;
-    width: 45%;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-primary);
 }
 
 .response_input {
-    display: flex;
-    flex-direction: column;
+  margin-bottom: 20px;
 }
 
-.response_heading {
-    font-family: math;
-    font-size: 14px;
-    margin-bottom: 3px;
+.response_label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
 }
 
-.response_inpt {
-    border: none;
-    outline: none;
-    font-size: 15px;
-    color: #555a64;
-    font-family: serif;
-    padding: 9px;
-    border-radius: 6px;
-    background-color: lightgray;
-    margin-bottom: 13px;
+.response_input input,
+.response_input textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: 4px;
+  font-size: 16px;
 }
 
 .response_btn {
-    flex: 0.6;
-    width: 100%;
-    min-height: 50px;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 28px;
-    background: linear-gradient(90deg, #07ab8a5f 0%, transparent 100%);
-    border: 2px solid #20e3a2;
-    padding: 0 1rem;
-    cursor: pointer;
-    outline: none;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 1100px) {
-    .response_img{
-        width: 35%;
-    }
-    
-    .response_container {
-        width: 50%;
-    }
+.response_btn:hover {
+  background-color: #0056b3;
 }
-@media screen and (max-width: 900px) {
-    .response_section {
-        flex-direction: column;
-    }
 
-    .response_img{
-        width: 85%;
-    }
-    
-    .response_container {
-        width: 85%;
-    }
+@media (max-width: 600px) {
+  .response_section {
+    grid-template-columns: 1fr;
+  }
+
+  .response_container {
+    padding: 15px;
+  }
 }

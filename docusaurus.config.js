@@ -5,6 +5,7 @@ const remarkMath = require("remark-math");
 const rehypeKatex = require("rehype-katex");
 
 const path = require("path");
+require('dotenv').config();
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -16,6 +17,9 @@ const config = {
   customFields: {
     admin: "Ajay Dhangar",
     superman: "Shivay",
+    serviceId: process.env.EMAILJS_SERVICE_ID,
+    templateId: process.env.EMAILJS_TEMPLATE_ID,
+    userId: process.env.EMAILJS_USER_ID,
   },
 
   organizationName: "codeharborhub",
