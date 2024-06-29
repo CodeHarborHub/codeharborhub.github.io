@@ -40,6 +40,7 @@ Given a list and a target element, implement the Linear Search algorithm to find
 ## Examples
 
 **Example 1:**
+
 ```
 Input:
 list = [1, 3, 5, 7, 9]
@@ -48,12 +49,14 @@ Output: 2
 ```
 
 **Example 2:**
+
 ```
 Input:
 list = [2, 4, 6, 8, 10]
 target = 7
 Output: -1
 ```
+
 ## Your task
 
 Complete the function search() which takes two integers n , k and an array arr, as input parameters and returns an integer denoting the answer. Return -1 if the number is not found in the array. You don't have to print answers or take inputs.
@@ -87,44 +90,46 @@ Expected Auxiliary Space: $O(1)$
   #include <iostream>
   #include <vector>
 
-  int linear_search(const std::vector<int>& lst, int target) {
-      for (int i = 0; i < lst.size(); i++) {
-          if (lst[i] == target) {
-              return i;
-          }
-      }
-      return -1;
-  }
+int linear_search(const std::vector<int>& lst, int target) {
+for (int i = 0; i < lst.size(); i++) {
+if (lst[i] == target) {
+return i;
+}
+}
+return -1;
+}
 
-  int main() {
-      std::vector<int> lst = {1, 3, 5, 7, 9};
-      int target = 5;
-      std::cout << "Index: " << linear_search(lst, target) << std::endl;
-      return 0;
-  }
-  ```
-  </TabItem>
+int main() {
+std::vector<int> lst = {1, 3, 5, 7, 9};
+int target = 5;
+std::cout << "Index: " << linear_search(lst, target) << std::endl;
+return 0;
+}
 
-  <TabItem value="Java" label="Java">
-  <SolutionAuthor name="@ngmuraqrdd"/>
-  ```java
-  public class LinearSearch {
-      public static int linearSearch(int[] lst, int target) {
-          for (int i = 0; i < lst.length; i++) {
-              if (lst[i] == target) {
-                  return i;
-              }
-          }
-          return -1;
-      }
+````
+</TabItem>
 
-      public static void main(String[] args) {
-          int[] lst = {1, 3, 5, 7, 9};
-          int target = 5;
-          System.out.println("Index: " + linearSearch(lst, target));
-      }
-  }
-  ```
+<TabItem value="Java" label="Java">
+<SolutionAuthor name="@ngmuraqrdd"/>
+```java
+public class LinearSearch {
+    public static int linearSearch(int[] lst, int target) {
+        for (int i = 0; i < lst.length; i++) {
+            if (lst[i] == target) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public static void main(String[] args) {
+        int[] lst = {1, 3, 5, 7, 9};
+        int target = 5;
+        System.out.println("Index: " + linearSearch(lst, target));
+    }
+}
+````
+
   </TabItem>
 
   <TabItem value="JavaScript" label="JavaScript">
@@ -139,11 +144,12 @@ Expected Auxiliary Space: $O(1)$
       return -1;
   }
 
-  const lst = [1, 3, 5, 7, 9];
-  const target = 5;
-  console.log("Index:", linearSearch(lst, target));
-  ```
-  </TabItem>
+const lst = [1, 3, 5, 7, 9];
+const target = 5;
+console.log("Index:", linearSearch(lst, target));
+
+```
+</TabItem>
 </Tabs>
 
 ## Complexity Analysis
@@ -166,3 +172,4 @@ Expected Auxiliary Space: $O(1)$
 - **GFG Problem:** [GFG Problem](https://www.geeksforgeeks.org/linear-search/)
 - **HackerRank Problem:** [HackerRank](https://www.hackerrank.com/challenges/linear-search/problem)
 - **Author's Geeks for Geeks Profile:** [MuraliDharan](https://www.geeksforgeeks.org/user/ngmuraqrdd/)
+```
