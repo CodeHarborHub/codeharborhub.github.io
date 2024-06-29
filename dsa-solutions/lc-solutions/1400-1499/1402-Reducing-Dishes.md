@@ -3,12 +3,12 @@ id: reducing-dishes
 title: Reducing Dishes
 sidebar_label: 1402-Reducing-Dishes
 tags:
- - Arrays
- - Dynamic Programming
- - Sorting
- - C++
- - Java
- - Python
+  - Arrays
+  - Dynamic Programming
+  - Sorting
+  - C++
+  - Java
+  - Python
 description: "This document provides a solution to the Reducing Dishes problem, where we need to maximize the sum of the satisfaction of dishes."
 ---
 
@@ -27,15 +27,15 @@ Return the maximum sum of satisfaction the chef can obtain.
 Input: satisfaction = [-1,-8,0,5,-9]  
 Output: 14  
 Explanation: After removing the negative dishes, the remaining dishes are [0, 5].  
-              The optimal solution is to cook dish 0 at time 1 (0 * 1 = 0) and cook dish 5 at time 2 (5 * 2 = 10).  
-              The total satisfaction is 0 + 10 + 5 = 14.
+ The optimal solution is to cook dish 0 at time 1 (0 _ 1 = 0) and cook dish 5 at time 2 (5 _ 2 = 10).  
+ The total satisfaction is 0 + 10 + 5 = 14.
 
 **Example 2:**
 
 Input: satisfaction = [4,3,2]  
 Output: 20  
 Explanation: The optimal solution is to cook all dishes in order.  
-              The total satisfaction is 4 * 1 + 3 * 2 + 2 * 3 = 20.
+ The total satisfaction is 4 _ 1 + 3 _ 2 + 2 \* 3 = 20.
 
 **Example 3:**
 
@@ -65,6 +65,7 @@ The detailed steps are:
 #### Code in Different Languages
 
 ### C++ Solution
+
 ```cpp
 #include <vector>
 #include <algorithm>
@@ -91,7 +92,9 @@ int main() {
     cout << maxSatisfaction(satisfaction) << endl;  // Output: 14
 }
 ```
+
 ### Java Solution
+
 ```java
 import java.util.Arrays;
 
@@ -116,6 +119,7 @@ public class ReducingDishes {
     }
 }
 ```
+
 ### Python Solution
 
 ```python
@@ -134,16 +138,19 @@ def maxSatisfaction(satisfaction):
 satisfaction = [-1, -8, 0, 5, -9]
 print(maxSatisfaction(satisfaction))  # Output: 14
 ```
+
 ### Complexity Analysis
+
 **Time Complexity:** O(n log n)
 
->Reason: Sorting the array takes O(n log n) time, and traversing the array takes O(n) time.
+> Reason: Sorting the array takes O(n log n) time, and traversing the array takes O(n) time.
 
 **Space Complexity:** O(1)
 
->Reason: We use a constant amount of extra space.
+> Reason: We use a constant amount of extra space.
 
 This solution sorts the satisfaction array and then iterates through it in reverse to calculate the maximum sum of satisfaction. The time complexity is dominated by the sorting step, and the space complexity is constant.
 
 ### References
+
 **LeetCode Problem:** Reducing Dishes

@@ -441,28 +441,28 @@ function twoSumProblem() {
   <TabItem value="TypeScript" label="TypeScript">
   <SolutionAuthor name="@ajay-dhangar"/>
 
- ```ts
- function twoSum(nums: number[], target: number): number[] {
-   const sortedNums = nums.map((num, index) => [num, index]);
-   sortedNums.sort((a, b) => a[0] - b[0]);
+```ts
+function twoSum(nums: number[], target: number): number[] {
+  const sortedNums = nums.map((num, index) => [num, index]);
+  sortedNums.sort((a, b) => a[0] - b[0]);
 
-   let left = 0;
-   let right = sortedNums.length - 1;
+  let left = 0;
+  let right = sortedNums.length - 1;
 
-   while (left < right) {
-     const sum = sortedNums[left][0] + sortedNums[right][0];
-     if (sum === target) {
-       return [sortedNums[left][1], sortedNums[right][1]];
-     } else if (sum < target) {
-       left++;
-     } else {
-       right--;
-     }
-   }
+  while (left < right) {
+    const sum = sortedNums[left][0] + sortedNums[right][0];
+    if (sum === target) {
+      return [sortedNums[left][1], sortedNums[right][1]];
+    } else if (sum < target) {
+      left++;
+    } else {
+      right--;
+    }
+  }
 
-   return [];
- }
- ```
+  return [];
+}
+```
 
 </TabItem>
 <TabItem value="Python" label="Python">
@@ -484,39 +484,40 @@ function twoSumProblem() {
              right -= 1
 
      return []
- ```
+
+````
 
 </TabItem>
 <TabItem value="Java" label="Java">
 <SolutionAuthor name="@ajay-dhangar"/>
 ```java
- class Solution {
-     public int[] twoSum(int[] nums, int target) {
-         int[][] sortedNums = new int[nums.length][2];
-         for (int i = 0; i < nums.length; i++) {
-             sortedNums[i] = new int[] {nums[i], i};
-         }
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        int[][] sortedNums = new int[nums.length][2];
+        for (int i = 0; i < nums.length; i++) {
+            sortedNums[i] = new int[] {nums[i], i};
+        }
 
-         Arrays.sort(sortedNums, (a, b) -> Integer.compare(a[0], b[0]));
+        Arrays.sort(sortedNums, (a, b) -> Integer.compare(a[0], b[0]));
 
-         int left = 0;
-         int right = sortedNums.length - 1;
+        int left = 0;
+        int right = sortedNums.length - 1;
 
-         while (left < right) {
-             int sum = sortedNums[left][0] + sortedNums[right][0];
-             if (sum == target) {
-                 return new int[] {sortedNums[left][1], sortedNums[right][1]};
-             } else if (sum < target) {
-                 left++;
-             } else {
-                 right--;
-             }
-         }
+        while (left < right) {
+            int sum = sortedNums[left][0] + sortedNums[right][0];
+            if (sum == target) {
+                return new int[] {sortedNums[left][1], sortedNums[right][1]};
+            } else if (sum < target) {
+                left++;
+            } else {
+                right--;
+            }
+        }
 
-         return new int[0];
-     }
- }
- ```
+        return new int[0];
+    }
+}
+````
 
 </TabItem>
 <TabItem value="C++" label="C++">
@@ -552,7 +553,7 @@ function twoSumProblem() {
          return {};
      }
  };
- ```
+```
 
 </TabItem>
 </Tabs>
@@ -585,8 +586,8 @@ The hash table approach is the most efficient and is recommended for large input
 
   <TabItem value="en" label="English">
 
-  ---
-  
+---
+
     <Tabs>
       <TabItem value="javascript" label="JavaScript">
         <LiteYouTubeEmbed
@@ -594,7 +595,7 @@ The hash table approach is the most efficient and is recommended for large input
           params="autoplay=1&autohide=1&showinfo=0&rel=0"
           title="Two Sum Problem Explanation | Two Sum Problem Solution | Two Sum Problem Approach"
           poster="maxresdefault"
-          webp 
+          webp
         />
       </TabItem>
 
@@ -604,7 +605,7 @@ The hash table approach is the most efficient and is recommended for large input
           params="autoplay=1&autohide=1&showinfo=0&rel=0"
           title="Two Sum Problem Explanation | Two Sum Problem Solution | Two Sum Problem Approach"
           poster="maxresdefault"
-          webp 
+          webp
         />
       </TabItem>
       <TabItem value="java" label="Java">
@@ -613,7 +614,7 @@ The hash table approach is the most efficient and is recommended for large input
           params="autoplay=1&autohide=1&showinfo=0&rel=0"
           title="Two Sum Problem Explanation | Two Sum Problem Solution | Two Sum Problem Approach"
           poster="maxresdefault"
-          webp 
+          webp
         />
       </TabItem>
     </Tabs>
