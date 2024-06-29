@@ -1,5 +1,5 @@
 ---
-id: 02-add-two-numbers
+id: add-two-numbers
 title: Add Two Numbers Solution
 sidebar_label: 0002 - Add Two Numbers
 tags:

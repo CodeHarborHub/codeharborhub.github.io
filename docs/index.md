@@ -4,6 +4,7 @@ title: Welcome to CodeHarborHub Tutorials
 sidebar_label: Welcome to CodeHarborHub
 sidebar_position: 1
 slug: /
+sidebar_class_name: "tutorial-learning-tasks"
 ---
 
 Hello, and welcome to CodeHarborHub! Our mission is to provide accessible and comprehensive educational resources to learners of all levels, from beginners to advanced professionals. Whether you're looking to kickstart your career in web development, master a new programming language, or stay updated on the latest tech trends, we've got you covered.
