@@ -65,23 +65,23 @@ if array size is 2 we have only minimum and maximum value , hence we return -1.
   <TabItem value="Java" label="Java">
   <SolutionAuthor name="@ImmidiSivani" />
 
-  ```java
-     class Solution {
-       public int findNonMinOrMax(int[] nums) {
-         Arrays.sort(nums);
-         ArrayList<Integer> arr=new ArrayList<>();
-         for(int i=1;i<nums.length-1;i++){
-           arr.add(nums[i]);
-         }
-         if(arr.size()==0){
-           return -1;
-         }else{
-           return arr.get(0);
-         }
-     }
-    }
+```java
+   class Solution {
+     public int findNonMinOrMax(int[] nums) {
+       Arrays.sort(nums);
+       ArrayList<Integer> arr=new ArrayList<>();
+       for(int i=1;i<nums.length-1;i++){
+         arr.add(nums[i]);
+       }
+       if(arr.size()==0){
+         return -1;
+       }else{
+         return arr.get(0);
+       }
+   }
+  }
 
-   ```
+```
 
 </TabItem>
 
@@ -128,7 +128,7 @@ if array size is 2 we have only minimum and maximum value , hence we return -1.
      }
  };
 
- ```
+```
 
 </TabItem>
 </Tabs>
@@ -137,4 +137,7 @@ if array size is 2 we have only minimum and maximum value , hence we return -1.
 
 - **LeetCode Problem**: [Koko Eating Bananas](https://leetcode.com/problems/neither-minimum-nor-maximum/)
 - **Solution Link**: [LeetCode Solution](https://leetcode.com/problems/neither-minimum-nor-maximum/post-solution/?submissionId=1293729812)
-````
+
+```
+
+```

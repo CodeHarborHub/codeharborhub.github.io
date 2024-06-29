@@ -97,33 +97,35 @@ To solve the problem of finding the minimum eating speed for Koko to finish all 
 
      }
      return ans;
- }
- }
- ```
+
+}
+}
+
+````
 
 </TabItem>
 <TabItem value="Python" label="Python">
 <SolutionAuthor name="@ImmidiSivani" />
 
 ```python
- class Solution:
- def minEatingSpeed(self, piles, h):
-     l, r = 1, max(piles)
-     ans = r
+class Solution:
+def minEatingSpeed(self, piles, h):
+    l, r = 1, max(piles)
+    ans = r
 
-     while l <= r:
-         m = (l + r) // 2
-         division = 0
-         for i in piles:
-             division += (i + m - 1) // m
-         if division <= h:
-             ans = m
-             r = m - 1
-         else:
-             l = m + 1
+    while l <= r:
+        m = (l + r) // 2
+        division = 0
+        for i in piles:
+            division += (i + m - 1) // m
+        if division <= h:
+            ans = m
+            r = m - 1
+        else:
+            l = m + 1
 
-     return ans
-   ```
+    return ans
+````
 
   </TabItem>
 
@@ -135,12 +137,12 @@ To solve the problem of finding the minimum eating speed for Koko to finish all 
    #include <algorithm>
    #include <cmath>
 
-   class Solution {
-   public:
-     int minEatingSpeed(std::vector<int>& piles, int h) {
-         int l = 1;
-         int r = *std::max_element(piles.begin(), piles.end());
-         int ans = r;
+class Solution {
+public:
+int minEatingSpeed(std::vector<int>& piles, int h) {
+int l = 1;
+int r = \*std::max_element(piles.begin(), piles.end());
+int ans = r;
 
          while (l <= r) {
              int m = l + (r - l) / 2;
@@ -159,7 +161,8 @@ To solve the problem of finding the minimum eating speed for Koko to finish all 
          return ans;
        }
      };
-   ```
+
+```
 
 </TabItem>
 </Tabs>
@@ -168,3 +171,4 @@ To solve the problem of finding the minimum eating speed for Koko to finish all 
 
 - **LeetCode Problem**: [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)
 - **Solution Link**: [LeetCode Solution](https://leetcode.com/problems/koko-eating-bananas/post-solution/?submissionId=1295704443)
+```
