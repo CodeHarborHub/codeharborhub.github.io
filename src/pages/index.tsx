@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import React from "react";
-import style from "./index.module.css"; 
+import style from "./index.module.css";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
@@ -12,11 +12,11 @@ import { motion } from "framer-motion";
 import ResourcesSection from "../components/HomePage/ResourcesSection";
 import ScrollTopToButton from "../components/Buttons/bottom/ScrollTopToButton";
 import ScrollBottomToTop from "../components/Buttons/top/ScrollBottomToTop";
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 function TweetsSection() {
   const tweetColumns = [[], [], []];

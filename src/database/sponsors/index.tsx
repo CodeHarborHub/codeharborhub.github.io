@@ -34,6 +34,12 @@ const sponsors: Sponsor[] = [
     github: "https://github.com/mrmohdarif",
     linkedin: "https://www.linkedin.com/in/mohd-arif-115b87231/",
   },
+  {
+    name: "Samar Jeet Yadav",
+    image: "/sponsors/samar-jeet-yadav.jpg",
+    description: "...",
+    linkedin: "https://www.linkedin.com/in/samar-jeet-yadav-699224204/",
+  },
 ];
 
 export default sponsors;

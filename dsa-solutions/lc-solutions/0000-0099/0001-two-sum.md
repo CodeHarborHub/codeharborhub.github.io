@@ -1,5 +1,5 @@
 ---
-id: 01-two-sum
+id: two-sum
 title: Two Sum Solution
 sidebar_label: 0001 - Two Sum
 tags:
@@ -14,7 +14,7 @@ description: "This is a solution to the Two Sum problem on LeetCode."
 sidebar_position: 1
 ---
 
-In this page, we will solve the Two Sum problem using three different approaches: brute force, hash table, and two-pointer technique. We will provide the implementation of the solution in JavaScript, TypeScript, Python, Java, C++, and more.
+In this tutorial, we will solve the Two Sum problem using three different approaches: brute force, hash table, and two-pointer technique. We will provide the implementation of the solution in JavaScript, TypeScript, Python, Java, C++, and more.
 
 ## Problem Description
 
@@ -49,12 +49,12 @@ Output: [0,1]
 
 ### Constraints
 
-- `2 <= nums.length <= 10^4`
-- `-10^9 <= nums[i] <= 10^9`
-- `-10^9 <= target <= 10^9`
+- <code>$2 \leq \text{nums.length} \leq 10^4$</code>
+- <code>$-10^9 \leq \text{nums[i]} \leq 10^9$</code>
+- <code>$-10^9 \leq \text{target} \leq 10^9$</code>
 - Only one valid answer exists.
 
-**Follow up:** Can you come up with an algorithm that is less than <code>$$O(n^2)$$</code> time complexity?
+**Follow up:** Can you come up with an algorithm that is less than <code>$O(n^2)$</code> time complexity?
 
 ---
 
@@ -62,7 +62,7 @@ Output: [0,1]
 
 ### Intuition and Approach
 
-The problem can be solved using a brute force approach, a hash table, or the two-pointer technique. The brute force approach has a time complexity of $$O(n^2)$$, while the hash table and two-pointer techniques have a time complexity of $$O(n)$$. The hash table approach is the most efficient and is recommended for large inputs.
+The problem can be solved using a brute force approach, a hash table, or the two-pointer technique. The brute force approach has a time complexity of $O(n^2)$, while the hash table and two-pointer techniques have a time complexity of $O(n)$. The hash table approach is the most efficient and is recommended for large inputs.
 
 <Tabs>
  <tabItem value="Brute Force" label="Brute Force">
@@ -93,10 +93,10 @@ function twoSumProblem() {
   return (
     <div>
       <p>
-        <b>Input:</b> nums = {("["+ nums.join(", ")+ "]")}, target = {target}
+        <b>Input:</b> nums = {"[" + nums.join(", ") + "]"}, target = {target}
       </p>
       <p>
-        <b>Output:</b> {("["+ result.join(", ")+ "]")}
+        <b>Output:</b> {"[" + result.join(", ") + "]"}
       </p>
     </div>
   );
@@ -236,10 +236,10 @@ function twoSumProblem() {
   return (
     <div>
       <p>
-        <b>Input:</b> nums = {("["+ nums.join(", ")+ "]")}, target = {target}
+        <b>Input:</b> nums = {"[" + nums.join(", ") + "]"}, target = {target}
       </p>
       <p>
-        <b>Output:</b> {("["+ result.join(", ")+ "]")}
+        <b>Output:</b> {"[" + result.join(", ") + "]"}
       </p>
     </div>
   );
@@ -350,15 +350,15 @@ function twoSumProblem() {
 
 #### Complexity Analysis
 
-- Time Complexity: $$O(n)$$
-- Space Complexity: $$O(n)$$
+- **Time Complexity:** $O(n)$
+- **Space Complexity:** $O(n)$
 - Where `n` is the length of the input array `nums`.
-- The time complexity is $$O(n)$$ because we iterate through the array only once.
-- The space complexity is $$O(n)$$ because we use a hash table to store the elements and their indices.
+- The time complexity is $O(n)$ because we iterate through the array only once.
+- The space complexity is $O(n)$ because we use a hash table to store the elements and their indices.
 - This approach is more efficient than the brute force approach and is recommended for large inputs.
-- The hash table lookup has an average time complexity of $$O(1)$$, which makes this approach efficient.
-- The space complexity is $$O(n)$$ because we store at most `n` elements in the hash table.
-- The total time complexity is $$O(n)$$. and the total space complexity is $$O(n)$$.
+- The hash table lookup has an average time complexity of $O(1)$, which makes this approach efficient.
+- The space complexity is $O(n)$ because we store at most `n` elements in the hash table.
+- The total time complexity is $O(n)$. and the total space complexity is $O(n)$.
 
 </tabItem>
 <tabItem value="Two Pointer" label="Two Pointer">
@@ -399,10 +399,10 @@ function twoSumProblem() {
   return (
     <div>
       <p>
-        <b>Input:</b> nums = {("["+ nums.join(", ")+ "]")}, target = {target}
+        <b>Input:</b> nums = {"[" + nums.join(", ") + "]"}, target = {target}
       </p>
       <p>
-        <b>Output:</b> {("["+ result.join(", ")+ "]")}
+        <b>Output:</b> {"[" + result.join(", ") + "]"}
       </p>
     </div>
   );
@@ -441,131 +441,131 @@ function twoSumProblem() {
   <TabItem value="TypeScript" label="TypeScript">
   <SolutionAuthor name="@ajay-dhangar"/>
 
-   ```ts
-    function twoSum(nums: number[], target: number): number[] {
-      const sortedNums = nums.map((num, index) => [num, index]);
-      sortedNums.sort((a, b) => a[0] - b[0]);
+ ```ts
+ function twoSum(nums: number[], target: number): number[] {
+   const sortedNums = nums.map((num, index) => [num, index]);
+   sortedNums.sort((a, b) => a[0] - b[0]);
 
-      let left = 0;
-      let right = sortedNums.length - 1;
+   let left = 0;
+   let right = sortedNums.length - 1;
 
-      while (left < right) {
-        const sum = sortedNums[left][0] + sortedNums[right][0];
-        if (sum === target) {
-          return [sortedNums[left][1], sortedNums[right][1]];
-        } else if (sum < target) {
-          left++;
-        } else {
-          right--;
-        }
-      }
+   while (left < right) {
+     const sum = sortedNums[left][0] + sortedNums[right][0];
+     if (sum === target) {
+       return [sortedNums[left][1], sortedNums[right][1]];
+     } else if (sum < target) {
+       left++;
+     } else {
+       right--;
+     }
+   }
 
-      return [];
-    }
-    ```
+   return [];
+ }
+ ```
 
-  </TabItem>
-  <TabItem value="Python" label="Python">
-  <SolutionAuthor name="@ajay-dhangar"/>
-   ```py
-     class Solution:
-      def twoSum(self, nums: List[int], target: int) -> List[int]:
-        sorted_nums = sorted(enumerate(nums), key=lambda x: x[1])
+</TabItem>
+<TabItem value="Python" label="Python">
+<SolutionAuthor name="@ajay-dhangar"/>
+```py
+  class Solution:
+   def twoSum(self, nums: List[int], target: int) -> List[int]:
+     sorted_nums = sorted(enumerate(nums), key=lambda x: x[1])
 
-        left, right = 0, len(sorted_nums) - 1
+     left, right = 0, len(sorted_nums) - 1
 
-        while left < right:
-            sum = sorted_nums[left][1] + sorted_nums[right][1]
-            if sum == target:
-                return [sorted_nums[left][0], sorted_nums[right][0]]
-            elif sum < target:
-                left += 1
-            else:
-                right -= 1
+     while left < right:
+         sum = sorted_nums[left][1] + sorted_nums[right][1]
+         if sum == target:
+             return [sorted_nums[left][0], sorted_nums[right][0]]
+         elif sum < target:
+             left += 1
+         else:
+             right -= 1
 
-        return []
-    ```
+     return []
+ ```
 
-  </TabItem>
-  <TabItem value="Java" label="Java">
-  <SolutionAuthor name="@ajay-dhangar"/>
-   ```java
-    class Solution {
-        public int[] twoSum(int[] nums, int target) {
-            int[][] sortedNums = new int[nums.length][2];
-            for (int i = 0; i < nums.length; i++) {
-                sortedNums[i] = new int[] {nums[i], i};
-            }
+</TabItem>
+<TabItem value="Java" label="Java">
+<SolutionAuthor name="@ajay-dhangar"/>
+```java
+ class Solution {
+     public int[] twoSum(int[] nums, int target) {
+         int[][] sortedNums = new int[nums.length][2];
+         for (int i = 0; i < nums.length; i++) {
+             sortedNums[i] = new int[] {nums[i], i};
+         }
 
-            Arrays.sort(sortedNums, (a, b) -> Integer.compare(a[0], b[0]));
+         Arrays.sort(sortedNums, (a, b) -> Integer.compare(a[0], b[0]));
 
-            int left = 0;
-            int right = sortedNums.length - 1;
+         int left = 0;
+         int right = sortedNums.length - 1;
 
-            while (left < right) {
-                int sum = sortedNums[left][0] + sortedNums[right][0];
-                if (sum == target) {
-                    return new int[] {sortedNums[left][1], sortedNums[right][1]};
-                } else if (sum < target) {
-                    left++;
-                } else {
-                    right--;
-                }
-            }
+         while (left < right) {
+             int sum = sortedNums[left][0] + sortedNums[right][0];
+             if (sum == target) {
+                 return new int[] {sortedNums[left][1], sortedNums[right][1]};
+             } else if (sum < target) {
+                 left++;
+             } else {
+                 right--;
+             }
+         }
 
-            return new int[0];
-        }
-    }
-    ```
+         return new int[0];
+     }
+ }
+ ```
 
-  </TabItem>
-  <TabItem value="C++" label="C++"> 
-  <SolutionAuthor name="@ajay-dhangar"/>
-  
-   ```cpp
-    class Solution {
-    public:
-        vector<int> twoSum(vector<int>& nums, int target) {
-            vector<vector<int>> sortedNums(nums.size(), vector<int>(2));
-            for (int i = 0; i < nums.size(); i++) {
-                sortedNums[i] = {nums[i], i};
-            }
+</TabItem>
+<TabItem value="C++" label="C++">
+<SolutionAuthor name="@ajay-dhangar"/>
 
-            sort(sortedNums.begin(), sortedNums.end(), [](vector<int>& a, vector<int>& b) {
-                return a[0] < b[0];
-            });
+```cpp
+ class Solution {
+ public:
+     vector<int> twoSum(vector<int>& nums, int target) {
+         vector<vector<int>> sortedNums(nums.size(), vector<int>(2));
+         for (int i = 0; i < nums.size(); i++) {
+             sortedNums[i] = {nums[i], i};
+         }
 
-            int left = 0;
-            int right = sortedNums.size() - 1;
+         sort(sortedNums.begin(), sortedNums.end(), [](vector<int>& a, vector<int>& b) {
+             return a[0] < b[0];
+         });
 
-            while (left < right) {
-                int sum = sortedNums[left][0] + sortedNums[right][0];
-                if (sum == target) {
-                    return {sortedNums[left][1], sortedNums[right][1]};
-                } else if (sum < target) {
-                    left++;
-                } else {
-                    right--;
-                }
-            }
+         int left = 0;
+         int right = sortedNums.size() - 1;
 
-            return {};
-        }
-    };
-    ```
+         while (left < right) {
+             int sum = sortedNums[left][0] + sortedNums[right][0];
+             if (sum == target) {
+                 return {sortedNums[left][1], sortedNums[right][1]};
+             } else if (sum < target) {
+                 left++;
+             } else {
+                 right--;
+             }
+         }
 
-  </TabItem>  
+         return {};
+     }
+ };
+ ```
+
+</TabItem>
 </Tabs>
 
 #### Complexity Analysis
 
-- Time Complexity: $$O(n \log n)$$
-- Space Complexity: $$O(n)$$
+- **Time Complexity:** $O(n \log n)$
+- **Space Complexity:** $O(n)$
 - Where `n` is the length of the input array `nums`.
-- The time complexity is $$O(n \log n)$$ because we sort the array.
-- The space complexity is $$O(n)$$ because we store the indices of the elements in the sorted array.
+- The time complexity is $O(n \log n)$ because we sort the array.
+- The space complexity is $O(n)$ because we store the indices of the elements in the sorted array.
 - This approach is efficient and is recommended for large inputs.
-- The total time complexity is $$O(n \log n)$$. and the total space complexity is $$O(n)$$.
+- The total time complexity is $O(n \log n)$. and the total space complexity is $O(n)$.
 
 </tabItem>
 </Tabs>
@@ -573,11 +573,64 @@ function twoSumProblem() {
 :::tip Note
 **Which is the best approach? and why?**
 
-The hash table approach is the most efficient and is recommended for large inputs. The hash table lookup has an average time complexity of $$O(1)$$, which makes this approach efficient. The time complexity of the hash table approach is $$O(n)$$, which is better than the brute force approach with a time complexity of $$O(n^2)$$ and the two-pointer approach with a time complexity of $$O(n \log n)$$. The space complexity of the hash table approach is $$O(n)$$, which is the same as the two-pointer approach. Therefore, the hash table approach is the best approach for this problem.
+The hash table approach is the most efficient and is recommended for large inputs. The hash table lookup has an average time complexity of $O(1)$, which makes this approach efficient. The time complexity of the hash table approach is $$O(n)$$, which is better than the brute force approach with a time complexity of $O(n^2)$ and the two-pointer approach with a time complexity of $O(n \log n)$. The space complexity of the hash table approach is $O(n)$, which is the same as the two-pointer approach. Therefore, the hash table approach is the best approach for this problem.
 
 :::
 
+---
 
+## Video Explanation of Two Sum Problem
+
+<Tabs>
+
+  <TabItem value="en" label="English">
+
+  ---
+  
+    <Tabs>
+      <TabItem value="javascript" label="JavaScript">
+        <LiteYouTubeEmbed
+          id="mK1_vjxMfh4"
+          params="autoplay=1&autohide=1&showinfo=0&rel=0"
+          title="Two Sum Problem Explanation | Two Sum Problem Solution | Two Sum Problem Approach"
+          poster="maxresdefault"
+          webp 
+        />
+      </TabItem>
+
+      <TabItem value="python" label="Python">
+        <LiteYouTubeEmbed
+          id="KLlXCFG5TnA"
+          params="autoplay=1&autohide=1&showinfo=0&rel=0"
+          title="Two Sum Problem Explanation | Two Sum Problem Solution | Two Sum Problem Approach"
+          poster="maxresdefault"
+          webp 
+        />
+      </TabItem>
+      <TabItem value="java" label="Java">
+        <LiteYouTubeEmbed
+          id="UXDSeD9mN-k"
+          params="autoplay=1&autohide=1&showinfo=0&rel=0"
+          title="Two Sum Problem Explanation | Two Sum Problem Solution | Two Sum Problem Approach"
+          poster="maxresdefault"
+          webp 
+        />
+      </TabItem>
+    </Tabs>
+
+  </TabItem>
+
+  <TabItem value="hi" label="Hindi">
+        <LiteYouTubeEmbed
+          id="TXxwt1eFF98"
+          params="autoplay=1&autohide=1&showinfo=0&rel=0"
+          title="Two Sum Problem Explanation | Two Sum Problem Solution | Two Sum Problem Approach"
+          poster="maxresdefault"
+          webp 
+        />
+  </TabItem>
+
+</Tabs>
 
 ---
 
@@ -585,6 +638,6 @@ The hash table approach is the most efficient and is recommended for large input
 
 <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
 {['ajay-dhangar'].map(username => (
-    <Author key={username} username={username} />
+ <Author key={username} username={username} />
 ))}
 </div>

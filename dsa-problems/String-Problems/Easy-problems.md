@@ -1,0 +1,9 @@
+| Problem                                                   | Difficulty Level | Problem Link                                               |
+|-----------------------------------------------------------|------------------|------------------------------------------------------------|
+| [Remove outermost Parenthesis](https://www.geeksforgeeks.org/remove-outermost-parentheses/) | Easy             | [Problem Link](https://practice.geeksforgeeks.org/problems/remove-outermost-parentheses/1)       |
+| [Reverse words in a given string / Palindrome Check](https://www.geeksforgeeks.org/reverse-words-in-a-given-string/) | Easy             | [Problem Link](https://practice.geeksforgeeks.org/problems/reverse-words-in-a-given-string/0)    |
+| [Largest odd number in a string](https://www.geeksforgeeks.org/largest-odd-number-in-string/) | Easy             | [Problem Link](https://practice.geeksforgeeks.org/problems/largest-odd-number-in-string/1)       |
+| [Longest Common Prefix](https://www.geeksforgeeks.org/longest-common-prefix-using-word-by-word-matching/) | Easy             | [Problem Link](https://practice.geeksforgeeks.org/problems/longest-common-prefix-in-an-array/0)  |
+| [Isomorphic String](https://www.geeksforgeeks.org/check-if-two-given-strings-are-isomorphic-to-each-other/) | Easy             | [Problem Link](https://practice.geeksforgeeks.org/problems/isomorphic-strings/0)                 |
+| [Check whether one string is a rotation of another](https://www.geeksforgeeks.org/check-if-a-string-is-rotation-of-another-string/) | Medium           | [Problem Link](https://practice.geeksforgeeks.org/problems/check-if-string-is-rotated-by-two-places/0) |
+| [Check if two strings are anagram of each other](https://www.geeksforgeeks.org/check-whether-two-strings-are-anagram-of-each-other/) | Medium           | [Problem Link](https://practice.geeksforgeeks.org/problems/anagram-1587115620/1)                 |

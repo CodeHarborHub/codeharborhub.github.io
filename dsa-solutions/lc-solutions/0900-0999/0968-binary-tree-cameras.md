@@ -4,8 +4,10 @@ title:   Binary Tree Cameras
 sidebar_label: 968. Binary Tree Cameras
 
 tags:
-- Array
-- Vector
+- Binary Tree
+- Trees
+- Binary Tree Cameras
+- Leetcode
 
 description: "This is a solution to the Binary Tree Cameras problem on LeetCode."
 ---
