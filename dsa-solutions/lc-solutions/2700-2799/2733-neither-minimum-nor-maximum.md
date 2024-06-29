@@ -65,23 +65,23 @@ if array size is 2 we have only minimum and maximum value , hence we return -1.
   <TabItem value="Java" label="Java">
   <SolutionAuthor name="@ImmidiSivani" />
 
-````java
+  ```java
      class Solution {
- public int findNonMinOrMax(int[] nums) {
-     Arrays.sort(nums);
-     ArrayList<Integer> arr=new ArrayList<>();
-     for(int i=1;i<nums.length-1;i++){
-         arr.add(nums[i]);
+       public int findNonMinOrMax(int[] nums) {
+         Arrays.sort(nums);
+         ArrayList<Integer> arr=new ArrayList<>();
+         for(int i=1;i<nums.length-1;i++){
+           arr.add(nums[i]);
+         }
+         if(arr.size()==0){
+           return -1;
+         }else{
+           return arr.get(0);
+         }
      }
-     if(arr.size()==0){
-         return -1;
-     }else{
-         return arr.get(0);
-     }
- }
- }
+    }
 
- ```
+   ```
 
 </TabItem>
 
@@ -100,14 +100,14 @@ if array size is 2 we have only minimum and maximum value , hence we return -1.
  else:
      return arr[0]
 
-````
+```
 
   </TabItem>
 
   <TabItem value="c++" label="c++">
   <SolutionAuthor name="@ImmidiSivani" />
 
-````c++
+```c++
 #include <algorithm>
  #include <vector>
 
