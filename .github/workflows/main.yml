@@ -1,0 +1,82 @@
+name: Issue Management
+
+on:
+  issues:
+    types: [opened, edited]
+    # Trigger when an issue is opened or edited
+  pull_request:
+    types: [opened, edited]
+    # Trigger when a pull request is opened or edited
+  issue_comment:
+    types: [created]
+    # Trigger when a comment is created on an issue or pull request
+
+jobs:
+  auto_assign_and_limit:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+      # Ensure write permissions are granted for issues and pull requests
+
+    steps:
+      - name: Check for /assign command
+        id: check_assign_command
+        uses: actions/github-script@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const body = context.payload.comment.body;
+            const isIssue = context.payload.issue !== undefined;
+            const isPullRequest = context.payload.pull_request !== undefined;
+            const issueOrPrNumber = isIssue ? context.payload.issue.number : context.payload.pull_request.number;
+            const assignees = body.match(/\/assign(?:\s+@([^\s]+))?/);
+
+            if (assignees) {
+              const assignee = assignees[1] || 'Ajay-Dhangar'; // Default assignee if not specified in command
+              core.setOutput('assignee', assignee);
+              core.setOutput('issueOrPrNumber', issueOrPrNumber);
+            } else {
+              core.setOutput('assignee', '');
+              core.setOutput('issueOrPrNumber', '');
+            }
+
+      - name: Auto-assign issue or PR
+        if: steps.check_assign_command.outputs.issueOrPrNumber != ''
+        uses: actions/github-script@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const assignee = '${{ steps.check_assign_command.outputs.assignee }}';
+            const issueOrPrNumber = '${{ steps.check_assign_command.outputs.issueOrPrNumber }}';
+
+            const response = await github.issues.addAssignees({
+              issue_number: issueOrPrNumber,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              assignees: [assignee]
+            });
+
+            console.log(response);
+
+      - name: Check active issues count
+        id: check_active_issues
+        uses: actions/github-script@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { owner, repo } = context.repo;
+            const response = await github.issues.listForRepo({
+              owner,
+              repo,
+              state: 'open'
+            });
+
+            const activeIssues = response.data.filter(issue => !issue.pull_request).length;
+            core.setOutput('activeIssues', activeIssues);
+
+      - name: Validate issue creation
+        if: steps.check_active_issues.outputs.activeIssues < 4
+        run: echo "Issue creation allowed."
+        else:
+          run: echo "You have reached the limit of active issues. Please close some before creating new ones."
