@@ -124,6 +124,17 @@
   border-radius: 5px;
 }
 
+.main__contact_contains_right .form_container .form_group .phone_input {
+  background-color: transparent;   
+}
+
+.main__contact_contains_right .form_container .form_group .form_select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
 .main__contact_contains_right .form_container .form_group .form_textarea {
   width: 100%;
   padding: 0.5rem;

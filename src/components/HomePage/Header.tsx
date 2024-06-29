@@ -4,6 +4,7 @@ import "./header.css";
 import Link from "@docusaurus/Link";
 import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
+import ParticlesComponent from "../Particles/Particle";
 
 /**
  * Renders the header component of the application.
@@ -24,7 +25,8 @@ const HeaderContent = () => {
           delay: 0.1,
         }}
         className="gradient__text"
-      >
+        >
+        <ParticlesComponent/>
         Level Up Skills with CodeHarborHub
       </motion.h1>
       {/* <h1 className="gradient__text"

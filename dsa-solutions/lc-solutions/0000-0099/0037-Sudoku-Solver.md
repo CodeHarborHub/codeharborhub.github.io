@@ -1,7 +1,6 @@
 ---
 id: sudoku-solver
 title: Sudoku Solver
-difficulty: Hard
 sidebar_label: 0037-ValidSudoku
 tags:
   - Array
@@ -9,12 +8,6 @@ tags:
   - Matrix
   - Backtracking
 ---
-
-## Problem Description
-
-| Problem Statement | Solution Link | LeetCode Profile |
-| :---------------- | :------------ | :--------------- |
-| [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/) | [Sudoku Solver Solution on LeetCode](https://leetcode.com/problems/sudoku-solver/solutions/) |  [Debangi Ghosh](https://leetcode.com/u/debangi_29/) |
 
 ## Problem Description
 
@@ -28,24 +21,23 @@ A sudoku solution must satisfy all of the following rules:
 
 The '.' character indicates empty cells.
 
- 
-
 ### Examples
 
 #### Example 1:
 
-**Input**: board = 
+**Input**: board =
+
 ```
 [["5","3",".",".","7",".",".",".","."],["6",".",".","1","9","5",".",".","."],[".","9","8",".",".",".",".","6","."],["8",".",".",".","6",".",".",".","3"],["4",".",".","8",".","3",".",".","1"],["7",".",".",".","2",".",".",".","6"],[".","6",".",".",".",".","2","8","."],[".",".",".","4","1","9",".",".","5"],[".",".",".",".","8",".",".","7","9"]]
 ```
 
-**Output**: 
+**Output**:
+
 ```
 [["5","3","4","6","7","8","9","1","2"],["6","7","2","1","9","5","3","4","8"],["1","9","8","3","4","2","5","6","7"],["8","5","9","7","6","1","4","2","3"],["4","2","6","8","5","3","7","9","1"],["7","1","3","9","2","4","8","5","6"],["9","6","1","5","3","7","2","8","4"],["2","8","7","4","1","9","6","3","5"],["3","4","5","2","8","6","1","7","9"]]
 ```
 
 **Explanation**: The input board is shown above and the only valid solution is shown below:
-
 
 ### Constraints
 
@@ -110,38 +102,58 @@ class Solution:
 
 ```
 class Solution {
-  public void solveSudoku(char[][] board) {
-    dfs(board, 0);
-  }
+    public void solveSudoku(char[][] board) {
+        int[][] f=new int[9][10];
+        int[][] row=new int[9][10];
+        int[][] col=new int[9][10];
+        int cell=0;
+        for(int i=0;i<9;i++){
+            for(int j=0;j<9;j++){
+             cell=((i/3)*3)+j/3;
+             if(board[i][j]!='.'){
+             f[cell][(int)(board[i][j]-'0')]=1;
+             row[i][(int)(board[i][j]-'0')]=1;
+             col[j][(int)(board[i][j]-'0')]=1;
+            }}
+        }
+        get(f,board,0,0,row,col);
+        return;
 
-  private boolean dfs(char[][] board, int s) {
-    if (s == 81)
-      return true;
+    }
+    static boolean get(int[][] f,char[][] board, int i, int j, int[][] row, int[][] col ){
+        if(i==9)return true;
+        if(board[i][j]!='.'){
+            if(j==8){
+                return get(f,board,i+1,0,row,col);
+            }else{
+                return get(f,board,i,j+1,row,col);
+            }
+        }else{
+            boolean t=false;
+            int cell=((i/3)*3) + j/3;
+            for(int k=1;k<=9;k++){
+                if(f[cell][k]==0 && row[i][k]==0 && col[j][k]==0){
+                    f[cell][k]=1;
+                    row[i][k]=1;
+                    col[j][k]=1;
+                    board[i][j]=(char) (k + '0');
+                    if(j==8){
+                        t=get(f,board,i+1,0,row,col);
+                    }else{
+                        t=get(f,board,i,j+1,row,col);
+                    }
+                    if(t)return true;
+                    f[cell][k]=0;
+                    row[i][k]=0;
+                    col[j][k]=0;
+                    board[i][j]='.';
+                }
+            }
+        }
+       return false;
+    }
 
-    final int i = s / 9;
-    final int j = s % 9;
 
-    if (board[i][j] != '.')
-      return dfs(board, s + 1);
-
-    for (char c = '1'; c <= '9'; ++c)
-      if (isValid(board, i, j, c)) {
-        board[i][j] = c;
-        if (dfs(board, s + 1))
-          return true;
-        board[i][j] = '.';
-      }
-
-    return false;
-  }
-
-  private boolean isValid(char[][] board, int row, int col, char c) {
-    for (int i = 0; i < 9; ++i)
-      if (board[i][col] == c || board[row][i] == c ||
-          board[3 * (row / 3) + i / 3][3 * (col / 3) + i % 3] == c)
-        return false;
-    return true;
-  }
 }
 ```
 
@@ -149,40 +161,43 @@ class Solution {
 
 ```
 class Solution {
- public:
-  void solveSudoku(vector<vector<char>>& board) {
-    solve(board, 0);
-  }
-
- private:
-  bool solve(vector<vector<char>>& board, int s) {
-    if (s == 81)
-      return true;
-
-    const int i = s / 9;
-    const int j = s % 9;
-
-    if (board[i][j] != '.')
-      return solve(board, s + 1);
-
-    for (char c = '1'; c <= '9'; ++c)
-      if (isValid(board, i, j, c)) {
-        board[i][j] = c;
-        if (solve(board, s + 1))
-          return true;
-        board[i][j] = '.';
-      }
-
-    return false;
-  }
-
-  bool isValid(vector<vector<char>>& board, int row, int col, char c) {
-    for (int i = 0; i < 9; ++i)
-      if (board[i][col] == c || board[row][i] == c ||
-          board[3 * (row / 3) + i / 3][3 * (col / 3) + i % 3] == c)
-        return false;
-    return true;
-  }
+public:
+    void solveSudoku(vector<vector<char>>& board) {
+        solve(board);
+    }
+    bool solve(vector<vector<char>>& board){
+        for(int i=0;i<board.size();i++)
+        {
+            for(int j=0;j<board[0].size();j++)
+            {
+                if(board[i][j]=='.')
+                {
+                    for(char c='1';c<='9';c++)
+                    {
+                        if(isValid(board,i,j,c))
+                        {
+                            board[i][j]=c;
+                            if(solve(board)==true)
+                                return true;
+                            else
+                                board[i][j]='.';
+                        }
+                    }
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+    bool isValid(vector<vector<char>>& board,int row,int col, char c)
+    {
+        for(int i=0;i<9;i++)
+        {
+            if((board[row][i]==c) || (board[i][col]==c) || (board[3*(row/3) + i/3][3*(col/3) + i%3] ==c))
+                return false;
+        }
+        return true;
+    }
 };
 
 ```
@@ -197,12 +212,20 @@ class Solution {
 
 ✔ The time complexity of the backtracking algorithm is typically exponential, but in practice, it tends to be much less than the worst case.
 
-✔ Therefore, we often express the time complexity of backtracking algorithms using Big O notation as $O(b^d)$, where b is the branching factor (average number of choices at each decision point) and d is the depth of the recursion tree.
+✔ The algorithm explores 9 possibilities for each of the 81 cells, resulting in a time complexity of $O(9^m)$, where m represents the number of empty cells.
 
 ✅ Space Complexity:
 
-✔ The space complexity is determined by the recursive call stack during the backtracking process.
+✔ The algorithm uses a recursive approach to explore the solution space.
 
-✔ In the worst case, the depth of the recursion tree can be equal to the number of empty cells on the Sudoku board.
+✔ The recursive stack depth is proportional to the number of empty cells in the Sudoku board.
 
-✔ Therefore, the space complexity is $O(bd)$, where b is the branching factor and d is the depth of the recursion tree.
+✔ The space complexity of the backtracking algorithm is typically linear, but in practice, it tends to be much less.
+
+✔ The algorithm explores 9 possibilities for each of the 81 cells, resulting in a space complexity of $O(m)$, where m represents the number of empty cells.
+
+✅ The algorithm solves the Sudoku puzzle by backtracking through the solution space, exploring possibilities until a valid solution is found or all possibilities are exhausted.
+
+✅ The algorithm uses a recursive approach to explore the solution space, setting numbers in empty cells and checking if the placement is valid according to the Sudoku rules.
+
+✅ The algorithm backtracks when an invalid solution is found, undoing the choice and trying the next number.
