@@ -1,4 +1,4 @@
-name: Auto Assign and Issue Limit
+name: Auto Assign
 
 on:
   issues:
@@ -12,54 +12,44 @@ on:
     # Trigger on new comments on issues or pull requests
 
 jobs:
-  auto_assign_and_check_limit:
+  run:
     runs-on: ubuntu-latest
     permissions:
       issues: write
       pull-requests: write
+      # Ensure write permissions are granted
 
     steps:
-    - name: Check for /assign command and active issues limit
-      id: check_assign_command_and_limit
+    - name: Check for /assign command
+      id: check_assign_command
       uses: actions/github-script@v7
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         script: |
-          const body = context.payload.comment.body;
-          const isIssue = context.payload.issue !== undefined;
-          const isPullRequest = context.payload.pull_request !== undefined;
-          const issueOrPrNumber = isIssue ? context.payload.issue.number : context.payload.pull_request.number;
-          const assignees = body.match(/\/assign(?:\s+@([^\s]+))?/);
+          const isCommentEvent = context.eventName === 'issue_comment';
+          let assignee = '';
+          let issueOrPrNumber = '';
 
-          // Fetch active issues count
-          const { owner, repo } = context.repo;
-          const response = await github.issues.listForRepo({
-            owner,
-            repo,
-            state: 'open'
-          });
-
-          const activeIssues = response.data.filter(issue => !issue.pull_request).length;
-
-          if (assignees) {
-            const assignee = assignees[1] || 'Ajay-Dhangar'; // Default assignee if not specified in command
-            core.setOutput('assignee', assignee);
-            core.setOutput('issueOrPrNumber', issueOrPrNumber);
-          } else {
-            core.setOutput('assignee', '');
-            core.setOutput('issueOrPrNumber', '');
+          if (isCommentEvent) {
+            const body = context.payload.comment.body;
+            const assignees = body.match(/\/assign(?:\s+@([^\s]+))?/);
+            if (assignees) {
+              assignee = assignees[1] || 'Ajay-Dhangar'; // Default assignee if not specified in command
+              issueOrPrNumber = context.payload.issue ? context.payload.issue.number : context.payload.pull_request.number;
+            }
           }
 
-          core.setOutput('activeIssues', activeIssues);
-    
-    - name: Auto-assign issue or PR and check issue limit
-      if: steps.check_assign_command_and_limit.outputs.issueOrPrNumber != '' && steps.check_assign_command_and_limit.outputs.activeIssues < 4
+          core.setOutput('assignee', assignee);
+          core.setOutput('issueOrPrNumber', issueOrPrNumber);
+
+    - name: Auto-assign issue or PR
+      if: steps.check_assign_command.outputs.issueOrPrNumber != ''
       uses: actions/github-script@v7
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         script: |
-          const assignee = '${{ steps.check_assign_command_and_limit.outputs.assignee }}';
-          const issueOrPrNumber = '${{ steps.check_assign_command_and_limit.outputs.issueOrPrNumber }}';
+          const assignee = '${{ steps.check_assign_command.outputs.assignee }}';
+          const issueOrPrNumber = '${{ steps.check_assign_command.outputs.issueOrPrNumber }}';
 
           const response = await github.issues.addAssignees({
             issue_number: issueOrPrNumber,
