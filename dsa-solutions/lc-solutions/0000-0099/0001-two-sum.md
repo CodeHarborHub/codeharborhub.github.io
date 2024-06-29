@@ -66,7 +66,7 @@ The problem can be solved using a brute force approach, a hash table, or the two
 
 <Tabs>
  <tabItem value="Brute Force" label="Brute Force">
-  
+
 ### Approach 1: Brute Force (Naive)
 
 The brute force approach is simple. We iterate through each element `nums[i]` and check if there is another element `nums[j]` such that `nums[i] + nums[j] == target`. If we find such a pair, we return the indices `[i, j]`.
@@ -124,7 +124,7 @@ function twoSumProblem() {
 
   </TabItem>
   <TabItem value="TypeScript" label="TypeScript">
-  <SolutionAuthor name="@ajay-dhangar"/> 
+  <SolutionAuthor name="@ajay-dhangar"/>
    ```typescript
     function twoSum(nums: number[], target: number): number[] {
       for (let i = 0; i < nums.length; i++) {
@@ -140,7 +140,7 @@ function twoSumProblem() {
     ```
 
   </TabItem>
-  <TabItem value="Python" label="Python"> 
+  <TabItem value="Python" label="Python">
   <SolutionAuthor name="@ajay-dhangar"/>
    ```python
     class Solution:
@@ -192,7 +192,7 @@ function twoSumProblem() {
     };
     ```
 
-  </TabItem>  
+  </TabItem>
 </Tabs>
 
 #### Complexity Analysis
@@ -627,7 +627,7 @@ The hash table approach is the most efficient and is recommended for large input
           params="autoplay=1&autohide=1&showinfo=0&rel=0"
           title="Two Sum Problem Explanation | Two Sum Problem Solution | Two Sum Problem Approach"
           poster="maxresdefault"
-          webp 
+          webp
         />
   </TabItem>
 

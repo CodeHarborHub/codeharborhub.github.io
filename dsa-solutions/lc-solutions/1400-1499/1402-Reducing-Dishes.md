@@ -24,23 +24,23 @@ Return the maximum sum of satisfaction the chef can obtain.
 
 **Example 1:**
 
-Input: satisfaction = [-1,-8,0,5,-9]  
-Output: 14  
-Explanation: After removing the negative dishes, the remaining dishes are [0, 5].  
- The optimal solution is to cook dish 0 at time 1 (0 _ 1 = 0) and cook dish 5 at time 2 (5 _ 2 = 10).  
+Input: satisfaction = [-1,-8,0,5,-9]
+Output: 14
+Explanation: After removing the negative dishes, the remaining dishes are [0, 5].
+ The optimal solution is to cook dish 0 at time 1 (0 _ 1 = 0) and cook dish 5 at time 2 (5 _ 2 = 10).
  The total satisfaction is 0 + 10 + 5 = 14.
 
 **Example 2:**
 
-Input: satisfaction = [4,3,2]  
-Output: 20  
-Explanation: The optimal solution is to cook all dishes in order.  
+Input: satisfaction = [4,3,2]
+Output: 20
+Explanation: The optimal solution is to cook all dishes in order.
  The total satisfaction is 4 _ 1 + 3 _ 2 + 2 \* 3 = 20.
 
 **Example 3:**
 
-Input: satisfaction = [-1,-4,-5]  
-Output: 0  
+Input: satisfaction = [-1,-4,-5]
+Output: 0
 Explanation: The chef does not cook any dishes since all the satisfaction levels are negative.
 
 ### Constraints
