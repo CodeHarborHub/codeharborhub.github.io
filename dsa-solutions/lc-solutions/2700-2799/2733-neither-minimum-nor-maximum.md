@@ -82,6 +82,7 @@ class Solution {
     }
 }
 ```
+
   </TabItem>
   
   <TabItem value="Python" label="Python">
@@ -99,6 +100,7 @@ def find_non_min_or_max(nums):
     else:
         return arr[0]
 ```
+
   </TabItem>
 
   <TabItem value="c++" label="C++">
@@ -125,6 +127,7 @@ public:
     }
 };
 ```
+
   </TabItem>
 </Tabs>
 

@@ -115,42 +115,44 @@ To solve the problem of finding the minimum eating speed for Koko to finish all 
                   l = m + 1
 
           return ans
-  ```
-  </TabItem>
-  
-  <TabItem value="c++" label="C++">
-  <SolutionAuthor name="@ImmidiSivani" />
-  ```c++
-  #include <iostream>
-  #include <vector>
-  #include <algorithm>
-  #include <cmath>
 
-  class Solution {
-  public:
-      int minEatingSpeed(std::vector<int>& piles, int h) {
-          int l = 1;
-          int r = *std::max_element(piles.begin(), piles.end());
-          int ans = r;
+````
+</TabItem>
 
-          while (l <= r) {
-              int m = l + (r - l) / 2;
-              long long division = 0;
-              for (int i : piles) {
-                  division += (i + m - 1) / m;
-              }
-              if (division <= h) {
-                  ans = m;
-                  r = m - 1;
-              } else {
-                  l = m + 1;
-              }
-          }
+<TabItem value="c++" label="C++">
+<SolutionAuthor name="@ImmidiSivani" />
+```c++
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cmath>
 
-          return ans;
-      }
-  };
-  ```
+class Solution {
+public:
+    int minEatingSpeed(std::vector<int>& piles, int h) {
+        int l = 1;
+        int r = *std::max_element(piles.begin(), piles.end());
+        int ans = r;
+
+        while (l <= r) {
+            int m = l + (r - l) / 2;
+            long long division = 0;
+            for (int i : piles) {
+                division += (i + m - 1) / m;
+            }
+            if (division <= h) {
+                ans = m;
+                r = m - 1;
+            } else {
+                l = m + 1;
+            }
+        }
+
+        return ans;
+    }
+};
+````
+
   </TabItem>
 </Tabs>
 
