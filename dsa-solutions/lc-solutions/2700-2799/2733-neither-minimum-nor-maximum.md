@@ -39,8 +39,6 @@ Explanation: Since 2 is neither the maximum nor the minimum value in nums, it is
  
 ```
 
-
-
 ### Constraints
 
 - `1 <= nums.length <= 100`
@@ -57,8 +55,7 @@ if array size is 2  we have only minimum and maximum value , hence we return -1.
 
     ## Code in Different Languages
 
-    <Tabs>
-
+<Tabs>
   <TabItem value="Java" label="Java">
   <SolutionAuthor name="@ImmidiSivani" />
 
@@ -124,14 +121,11 @@ if array size is 2  we have only minimum and maximum value , hence we return -1.
             }
         }
     };
-
-
    
     ```
 
   </TabItem>
-
-    </Tabs>
+</Tabs>
 
 ## References
 

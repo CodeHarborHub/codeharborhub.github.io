@@ -17,8 +17,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import ResponseForm from "../components/HomePage/responseForm";
-// import CursorComponent from '../components/GlowingCursor'
 
 function TweetsSection() {
   const tweetColumns = [[], [], []];
@@ -108,19 +106,7 @@ export default function Home() {
           <ResourcesSection />
         </div>
 
-        <TweetsSection />
-
-        <div className={style.home__divider}>
-          <Heading as="h2" className={clsx("text--center")}>
-            GET IN TOUCH
-          </Heading>
-        </div>
-
-        <p style={{ textAlign: "center" }}>
-          Have a question? Want to collaborate? Send us a message!
-        </p>
-
-        <ResponseForm />
+        <TweetsSection />        
 
         <ScrollTopToButton />
         <ScrollBottomToTop />

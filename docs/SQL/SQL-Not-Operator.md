@@ -1,5 +1,5 @@
 ---
-id: sql-not-operator
+id: not-operator-in-sql
 title: Not Operator in SQL
 sidebar_label: Not Operator
 sidebar_position: 5
@@ -7,10 +7,10 @@ tags: [sql, database, operator]
 description: In this tutorial, you will learn how to build queries with Negations to get the desired output.
 ---
 
-
 In SQL, the NOT operator is used to negate a condition in a WHERE clause or other SQL statement. Its primary function is to reverse the logical meaning of the condition that follows it. 
 
 ## Syntax 
+
 ```sql
 SELECT column1, column2, ...
 FROM table_name

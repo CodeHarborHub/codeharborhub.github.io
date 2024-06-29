@@ -60,9 +60,9 @@ To solve the problem of finding the minimum eating speed  for Koko to finish all
  - Time Complexity: $O(nlogmax(piles))$ 
  - Space Complexity: $O(1)$ 
 
-    ## Code in Different Languages
+## Code in Different Languages
 
-    <Tabs>
+<Tabs>
 
   <TabItem value="Java" label="Java">
   <SolutionAuthor name="@ImmidiSivani" />
@@ -163,7 +163,7 @@ To solve the problem of finding the minimum eating speed  for Koko to finish all
 
   </TabItem>
 
-    </Tabs>
+</Tabs>
 
 ## References
 
