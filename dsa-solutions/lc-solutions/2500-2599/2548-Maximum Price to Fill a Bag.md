@@ -19,10 +19,9 @@ You are also given a positive integer capacity.
 
 Each item can be divided into two items with ratios part1 and part2, where part1 + part2 == 1.
 
-The weight of the first item is weighti * part1 and the price of the first item is pricei * part1.
-Similarly, the weight of the second item is weighti * part2 and the price of the second item is pricei * part2.
+The weight of the first item is weighti _ part1 and the price of the first item is pricei _ part1.
+Similarly, the weight of the second item is weighti _ part2 and the price of the second item is pricei _ part2.
 Return the maximum total price to fill a bag of capacity capacity with given items. If it is impossible to fill a bag return -1. Answers within 10-5 of the actual answer will be considered accepted.
-
 
 ### Examples
 
@@ -31,7 +30,7 @@ Return the maximum total price to fill a bag of capacity capacity with given ite
 ```
 Input: items = [[50,1],[10,8]], capacity = 5
 Output: 55.00000
-Explanation: 
+Explanation:
 We divide the 2nd item into two parts with part1 = 0.5 and part2 = 0.5.
 
 ```
@@ -42,18 +41,17 @@ We divide the 2nd item into two parts with part1 = 0.5 and part2 = 0.5.
 Input: items = [[100,30]], capacity = 50
 Output: -1.00000
 Explanation: It is impossible to fill a bag with the given item.
- 
-```
 
+```
 
 ### Constraints
 
 - `1 <= items.length <= 105`
 - `items[i].length == 2`
 - `1 <= pricei, weighti <= 104`
-- `1 <= capacity <= 109` 
+- `1 <= capacity <= 109`
 
-### Approach 
+### Approach
 
 We sort the items in descending order by unit price, and then take out the items one by one until the backpack is full.
 

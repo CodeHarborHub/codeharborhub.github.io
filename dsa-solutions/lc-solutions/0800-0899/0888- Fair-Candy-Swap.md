@@ -1,6 +1,6 @@
 ---
-id:  fair-candy-swap
-title:  Fair Candy Swap
+id: fair-candy-swap
+title: Fair Candy Swap
 sidebar_label: 888-  Fair Candy Swap
 tags:
   - Array
@@ -23,7 +23,6 @@ Return an integer array answer where `answer[0]` is the number of candies in the
 - **Input:** `aliceSizes = [1,1], bobSizes = [2,2]`
 - **Output:** `[1,2]`
 
-
 ### Constraints
 
 - `1 <= aliceSizes.length, bobSizes.length <= 104`
@@ -34,6 +33,7 @@ Return an integer array answer where `answer[0]` is the number of candies in the
 The solution first calculates the total number of candies each Alice and Bob have. Then, it sorts Bob's candy boxes for efficient searching. It iterates over Alice's candy boxes, checking if swapping a box with Bob can balance their total candies. For each box of Alice, it calculates the required box from Bob and uses binary search to find it in Bob's sorted array. If a valid swap is found, it updates the answer and returns it.
 
 #### Java
+
 ```Java
 class Solution {
     public int[] fairCandySwap(int[] aliceSizes, int[] bobSizes) {
@@ -67,7 +67,7 @@ class Solution {
 ```
 
 - Time Complexity
-The time complexity is $o(n)$.
+  The time complexity is $o(n)$.
 
 - Space Complexity
-The space complexity is $O(1)$.
+  The space complexity is $O(1)$.

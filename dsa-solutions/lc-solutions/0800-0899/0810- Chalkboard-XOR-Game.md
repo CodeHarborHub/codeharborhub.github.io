@@ -20,8 +20,6 @@ Also, if any player starts their turn with the bitwise XOR of all the elements o
 
 Return `true` if and only if Alice wins the game, assuming both players play optimally.
 
- 
-
 ### Example 1
 
 - **Input:** `nums = [1,1,2]`
@@ -30,20 +28,21 @@ Return `true` if and only if Alice wins the game, assuming both players play opt
 If she erases 1, the nums array becomes [1, 2]. The bitwise XOR of all the elements of the chalkboard is 1 XOR 2 = 3. Now Bob can remove any element he wants, because Alice will be the one to erase the last element and she will lose. 
 If Alice erases 2 first, now nums become [1, 1]. The bitwise XOR of all the elements of the chalkboard is 1 XOR 1 = 0. Alice will lose.`
 
-
 ### Constraints
 
 - `1 <= nums.length <= 1000`
 - `0 <= nums[i] < 216`
 
 ## Approach
+
 All even counts can be cancelled, similarly all odd counts will be cancelled but the thing which will remain is that if their exists even number of odd counts then only alice wins.
 
-
 Their is an edge case that if already the xor of complete array is 0.
+
 ### Solution Code
 
 #### Cpp
+
 ```Cpp
 class Solution {
 public:
@@ -53,15 +52,15 @@ public:
         unordered_map<int, int> mp;
         for(auto &x : nums) ++mp[x], XOR ^= x;
         if(XOR == 0) return true;
-        for(auto &x : mp) oc += (x.second % 2); 
+        for(auto &x : mp) oc += (x.second % 2);
         return (oc % 2 == 0);
     }
 };
-        
+
 ```
 
 - Time Complexity
-The time complexity is o(n).
+  The time complexity is o(n).
 
 - Space Complexity
-The space complexity is O(1).
+  The space complexity is O(1).

@@ -38,16 +38,13 @@ Explanation: We split nums to have two subarrays: [1,2], [1,2,1]
 
 ```
 
-
 ### Constraints
 
 - `1 <= nums.length <= 1000`
 - `0 <= nums[i] < nums.length`
 - `1 <= k <= 109`
- 
 
-
-### Approach 
+### Approach
 
 We design a function $dfs(i)$, which represents the minimum cost of splitting from index $i$. So the answer is $dfs(0)$.
 

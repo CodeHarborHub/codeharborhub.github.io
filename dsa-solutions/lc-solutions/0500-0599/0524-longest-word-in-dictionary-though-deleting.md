@@ -28,6 +28,7 @@ Input: s = "abpcplea", dictionary = ["a","b","c"]
 Output: "a"
 
 ### Constraints
+
 - `1 <= s.length <= 1000`
 - `1 <= dictionary.length <= 1000`
 - `1 <= dictionary[i].length <= 1000`
@@ -36,12 +37,13 @@ Output: "a"
 ## Solution
 
 ### Intuition
+
 The intuition behind the solution is to use a two-pointer approach that can efficiently validate whether a word from the dictionary is a subsequence of the string s. Here's how we proceed:
 
 - Initialize two pointers, i for the index in the string s and j for the index in the current dictionary word.
 - Increment i each time we examine a character in s.
 - Increment j only when the characters at i in s and j in the dictionary word match.
-A dictionary word is a subsequence of s if we can traverse through the entire word (i.e., j equals the length of the word) by selectively matching characters in s.
+  A dictionary word is a subsequence of s if we can traverse through the entire word (i.e., j equals the length of the word) by selectively matching characters in s.
 - By iterating through each word in the dictionary and applying the two-pointer technique, we can check which words can be formed. During the process, we also keep track of the longest word that satisfies the condition. If multiple words have the same length, we choose the one with the lowest lexicographical order, which is the same as saying the smallest in alphabetical order.
 
 The check function implements the two-pointer technique, and the outer loop through the dictionary selects the best candidate word according to the above-mentioned criteria.
@@ -54,10 +56,10 @@ The check function implements the two-pointer technique, and the outer loop thro
    ```cpp
 //cpp
 
-   class Solution {
- public:
-  string findLongestWord(string s, vector<string>& d) {
-    string ans;
+class Solution {
+public:
+string findLongestWord(string s, vector<string>& d) {
+string ans;
 
     for (const string& word : d)
       if (isSubsequence(word, s))
@@ -66,19 +68,21 @@ The check function implements the two-pointer technique, and the outer loop thro
           ans = word;
 
     return ans;
-  }
 
- private:
-  // Returns true if a is a subsequence of b.
-  bool isSubsequence(const string& a, const string& b) {
-    int i = 0;
-    for (const char c : b)
-      if (i < a.length() && c == a[i])
-        ++i;
-    return i == a.length();
-  };
+}
+
+private:
+// Returns true if a is a subsequence of b.
+bool isSubsequence(const string& a, const string& b) {
+int i = 0;
+for (const char c : b)
+if (i < a.length() && c == a[i])
+++i;
+return i == a.length();
 };
-```
+};
+
+````
   </TabItem>
   <TabItem value="Java" label="Java">
 
@@ -108,33 +112,32 @@ The check function implements the two-pointer technique, and the outer loop thro
   }
 }
 
-```
+````
+
 </TabItem>
 <TabItem value="Python" label="Python">
 
-   ```python
+```python
 //python
 
 class Solution:
-  def findLongestWord(self, s: str, d: List[str]) -> str:
-    ans = ''
+def findLongestWord(self, s: str, d: List[str]) -> str:
+ ans = ''
 
-    for word in d:
-      i = 0
-      for c in s:
-        if i < len(word) and c == word[i]:
-          i += 1
-      if i == len(word):
-        if len(word) > len(ans) or len(word) == len(ans) and word < ans:
-          ans = word
+ for word in d:
+   i = 0
+   for c in s:
+     if i < len(word) and c == word[i]:
+       i += 1
+   if i == len(word):
+     if len(word) > len(ans) or len(word) == len(ans) and word < ans:
+       ans = word
 
-    return ans
+ return ans
 ```
 
   </TabItem>
 </Tabs>
-
-
 
 ## References
 

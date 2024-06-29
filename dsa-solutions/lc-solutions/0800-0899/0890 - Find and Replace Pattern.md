@@ -1,6 +1,6 @@
 ---
-id:  find-and-replace-pattern
-title:  Find and Replace Pattern
+id: find-and-replace-pattern
+title: Find and Replace Pattern
 sidebar_label: 890-  Find and Replace Pattern
 tags:
   - Array
@@ -18,14 +18,12 @@ A word matches the pattern if there exists a permutation of letters p so that af
 
 Recall that a permutation of letters is a bijection from letters to letters: every letter maps to another letter, and no two letters map to the same letter.
 
-
 ### Example 1
 
 - **Input:** `words = ["abc","deq","mee","aqq","dkd","ccc"], pattern = "abb"`
 - **Output:** `["mee","aqq"]`
 - **Explanation:** `"mee" matches the pattern because there is a permutation {a -> m, b -> e, ...}. 
 "ccc" does not match the pattern because {a -> c, b -> c, ...} is not a permutation, since a and b map to the same letter.`
-
 
 ### Constraints
 
@@ -37,6 +35,7 @@ Recall that a permutation of letters is a bijection from letters to letters: eve
 This solution uses a HashMap (hp1) to map characters from the pattern and each word to unique integers based on their first occurrence order. It constructs a transformed string (res) for the pattern by assigning unique integers to each character based on their first appearance. Then, it checks each word (str) against this transformed pattern (res). If a word matches the pattern transformation, it is added to the result list (al).
 
 #### Java
+
 ```Java
 class Solution {
     public List<String> findAndReplacePattern(String[] words, String pattern) {
@@ -75,7 +74,7 @@ class Solution {
 ```
 
 - Time Complexity
-The time complexity is $o(n)$.
+  The time complexity is $o(n)$.
 
 - Space Complexity
-The space complexity is $O(1)$.
+  The space complexity is $O(1)$.

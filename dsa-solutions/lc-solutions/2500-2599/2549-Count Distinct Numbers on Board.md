@@ -26,7 +26,7 @@ Return the number of distinct integers present on the board after 109 days have 
 
 Input: n = 5
 Output: 4
-Explanation: Initially, 5 is present on the board. 
+Explanation: Initially, 5 is present on the board.
 
 ```
 
@@ -35,17 +35,15 @@ Explanation: Initially, 5 is present on the board.
 ```
 Input: n = 3
 Output: 2
-Explanation: 
-Since 3 % 2 == 1, 2 will be added to the board. 
+Explanation:
+Since 3 % 2 == 1, 2 will be added to the board.
 ```
-
 
 ### Constraints
 
 - `1 <= n <= 100`
- 
 
-### Approach 
+### Approach
 
 Since every operation on the number n on the desktop will also cause the number n-1 to appear on the desktop, the final numbers on the desktop are [2,...n], that is, n-1 numbers.
 
@@ -92,6 +90,6 @@ func distinctIntegers(n int) int {
 
 ```ts
 function distinctIntegers(n: number): number {
-    return Math.max(1, n - 1);
+  return Math.max(1, n - 1);
 }
 ```

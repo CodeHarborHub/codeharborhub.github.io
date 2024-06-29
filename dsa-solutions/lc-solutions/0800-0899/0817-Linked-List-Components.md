@@ -3,17 +3,17 @@ id: linked-list-components
 title: Linked List Components
 sidebar_label: 0817-Linked-List-Components
 tags:
- - Linked Lists
- - Hashing
- - C++
- - Java
- - Python
+  - Linked Lists
+  - Hashing
+  - C++
+  - Java
+  - Python
 description: "This document provides a solution to the Linked List Components problem, where we need to count the number of connected components in a linked list."
 ---
 
 ## Problem
 
-You are given the head of a linked list containing unique integer values and an integer array `nums` that is a subset of the linked list values. 
+You are given the head of a linked list containing unique integer values and an integer array `nums` that is a subset of the linked list values.
 
 Return the number of connected components in `nums`, where two values are connected if they appear consecutively in the linked list.
 
@@ -55,6 +55,7 @@ The detailed steps are:
 #### Code in Different Languages
 
 ### C++ Solution
+
 ```cpp
 #include <unordered_set>
 #include <vector>
@@ -71,7 +72,7 @@ int numComponents(ListNode* head, vector<int>& nums) {
     unordered_set<int> num_set(nums.begin(), nums.end());
     int count = 0;
     bool in_component = false;
-    
+
     while (head != NULL) {
         if (num_set.find(head->val) != num_set.end()) {
             if (!in_component) {
@@ -83,11 +84,13 @@ int numComponents(ListNode* head, vector<int>& nums) {
         }
         head = head->next;
     }
-    
+
     return count;
 }
 ```
+
 ### Java Solution
+
 ```java
 import java.util.HashSet;
 import java.util.Set;
@@ -104,10 +107,10 @@ public class LinkedListComponents {
         for (int num : nums) {
             numSet.add(num);
         }
-        
+
         int count = 0;
         boolean inComponent = false;
-        
+
         while (head != null) {
             if (numSet.contains(head.val)) {
                 if (!inComponent) {
@@ -119,7 +122,7 @@ public class LinkedListComponents {
             }
             head = head.next;
         }
-        
+
         return count;
     }
 
@@ -148,7 +151,7 @@ def numComponents(head, nums):
     num_set = set(nums)
     count = 0
     in_component = False
-    
+
     while head:
         if head.val in num_set:
             if not in_component:
@@ -157,7 +160,7 @@ def numComponents(head, nums):
         else:
             in_component = False
         head = head.next
-    
+
     return count
 
 # Test
@@ -169,16 +172,19 @@ head.next.next.next = ListNode(3)
 nums = [0, 1, 3]
 print(numComponents(head, nums))  # Output: 2
 ```
+
 ### Complexity Analysis
+
 **Time Complexity:** O(n)
 
->Reason: We traverse the linked list once and perform constant-time operations for each node.
+> Reason: We traverse the linked list once and perform constant-time operations for each node.
 
 **Space Complexity:** O(n)
 
->Reason: We use a set to store the elements of nums, which takes O(n) space.
+> Reason: We use a set to store the elements of nums, which takes O(n) space.
 
 This solution efficiently counts the number of connected components in a linked list by leveraging a set for quick lookups and a linear traversal of the linked list. The time complexity is linear, and the space complexity is linear as well, making it suitable for large input sizes.
 
 ### References
+
 **LeetCode Problem:** Linked List Components

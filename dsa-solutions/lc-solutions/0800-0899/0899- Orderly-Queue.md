@@ -1,6 +1,6 @@
 ---
-id:  orderly-queue
-title:  Orderly Queue
+id: orderly-queue
+title: Orderly Queue
 sidebar_label: 899-  Orderly Queue
 tags:
   - Math
@@ -23,7 +23,6 @@ Return the lexicographically smallest string you could have after applying the m
 - **Explanation:** `In the first move, we move the 1st character 'c' to the end, obtaining the string "bac".
 In the second move, we move the 1st character 'b' to the end, obtaining the final result "acb".`
 
-
 ### Constraints
 
 - `1 <= k <= s.length <= 1000`
@@ -33,6 +32,7 @@ In the second move, we move the 1st character 'b' to the end, obtaining the fina
 This solution first counts the frequency of each character in the string s. If `k > 1`, it simply returns the lexicographically smallest permutation by sorting the characters. If `k == 1`, it generates all possible rotations of the string and returns the lexicographically smallest one.
 
 #### Java
+
 ```Java
 class Solution {
     public String orderlyQueue(String s, int k) {
@@ -75,7 +75,7 @@ class Solution {
 ```
 
 - Time Complexity
-The time complexity is $o(n)$.
+  The time complexity is $o(n)$.
 
 - Space Complexity
-The space complexity is $O(n)$.
+  The space complexity is $O(n)$.

@@ -49,15 +49,17 @@ Output: `1`
 To maximize the score, follow these steps:
 
 1. **Row Flipping:**
+
    - Ensure that each row starts with a `1` by flipping rows where the first element is `0`.
 
 2. **Column Flipping:**
+
    - For each column, if the number of `0`s exceeds the number of `1`s, flip the column to maximize the number of `1`s in that column.
 
 3. **Calculate Score:**
    - Convert each row from binary to decimal and sum these values to get the final score.
 
-### Java 
+### Java
 
 ```java
 class Solution {
@@ -124,23 +126,24 @@ class Solution {
 }
 ```
 
-### Python 
-```Python 
+### Python
+
+```Python
 class Solution:
     def matrixScore(self, grid: List[List[int]]) -> int:
         m = len(grid)
         n = len(grid[0])
-        
+
         # Step 1: Ensure all rows start with '1' by flipping rows where grid[i][0] == 0
         for i in range(m):
             if grid[i][0] == 0:
                 self.flipRow(grid, i)
-        
+
         # Step 2: Ensure each column has more '1's than '0's by flipping columns if necessary
         for j in range(n):
             if self.searchColZeroes(grid, j) > self.searchColOnes(grid, j):
                 self.flipCol(grid, j)
-        
+
         # Step 3: Calculate the matrix score
         score = 0
         for i in range(m):
@@ -148,27 +151,27 @@ class Solution:
             for j in range(n):
                 row_sum += grid[i][j] * (1 << (n - 1 - j))  # Equivalent to grid[i][j] * 2^(n-1-j)
             score += row_sum
-        
+
         return score
-    
+
     def searchColZeroes(self, grid: List[List[int]], j: int) -> int:
         count = 0
         for i in range(len(grid)):
             if grid[i][j] == 0:
                 count += 1
         return count
-    
+
     def searchColOnes(self, grid: List[List[int]], j: int) -> int:
         count = 0
         for i in range(len(grid)):
             if grid[i][j] == 1:
                 count += 1
         return count
-    
+
     def flipCol(self, grid: List[List[int]], j: int) -> None:
         for i in range(len(grid)):
             grid[i][j] = 1 - grid[i][j]
-    
+
     def flipRow(self, grid: List[List[int]], i: int) -> None:
         for j in range(len(grid[0])):
             grid[i][j] = 1 - grid[i][j]

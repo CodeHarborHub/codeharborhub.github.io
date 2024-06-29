@@ -3,10 +3,10 @@ id: check-if-point-is-reachable
 title: Check if Point is Reachable
 sidebar_label: 2543 Check if Point is Reachable
 tags:
-- Number Theory
-- Java
-- gcd
-- Math
+  - Number Theory
+  - Java
+  - gcd
+  - Math
 description: "This document provides a solution where we need to reach the point (targetX, targetY) using a finite number of steps."
 ---
 
@@ -70,40 +70,39 @@ To solve the problem, we need to understand the nature of the allowed moves:
 
 These moves suggest that if we can reach a certain point **'(x, y)'**, we can generate other points by specific transformations. By analyzing the moves:
 
-  - The first two moves involve subtraction, reducing one coordinate.
+- The first two moves involve subtraction, reducing one coordinate.
 
-  - The last two moves involve multiplication by $2$.
+- The last two moves involve multiplication by $2$.
 
 We can reverse the logic to check whether we can reach $(1, 1)$ from $(targetX, targetY)$. This reversal involves:
 
- - Checking if $targetX$ or $targetY$ can be divided by $2$ (to reverse the multiplication).
+- Checking if $targetX$ or $targetY$ can be divided by $2$ (to reverse the multiplication).
 
- - Checking if one coordinate can be reduced by subtracting the other.
+- Checking if one coordinate can be reduced by subtracting the other.
 
 By reversing the operations, we trace the problem back to whether $(targetX, targetY)$ can be reduced to $(1, 1)$.
 
 The key insight here is that we only need to check if **'gcd(targetX, targetY)'** is a power of $2$. This is because if both $targetX$ and $targetY$ share a common factor other than $2$, it won't be possible to reach $(1, 1)$.
-
 
 ## Solution for Check if Point is Reachable
 
 The given problem involves reaching a target point $(targetX, targetY)$ from the starting point $(1, 1)$ using a set of allowed moves. The challenge is to determine whether it's possible to reach the target using these moves.
 
 #### Code in Java
-    
- ```java
-class Solution {
-  public boolean isReachable(int targetX, int targetY) {
-    return Integer.bitCount(gcd(targetX, targetY)) == 1;
-  }
 
-  private int gcd(int a, int b) {
-    return b == 0 ? a : gcd(b, a % b);
-  }
+```java
+class Solution {
+ public boolean isReachable(int targetX, int targetY) {
+   return Integer.bitCount(gcd(targetX, targetY)) == 1;
+ }
+
+ private int gcd(int a, int b) {
+   return b == 0 ? a : gcd(b, a % b);
+ }
 }
 
 ```
-    
+
 ### Complexity Analysis
 
 #### Time Complexity: $O(log(min(targetX, targetY)))$

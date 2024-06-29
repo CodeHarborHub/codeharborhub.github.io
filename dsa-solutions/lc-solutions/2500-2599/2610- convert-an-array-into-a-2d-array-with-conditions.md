@@ -17,7 +17,7 @@ You are given an integer array nums. You need to create a 2D array from nums sat
 - The 2D array should contain only the elements of the array nums.
 - Each row in the 2D array contains distinct integers.
 - The number of rows in the 2D array should be minimal.
-Return the resulting array. If there are multiple answers, return any of them.
+  Return the resulting array. If there are multiple answers, return any of them.
 
 Note that the 2D array can have a different number of elements on each row.
 
@@ -50,7 +50,7 @@ Output: [[4,3,2,1]]
 - $1 \leq \text{nums.length} \leq 200$.
 - $1 \leq \text{nums[i]} \leq \text{nums.length}$.
 
-### Approach 
+### Approach
 
 To solve this problem(convert an array into a 2d array with conditions)we simply have to use an unordered map which will keep track if we can insert a particular number in the row. we will process the elements in the array one by one in any order and only create a new row in the matrix when we cannot put it into the existing rows.
 
@@ -105,5 +105,3 @@ class Solution {
 }
 
 ```
-
-
