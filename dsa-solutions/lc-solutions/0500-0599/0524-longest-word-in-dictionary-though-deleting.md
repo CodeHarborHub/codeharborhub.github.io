@@ -53,7 +53,7 @@ The check function implements the two-pointer technique, and the outer loop thro
 <Tabs>
   <TabItem value="C++" label="C==">
 
-   ```cpp
+```cpp
 //cpp
 
 class Solution {
@@ -61,13 +61,13 @@ public:
 string findLongestWord(string s, vector<string>& d) {
 string ans;
 
-    for (const string& word : d)
-      if (isSubsequence(word, s))
-        if (word.length() > ans.length() ||
-            word.length() == ans.length() && word.compare(ans) < 0)
-          ans = word;
+ for (const string& word : d)
+   if (isSubsequence(word, s))
+     if (word.length() > ans.length() ||
+         word.length() == ans.length() && word.compare(ans) < 0)
+       ans = word;
 
-    return ans;
+ return ans;
 
 }
 
@@ -82,37 +82,38 @@ return i == a.length();
 };
 };
 
-````
+```
+
   </TabItem>
   <TabItem value="Java" label="Java">
 
-   ```java
+```java
 //java
 
-   class Solution {
-  public String findLongestWord(String s, List<String> d) {
-    String ans = "";
+class Solution {
+public String findLongestWord(String s, List<String> d) {
+ String ans = "";
 
-    for (final String word : d)
-      if (isSubsequence(word, s))
-        if (word.length() > ans.length() ||
-            word.length() == ans.length() && word.compareTo(ans) < 0)
-          ans = word;
+ for (final String word : d)
+   if (isSubsequence(word, s))
+     if (word.length() > ans.length() ||
+         word.length() == ans.length() && word.compareTo(ans) < 0)
+       ans = word;
 
-    return ans;
-  }
-
-  // Returns true if a is a subsequence of b.
-  private boolean isSubsequence(final String a, final String b) {
-    int i = 0;
-    for (final char c : b.toCharArray())
-      if (i < a.length() && c == a.charAt(i))
-        ++i;
-    return i == a.length();
-  }
+ return ans;
 }
 
-````
+// Returns true if a is a subsequence of b.
+private boolean isSubsequence(final String a, final String b) {
+ int i = 0;
+ for (final char c : b.toCharArray())
+   if (i < a.length() && c == a.charAt(i))
+     ++i;
+ return i == a.length();
+}
+}
+
+```
 
 </TabItem>
 <TabItem value="Python" label="Python">
