@@ -1,6 +1,6 @@
 ---
-id:  expressive-words
-title:  Expressive Words
+id: expressive-words
+title: Expressive Words
 sidebar_label: 809-  Expressive Words
 tags:
   - Array
@@ -30,7 +30,6 @@ Return the number of query strings that are stretchy.
 - **Explanation:** `We can extend "e" and "o" in the word "hello" to get "heeellooo".
 We can't extend "helo" to get "heeellooo" because the group "ll" is not size 3 or more.`
 
-
 ### Constraints
 
 - `1 <= s.length, words.length <= 100`
@@ -40,8 +39,8 @@ We can't extend "helo" to get "heeellooo" because the group "ll" is not size 3 o
 
 The approach iterates through each word in the words array, checking if it can be transformed into s by comparing groups of consecutive identical characters and ensuring the necessary extensions can be made. The helper function verifies this by counting the occurrences of each character in both s and the word, ensuring the transformation rules are met.
 
-
 #### Java
+
 ```Java
 class Solution {
     public int expressiveWords(final String s, final String[] words) {
@@ -89,7 +88,7 @@ class Solution {
 ```
 
 - Time Complexity
-The time complexity is o(n).
+  The time complexity is o(n).
 
 - Space Complexity
-The space complexity is O(1).
+  The space complexity is O(1).

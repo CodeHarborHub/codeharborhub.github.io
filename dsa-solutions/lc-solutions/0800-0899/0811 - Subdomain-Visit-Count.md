@@ -26,7 +26,6 @@ Given an array of count-paired domains cpdomains, return an array of the count-p
 - **Explanation:** `We only have one website domain: "discuss.leetcode.com".
 As discussed above, the subdomain "leetcode.com" and "com" will also be visited. So they will all be visited 9001 times.`
 
-
 ### Constraints
 
 - `1 <= cpdomain.length <= 100`
@@ -41,17 +40,18 @@ Finally, create a new string using each key-value pair of the HashMap & add that
 ### Solution Code
 
 #### Java
+
 ```Java
 class Solution {
     HashMap<String, Integer> hm= new HashMap<>();
-    
+
     public List<String> subdomainVisits(String[] cpdomains) {
         List<String> result= new ArrayList<>();
-		
+
         for(String s: cpdomains){
             addToList(s);
         }
-        
+
         for(String s: hm.keySet()){
             StringBuilder sb= new StringBuilder( Integer.toString(hm.get(s)) );
             sb.append(" ");
@@ -60,20 +60,20 @@ class Solution {
         }
         return result;
     }
-    
+
     public void addToList(String s){
         String[] split1= s.split(" ");
         int n= Integer.parseInt(split1[0]);
         String[] split2= split1[1].split("\\.");
         int l= split2.length;
-        
+
         for(int i=0; i<l; i++){
             StringBuilder sb= new StringBuilder();
             int index= i;
-            
+
             while(index < l){
                 sb.append( split2[index] );
-				
+
                 if(index != l-1)
                     sb.append( "." );
                 index++;
@@ -83,11 +83,11 @@ class Solution {
         }
     }
 }
-        
+
 ```
 
 - Time Complexity
-The time complexity is O(N⋅L2).
+  The time complexity is O(N⋅L2).
 
 - Space Complexity
-The space complexity is O(1).
+  The space complexity is O(1).

@@ -1,6 +1,6 @@
 ---
-id:  friends-of-appropriate-ages
-title:  Friends Of Appropriate Ages
+id: friends-of-appropriate-ages
+title: Friends Of Appropriate Ages
 sidebar_label: 825-  Friends Of Appropriate Ages
 tags:
   - Array
@@ -31,7 +31,6 @@ Return the total number of friend requests made.
 - **Output:** `2`
 - **Explanation:** `2 people friend request each other.`
 
-
 ### Constraints
 
 - `n == ages.length`
@@ -42,6 +41,7 @@ Return the total number of friend requests made.
 This approach first counts the occurrences of each age using a frequency array map. It then computes the cumulative counts to facilitate range queries. For each person, it determines the valid age range for sending friend requests and calculates the total possible friend requests by leveraging the cumulative counts, subtracting the invalid and self-request cases.
 
 #### Java
+
 ```Java
 class Solution {
     public int numFriendRequests(int[] ages) {
@@ -67,8 +67,8 @@ class Solution {
 ```
 
 - Time Complexity
-The time complexity is o(n).
+  The time complexity is o(n).
 
 - Space Complexity
-The space complexity is o(1).
+  The space complexity is o(1).
   e space complexity is O(1).

@@ -41,7 +41,7 @@ Output:  [7]
 - The number of nodes in the list is in the range $[1, 5000]$.
 - $-1 \leq \text{Node.val} \leq 1000$.
 
-### Approach 
+### Approach
 
 To solve this problem(insert greatest common divisors in linked list) we will first store the nodes value of the linked list in vector and then find gcd of each adjacent pair and store it in another vector and then simply iterate the linked list and insert the gcd in the linked list as per the question.
 
@@ -74,7 +74,7 @@ public:
         head=k;
         int i=0;
         while(k!=NULL && k->next!=NULL){ // inserting gcd between the linked list
-            ListNode* temp=new ListNode(b[i]); 
+            ListNode* temp=new ListNode(b[i]);
             ListNode* next=k->next;
             i++;
             k->next=temp;
@@ -85,5 +85,3 @@ public:
     }
 };
 ```
-
-

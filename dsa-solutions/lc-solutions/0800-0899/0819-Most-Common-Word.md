@@ -3,11 +3,11 @@ id: most-common-word
 title: Most Common Word
 sidebar_label: 0819-Most-Common-Word
 tags:
- - Strings
- - Hashing
- - C++
- - Java
- - Python
+  - Strings
+  - Hashing
+  - C++
+  - Java
+  - Python
 description: "This document provides a solution to the Most Common Word problem, where we need to find the most frequent word in a paragraph that is not in a list of banned words."
 ---
 
@@ -19,15 +19,15 @@ Given a string `paragraph` and a string array of the `banned` words, return the 
 
 **Example 1:**
 
-Input: paragraph = "Bob hit a ball, the hit BALL flew far after it was hit.", banned = ["hit"]  
-Output: "ball"  
-Explanation:  
-"hit" occurs 3 times, but it is a banned word.  
-"ball" occurs twice (and no other word does), so it is the most frequent non-banned word in the paragraph. 
+Input: paragraph = "Bob hit a ball, the hit BALL flew far after it was hit.", banned = ["hit"]
+Output: "ball"
+Explanation:
+"hit" occurs 3 times, but it is a banned word.
+"ball" occurs twice (and no other word does), so it is the most frequent non-banned word in the paragraph.
 
 **Example 2:**
 
-Input: paragraph = "a.", banned = []  
+Input: paragraph = "a.", banned = []
 Output: "a"
 
 ### Constraints
@@ -42,12 +42,14 @@ Output: "a"
 ### Approach
 
 To solve this problem, we need to:
+
 1. Clean and split the paragraph into words.
 2. Store the banned words in a set for quick lookup.
 3. Use a dictionary to count the occurrences of each non-banned word.
 4. Identify the word with the highest count.
 
 Detailed steps:
+
 1. Convert all letters in the paragraph to lowercase.
 2. Replace punctuation with spaces to facilitate splitting into words.
 3. Split the cleaned paragraph into words.
@@ -59,6 +61,7 @@ Detailed steps:
 #### Code in Different Languages
 
 ### C++ Solution
+
 ```cpp
 #include <iostream>
 #include <sstream>
@@ -100,6 +103,7 @@ int main() {
     cout << mostCommonWord(paragraph, banned) << endl;  // Output: "ball"
 }
 ```
+
 ### Java Solution
 
 ```java
@@ -134,7 +138,9 @@ public class MostCommonWord {
     }
 }
 ```
+
 ### Python Solution
+
 ```python
 import re
 from collections import defaultdict
@@ -142,13 +148,13 @@ from collections import defaultdict
 def mostCommonWord(paragraph, banned):
     banned_set = set(banned)
     word_count = defaultdict(int)
-    
+
     # Normalize the paragraph
     normalized_str = re.sub(r'[^\w\s]', ' ', paragraph).lower()
-    
+
     # Split the paragraph into words
     words = normalized_str.split()
-    
+
     # Count the occurrences of each word
     max_count = 0
     result = ""
@@ -158,7 +164,7 @@ def mostCommonWord(paragraph, banned):
             if word_count[word] > max_count:
                 max_count = word_count[word]
                 result = word
-                
+
     return result
 
 # Test
@@ -166,16 +172,19 @@ paragraph = "Bob hit a ball, the hit BALL flew far after it was hit."
 banned = ["hit"]
 print(mostCommonWord(paragraph, banned))  # Output: "ball"
 ```
+
 ### Complexity Analysis
+
 **Time Complexity:** O(n)
 
->Reason: We traverse the paragraph and words array, each operation inside the loop takes constant time.
+> Reason: We traverse the paragraph and words array, each operation inside the loop takes constant time.
 
 **Space Complexity:** O(n)
 
->Reason: We use extra space for the set of banned words and the dictionary to count word occurrences.
+> Reason: We use extra space for the set of banned words and the dictionary to count word occurrences.
 
 This solution efficiently finds the most common word in a paragraph that is not banned by using a set for quick lookup and a dictionary for counting occurrences. The time complexity is linear, and the space complexity is linear as well, making it suitable for large input sizes.
 
 ### References
+
 **LeetCode Problem:** Most Common Word

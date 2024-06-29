@@ -1,6 +1,6 @@
 ---
-id:  shortest-distance-to-a-character
-title:  Shortest Distance to a Character
+id: shortest-distance-to-a-character
+title: Shortest Distance to a Character
 sidebar_label: 821-  Shortest Distance to a Character
 tags:
   - Array
@@ -26,7 +26,6 @@ The closest occurrence of 'e' for index 1 is at index 3, so the distance is abs(
 For index 4, there is a tie between the 'e' at index 3 and the 'e' at index 5, but the distance is still the same: abs(4 - 3) == abs(4 - 5) = 1.
 The closest occurrence of 'e' for index 8 is at index 6, so the distance is abs(8 - 6) = 2.`
 
-
 ### Constraints
 
 - `1 <= s.length <= 10`
@@ -36,9 +35,10 @@ The closest occurrence of 'e' for index 8 is at index 6, so the distance is abs(
 This approach first identifies all positions of the character cc in the string and stores them in a list. Then, it iterates through each character in the string and calculates the shortest distance to the nearest cc by comparing distances to the closest occurrences of cc on both sides (if applicable), and updates the result array accordingly.
 
 #### Java
+
 ```Java
 class Solution {
-    public int[] shortestToChar(String s, char c) 
+    public int[] shortestToChar(String s, char c)
     {
         int[] result = new int[s.length()];
         List<Integer> cPositions = new ArrayList<>();
@@ -61,7 +61,7 @@ class Solution {
         	{
         		int p = cPositions.get(currPos);
 
-                if (i == p) 
+                if (i == p)
                 {
                     result[k++] = 0;
                     currPos++;
@@ -71,8 +71,8 @@ class Solution {
                 {
                     int p2 = cPositions.get(currPos - 1);
                     result[k++] = Math.min(i - p2, p - i);
-                }    
-        	}    
+                }
+        	}
         }
 
         return result;
@@ -81,7 +81,7 @@ class Solution {
 ```
 
 - Time Complexity
-The time complexity is $o(n)$.
+  The time complexity is $o(n)$.
 
 - Space Complexity
-The space complexity is $O(1)$.
+  The space complexity is $O(1)$.
