@@ -70,11 +70,9 @@ To solve the problem of finding the minimum eating speed for Koko to finish all 
 ## Code in Different Languages
 
 <Tabs>
-
   <TabItem value="Java" label="Java">
   <SolutionAuthor name="@ImmidiSivani" />
-
-````java
+ ```java
  class Solution {
  public int minEatingSpeed(int[] piles, int h) {
      int l=1;
@@ -104,7 +102,6 @@ To solve the problem of finding the minimum eating speed for Koko to finish all 
  ```
 
 </TabItem>
-
 <TabItem value="Python" label="Python">
 <SolutionAuthor name="@ImmidiSivani" />
 
@@ -126,22 +123,20 @@ To solve the problem of finding the minimum eating speed for Koko to finish all 
              l = m + 1
 
      return ans
-
-````
+   ```
 
   </TabItem>
 
   <TabItem value="c++" label="c++">
   <SolutionAuthor name="@ImmidiSivani" />
+  ```c++
+   #include <iostream>
+   #include <vector>
+   #include <algorithm>
+   #include <cmath>
 
-````c++
- #include <iostream>
- #include <vector>
- #include <algorithm>
- #include <cmath>
-
- class Solution {
- public:
+   class Solution {
+   public:
      int minEatingSpeed(std::vector<int>& piles, int h) {
          int l = 1;
          int r = *std::max_element(piles.begin(), piles.end());
@@ -162,18 +157,14 @@ To solve the problem of finding the minimum eating speed for Koko to finish all 
          }
 
          return ans;
-     }
+       }
      };
-
-
- ```
+   ```
 
 </TabItem>
-
 </Tabs>
 
 ## References
 
 - **LeetCode Problem**: [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)
 - **Solution Link**: [LeetCode Solution](https://leetcode.com/problems/koko-eating-bananas/post-solution/?submissionId=1295704443)
-````
