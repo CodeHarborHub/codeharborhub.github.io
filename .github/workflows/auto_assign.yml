@@ -48,13 +48,14 @@ jobs:
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         script: |
+          const { owner, repo } = context.repo;
+          const issue_number = parseInt('${{ steps.check_assign_command.outputs.issueOrPrNumber }}', 10);
           const assignee = '${{ steps.check_assign_command.outputs.assignee }}';
-          const issueOrPrNumber = '${{ steps.check_assign_command.outputs.issueOrPrNumber }}';
 
-          const response = await github.issues.addAssignees({
-            issue_number: issueOrPrNumber,
-            owner: context.repo.owner,
-            repo: context.repo.repo,
+          const response = await github.rest.issues.addAssignees({
+            owner,
+            repo,
+            issue_number,
             assignees: [assignee]
           });
 

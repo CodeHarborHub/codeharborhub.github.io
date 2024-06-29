@@ -91,5 +91,9 @@
   },
   "engines": {
     "node": ">=18.0"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "@codeharborhub:registry": "https://npm.pkg.github.com"
   }
 }
