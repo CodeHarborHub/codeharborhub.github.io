@@ -565,7 +565,6 @@ let graph = [ [ 0, 16, 13, 0, 0, 0 ],
 document.write("The maximum possible flow is " + 
 			fordFulkerson(graph, 0, 5));
 
-// This code is contributed by avanitrachhadiya2155
 
 </script>
 
