@@ -94,7 +94,7 @@ To solve the problem of finding the minimum eating speed for Koko to finish all 
   }
   ```
   </TabItem>
-  
+
   <TabItem value="Python" label="Python">
   <SolutionAuthor name="@ImmidiSivani" />
   ```python

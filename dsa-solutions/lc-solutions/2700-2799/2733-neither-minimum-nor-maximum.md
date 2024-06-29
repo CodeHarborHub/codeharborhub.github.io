@@ -84,7 +84,7 @@ class Solution {
 ```
 
   </TabItem>
-  
+
   <TabItem value="Python" label="Python">
   <SolutionAuthor name="@ImmidiSivani" />
 
