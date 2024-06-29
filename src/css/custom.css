@@ -368,3 +368,7 @@ th {
 .row .col .card {
   margin-top: 10px;
 }
+
+.yt-lite {
+  border-radius: 8px;
+}
