@@ -1,5 +1,5 @@
 ---
-id: 06 - Branch and Bound
+id: branch-and-bound
 title: Branch and Bound
 sidebar_label: Branch and Bound in DSA
 tags:
