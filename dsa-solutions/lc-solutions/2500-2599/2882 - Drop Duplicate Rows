@@ -30,7 +30,7 @@ Input:
 | 5           | Finn    | john@example.com    |
 | 6           | Violet  | alice@example.com   |
 +-------------+---------+---------------------+
-Output:  
+Output:
 +-------------+---------+---------------------+
 | customer_id | name    | email               |
 +-------------+---------+---------------------+
@@ -47,7 +47,7 @@ Alic (customer_id = 4) and Finn (customer_id = 5) both use john@example.com, so 
 I will say as this is a Data Science Problem the solution is also straightforward . Hope it helps :)
 .
 
-### Solution Code 
+### Solution Code
 <Tabs>
   <TabItem value="Python" label="" default>
   <SolutionAuthor name="@Abhay:)"/>
@@ -60,6 +60,6 @@ I will say as this is a Data Science Problem the solution is also straightforwar
     ```
   </TabItem>
 </Tabs>
-    
+
 ## References
 - **Leetcode Problem :** [Drop Duplicate Rows](https://leetcode.com/problems/drop-duplicate-rows/description/)

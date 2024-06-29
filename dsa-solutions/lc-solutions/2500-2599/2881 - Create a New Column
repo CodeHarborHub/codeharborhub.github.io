@@ -1,6 +1,6 @@
 ---
 id : Create-a-New-Column
-title : Create a New column 
+title : Create a New column
 sidebar_label: 2881 Create a new column Leetcode
 tags:
   - LeetCode
@@ -39,14 +39,14 @@ Output:
 | Finn    | 74576  | 149152 |
 | Thomas  | 24433  | 48866  |
 +---------+--------+--------+
-Explanation: 
+Explanation:
 A new column bonus is created by doubling the value in the column salary.
 
 ##Intuition
 I will say as this is a Data Science Problem the solution is also straightforward . Hope it helps :)
 .
 
-### Solution Code 
+### Solution Code
 <Tabs>
   <TabItem value="Python" label="" default>
   <SolutionAuthor name="@Abhay:)"/>

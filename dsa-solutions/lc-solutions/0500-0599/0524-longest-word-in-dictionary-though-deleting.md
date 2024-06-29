@@ -52,7 +52,7 @@ The check function implements the two-pointer technique, and the outer loop thro
 
 <Tabs>
   <TabItem value="C++" label="C==">
-    
+
    ```cpp
 //cpp
 

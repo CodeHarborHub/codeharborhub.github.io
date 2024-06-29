@@ -21,8 +21,8 @@ Given a string `s`, return the total appeal of all of its substrings.
 
 **Example 1:**
 
-Input: s = "abbca"  
-Output: 28  
+Input: s = "abbca"
+Output: 28
 Explanation: The following are the substrings of "abbca":
 
 - "a" has an appeal of 1.
@@ -44,8 +44,8 @@ Explanation: The following are the substrings of "abbca":
 
 **Example 2:**
 
-Input: s = "code"  
-Output: 20  
+Input: s = "code"
+Output: 20
 Explanation: The following are the substrings of "code":
 
 - "c" has an appeal of 1.

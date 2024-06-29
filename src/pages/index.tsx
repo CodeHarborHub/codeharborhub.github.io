@@ -106,7 +106,7 @@ export default function Home() {
           <ResourcesSection />
         </div>
 
-        <TweetsSection />        
+        <TweetsSection />
 
         <ScrollTopToButton />
         <ScrollBottomToTop />

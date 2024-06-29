@@ -19,15 +19,15 @@ Given a string `paragraph` and a string array of the `banned` words, return the 
 
 **Example 1:**
 
-Input: paragraph = "Bob hit a ball, the hit BALL flew far after it was hit.", banned = ["hit"]  
-Output: "ball"  
-Explanation:  
-"hit" occurs 3 times, but it is a banned word.  
+Input: paragraph = "Bob hit a ball, the hit BALL flew far after it was hit.", banned = ["hit"]
+Output: "ball"
+Explanation:
+"hit" occurs 3 times, but it is a banned word.
 "ball" occurs twice (and no other word does), so it is the most frequent non-banned word in the paragraph.
 
 **Example 2:**
 
-Input: paragraph = "a.", banned = []  
+Input: paragraph = "a.", banned = []
 Output: "a"
 
 ### Constraints

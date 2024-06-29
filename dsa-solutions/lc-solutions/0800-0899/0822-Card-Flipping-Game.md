@@ -19,14 +19,14 @@ You are given two integer arrays `fronts` and `backs` representing the fronts an
 
 **Example 1:**
 
-Input: fronts = [1,2,4,4,7], backs = [1,3,4,1,3]  
-Output: 2  
+Input: fronts = [1,2,4,4,7], backs = [1,3,4,1,3]
+Output: 2
 Explanation: If you flip the second card, the number 2 is on the front, which is not on the back of any card.
 
 **Example 2:**
 
-Input: fronts = [1], backs = [1]  
-Output: 0  
+Input: fronts = [1], backs = [1]
+Output: 0
 Explanation: There is no number that is on the front of a card and not on the back of any card.
 
 ### Constraints
