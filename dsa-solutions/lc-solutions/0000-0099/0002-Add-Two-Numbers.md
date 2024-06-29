@@ -1,5 +1,5 @@
 ---
-id: 02-add-two-numbers
+id: add-two-numbers
 title: Add Two Numbers Solution
 sidebar_label: 0002 - Add Two Numbers
 tags:
@@ -12,7 +12,7 @@ description: "This is a solution to the Add Two Numbers problem on LeetCode."
 sidebar_position: 2
 ---
 
-In this page, we will solve the Add Two Numbers problem. We will provide an overview of the problem, the intuition and approach to solve it, the implementation, and the code in various languages, along with a detailed explanation of the solution and its complexity analysis. Let's start by understanding the problem.
+In this tutorial, we will solve the Add Two Numbers problem. We will provide an overview of the problem, the intuition and approach to solve it, the implementation, and the code in various languages, along with a detailed explanation of the solution and its complexity analysis. Let's start by understanding the problem.
 
 ## Problem Statement
 
@@ -28,7 +28,7 @@ A --> B((2))
 B --> C((4))
 C --> D((3))
 E --> F((5))
-F((5)) --> G((6))
+F --> G((6))
 G --> H((4))
 I[(Output)] --> J((7))
 J --> K((0))
@@ -60,7 +60,7 @@ Output: [8,9,9,9,0,0,0,1]
 ### Constraints
 
 - The number of nodes in each linked list is in the range `[1, 100]`.
-- `0 <= Node.val <= 9`
+- <code>$0 \leq \text{Node.val} \leq 9$</code>
 - It is guaranteed that the list represents a number that does not have leading zeros.
 
 ---
@@ -69,29 +69,20 @@ Output: [8,9,9,9,0,0,0,1]
 
 ### Intuition and Approach
 
-We iterate through both linked lists, adding corresponding node's values along with a carry from the previous addition. If the sum of the current node's values and carry is 10 or more, we keep the carry for the next addition. We continue this process until we traverse both linked lists.
+We iterate through both linked lists, adding corresponding node values along with a carry from the previous addition. If the sum of the current node values and carry is 10 or more, we keep the carry for the next addition. We continue this process until we traverse both linked lists.
 
 ### Flowchart
 
 ```mermaid
 flowchart TD
-    A[Start] --> B{l1 or l2 
-    or carry}
-    B --> |Yes| C[Add values of l1, l2, 
-    and carry]
-    C --> D[Calculate new carry and 
-    current node value]
-    D --> E[Add node with value 
-    to result list]
-    E --> F{Move to next 
-    node in l1 and 
-    l2 if exist}
-    F --> |Next nodes exist| G{l1 or l2 
-    or carry}
-    G --> |Yes| C
-    G --> |No| H[Return result list]
-    F --> |Next nodes do not exist| H
-    B --> |No| H
+    A[Start] --> B{l1 or l2 or carry}
+    B --> |Yes| C[Add values of l1, l2, and carry]
+    C --> D[Calculate new carry and current node value]
+    D --> E[Add node with value to result list]
+    E --> F{Move to next node in l1 and l2 if exist}
+    F --> |Next nodes exist| B
+    F --> |Next nodes do not exist| G[Return result list]
+    B --> |No| G
 ```
 
 ### Pseudocode
@@ -257,7 +248,9 @@ function addTwoNumbersProblem() {
         int carry = 0;
         while (l1 || l2) {
             int x = l1 ? l1->val : 0;
-            int y = l2 ? l2->val : 0;
+            int y
+
+ = l2 ? l2->val : 0;
             int sum = x + y + carry;
             carry = sum / 10;
             curr->next = new ListNode(sum % 10);
@@ -330,7 +323,7 @@ function addTwoNumbersProblem() {
 
 ### Complexity Analysis
 
-The time complexity for this solution is $O(max(m, n))$, where m and n are the lengths of the two linked lists. We iterate through both linked lists once, and the space complexity is $O(max(m, n))$, where m and n are the lengths of the two linked lists. The space complexity is due to the new linked list created to store the result.
+The time complexity for this solution is $O(\max(m, n))$, where m and n are the lengths of the two linked lists. We iterate through both linked lists once, and the space complexity is $O(\max(m, n))$, where m and n are the lengths of the two linked lists. The space complexity is due to the new linked list created to store the result.
 
 ### Test Cases
 
@@ -358,7 +351,7 @@ Output: [8,9,9,9,0,0,0,1]
 
 :::info
 
-**Note:** The above code is a solution to the Add Two Numbers problem on LeetCode. It is a simple and efficient solution that uses a dummy node to keep track of the result linked list. The solution iterates through both linked lists, adding the corresponding node values and carry to generate the result. The time complexity of this solution is $O(max(m, n))$, where m and n are the lengths of the two linked lists, and the space complexity is $O(max(m, n))$.
+**Note:** The above code is a solution to the Add Two Numbers problem on LeetCode. It is a simple and efficient solution that uses a dummy node to keep track of the result linked list. The solution iterates through both linked lists, adding the corresponding node values and carry to generate the result. The time complexity of this solution is $O(\max(m, n))$, where m and n are the lengths of the two linked lists, and the space complexity is $O(\max(m, n))$.
 
 :::
 
