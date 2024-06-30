@@ -94,6 +94,6 @@
   },
   "license": "MIT",
   "publishConfig": {
-    "@codeharborhub:registry": "https://npm.pkg.github.com"
+    "@ajay-dhangar:registry": "https://npm.pkg.github.com"
   }
 }
