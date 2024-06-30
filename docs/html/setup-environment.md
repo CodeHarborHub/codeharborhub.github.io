@@ -7,8 +7,6 @@ tags: [html, web-development, front-end-development, web-design, development-env
 description: In this tutorial, you will learn how to set up your development environment for HTML development.
 ---
 
-# Setting Up Your HTML Coding Development Environment: A Comprehensive Guide
-
 Hello, future coding wizards and web development enthusiasts! Ready to dive into the world of HTML coding but feeling overwhelmed by the sheer number of tools and setups available? Fear not! Today, we're going to embark on a detailed journey to set up your development environment for HTML coding. We’ll compare and contrast different Integrated Development Environments (IDEs) and text editors, and help you find the perfect fit for your needs. So, buckle up and let’s get started!
 
 ## What is an IDE and Why Do You Need One?
