@@ -1,3 +1,21 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors Ted Shiu (tedshd@gmail.com)
+ * @date    2014-03-02 00:16:13
+ * @version $Id$
+ */
+
+.scroll_progress {
+    position: fixed;
+    overflow: hidden;
+}
+.scroll_progress div {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .resources-section {
   text-decoration: none;
   margin-top: 3.75rem 0;
