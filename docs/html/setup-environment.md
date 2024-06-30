@@ -3,7 +3,19 @@ id: setup-environment
 title: Setting up your development environment
 sidebar_label: Setting up environment
 sidebar_position: 3
-tags: [html, web-development, front-end-development, web-design, development-environment, web-technology, web-pages, web-browsers, web-technology, setup-environment]
+tags:
+  [
+    html,
+    web-development,
+    front-end-development,
+    web-design,
+    development-environment,
+    web-technology,
+    web-pages,
+    web-browsers,
+    web-technology,
+    setup-environment,
+  ]
 description: In this tutorial, you will learn how to set up your development environment for HTML development.
 ---
 
@@ -27,15 +39,15 @@ An Integrated Development Environment (IDE) is a software suite that provides co
 
 **Pros:**
 
-* Free and open-source
-* Extensive library of extensions
-* Built-in Git integration
-* Excellent for HTML, CSS, and JavaScript
-* Cross-platform (Windows, macOS, Linux)
+- Free and open-source
+- Extensive library of extensions
+- Built-in Git integration
+- Excellent for HTML, CSS, and JavaScript
+- Cross-platform (Windows, macOS, Linux)
 
 **Cons:**
 
-* Can be overwhelming for absolute beginners due to the sheer number of features
+- Can be overwhelming for absolute beginners due to the sheer number of features
 
 **Best For:** Both beginners and experienced developers looking for a powerful and customizable editor.
 
@@ -45,14 +57,14 @@ An Integrated Development Environment (IDE) is a software suite that provides co
 
 **Pros:**
 
-* Lightweight and fast
-* Clean and simple interface
-* Powerful search and replace functionality
-* Supports a wide range of plugins
+- Lightweight and fast
+- Clean and simple interface
+- Powerful search and replace functionality
+- Supports a wide range of plugins
 
 **Cons:**
 
-* Paid software (though you can use the free trial indefinitely with occasional reminders to purchase)
+- Paid software (though you can use the free trial indefinitely with occasional reminders to purchase)
 
 **Best For:** Developers who want a lightweight editor with powerful features and don’t mind paying for it.
 
@@ -62,15 +74,15 @@ An Integrated Development Environment (IDE) is a software suite that provides co
 
 **Pros:**
 
-* Free and open-source
-* Designed specifically for web development
-* Live preview feature for HTML and CSS
-* Inline editors for quick editing
+- Free and open-source
+- Designed specifically for web development
+- Live preview feature for HTML and CSS
+- Inline editors for quick editing
 
 **Cons:**
 
-* Less powerful than VS Code in terms of extensions and plugins
-* Development has slowed since Adobe ended support
+- Less powerful than VS Code in terms of extensions and plugins
+- Development has slowed since Adobe ended support
 
 **Best For:** Web developers looking for a simple, web-focused editor with live preview capabilities.
 
@@ -80,15 +92,15 @@ An Integrated Development Environment (IDE) is a software suite that provides co
 
 **Pros:**
 
-* Free and open-source
-* Lightweight and fast
-* Supports many programming languages
-* Simple and easy to use
+- Free and open-source
+- Lightweight and fast
+- Supports many programming languages
+- Simple and easy to use
 
 **Cons:**
 
-* Limited features compared to other editors
-* Windows only
+- Limited features compared to other editors
+- Windows only
 
 **Best For:** Beginners or those needing a straightforward, no-frills text editor for HTML.
 
@@ -107,36 +119,39 @@ Let’s set up a development environment using Visual Studio Code, a favorite am
 ### Step 2: Customize Your Editor
 
 1. Install Extensions:
-    * Open VS Code.
-    * Go to the Extensions view by clicking the Extensions icon in the Activity Bar on the side or pressing Ctrl+Shift+X.
-    * Search for and install useful extensions like:
-        - HTML Snippets: Adds rich HTML snippets.
-        - Live Server: Launch a local development server with live reload feature.
-        - Prettier: Code formatter.
+
+   - Open VS Code.
+   - Go to the Extensions view by clicking the Extensions icon in the Activity Bar on the side or pressing Ctrl+Shift+X.
+   - Search for and install useful extensions like:
+     - HTML Snippets: Adds rich HTML snippets.
+     - Live Server: Launch a local development server with live reload feature.
+     - Prettier: Code formatter.
 
 2. Customize Settings:
-    * Open the settings by clicking the gear icon at the bottom left and selecting "Settings".
-    * Customize the editor according to your preference (e.g., font size, theme).
+   - Open the settings by clicking the gear icon at the bottom left and selecting "Settings".
+   - Customize the editor according to your preference (e.g., font size, theme).
 
 ### Step 3: Start Coding
 
 1. Create a new file by clicking `File > New File`.
 2. Save it with a `.html` extension (e.g., `index.html`).
 3. Write your HTML code. Here’s a simple example:
+
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First HTML Page</title>
-</head>
-<body>
-  <h1>Hello, World!</h1>
-  <p>This is my first HTML page using VS Code.</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First HTML Page</title>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+    <p>This is my first HTML page using VS Code.</p>
+  </body>
 </html>
 ```
+
 4. To see your work in action, right-click on the index.html file and select "Open with Live Server". Your default web browser should open and display your HTML page.
 
 ### Tips for a Smooth Coding Experience
