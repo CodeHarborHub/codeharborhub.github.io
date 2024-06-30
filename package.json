@@ -93,7 +93,5 @@
     "node": ">=18.0"
   },
   "license": "MIT",
-  "publishConfig": {
-    "@ajay-dhangar:registry": "https://npm.pkg.github.com"
-  }
+  "author": "Ajay-Dhangar"
 }
