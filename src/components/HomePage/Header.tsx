@@ -23,7 +23,7 @@ function ScrollProgress(settings?: ScrollProgressSettings): void {
   const defaultSettings: ScrollProgressSettings = {
       position: 'top',
       thick: 70,
-      color: '#ff8800'
+      color: 'var(--ifm-color-primary)'
   };
 
   const config = { ...defaultSettings, ...settings };
@@ -61,7 +61,7 @@ function ScrollProgress(settings?: ScrollProgressSettings): void {
 const setting: ScrollProgressSettings = {
   position: 'top',
   thick: 70,
-  color: '#ff8800'
+  color: 'var(--ifm-color-primary)'
 };
 
 ScrollProgress(setting);
