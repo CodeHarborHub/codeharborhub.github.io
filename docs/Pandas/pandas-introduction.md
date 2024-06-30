@@ -10,6 +10,9 @@ description: In this tutorial, you will learn about Pandas, a powerful Python li
 
 Pandas is a popular Python library used for data manipulation and analysis. It provides data structures and functions to efficiently handle structured data, making it a valuable tool for data scientists and analysts.
 
+![pandas](image.png)
+
+
 **Some key uses and applications of Pandas include:**
 
 - Data cleaning and preprocessing: Pandas offers powerful tools for cleaning and transforming data, such as handling missing values, removing duplicates, and reshaping data.
