@@ -5,8 +5,6 @@ sidebar_label: Introduction Web Dev
 sidebar_position: 1
 ---
 
-import GiscusComponent from '@site/src/components/GiscusComponent';
-
 > Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network). Web development can range from developing a simple single static page of plain text to complex Web-based Internet applications (Web apps), electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development. Among Web professionals, "Web development" usually refers to the main non-design aspects of building Web sites: writing markup and coding. Web development may use content management systems (CMS) to make content changes easier and available with basic technical skills.
 
 
@@ -14,43 +12,6 @@ import GiscusComponent from '@site/src/components/GiscusComponent';
 
 Web development has been a growing industry since the commercialization of the web. It encompasses a wide range of topics and skills, including but not limited to creating and maintaining web applications, creating and maintaining websites, and creating and maintaining web services. Web development includes many types of web content creation. Some examples include hand coding web pages in a text editor, building a website in a program like Dreamweaver, and updating a blog via a blogging website. In recent years, content management systems like WordPress, Drupal, and Joomla have also become popular means of web development. These tools make it easy for anyone to create and edit their own website using a web-based interface.
 
-
-```mermaid
-graph TD
-    A[Web Development] --> B(Tools)
-    A --> C(Technologies)
-    C --> D(Front-End)
-    C --> E(Back-End)
-    D --> F(HTML)
-    D --> G(CSS)
-    D --> H(JavaScript)
-    E --> I(Node.js)
-    E --> J(Python)
-    E --> K(Ruby)
-    E --> L(PHP)
-    E --> M(Java)
-    B --> N(Text Editors/IDEs)
-    B --> O(Version Control)
-    B --> P(Browser Developer Tools)
-    B --> Q(Package Managers)
-    B --> R(Task Runners)
-    B --> S(Web Servers)
-    B --> T(Database Management Systems)
-    O --> U(Git)
-    O --> V(GitHub)
-    O --> W(Bitbucket)
-    P --> X(Chrome DevTools)
-    P --> Y(Firefox Developer Tools)
-    Q --> Z(npm)
-    Q --> AA(yarn)
-    R --> AB(Gulp)
-    R --> AC(Grunt)
-    S --> AD(Apache)
-    S --> AE(Nginx)
-    T --> AF(MySQL)
-    T --> AG(PostgreSQL)
-    T --> AH(MongoDB)
-```
 
 ## Introduction to Web Development
 
