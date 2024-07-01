@@ -1,5 +1,8 @@
+Certainly! Here's your content formatted and refined for better readability and structure:
+
+```markdown
 ---
-id: Beam-Search
+id: beam-search
 title: Beam Search Algorithm
 sidebar_label: Beam Search
 tags:
@@ -10,8 +13,6 @@ tags:
   - AI
 description: "Explanation and implementation of the Beam Search algorithm."
 ---
-
-# Beam Search Algorithm
 
 Beam Search is a heuristic search algorithm commonly used in the context of sequence-to-sequence models in Natural Language Processing (NLP) and other AI applications. It explores multiple paths simultaneously, aiming to find the optimal sequence based on a scoring function.
 
@@ -44,7 +45,6 @@ Beam Search is an extension of Breadth-First Search (BFS) and Depth-First Search
 ### Pseudocode
 
 ```python
-
 def beam_search(initial_state, beam_width, max_length):
     sequences = [[initial_state]]
     for _ in range(max_length):
@@ -65,13 +65,18 @@ result = beam_search(initial_state, beam_width, max_length)
 print(result)
 ```
 
-# Explanation
-### generate_successors: Function to generate possible next states or sequences.
-### score: Function to evaluate and assign a score to each successor.
-### select_top: Function to select the top-ranked successors based on the beam width.
-# Applications
-### Machine Translation: Finding the best translation from source to target language.
-### Text Summarization: Generating concise summaries from lengthy documents.
-### Speech Recognition: Decoding spoken language into text sequences.
-# Conclusion
+### Explanation
+
+- **generate_successors**: Function to generate possible next states or sequences.
+- **score**: Function to evaluate and assign a score to each successor.
+- **select_top**: Function to select the top-ranked successors based on the beam width.
+
+## Applications
+
+- **Machine Translation**: Finding the best translation from source to target language.
+- **Text Summarization**: Generating concise summaries from lengthy documents.
+- **Speech Recognition**: Decoding spoken language into text sequences.
+
+## Conclusion
+
 Beam Search is a powerful algorithm for searching through large, complex search spaces in AI applications. By balancing exploration and exploitation, it efficiently finds near-optimal solutions for sequence-based problems.
