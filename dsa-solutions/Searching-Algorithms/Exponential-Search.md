@@ -141,6 +141,8 @@ int main() {
 </TabItem>
   <TabItem value="Java" label="Java">
 
+```java
+
 import java.util.Arrays;
 
 public class ExponentialSearch {
