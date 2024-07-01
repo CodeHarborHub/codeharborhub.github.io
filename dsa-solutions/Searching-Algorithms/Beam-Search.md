@@ -1,6 +1,3 @@
-Certainly! Here's your content formatted and refined for better readability and structure:
-
-```markdown
 ---
 id: beam-search
 title: Beam Search Algorithm
