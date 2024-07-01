@@ -32,8 +32,6 @@ Exponential Search is a search algorithm for sorted arrays. It works by finding 
 - Then, it repeatedly doubles the range to find a suitable interval where the target element might be located.
 - Finally, it performs a binary search within the identified range.
 
-![Example for Exponential Search](../../assets/Exponential_Search.jpg)
-
 ## Problem Description
 
 Given a sorted list and a target element, implement the Exponential Search algorithm to find the index of the target element in the list. If the element is not present, return -1.
