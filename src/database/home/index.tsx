@@ -63,6 +63,20 @@ const coursesData = [
     imageUrl: "/img/svg/youtube_tutorial.svg",
     url:"/courses"
   },
+  {
+    title: "Matlab",
+    description:
+    "Learn the basics of Matlab. Start building your first Matlab app.",
+    imageUrl: "/img/svg/matlab.svg",
+    url:"/courses"
+    },
+    {
+    title: "Julia",
+    description:
+    "Learn the basics of Julia. Start building your first Julia app.",
+    imageUrl: "/img/svg/julia.svg",
+    url:"/courses"
+    },
 ];
 
 export { featuresData, coursesData, hero };

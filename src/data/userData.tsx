@@ -236,17 +236,28 @@ export const Users: User[] = [
     preview: require("./showcase/BMI-calculator.png"),
     website: "https://bmi-calculator-liart-five.vercel.app",
     source: "https://github.com/parikhitritgithub/BMI-Calculator",
-    tags: ["opensource", "javascript", "html", "css",],
+    tags: ["opensource", "javascript", "html", "css"],
   },
 
   // Gemini AI Chatbot
 
   {
-    title: 'Gemini AI Chabot',
-    description: 'The Gemini AI Chatbot is a modern chatbot that can help you with your queries.',
-    preview: require('./showcase/gemini-ai-chatbot.png'),
-    website: 'https://code-harbor-hub-gemini-ai-chatbot.vercel.app/',
-    source: 'https://github.com/Ajay-Dhangar/gemini-ai-chatbot',
-    tags: ['opensource', 'nextjs', 'typescript', 'ai', 'favorite'],
+    title: "Gemini AI Chabot",
+    description:
+      "The Gemini AI Chatbot is a modern chatbot that can help you with your queries.",
+    preview: require("./showcase/gemini-ai-chatbot.png"),
+    website: "https://code-harbor-hub-gemini-ai-chatbot.vercel.app/",
+    source: "https://github.com/Ajay-Dhangar/gemini-ai-chatbot",
+    tags: ["opensource", "nextjs", "typescript", "ai", "favorite"],
+  },
+
+  {
+    title: "Movie Recommendation App",
+    description:
+      "A movie recommendation app that suggests movies based on the keywords searched by the user.",
+    preview: require("./showcase/movie_recommender.png"),
+    website: "https://movie-recommender-phi.vercel.app/",
+    source: "https://github.com/ParnaRoyChowdhury777/movie_recommender",
+    tags: ["opensource", "react", "javascript", "product", "css"],
   },
 ];
