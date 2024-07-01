@@ -260,4 +260,16 @@ export const Users: User[] = [
     source: "https://github.com/ParnaRoyChowdhury777/movie_recommender",
     tags: ["opensource", "react", "javascript", "product", "css"],
   },
+
+  // FlappyBird Game
+
+  {
+    title: 'Flappy Bird Game',
+    description:
+      'Flappy Bird Game using HTML, CSS and JavaScript. Play the game and enjoy the fun.',
+    preview: require('./showcase/flappy_game.png'),
+    website: 'https://50-days-50-web-project.vercel.app/Flappy-bird-main/index.html',
+    source: 'https://github.com/dhairyagothi/50_days_50_web_project/tree/Main/public/Flappy-bird-main',
+    tags: ['opensource', 'html', 'css', 'javascript', 'game'], 
+  },
 ];
