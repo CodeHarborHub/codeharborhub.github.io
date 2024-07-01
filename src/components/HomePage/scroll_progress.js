@@ -1,20 +1,12 @@
-/*global $, jQuery, alert, console, angular*/
-/**
- *
- * @authors Ted Shiu (tedshd@gmail.com)
- * @date    2014-03-01 23:51:21
- * @version $Id$
- */
-
 function ScrollProgress (option) {
     console.log('init');
-    var d4 = {
+    const d4 = {
         position: 'top',
         thick: 5,
-        color: 'red'
+        color: 'gray'
     };
-    var percent;
-    var dom = document.querySelector('body'),
+    let percent;
+    let dom = document.querySelector('body'),
         progress = document.createElement('div'),
         div = document.createElement('div');
 
