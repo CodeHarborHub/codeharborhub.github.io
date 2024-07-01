@@ -12,7 +12,7 @@ tags:
 
 | Problem Statement                                       | Solution Link                                                              | LeetCode Profile                                        |
 | :------------------------------------------------------ | :------------------------------------------------------------------------- | :------------------------------------------------------ |
-| [Single Element in a Sorted Array](https://leetcode.com/problems/Single Element in a Sorted Array/description/) | [Single Element in a Sorted Array Solution on LeetCode](https://leetcode.com/problems/Single Element in a Sorted Array/solutions/) | [Nikita Saini](https://leetcode.com/u/Saini_Nikita/) |
+| [Single Element in a Sorted Array](https://leetcode.com/problems/Single Element in a Sorted Array/description/) | [Single Element in a Sorted Array Solution on LeetCode](https://leetcode.com/problems/single-element-in-sorted-array/solutions/) | [Nikita Saini](https://leetcode.com/u/Saini_Nikita/) |
 
 ## Problem Description
 
@@ -34,12 +34,12 @@ Your solution must run in O(log n) time and O(1) space.
 
 ### Constraints
 
-- \(1 \leq \text{nums.length} \leq 10^5\)
-- \(0 \leq \text{nums[i]} \leq 10^5\)
+- $1 \leq \text{nums.length} \leq 10^5$
+- $0 \leq \text{nums[i]} \leq 10^5$
 
 ## Approach
 
-To solve this problem in O(log n) time complexity and O(1) space complexity, we can use a binary search approach. The key observation is that if we split the array into pairs, the single element will disrupt the pairing. By checking the indices, we can determine which half of the array to search next.
+To solve this problem in $O(log n)$ time complexity and $O(1)$ space complexity, we can use a binary search approach. The key observation is that if we split the array into pairs, the single element will disrupt the pairing. By checking the indices, we can determine which half of the array to search next.
 
 ### Step-by-Step Algorithm
 
