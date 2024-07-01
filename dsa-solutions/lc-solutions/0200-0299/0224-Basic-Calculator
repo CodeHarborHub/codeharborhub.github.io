@@ -1,4 +1,5 @@
 ---
+
 id: basic-calculator
 title: Basic Calculator
 sidebar_label: 0224 Basic Calculator
@@ -20,18 +21,18 @@ Note: You are not allowed to use any built-in function which evaluates strings a
 
 **Example 1:**
 
-Input: s = "1 + 1" 
-Output: 2
+**Input:** `s = "1 + 1"`  
+**Output:** `2`
 
 **Example 2:**
 
-Input: nums = " 2-1 + 2 "  
-Output: 3
+**Input:** `s = " 2-1 + 2 "`  
+**Output:** `3`
 
 **Example 3:**
 
-Input: nums = "(1+(4+5+2)-3)+(6+8)"  
-Output: 23
+**Input:** `s = "(1+(4+5+2)-3)+(6+8)"`  
+**Output:** `23`
 
 ### Constraints
 
@@ -43,12 +44,15 @@ Output: 23
 - There will be no two consecutive operators in the input.
 - Every number and running calculation will fit in a signed 32-bit integer.
 
-### Approach
+---
+
+## Approach
 The code employs a stack-based approach to parse and evaluate arithmetic expressions. It iterates through each character of the input string, updating the current number and result based on encountered digits, operators, and parentheses. It utilizes a stack to handle nested expressions, pushing and popping intermediate results and signs as needed. Finally, it returns the evaluated result, assuming a valid input expression.
 
 ### Solution
 
-### C++ Solution
+#### C++ Solution
+
 ```cpp
 #include <stdio.h>
 #include <stdlib.h>
@@ -86,7 +90,9 @@ int calculate(char* s) {
     return result + sign * num;
 }
 ```
-### Java Solution
+
+#### Java Solution
+
 ```java
 public int calculate(String s) {
     Stack<Integer> stack = new Stack<Integer>();
@@ -106,25 +112,23 @@ public int calculate(String s) {
             number = 0;
             sign = -1;
         }else if(c == '('){
-            //we push the result first, then sign;
             stack.push(result);
             stack.push(sign);
-            //reset the sign and result for the value in the parenthesis
             sign = 1;   
             result = 0;
         }else if(c == ')'){
             result += sign * number;  
             number = 0;
-            result *= stack.pop();    //stack.pop() is the sign before the parenthesis
-            result += stack.pop();   //stack.pop() now is the result calculated before the parenthesis
-            
+            result *= stack.pop();    
+            result += stack.pop();   
         }
     }
     if(number != 0) result += sign * number;
     return result;
 }
 ```
-### Python Solution
+
+#### Python Solution
 
 ```python
 class Solution:
@@ -163,9 +167,7 @@ class Solution:
 
 ### Complexity Analysis
 
-Here's the complexity analysis in GitHub Markdown format:
-
-### Time Complexity: O(N)
+#### Time Complexity: O(N)
 > Reason: We perform a single pass through the string `s`, iterating over each character exactly once, resulting in linear time complexity.
 
 **Space Complexity:** O(N)
