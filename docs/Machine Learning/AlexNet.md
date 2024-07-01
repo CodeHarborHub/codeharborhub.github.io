@@ -41,7 +41,7 @@ Suppose:
 - Stride = 1
 - Padding = 2
 
-Hence, output feature map size = $\dfrac{Input Dimension-Filter size+2*Padding}{Stride}+1$ = $\dfrac{27-5+2*2}{1}+1$ = $\dfrac{26}{1}+1$ = $27$ = 27x27x256
+Hence, output feature map size = $\dfrac{27-5+2*2}{1}+1$ = $\dfrac{26}{1}+1$ = $27$ = 27x27x256
 
 ### 2nd Max-Pooling Layer
 It performs max-pooling with 256, 3x3 filters and a stride of 2 and reduces spatial dimensions to 13x13x256.
@@ -88,7 +88,7 @@ Suppose:
 - Stride = 1
 - Padding = 1
 
-Hence, output feature map size = $\dfrac{13-3+2*1}{1}+1$ = $\dfrac{12}{1}+1$ = $13$ = 13x13256
+Hence, output feature map size = $\dfrac{13-3+2*1}{1}+1$ = $\dfrac{12}{1}+1$ = $13$ = 13x13x256
 
 ### 3rd Max-Pooling Layer
 This layer performs max-pooling with 256, 3x3 filter and a stride of 2. It reduces spatial dimensions to 6x6x256.
