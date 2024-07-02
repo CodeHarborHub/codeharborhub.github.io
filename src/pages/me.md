@@ -115,7 +115,6 @@ hide_table_of_contents: true
   </div>
 </div>
 
-
 ---
 
 <div align="center">
@@ -165,7 +164,7 @@ hide_table_of_contents: true
 ![trophy](https://github-profile-trophy.vercel.app/?username=ajay-dhangar&column=10&theme=matrix)
 
 ---
- 
+
 ## Profile Status:
 
 <br />
