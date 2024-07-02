@@ -45,8 +45,8 @@ Explanation: A subsequence that can be selected is ["a","b","c"] because groups[
 
 ### Constraints
 
-- 1 <= n == words.length == groups.length <= 100
-- 1 <= words[i].length <= 10
+- $1 \leq  n == \text{words.length} == \text{groups.length} \leq 100$
+- $1 \leq \text{words[i].length} \leq 10$
 - groups[i] is either 0 or 1.
 - words consists of distinct strings.
 - words[i] consists of lowercase English letters.
