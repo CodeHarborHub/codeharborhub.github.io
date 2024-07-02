@@ -1,7 +1,6 @@
 ---
 id: power-of-2
 title: Power of 2
-sidebar_label: 0013 - Power of 2
 tags:
   - Easy
   - Bit Manipulation
@@ -51,7 +50,7 @@ Expected Auxiliary Space: $O(1)$
 
 ## Constraints
 
-* `0 ≤ n ≤ 10^18`
+- `0 ≤ n ≤ 10^18`
 
 ## Problem Explanation
 
@@ -130,14 +129,13 @@ A number is a power of 2 if there exists an integer `x` such that `n = 2^x`.
 
 ## Time Complexity
 
-* The function operates in constant time, $O(1)$.
+- The function operates in constant time, $O(1)$.
 
 ## Space Complexity
 
-* The function uses constant space, $O(1)$.
+- The function uses constant space, $O(1)$.
 
 ## References
 
 -**gfg Problem:** [gfg Problem](https://www.geeksforgeeks.org/problems/power-of-2-1587115620/1)
 - **Solution Author:** [arunimad6yuq](https://www.geeksforgeeks.org/user/arunimad6yuq/)
-
