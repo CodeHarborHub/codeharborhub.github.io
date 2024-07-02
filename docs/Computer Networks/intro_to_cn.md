@@ -1,6 +1,6 @@
 ---
 id: computer_networks
-title: computer_networks
+title: Computer Networks
 sidebar_label: Computer Networks
 sidebar_position: 6
 tags: [computer_networks, networks, communication]
@@ -11,6 +11,14 @@ description: Computer Networks is the practice of connecting computers and other
 ## What Are Computer Networks?
 
 A **computer network** is a collection of interconnected devices that communicate with each other to share resources and information. These devices can include computers, servers, smartphones, and networking hardware like routers and switches.
+
+### Key Components of a Network
+
+1. **Nodes**: These are the devices connected to the network, such as computers, smartphones, printers, and servers.
+2. **Links**: These are the communication pathways that connect nodes. They can be physical (cables) or wireless (radio waves).
+3. **Switches**: Devices that connect multiple devices within a LAN and use MAC addresses to forward data to the correct destination.
+4. **Routers**: Devices that connect different networks together and use IP addresses to route data between networks.
+5. **Protocols**: Sets of rules and conventions that determine how data is transmitted and received across the network (e.g., TCP/IP, HTTP).
 
 ### Types of Networks
 

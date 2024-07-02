@@ -1,12 +1,14 @@
 ---
 id: types_of_networks
-title: types_of_networks
+title: Types of Networks
 sidebar_label: Types Of Networks
 sidebar_position: 7
 tags: [computer_networks, networks, communication]
-description: Computer Networks is the practice of connecting computers and other devices to share resources and information. This section covers fundamental concepts, protocols, and technologies that form the backbone of network communication.
+description: Computer networks can be categorized based on their size, range, and structure. The most common types are listed in this section.
+
 ---
 # Types of Networks
+Computer networks can be categorized based on their size, range, and structure. The most common types are:
 
 #### 1. Local Area Network (LAN)
 
