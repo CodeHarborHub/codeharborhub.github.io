@@ -57,7 +57,8 @@ To solve this problem, we can use a greedy approach to construct the longest alt
 
 This approach ensures that we build the longest possible alternating subsequence in a single pass through the array, making it both simple and efficient.
 
-Time Complexity
+### Time Complexity
+
 The time complexity is $O(n)$. where n is the length of the words array. This is because we are iterating through the array once.
 
 #### C++
