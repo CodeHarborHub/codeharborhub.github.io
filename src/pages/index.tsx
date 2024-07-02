@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import React, { useState } from "react";
-import style from "./index.module.css"; 
+import style from "./index.module.css";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
@@ -12,12 +12,14 @@ import { motion } from "framer-motion";
 import ResourcesSection from "../components/HomePage/ResourcesSection";
 import ScrollTopToButton from "../components/Buttons/bottom/ScrollTopToButton";
 import ScrollBottomToTop from "../components/Buttons/top/ScrollBottomToTop";
+import { LandingCommunity } from "../components/HomePage/Community";
+import { CommunityStatsProvider } from "../context/CommunityStats";
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import RateUsPopup from "../components/RateUsPopup/RateUsPopup";
 function TweetsSection() {
   const [showRateUsPopup, setShowRateUsPopup] = useState(false);
@@ -116,6 +118,14 @@ export default function Home() {
         <div>
           <ResourcesSection />
         </div>
+
+        <hr className={style.home__hr} />
+
+        <CommunityStatsProvider>
+          <LandingCommunity className="codeharborhub" />
+        </CommunityStatsProvider>
+
+        <hr className={style.home__hr} />
 
         <TweetsSection />
 
