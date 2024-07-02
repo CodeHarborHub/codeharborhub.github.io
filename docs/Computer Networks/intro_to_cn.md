@@ -3,7 +3,7 @@ id: computer_networks
 title: computer_networks
 sidebar_label: Computer Networks
 sidebar_position: 6
-tags: [computer networks, networks, communication]
+tags: [computer_networks, networks, communication]
 description: Computer Networks is the practice of connecting computers and other devices to share resources and information. This section covers fundamental concepts, protocols, and technologies that form the backbone of network communication.
 ---
 # Introduction to Computer Networks
