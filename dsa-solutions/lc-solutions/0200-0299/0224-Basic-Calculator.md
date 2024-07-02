@@ -1,13 +1,8 @@
 ---
-
 id: basic-calculator
 title: Basic Calculator
 sidebar_label: 0224 Basic Calculator
-tags:
-- Math
-- String
-- Stack
-- Recursion
+tags: [Math, String, Stack, Recursion]
 description: "This gives solution to the problem basic calculator"
 ---
 
@@ -15,7 +10,7 @@ description: "This gives solution to the problem basic calculator"
 
 Given a string s representing a valid expression, implement a basic calculator to evaluate it, and return the result of the evaluation.
 
-Note: You are not allowed to use any built-in function which evaluates strings as mathematical expressions, such as `eval()`.
+**Note:** You are not allowed to use any built-in function which evaluates strings as mathematical expressions, such as `eval()`.
 
 ### Examples
 
@@ -36,7 +31,7 @@ Note: You are not allowed to use any built-in function which evaluates strings a
 
 ### Constraints
 
-- \(1 \leq s.length \leq 3 \times 10^5\)
+- $1 \leq s.length \leq 3 \times 10^5$
 - `s` consists of digits, '+', '-', '(', ')', and ' '.
 - `s` represents a valid expression.
 - `'+'` is not used as a unary operation (i.e., `"+1"` and `"+(2 + 3)"` are invalid).
@@ -167,10 +162,16 @@ class Solution:
 
 ### Complexity Analysis
 
-#### Time Complexity: O(N)
-> Reason: We perform a single pass through the string `s`, iterating over each character exactly once, resulting in linear time complexity.
+**Time Complexity:** $O(N)$
+:::tip Reason:
+We perform a single pass through the string `s`, iterating over each character exactly once, resulting in linear time complexity.
+:::
 
-**Space Complexity:** O(N)
-> Reason: The extra space used is mainly for the stack, which can store at most all the numbers and operators from the string `s` if they are all parentheses, leading to linear space complexity.
+**Space Complexity:** $O(N)$
+:::tip Reason:
+The extra space used is mainly for the stack, which can store at most all the numbers and operators from the string `s` if they are all parentheses, leading to linear space complexity.
+:::
 
-> This solution efficiently calculates the result of the given expression by handling parentheses, addition, and subtraction. The time complexity is linear due to a single pass through the string, and the space complexity is linear due to the use of a stack to handle nested parentheses.
+:::note
+This solution efficiently calculates the result of the given expression by handling parentheses, addition, and subtraction. The time complexity is linear due to a single pass through the string, and the space complexity is linear due to the use of a stack to handle nested parentheses.
+:::
