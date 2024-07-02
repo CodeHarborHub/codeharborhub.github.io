@@ -2,26 +2,31 @@ import React, { useState, useEffect } from 'react';
 import './ArrayVisualization.css'; 
 
 const ArrayVisualizations: React.FC = () => {
-  const [array, setArray] = useState<number[]>([]);
-  const [delay, setDelay] = useState<number>(300); 
-  const [minIndex, setMinIndex] = useState<number | null>(null); 
-  const [isDisabled, setIsDisabled] = useState<boolean>(false); 
-  const [currentIndex, setCurrentIndex] = useState<number | null>(null);
-  const [isSorting, setIsSorting] = useState<boolean>(false);
+  // State variables
+  const [array, setArray] = useState<number[]>([]); // Holds the array of numbers
+  const [delay, setDelay] = useState<number>(300); // Controls the delay for visualization
+  const [minIndex, setMinIndex] = useState<number | null>(null); // Index of the minimum value in the array
+  const [isDisabled, setIsDisabled] = useState<boolean>(false); // Controls button disable state
+  const [currentIndex, setCurrentIndex] = useState<number | null>(null); // Current index being evaluated
+  const [isSorting, setIsSorting] = useState<boolean>(false); // Indicates if the array is being sorted
 
+  // Generates a new array when the component mounts
   useEffect(() => {
     generateArray();    
   }, []);
 
+  // Updates the transition duration whenever the delay changes
   useEffect(() => {
     updateMoveDuration();
   }, [delay]);
 
+  // Function to generate a new array with random values
   const generateArray = () => {
     const newArray = Array.from({ length: 18 }, () => Math.ceil(Math.random() * 90) + 10);
     setArray(newArray);
   };
 
+  // Function to update the transition duration for CSS animations
   const updateMoveDuration = () => {
     const stylesheets = document.styleSheets;
     for (let i = 0; i < stylesheets.length; i++) {
@@ -35,6 +40,7 @@ const ArrayVisualizations: React.FC = () => {
     }
   };
 
+  // Function to find the lowest value in the array
   const findLowest = async () => {
     setIsDisabled(true);
     setIsSorting(true);
@@ -53,6 +59,7 @@ const ArrayVisualizations: React.FC = () => {
     setIsDisabled(false);
   };
 
+  // Function to reset the array to new random values
   const resetArray = () => {
     generateArray();
     setMinIndex(null);

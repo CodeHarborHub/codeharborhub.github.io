@@ -1,15 +1,18 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
+// Define the structure of a Collection object
 type Collection = {
-    label: string;
-    url: string;
+    label: string; // The label for the collection
+    url: string;   // The URL of the collection
 };
 
+// Define the props for the CollectionList component
 type CollectionListProps = {
-    collections: Collection[];
+    collections: Collection[]; // An array of Collection objects
 };
 
+// Keyframes for fade-in animation
 const fadeIn = keyframes`
     from {
         opacity: 0;
@@ -21,6 +24,7 @@ const fadeIn = keyframes`
     }
 `;
 
+// Styled component for individual collection cards
 const CollectionCard = styled.a`
     display: block;
     padding: 20px;
@@ -38,6 +42,7 @@ const CollectionCard = styled.a`
     }
 `;
 
+// Styled component for collection labels
 const CollectionLabel = styled.h3`
     margin: 0 0 10px;
     font-size: 18px;
@@ -46,14 +51,17 @@ const CollectionLabel = styled.h3`
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 `;
 
+// Styled component for collection URLs
 const CollectionLink = styled.span`
     font-size: 14px;
 `;
 
+// Functional component to display a list of collections
 const CollectionList: React.FC<CollectionListProps> = ({ collections }) => {
     return (
         <div>
             {collections.map((collection, index) => (
+                // Render each collection as a card with a link
                 <CollectionCard key={index} href={collection.url} target="_blank" rel="noopener noreferrer">
                     <CollectionLabel>{collection.label}</CollectionLabel>
                     <CollectionLink>{collection.url}</CollectionLink>

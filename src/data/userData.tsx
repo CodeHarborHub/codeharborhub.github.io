@@ -227,14 +227,49 @@ export const Users: User[] = [
     tags: ["opensource", "portfolio", "react", "typescript", "mdx"],
   },
 
+  // BMI Calculator
+
+  {
+    title: "BMI Calculator",
+    description:
+      "A BMI Calculator is a tool that quickly determines body mass index from a person's weight and height,  categorizing results into underweight, normal weight, overweight .",
+    preview: require("./showcase/BMI-calculator.png"),
+    website: "https://bmi-calculator-liart-five.vercel.app",
+    source: "https://github.com/parikhitritgithub/BMI-Calculator",
+    tags: ["opensource", "javascript", "html", "css"],
+  },
+
   // Gemini AI Chatbot
 
   {
-    title: 'Gemini AI Chabot',
-    description: 'The Gemini AI Chatbot is a modern chatbot that can help you with your queries.',
-    preview: require('./showcase/gemini-ai-chatbot.png'),
-    website: 'https://code-harbor-hub-gemini-ai-chatbot.vercel.app/',
-    source: 'https://github.com/Ajay-Dhangar/gemini-ai-chatbot',
-    tags: ['opensource', 'nextjs', 'typescript', 'ai', 'favorite'],
+    title: "Gemini AI Chabot",
+    description:
+      "The Gemini AI Chatbot is a modern chatbot that can help you with your queries.",
+    preview: require("./showcase/gemini-ai-chatbot.png"),
+    website: "https://code-harbor-hub-gemini-ai-chatbot.vercel.app/",
+    source: "https://github.com/Ajay-Dhangar/gemini-ai-chatbot",
+    tags: ["opensource", "nextjs", "typescript", "ai", "favorite"],
+  },
+
+  {
+    title: "Movie Recommendation App",
+    description:
+      "A movie recommendation app that suggests movies based on the keywords searched by the user.",
+    preview: require("./showcase/movie_recommender.png"),
+    website: "https://movie-recommender-phi.vercel.app/",
+    source: "https://github.com/ParnaRoyChowdhury777/movie_recommender",
+    tags: ["opensource", "react", "javascript", "product", "css"],
+  },
+
+  // FlappyBird Game
+
+  {
+    title: 'Flappy Bird Game',
+    description:
+      'Flappy Bird Game using HTML, CSS and JavaScript. Play the game and enjoy the fun.',
+    preview: require('./showcase/flappy_game.png'),
+    website: 'https://50-days-50-web-project.vercel.app/Flappy-bird-main/index.html',
+    source: 'https://github.com/dhairyagothi/50_days_50_web_project/tree/Main/public/Flappy-bird-main',
+    tags: ['opensource', 'html', 'css', 'javascript', 'game'], 
   },
 ];

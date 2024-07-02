@@ -1,12 +1,11 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faYoutube, faDiscord,  } from '@fortawesome/free-brands-svg-icons';
-
-import { themes as prismThemes } from "prism-react-renderer";
 import { default as npm2yarn } from "@docusaurus/remark-plugin-npm2yarn";
+import { themes as prismThemes } from "prism-react-renderer";
+
 const remarkMath = require("remark-math");
 const rehypeKatex = require("rehype-katex");
 
 const path = require("path");
+require("dotenv").config();
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -18,6 +17,9 @@ const config = {
   customFields: {
     admin: "Ajay Dhangar",
     superman: "Shivay",
+    serviceId: process.env.EMAILJS_SERVICE_ID,
+    templateId: process.env.EMAILJS_TEMPLATE_ID,
+    userId: process.env.EMAILJS_USER_ID,
   },
 
   organizationName: "codeharborhub",
@@ -96,11 +98,21 @@ const config = {
         { name: "twitter:creator", content: "@CodesWithAjay" },
         { property: "og:type", content: "website" },
         { property: "og:site_name", content: "CodeHarborHub" },
-        { property: "og:title", content: "CodeHarborHub - A place to learn and grow" },
-        { property: "og:description", content: "CodeHarborHub is a place to learn and grow. We provide accessible and comprehensive educational resources to learners of all levels, from beginners to advanced professionals."},
-        { property: "og:image", content: "https://codeharborhub.github.io/img/nav-logo.jpg" },
+        {
+          property: "og:title",
+          content: "CodeHarborHub - A place to learn and grow",
+        },
+        {
+          property: "og:description",
+          content:
+            "CodeHarborHub is a place to learn and grow. We provide accessible and comprehensive educational resources to learners of all levels, from beginners to advanced professionals.",
+        },
+        {
+          property: "og:image",
+          content: "https://codeharborhub.github.io/img/nav-logo.jpg",
+        },
         { property: "og:url", content: "https://codeharborhub.github.io" },
-        { name: "robots", content: "index, follow" },          
+        { name: "robots", content: "index, follow" },
       ],
 
       algolia: {
@@ -130,13 +142,15 @@ const config = {
                   <a href="/docs/category/html/" class="nav__icons"> <img src="/icons/html-5.svg" title="HTML5" alt="HTML" /> </a>
                   <a href="/docs/" class="nav__icons"> <img src="/icons/css.svg" title="CSS" alt="CSS" /> </a>
                   <a href="/docs/category/javascript/" class="nav__icons" > <img src="/icons/js.svg" title="JavaScript" alt="JavaScript" /> </a>
-                  <a href="/docs/category/react/" class="nav__icons"> <img src="/icons/jsx.svg" title="React.Js" alt="React" /> </a>                  
-                  <a href="/docs/category/typescript/" class="nav__icons"> <img src="/icons/ts.svg" title="TypeScript" alt="TypeScript" /> </a>                  
-                  <a href="/docs/category/python/" class="nav__icons"> <img src="/icons/py.svg" title="Python" alt="Python" /> </a>                  
-                  <a href="/docs/category/java/" class="nav__icons"> <img src="/icons/java.svg" title="Java" alt="Java" /> </a>                  
+                  <a href="/docs/category/react/" class="nav__icons"> <img src="/icons/jsx.svg" title="React.Js" alt="React" /> </a>
+                  <a href="/docs/category/typescript/" class="nav__icons"> <img src="/icons/ts.svg" title="TypeScript" alt="TypeScript" /> </a>
+                  <a href="/docs/category/python/" class="nav__icons"> <img src="/icons/py.svg" title="Python" alt="Python" /> </a>
+                  <a href="/docs/category/java/" class="nav__icons"> <img src="/icons/java.svg" title="Java" alt="Java" /> </a>
                   <a href="/docs/category/tailwind/" class="nav__icons"> <img src="/icons/tailwind-css.svg" title="Tailwind CSS" alt="Tailwind" /> </a>
-                  <a href="/docs/category/cpp/" class="nav__icons"> <img src="/icons/cpp.svg" title="CPP" alt="CPP" /> </a>      
-                  <a href="/docs/category/NextJs/" class="nav__icons"> <img src="/icons/next-js.svg" title="NextJs" alt="Next" /> </a>          
+                  <a href="/docs/category/cpp/" class="nav__icons"> <img src="/icons/cpp.svg" title="CPP" alt="CPP" /> </a>
+                  <a href="/docs/category/NextJs/" class="nav__icons"> <img src="/icons/next-js.svg" title="NextJs" alt="Next" /> </a>
+                  <a href="/docs/category/MATLAB/" class="nav__icons"> <img src="/icons/matlab.svg" title="MATLAB" alt="MATLAB" /> </a>
+                  <a href="/docs/category/Julia/" class="nav__icons"> <img src="/icons/julia.svg" title="Julia" alt="Julia" /> </a>
                 </div>
               </div>`,
               },
@@ -151,7 +165,7 @@ const config = {
                 value: `<div class="dropdown">
                 <a class="dropbtn" href="/courses/"> Courses&nbsp; </a>
                 <div class="dropdown-content">
-                  <a href="/courses/category/reactjs/" class="nav__icons"> <img src="/icons/jsx.svg" alt="React" /> </a>                  
+                  <a href="/courses/category/reactjs/" class="nav__icons"> <img src="/icons/jsx.svg" alt="React" /> </a>
                 </div>
               </div>`,
               },
@@ -333,6 +347,11 @@ const config = {
                 label: "Cookie Policy",
                 to: "/cookie-policy",
               },
+
+              {
+                label: "Licensing",
+                to: "/License/",
+              },
             ],
           },
           {
@@ -362,22 +381,19 @@ const config = {
               {
                 label: "LinkedIn",
                 href: "https://www.linkedin.com/company/codeharborhub/",
-                icon: 'faLinkedin',
               },
               {
                 label: "YouTube",
                 href: "https://www.youtube.com/",
-                icon: 'faYoutube',
+                icon: "faYoutube",
               },
               {
                 label: "Discord",
                 href: "https://discord.gg/c53FQn3pRv",
-                icon: 'faDiscord',
               },
               {
                 label: "Twitter(X)",
                 href: "https://twitter.com/CodesWithAjay",
-                icon: 'faTwitter',
               },
             ],
           },
