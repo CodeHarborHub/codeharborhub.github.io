@@ -4,7 +4,10 @@ import React, { useState, ChangeEvent, FormEvent } from "react";
 import { motion } from "framer-motion";
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
-
+import { FaYoutube } from "react-icons/fa";
+import { FaDiscord } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 // Interface defining the structure of form values
 interface FormValues {
   fullName: string;
@@ -168,7 +171,20 @@ export default function Contact(): JSX.Element {
                     </div>
                   </motion.div>
                 </div>
+                
+                
               </div>
+              {/* Social Media Icons*/}
+              <motion.div>
+              <h5 className={styles.social_media_heading}>Find Us On</h5>
+                 <div className={styles.social_media_icons} >
+                 
+                  <a href="https://www.linkedin.com/company/codeharborhub/" target="_blank" ><FaLinkedin/></a>
+                  <a href="https://www.youtube.com/" target="_blank" ><FaYoutube/></a>
+                  <a href="https://discord.com/invite/c53FQn3pRv" target="_blank" ><FaDiscord/></a>
+                  <a href="https://x.com/CodesWithAjay?mx=2" target="_blank" ><FaXTwitter/></a>
+                  </div>
+                </motion.div>
             </div>
             {/* Section for the contact form */}
             <motion.div
