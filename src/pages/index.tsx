@@ -1,6 +1,6 @@
 import clsx from "clsx";
-import React from "react";
-import style from "./index.module.css";
+import React, { useState } from "react";
+import style from "./index.module.css"; 
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
@@ -12,13 +12,15 @@ import { motion } from "framer-motion";
 import ResourcesSection from "../components/HomePage/ResourcesSection";
 import ScrollTopToButton from "../components/Buttons/bottom/ScrollTopToButton";
 import ScrollBottomToTop from "../components/Buttons/top/ScrollBottomToTop";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import RateUsPopup from "../components/RateUsPopup/RateUsPopup";
 function TweetsSection() {
+  const [showRateUsPopup, setShowRateUsPopup] = useState(false);
   const tweetColumns = [[], [], []];
   Tweets.filter((tweet) => tweet.showOnHomepage).forEach((tweet, i) =>
     tweetColumns[i % 3].push(tweet)
@@ -69,6 +71,15 @@ function TweetsSection() {
             ))
           )}
         </Swiper>
+        <button
+          className={clsx(style.rateUsButton)}
+          onClick={() => setShowRateUsPopup(true)}
+        >
+          Rate Us
+        </button>
+        {showRateUsPopup && (
+          <RateUsPopup onClose={() => setShowRateUsPopup(false)} />
+        )}
       </div>
     </div>
   );
