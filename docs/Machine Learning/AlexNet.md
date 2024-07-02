@@ -10,7 +10,7 @@ AlexNet consists of 8 layer - 5 convolutional layers and 3 fully connected layer
 It accepts an image of size 227x227x3 (height, width, RGB channels).
 
 ### 1st Convolutional Layer
-It applies 96 filters of size 11x11 with a stride of 4. This layer extracts low-level features such as edges and textures. It outputs a feature map of size 55x55x96.
+It applies 96 filters of size 11x11 with a stride length of 4. This layer extracts low-level features such as edges and textures. It outputs a feature map of size 55x55x96.
 
 **Example:**
 Suppose:
@@ -21,22 +21,22 @@ Suppose:
 Hence, output feature map size = $\dfrac{227-11}{4}+1$ = $\dfrac{216}{4}+1$ = $55$ = 55x55x96
 
 ### 1st Max-pooling Layer
-It performs max-pooling with a 96, 3x3 filters and a stride length of 2. It reduces the spatial dimensions to 27x27x96, retaining the most prominent features while reducing computational load.
+It performs max-pooling with 96, 3x3 filters and a stride length of 2. It reduces the spatial dimensions to 27x27x96, retaining the most prominent features while reducing computational load.
 
 **Example:**
 Suppose:
-- Output feature map size = 55x55x96
+- Input feature map size = 55x55x96
 - Filter size = 3x3
 - Stride = 2
 
 Hence, output feature map size = $\dfrac{55-3}{2}+1$ = $\dfrac{52}{2}+1$ = $27$ = 27x27x96
 
 ### 2nd Convolutional Layer
-It applies 256 filters of size 5x5 with a stride of 1 and padding of 2. This layer extracts more complex patterns and outputs a feature map of size 27x27x256.
+It applies 256 filters of size 5x5 with a stride length of 1 and padding of 2. This layer extracts more complex patterns and outputs a feature map of size 27x27x256.
 
 **Example:**
 Suppose:
-- Output feature map size = 27x27x96
+- Input feature map size = 27x27x96
 - Filter size = 5x5
 - Stride = 1
 - Padding = 2
@@ -48,7 +48,7 @@ It performs max-pooling with 256, 3x3 filters and a stride of 2 and reduces spat
 
 **Example:**
 Suppose:
-- Output feature map size = 27x27x256
+- Input feature map size = 27x27x256
 - Filter size = 3x3
 - Stride = 2
 
@@ -59,7 +59,7 @@ This layer applies 384 filters of size 3x3 with a stride of 1 and padding of 1. 
 
 **Example:**
 Suppose:
-- Output feature map size = 13x13x256
+- Input feature map size = 13x13x256
 - Filter size = 3x3
 - Stride = 1
 - Padding = 1
@@ -71,7 +71,7 @@ It applies 384 filters of size 3x3 with a stride of 1 and padding of 1. It furth
 
 **Example:**
 Suppose:
-- Output feature map size = 13x13x256
+- Input feature map size = 13x13x256
 - Filter size = 3x3
 - Stride = 1
 - Padding = 1
@@ -83,7 +83,7 @@ It applies 256 filters of size 3x3 with a stride of 1 and padding of 1. This is 
 
 **Example:**
 Suppose:
-- Output feature map size = 13x13x384
+- Input feature map size = 13x13x384
 - Filter size = 3x3
 - Stride = 1
 - Padding = 1
@@ -95,7 +95,7 @@ This layer performs max-pooling with 256, 3x3 filter and a stride of 2. It reduc
 
 **Example:**
 Suppose:
-- Output feature map size = 13x13x256
+- Input feature map size = 13x13x256
 - Filter size = 3x3
 - Stride = 2
 
