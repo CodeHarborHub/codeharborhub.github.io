@@ -1,4 +1,3 @@
-```markdown
 ---
 id: second-largest-element
 title: Second Largest Distinct Element
