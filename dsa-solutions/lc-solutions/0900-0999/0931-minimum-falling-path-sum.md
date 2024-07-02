@@ -1,7 +1,7 @@
 ---
 id: minimum-falling-path-sum
 title: Minimum Falling Path Sum
-sidebar_label: 0931-Minimum Falling Path Sum
+sidebar_label: 0931- Minimum Falling Path Sum
 tags:
   - Leet code
 description: "Solution to leetocde 931"
