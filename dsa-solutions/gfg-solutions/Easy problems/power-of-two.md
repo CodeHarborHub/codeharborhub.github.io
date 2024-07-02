@@ -3,6 +3,7 @@ id: power-of-2
 title: Power of 2
 tags: [Easy, Bit Manipulation, GeeksforGeeks, CPP, Python, DSA]
 description: "This tutorial covers the solution to the Power of 2 problem from the GeeksforGeeks website, featuring implementations in Python and C++."
+---
 
 ## Problem Description
 
@@ -56,7 +57,7 @@ A number is a power of 2 if there exists an integer `x` such that `n = 2^x`.
   <TabItem value="Python" label="Python" default>
   <SolutionAuthor name="@YourUsername"/>
 
-  ```py
+  ```python
   class Solution:
       def isPowerofTwo(self, n: int) -> bool:
           if n <= 0:
@@ -76,12 +77,9 @@ A number is a power of 2 if there exists an integer `x` such that `n = 2^x`.
   <SolutionAuthor name="@YourUsername"/>
 
   ```cpp
-  //{ Driver Code Starts
   #include <bits/stdc++.h>
   using namespace std;
 
-  // } Driver Code Ends
-  // User function Template for C++
   class Solution {
   public:
       // Function to check if given number n is a power of two.
@@ -92,8 +90,6 @@ A number is a power of 2 if there exists an integer `x` such that `n = 2^x`.
       }
   };
 
-  //{ Driver Code Starts.
-  // Driver code
   int main() {
       int t;
       cin >> t; // testcases
@@ -109,7 +105,6 @@ A number is a power of 2 if there exists an integer `x` such that `n = 2^x`.
       }
       return 0;
   }
-  // } Driver Code Ends
   ```
 
   </TabItem>
@@ -131,5 +126,5 @@ A number is a power of 2 if there exists an integer `x` such that `n = 2^x`.
 
 ## References
 
--**gfg Problem:** [gfg Problem](https://www.geeksforgeeks.org/problems/power-of-2-1587115620/1)
+- **GeeksforGeeks Problem:** [Power of 2](https://www.geeksforgeeks.org/problems/power-of-2-1587115620/1)
 - **Solution Author:** [arunimad6yuq](https://www.geeksforgeeks.org/user/arunimad6yuq/)
