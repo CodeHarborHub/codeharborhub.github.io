@@ -40,7 +40,7 @@
     "@tsparticles/slim": "^3.4.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "axios": "^1.6.8",
+    "axios": "^1.7.2",
     "clsx": "^2.0.0",
     "docusaurus2-dotenv": "^1.4.0",
     "emailjs-com": "^3.2.0",
@@ -61,11 +61,13 @@
     "react-redux": "^9.1.0",
     "react-simple-code-editor": "^0.13.1",
     "react-window": "^1.8.10",
+    "recharts": "^2.12.7",
     "redux": "^5.0.1",
     "rehype-katex": "^7.0.0",
     "remark-math": "^6.0.0",
     "styled-components": "^6.1.8",
     "swiper": "^11.1.4",
+    "three": "^0.166.0",
     "vanilla-tilt": "^1.8.1"
   },
   "devDependencies": {
