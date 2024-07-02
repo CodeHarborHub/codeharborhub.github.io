@@ -1,13 +1,7 @@
 ---
 id: power-of-2
 title: Power of 2
-tags:
-  - Easy
-  - Bit Manipulation
-  - GeeksforGeeks
-  - CPP
-  - Python
-  - DSA
+tags: [Easy, Bit Manipulation, GeeksforGeeks, CPP, Python, DSA]
 description: "This tutorial covers the solution to the Power of 2 problem from the GeeksforGeeks website, featuring implementations in Python and C++."
 
 ## Problem Description
