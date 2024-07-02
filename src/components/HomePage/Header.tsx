@@ -174,7 +174,7 @@ const HeaderImage = () => {
 
     // Cleanup function to destroy VanillaTilt instance
     return () => {
-      if (imgRef.current && imgRef.current.vanillaTilt) {
+      if (imgRef.current?.vanillaTilt) {
         imgRef.current.vanillaTilt.destroy();
       }
     };
