@@ -6,21 +6,7 @@ tags:
   - Stack
   - Design
   - Queue
-  - 
 description: "This is a solution to the Implement Stack using Queues problem on LeetCode."
----
-
-Here is the GitHub Markdown format for the problem statement and solution:
-
----
-
-id: stack-using-queues
-title: Implement Stack using Queues
-sidebar_label: 0225 Implement Stack using Queues
-tags:
-- Stack
-- Queue
-description: "This gives solution to the problem of implementing a stack using two queues"
 ---
 
 ## Problem
@@ -34,10 +20,10 @@ Implement the `MyStack` class:
 - `int top()` Returns the element on the top of the stack.
 - `boolean empty()` Returns true if the stack is empty, false otherwise.
 
-### Notes:
-
+:::note
 - You must use only standard operations of a queue, which means that only push to back, peek/pop from front, size, and is empty operations are valid.
 - Depending on your language, the queue may not be supported natively. You may simulate a queue using a list or deque (double-ended queue) as long as you use only a queue's standard operations.
+:::
 
 ### Examples
 
@@ -64,18 +50,13 @@ myStack.empty(); // return False
 
 ### Constraints
 
-- \(1 \leq x \leq 9\)
+- $1 \leq x \leq 9$
 - At most 100 calls will be made to `push`, `pop`, `top`, and `empty`.
 - All the calls to `pop` and `top` are valid.
 
-**Follow-up:**
-
-Can you implement the stack using only one queue?
-```
+---
 
 ## Solution
-
-### Approach
 
 ## Intuition
 
@@ -99,13 +80,13 @@ We maintain a single queue, `que`.
 
 - **Time complexity:**
   - **Approach 1 (Using 2 queues):**
-    - Push: \( O(n) \) - Moving all elements from one queue to another.
-    - Pop, Top, Empty: \( O(1) \)
+    - Push: $O(n)$ - Moving all elements from one queue to another.
+    - Pop, Top, Empty: $O(1)$
   - **Approach 2 (Using 1 queue):**
-    - Push: \( O(n) \) - Rotating the queue to bring the newly pushed element to the front.
-    - Pop, Top, Empty: \( O(1) \)
+    - Push: $O(n)$ - Rotating the queue to bring the newly pushed element to the front.
+    - Pop, Top, Empty: $O(1)$
 
-- **Space complexity:** Both approaches have a space complexity of \( O(n) \) to store the elements in the queue(s).
+- **Space complexity:** Both approaches have a space complexity of $O(n)$ to store the elements in the queue(s).
 
 ### Code
 
