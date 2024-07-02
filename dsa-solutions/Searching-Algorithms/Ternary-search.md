@@ -34,8 +34,6 @@ Ternary Search is a divide-and-conquer search algorithm used to find the positio
 - It compares the target value with the elements at the midpoints.
 - Based on the comparison, it reduces the search space to one of the three parts and repeats the process.
 
-<TernarySearchVisualizer />
-
 ## Problem Description
 
 Given a sorted array and a target element, implement the Ternary Search algorithm to find the index of the target element in the array. If the element is not present, return -1.
