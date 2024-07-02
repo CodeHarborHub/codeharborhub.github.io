@@ -151,8 +151,8 @@ hide_table_of_contents: true
 
 <p>
 <a href="https://github.com/CodeHarborHub/codeharborhub"><img src="https://github-readme-stats.vercel.app/api/pin/?username=CodeHarborHub&repo=codeharborhub&theme=react&bg_color=1F222E&title_color=F85D7F&hide_border=true&icon_color=F8D866&º" alt="CodeHarborHub" /></a>
-<a href="https://github.com/Ajay-Dhangar/Ajay-Dhangar.github.io"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Ajay-Dhangar&repo=Ajay-Dhangar.github.io&theme=react&bg_color=1F222E&title_color=F85D7F&hide_border=true&icon_color=F8D866&º" alt="Ajay Dhangar" /></a>    
-<a href="https://github.com/Ajay-Dhangar/web-image-uploader"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Ajay-Dhangar&repo=web-image-uploader&theme=react&bg_color=1F222E&title_color=F85D7F&hide_border=true&icon_color=F8D866&º" alt="Ajay Dhangar" /></a>    
+<a href="https://github.com/Ajay-Dhangar/Ajay-Dhangar.github.io"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Ajay-Dhangar&repo=Ajay-Dhangar.github.io&theme=react&bg_color=1F222E&title_color=F85D7F&hide_border=true&icon_color=F8D866&º" alt="Ajay Dhangar" /></a>
+<a href="https://github.com/Ajay-Dhangar/web-image-uploader"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Ajay-Dhangar&repo=web-image-uploader&theme=react&bg_color=1F222E&title_color=F85D7F&hide_border=true&icon_color=F8D866&º" alt="Ajay Dhangar" /></a>
 </p>
 
 ---
