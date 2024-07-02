@@ -34,7 +34,7 @@ jobs:
             const body = context.payload.comment.body;
             const assignees = body.match(/\/assign(?:\s+@([^\s]+))?/);
             if (assignees) {
-              assignee = assignees[1] || 'Ajay-Dhangar'; // Default assignee if not specified in command
+              assignee = assignees[1] || `${issueCreator}`; // Default assignee if not specified in command
               issueOrPrNumber = context.payload.issue ? context.payload.issue.number : context.payload.pull_request.number;
             }
           }

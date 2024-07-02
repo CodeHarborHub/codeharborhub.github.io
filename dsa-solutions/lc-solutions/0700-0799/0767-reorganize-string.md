@@ -32,10 +32,8 @@ Return any possible rearrangement of `s` or return `""` if not possible.
 
 ### Constraints
 
-```
-- \(1 \leq s.length \leq 500\)
+- $(1 \leq \text{s.length} \leq 500)$
 - `s` consists of lowercase English letters.
-```
 
 ## Algorithm
 
