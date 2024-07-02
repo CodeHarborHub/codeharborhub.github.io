@@ -167,3 +167,28 @@
     width: 100%;
   }
 }
+
+.social_media_icons{
+  color: #816bd1 !important;
+  font-size: 34px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.social_media_icons a{
+  list-style: none;
+  color: #816bd1 !important;
+}
+
+.social_media_heading{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1.5rem auto;
+  line-height: 1.5;
+}
+
+
