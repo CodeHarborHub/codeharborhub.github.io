@@ -368,3 +368,15 @@ th {
 .row .col .card {
   margin-top: 10px;
 }
+
+.yt-lite {
+  border-radius: 8px;
+}
+
+[data-theme='dark'] #__docusaurus_skipToContent_fallback {
+  background: linear-gradient(rgba(15, 23, 42, 0.796), rgba(15, 23, 42, 0.23));
+}
+[data-theme='dark'] .navbar {
+  background: rgba(15, 23, 42, 0.862);
+  border-bottom: 1px solid #4e8da0db;
+}

@@ -22,6 +22,7 @@ import Image from '@theme/IdealImage';
 import LiteYouTubeEmbed from "react-lite-youtube-embed";
 import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 import Author from '@site/src/components/Author';
+import LinearSearchVisualizer from '@site/src/dsa/searching-algorithms/LinearSearchVisualizer';
 
 export default {
   // Re-use the default mapping
@@ -48,5 +49,6 @@ export default {
   Lesson,
   Image,
   LiteYouTubeEmbed,
-  Author
+  Author,
+  LinearSearchVisualizer
 };
