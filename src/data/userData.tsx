@@ -264,12 +264,57 @@ export const Users: User[] = [
   // FlappyBird Game
 
   {
-    title: 'Flappy Bird Game',
+    title: "Flappy Bird Game",
     description:
-      'Flappy Bird Game using HTML, CSS and JavaScript. Play the game and enjoy the fun.',
-    preview: require('./showcase/flappy_game.png'),
-    website: 'https://50-days-50-web-project.vercel.app/Flappy-bird-main/index.html',
-    source: 'https://github.com/dhairyagothi/50_days_50_web_project/tree/Main/public/Flappy-bird-main',
-    tags: ['opensource', 'html', 'css', 'javascript', 'game'], 
+      "Flappy Bird Game using HTML, CSS and JavaScript. Play the game and enjoy the fun.",
+    preview: require("./showcase/flappy_game.png"),
+    website:
+      "https://50-days-50-web-project.vercel.app/Flappy-bird-main/index.html",
+    source:
+      "https://github.com/dhairyagothi/50_days_50_web_project/tree/Main/public/Flappy-bird-main",
+    tags: ["opensource", "html", "css", "javascript", "game"],
   },
+
+  // To Do List App
+
+  {
+    title: "To Do List",
+    description:
+      "A simple To-Do List App using HTML CSS JS with Local Storage. Add your tasks and manage them easily.",
+    preview: require("./showcase/todo-list.png"),
+    website:
+      "https://ajay-dhangar.github.io/to-do-list/",
+    source:
+      "https://github.com/Ajay-Dhangar/to-do-list",
+    tags: ["opensource", "html", "css", "javascript"],
+  },
+
+  // Zacson GYM Template
+
+  {
+    title: "Zacson",
+    description:
+      "Zacson is a modern and responsive web application for GYM and Fitness.",
+    preview: require("./showcase/zacson.jpg"),
+    website:
+      "https://ajay-dhangar.github.io/zacson/",
+    source:
+      "https://github.com/Ajay-Dhangar/zacson",
+    tags: ["opensource", "html", "css", "javascript", "gym", "templates", "scss", "php"],
+  },
+
+  // Activitar GYM Template
+
+  {
+    title: "Activitar",
+    description:
+      "Activitar is a modern and responsive web application designed for GYM and Fitness.",
+    preview: require("./showcase/activitar.png"),
+    website:
+      "https://ajay-dhangar.github.io/activitar",
+    source:
+      "https://github.com/Ajay-Dhangar/activitar",
+    tags: ["opensource", "html", "css", "javascript", "gym", "templates", "scss"],
+  },
+
 ];
