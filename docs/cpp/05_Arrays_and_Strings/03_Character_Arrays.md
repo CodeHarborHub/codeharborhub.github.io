@@ -15,8 +15,6 @@ tags:
 description: In this tutorial, we'll explore character arrays in C++. We'll cover how to declare, initialize, and manipulate character arrays, including techniques for string input and output. By mastering the basics of character arrays, you'll gain a fundamental understanding of handling character-based data in C++, laying a solid foundation for more advanced text processing and manipulation tasks.
 ---
 
-## Character Arrays in C++
-
 Character arrays in C++ are a fundamental way to handle strings and other character-based data. They allow you to store sequences of characters and perform various operations on them. Let's go through the basics of declaring, initializing, and manipulating character arrays.
 
 ### 1. Declaring a Character Array
