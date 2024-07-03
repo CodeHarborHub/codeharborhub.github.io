@@ -31,7 +31,10 @@ export type TagType =
   | "ml"
   | "mdx"
   | "game"
+  | "scss"
+  | "php"
   | "documentation"
+  | "gym"
   | "clone";
 
 export type User = {
@@ -138,6 +141,12 @@ export const Tags: { [type in TagType]: Tag } = {
     color: "#4267b2",
   },
 
+  php: {
+    label: "PHP",
+    description: "",
+    color: "#8892be",
+  },
+
   personal: {
     label: "Personal",
     description: "",
@@ -183,8 +192,18 @@ export const Tags: { [type in TagType]: Tag } = {
     description: "",
     color: "#007acc",
   },
+  gym: {
+    label: "Gym",
+    description: "",
+    color: "#FF5733",
+  },
   mdx: {
     label: "MDX",
+    description: "",
+    color: "#007acc",
+  },
+  scss: {
+    label: "SCSS",
     description: "",
     color: "#007acc",
   },
