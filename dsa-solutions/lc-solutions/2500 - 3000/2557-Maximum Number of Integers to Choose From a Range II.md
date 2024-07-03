@@ -1,5 +1,5 @@
 ---
-id: maximum-number-of-integers-to-choose-from-a-range II
+id: maximum-number-of-integers-to-choose-from-a-range-ii
 title: Maximum Number of Integers to Choose From a Range II
 sidebar_label: 2557 Maximum Number of Integers to Choose From a Range II
 
