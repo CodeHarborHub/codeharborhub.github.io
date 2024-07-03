@@ -36,7 +36,6 @@ Below is a graphical representation of an array with 5 elements:
 
 In the above example, the array `arr` contains 5 elements with values `10`, `20`, `30`, `40`, and `50`. Each element is accessed using its index, starting from `0` to `4`.
 
-
 ## Operations on Arrays
 
 ### 1. Accessing Elements
