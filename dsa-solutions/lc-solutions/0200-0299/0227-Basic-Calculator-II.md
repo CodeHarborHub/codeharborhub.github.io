@@ -37,7 +37,7 @@ Note: You are not allowed to use any built-in function which evaluates strings a
 
 ### Constraints
 
-- \(1 \leq s.length \leq 3 \times 10^5\)
+- $1 \leq s.length \leq 3 \times 10^5$
 - `s` consists of integers and operators ('+', '-', '*', '/') separated by some number of spaces.
 - `s` represents a valid expression.
 - All the integers in the expression are non-negative integers in the range [0, 2^31 - 1].
@@ -206,8 +206,8 @@ class Solution:
 
 ### Complexity Analysis
 
-**Time Complexity:** \(O(N)\)
+**Time Complexity:** $O(N)$
 > **Reason:** The algorithm processes each character of the input string twice. The first pass converts the infix expression to a postfix expression using a stack for operators, and the second pass evaluates the postfix expression. Both passes together result in a linear time complexity relative to the length of the string.
 
-**Space Complexity:** \(O(N)\)
+**Space Complexity:** $O(N)$
 > **Reason:** The algorithm uses additional space for the operator stack during the conversion to postfix notation and the number stack during the evaluation of the postfix expression. Both of these stacks can grow up to the size of the input string, leading to linear space complexity.
