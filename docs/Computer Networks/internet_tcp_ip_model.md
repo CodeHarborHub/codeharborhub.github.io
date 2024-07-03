@@ -1,5 +1,5 @@
 ---
-id: nternet_tcp_ip_model
+id: internet_tcp_ip_model
 title: The Internet and TCP/IP Model
 sidebar_label: The Internet and TCP/IP Model
 sidebar_position: 10
