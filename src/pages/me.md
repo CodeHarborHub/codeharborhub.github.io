@@ -114,3 +114,68 @@ hide_table_of_contents: true
       </div>
   </div>
 </div>
+
+---
+
+<div align="center">
+
+## Connect with me:
+
+<br />
+
+<a href="https://dev.to/ajaydhangar49" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" alt="@ajay-dhangar" height="30" width="40" /></a>
+<a href="https://twitter.com/codeswithajay" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="codeswithajay" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/ajay-dhangar" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="ajay-dhangar" height="30" width="40" /></a>
+<a href="https://stackoverflow.com/users/18530900/ajay-dhangar" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="18530900/ajay-dhangar" height="30" width="40" /></a>
+<a href="https://codesandbox.io/u/Ajay-Dhangar" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codesandbox.svg" alt="@ajay-dhangar" height="30" width="40" /></a>
+<a href="https://kaggle.com/ajaydhangar" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="@ajay-dhangar" height="30" width="40" /></a>
+<a href="https://fb.com/100078316657152" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="100078316657152" height="30" width="40" /></a>
+<a href="https://instagram.com/_ajay.dhangar" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="_ajay.dhangar" height="30" width="40" /></a>
+<a href="https://dribbble.com/ajaydhangar49" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/dribbble.svg" alt="@ajay-dhangar" height="30" width="40" /></a>
+<a href="https://www.behance.net/ajaydhangar49" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg" alt="@ajay-dhangar" height="30" width="40" /></a>
+<a href="https://hashnode.com/@ajaydhangar49" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg" alt="@ajay-dhangar" height="30" width="40" /></a>
+<a href="https://medium.com/@ajaydhangar49" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="@ajay-dhangar" height="30" width="40" /></a>
+<a href="https://youtube.com/@ajay-dhangar?si=Kjz44Te-GyLloWMm" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="@ajay-dhangar" height="30" width="40" /></a>
+<a href="https://www.codechef.com/users/aj_zero_coding" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg" alt="@ajay-dhangar" height="30" width="40" /></a>
+<a href="https://codeforces.com/profile/ajaydhangar49" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg" alt="@ajay-dhangar" height="30" width="40" /></a>
+<a href="https://leetcode.com/u/ajaydhangar49/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="@ajay-dhangar" height="30" width="40" /></a>
+<a href="https://www.hackerearth.com/@ajaydhangar49" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerearth.svg" alt="@ajay-dhangar" height="30" width="40" /></a>
+<a href="https://www.geeksforgeeks.org/user/ajaydhangar49/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg" alt="@ajaydhangar49" height="30" width="40" /></a>
+<a href="https://profiles.topcoder.com/ajaydhangar49" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/topcoder.svg" alt="@ajay-dhangar" height="30" width="40" /></a>
+
+---
+
+## My Projects
+
+<br />
+
+<p>
+<a href="https://github.com/CodeHarborHub/codeharborhub"><img src="https://github-readme-stats.vercel.app/api/pin/?username=CodeHarborHub&repo=codeharborhub&theme=react&bg_color=1F222E&title_color=F85D7F&hide_border=true&icon_color=F8D866&º" alt="CodeHarborHub" /></a>
+<a href="https://github.com/Ajay-Dhangar/Ajay-Dhangar.github.io"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Ajay-Dhangar&repo=Ajay-Dhangar.github.io&theme=react&bg_color=1F222E&title_color=F85D7F&hide_border=true&icon_color=F8D866&º" alt="Ajay Dhangar" /></a>
+<a href="https://github.com/Ajay-Dhangar/web-image-uploader"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Ajay-Dhangar&repo=web-image-uploader&theme=react&bg_color=1F222E&title_color=F85D7F&hide_border=true&icon_color=F8D866&º" alt="Ajay Dhangar" /></a>
+</p>
+
+---
+
+## Github Profile Trophy
+
+<br />
+
+![trophy](https://github-profile-trophy.vercel.app/?username=ajay-dhangar&column=10&theme=matrix)
+
+---
+
+## Profile Status:
+
+<br />
+
+![](https://github-readme-stats.vercel.app/api?username=ajay-dhangar&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage&show_icons=true&theme=transparent)
+![working day](https://github-contribution-stats.vercel.app/api/?username=ajay-dhangar)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ajay-dhangar&langs_count=20&theme=transparent&layout=compact)
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=ajay-dhangar&show_icons=true)
+![profile-summary-cards](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ajay-dhangar)
+
+[![Ajay's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=ajay-dhangar&theme=merko)](https://github.com/ajay-dhangar)
+
+</div>
