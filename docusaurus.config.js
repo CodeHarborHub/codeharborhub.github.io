@@ -398,6 +398,11 @@ const config = {
             ],
           },
         ],
+        logo: {
+          alt: "Powered by CodeHarborHub | Product Hunt",
+          src: "https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=464236&theme=light",
+          href: "https://www.producthunt.com/posts/codeharborhub",
+        },
         copyright: `Copyright © ${new Date().getFullYear()} CodeHarborHub, Made by <a href="https://github.com/Ajay-Dhangar/">Ajay Dhangar</a>`,
       },
       prism: {

@@ -103,7 +103,7 @@ Data structures and algorithms are essential topics in computer science. They pr
 
 ---
 
-<h2>Authors:</h2>
+<h2>Contributors:</h2>
 
 <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
 {['ajay-dhangar'].map(username => (
