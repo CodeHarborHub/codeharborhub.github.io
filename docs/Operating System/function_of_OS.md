@@ -1,7 +1,7 @@
 ---
 id: function-of-operating-system
 title: function-of-operating-system
-sidebar_label: Function-of-operating-system
+sidebar_label: Function of Operating System
 sidebar_position: 7
 tags: [operating_system, create database, commands]
 description: An Operating System acts as a communication bridge (interface) between the user and computer hardware.

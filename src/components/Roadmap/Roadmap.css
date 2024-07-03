@@ -1,0 +1,59 @@
+.roadmap-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.roadmap-container .roadmap-card {
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.roadmap-container .roadmap-card:hover {
+  transform: translateY(-8px);
+}
+
+.roadmap-container .roadmap-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.roadmap-container .roadmap-description {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.roadmap-container .lesson-list {
+  list-style: none;
+  padding: 0;
+}
+
+.roadmap-container .lesson-item {
+  margin-bottom: 15px;
+}
+
+.roadmap-container .lesson-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.roadmap-container .lesson-link:hover {
+  background-color: #f0f0f0b8;
+}
+
+.roadmap-container .lesson-title {
+  font-size: 1rem;
+}
+
+.roadmap-container .lesson-duration {
+  font-size: 0.8rem;
+}

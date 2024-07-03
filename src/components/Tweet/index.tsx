@@ -4,7 +4,6 @@ import clsx from 'clsx';
 
 import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
-
 export interface Props {
   url: string;
   handle: string;
@@ -23,7 +22,7 @@ export default function Tweet({
   githubUsername,
 }: Props): JSX.Element {
   return (
-    <div className={clsx('card', styles.tweet)}>
+    <div className={clsx('card', styles.tweet)} style={{marginTop:"10px"}}>
       <div className="card__header">
         <div className="avatar">
           <img

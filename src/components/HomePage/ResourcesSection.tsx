@@ -1,12 +1,13 @@
-import Link from "@docusaurus/Link";
 import React, { useState } from "react";
-import "./style.css";
+import Link from "@docusaurus/Link";
 import {
   ArrowRightFilled,
   ChevronLeftRegular,
   ChevronRightRegular,
 } from "@fluentui/react-icons";
+import "./style.css";
 
+// Interface defining the structure of a resource
 interface Resource {
   url: string;
   type: string;
@@ -16,6 +17,7 @@ interface Resource {
   duration: string;
 }
 
+// Array containing all available resources
 const ALL_RESOURCES: Resource[] = [
   {
     url: "https://codeharborhub.github.io/docs/",
@@ -55,6 +57,7 @@ const ALL_RESOURCES: Resource[] = [
   },
 ];
 
+// Component to render each individual resource
 function Resource({
   type,
   url,
@@ -86,27 +89,33 @@ function Resource({
   );
 }
 
+// Main component for displaying resources and managing pagination
 export default function ResourcesSection() {
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(1); // State to track current page number
   const [activeType, setActiveType] = useState<
     "all" | "blog" | "tutorial" | "courses" | "dsa"
-  >("all");
+  >("all"); // State to track currently active resource type filter
 
+  // Filter resources based on activeType
   const resources =
     activeType === "all"
       ? ALL_RESOURCES
       : ALL_RESOURCES.filter((r) => r.type === activeType);
 
+  // Determine the current set of resources to display based on pagination
   const currentResources = resources.slice((page - 1) * 3, page * 3);
 
+  // Calculate total number of pages based on the number of resources
   const pages = Math.ceil(resources.length / 3);
 
+  // Function to navigate to the next page of resources
   const nextPage = () => {
     if (page < pages) {
       setPage(page + 1);
     }
   };
 
+  // Function to navigate to the previous page of resources
   const prevPage = () => {
     if (page > 1) {
       setPage(page - 1);
@@ -116,16 +125,19 @@ export default function ResourcesSection() {
   return (
     <section className="resources-section">
       <div className="resources-container">
+        {/* Section header */}
         <div className="resources-header">
           <div>
             <span className="codeharborhub-badge">RESOURCES</span>
             <h2 className="resources-title">Want to know more?</h2>
           </div>
+          {/* Link to view all blogs */}
           <Link to="/blog" className="resources-all-blogs">
             All Blogs <ArrowRightFilled className="arrow-icon" />
           </Link>
         </div>
 
+        {/* Filter buttons for resource types */}
         <div className="resources-filters bg-secondary-700">
           <button
             className={`filter-button ${activeType === "all" ? "active" : ""}`}
@@ -163,6 +175,7 @@ export default function ResourcesSection() {
           </button>
         </div>
 
+        {/* Displaying the current set of resources */}
         <div className="resources-content">
           <div className="resources-grid">
             {currentResources.map((resource, idx) => {
@@ -170,6 +183,7 @@ export default function ResourcesSection() {
             })}
           </div>
 
+          {/* Pagination controls */}
           <div className="pagination">
             <button onClick={prevPage} className="pagination-button">
               <ChevronLeftRegular className="chevron-icon" />
