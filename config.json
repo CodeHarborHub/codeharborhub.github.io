@@ -1,10 +1,10 @@
 {
   "index_name": "ajay-dhangario",
   "start_urls": [
-    "https://ajay-dhangar.github.io/code-harbor-hub/"
+    "https://ajay-dhangar.github.io/"
   ],
   "sitemap_urls": [
-    "https://ajay-dhangar.github.io/code-harbor-hub/sitemap.xml"
+    "https://ajay-dhangar.github.io/sitemap.xml"
   ],
   "sitemap_alternate_links": true,
   "stop_urls": [],

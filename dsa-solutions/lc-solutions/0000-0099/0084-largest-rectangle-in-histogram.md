@@ -1,7 +1,7 @@
 ---
 id: largest-rectangle-in-histogram
 title: Largest Rectangle in Histogram (Leetcode)
-sidebar_label: 0082-LargestRectangleInHistogram
+sidebar_label: 0084-Largest Rectangle In Histogram
 description: Given an array of integers heights representing the histogram's bar height where the width of each bar is 1, return the area of the largest rectangle in the histogram.
 ---
 
@@ -111,7 +111,8 @@ class Solution:
 
 #### Java
 
-```java
+```java 
+
 import java.util.*;
 
 class Solution {
