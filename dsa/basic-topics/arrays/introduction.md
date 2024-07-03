@@ -108,9 +108,3 @@ Arrays are a powerful and efficient way to handle multiple data elements of the 
 
 - [GeeksforGeeks: Arrays](https://www.geeksforgeeks.org/array-data-structure/)
 - [Khan Academy: Intro to Arrays](https://www.khanacademy.org/computing/computer-science/algorithms/intro-to-arrays)
-
-### Interactive Visualization
-
-You can use the following interactive tool to visualize arrays:
-
-<iframe height="400px" width="100%" src="https://visualgo.net/en/array" title="Visualgo Array Visualization"></iframe>
