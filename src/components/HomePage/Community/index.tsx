@@ -23,12 +23,12 @@ export const LandingCommunity: FC<Props> = ({ className }) => {
           "Live projects on CodeHarborHub, demonstrating the power of open-source collaboration.",
       },
       {
-        stat: "32K+",
+        stat: "100+",
         description:
           "Active developers engaged in our vibrant open-source community, collaborating and innovating.",
       },
       {
-        stat: "20K+",
+        stat: "600+",
         description:
           "Active learners in the CodeHarborHub community, continuously expanding their knowledge and skills.",
       },
