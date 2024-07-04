@@ -33,8 +33,6 @@ Skip List Search is an advanced search algorithm that combines elements of linke
 - The top layer is the sparsest, while the bottom layer contains all the elements.
 - Searching starts from the top layer and progresses horizontally and vertically, narrowing down the search range efficiently.
 
-<SkipListVisualizer />
-
 ## Problem Description
 
 Given a skip list and a target element, implement the Skip List Search algorithm to find the position of the target element. If the element is not present, return -1.
