@@ -12,8 +12,7 @@ description: "This tutorial covers the solution to the Wave Array problem from t
 ---
 ## Problem Description
 
-Given a sorted array arr[] of distinct integers, sort the array into a wave-like array in place. In other words, arrange the elements into a sequence such that arr[1] >= arr[2] <= arr[3] >= arr[4] <= arr[5].....
-
+Given a sorted array arr[] of distinct integers, sort the array into a wave-like array in place. In other words, arrange the elements into a sequence such that  `arr[1] >= arr[2] <= arr[3] >= arr[4] <= arr[5].....` 
 If there are multiple solutions, find the lexicographically smallest one.
 
 Note: The given array is sorted in ascending order, and you don't need to return anything to change the original array.
