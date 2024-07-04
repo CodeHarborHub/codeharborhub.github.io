@@ -11,6 +11,7 @@ Welcome to CodeHarborHub! Your gateway to top-notch tech education. **Tired of l
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.codeharborhub.live%2F)](https://www.codeharborhub.live/)
 [![License](https://img.shields.io/github/license/CodeHarborHub/codeharborhub)](https://github.com/CodeHarborHub/codeharborhub/blob/main/LICENSE)
 [![Contributors](https://img.shields.io/github/contributors/CodeHarborHub/codeharborhub)](https://github.com/CodeHarborHub/codeharborhub/graphs/contributors)
+[![slack](https://img.shields.io/badge/slack-CodeHarborHub-brightgreen.svg?logo=slack)](https://join.slack.com/t/codeharborhub/shared_invite/zt-2mana2uz5-oUQqFAnLqoywHjB9fXTGpA)
 
 ## About
 
