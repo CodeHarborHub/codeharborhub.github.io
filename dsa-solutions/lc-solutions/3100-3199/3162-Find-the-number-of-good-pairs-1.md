@@ -116,7 +116,7 @@ class Solution:
 
 ```
 </TabItem>
-
+</Tabs>
 
 ## References
 
