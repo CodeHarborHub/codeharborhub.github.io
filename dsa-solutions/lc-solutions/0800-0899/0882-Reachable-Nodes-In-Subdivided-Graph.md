@@ -46,7 +46,7 @@ The nodes that are reachable are highlighted in yellow.
 
 
 ### Approach
-Go with normal dijkstra algorithm with the above modified graph but with extra condition that we update the distance array if distance of source node to parent node + edge weight <= maxMoves. We also maintain a parent map to store the path of arrival to the nodes.
+Go with normal dijkstra algorithm with the above modified graph but with extra condition that we update the distance array if distance of source node to parent node + edge weight &lt;= maxMoves. We also maintain a parent map to store the path of arrival to the nodes.
 
 And at last we iterate through every edge(u,v) with following 3 conditions:
 
