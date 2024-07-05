@@ -1,3 +1,4 @@
+---
 id: Fractal-Search-Algorithm
 title: Fractal Search Algorithm
 sidebar_label: Fractal Search Algorithm
