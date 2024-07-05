@@ -14,6 +14,7 @@ import ScrollTopToButton from "../components/Buttons/bottom/ScrollTopToButton";
 import ScrollBottomToTop from "../components/Buttons/top/ScrollBottomToTop";
 import { LandingCommunity } from "../components/HomePage/Community";
 import { CommunityStatsProvider } from "../context/CommunityStats";
+import Accordionfaq from "../pages/Faq/Accordionfaq";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -131,6 +132,7 @@ export default function Home() {
 
         <ScrollTopToButton />
         <ScrollBottomToTop />
+      <Accordionfaq/>
       </main>
     </Layout>
   );
