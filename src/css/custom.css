@@ -356,7 +356,7 @@ th {
 
 .dropdown-content {
   position: relative;
-  min-width: 200px;
+  min-width: 180px;
 }
 
 .dropdown-content a:hover {
