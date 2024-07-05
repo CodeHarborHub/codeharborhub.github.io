@@ -153,5 +153,5 @@ arr[] = {"hello", "world"}
 
 ## References
 
-- **GeeksforGeeks Problem:** [BFS of Graph](https://www.geeksforgeeks.org/problems/bfs-traversal-of-graph/1?page=1&difficulty=Easy&sortBy=submissions)
+- **GeeksforGeeks Problem:** [Longest Common Prefix in an array](https://www.geeksforgeeks.org/problems/longest-common-prefix-in-an-array5129/1?page=2&difficulty=Easy&sortBy=submissions)
 - **Solution Author:** [arunimad6yuq](https://www.geeksforgeeks.org/user/arunimad6yuq/)
