@@ -198,5 +198,5 @@ The result is a reversed list: `5 4 3 2 1`.
 
 ## References
 
-- **GeeksforGeeks Problem:** [BFS of Graph](https://www.geeksforgeeks.org/problems/bfs-traversal-of-graph/1?page=1&difficulty=Easy&sortBy=submissions)
+- **GeeksforGeeks Problem:** [Reverse a Linked List](https://www.geeksforgeeks.org/problems/reverse-a-linked-list/1)
 - **Solution Author:** [arunimad6yuq](https://www.geeksforgeeks.org/user/arunimad6yuq/)
