@@ -5,14 +5,6 @@ import VanillaTilt from "vanilla-tilt"; // Importing VanillaTilt for image tilt 
 import { motion } from "framer-motion"; // Importing motion components from Framer Motion
 import ParticlesComponent from "../Particles/Particle"; // Importing custom ParticlesComponent
 
-document.addEventListener("DOMContentLoaded", () => {
-  for (let i = 1; i <= 100; i++) {
-      const li = document.createElement('li');
-      li.innerHTML = `<img src="" alt="img" width="90" height="90"><span>${i}</span>`;
-      document.querySelector('ul')?.appendChild(li);
-  }
-});
-
 interface ScrollProgressSettings {
   position: 'left' | 'right' | 'top' | 'bottom';
   thick: number;
@@ -21,9 +13,9 @@ interface ScrollProgressSettings {
 
 function ScrollProgress(settings?: ScrollProgressSettings): void {
   const defaultSettings: ScrollProgressSettings = {
-      position: 'top',
-      thick: 70,
-      color: 'var(--ifm-color-primary)'
+    position: 'top',
+    thick: 70,
+    color: 'var(--ifm-color-primary)',
   };
 
   const config = { ...defaultSettings, ...settings };
@@ -33,46 +25,48 @@ function ScrollProgress(settings?: ScrollProgressSettings): void {
   progressBar.style[config.position] = '0';
 
   if (config.position === 'top' || config.position === 'bottom') {
-      progressBar.style.left = '0';
-      progressBar.style.width = '100%';
-      progressBar.style.height = `${config.thick}px`;
+    progressBar.style.left = '0';
+    progressBar.style.width = '100%';
+    progressBar.style.height = `${config.thick}px`;
   } else {
-      progressBar.style.top = '0';
-      progressBar.style.width = `${config.thick}px`;
-      progressBar.style.height = '100%';
+    progressBar.style.top = '0';
+    progressBar.style.width = `${config.thick}px`;
+    progressBar.style.height = '100%';
   }
 
   progressBar.style.backgroundColor = config.color;
   document.body.appendChild(progressBar);
 
   window.addEventListener('scroll', () => {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      const scrollPercent = (scrollTop / scrollHeight) * 100;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrollPercent = (scrollTop / scrollHeight) * 100;
 
-      if (config.position === 'top' || config.position === 'bottom') {
-          progressBar.style.width = `${scrollPercent}%`;
-      } else {
-          progressBar.style.height = `${scrollPercent}%`;
-      }
+    if (config.position === 'top' || config.position === 'bottom') {
+      progressBar.style.width = `${scrollPercent}%`;
+    } else {
+      progressBar.style.height = `${scrollPercent}%`;
+    }
   });
 }
 
-const setting: ScrollProgressSettings = {
-  position: 'top',
-  thick: 70,
-  color: 'var(--ifm-color-primary)'
-};
-
-ScrollProgress(setting);
-
-
-/**
- * Renders the header content section of the application.
- * Includes a title, description, and buttons for navigation.
- * @returns JSX element representing the header content.
- */
 const HeaderContent = () => {
+  useEffect(() => {
+    ScrollProgress({
+      position: 'top',
+      thick: 70,
+      color: 'var(--ifm-color-primary)',
+    });
+
+    const ulElement = document.querySelector('ul');
+    if (ulElement) {
+      for (let i = 1; i <= 100; i++) {
+        const li = document.createElement('li');
+        li.innerHTML = `<img src="" alt="img" width="90" height="90"><span>${i}</span>`;
+        ulElement.appendChild(li);
+      }
+    }
+  }, []);
   return (
     <div className="chh__header-content">
       {/* Title with animated text gradient and particles effect */}
