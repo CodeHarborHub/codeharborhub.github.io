@@ -50,6 +50,12 @@
     box-shadow: 0 0 1px var(--ifm-color-primary);
 }
 
+.landing-community .landing-community__content .landing-community__stats .landing-community__stat-item:hover {
+    cursor: pointer;
+    transform: scale(1.01); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+}
+
 .landing-community .landing-community__content .landing-community__stats .landing-community__stat-item .landing-community__stat-value {
     font-size: 3.5rem;
     font-weight: 600;
@@ -69,6 +75,12 @@
     border-radius: 1rem;
     background-color: var(--ifm-color-background);
     box-shadow: 0 0 1px var(--ifm-color-primary);
+}
+
+.landing-community .landing-community__content .landing-community__info:hover {
+    cursor: pointer;
+    transform: scale(1.01); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
 }
 
 .landing-community .landing-community__content .landing-community__info .landing-community__image {
