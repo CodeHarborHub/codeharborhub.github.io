@@ -54,10 +54,10 @@ If node u is parent of v or vice versa then we can visit all the subnodes betwee
 If either of the node(u,v) cannot be visited from the source node (i.e. 0) then no of nodes that can be visited between u and v is maxMoves - distance of the node that can be visited from source node
 If both nodes u,v can be visited from the source node(0) then ans is min(maxMoves - dist[i[0]] + maxMoves - dist[i[1]],i[2]);
 
-**Time complexity:** O(ElogV) --> dijkstra
+**Time complexity:** O(ElogV) --&gt; dijkstra
 
 **Space complexity:** 
-O(V) --> to store the distance array
+O(V) --&gt; to store the distance array
 
 
 ### Code implementation
