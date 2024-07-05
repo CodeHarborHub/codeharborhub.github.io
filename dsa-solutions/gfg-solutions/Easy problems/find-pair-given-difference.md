@@ -172,11 +172,11 @@ x = 8
 
 ## Time Complexity
 
-* The time complexity is \(O(n)\) where \(n\) is the number of elements in the array.
+* The time complexity is $O(n)$ where $(n)$ is the number of elements in the array.
 
 ## Space Complexity
 
-* The auxiliary space complexity is \(O(n)\) as we use a set to store the elements.
+* The auxiliary space complexity is $O(n)$ as we use a set to store the elements.
 
 ## References
 
