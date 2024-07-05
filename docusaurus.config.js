@@ -136,8 +136,8 @@ const config = {
             items: [
               {
                 type: "html",
-                value: `<div class="dropdown">
-                <a class="dropbtn" href="/docs/"> Tutorials </a>
+                value: `<div class="dropdown_grid">
+                <a class="dropbtn" href="/docs/">Tutorials</a>
                 <div class="dropdown-content">
                   <a href="/docs/category/html/" class="nav__icons"> <img src="/icons/html-5.svg" title="HTML5" alt="HTML" /> </a>
                   <a href="/docs/" class="nav__icons"> <img src="/icons/css.svg" title="CSS" alt="CSS" /> </a>
@@ -162,8 +162,8 @@ const config = {
 
               {
                 type: "html",
-                value: `<div class="dropdown">
-                <a class="dropbtn" href="/courses/"> Courses&nbsp; </a>
+                value: `<div class="dropdown_grid">
+                <a class="dropbtn" href="/courses/"> Courses </a>
                 <div class="dropdown-content">
                   <a href="/courses/category/reactjs/" class="nav__icons"> <img src="/icons/jsx.svg" alt="React" /> </a>
                 </div>
@@ -175,20 +175,10 @@ const config = {
                 value: '<hr style="margin: 0.3rem 0;">',
               },
 
-              // {
-              //   to: "/web-dev/",
-              //   html: '<span class="nav-emoji">🌐</span> Web Dev',
-              // },
-
               {
                 type: "html",
-                value: '<hr style="margin: 0.3rem 0;">',
-              },
-
-              {
-                type: "html",
-                value: `<div class="dropdown ">
-                <a class="dropbtn" href="/dsa/"> DSA&nbsp; </a>
+                value: `<div class="dropdown_grid">
+                <a class="dropbtn" href="/dsa/"> DSA </a>
                 <div class="dropdown-content dsa-content ">
                   <a href="/dsa-problems/" class="nav__icons"> 🧩Problems </a> <br />
                   <a href="/dsa-solutions/" class="nav__icons  "> 💡Solutions </a>
@@ -230,6 +220,10 @@ const config = {
               {
                 html: '<span class="nav-emoji"> 📊</span> Quiz',
                 to: "https://quiz-app-ajay-dhangar.vercel.app/",
+              },              
+              {
+                label: "🧑‍💻 Live Editor",
+                to: "/LiveEditor/",
               },
               {
                 html: '<span class="nav-emoji"> 📺</span> Broadcast',
@@ -240,13 +234,11 @@ const config = {
                 to: "/docs/tags/",
                 activeBaseRegex: "/docs/tags/",
               },
-
               {
                 label: "🏷️ Courses Tags 🎓",
                 to: "/courses/tags/",
                 activeBaseRegex: "/courses/tags/",
               },
-
               {
                 label: "🏷️ DSA Tags 🧠",
                 to: "/dsa/tags/",
