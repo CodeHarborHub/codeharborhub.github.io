@@ -14,7 +14,7 @@ import ScrollTopToButton from "../components/Buttons/bottom/ScrollTopToButton";
 import ScrollBottomToTop from "../components/Buttons/top/ScrollBottomToTop";
 import { LandingCommunity } from "../components/HomePage/Community";
 import { CommunityStatsProvider } from "../context/CommunityStats";
-import FaqPage from "./Faq/FaqPage";
+import Faq from "./Faq";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -132,7 +132,7 @@ export default function Home() {
 
         <ScrollTopToButton />
         <ScrollBottomToTop />
-      <FaqPage/>
+      <Faq />
       </main>
     </Layout>
   );
