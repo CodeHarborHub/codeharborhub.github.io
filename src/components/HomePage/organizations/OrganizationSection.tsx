@@ -66,7 +66,7 @@ const OrganizationSection: React.FC = () => {
     <section id="organization">
       <h2>Our GitHub Organizations</h2>
       <div className="organization-container">
-        {organizations.map((org, index) => (
+        {organizations.map((org) => (
           <div className="organization-card" key={org.id}>
             <a
               href={org.link}
