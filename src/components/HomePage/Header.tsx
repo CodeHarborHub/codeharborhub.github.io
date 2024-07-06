@@ -68,7 +68,7 @@ const HeaderContent = () => {
             Get Started
           </Link>
         </motion.button>
-        
+
         {/* Button with animated entrance */}
         <motion.button
           initial={{ opacity: 0, x: 10 }} // Initial animation properties

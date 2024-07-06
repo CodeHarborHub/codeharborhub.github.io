@@ -91,7 +91,7 @@ const config = {
         {
           name: "keywords",
           content:
-            "CodeHarborHub, CodeHarbor, CodeHarborHub, CodeHarborHub Blog, CodeHarborHub Community, CodeHarborHub Courses, CodeHarborHub DSA, CodeHarborHub Web Dev, CodeHarborHub Tutorials, CodeHarborHub Showcase, CodeHarborHub Donate, CodeHarborHub Blog, CodeHarborHub Team, CodeHarborHub About, CodeHarborHub Contact, CodeHarborHub Careers, CodeHarborHub Terms, CodeHarborHub Privacy, CodeHarborHub Cookie, CodeHarborHub Code of Conduct, CodeHarborHub Quiz, CodeHarborHub Broadcast, CodeHarborHub Tags, CodeHarborHub Courses Tags, CodeHarborHub DSA Tags, CodeHarborHub Web Dev Tags, CodeHarborHub Product, CodeHarborHub LinkedIn, CodeHarborHub YouTube, CodeHarborHub Discord, CodeHarborHub Twitter, CodeHarborHub GitHub, CodeHarborHub Products, CodeHarborHub Web Dev, CodeHarborHub DSA, CodeHarborHub Courses, CodeHarborHub Tutorials, CodeHarborHub Showcase, CodeHarborHub Donate, CodeHarborHub Blog, CodeHarborHub Team, CodeHarborHub About, CodeHarborHub Contact, CodeHarborHub Careers, CodeHarborHub Terms, CodeHarborHub Privacy, CodeHarborHub Cookie, CodeHarborHub Code of Conduct, CodeHarborHub Quiz, CodeHarborHub Broadcast, CodeHarborHub Tags, CodeHarborHub Courses Tags, CodeHarborHub DSA Tags, CodeHarborHub Web Dev Tags, CodeHarborHub Product, CodeHarborHub LinkedIn, CodeHarborHub YouTube, CodeHarborHub Discord, CodeHarborHub Twitter, CodeHarborHub GitHub, CodeHarborHub Products, CodeHarborHub Web Dev, CodeHarborHub DSA, CodeHarborHub Courses, CodeHarborHub Tutorials, CodeHarborHub Showcase, CodeHarborHub Donate, CodeHarborHub Blog, CodeHarborHub Team, CodeHarborHub About, CodeHarborHub Contact, CodeHarborHub Careers, CodeHarborHub Terms, CodeHarborHub Privacy, CodeHarborHub Cookie, CodeHarborHub Code of Conduct, CodeHarborHub Quiz, CodeHarborHub Broadcast, CodeHarborHub Tags, CodeHarborHub, leetcode, codeforces, hackerrank, geeksforgeeks, interviewbit, educative, udemy, coursera, udacity, khanacademy, codecademy, w3schools, tutorialspoint, javatpoint, geeksforgeeks, stackoverflow, github, gitlab, bitbucket, codepen, jsfiddle, repl.it, codesandbox, stackblitz, gfg, GeeksForGeeks, tech",
+            "CodeHarborHub, Docs, Tutorials, Courses, DSA, Problems, Solutions, Showcase, Community, Blog, Web Dev, Live Editor, Quiz, Tags, Donate, Careers, Team, GitHub, Products, LinkedIn, YouTube, Discord, Twitter, Privacy Policy, Terms of Service, Code of Conduct, Cookie Policy, Licensing, Web Development, React, JavaScript, Python, Java, Tailwind CSS, CPP, NextJs, MATLAB, Julia, HTML, CSS, TypeScript, DSA, Data Structures, Algorithms, Competitive Programming",
         },
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:site", content: "@CodesWithAjay" },
@@ -112,7 +112,6 @@ const config = {
           content: "https://codeharborhub.github.io/img/nav-logo.jpg",
         },
         { property: "og:url", content: "https://codeharborhub.github.io" },
-        { name: "robots", content: "index, follow" },
       ],
 
       algolia: {
@@ -136,8 +135,8 @@ const config = {
             items: [
               {
                 type: "html",
-                value: `<div class="dropdown">
-                <a class="dropbtn" href="/docs/"> Tutorials </a>
+                value: `<div class="dropdown_grid">
+                <a class="dropbtn" href="/docs/">Tutorials</a>
                 <div class="dropdown-content">
                   <a href="/docs/category/html/" class="nav__icons"> <img src="/icons/html-5.svg" title="HTML5" alt="HTML" /> </a>
                   <a href="/docs/" class="nav__icons"> <img src="/icons/css.svg" title="CSS" alt="CSS" /> </a>
@@ -162,8 +161,8 @@ const config = {
 
               {
                 type: "html",
-                value: `<div class="dropdown">
-                <a class="dropbtn" href="/courses/"> Courses&nbsp; </a>
+                value: `<div class="dropdown_grid">
+                <a class="dropbtn" href="/courses/"> Courses </a>
                 <div class="dropdown-content">
                   <a href="/courses/category/reactjs/" class="nav__icons"> <img src="/icons/jsx.svg" alt="React" /> </a>
                 </div>
@@ -175,20 +174,10 @@ const config = {
                 value: '<hr style="margin: 0.3rem 0;">',
               },
 
-              // {
-              //   to: "/web-dev/",
-              //   html: '<span class="nav-emoji">🌐</span> Web Dev',
-              // },
-
               {
                 type: "html",
-                value: '<hr style="margin: 0.3rem 0;">',
-              },
-
-              {
-                type: "html",
-                value: `<div class="dropdown ">
-                <a class="dropbtn" href="/dsa/"> DSA&nbsp; </a>
+                value: `<div class="dropdown_grid">
+                <a class="dropbtn" href="/dsa/"> DSA </a>
                 <div class="dropdown-content dsa-content ">
                   <a href="/dsa-problems/" class="nav__icons"> 🧩Problems </a> <br />
                   <a href="/dsa-solutions/" class="nav__icons  "> 💡Solutions </a>
@@ -230,6 +219,10 @@ const config = {
               {
                 html: '<span class="nav-emoji"> 📊</span> Quiz',
                 to: "https://quiz-app-ajay-dhangar.vercel.app/",
+              },              
+              {
+                label: "🧑‍💻 Live Editor",
+                to: "/LiveEditor/",
               },
               {
                 html: '<span class="nav-emoji"> 📺</span> Broadcast',
@@ -240,13 +233,11 @@ const config = {
                 to: "/docs/tags/",
                 activeBaseRegex: "/docs/tags/",
               },
-
               {
                 label: "🏷️ Courses Tags 🎓",
                 to: "/courses/tags/",
                 activeBaseRegex: "/courses/tags/",
               },
-
               {
                 label: "🏷️ DSA Tags 🧠",
                 to: "/dsa/tags/",
@@ -349,7 +340,7 @@ const config = {
               },
 
               {
-                label: "Licensing",
+                label: "License",
                 to: "/License/",
               },
             ],
