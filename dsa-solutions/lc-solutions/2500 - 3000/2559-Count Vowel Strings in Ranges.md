@@ -1,5 +1,5 @@
 ---
-id: Count Vowel Strings in Ranges
+id: count-vowel-strings-in-ranges
 title: Count Vowel Strings in Ranges
 sidebar_label: 2559 Count Vowel Strings in Ranges
 tags:
