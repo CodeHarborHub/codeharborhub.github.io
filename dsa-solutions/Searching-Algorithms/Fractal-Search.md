@@ -32,7 +32,6 @@ The Fractal Search Algorithm (FSA) is an advanced search algorithm inspired by t
 - It searches each subspace individually, combining results to identify the target element.
 - This approach reduces the search space significantly, improving efficiency.
 
-<FractalSearchVisualizer />
 
 ## Problem Description
 
