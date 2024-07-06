@@ -1,11 +1,7 @@
-Sure, here's the revised markdown for the "Power of Three" problem on LeetCode without the LeetCode profile link:
-
 ---
-
 id: power-of-three
 title: Power of Three (LeetCode)
 sidebar_label: 0326-PowerOfThree
-
 ---
 
 ## Problem Description
