@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./FaqPage.css";
-
+import { FiChevronDown } from 'react-icons/fi';
 const faqData = [
   {
     question: "What features does Code Harbor Hub offer?",
@@ -49,7 +49,7 @@ const FaqPage: React.FC = () => {
           <div className="faq-question" onClick={() => toggleAccordion(index)}>
             {faq.question}
             <span className={`icon ${activeIndex === index ? "rotate" : ""}`}>
-              ⌄
+              <FiChevronDown />
             </span>
           </div>
           <div className={`faq-answer ${activeIndex === index ? "show" : ""}`}>
