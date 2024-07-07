@@ -22,6 +22,7 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import RateUsPopup from "../components/RateUsPopup/RateUsPopup";
+import OrganizationSection from "../components/HomePage/organizations/OrganizationSection";
 function TweetsSection() {
   const [showRateUsPopup, setShowRateUsPopup] = useState(false);
   const tweetColumns = [[], [], []];
@@ -133,6 +134,7 @@ export default function Home() {
         <ScrollTopToButton />
         <ScrollBottomToTop />
       <Faq />
+      <OrganizationSection />
       </main>
     </Layout>
   );
