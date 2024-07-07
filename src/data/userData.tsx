@@ -317,4 +317,17 @@ export const Users: User[] = [
     tags: ["opensource", "html", "css", "javascript", "gym", "templates", "scss"],
   },
 
+    // Othello Game
+
+    {
+      title: "Othello Game",
+      description:
+        "Othello Game using HTML, CSS and JavaScript. Play the game and enjoy the fun.",
+      preview: require("./showcase/Othello.png"),
+      website:
+        "https://asmitamishra24.github.io/Othello/index.html",
+      source:
+        "https://github.com/AsmitaMishra24/Othello",
+      tags: ["opensource", "html", "css", "javascript", "game"],
+    },
 ];
