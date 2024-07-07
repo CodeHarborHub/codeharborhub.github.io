@@ -1,7 +1,7 @@
 ---
-id: single-number-ii
+id: single-number-II
 title: Single Number II
-sidebar_label: 0136 Single Number II
+sidebar_label: 0137 Single Number II
 tags:
   - Java
   - Python

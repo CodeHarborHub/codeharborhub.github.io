@@ -1,0 +1,70 @@
+#organization {
+    padding: 50px;
+}
+
+#organization h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#organization .organization-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr); /* Default to 1 column */
+}
+
+#organization .organization-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+#organization .organization-card:hover {
+    transform: scale(1.05);
+}
+
+#organization .organization-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+#organization .organization-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#organization .organization-card p {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+#organization .organization-card a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+#organization .organization-card a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive layout */
+@media (min-width: 600px) {
+    #organization .organization-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+}
+
+@media (min-width: 900px) {
+    .organization-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
+    }
+}
