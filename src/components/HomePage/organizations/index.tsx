@@ -1,5 +1,5 @@
 import React from "react";
-import "./OrganizationSection.css";
+import "./style.css";
 
 interface Organization {
   id: number;
@@ -8,7 +8,7 @@ interface Organization {
   description: string;
   link: string;
 }
-const organizations: Organization[] = [
+const Orgs: Organization[] = [
   {
     id: 1,
     logo: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000",
@@ -63,7 +63,7 @@ const Organizations: React.FC = () => {
   return (
     <section id="organization">
       <div className="organization-container">
-        {organizations.map((org) => (
+        {Orgs.map((org) => (
           <div className="organization-card" key={org.id}>
             <a
               href={org.link}
