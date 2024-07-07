@@ -21,10 +21,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import RateUsPopup from "../components/RateUsPopup/RateUsPopup";
-import OrganizationSection from "../components/HomePage/organizations/OrganizationSection";
+import Organizations from "../components/HomePage/Organizations";
 function TweetsSection() {
-  const [showRateUsPopup, setShowRateUsPopup] = useState(false);
   const tweetColumns = [[], [], []];
   Tweets.filter((tweet) => tweet.showOnHomepage).forEach((tweet, i) =>
     tweetColumns[i % 3].push(tweet)
@@ -75,15 +73,6 @@ function TweetsSection() {
             ))
           )}
         </Swiper>
-        <button
-          className={clsx(style.rateUsButton)}
-          onClick={() => setShowRateUsPopup(true)}
-        >
-          Rate Us
-        </button>
-        {showRateUsPopup && (
-          <RateUsPopup onClose={() => setShowRateUsPopup(false)} />
-        )}
       </div>
     </div>
   );
@@ -125,16 +114,33 @@ export default function Home() {
 
         <CommunityStatsProvider>
           <LandingCommunity className="codeharborhub" />
-        </CommunityStatsProvider>
+        </CommunityStatsProvider>        
+
+        <hr className={style.home__hr} />
+
+        <div className={style.home__divider}>
+          <Heading as="h2" className={clsx("text--center")}>
+            Our GitHub Organizations
+          </Heading>
+        </div>
+        <Organizations />
 
         <hr className={style.home__hr} />
 
         <TweetsSection />
 
+        <hr className={style.home__hr} />
+
+        <div className={style.home__divider}>
+          <Heading as="h2" className={clsx("text--center")}>
+            Frequently Asked Questions
+          </Heading>
+        </div>
+        
+        <Faq />
+
         <ScrollTopToButton />
         <ScrollBottomToTop />
-      <Faq />
-      <OrganizationSection />
       </main>
     </Layout>
   );
