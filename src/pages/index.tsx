@@ -16,13 +16,11 @@ import { LandingCommunity } from "../components/HomePage/Community";
 import { CommunityStatsProvider } from "../context/CommunityStats";
 import Faq from "./Faq";
 import Organizations from "../components/HomePage/Organizations";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import Organizations from "../components/HomePage/Organizations";
 
 function TweetsSection() {
   const tweetColumns = [[], [], []];
