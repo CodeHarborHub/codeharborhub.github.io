@@ -13,7 +13,7 @@ description: "This is a solution to the Gas station problem on LeetCode."
 
 There are n gas stations along a circular route, where the amount of gas at the ith station is gas[i].
 
-You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from the ith station to its next (i + 1)th station. You begin the journey with an empty tank at one of the gas stations.
+You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from the ith station to its next $(i + 1)^{th}$ station. You begin the journey with an empty tank at one of the gas stations.
 
 Given two integer arrays gas and cost, return the starting gas station's index if you can travel around the circuit once in the clockwise direction, otherwise return -1. If there exists a solution, it is guaranteed to be unique
 
@@ -49,9 +49,10 @@ Therefore, you can't travel around the circuit once no matter where you start.
 
 ### Constraints:
 
-- `n == gas.length == cost.length`
-- `1 <= n <= 105`
-- `0 <= gas[i], cost[i] <= 104`
+
+- $n == \text{gas.length} == \text{cost.length}$
+- $1 \leq \text{n} \leq 105$
+- $0 \leq \text{gas[i], cost[i]} \leq 104$
 ---
 
 ## Approach to Solve the Gas Station Problem
@@ -150,8 +151,8 @@ class Solution:
 
 ### Complexity
 
-- **Time Complexity:** O(n) - A single pass through the gas stations.
-- **Space Complexity:** O(1) - Constant space usage.
+- **Time Complexity:** $O(n)$ - A single pass through the gas stations.
+- **Space Complexity:** $O(1)$ - Constant space usage.
 
 ### Summary
 
