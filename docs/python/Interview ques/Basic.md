@@ -428,9 +428,7 @@ description: In this tutorial, you'll overview some basic-level interview questi
       ```
 
 37. **What is a lambda function in Python? Provide an example.**
-    - **
-
-Answer:** A lambda function is an anonymous function defined with the `lambda` keyword.
+    - **Answer:** A lambda function is an anonymous function defined with the `lambda` keyword.
       ```python
       square = lambda x: x * x
       print(square(5))  # Output: 25
