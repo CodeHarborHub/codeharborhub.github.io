@@ -1,27 +1,19 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 #organization {
     padding: 50px;
-    background-color: #f9f9f9;
 }
 
-h2 {
+#organization h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.organization-container {
+#organization .organization-container {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(1, 1fr); /* Default to 1 column */
 }
 
-.organization-card {
+#organization .organization-card {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -31,42 +23,42 @@ h2 {
     transition: transform 0.2s;
 }
 
-.organization-card:hover {
+#organization .organization-card:hover {
     transform: scale(1.05);
 }
 
-.organization-card img {
+#organization .organization-card img {
     width: 100px;
     height: 100px;
     object-fit: contain;
     margin-bottom: 10px;
 }
 
-.organization-card h3 {
+#organization .organization-card h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
 }
 
-.organization-card p {
+#organization .organization-card p {
     font-size: 0.9em;
     margin-bottom: 20px;
     width: 90%;
     margin: auto;
 }
 
-.organization-card a {
+#organization .organization-card a {
     text-decoration: none;
     color: #007bff;
     font-weight: bold;
 }
 
-.organization-card a:hover {
+#organization .organization-card a:hover {
     text-decoration: underline;
 }
 
 /* Responsive layout */
 @media (min-width: 600px) {
-    .organization-container {
+    #organization .organization-container {
         grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
     }
 }
