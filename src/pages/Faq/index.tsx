@@ -43,7 +43,6 @@ const FaqPage: React.FC = () => {
 
   return (
     <div className="faq-container">
-      <h2>Frequently Asked Questions</h2>
       {faqData.map((faq, index) => (
         <div key={index} className="faq-item">
           <div className="faq-question" onClick={() => toggleAccordion(index)}>
