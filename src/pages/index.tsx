@@ -15,7 +15,7 @@ import ScrollBottomToTop from "../components/Buttons/top/ScrollBottomToTop";
 import { LandingCommunity } from "../components/HomePage/Community";
 import { CommunityStatsProvider } from "../context/CommunityStats";
 import Faq from "./Faq";
-import Organizations from "../components/HomePage/Organizations";
+import Organizations from "../components/HomePage/organizations";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
