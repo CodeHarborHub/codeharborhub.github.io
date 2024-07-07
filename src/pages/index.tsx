@@ -114,7 +114,7 @@ export default function Home() {
 
         <CommunityStatsProvider>
           <LandingCommunity className="codeharborhub" />
-        </CommunityStatsProvider>        
+        </CommunityStatsProvider>
 
         <hr className={style.home__hr} />
 
@@ -136,7 +136,7 @@ export default function Home() {
             Frequently Asked Questions
           </Heading>
         </div>
-        
+
         <Faq />
 
         <ScrollTopToButton />
