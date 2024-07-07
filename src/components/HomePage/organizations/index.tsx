@@ -59,7 +59,7 @@ const organizations: Organization[] = [
     link: "#",
   },
 ];
-const OrganizationSection: React.FC = () => {
+const Organizations: React.FC = () => {
   return (
     <section id="organization">
       <div className="organization-container">
@@ -81,4 +81,4 @@ const OrganizationSection: React.FC = () => {
   );
 };
 
-export default OrganizationSection;
+export default Organizations;
