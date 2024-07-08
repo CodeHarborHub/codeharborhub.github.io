@@ -1,6 +1,6 @@
 ---
-id : create-a-new-column
-title : Create a New column
+id: create-a-new-column
+title: Create a New column
 sidebar_label: 2881 - Create a new column Leetcode
 tags:
   - LeetCode
@@ -63,12 +63,13 @@ I will use the pandas library to solve this problem. I will create a new column 
     ```Python
   import pandas as pd
 
-  def createBonusColumn(employees: pd.DataFrame) -> pd.DataFrame:
-      employees['bonus'] = employees['salary']*2
-      return employees
-    ```
-  </TabItem>
+def createBonusColumn(employees: pd.DataFrame) -> pd.DataFrame:
+employees['bonus'] = employees['salary']\*2
+return employees
+```
+</TabItem>
 </Tabs>
 
 ## References
+
 - **Leetcode Problem :** [Create a new column](https://leetcode.com/problems/create-a-new-column/)

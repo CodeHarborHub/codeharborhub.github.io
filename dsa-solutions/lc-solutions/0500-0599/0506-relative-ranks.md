@@ -53,9 +53,11 @@ Explanation: The placements are [1st, 5th, 3rd, 2nd, 4th].
 To determine the ranks of the athletes based on their scores, we can follow these steps:
 
 1. **Store Scores and Indices**:
+
    - Use a list to store the scores along with their original indices.
 
 2. **Sort the List**:
+
    - Sort the list in descending order based on scores.
 
 3. **Assign Ranks**:
@@ -65,7 +67,7 @@ To determine the ranks of the athletes based on their scores, we can follow thes
      - "Bronze Medal" for the 3rd highest score.
      - The placement number for the rest.
 
-### Java 
+### Java
 
 ```java
 class Solution {
@@ -97,12 +99,13 @@ class Solution {
 ```
 
 ### Python
+
 ```Python
 class Solution:
     def findRelativeRanks(self, score: List[int]) -> List[str]:
         ret = [""] * len(score)
         sorted_scores = sorted(score, reverse=True)
-        
+
         for i in range(len(score)):
             rank = sorted_scores.index(score[i]) + 1
             if rank == 1:
@@ -113,7 +116,6 @@ class Solution:
                 ret[i] = "Bronze Medal"
             else:
                 ret[i] = str(rank)
-        
+
         return ret
 ```
-

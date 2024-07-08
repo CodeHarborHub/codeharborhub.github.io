@@ -66,11 +66,13 @@ In this case, the array `nums` already covers all sums up to `5`, so no patches 
 The problem can be efficiently solved using a greedy approach:
 
 1. **Initialization:**
+
    - Initialize `miss` to `1`, which represents the smallest number that cannot be formed with the current elements in `nums`.
    - Initialize `result` to `0` to count the number of patches needed.
    - Initialize `i` to `0` to iterate through `nums`.
 
 2. **Iterate Until Covering `n`:**
+
    - While `miss` is less than or equal to `n`, check if the current number `miss` can be formed by adding elements from `nums`.
    - If `nums[i]` is less than or equal to `miss`, add `nums[i]` to `miss` and move to the next element (`i++`).
    - If `nums[i]` is greater than `miss` or `i` exceeds the length of `nums`, it means `miss` cannot be formed with the current elements. Therefore, add `miss` itself to `nums` to extend the range of possible sums and increment `result`.
@@ -78,7 +80,7 @@ The problem can be efficiently solved using a greedy approach:
 3. **Return Result:**
    - Once the loop ends and `miss` is greater than `n`, return `result`, which is the minimum number of patches required to cover all sums up to `n`.
 
-### Java 
+### Java
 
 ```java
 class Solution {
@@ -100,9 +102,10 @@ class Solution {
         return result;
     }
 ```
-### Python 
 
-```Python 
+### Python
+
+```Python
 from typing import List
 
 class Solution:
@@ -121,5 +124,3 @@ class Solution:
 
         return result
 ```
-
-

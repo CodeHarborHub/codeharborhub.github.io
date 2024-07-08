@@ -3,19 +3,22 @@ id: median-finder
 title: Median Finder
 sidebar_label: Median Finder
 tags:
-- Heap
-- Data Structure
-- C++
-- Java
-- Python
+  - Heap
+  - Data Structure
+  - C++
+  - Java
+  - Python
 description: "This document provides a solution to the Median Finder problem, where you need to efficiently find the median of a stream of numbers."
 ---
 
 ## Problem
+
 The MedianFinder class is designed to efficiently find the median of a stream of numbers. You can add numbers to the stream using the `addNum` method and retrieve the median using the `findMedian` method.
 
 ## Solution
+
 The approach uses two heaps:
+
 - A max heap to store the smaller half of the numbers
 - A min heap to store the larger half of the numbers
 
@@ -24,10 +27,12 @@ The median can be found in constant time by looking at the tops of the heaps.
 ### Step-by-Step Explanation
 
 1. **Initialize two heaps**:
+
    - `maxHeap` for the lower half of the data (inverted to act like a max heap using negative values).
    - `minHeap` for the upper half of the data.
 
 2. **Add number**:
+
    - If the number is less than or equal to the maximum of `maxHeap`, push it to `maxHeap`.
    - Otherwise, push it to `minHeap`.
    - Balance the heaps if necessary to ensure `maxHeap` always has equal or one more element than `minHeap`.
@@ -43,6 +48,7 @@ The median can be found in constant time by looking at the tops of the heaps.
   <SolutionAuthor name="@User"/>
 
 ## C++
+
 ```cpp
 #include <queue>
 #include <vector>
@@ -83,11 +89,13 @@ int main() {
   std::cout << mf.findMedian() << std::endl; // Output: 2
 }
 ```
+
 </TabItem>
 <TabItem value="java" label="Java">
   <SolutionAuthor name="@User"/>
 
 ## Java
+
 ```java
 import java.util.Collections;
 import java.util.PriorityQueue;
@@ -133,6 +141,7 @@ public class MedianFinder {
   <SolutionAuthor name="@User"/>
 
 ## Python
+
 ```python
 import heapq
 
@@ -167,14 +176,20 @@ print(mf.findMedian())  # Output: 1.5
 mf.addNum(3)
 print(mf.findMedian())  # Output: 2
 ```
+
 </TabItem>
 </Tabs>
 
 # Complexity Analysis
+
 ## Time Complexity: $O(log N)$ for addNum, $O(1)$ for findMedian
+
 ### Reason:
+
 Adding a number involves heap insertion which takes $O(log N)$ time. Finding the median involves looking at the top elements of the heaps, which takes $O(1)$ time.
 
 ## Space Complexity: $O(N)$
+
 ### Reason:
+
 We are storing all the numbers in the two heaps.

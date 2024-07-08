@@ -2,9 +2,9 @@
 id: string-to-integer
 title: String to Integer(LeetCode)
 sidebar_label: 0008-String to Integer
-tags: 
-    - String
-    - Math
+tags:
+  - String
+  - Math
 description: Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer.
 sidebar_position: 8
 ---
@@ -75,24 +75,19 @@ The function should iterate through the string, handling leading whitespaces, si
 
 1. **Handling Empty String:**
    - If `s.length() == 0`, return 0 as there's no numerical content.
-   
 2. **Skipping Leading Whitespaces:**
    - Iterate through characters (`s.charAt(i)`) as long as they are whitespaces (' ') and the index `i` is within the string bounds. This skips any leading whitespaces before the potential number.
-   
 3. **Handling Optional Sign:**
    - Check if the first non-whitespace character (`s.charAt(i)`) is a sign ('-' or '+').
    - If it's a minus sign, set the `sign` variable to -1 to indicate a negative number.
-   
 4. **Converting Digits:**
    - Iterate through characters as long as they are valid digits (between '0' and '9') and the index `i` is within the string bounds.
    - Convert the current character (assumed to be a digit) to its corresponding integer value by subtracting the ASCII value of '0'.
-   
 5. **Overflow Handling:**
    - Check for potential overflow situations for positive numbers:
      - Compare the current accumulated value (`ans`) with the maximum integer value (`max`) divided by 10 (considering the next digit) and the remainder (`max % 10`).
      - If `ans` is already greater than the maximum divided by 10, or if `ans` is equal to the maximum divided by 10 and the current digit is greater than the remainder, it signifies overflow.
    - In case of overflow, return the maximum positive value if the sign is positive, or the minimum negative value if the sign is negative.
-   
 6. **Returning the Result:**
    - After processing all valid digits, multiply the final `ans` by the `sign` (1 for positive, -1 for negative) and return it as the converted integer value.
 
@@ -141,5 +136,7 @@ class Solution {
 ## Conclusion
 
 We have successfully implemented the `myAtoi` function to convert a string to a 32-bit signed integer. The solution handles leading whitespaces, signs, valid digits, and overflow conditions efficiently, providing a robust string-to-interger(atoi)
+
+```
 
 ```

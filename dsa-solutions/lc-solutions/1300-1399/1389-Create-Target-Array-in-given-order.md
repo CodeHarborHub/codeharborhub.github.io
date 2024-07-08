@@ -3,8 +3,8 @@ id: create-target-array-in-given-order
 title: Create Target Array in Given Order
 sidebar_label: 1389 Create Target Array in Given Order
 tags:
-- Array
-- Simulation
+  - Array
+  - Simulation
 description: "This is the solution for create target array in given order in leetcode."
 ---
 
@@ -60,6 +60,7 @@ Output: [1]
 **Expected Auxiliary Space:** $O(N)$
 
 ### Constraints
+
 - `1 <= nums.length, index.length <= 100`
 - `nums.length == index.length`
 - `0 <= nums[i] <= 100`

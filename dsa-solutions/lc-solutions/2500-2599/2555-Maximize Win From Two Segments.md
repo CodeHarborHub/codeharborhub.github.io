@@ -4,12 +4,12 @@ title: Maximize Win From Two Segments
 sidebar_label: 2555 Maximize Win From Two Segments
 
 tags:
-    - Binary Search
-    - Array
-    - Sorting
-    - Greedy
+  - Binary Search
+  - Array
+  - Sorting
+  - Greedy
 description: "This is a solution to the Maximize Win From Two Segments
- problem on LeetCode."
+  problem on LeetCode."
 ---
 
 ## Problem Description
@@ -34,21 +34,20 @@ Explanation: In this example, you can win all 7 prizes by selecting two segments
 ```
 
 **Example 2:**
+
 ```
 Input: prizePositions = [1,2,3,4], k = 0
 Output: 2
-Explanation: For this example, one choice for the segments is [3, 3] and [4, 4], and you will be able to get 2 prizes. 
+Explanation: For this example, one choice for the segments is [3, 3] and [4, 4], and you will be able to get 2 prizes.
 
 ```
-
 
 ### Constraints
 
 - `1 <= prizePositions.length <= 10^5`
 - `1 <= prizePositions[i] <= 10^9`
- 
 
-### Approach 
+### Approach
 
 We define $f[i]$ as the maximum number of prizes that can be obtained by selecting a segment of length $k$ from the first $i$ prizes. Initially, $f[0] = 0$. We define the answer variable as $ans = 0$.
 
@@ -57,8 +56,6 @@ Next, we enumerate the position $x$ of each prize, and use binary search to find
 Finally, we return $ans$.
 
 The time complexity is $O(n \times \log n)$, and the space complexity is $O(n)$. Where $n$ is the number of prizes.
-
-
 
 #### Python3
 

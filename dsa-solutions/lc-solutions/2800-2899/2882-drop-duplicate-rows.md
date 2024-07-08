@@ -69,6 +69,7 @@ I will use the pandas library to solve this problem. I will use the drop_duplica
           customers.drop_duplicates(subset='email',keep='first',inplace = True)
           return  customers
     ```
+
   </TabItem>
 </Tabs>
 

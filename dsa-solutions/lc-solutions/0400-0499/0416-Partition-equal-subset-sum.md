@@ -203,7 +203,7 @@ else:
 
 #### Time Complexity: $O(\text{sum} \times N)$
 
-> **Reason**: The maximum iterations possible are sum * N.
+> **Reason**: The maximum iterations possible are sum \* N.
 
 #### Space Complexity: $O(\text{sum} \times N)$
 

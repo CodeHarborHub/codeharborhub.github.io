@@ -4,12 +4,12 @@ title: Put Marbles in Bags
 sidebar_label: 2551 Put Marbles in Bags
 
 tags:
-    - Greedy
-    - Array
-    - Sorting
-    - Heap (Priority Queue)
+  - Greedy
+  - Array
+  - Sorting
+  - Heap (Priority Queue)
 description: "This is a solution to the Put Marbles in Bags
- problem on LeetCode."
+  problem on LeetCode."
 ---
 
 ## Problem Description
@@ -31,9 +31,9 @@ The score after distributing the marbles is the sum of the costs of all the k ba
 
 Input: weights = [1,3,5,1], k = 2
 Output: 4
-Explanation: 
-The distribution [1],[3,5,1] results in the minimal score of (1+1) + (3+1) = 6. 
-The distribution [1,3],[5,1], results in the maximal score of (1+3) + (5+1) = 10. 
+Explanation:
+The distribution [1],[3,5,1] results in the minimal score of (1+1) + (3+1) = 6.
+The distribution [1,3],[5,1], results in the maximal score of (1+3) + (5+1) = 10.
 Thus, we return their difference 10 - 6 = 4.
 
 ```
@@ -43,25 +43,22 @@ Thus, we return their difference 10 - 6 = 4.
 ```
 Input: weights = [1, 3], k = 2
 Output: 0
-Explanation: The only distribution possible is [1],[3]. 
+Explanation: The only distribution possible is [1],[3].
 Since both the maximal and minimal score are the same, we return 0.
 ```
-
 
 ### Constraints
 
 - `1 <= k <= weights.length <= 105`
 - `1 <= weights[i] <= 109`
- 
 
-### Approach 
+### Approach
 
 We can transform the problem into: dividing the array `weights` into $k$ consecutive subarrays, that is, we need to find $k-1$ splitting points, each splitting point's cost is the sum of the elements on the left and right of the splitting point. The difference between the sum of the costs of the largest $k-1$ splitting points and the smallest $k-1$ splitting points is the answer.
 
 Therefore, we can process the array `weights` and transform it into an array `arr` of length $n-1$, where `arr[i] = weights[i] + weights[i+1]`. Then we sort the array `arr`, and finally calculate the difference between the sum of the costs of the largest $k-1$ splitting points and the smallest $k-1$ splitting points.
 
 The time complexity is $O(n \times \log n)$, and the space complexity is $O(n)$. Where $n$ is the length of the array `weights`.
-
 
 #### Python3
 

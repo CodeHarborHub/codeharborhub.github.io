@@ -4,12 +4,13 @@ title: Disconnect Path in a Binary Matrix by at Most One Flip
 sidebar_label: 2556 Disconnect Path in a Binary Matrix by at Most One Flip
 
 tags:
-    - Binary Search
-    - Array
-    - Sorting
-    - Greedy
-description: "This is a solution to the Disconnect Path in a Binary Matrix by at Most One Flip
- problem on LeetCode."
+  - Binary Search
+  - Array
+  - Sorting
+  - Greedy
+description:
+  "This is a solution to the Disconnect Path in a Binary Matrix by at Most One Flip
+  problem on LeetCode."
 ---
 
 ## Problem Description
@@ -21,7 +22,6 @@ You can flip the value of at most one (possibly none) cell. You cannot flip the 
 Return true if it is possible to make the matrix disconnect or false otherwise.
 
 Note that flipping a cell changes its value from 0 to 1 or from 1 to 0.
- 
 
 ### Examples
 
@@ -44,7 +44,6 @@ Explanation: It is not possible to change at most one cell such that there is no
 
 ```
 
-
 ### Constraints
 
 - `m == grid.length`
@@ -52,9 +51,9 @@ Explanation: It is not possible to change at most one cell such that there is no
 - `1 <= m, n <= 1000`
 - `grid[0][0] == grid[m - 1][n - 1] == 1`
 - `grid[i][j] is either 0 or 1`
- 
 
-### Approach 
+### Approach
+
 First, we perform a DFS traversal to determine whether there is a path from $(0, 0)$ to $(m - 1, n - 1)$, and we denote the result as $a$. During the DFS process, we set the value of the visited cells to $0$ to prevent revisiting.
 
 Next, we set the values of $(0, 0)$ and $(m - 1, n - 1)$ to $1$, and perform another DFS traversal to determine whether there is a path from $(0, 0)$ to $(m - 1, n - 1)$, and we denote the result as $b$. During the DFS process, we set the value of the visited cells to $0$ to avoid revisiting.
@@ -62,7 +61,6 @@ Next, we set the values of $(0, 0)$ and $(m - 1, n - 1)$ to $1$, and perform ano
 Finally, if both $a$ and $b$ are `true`, we return `false`, otherwise, we return `true`.
 
 The time complexity is $O(m \times n)$, and the space complexity is $O(m \times n)$. Where $m$ and $n$ are the number of rows and columns of the matrix, respectively.
-
 
 #### Python3
 

@@ -2,17 +2,17 @@
 id: n-queens-uzzle
 title: N-Queens Puzzle
 sidebar_label: N-Queens Puzzle
-tags: 
-    - Backtracking 
-    - Recursion 
-    - Algorithm
+tags:
+  - Backtracking
+  - Recursion
+  - Algorithm
 description: The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens attack each other.
 ---
 
 ## Problem Description
 
-| Problem Statement                                       | Solution Link                                                              | LeetCode Profile                                        |
-| :------------------------------------------------------ | :------------------------------------------------------------------------- | :------------------------------------------------------ |
+| Problem Statement                                                             | Solution Link                                                                                    | LeetCode Profile                                     |
+| :---------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- | :--------------------------------------------------- |
 | [n-queens-puzzle](https://leetcode.com/problems/N-Queens-Puzzle/description/) | [N-Queens-Puzzle Solution on LeetCode](https://leetcode.com/problems/N-Queens-Puzzle/solutions/) | [Nikita Saini](https://leetcode.com/u/Saini_Nikita/) |
 
 ## Problem Description:
@@ -37,11 +37,13 @@ Each solution contains a distinct board configuration of the n-queens' placement
 - $1 \leq n \leq 9$
 
 ### Approach
+
 The problem can be solved using a backtracking approach. The idea is to place queens one by one on the board and check if the current placement is safe. If it is, we proceed to place the next queen. If it is not, we backtrack and try the next possible position.
 
 ### Solution in different languages
 
 ### Solution in Python
+
 ```python
 def solveNQueens(n):
     def is_not_under_attack(row, col):
@@ -85,6 +87,7 @@ def solveNQueens(n):
 ```
 
 ### Solution in Java
+
 ```java
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -138,6 +141,7 @@ class Solution {
 ```
 
 ### Solution in C++
+
 ```cpp
 class Solution {
 public:
@@ -179,6 +183,7 @@ private:
 ```
 
 ### Solution in C
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -238,65 +243,71 @@ char*** solveNQueens(int n, int* returnSize, int** returnColumnSizes) {
 ```
 
 ### Solution in JavaScript
+
 ```js
-var solveNQueens = function(n) {
-    const solutions = [];
-    const queens = [];
-    const cols = new Set();
-    const hills = new Set();
-    const dales = new Set();
+var solveNQueens = function (n) {
+  const solutions = [];
+  const queens = [];
+  const cols = new Set();
+  const hills = new Set();
+  const dales = new Set();
 
-    const backtrack = (row = 0) => {
-        if (row === n) {
-            solutions.push(createBoard(queens, n));
-            return;
-        }
-        for (let col = 0; col < n; col++) {
-            if (cols.has(col) || hills.has(row - col) || dales.has(row + col)) {
-                continue;
-            }
-            queens.push(col);
-            cols.add(col);
-            hills.add(row - col);
-            dales.add(row + col);
-            backtrack(row + 1);
-            queens.pop();
-            cols.delete(col);
-            hills.delete(row - col);
-            dales.delete(row + col);
-        }
-    };
+  const backtrack = (row = 0) => {
+    if (row === n) {
+      solutions.push(createBoard(queens, n));
+      return;
+    }
+    for (let col = 0; col < n; col++) {
+      if (cols.has(col) || hills.has(row - col) || dales.has(row + col)) {
+        continue;
+      }
+      queens.push(col);
+      cols.add(col);
+      hills.add(row - col);
+      dales.add(row + col);
+      backtrack(row + 1);
+      queens.pop();
+      cols.delete(col);
+      hills.delete(row - col);
+      dales.delete(row + col);
+    }
+  };
 
-    const createBoard = (queens, n) => {
-        const board = [];
-        for (let i = 0; i < n; i++) {
-            let row = '.'.repeat(n).split('');
-            row[queens[i]] = 'Q';
-            board.push(row.join(''));
-        }
-        return board;
-    };
+  const createBoard = (queens, n) => {
+    const board = [];
+    for (let i = 0; i < n; i++) {
+      let row = ".".repeat(n).split("");
+      row[queens[i]] = "Q";
+      board.push(row.join(""));
+    }
+    return board;
+  };
 
-    backtrack();
-    return solutions;
+  backtrack();
+  return solutions;
 };
 ```
 
 ### Step-by-step Algorithm
 
 1. Initialize Data Structures:
+
 - Create a list to store the solutions.
 - Create sets to keep track of columns, hills (main diagonals), and dales (anti-diagonals) that are under attack.
 
 2. Backtracking Function:
+
 - Try placing a queen in each column of the current row.
 - Check if the current column, hill, or dale is under attack using the sets.
 - If placing a queen is safe, add the column to the list of queens and mark the column, hill, and dale as occupied.
 - Recursively call the backtracking function for the next row.
 - If a valid solution is found (when row equals n), add the solution to the list of solutions.
 - Backtrack by removing the queen and unmarking the column, hill, and dale.
+
 3. Create Board Representation:
+
 - Convert the list of queen positions into the board representation as a list of strings.
 
 ### Conclusion
+
 The n-queens puzzle, solved using backtracking, ensures no two queens attack each other on an n x n chessboard. Solutions are efficiently implemented in Python, Java, C++, C, and JavaScript.

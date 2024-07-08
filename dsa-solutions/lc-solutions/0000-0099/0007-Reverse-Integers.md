@@ -2,14 +2,15 @@
 id: reverse-integer
 title: Reverse Integer(LeetCode)
 sidebar_label: 0007-Reverse Integer
-tags: 
-    - Math
-    - Simulation
+tags:
+  - Math
+  - Simulation
 description: Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-2^31, 2^31 - 1], then return 0.
 sidebar_position: 7
 ---
 
 ## Problem Statement
+
 Given a signed 32-bit integer `x`, return `x` with its digits reversed. If reversing `x` causes the value to go outside the signed 32-bit integer range [-2^31, 2^31 - 1], then return 0.
 
 ### Examples
@@ -113,23 +114,20 @@ def reverse(x: int) -> int:
 
 ```javascript
 var reverse = function (x) {
-    let rev = 0;
-    while (x !== 0) {
-        let pop = x % 10;
-        x = (x - pop) / 10;
-        if (
-            rev > Math.pow(2, 31) / 10 ||
-            (rev == Math.pow(2, 31) / 10 && pop > 7)
-        )
-            return 0;
-        if (
-            rev < Math.pow(-2, 31) / 10 ||
-            (rev == Math.pow(-2, 31) / 10 && pop < -8)
-        )
-            return 0;
-        rev = rev * 10 + pop;
-    }
-    return rev;
+  let rev = 0;
+  while (x !== 0) {
+    let pop = x % 10;
+    x = (x - pop) / 10;
+    if (rev > Math.pow(2, 31) / 10 || (rev == Math.pow(2, 31) / 10 && pop > 7))
+      return 0;
+    if (
+      rev < Math.pow(-2, 31) / 10 ||
+      (rev == Math.pow(-2, 31) / 10 && pop < -8)
+    )
+      return 0;
+    rev = rev * 10 + pop;
+  }
+  return rev;
 };
 ```
 
@@ -156,5 +154,7 @@ class Solution:
 ### Conclusion
 
 We have successfully solved the "Reverse Integer" problem using a simple approach that reverses the digits of the given integer while handling overflow conditions. This solution provides an efficient way to reverse an integer without the need for any additional data structures.
+
+```
 
 ```

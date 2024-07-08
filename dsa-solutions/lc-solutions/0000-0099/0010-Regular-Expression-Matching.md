@@ -2,7 +2,7 @@
 id: regular-expression-matching
 title: Regular Expression Matching (LeetCode)
 sidebar_label: 0010 - Regular Expression Matching
-tags: 
+tags:
   - String
   - Dynamic Programming
   - Recursion
@@ -12,10 +12,10 @@ sidebar_position: 10
 
 ## Problem Description
 
-Given an input string `s` and a pattern `p`, implement regular expression matching with support for '.' and '*' where:
+Given an input string `s` and a pattern `p`, implement regular expression matching with support for '.' and '\*' where:
 
 - '.' Matches any single character.
-- '*' Matches zero or more of the preceding element.
+- '\*' Matches zero or more of the preceding element.
 
 The matching should cover the entire input string (not partial).
 
@@ -50,8 +50,8 @@ Explanation: ".*" means "zero or more (*) of any character (.)".
 - 1 < s.length < 20
 - 1 < p.length < 20
 - `s` contains osnly lowercase English letters.
-- `p` contains only lowercase English letters, '.', and '*'.
-- It is guaranteed for each appearance of the character '*', there will be a previous valid character to match.
+- `p` contains only lowercase English letters, '.', and '\*'.
+- It is guaranteed for each appearance of the character '\*', there will be a previous valid character to match.
 
 ## Solution
 
@@ -59,7 +59,7 @@ Explanation: ".*" means "zero or more (*) of any character (.)".
 
 #### Intuition
 
-If there were no Kleene stars (the * wildcard character for regular expressions), the problem would be easier - we simply check from left to right if each character of the text matches the pattern.
+If there were no Kleene stars (the \* wildcard character for regular expressions), the problem would be easier - we simply check from left to right if each character of the text matches the pattern.
 
 When a star is present, we may need to check many different suffixes of the text and see if they match the rest of the pattern. A recursive solution is a straightforward way to represent this relationship.
 
@@ -219,6 +219,7 @@ class Solution:
 
         return dp(0, 0)
 ```
+
 Complexity Analysis
 Time Complexity
 Let T, P be the lengths of the text and the pattern respectively. The work for every call to dp(i, j) for i=0,...,T; j=0,...,P is done once, and it is $O(1)$ work. Hence, the time complexity is $O(TP)$.
@@ -226,15 +227,12 @@ Let T, P be the lengths of the text and the pattern respectively. The work for e
 Space Complexity
 The only memory we use is the $O(TP)$ boolean entries in our cache. Hence, the space complexity is $O(TP)$
 
-
 Now, just as you asked, the last part should include the summary and links to the problem, solution, and profile. Let's add that:
 
 ## Summary
 
-This problem involves implementing regular expression matching with support for '.' and '*', where '.' matches any single character and '*' matches zero or more of the preceding element. Two approaches are commonly used to solve this problem:
+This problem involves implementing regular expression matching with support for '.' and '_', where '.' matches any single character and '_' matches zero or more of the preceding element. Two approaches are commonly used to solve this problem:
 
 1. **Recursion**: This approach involves a straightforward recursive solution. If there were no Kleene stars, checking from left to right if each character of the text matches the pattern would suffice. When a star is present, we may need to check many different suffixes of the text and see if they match the rest of the pattern.
 
 2. **Dynamic Programming**: As the problem has an optimal substructure, we can use dynamic programming to cache intermediate results. We can describe our answer in terms of answers to questions involving smaller strings.
-
-

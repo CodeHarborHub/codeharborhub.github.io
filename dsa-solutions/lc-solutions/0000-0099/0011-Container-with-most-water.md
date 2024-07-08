@@ -3,18 +3,18 @@ id: container-with-most-water
 title: Container With Most Water (LeetCode)
 sidebar_label: 0011 - Container With Most Water
 tags:
-    - Array
-    - Two Pointers
-    - Greedy
+  - Array
+  - Two Pointers
+  - Greedy
 description: Given n non-negative integers representing the heights of vertical lines, find the two lines that together with the x-axis form a container, such that the container contains the most water.
 sidebar_position: 11
 ---
 
 ## Problem Description
 
-| Problem Statement                                                                                           | Solution Link                                                                                                                               | LeetCode Profile                                   |
-| :----------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------- |
-| [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)                       | [Container With Most Water Solution on LeetCode](https://leetcode.com/problems/container-with-most-water/solutions/3701708/best-method-c-java-python-beginner-friendly/) | [gabaniyash846](https://leetcode.com/u/gabaniyash846/) |
+| Problem Statement                                                                     | Solution Link                                                                                                                                                            | LeetCode Profile                                       |
+| :------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------- |
+| [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | [Container With Most Water Solution on LeetCode](https://leetcode.com/problems/container-with-most-water/solutions/3701708/best-method-c-java-python-beginner-friendly/) | [gabaniyash846](https://leetcode.com/u/gabaniyash846/) |
 
 ## Problem Statement
 
@@ -58,25 +58,29 @@ The two-pointer technique starts with the widest container and moves the pointer
 #### Algorithm
 
 1. **Initialize the variables**:
-    - `left` to represent the left pointer, starting at the beginning of the container (index 0).
-    - `right` to represent the right pointer, starting at the end of the container (index `height.size() - 1`).
-    - `maxArea` to keep track of the maximum area found, initially set to 0.
+
+   - `left` to represent the left pointer, starting at the beginning of the container (index 0).
+   - `right` to represent the right pointer, starting at the end of the container (index `height.size() - 1`).
+   - `maxArea` to keep track of the maximum area found, initially set to 0.
 
 2. **Enter a loop using the condition `left < right`**, which means the pointers have not crossed each other yet.
 
 3. **Calculate the current area**:
-    - Use the `min` function to find the minimum height between the left and right pointers.
-    - Multiply the minimum height by the width, which is the difference between the indices of the pointers: `(right - left)`.
-    - Store this value in the `currentArea` variable.
+
+   - Use the `min` function to find the minimum height between the left and right pointers.
+   - Multiply the minimum height by the width, which is the difference between the indices of the pointers: `(right - left)`.
+   - Store this value in the `currentArea` variable.
 
 4. **Update the maximum area**:
-    - Use the `max` function to compare the `currentArea` with the `maxArea`.
-    - If the `currentArea` is greater than the `maxArea`, update `maxArea` with the `currentArea`.
+
+   - Use the `max` function to compare the `currentArea` with the `maxArea`.
+   - If the `currentArea` is greater than the `maxArea`, update `maxArea` with the `currentArea`.
 
 5. **Move the pointers inward**:
-    - Check if the height at the `left` pointer is smaller than the height at the `right` pointer.
-    - If so, increment the `left` pointer, moving it towards the center of the container.
-    - Otherwise, decrement the `right` pointer, also moving it towards the center.
+
+   - Check if the height at the `left` pointer is smaller than the height at the `right` pointer.
+   - If so, increment the `left` pointer, moving it towards the center of the container.
+   - Otherwise, decrement the `right` pointer, also moving it towards the center.
 
 6. **Repeat steps 3 to 5** until the pointers meet (`left >= right`), indicating that all possible containers have been explored.
 

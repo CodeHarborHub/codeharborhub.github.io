@@ -2,7 +2,7 @@
 id: palindrome-number
 title: Palindrome Number (LeetCode)
 sidebar_label: 0009 - Palindrome Number
-tags: 
+tags:
   - Math
   - Palindrome
 description: Given an integer x, return true if x is a palindrome, and false otherwise.

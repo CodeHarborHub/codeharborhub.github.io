@@ -3,9 +3,9 @@ id: integer-to-roman
 title: Integer to Roman (LeetCode)
 sidebar_label: 0012 - Integer to Roman
 tags:
-    - Hash Table
-    - Math
-    - String
+  - Hash Table
+  - Math
+  - String
 description: Convert a given integer to a Roman numeral using specific rules for the Roman numeral system.
 sidebar_position: 12
 ---
@@ -77,18 +77,21 @@ To convert an integer to a Roman numeral, we need to repeatedly subtract the lar
 #### Algorithm
 
 1. **Initialize the Roman numeral string**:
-    - Create an empty string `Roman` to store the resulting Roman numeral.
+
+   - Create an empty string `Roman` to store the resulting Roman numeral.
 
 2. **Create a list of integer-Roman pairs**:
-    - Use a list of pairs to store the values and symbols of Roman numerals in descending order of values.
+
+   - Use a list of pairs to store the values and symbols of Roman numerals in descending order of values.
 
 3. **Iterate through the list of pairs**:
-    - For each pair, check if the input integer is greater than or equal to the Roman numeral value.
-    - If it is, add the corresponding symbol to the `Roman` string and subtract the corresponding value from the input integer.
-    - Repeat this process until the input integer becomes zero.
+
+   - For each pair, check if the input integer is greater than or equal to the Roman numeral value.
+   - If it is, add the corresponding symbol to the `Roman` string and subtract the corresponding value from the input integer.
+   - Repeat this process until the input integer becomes zero.
 
 4. **Return the Roman numeral string**:
-    - After processing all the pairs, return the `Roman` string containing the converted Roman numeral.
+   - After processing all the pairs, return the `Roman` string containing the converted Roman numeral.
 
 ### Code
 
@@ -151,4 +154,3 @@ class Solution:
 ## Conclusion
 
 The provided solutions efficiently convert an integer to a Roman numeral by iterating through predefined Roman numeral values and symbols. This approach ensures that the conversion adheres to the rules of the Roman numeral system while maintaining constant time and space complexity.
-

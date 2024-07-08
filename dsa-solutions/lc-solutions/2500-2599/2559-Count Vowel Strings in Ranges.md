@@ -44,21 +44,19 @@ Explanation: Every string satisfies the conditions, so we return [3,2,1].
 
 ```
 
-
 ### Constraints
 
 - `1 <= words.length <= 10^5`
 - `1 <= words[i].length <= 40`
 - `sum(words[i].length) <= 3 * 10^5`
- 
 
-### Approach 
+### Approach
+
 We can preprocess all the indices of the strings that start and end with a vowel, and record them in order in the array $nums$.
 
 Next, we iterate through each query $(l, r)$, and use binary search to find the first index $i$ in $nums$ that is greater than or equal to $l$, and the first index $j$ that is greater than $r$. Therefore, the answer to the current query is $j - i$.
 
 The time complexity is $O(n + m \times \log n)$, and the space complexity is $O(n)$. Where $n$ and $m$ are the lengths of the arrays $words$ and $queries$, respectively.
-
 
 #### Python3
 

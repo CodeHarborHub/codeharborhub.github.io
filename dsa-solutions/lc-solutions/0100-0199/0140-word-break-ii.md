@@ -57,15 +57,15 @@ To solve the problem of generating all possible sentences from `s` using words f
    - Use a recursive function `wordBreakHelper` to explore all possible segmentations of `s`.
    - Use a `Set` for `wordDict` to achieve O(1) time complexity for word lookups.
    - Maintain a `Map` (`memo`) to store results of already computed segmentations to avoid redundant computations.
-   
 2. **Base Case and Recursive Case:**
+
    - Base Case: When `index == s.length()`, if the current segmentation (`temp`) is empty (`"".equals(temp)`), add the segmented string from `sb` to the result list (`list`).
    - Recursive Case: For each character in `s` starting from `index`, form a substring (`temp`) and check if it exists in `wordDict`. If it does, add it to `sb` and recursively call `wordBreakHelper` with updated `index` and `temp`. After recursion, backtrack by removing `temp` from `sb`.
 
 3. **Memoization:**
    - Before making a recursive call, check if the current `index` and `sb.toString()` combination already exists in `memo`. If it does, directly retrieve the result from `memo` to avoid recomputation.
 
-### Java 
+### Java
 
 ```java
 
@@ -88,15 +88,15 @@ class Solution {
             }
             return temp;
         }
-        
+
         String current = s.substring(index);
         if (memo.containsKey(current)) {
             return memo.get(current);
         }
-        
+
         List<String> sentences = new ArrayList<>();
         StringBuilder temp = new StringBuilder();
-        
+
         for (int i = index; i < s.length(); i++) {
             temp.append(s.charAt(i));
             if (wordDict.contains(temp.toString())) {
@@ -109,7 +109,7 @@ class Solution {
                 sb.setLength(len);  // Backtrack
             }
         }
-        
+
         memo.put(current, sentences);
         return sentences;
     }
@@ -136,7 +136,7 @@ class Solution {
                     self.sb.append(''.join(temp))
                     wordBreakHelper(i + 1)
                     self.sb.pop()
-        
+
         wordBreakHelper(0)
         return self.result
-``` 
+```

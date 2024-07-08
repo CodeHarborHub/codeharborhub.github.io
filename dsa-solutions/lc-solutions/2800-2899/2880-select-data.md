@@ -18,6 +18,7 @@ Write a solution to select the name and age of the student with student_id = 101
 Example 1:
 
 Input:
+
 ```plaintext
 +------------+---------+-----+
 | student_id | name    | age |

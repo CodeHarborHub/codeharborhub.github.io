@@ -3,12 +3,13 @@ id: design-add-and-search-words-data-structure
 title: Design Add and Search Words Data Structure
 sidebar_label: 0211 - Design Add and Search Words Data Structure
 tags:
-- Depth-First Search
-- String
+  - Depth-First Search
+  - String
 description: "This document provides a solution to the leetcode 211"
 ---
 
 ## Problem
+
 Design a data structure that supports adding new words and finding if a string matches any previously added string.
 
 Implement the `WordDictionary` class:
@@ -16,7 +17,6 @@ Implement the `WordDictionary` class:
 `WordDictionary()` Initializes the object.
 `void addWord(word)` Adds `word` to the data structure, it can be matched later.
 `bool search(word)` Returns `true` if there is any string in the data structure that matches `word` or `false` otherwise. `word` may contain dots `'.'` where dots can be matched with any letter.
-
 
 ### Example 1:
 
@@ -35,12 +35,12 @@ wordDictionary.search("b.."); // return True
 ```
 
 ### Constraints:
+
 - `1 <= word.length <= 25`
 - `word` in `addWord` consists of lowercase English letters
 - word in search consist of '.' or lowercase English letters.
 - There will be at most 2 dots in word for search queries.
 - At most 104 calls will be made to addWord and search.
-
 
 ## Solution
 
@@ -54,17 +54,17 @@ wordDictionary.search("b.."); // return True
 - For each character in the word:
 - Calculate the index of the character (character - 'a').
 - If the corresponding child node is NULL, create a new TrieNode.
-Move to the child node.
+  Move to the child node.
 - After processing all characters, mark the current node as a leaf node to indicate the end of a word.
 
 ### Searching for a Word:
+
 - Start at the root node.
 - Use a recursive helper function searchHelper to handle the search:
 - If you reach the end of the word, check if the current node is a leaf node.
 - If the current character is '.', check all possible children nodes.
 - If the current character is a regular letter, move to the corresponding child node.
 - Return true if a matching word is found, otherwise false.
-
 
 ## Code in Different Languages
 
@@ -90,7 +90,7 @@ public:
     WordDictionary() {
        root = new TrieNode() ;
     }
-    
+
     void addWord(string word) {
         TrieNode *curr = root;
         for(int i=0;i<word.size();i++){
@@ -101,7 +101,7 @@ public:
         }
         curr->isLeaf = true;
     }
-    
+
     // bool search(string word) {
     //     TrieNode *curr = root;
     //     for(int i=0;i<word.size();i++){
@@ -134,9 +134,9 @@ public:
 };
 
 ```
+
 </TabItem>
 <TabItem value="java" label="Java">
-
 
 ```java
 import java.util.*;
@@ -192,21 +192,22 @@ class WordDictionary {
  */
 
 ```
+
 </TabItem>
 </Tabs>
 
 ## Complexity Analysis
 
 ### Time Complexity:
-- Adding a Word: O(m), where m is the length of the word. Each character is processed once.
--  Searching for a Word:
-- Worst Case: O(m * 26^m), where m is the length of the word and all characters are '.' (wildcards). This is due to the recursive search through all possible children nodes at each level.
 
+- Adding a Word: O(m), where m is the length of the word. Each character is processed once.
+- Searching for a Word:
+- Worst Case: O(m \* 26^m), where m is the length of the word and all characters are '.' (wildcards). This is due to the recursive search through all possible children nodes at each level.
 
 ### Space Complexity:
-- TrieNode: O(1) per node.
-- WordDictionary: O(n * m), where n is the number of words and m is the average length of the words.
 
+- TrieNode: O(1) per node.
+- WordDictionary: O(n \* m), where n is the number of words and m is the average length of the words.
 
 ## References
 
