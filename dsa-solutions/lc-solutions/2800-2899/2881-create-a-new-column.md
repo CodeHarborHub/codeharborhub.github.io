@@ -1,7 +1,7 @@
 ---
-id : Create-a-New-Column
+id : create-a-new-column
 title : Create a New column
-sidebar_label: 2881 Create a new column Leetcode
+sidebar_label: 2881 - Create a new column Leetcode
 tags:
   - LeetCode
   - Python
@@ -14,9 +14,11 @@ description: "This is a solution for the leetcode 2881 problem which is to creat
 A company plans to provide its employees with a bonus.
 Write a solution to create a new column name bonus that contains the doubled values of the salary column.
 
-##Examples
+## Examples
 
 Input:
+
+```plaintext
 DataFrame employees
 +---------+--------+
 | name    | salary |
@@ -28,7 +30,11 @@ DataFrame employees
 | Finn    | 74576  |
 | Thomas  | 24433  |
 +---------+--------+
+```
+
 Output:
+
+```plaintext
 +---------+--------+--------+
 | name    | salary | bonus  |
 +---------+--------+--------+
@@ -39,16 +45,20 @@ Output:
 | Finn    | 74576  | 149152 |
 | Thomas  | 24433  | 48866  |
 +---------+--------+--------+
+```
+
 Explanation:
+
 A new column bonus is created by doubling the value in the column salary.
 
-##Intuition
-I will say as this is a Data Science Problem the solution is also straightforward . Hope it helps :)
-.
+## Intuition
+
+I will use the pandas library to solve this problem. I will create a new column bonus by multiplying the salary column by 2.
 
 ### Solution Code
+
 <Tabs>
-  <TabItem value="Python" label="" default>
+  <TabItem value="Python" label="Python" default>
   <SolutionAuthor name="@Abhay:)"/>
     ```Python
   import pandas as pd
@@ -59,5 +69,6 @@ I will say as this is a Data Science Problem the solution is also straightforwar
     ```
   </TabItem>
 </Tabs>
+
 ## References
 - **Leetcode Problem :** [Create a new column](https://leetcode.com/problems/create-a-new-column/)

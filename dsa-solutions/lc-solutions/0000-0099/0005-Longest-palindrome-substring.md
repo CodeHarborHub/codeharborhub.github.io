@@ -1,5 +1,5 @@
 ---
-id: Longest Palindromic Substring
+id: longest-alindromic-substring
 title: Longest Palindromic Substring(LeetCode)
 sidebar_label: 0005-Longest Palindrome Substring
 tags:
