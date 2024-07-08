@@ -1,6 +1,6 @@
 {
     "label": "websocket",
-    "position": 17,
+    "position": 28,
     "link": {
         "type": "generated-index",
         "description": "WebSocket is a communication protocol that provides full-duplex communication channels over a single TCP connection. It is designed to be a more efficient and real-time alternative to traditional HTTP polling mechanisms for web applications. "
