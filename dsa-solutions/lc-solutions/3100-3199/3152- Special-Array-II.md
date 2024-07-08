@@ -50,11 +50,11 @@ The subarray is [1,6]. There is only one pair: (1,6) and it contains numbers wit
 ```
 
 ### Constraints
-- 1 <= nums.length <= 105
- - 1 <= nums[i] <= 105
-- 1 <= queries.length <= 105
-- queries[i].length == 2
-- 0 <= queries[i][0] <= queries[i][1] <= nums.length - 1
+- `1 <= nums.length <= 105`
+ - `1 <= nums[i] <= 105`
+- `1 <= queries.length <= 105`
+- `queries[i].length == 2`
+- `0 <= queries[i][0] <= queries[i][1] <= nums.length - 1`
 ## Code in Different Languages
 
 ### C++
@@ -150,8 +150,8 @@ print(check_special_subarray(nums, queries))  # Output: [False]
 
 ```
 
-# Complexity Analysis
-## Time Complexity: $O(q*n)$ where q is no of queries and n is array length.
-### Reason: iterating throught the array takes $O(n)$ we do it 'q' times so $O(q*n)$
-# Space Complexity: $O(q)$
-### Reason: space required to store array of size q.
+## Complexity Analysis
+- **Time Complexity:** $O(q*n)$ where q is no of queries and n is array length.
+   > **Reason:** iterating throught the array takes $O(n)$ we do it 'q' times so $O(q*n)$
+- **Space Complexity:** $O(q)$
+   > **Reason:** space required to store array of size q.
