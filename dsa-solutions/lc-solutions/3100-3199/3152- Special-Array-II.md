@@ -3,21 +3,16 @@ id: Special-Array_II
 level: Medium
 title: Special Array II 
 sidebar_label: 3152-Special Array II 
-tags:
-- Arrays
-- Data Structure
-- C++
-- Java
-- Python
+tags: [Arrays, Data Structure, C++, Java, Python]
 description: "This document provides solutions to this problem implemented in C++, Java, and Python."
 ---
 
 ## Problem Description
+
 An array is considered special if every pair of its adjacent elements contains two numbers with different parity.
 
 You are given an array of integer nums and a 2D integer matrix queries, where for queries[i] = [fromi, toi] your task is to check that 
-subarray
- nums[fromi..toi] is special or not.
+subarray nums[fromi..toi] is special or not.
 
 Return an array of booleans answer such that answer[i] is true if nums[fromi..toi] is special.
 
@@ -51,13 +46,15 @@ The subarray is [1,6]. There is only one pair: (1,6) and it contains numbers wit
 
 ### Constraints
 - `1 <= nums.length <= 105`
- - `1 <= nums[i] <= 105`
+- `1 <= nums[i] <= 105`
 - `1 <= queries.length <= 105`
 - `queries[i].length == 2`
 - `0 <= queries[i][0] <= queries[i][1] <= nums.length - 1`
+
 ## Code in Different Languages
 
 ### C++
+
 ```cpp
 #include <vector>
 #include <iostream>
@@ -94,7 +91,9 @@ int main() {
 }
 
 ```
+
 ### Java
+
 ```java
 import java.util.ArrayList;
 import java.util.List;
@@ -129,7 +128,9 @@ public class SpecialSubarray {
 }
 
 ```
+
 ### Python
+
 ```python
 def check_special_subarray(nums, queries):
     result = []
