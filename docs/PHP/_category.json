@@ -1,6 +1,6 @@
 {
     "label": "PHP",
-    "position": 13,
+    "position": 20,
     "link": {
         "type": "generated-index",
         "description": "PHP is a popular server-side scripting language known for its versatility and ease of use in web development. It is widely used for creating dynamic web pages, handling forms, interacting with databases, and building web applications. Key features of PHP include a large library of built-in functions, support for various databases like MySQL, PostgreSQL, and SQLite, integration with web servers like Apache and Nginx, and frameworks like Laravel, Symfony, and CodeIgniter. PHP is an essential tool for building dynamic and interactive websites."
