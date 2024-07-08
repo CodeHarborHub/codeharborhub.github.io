@@ -159,16 +159,16 @@ Output: [1]
      var maxSlidingWindow = function(nums, k) {
       let maxQueue = [];
       let result = [];
-      
+
       for (let i = 0; i < nums.length; i++) {
           // Remove elements from maxQueue that are out of the current window
           while (maxQueue.length > 0 && maxQueue[maxQueue.length - 1] < nums[i]) {
               maxQueue.pop();
           }
-          
+
           // Add current element to maxQueue
           maxQueue.push(nums[i]);
-          
+
           // Remove elements from maxQueue that are out of the current window range
           if (i >= k - 1) {
               result.push(maxQueue[0]);
@@ -177,7 +177,7 @@ Output: [1]
               }
           }
       }
-      
+
       return result;
   };
 
@@ -185,21 +185,21 @@ Output: [1]
 
     </TabItem>
     <TabItem value="TypeScript" label="TypeScript">
-    <SolutionAuthor name="@hiteshgahanolia"/> 
+    <SolutionAuthor name="@hiteshgahanolia"/>
      ```typescript
      function maxSlidingWindow(nums: number[], k: number): number[] {
       let maxQueue: number[] = [];
       let result: number[] = [];
-      
+
       for (let i = 0; i < nums.length; i++) {
           // Remove elements from maxQueue that are out of the current window
           while (maxQueue.length > 0 && maxQueue[maxQueue.length - 1] < nums[i]) {
               maxQueue.pop();
           }
-          
+
           // Add current element to maxQueue
           maxQueue.push(nums[i]);
-          
+
           // Remove elements from maxQueue that are out of the current window range
           if (i >= k - 1) {
               result.push(maxQueue[0]);
@@ -208,7 +208,7 @@ Output: [1]
               }
           }
       }
-      
+
       return result;
   }
       ```
@@ -219,16 +219,16 @@ Output: [1]
      function maxSlidingWindow(nums: number[], k: number): number[] {
       let maxQueue: number[] = [];
       let result: number[] = [];
-      
+
       for (let i = 0; i < nums.length; i++) {
           // Remove elements from maxQueue that are out of the current window
           while (maxQueue.length > 0 && maxQueue[maxQueue.length - 1] < nums[i]) {
               maxQueue.pop();
           }
-          
+
           // Add current element to maxQueue
           maxQueue.push(nums[i]);
-          
+
           // Remove elements from maxQueue that are out of the current window range
           if (i >= k - 1) {
               result.push(maxQueue[0]);
@@ -237,7 +237,7 @@ Output: [1]
               }
           }
       }
-      
+
       return result;
   }
 

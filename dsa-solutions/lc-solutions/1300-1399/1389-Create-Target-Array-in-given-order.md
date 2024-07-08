@@ -56,7 +56,7 @@ Input: nums = [1], index = [0]
 Output: [1]
 ```
 
-**Expected Time Complexity:** $O(N)$  
+**Expected Time Complexity:** $O(N)$
 **Expected Auxiliary Space:** $O(N)$
 
 ### Constraints
@@ -90,7 +90,7 @@ The approach for solving the problem of creating a target array from given `nums
     };
     ```
   </TabItem>
- 
+
   <TabItem value="python" label="Python">
   <SolutionAuthor name="@ImmidiSivani" />
 
@@ -104,7 +104,7 @@ The approach for solving the problem of creating a target array from given `nums
     ```
 
   </TabItem>
-  
+
   <TabItem value="java" label="Java">
   <SolutionAuthor name="@ImmidiSivani" />
 
