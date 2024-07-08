@@ -1,5 +1,5 @@
 ---
-id: N-Queens-Puzzle
+id: n-queens-uzzle
 title: N-Queens Puzzle
 sidebar_label: N-Queens Puzzle
 tags: 
