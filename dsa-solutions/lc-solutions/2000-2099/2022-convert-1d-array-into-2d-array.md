@@ -89,4 +89,45 @@ public:
     }
 };
 
-````
+```
+
+#### Java
+
+```java
+
+public class Solution {
+
+    public static int[][] construct2DArray(int[] original, int m, int n) {
+        // Check if the total number of elements in the original array equals m * n
+        if (original.length != m * n) {
+            return new int[0][0]; // Return an empty 2D array if it's impossible to form the 2D array
+        }
+
+        // Initialize the 2D array with the specified number of rows and columns
+        int[][] result = new int[m][n];
+
+        // Fill the 2D array with elements from the original array
+        for (int i = 0; i < original.length; i++) {
+            result[i / n][i % n] = original[i];
+        }
+
+        // Return the constructed 2D array
+        return result;
+    }
+
+    public static void main(String[] args) {
+        // Test cases
+        int[] original1 = {1, 2, 3, 4};
+        int m1 = 2, n1 = 2;
+        System.out.println(Arrays.deepToString(construct2DArray(original1, m1, n1)));
+
+        int[] original2 = {1, 2, 3};
+        int m2 = 1, n2 = 3;
+        System.out.println(Arrays.deepToString(construct2DArray(original2, m2, n2)));
+
+        int[] original3 = {1, 2};
+        int m3 = 1, n3 = 1;
+        System.out.println(Arrays.deepToString(construct2DArray(original3, m3, n3)));
+    }
+}
+```
