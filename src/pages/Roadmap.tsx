@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "@theme/Layout";
-import Roadmap from "../components/Roadmap";
+import Roadmaps from "../components/Roadmap";
 
 
 export default function RoadMap() {
@@ -11,9 +11,7 @@ export default function RoadMap() {
       description="RoadMap for Learning"
     >
       <main>
-        <div>
-          <Roadmap />
-        </div>
+          <Roadmaps />
       </main>
     </Layout>
   );
