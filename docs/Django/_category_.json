@@ -1,6 +1,6 @@
 {
     "label": "Django",
-    "position": 15,
+    "position": 7,
     "link": {
         "type": "generated-index",
         "description": "Django is a high-level Python web framework that allows developers to create robust web applications quickly."
