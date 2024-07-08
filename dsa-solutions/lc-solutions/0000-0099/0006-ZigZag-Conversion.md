@@ -1,5 +1,5 @@
 ---
-id: Zigzag Conversion
+id: zigzag-conversion
 title: Zigzag Conversion (LeetCode)
 sidebar_label: 0006-Zigzag Conversion
 tags:

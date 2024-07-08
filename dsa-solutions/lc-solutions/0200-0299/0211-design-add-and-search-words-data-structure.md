@@ -1,7 +1,7 @@
 ---
-id: words-data-structure
+id: design-add-and-search-words-data-structure
 title: Design Add and Search Words Data Structure
-sidebar_label: 0211 Design Add and Search Words Data Structure
+sidebar_label: 0211 - Design Add and Search Words Data Structure
 tags:
 - Depth-First Search
 - String
