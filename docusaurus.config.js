@@ -225,8 +225,8 @@ const config = {
               {
                 html: '<span class="nav-emoji"> 📊</span> Quiz',
                 to: "https://quiz-app-ajay-dhangar.vercel.app/",
-              },  
-                          
+              },
+
               {
                 label: "🧑‍💻 Live Editor",
                 to: "/LiveEditor/",
