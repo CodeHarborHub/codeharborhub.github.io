@@ -213,17 +213,17 @@ const config = {
             position: "left",
             items: [
               {
-                html: '<span class="nav-emoji">🌍</span> Web Dev',
+                label: "🌍 Web Dev",
                 to: "/web-dev/",
               },
 
               {
-                html: '<span class="nav-emoji">🛣️</span> Roadmap',
+                label: "🛣️ Roadmap",
                 to: "/roadmap/",
               },
 
               {
-                html: '<span class="nav-emoji"> 📊</span> Quiz',
+                label: "📊 Quiz",
                 to: "https://quiz-app-ajay-dhangar.vercel.app/",
               },
 
@@ -232,7 +232,7 @@ const config = {
                 to: "/LiveEditor/",
               },
               {
-                html: '<span class="nav-emoji"> 📺</span> Broadcast',
+                label: "📺 Broadcast",
                 to: "https://codeharborhub-broadcast-web.vercel.app/",
               },
               {

@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "@theme/Layout";
-import Roadmaps from "../components/Roadmap";
+import Roadmaps from "../../components/Roadmap";
 
 
 export default function RoadMap() {
