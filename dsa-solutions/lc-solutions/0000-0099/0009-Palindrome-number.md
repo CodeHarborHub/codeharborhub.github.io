@@ -1,7 +1,7 @@
 ---
-id: Palindrome Number
+id: palindrome-number
 title: Palindrome Number (LeetCode)
-sidebar_label: 0009-Palindrome Number
+sidebar_label: 0009 - Palindrome Number
 tags: 
   - Math
   - Palindrome
