@@ -213,19 +213,26 @@ const config = {
             position: "left",
             items: [
               {
-                html: '<span class="nav-emoji">🌍</span> Web Dev',
+                label: "🌍 Web Dev",
                 to: "/web-dev/",
               },
+
               {
-                html: '<span class="nav-emoji"> 📊</span> Quiz',
+                label: "🛣️ Roadmap",
+                to: "/roadmap/",
+              },
+
+              {
+                label: "📊 Quiz",
                 to: "https://quiz-app-ajay-dhangar.vercel.app/",
-              },              
+              },
+
               {
                 label: "🧑‍💻 Live Editor",
                 to: "/LiveEditor/",
               },
               {
-                html: '<span class="nav-emoji"> 📺</span> Broadcast',
+                label: "📺 Broadcast",
                 to: "https://codeharborhub-broadcast-web.vercel.app/",
               },
               {
