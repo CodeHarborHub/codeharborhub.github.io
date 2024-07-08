@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Roadmap.css";
 
 interface TechCategory {
@@ -269,23 +269,56 @@ const techCategories: TechCategory[] = [
     ],
   },
 ];
-
 const Roadmap: React.FC = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [collapsedCategories, setCollapsedCategories] = useState<number[]>([]);
+
+  const toggleCollapse = (id: number) => {
+    setCollapsedCategories((prev) =>
+      prev.includes(id) ? prev.filter((cid) => cid !== id) : [...prev, id]
+    );
+  };
+
+  const filteredCategories = techCategories
+    .map((category) => ({
+      ...category,
+      technologies: category.technologies.filter((tech) =>
+        tech.name.toLowerCase().includes(searchTerm.toLowerCase())
+      ),
+    }))
+    .filter((category) => category.technologies.length > 0);
+
   return (
     <div className="roadmap-container">
       <h1 className="roadmap-title">Technology Roadmap</h1>
-      {techCategories.map((category) => (
+      <div className="roadmap-controls">
+        <input
+          type="text"
+          placeholder="Search technologies..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="roadmap-search"
+        />
+      </div>
+      {filteredCategories.map((category) => (
         <div key={category.id} className="roadmap-category">
-          <h2 className="roadmap-category-title">{category.title}</h2>
-          <ul className="roadmap-cards">
-            {category.technologies.map((tech) => (
-              <li key={tech.id} className="roadmap-card">
-                <a href={tech.link} className="roadmap-link">
-                  {tech.name}
-                </a>
-              </li>
-            ))}
-          </ul>
+          <h2
+            className="roadmap-category-title"
+            onClick={() => toggleCollapse(category.id)}
+          >
+            {category.title}
+          </h2>
+          {!collapsedCategories.includes(category.id) && (
+            <ul className="roadmap-cards">
+              {category.technologies.map((tech) => (
+                <li key={tech.id} className="roadmap-card">
+                  <a href={tech.link} className="roadmap-link">
+                    {tech.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       ))}
     </div>
