@@ -47,7 +47,7 @@ Output: "ZY"
 
 ### Constraints
 
-<code>1 <= columnNumber <= 2<sup>23</sup> - 1</code>
+`$1 \leq \text{columnNumber} \leq 2^{23} - 1$`
 
 ## Solution
 
