@@ -150,6 +150,6 @@ class Solution:
 
 ## References
 
-- **LeetCode Problem**: [Deepest Leaves Sum]([https://leetcode.com/problems/smallest-range-ii/description/](https://leetcode.com/problems/deepest-leaves-sum/description/))
+- **LeetCode Problem**: [Deepest Leaves Sum](https://leetcode.com/problems/smallest-range-ii/description/](https://leetcode.com/problems/deepest-leaves-sum/description/)
 
-- **Solution Link**: [Deepest Leaves Sum]([https://leetcode.com/problems/smallest-range-ii/solutions/](https://leetcode.com/problems/deepest-leaves-sum/solutions/5397378/dfs-solution-python/))
+- **Solution Link**: [Deepest Leaves Sum](https://leetcode.com/problems/smallest-range-ii/solutions/](https://leetcode.com/problems/deepest-leaves-sum/solutions/5397378/dfs-solution-python/)
