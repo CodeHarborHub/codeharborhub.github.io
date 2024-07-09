@@ -35,8 +35,6 @@ Output: 2
 ### Constraints
 
 - `1 <= nums.length <= 2 * 104`
-- `1000 <= nums[i] <= 1000`
-- `107 <= k <= 107`
 
 ## Solution Approach
 
