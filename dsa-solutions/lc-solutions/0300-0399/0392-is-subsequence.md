@@ -1,5 +1,5 @@
 ---
-id: is subsequence
+id: is-subsequence
 title: Is Subsequence
 sidebar_label: 0392-Is Subsequence
 tags:
