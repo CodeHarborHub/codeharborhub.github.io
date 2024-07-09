@@ -11,7 +11,7 @@ description: "This is a solution to the Find the Winner of the Circular Game pro
 ## Problem Description
 There are n friends that are playing a game. The friends are sitting in a circle and are numbered from 1 to n in clockwise order. More formally, moving clockwise from the ith friend brings you to the $(i+1)^{th}$ friend for `1 <= i < n`, and moving clockwise from the nth friend brings you to the 1st friend.
 
-### Examples
+## Examples
 
 **Example 1:**
 
@@ -82,15 +82,15 @@ function Solution() {
         const winner = findTheWinner(n, k);
         alert(`The winner is: ${winner}`);
       }}>Find Winner</button>
-    </div>
-  );
+    </div> -->
+  <!-- );
 }
 ```
 
-#### Complexity Analysis
+#### Complexity Analysis:
 
-- Time Complexity: $ O(n) $ because of iterating through the elements
-- Space Complexity: $ O(1) $
+- **Time Complexity:** $O(n)$ because of iterating through the elements,
+- **Space Complexity:** $O(1)$
 
 ## Code in Different Languages
 <Tabs>
