@@ -256,6 +256,7 @@ export default function Contact(): JSX.Element {
                       onChange={handlePhoneChange}
                       containerClass={styles.phone_input_container}
                       inputClass={styles.phone_input}
+                      dropdownStyle={{color:"black"}}
                     />
                   </div>
                   {/* Form select for feedback type */}
