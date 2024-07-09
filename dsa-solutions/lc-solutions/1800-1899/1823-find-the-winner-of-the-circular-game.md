@@ -88,8 +88,8 @@ function Solution() {
 
 #### Complexity Analysis
 
-- Time Complexity: $ O(n) $ because of iterating through the elements
-- Space Complexity: $ O(1) $
+- **Time Complexity:** $ O(n) $ because of iterating through the elements
+- **Space Complexity:** $ O(1) $
 
 ## Code in Different Languages
 <Tabs>
