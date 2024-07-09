@@ -1,17 +1,23 @@
 ---
 id: find-the-winner-of-the-circular-game
-title: Find the Winner of the Circular Game
-sidebar_label: 1823 - Find the Winner of the Circular Game
+title: Find The Winner Of The Circular Game
+sidebar_label: 1823  Find The Winner Of The Circular Game
 tags:
-- Array
+  - Array
+  - Math
+  - Recursion
+  - Queue
+  - Simulation
 
 description: "This is a solution to the Find the Winner of the Circular Game problem on LeetCode."
+
+sidebar_position: 1823
 ---
 
 ## Problem Description
 There are n friends that are playing a game. The friends are sitting in a circle and are numbered from 1 to n in clockwise order. More formally, moving clockwise from the ith friend brings you to the $(i+1)^{th}$ friend for `1 <= i < n`, and moving clockwise from the nth friend brings you to the 1st friend.
 
-## Examples
+### Examples
 
 **Example 1:**
 
@@ -54,102 +60,15 @@ Explanation: The friends leave in this order: 5, 4, 6, 2, 3. The winner is frien
 3. **Return the Result**:
    - After iterating through all elements, return the value of `winner` as the result.
 
-<Tabs>
-  <TabItem value="Solution" label="Solution">
-
-    #### Implementation
-    ```jsx live
-
-function Solution() {
-  const findTheWinner = (n, k) => {
-    let winner = 1;
-    for (let i = 1; i < n; i++) {
-      winner = (winner + k - 1) % (i + 1) + 1;
-    }
-    return winner;
-  };
-
-  return (
-    <div>
-      <h1>Find the Winner</h1>
-      <p>Enter the number of friends (n):</p>
-      <input type="number" id="n" />
-      <p>Enter the number of steps (k):</p>
-      <input type="number" id="k" />
-      <button onClick={() => {
-        const n = parseInt(document.getElementById("n").value);
-        const k = parseInt(document.getElementById("k").value);
-        const winner = findTheWinner(n, k);
-        alert(`The winner is: ${winner}`);
-      }}>Find Winner</button>
-    </div>
-   );
-}
-```
 
 #### Complexity Analysis:
 
 - **Time Complexity:** $O(n)$ because of iterating through the elements,
 - **Space Complexity:** $O(1)$
 
-## Code in Different Languages
-<Tabs>
-  <TabItem value="JavaScript" label="JavaScript">
-  <SolutionAuthor name="@Ishitamukherjee2004"/>
-```javascript
-class Solution {
-  findTheWinner(n, k) {
-    let winner = 1;
-    for (let i = 1; i < n; i++) {
-      winner = (winner + k - 1) % (i + 1) + 1;
-    }
-    return winner;
-  }
-}
-```
-  </TabItem>
 
-  <TabItem value="TypeScript" label="TypeScript">
-  <SolutionAuthor name="@Ishitamukherjee2004"/>
-```typescript
-class Solution {
-  findTheWinner(n: number, k: number): number {
-    let winner = 1;
-    for (let i = 1; i < n; i++) {
-      winner = (winner + k - 1) % (i + 1) + 1;
-    }
-    return winner;
-  }
-}
-```
-  </TabItem>
-  <TabItem value="Python" label="Python">
-  <SolutionAuthor name="@Ishitamukherjee2004"/>
-```python
-class Solution:
-  def findTheWinner(self, n: int, k: int) -> int:
-    winner = 1
-    for i in range(1, n):
-      winner = (winner + k - 1) % (i + 1) + 1
-    return winner
-```
-  </TabItem>
-  <TabItem value="Java" label="Java">
-  <SolutionAuthor name="@Ishitamukherjee2004"/>
-```java
-public class Solution {
-  public int findTheWinner(int n, int k) {
-    int winner = 1;
-    for (int i = 1; i < n; i++) {
-      winner = (winner + k - 1) % (i + 1) + 1;
-    }
-    return winner;
-  }
-}
-```
-  </TabItem>
-  <TabItem value="C++" label="C++">
-  <SolutionAuthor name="@Ishitamukherjee2004"/>
+#### C++ Solution
+
 ```cpp
 class Solution {
 public:
@@ -161,12 +80,9 @@ public:
         return winner;
     }
 };
-```
-  </TabItem>
-</Tabs>
 
-</TabItem>
-</Tabs>
+```
+
 
 
 
