@@ -6,9 +6,11 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     width: 80%;
     max-width: 800px;
+    margin-left: 25%;
 }
 .roadmap-section {
     margin-bottom: 20px;
+    
 }
 .roadmap-title {
     text-align: center;
