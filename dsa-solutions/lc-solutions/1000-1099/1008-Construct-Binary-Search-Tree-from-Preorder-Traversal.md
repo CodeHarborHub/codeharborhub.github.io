@@ -1,3 +1,4 @@
+---
 id: construct-binary-search-tree-from-preorder-traversal
 title: Construct Binary Search Tree from Preorder Traversal
 level: medium
@@ -24,10 +25,7 @@ Input: `preorder = [8,5,1,7,10,12]`
 
 Output: `TreeNode{val: 8, left: TreeNode{val: 5, left: TreeNode{val: 1, left: None, right: None}, right: TreeNode{val: 7, left: None, right: None}}, right: TreeNode{val: 10, left: None, right: TreeNode{val: 12, left: None, right: None}}}`
 
-Explanation:
-The constructed binary search tree from the preorder traversal is shown.
 
-![Example 1](images/example1.png)
 
 **Constraints:**
 
