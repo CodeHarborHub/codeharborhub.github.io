@@ -15,7 +15,7 @@ sidebar_position: 1823
 ---
 
 ## Problem Description
-There are n friends that are playing a game. The friends are sitting in a circle and are numbered from 1 to n in clockwise order. More formally, moving clockwise from the ith friend brings you to the $(i+1)^{th}$ friend for `1 <= i < n`, and moving clockwise from the nth friend brings you to the 1st friend.
+There are n friends that are playing a game. The friends are sitting in a circle and are numbered from 1 to n in clockwise order. More formally, moving clockwise from the ith friend brings you to the friend , and moving clockwise from the nth friend brings you to the 1st friend.
 
 ### Examples
 
@@ -55,7 +55,7 @@ Explanation: The friends leave in this order: 5, 4, 6, 2, 3. The winner is frien
 
 2. **Iterate Through the Numbers**:
    - Use a loop to iterate through each element.
-   - Apply the formula `(winner + k - 1) % (i + 1) + 1` to find the new winner.
+   - Apply the formula to find the new winner.
 
 3. **Return the Result**:
    - After iterating through all elements, return the value of `winner` as the result.
@@ -63,7 +63,7 @@ Explanation: The friends leave in this order: 5, 4, 6, 2, 3. The winner is frien
 
 #### Complexity Analysis:
 
-- **Time Complexity:** $O(n)$ because of iterating through the elements,
+- **Time Complexity:** $O(n)$, because of iterating through the elements,
 - **Space Complexity:** $O(1)$
 
 
