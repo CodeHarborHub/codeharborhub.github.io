@@ -17,6 +17,7 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .faq-question {
     background-color: #f0f2f7;
     padding: 15px;
@@ -25,6 +26,15 @@
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
+    transition: background-color 0.6s ease;
+}
+
+.faq-question:hover {
+    background-color: #2E9E32E1;
+}
+
+[data-theme='dark'] .faq-question:hover {
+    background-color: #25C2A0;
 }
 
 [data-theme='dark'] .faq-answer {
@@ -34,6 +44,7 @@
     background-color: #131927;
     padding: 0 15px;
 }
+
 .faq-answer {
     max-height: 0;
     overflow: hidden;
