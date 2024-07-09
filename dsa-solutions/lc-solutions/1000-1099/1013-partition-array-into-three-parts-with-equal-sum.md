@@ -1,7 +1,6 @@
 ---
 id: partition-array-into-three-parts-with-equal-sum
 title: Partition Array Into Three Parts With Equal Sum
-level: easy
 sidebar_label: Partition Array Equal Sum
 tags:
   - Array
