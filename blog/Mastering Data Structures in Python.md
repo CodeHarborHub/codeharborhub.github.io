@@ -1,7 +1,7 @@
 ---
 title: 'Mastering Data Structures in Python'
 sidebar_label: Data Structures
-authors: [SanthoshSiddhardhaLingamuneni]
+authors: [santhosh-siddhardha]
 tags: [data-structures, python, best-practices]
 date: 2024-07-07
 hide_table_of_contents: true
