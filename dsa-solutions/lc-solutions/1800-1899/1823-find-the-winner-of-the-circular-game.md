@@ -34,7 +34,7 @@ Explanation: The friends leave in this order: 5, 4, 6, 2, 3. The winner is frien
 
 ### Constraints
 
-- 1 <= k <= n <= 500
+- `1 <= k <= n <= 500`
 
 ## Solution for Find the Winner of the Circular Game
 ### Approach 
