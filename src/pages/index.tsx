@@ -21,6 +21,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import Preloader from '../components/Preloader/Preloader';
 
 function TweetsSection() {
   const tweetColumns = [[], [], []];
@@ -141,6 +142,7 @@ export default function Home() {
 
         <ScrollTopToButton />
         <ScrollBottomToTop />
+        <Preloader />
       </main>
     </Layout>
   );
