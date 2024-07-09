@@ -2,10 +2,8 @@
 id:secong-min-node-in-binary-tree
 title: Second Minimum Node in Binary Tree
 sidebar_label: 671-Second Minimum Node in Binary Tree
-tags:
-
-- Leet code
-  description: "Solution to leetocde 671"
+tags: [Leet code]
+description: "Solution to leetocde 671"
 ---
 
 ## Problem Statement
