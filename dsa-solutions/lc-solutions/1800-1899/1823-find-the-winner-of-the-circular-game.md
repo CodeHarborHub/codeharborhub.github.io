@@ -82,8 +82,8 @@ function Solution() {
         const winner = findTheWinner(n, k);
         alert(`The winner is: ${winner}`);
       }}>Find Winner</button>
-    </div> -->
-  <!-- );
+    </div>
+   );
 }
 ```
 
