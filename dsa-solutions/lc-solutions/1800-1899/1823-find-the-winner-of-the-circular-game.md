@@ -2,7 +2,9 @@
 id: find-the-winner-of-the-circular-game
 title: Find the Winner of the Circular Game
 sidebar_label: 1823 - Find the Winner of the Circular Game
-tags: [Array]
+tags:
+- Array
+
 description: "This is a solution to the Find the Winner of the Circular Game problem on LeetCode."
 ---
 
@@ -11,7 +13,7 @@ There are n friends that are playing a game. The friends are sitting in a circle
 
 ### Examples
 
-*Example 1:*
+**Example 1:**
 
 ```
 Input: n = 5, k = 2  
@@ -28,7 +30,7 @@ Explanation: Here are the steps of the game:
 9) Friend 5 leaves the circle. Only friend 3 is left, so they are the winner.
 ```
 
-*Example 2:*
+**Example 2:**
 ```
 Input: n = 6, k = 5  
 Output: 1  
@@ -45,11 +47,11 @@ Explanation: The friends leave in this order: 5, 4, 6, 2, 3. The winner is frien
 1. **Initialization**:
    - Initialize a variable `winner` to keep track of the winner found.
 
-2. *Iterate Through the Numbers*:
+2. **Iterate Through the Numbers**:
    - Use a loop to iterate through each element.
    - Apply the formula `(winner + k - 1) % (i + 1) + 1` to find the new winner.
 
-3. *Return the Result*:
+3. **Return the Result**:
    - After iterating through all elements, return the value of `winner` as the result.
 
 <Tabs>
@@ -83,13 +85,12 @@ function Solution() {
     </div>
   );
 }
-
-    ```
+```
 
 #### Complexity Analysis
 
-- **Time Complexity:** $ O(n) $ because of iterating through the elements
-- **Space Complexity:** $ O(1) $
+- Time Complexity: $ O(n) $ because of iterating through the elements
+- Space Complexity: $ O(1) $
 
 ## Code in Different Languages
 <Tabs>
@@ -147,7 +148,6 @@ public class Solution {
 }
 ```
   </TabItem>
-
   <TabItem value="C++" label="C++">
   <SolutionAuthor name="@Ishitamukherjee2004"/>
 ```cpp
@@ -165,10 +165,13 @@ public:
   </TabItem>
 </Tabs>
 
+</TabItem>
+</Tabs>
 
 
 
 ## References
 
-- *LeetCode Problem*: [Find the Winner of the Circular Game](https://leetcode.com/problems/find-the-winner-of-the-circular-game)
-- *Solution Link*: [LeetCode Solution](https://leetcode.com/problems/find-the-winner-of-the-circular-game)
+- **LeetCode Problem**: [Find the Winner of the Circular Game](https://leetcode.com/problems/find-the-winner-of-the-circular-game)
+
+- **Solution Link**: [LeetCode Solution](https://leetcode.com/problems/find-the-winner-of-the-circular-game)
