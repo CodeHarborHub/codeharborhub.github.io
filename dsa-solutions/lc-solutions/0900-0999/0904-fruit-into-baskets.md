@@ -196,5 +196,5 @@ console.log(totalFruit([1, 2, 1])); // Output: 3
 
 #### Complexity:
 
-- Time Complexity: \(O(n)\), where \(n\) is the length of the input array `fruits`. We traverse the array once with the two pointers.
-- Space Complexity: \(O(1)\), since the dictionary or map will hold at most three keys at any time.
+- **Time Complexity:** $O(n)$, where $n$ is the length of the input array `fruits`. We traverse the array once with the two pointers.
+- **Space Complexity:** $O(1)$, since the dictionary or map will hold at most three keys at any time.
