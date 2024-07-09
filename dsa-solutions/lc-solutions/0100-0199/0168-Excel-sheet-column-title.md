@@ -47,7 +47,7 @@ Output: "ZY"
 
 ### Constraints
 
-`$1 \leq \text{columnNumber} \leq 2^{23} - 1$`
+- $1 \leq  \text{columnNumber} \leq 2^{23} - 1$
 
 ## Solution
 
