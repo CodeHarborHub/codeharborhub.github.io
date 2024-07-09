@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Roadmap.css";
 
+
 interface TechCategory {
   id: number;
   title: string;
@@ -12,7 +13,7 @@ const techCategories: TechCategory[] = [
     id: 1,
     title: "Frontend",
     technologies: [
-      { id: 1, name: "HTML", link: "#" },
+      { id: 1, name: "HTML", link: "/roadmap/html" },
       { id: 2, name: "CSS", link: "#" },
       { id: 3, name: "JavaScript", link: "#" },
       { id: 4, name: "React", link: "#" },
