@@ -121,7 +121,7 @@ class Solution {
 ### JavaScript
 
 ```javascript
-var sortArrayByParity = function(nums) {
+var sortArrayByParity = function (nums) {
   let result = [];
   for (let num of nums) {
     if (num % 2 === 0) {
@@ -137,5 +137,5 @@ var sortArrayByParity = function(nums) {
 };
 
 // Example usage:
-console.log(sortArrayByParity([3, 1, 2, 4]));  // Output: [2, 4, 3, 1]
+console.log(sortArrayByParity([3, 1, 2, 4])); // Output: [2, 4, 3, 1]
 ```
