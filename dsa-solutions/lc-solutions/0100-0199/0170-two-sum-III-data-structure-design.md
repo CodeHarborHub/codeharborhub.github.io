@@ -3,7 +3,7 @@ id: two-sum-III-data-structure-design
 title: Two Sum III - Data Structure Design
 sidebar_label: 0170-Two Sum III - Data Structure Design
 tags: [HashTable, ArrayList, Binary Search]
-description: "Design and implement a TwoSum class. It should support the following operations: `add` and `find`".
+description: "Design and implement a TwoSum class."
 ---
 
 ## Problem Statement
