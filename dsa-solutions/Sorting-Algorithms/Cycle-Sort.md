@@ -67,7 +67,7 @@ Output: [11, 12, 22, 25, 64]
 -Fourth and fifth cycles: Remaining elements are already in the correct position.
 -Final sorted array: [10, 20, 30, 40, 50].
 
-## key constraints and characteristics of Cycle Sort:
+## 6. key constraints and characteristics of Cycle Sort:
 
 - **Memory Writes**: Minimizes the number of write operations, making it efficient where write operations are costly.
 - **Stability**: Maintains the relative order of equal elements, making it a stable sorting algorithm.
@@ -80,4 +80,129 @@ Output: [11, 12, 22, 25, 64]
   - Inefficient for large datasets due to its quadratic time complexity.
   - May not perform well on datasets with many duplicates or pre-sorted data.
  
+## 7. Implementation
 
+**Java Implementation**
+```
+public class CycleSort {
+    public static void cycleSort(int[] arr) {
+        int n = arr.length;
+        for (int cycleStart = 0; cycleStart <= n - 2; cycleStart++) {
+            int item = arr[cycleStart];
+            int pos = cycleStart;
+            for (int i = cycleStart + 1; i < n; i++) {
+                if (arr[i] < item)
+                    pos++;
+            }
+            while (item == arr[pos])
+                pos++;
+            if (pos != cycleStart) {
+                int temp = item;
+                item = arr[pos];
+                arr[pos] = temp;
+            }
+            while (pos != cycleStart) {
+                pos = cycleStart;
+                for (int i = cycleStart + 1; i < n; i++) {
+                    if (arr[i] < item)
+                        pos++;
+                }
+                while (item == arr[pos])
+                    pos++;
+                if (item != arr[pos]) {
+                    int temp = item;
+                    item = arr[pos];
+                    arr[pos] = temp;
+                }
+            }
+        }
+    }
+    
+    public static void main(String[] args) {
+        int[] arr = {20, 40, 50, 10, 30};
+        cycleSort(arr);
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+    }
+}
+```
+
+**Python**
+```
+def cycle_sort(arr):
+    writes = 0
+    
+    for cycleStart in range(0, len(arr) - 1):
+        item = arr[cycleStart]
+        pos = cycleStart
+
+        for i in range(cycleStart + 1, len(arr)):
+            if arr[i] < item:
+                pos += 1
+
+        while item == arr[pos]:
+            pos += 1
+
+        if pos != cycleStart:
+            arr[pos], item = item, arr[pos]
+            writes += 1
+
+        while pos != cycleStart:
+            pos = cycleStart
+            for i in range(cycleStart + 1, len(arr)):
+                if arr[i] < item:
+                    pos += 1
+            
+            while item == arr[pos]:
+                pos += 1
+
+            if item != arr[pos]:
+                arr[pos], item = item, arr[pos]
+                writes += 1
+
+    return writes
+
+arr = [20, 40, 50, 10, 30]
+cycle_sort(arr)
+print(arr)
+```
+
+## 8. Complexity
+
+-**Time Complexity**
+  - Best Case: O(n^2)
+  - Average Case: O(n^2)
+  - Worst Case: O(n^2)
+    Cycle Sort typically exhibits quadratic time complexity, where n is the number of elements in the array. This arises because each element may need to be moved multiple times to its correct position, especially in the presence of duplicates or when the array is in reverse order.
+  
+-**Space Complexity**
+  -O(1)
+  Cycle Sort is an in-place sorting algorithm, meaning it requires only a constant amount of extra space for auxiliary variables such as loops and temporary variables used for swaps.
+
+
+## 9. Advantages and disadvantages
+### Advantages:
+
+- **Minimizes Writes:** Cycle Sort reduces memory writes, making it efficient where write operations are costly.
+  
+- **Stable Sorting:** Preserves the order of equal elements, ensuring stability in sorting results.
+
+- **In-Place Algorithm:** Sorts elements directly within the input array, requiring minimal extra space.
+
+- **Suitable for Small Data Sets:** Efficient for small datasets or nearly sorted arrays due to direct placement of elements.
+
+### Disadvantages:
+
+- **Quadratic Time Complexity:** Has O(n^2) time complexity in the worst-case scenario, limiting efficiency for large datasets.
+
+- **Not Adaptive:** Performs the same number of operations regardless of initial data order, lacking adaptability.
+
+- **May Perform Poorly with Duplicates:** Can require additional operations to handle datasets with many duplicate values.
+
+- **Limited Use Cases:** Less suitable for large or dynamic datasets where faster algorithms are more efficient, such as Quick Sort or Merge Sort.
+
+## 10. References
+
+- **GFG Article on Cycle Sort:** [Geeks for Geeks Cycle Sort](https://www.geeksforgeeks.org/cycle-sort/)
+- **Wikipedia Article on Cycle Sort:** [Cycle Sort - Wikipedia](https://en.wikipedia.org/wiki/Cycle_sort)
