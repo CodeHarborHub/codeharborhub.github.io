@@ -171,32 +171,32 @@ class Solution {
 ### JavaScript
 
 ```javascript
-var superpalindromesInRange = function(left, right) {
-    const isPalindrome = (s) => s === s.split('').reverse().join('');
-    const L = BigInt(left);
-    const R = BigInt(right);
-    const MAGIC = 100000;
-    let count = 0;
+var superpalindromesInRange = function (left, right) {
+  const isPalindrome = (s) => s === s.split("").reverse().join("");
+  const L = BigInt(left);
+  const R = BigInt(right);
+  const MAGIC = 100000;
+  let count = 0;
 
-    for (let k = 0; k < MAGIC; ++k) {
-        let s = k.toString();
-        let t = s + s.split('').reverse().slice(1).join('');
-        let v = BigInt(t) * BigInt(t);
-        if (v > R) break;
-        if (v >= L && isPalindrome(v.toString())) count++;
-    }
+  for (let k = 0; k < MAGIC; ++k) {
+    let s = k.toString();
+    let t = s + s.split("").reverse().slice(1).join("");
+    let v = BigInt(t) * BigInt(t);
+    if (v > R) break;
+    if (v >= L && isPalindrome(v.toString())) count++;
+  }
 
-    for (let k = 0; k < MAGIC; ++k) {
-        let s = k.toString();
-        let t = s + s.split('').reverse().join('');
-        let v = BigInt(t) * BigInt(t);
-        if (v > R) break;
-        if (v >= L && isPalindrome(v.toString())) count++;
-    }
+  for (let k = 0; k < MAGIC; ++k) {
+    let s = k.toString();
+    let t = s + s.split("").reverse().join("");
+    let v = BigInt(t) * BigInt(t);
+    if (v > R) break;
+    if (v >= L && isPalindrome(v.toString())) count++;
+  }
 
-    return count;
+  return count;
 };
 
 // Example usage:
-console.log(superpalindromesInRange("4", "1000"));  // Output: 4
+console.log(superpalindromesInRange("4", "1000")); // Output: 4
 ```
