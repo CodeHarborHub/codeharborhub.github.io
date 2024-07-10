@@ -2,7 +2,7 @@
 id: word-break-ii
 title: Word Break II
 level: hard
-sidebar_label: 140 - Word Break II
+sidebar_label: 0140 - Word Break II
 tags:
   - Dynamic Programming
   - Backtracking
