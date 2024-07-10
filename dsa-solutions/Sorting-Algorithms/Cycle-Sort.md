@@ -83,7 +83,7 @@ Output: [11, 12, 22, 25, 64]
 ## 7. Implementation
 
 **Java Implementation**
-```
+```java
 public class CycleSort {
     public static void cycleSort(int[] arr) {
         int n = arr.length;
@@ -129,7 +129,7 @@ public class CycleSort {
 ```
 
 **Python**
-```
+```python
 def cycle_sort(arr):
     writes = 0
     
