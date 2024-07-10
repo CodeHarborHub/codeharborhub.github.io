@@ -2,11 +2,10 @@
 id: word-break-ii
 title: Word Break II
 level: hard
-sidebar_label: Word Break II
+sidebar_label: 0140 - Word Break II
 tags:
   - Dynamic Programming
   - Backtracking
-  - Java
 description: "This document provides solutions for the Word Break II problem."
 ---
 
@@ -64,8 +63,57 @@ To solve the problem of generating all possible sentences from `s` using words f
 
 3. **Memoization:**
    - Before making a recursive call, check if the current `index` and `sb.toString()` combination already exists in `memo`. If it does, directly retrieve the result from `memo` to avoid recomputation.
+  
+### Code(C++):
 
-### Java 
+```cpp
+
+#include <vector>
+#include <string>
+#include <unordered_set>
+#include <unordered_map>
+#include <sstream>
+using namespace std;
+
+class Solution {
+public:
+    vector<string> wordBreak(string s, vector<string>& wordDict) {
+        unordered_set<string> wordSet(wordDict.begin(), wordDict.end());
+        unordered_map<int, vector<string>> memo;
+        return wordBreakHelper(s, wordSet, 0, memo);
+    }
+
+private:
+    vector<string> wordBreakHelper(const string& s, const unordered_set<string>& wordDict, int start, unordered_map<int, vector<string>>& memo) {
+        if (memo.find(start) != memo.end()) {
+            return memo[start];
+        }
+
+        vector<string> result;
+        if (start == s.length()) {
+            result.push_back("");
+            return result;
+        }
+
+        for (int end = start + 1; end <= s.length(); ++end) {
+            string word = s.substr(start, end - start);
+            if (wordDict.find(word) != wordDict.end()) {
+                vector<string> sublist = wordBreakHelper(s, wordDict, end, memo);
+                for (const string& sub : sublist) {
+                    result.push_back(word + (sub.empty() ? "" : " ") + sub);
+                }
+            }
+        }
+
+        memo[start] = result;
+        return result;
+    }
+};
+
+```
+  
+
+### Code (Java): 
 
 ```java
 
@@ -115,7 +163,7 @@ class Solution {
     }
 ```
 
-### Python
+### Code (Python): 
 
 ```python
 
@@ -140,3 +188,8 @@ class Solution {
         wordBreakHelper(0)
         return self.result
 ``` 
+
+### Complexity Analysis
+
+- **Time Complexity**:  $O(n⋅2^n)$, in the worst case, where `n` is the length of the string `s`.
+- **Space Complexity**:  $O(n⋅2^n)$, in the worst case, where `n` is the length of the string `s`.
