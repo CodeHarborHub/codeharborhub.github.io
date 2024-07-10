@@ -2,7 +2,7 @@
 id: factorial-trailing-zeroes
 title: Factorial Trailing Zeroes
 sidebar_label: 0172-Factorial Trailing Zeroes
-tags: Math
+tags: [Math]
 description: Given an integer n, return the number of trailing zeroes in n!.
 
 ---
