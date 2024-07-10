@@ -8,6 +8,7 @@ import { FaYoutube } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import Popup from "../popup/popup";
 // Interface defining the structure of form values
 interface FormValues {
   fullName: string;
@@ -32,7 +33,7 @@ export default function Contact(): JSX.Element {
     feedbackType: "Question",
     otherFeedback: "",
   });
-
+    const [checker,setChecker]=useState({popup:false,status:false})
   // Function to handle input changes for text inputs, textarea, and select
   const handleInputChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -56,7 +57,19 @@ export default function Contact(): JSX.Element {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Handle form submission logic (e.g., send data to backend)
-    console.log("Form submitted:", formValues);
+    // console.log("Form submitted:", formValues); 
+    setFormValues({
+      fullName: "",
+      email: "",
+      phone: "",
+      message: "",
+      feedbackType: "Question",
+      otherFeedback: "",
+    })
+    setChecker(pre=>({...pre,popup:true,status:true}))
+    setTimeout(()=>{
+    setChecker(pre=>({...pre,popup:false,status:false}))
+    },2000)
   };
 
   return (
@@ -64,6 +77,7 @@ export default function Contact(): JSX.Element {
       {/* Contact section with styled components */}
       <section id="contact" className={styles.main__contact}>
         {/* Background divs for styling */}
+        {checker.popup? <Popup status={checker.status?"✔":"✖"} message={checker.status?"Success":"Something went wrong"} />:<></> }
         <div className={styles.main__contact_child1}></div>
         <div className={styles.main__contact_child2}></div>
         <div className={styles.main__contact_container}>
