@@ -1,0 +1,13 @@
+/* src/pages/BlogPage.css */
+
+.blog-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 16px;
+    gap:40px;
+    background-color: #fff;
+}
+[data-theme="dark"] .blog-page {
+    background-color: #111827;
+}
