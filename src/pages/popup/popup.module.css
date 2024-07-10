@@ -1,0 +1,28 @@
+.popup_message{
+    position:fixed;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    top:15%;
+    z-index:1;
+}
+.popup_message .success,.popup_message .error{
+    padding: 1rem 3rem;
+    font-family: monospace;
+    font-weight: 600;
+    border-radius:0.6rem;
+    font-size: 0.8rem;
+}
+.popup_message .success{
+    background: rgb(60 189 60);
+}
+.popup_message .error{
+    background:rgb(237 39 39);
+}
+.popup_message span{
+    font-size:1.5rem;
+    position:relative;
+    top:0.2rem;
+    margin-right: 0.3rem;
+}
