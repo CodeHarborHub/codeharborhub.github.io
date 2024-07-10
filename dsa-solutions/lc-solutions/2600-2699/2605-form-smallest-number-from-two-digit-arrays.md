@@ -42,12 +42,13 @@ Explanation: The number 3 contains the digit 3 which exists in both arrays.
 1. Sort both the Vectors.
 2. Store the elements of nums1 into a map.
 3. Now Traverse The map for each element in nums2 , if same element is found in both vectors return that element directly.
-4. Simply return the nums1[0]*10 + nums2[0] if(nums1[0] < nums2[0])
-and nums2[0]*10 + nums1[0] if(nums1[0] > nums2[0])
+4. Simply return the nums1[0]*10 + nums2[0] if(nums1[0] &lt; nums2[0])
+and nums2[0]*10 + nums1[0] if(nums1[0] &gt; nums2[0])
 
 ### Complexity
 
 Time complexity: $O(n)$
+
 Space complexity: $O(n)$
 
 ### Solution
