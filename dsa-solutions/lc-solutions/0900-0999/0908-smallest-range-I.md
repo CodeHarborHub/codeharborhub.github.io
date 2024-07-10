@@ -45,9 +45,11 @@ Explanation: Change nums to be [4, 4, 4]. The score is max(nums) - min(nums) = 4
 
 ### Constraints:
 
-- 1 <= nums.length <= 10^4
-- 0 <= nums[i] <= 10^4
-- 0 <= k <= 10^4
+```
+1 <= nums.length <= 10^4
+0 <= nums[i] <= 10^4
+0 <= k <= 10^4
+```
 
 ## Solution
 
