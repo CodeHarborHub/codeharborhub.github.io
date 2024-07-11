@@ -1,11 +1,8 @@
 ---
-id: XOR-Queries-Of-A-Subarray
+id: xor-queries-of-a-subarray
 title: XOR Queries Of A Subarray
 sidebar_label: 1310 XOR Queries Of A Subarray
-tags:
-- Array
-- Bit Manipulation
-- Prefix Sum
+tags: [Array, Bit Manipulation, Prefix Sum]
 description: "This is the solution for XOR Queries Of A Subarray in leetcode."
 ---
 
@@ -28,98 +25,95 @@ Output: [8,0,4,4]
 **Example 3:**
 
 ```
-Input: nums = [1], index = [0]
+Input: arr = [1], queries = [[0,0]]
 Output: [1]
 ```
 
 ### Constraints
-- `1 <= arr.length, queries.length <= 3 * 104`
-- `1 <= arr[i] <= 109`
+- `1 <= arr.length, queries.length <= 3 * 10^4`
+- `1 <= arr[i] <= 10^9`
 - `queries[i].length == 2`
 - `0 <= lefti <= righti < arr.length`
 
 ## Solution
 
 <Tabs>
-
- 
   <TabItem value="python" label="Python">
   <SolutionAuthor name="@ImmidiSivani" />
 
-    ```python
-    class Solution:
+```python
+from typing import List
+
+class Solution:
     def xorQueries(self, arr: List[int], queries: List[List[int]]) -> List[int]:
         n = len(queries)
-        ans = []*n
+        ans = []
         m = len(arr)
-        prefixXor = [0]*(m+1)
+        prefixXor = [0] * (m + 1)
         for i in range(m):
-            prefixXor[i+1] = prefixXor[i]^arr[i]
+            prefixXor[i + 1] = prefixXor[i] ^ arr[i]
         for query in queries:
             left = query[0]
             right = query[1]
             ans.append(prefixXor[right + 1] ^ prefixXor[left])
         return ans
-    ```
+```
 
   </TabItem>
-  
+
   <TabItem value="java" label="Java">
   <SolutionAuthor name="@ImmidiSivani" />
 
-    ```java
-    class Solution {
+```java
+class Solution {
     public int[] xorQueries(int[] arr, int[][] queries) {
-        for(int i =1;i<arr.length;i++){
-            arr[i] = arr[i-1]^arr[i];
+        for (int i = 1; i < arr.length; i++) {
+            arr[i] = arr[i - 1] ^ arr[i];
         }
-        int [] xor = new int [queries.length];
-
-        for(int i =0;i<queries.length;i++){
+        int[] xor = new int[queries.length];
+        for (int i = 0; i < queries.length; i++) {
             int l = queries[i][0];
-            int r = queries [i][1];
-            if(l>0){
-                xor[i] = arr[r]^arr[l-1];
-            }
-            else{
+            int r = queries[i][1];
+            if (l > 0) {
+                xor[i] = arr[r] ^ arr[l - 1];
+            } else {
                 xor[i] = arr[r];
             }
         }
         return xor;
     }
-    }
-    ```
-   </TabItem>
+}
+```
+  </TabItem>
 
-  <TabItem value="python" label="Python">
+  <TabItem value="cpp" label="C++">
   <SolutionAuthor name="@ImmidiSivani" />
 
-    ```CPP
-    class Solution {
-     public:
-    vector<int> xorQueries(vector<int>& arr, vector<vector<int>>& queries) {
-        vector< int> preXor(arr.size()+1);
+```cpp
+#include <vector>
 
+class Solution {
+public:
+    std::vector<int> xorQueries(std::vector<int>& arr, std::vector<std::vector<int>>& queries) {
+        std::vector<int> preXor(arr.size() + 1);
         int currXor = 0;
         preXor[0] = 0;
-        for(int i = 0; i<arr.size(); i++){
+        for (int i = 0; i < arr.size(); i++) {
             currXor ^= arr[i];
-            preXor[i+1] = currXor;
+            preXor[i + 1] = currXor;
         }
 
-        vector< int> ans(queries.size());
-        for(int i = 0; i<queries.size(); i++){
+        std::vector<int> ans(queries.size());
+        for (int i = 0; i < queries.size(); i++) {
             int l = queries[i][0];
             int r = queries[i][1];
-
-            ans[i] = (preXor[l]^preXor[r+1]);
+            ans[i] = preXor[l] ^ preXor[r + 1];
         }
 
         return ans;
-
     }
-     };
-    ```
+};
+```
   </TabItem>
 </Tabs>
 
@@ -127,5 +121,5 @@ Output: [1]
 
 ## References
 
-- **LeetCode Problem:** [Create Target Array in Given Order](https://leetcode.com/problems/create-target-array-in-the-given-order/description/](https://leetcode.com/problems/xor-queries-of-a-subarray/description/)
-- **Solution Link:** [Leetcode Solution](https://leetcode.com/problems/create-target-array-in-the-given-order/post-solution/?submissionId=1271296265](https://leetcode.com/problems/xor-queries-of-a-subarray/solutions/3530554/beats-94-easy-to-understand-c-code/)
+- **LeetCode Problem:** [XOR Queries Of A Subarray](https://leetcode.com/problems/xor-queries-of-a-subarray/description/)
+- **Solution Link:** [Leetcode Solution](https://leetcode.com/problems/xor-queries-of-a-subarray/solutions/3530554/beats-94-easy-to-understand-c-code/)
