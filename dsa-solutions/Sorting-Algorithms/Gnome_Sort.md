@@ -139,3 +139,5 @@ print(arr)
 ## 10. References
 
 - **GFG Problem:** [GFG Problem](https://www.geeksforgeeks.org/gnome-sort-a-stupid-one/)
+-  **Wikipedia Article on Gnome Sort:** [Gnome Sort - Wikipedia](https://en.wikipedia.org/wiki/Gnome_sort)
+
