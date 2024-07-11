@@ -65,8 +65,7 @@ The problem aims to find the largest connected component in an array where two e
        
 ### Code in Different Languages
 
-<Tabs>
-<TabItem value="cpp" label="C++">
+### C++
 
 ```cpp
 #include <vector>
@@ -112,8 +111,8 @@ public:
 
 
 ```
-</TabItem>
-<TabItem value="java" label="Java">
+
+### Java
 
 ```java
 class Solution {
@@ -156,9 +155,7 @@ class Solution {
     }
 }
 ```
-
-</TabItem>
-<TabItem value="python" label="Python">
+### Python
 
 ```python
 class Solution:
