@@ -58,13 +58,6 @@ Student table:
 ```
 
 
-### Constraints
-
-- The number of nodes in both trees is in the range `[0, 2000]`.
-- `-10^4 <= Node.val <= 10^4`
-
----
-
 ## Approach
 
 Create a pivot table using a CTE to assign row numbers partitioned by continent and then aggregate maximum names for each row number.
