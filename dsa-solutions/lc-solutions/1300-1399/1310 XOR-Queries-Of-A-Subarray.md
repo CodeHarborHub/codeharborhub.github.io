@@ -1,7 +1,7 @@
 ---
 id: XOR-Queries-Of-A-Subarray.
 title: XOR Queries Of A Subarray.
-sidebar_label: 1310 XOR-Queries-Of-A-Subarray
+sidebar_label: 1310 XOR Queries Of A Subarray
 tags:
 - Array
 - Bit Manipulation
