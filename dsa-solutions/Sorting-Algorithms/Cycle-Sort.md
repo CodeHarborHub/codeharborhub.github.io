@@ -72,8 +72,8 @@ Output: [11, 12, 22, 25, 64]
 - **Memory Writes**: Minimizes the number of write operations, making it efficient where write operations are costly.
 - **Stability**: Maintains the relative order of equal elements, making it a stable sorting algorithm.
 - **Performance**:
-  - Time Complexity: O(n^2) in the worst case.
-  - Space Complexity: O(1) additional space, as it sorts in-place.
+  - Time Complexity: $O(n^2)$ in the worst case.
+  - Space Complexity: $O(1)$ additional space, as it sorts in-place.
 - **Data Type**: Can be applied to any data type supporting comparison and swap operations.
 - **Use Cases**: Suitable for small datasets or scenarios requiring stable sorting with minimal writes, like embedded systems.
 - **Performance Issues**: 
@@ -176,9 +176,9 @@ print(arr)
   - Worst Case: $O(n^2)$
     Cycle Sort typically exhibits quadratic time complexity, where n is the number of elements in the array. This arises because each element may need to be moved multiple times to its correct position, especially in the presence of duplicates or when the array is in reverse order.
   
--**Space Complexity**
-  -O(1)
-  Cycle Sort is an in-place sorting algorithm, meaning it requires only a constant amount of extra space for auxiliary variables such as loops and temporary variables used for swaps.
+-**Space Complexity** 
+  - $O(1)$
+  - Cycle Sort is an in-place sorting algorithm, meaning it requires only a constant amount of extra space for auxiliary variables such as loops and temporary variables used for swaps.
 
 
 ## 9. Advantages and disadvantages
@@ -194,7 +194,7 @@ print(arr)
 
 ### Disadvantages:
 
-- **Quadratic Time Complexity:** Has O(n^2) time complexity in the worst-case scenario, limiting efficiency for large datasets.
+- **Quadratic Time Complexity:** Has $O(n^2)$ time complexity in the worst-case scenario, limiting efficiency for large datasets.
 
 - **Not Adaptive:** Performs the same number of operations regardless of initial data order, lacking adaptability.
 
