@@ -36,16 +36,16 @@ const Preloader: React.FC = () => {
           z-index: 9999;
           transform: translate3d(0, 0, 0);
         }
-        
+
         .preloader-animation {
           width: 500px;
           height: 500px;
         }
-        
+
         .preloader.fade-in {
           opacity: 1;
         }
-        
+
         .preloader.fade-out {
           opacity: 0;
           pointer-events: none;
