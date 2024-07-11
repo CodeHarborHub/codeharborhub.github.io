@@ -59,8 +59,8 @@ Output: [1, 2, 4, 5, 8]
 ## 6. Constraints
 
 - The input array can contain any integers, positive or negative.
-- The size of the array can range from 1 to 10^5 elements.
-- The sorting should be done in-place with O(1) additional space.
+- The size of the array can range from 1 to $10^5$ elements.
+- The sorting should be done in-place with $O(1)$ additional space.
 - The algorithm should maintain stability, meaning the relative order of equal elements should be preserved.
 
 
