@@ -1,5 +1,5 @@
-const nodeMailer = require('nodemailer');
-const dotenv = require('dotenv');
+const nodeMailer = require("nodemailer");
+const dotenv = require("dotenv");
 dotenv.config();
 
 const mailing = async (name, userMail, message) => {
@@ -16,7 +16,8 @@ const mailing = async (name, userMail, message) => {
             <h1 style="margin-top: 2rem; font-family: monospace;">Thank You for Contacting Us!</h1>
             <p style="margin-top: 2rem; font-family: sans-serif; font-size: 1rem;"> 
                 <span style="font-weight: 700;">Your Message:</span> ${
-      message}<br><br>
+                  message
+                }<br><br>
                 Thank you for reaching out to us. Your message is very important to our team, and we appreciate your interest in CodeHarborHub.
                 <br><br>
                 At CodeHarborHub, we are dedicated to providing you with the resources and tools to enhance your learning journey. Whether you are interested in learning new programming languages, exploring various technologies, or tackling challenging coding problems, we have something for everyone.
@@ -46,18 +47,18 @@ const mailing = async (name, userMail, message) => {
 </html>`;
 
   const transporter = nodeMailer.createTransport({
-    service : process.env.SERVICE,
-    host : process.env.HOST,
-    port : process.env.MAIL_PORT,
-    auth : {user : process.env.USER_MAIL_ADDRESS, pass : process.env.PASS},
+    service: process.env.SERVICE,
+    host: process.env.HOST,
+    port: process.env.MAIL_PORT,
+    auth: { user: process.env.USER_MAIL_ADDRESS, pass: process.env.PASS },
   });
 
   const mailOptions = {
-    from : process.env.USER_MAIL_ADDRESS,
-    to : userMail,
-    subject : `Thank you for Contacting ${name}`,
-    text : 'Contact Us',
-    html : HTML,
+    from: process.env.USER_MAIL_ADDRESS,
+    to: userMail,
+    subject: `Thank you for Contacting ${name}`,
+    text: "Contact Us",
+    html: HTML,
   };
 
   try {
