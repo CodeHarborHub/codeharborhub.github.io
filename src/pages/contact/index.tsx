@@ -9,6 +9,7 @@ import { FaDiscord } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import Popup from "../popup/popup";
+import axios from 'axios'
 // Interface defining the structure of form values
 interface FormValues {
   fullName: string;
@@ -33,7 +34,7 @@ export default function Contact(): JSX.Element {
     feedbackType: "Question",
     otherFeedback: "",
   });
-    const [checker,setChecker]=useState({popup:false,status:false})
+    const [checker,setChecker]=useState({popup:false,status:false,loading:false})
   // Function to handle input changes for text inputs, textarea, and select
   const handleInputChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -54,10 +55,15 @@ export default function Contact(): JSX.Element {
   };
 
   // Function to handle form submission
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // Handle form submission logic (e.g., send data to backend)
-    // console.log("Form submitted:", formValues); 
+  const handleSubmit = async(e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault(); 
+    setChecker(pre=>({...pre,loading:true}))
+    let response=await axios.post("Your_Backend_URL",{
+      name:formValues.fullName,
+      email:formValues.email,
+      feedback:formValues.message
+    }) 
+          // Handle form submission logic (e.g., send data to backend) 
     setFormValues({
       fullName: "",
       email: "",
@@ -66,7 +72,12 @@ export default function Contact(): JSX.Element {
       feedbackType: "Question",
       otherFeedback: "",
     })
-    setChecker(pre=>({...pre,popup:true,status:true}))
+    if(response.data.ok){
+      setChecker(pre=>({...pre,popup:true,status:true,loading:false}))
+    }
+    else{
+      setChecker(pre=>({...pre,popup:true,status:false,loading:false}))
+    }
     setTimeout(()=>{
     setChecker(pre=>({...pre,popup:false,status:false}))
     },2000)
@@ -328,7 +339,7 @@ export default function Contact(): JSX.Element {
                   {/* Form submit button */}
                   <div className={styles.form_group}>
                     <button type="submit" className={styles.form_button}>
-                      Send
+                      {checker.loading?<div className={styles.loader}></div>:"Send"}
                     </button>
                   </div>
                 </form>
