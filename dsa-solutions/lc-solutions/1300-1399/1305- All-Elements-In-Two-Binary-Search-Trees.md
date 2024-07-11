@@ -1,7 +1,7 @@
 ---
-id: All- Elements- in- Two- Binary -Search -Trees
+id: all-elements-in-two-binary-search-trees
 title: All Elements in Two Binary Search Trees
-sidebar_label: 1305- All- Elements- in- Two- Binary -Search -Trees
+sidebar_label: 1305- All Elements in Two Binary Search Trees
 tags:
   - Tree
   - DFS
