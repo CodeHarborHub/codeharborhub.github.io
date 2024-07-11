@@ -1,4 +1,3 @@
-"use client";
 import React, { useState, useEffect } from "react";
 import Lottie from "lottie-react";
 import preloaderAnimation from "../Preloader/Preloader.json";
