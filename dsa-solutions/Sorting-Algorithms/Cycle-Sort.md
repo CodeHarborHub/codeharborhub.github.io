@@ -171,9 +171,9 @@ print(arr)
 ## 8. Complexity
 
 -**Time Complexity**
-  - Best Case: O(n^2)
-  - Average Case: O(n^2)
-  - Worst Case: O(n^2)
+  - Best Case: $O(n^2)$
+  - Average Case: $O(n^2)$
+  - Worst Case: $O(n^2)$
     Cycle Sort typically exhibits quadratic time complexity, where n is the number of elements in the array. This arises because each element may need to be moved multiple times to its correct position, especially in the presence of duplicates or when the array is in reverse order.
   
 -**Space Complexity**
