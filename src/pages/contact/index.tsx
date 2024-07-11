@@ -28,7 +28,7 @@ interface FormValues {
 export default function Contact(): JSX.Element {
   const {
     siteConfig: { customFields },
-  } = useDocusaurusContext(); 
+  } = useDocusaurusContext();
   // State to manage form values
   const [formValues, setFormValues] = useState<FormValues>({
     fullName: "",
@@ -60,14 +60,14 @@ export default function Contact(): JSX.Element {
 
   // Function to handle form submission
   const handleSubmit = async(e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); 
+    e.preventDefault();
     setChecker(pre=>({...pre,loading:true}))
     let response=await axios.post(customFields.emailService + "/contact",{
       name:formValues.fullName,
       email:formValues.email,
       feedback:formValues.message
-    }) 
-          // Handle form submission logic (e.g., send data to backend) 
+    })
+          // Handle form submission logic (e.g., send data to backend)
     setFormValues({
       fullName: "",
       email: "",
