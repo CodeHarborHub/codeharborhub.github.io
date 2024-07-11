@@ -30,8 +30,8 @@ A black lonely pixel is a character 'B' that located at a specific position wher
 ### Constraints
 - m == picture.length
 - n == picture[i].length
-- 1 <= m, n <= 500
--   picture[i][j] is 'W' or 'B'.
+- `1 <= m, n <= 500`
+- picture[i][j] is 'W' or 'B'.
 
 ---
 
@@ -127,7 +127,7 @@ class Solution:
 ```
 ### Complexity Analysis
 **Time Complexity:** O(m x n)
->Reason: We iterate over each element in the pixel array to count the number of 'B' pixels in each row and column.
+>Reason: We iterate over each element in the picture array to count the number of 'B' pixels in each row and column.
 
 **Space Complexity:** O(m + n)
 >Reason: We use two additional arrays, `rows` and `cols`, each of size mm and nn respectively, to count the number of 'B' pixels in each row and column.
