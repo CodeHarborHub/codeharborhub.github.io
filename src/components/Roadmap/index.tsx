@@ -14,8 +14,8 @@ const techCategories: TechCategory[] = [
     title: "Frontend",
     technologies: [
       { id: 1, name: "HTML", link: "/roadmap/html" },
-      { id: 2, name: "CSS", link: "#" },
-      { id: 3, name: "JavaScript", link: "#" },
+      { id: 2, name: "CSS", link: "" },
+      { id: 3, name: "JavaScript", link: "../database/Roadmap/Js" },
       { id: 4, name: "React", link: "#" },
       { id: 5, name: "Angular", link: "#" },
       { id: 6, name: "Vue.js", link: "#" },
