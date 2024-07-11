@@ -10,6 +10,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import Popup from "../popup/popup";
 import axios from 'axios'
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 // Interface defining the structure of form values
 interface FormValues {
   fullName: string;
@@ -25,6 +26,9 @@ interface FormValues {
  * @returns {JSX.Element} A JSX element for the contact page.
  */
 export default function Contact(): JSX.Element {
+  const {
+    siteConfig: { customFields },
+  } = useDocusaurusContext();
   // State to manage form values
   const [formValues, setFormValues] = useState<FormValues>({
     fullName: "",
@@ -56,14 +60,14 @@ export default function Contact(): JSX.Element {
 
   // Function to handle form submission
   const handleSubmit = async(e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); 
+    e.preventDefault();
     setChecker(pre=>({...pre,loading:true}))
-    let response=await axios.post("Your_Backend_URL",{
+    let response=await axios.post(customFields.emailService + "/contact",{
       name:formValues.fullName,
       email:formValues.email,
       feedback:formValues.message
-    }) 
-          // Handle form submission logic (e.g., send data to backend) 
+    })
+          // Handle form submission logic (e.g., send data to backend)
     setFormValues({
       fullName: "",
       email: "",
