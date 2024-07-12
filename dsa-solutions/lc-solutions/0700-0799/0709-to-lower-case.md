@@ -1,15 +1,16 @@
 ---
 id: to-lower-case
 title: To Lower Case
-sidebar_label: 0709 - To Lower Case
+sidebar_label: 0709-To Lower Case
 tags:
-  - String
-description: "This is a solution to the To Lower Case problem on LeetCode."
+   - String
+ 
+description: "This is a solution to To Lower Case in leetcode"
 ---
 
 ## Problem Description
 
-Given a string `s`, return the string after replacing every uppercase letter with the same lowercase letter.
+Given a string  s, return the string after replacing every uppercase letter with the same lowercase letter.
 
 ### Examples
 
@@ -26,27 +27,26 @@ Output: "hello"
 ```
 Input: s = "here"
 Output: "here"
-
-
 ```
+
+## Complexity Analysis
+
+*** Time Complexity:** $O(n)$
+
+*** Space Complexity:** $O(1)$
 
 ### Constraints
 
 - `1 <= s.length <= 100`
+
+**Solution for Kth Largest Element in a Stream**
+
 - `s` consists of printable ASCII characters.
 
-## Solution for Kth Largest Element in a Stream
 
-### Approach
-
-
-To convert a string to lowercase in any programming language, you can follow a simple approach. Begin by initializing an empty string or buffer to store the converted characters. Then, iterate through each character of the input string. For each character:
-
-- Check if it is an uppercase letter.
-- If it is, convert it to lowercase using the language-specific function or method provided (e.g., tolower() in C/C++, toLowerCase() in JavaScript, str.lower() in Python).
-- Append the converted or unchanged character to the result string or buffer.
-- Once all characters have been processed, the result string or buffer will contain the input string in lowercase.
-- This method efficiently converts the string to lowercase while maintaining the integrity of non-alphabetical characters and preserving the order of characters in the original string.
+### Solution
+## Approach
+The simple approach is use built in function to convert given string to lower case.
 
 ## Code in Different Languages
 
@@ -73,40 +73,22 @@ public:
 ```
 </TabItem>
 <TabItem value="java" label="Java">
-  <SolutionAuthor name="@Shreyash3087"/>
+  <SolutionAuthor name="@ImmidiSivani, @Shreyash3087"/>
 
 ```java
 class Solution {
-    public String toLowerCase(String s) {
-         StringBuilder sb = new StringBuilder();
-        for (char c : s.toCharArray()) {
-            if (c >= 'A' && c <= 'Z') {
-                sb.append((char)(c + 32)); 
-            } else {
-                sb.append(c); 
+public:
+    string toLowerCase(string s) {
+        for (int i = 0; i < s.size(); ++i) {
+            if (s[i] >= 'A' && s[i] <= 'Z') {
+                s[i] = s[i] + ('a' - 'A');
             }
         }
-        return sb.toString();
+        return s;
     }
-}
+};
 ```
 
-</TabItem>
-<TabItem value="python" label="Python">
-  <SolutionAuthor name="@Shreyash3087"/>
-
-```python
- class Solution:
-    def toLowerCase(self, s: str) -> str:
-        result = []
-        for c in s:
-            if 'A' <= c <= 'Z':
-                result.append(chr(ord(c) + 32))
-            else:
-                result.append(c)
-        return ''.join(result)
-  
-```
 </TabItem>
 </Tabs>
 
