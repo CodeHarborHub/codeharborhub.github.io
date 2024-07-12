@@ -66,10 +66,10 @@ export default function Contact(): JSX.Element {
     let response=await axios.post("https://codeharborhub-email-back-end.onrender.com/contact",{
       name:formValues.fullName,
       email:formValues.email,
-      message:formValues.message      
+      message:formValues.message
     })
     console.log(response.data);
-    
+
     setFormValues({
       fullName: "",
       email: "",
