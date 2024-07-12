@@ -1,8 +1,6 @@
 ---
-
 id: find-common-characters
 title: Find Common Characters
-level: easy
 sidebar_label: Find Common Characters
 tags:
   - Hash Table
