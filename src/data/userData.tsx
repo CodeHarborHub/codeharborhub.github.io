@@ -330,4 +330,15 @@ export const Users: User[] = [
         "https://github.com/AsmitaMishra24/Othello",
       tags: ["opensource", "html", "css", "javascript", "game"],
     },
+
+    // horse ride booking system
+
+    {
+      title: "Horse Ride Booking",
+      description: "Front-end development for a horse ride booking system using React.js, redux, and montion animation.",
+      preview: require("./showcase/horse-ride-booking.jpg"),
+      website: "https://horse-ride-booking.onrender.com/",
+      source: "#",
+      tags: ["opensource", "react", "redux", "motion", "javascript"],
+    }
 ];
