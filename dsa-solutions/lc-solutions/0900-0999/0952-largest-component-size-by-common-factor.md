@@ -48,28 +48,28 @@ Output: 8
 
 ## Solution for largest-component-size-by-common-factor
 
-## Approach: Union each number with all of its factor.
-### Intuition:
-The problem aims to find the largest connected component in an array where two elements are connected if they share a common factor greater than 
+### Approach: Union each number with all of its factors
 
-1. Find Union to keep track of connected components.
+#### Intuition:
+The problem aims to find the largest connected component in an array where two elements are connected if they share a common factor greater than 1. 
 
-2. Disjoint Set Union helps in efficiently managing and merging sets.
-  The key operations are Find (to find the representative of a set) and Union (to merge two sets).
+1. **Union-Find Data Structure**: Disjoint Set Union helps in efficiently managing and merging sets. The key operations are Find (to find the representative of a set) and Union (to merge two sets).
 
-3. For each element in the array, we find its factors and union the
-  element with its factors. This way, all elements with common factors are connected.
+2. For each element in the array, find its factors and union the element with its factors. This way, all elements with common factors are connected.
 
-4. After processing all elements, we count the size of each connected
-  component and find the most frequent parent.
-       
+3. After processing all elements, count the size of each connected component and find the most frequent parent.
+
 ### Code in Different Languages
 
-### C++
+#### C++
 
 ```cpp
 #include <vector>
-#include <string>
+#include <unordered_map>
+#include <cmath>
+#include <algorithm>
+using namespace std;
+
 class DSU {
 public:
   DSU(int n): p_(n) {
@@ -88,6 +88,7 @@ public:
 private:
   vector<int> p_;
 };
+
 class Solution {
 public:
   int largestComponentSize(vector<int>& A) {    
@@ -108,15 +109,14 @@ public:
     return ans;
   }
 };
-
-
 ```
 
-### Java
+#### Java
 
 ```java
 class Solution {
     private int[] uf;
+    
     public int largestComponentSize(int[] A) {
         if(A == null || A.length == 0) return 0;
         int max = A[0];
@@ -142,11 +142,13 @@ class Solution {
         }
         return res;
     }
+    
     private void union(int i, int j){
         int p = find(i);
         int q = find(j);
         uf[p] = q;
     }
+    
     private int find(int j){
         if(uf[j] != j){
             uf[j] = find(uf[j]);
@@ -155,41 +157,50 @@ class Solution {
     }
 }
 ```
-### Python
+
+#### Python
 
 ```python
+from collections import defaultdict
+import math
+
 class Solution:
-  def largestComponentSize(self, A):
-    p = list(range(max(A) + 1))
-       
-    def find(x):
-      while p[x] != x:
-        p[x] = p[p[x]]
-        x = p[x]
-      return x
-    
-    def union(x, y):
-      p[find(x)] = p[find(y)]      
-      
-    for a in A:     
-      for k in range(2, int(math.sqrt(a) + 1)):        
-        if a % k == 0:
-          union(a, k)
-          union(a, a // k)
-          return collections.Counter([find(a) for a in A]).most_common(1)[0][1]
+    def largestComponentSize(self, A):
+        p = list(range(max(A) + 1))
+
+        def find(x):
+            while p[x] != x:
+                p[x] = p[p[x]]
+                x = p[x]
+            return x
+
+        def union(x, y):
+            p[find(x)] = find(y)
+
+        for a in A:
+            for k in range(2, int(math.sqrt(a)) + 1):
+                if a % k == 0:
+                    union(a, k)
+                    union(a, a // k)
+        return max(collections.Counter(find(a) for a in A).values())
+
+# Example usage:
+solution = Solution()
+print(solution.largestComponentSize([4,6,15,35]))  # Output: 4
+print(solution.largestComponentSize([20,50,9,63]))  # Output: 2
+print(solution.largestComponentSize([2,3,6,7,4,12,21,39]))  # Output: 8
 ```
-</TabItem>
-</Tabs>
 
 ### Complexity Analysis
 
-#### Time Complexity: $O(\mathcal{Σsqrt(A[i])})$
+#### Time Complexity: $O(\sum \sqrt{A[i]})$
 
-> **Reason**: For each element A[i], the algorithm checks up to (sqrt(A[i])) possible factors to perform union operations.
+> **Reason**: For each element A[i], the algorithm checks up to $ \sqrt{A[i]} $ possible factors to perform union operations.
 
 #### Space Complexity: $O(max(A))$
+
+> **Reason**: The Union-Find data structure requires space proportional to the maximum value in the array.
 
 ## References
 
 - **LeetCode Problem**: [Largest Component Size by Common Factor](https://leetcode.com/problems/largest-component-size-by-common-factor/)
-
