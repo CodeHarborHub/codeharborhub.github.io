@@ -36,7 +36,7 @@ Explanation:
 - For the second round, we divide s into "346" and "5".
   Then we calculate the digit sum of each group: 3 + 4 + 6 = 13, 5 = 5. 
   So, s becomes "13" + "5" = "135" after second round. 
-Now, s.length <= k, so we return "135" as the answer.
+Now, s.length &lt;= k, so we return "135" as the answer.
 
 **Example 2:**
 
@@ -51,8 +51,8 @@ s becomes "0" + "0" + "0" = "000", whose length is equal to k, so we return "000
 
 ### Constraints
 
-- 1 &lt= s.length &lt= 100
-- 2 &lt= k &lt= 100
+- 1 &lt; = s.length &lt; = 100
+- 2 &lt; = k &lt; = 100
 - s consists of digits only.
 
 ### Approach
