@@ -338,7 +338,7 @@ export const Users: User[] = [
       description: "Front-end development for a horse ride booking system using React.js, redux, and montion animation.",
       preview: require("./showcase/horse-ride-booking.jpg"),
       website: "https://horse-ride-booking.vercel.app/",
-      source: "#",
+      source: "",
       tags: ["opensource", "react", "redux", "motion", "javascript"],
     }
 ];
