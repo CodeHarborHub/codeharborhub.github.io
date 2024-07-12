@@ -1,7 +1,7 @@
 import React from "react";
 import BlogCard from "./BlogCard";
 import "./BlogPage.css";
-import { blogPosts } from "../../pages/blog/blogData";
+import { blogPosts } from "../../../blogData";
 
 const BlogPage: React.FC = () => {
   return (
