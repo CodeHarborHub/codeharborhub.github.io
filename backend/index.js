@@ -1,13 +1,17 @@
 const express = require('express');
-const app = express();
-const mailing = require('./mail/mail.js');
+const dotenv = require('dotenv');
 const cors = require('cors');
+const sendEmail = require('./mail/mail');
+
+dotenv.config();
+
+const app = express();
 
 // CORS options
 const corsOptions = {
-  origin: 'https://codeharborhub.github.io', // Allow requests from this origin
-  methods: ['GET', 'POST'], // Allow only GET and POST requests
-  allowedHeaders: ['Content-Type'], // Allow only headers with Content-Type
+  origin: 'https://codeharborhub.github.io/', 
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type'],
   optionsSuccessStatus: 200,
 };
 
@@ -23,13 +27,13 @@ app.get("/", (req, res) => {
 
 app.post("/contact", async (req, res) => {
   try {
-    const { name, email, feedback } = req.body;
+    const { name, email, message } = req.body;
 
-    if (!name || !email || !feedback) {
+    if (!name || !email || !message) {
       return res.status(400).json({ ok: false, text: "Missing required fields" });
     }
 
-    const result = await mailing(name, email, feedback);
+    const result = await sendEmail(name, email, message);
 
     if (result) {
       res.json({ ok: true, text: "Message sent successfully" });
@@ -43,5 +47,5 @@ app.post("/contact", async (req, res) => {
 });
 
 // Start server
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
