@@ -8,6 +8,19 @@ sidebar_label: Web Sockets
 
 WebSockets are a powerful technology for enabling real-time communication between clients and servers...
 
+**Purpose:** WebSocket is a protocol that provides full-duplex communication channels over a single TCP connection. Unlike HTTP, WebSocket enables continuous two-way communication between the client and the server.
+
+**Connection:** WebSocket allows for long-lived connections that can send data both from the client to the server and vice versa. Once established, a WebSocket connection remains open until either the client or server decides to close it.
+
+**Usage:** WebSocket is particularly useful for real-time applications where low-latency communication is critical, such as online gaming, financial trading platforms, chat applications, live sport score updates, and collaborative editing tools.
+
+## Difference between HTTP & Websocket
+**Connection Nature:** HTTP is stateless and request-response based, while WebSocket provides full-duplex communication with a persistent connection.
+
+**Communication Overhead:** HTTP requests are heavier in terms of header information compared to WebSocket, which maintains a lightweight header after the initial handshake.
+
+**Usage Scenarios:** HTTP is suitable for scenarios where data exchange is initiated by the client in a request-response fashion (like fetching web pages or making API calls). WebSocket is ideal for applications requiring real-time, bi-directional communication with low latency.
+
 ## WebSocket API
 
 The WebSocket API provides methods and events for establishing and managing WebSocket connections...
@@ -111,3 +124,13 @@ To interact with this WebSocket server from a client, you would typically use Ja
 </body>
 </html>
 ```
+## When to Use HTTP/REST Instead:
+
+**Stateless Operations:** If your application involves primarily stateless operations (like retrieving data from a database or serving static resources), HTTP/REST is more appropriate.
+
+**Caching and Proxies:** HTTP has built-in support for caching and works seamlessly with proxies, making it suitable for content delivery networks (CDNs) and distributed systems.
+
+**Compatibility:** HTTP endpoints are easier to integrate with existing infrastructure and can be accessed from a wide range of clients (browsers, mobile apps, etc.).
+
+## Conclusion
+While HTTP/REST is excellent for many types of client-server interactions and resource fetching, WebSocket is indispensable for real-time applications and scenarios where low-latency, bidirectional communication is necessary. Choosing between them depends on the specific requirements and nature of your application.
