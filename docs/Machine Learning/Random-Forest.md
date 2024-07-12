@@ -66,6 +66,8 @@ Random Forests are extensively used in retail for customer segmentation. By anal
 
 In healthcare, Random Forests assist in medical diagnosis by analyzing patient symptoms, medical history, and test results to classify diseases or conditions, aiding healthcare professionals in making informed decisions.
 
+## Implementation
+
 To implement and train a Random Forest model, you need to use a machine learning library such as `scikit-learn`. Below are the steps to install the necessary library and train a Random Forest model.
 
 ### Libraries to Download
