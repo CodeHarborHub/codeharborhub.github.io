@@ -54,7 +54,7 @@ To determine if the given array is a valid mountain array, follow these steps:
 4. **Decreasing Phase**: Continue traversing from the peak, checking if each element is greater than the next one.
 5. **Final Check**: Ensure that the entire array was traversed.
 
-### Java 
+### Java
 
 ```java
 class Solution {
@@ -86,7 +86,8 @@ class Solution {
 
 ```
 
-### Python 
+### Python
+
 ```Python
 class Solution:
     def validMountainArray(self, arr: List[int]) -> bool:
@@ -104,7 +105,7 @@ class Solution:
                 flag = False
             if not flag and arr[i] < arr[i + 1]:
                 return False
-        
+
         if flag:
             return False
 
