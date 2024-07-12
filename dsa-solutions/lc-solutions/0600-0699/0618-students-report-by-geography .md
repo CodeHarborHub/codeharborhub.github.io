@@ -25,7 +25,7 @@ Each row of this table indicates the name of a student and the continent they ca
 
 
 A school has students from Asia, Europe, and America.
-Write a solution to <a href="https://en.wikipedia.org/wiki/Pivot_table" target="_blank">pivot</a> the continent column in the `Student` table so that each name is **sorted alphabetically** and displayed underneath its corresponding continent. The output headers should be `America`, `Asia`, and `Europe`, respectively.
+Write a solution to [pivot](https://en.wikipedia.org/wiki/Pivot_table) the continent column in the `Student` table so that each name is **sorted alphabetically** and displayed underneath its corresponding continent. The output headers should be `America`, `Asia`, and `Europe`, respectively.
 The test cases are generated so that the student number from America is not less than either Asia or Europe.
 
 **Follow up**:
