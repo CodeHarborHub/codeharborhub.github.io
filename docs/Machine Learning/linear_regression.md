@@ -10,7 +10,7 @@ Linear regression models the relationship between a dependent variable (target) 
 
 ### Formula:
 
-#### Y = 𝛽0 + 𝛽1x1 +  𝛽2x2 + 𝛽3x3..........𝛽nxn + 𝜖
+#### $\ Y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_3 + \cdots + \beta_n x_n + \epsilon \$
 
 
 #### y: Dependent variable (target)
