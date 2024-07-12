@@ -5,61 +5,42 @@ import "./index.css";
 export default function JsRoadmap(){
     return(
     <Layout>
-        <center><h1 className="roadmap-title">JavaScript Roadmap</h1></center>
-           
-    <section className="roadmap">
-        <h2>Introduction to JavaScript</h2>
-        <ul>
-            <li><a href="#what-is-javascript">What is JavaScript?</a></li>
-            <li><a href="#history-of-javascript">History of JavaScript</a></li>
-        </ul>
+<div className="maincontainer">
+  <h1>JavaScript </h1>
 
-        <h2>Beginner Topics</h2>
-        <ul>
-            <li><a href="#javascript-versions">JavaScript Versions</a></li>
-            <li><a href="#all-about-variables">All About Variables</a></li>
-            <li><a href="#variable-declarations">Variable Declarations</a></li>
-            <li><a href="#variable-naming-rules">Variable Naming Rules</a></li>
-            <li><a href="#hoisting">Hoisting</a></li>
-            <li><a href="#data-types">Data Types</a></li>
-            <li><a href="#how-to-run-javascript">How to run JavaScript?</a></li>
-        </ul>
+  <div className="flowchart">
+    <div className="step">Introduction to JavaScript </div>
+    <div className="arrow"></div>
+    <div className="step">All About Variables</div>
+    <div className="arrow"></div>
+    <div className="step">Data Types </div>
+    <div className="arrow"></div>
+    <div className="step">Type Casting</div>
+    <div className="arrow"></div>
+    <div className="step">Equality Comparisons </div>
+    <div className="arrow"></div>
+    <div className="step">Loops and Iterations</div>
+    <div className="arrow"></div>
+    <div className="step">Control Flow </div>
+    <div className="arrow"></div>
+    <div className="step">Functions </div>
+    <div className="arrow"></div>
+    <div className="step">Strict Mode </div>
+    <div className="arrow"></div>
+    <div className="step">Asynchronous JavaScript </div>
+    <div className="arrow"></div>
+    <div className="step">Working with APIs </div>
+    <div className="arrow"></div>
+    <div className="step">Iterators and Generators</div>
+    <div className="arrow"></div>
+    <div className="step">Modules in JavaScript</div>
+    <div className="arrow"></div>
+    <div className="step">Using Chrome Dev Tools </div>
+	<div className="arrow"></div>
+	<div className="step"><a href="https://codeharborhub.github.io/docs/category/javascript/">Resources</a></div>
 
-        <h2>Intermediate Topics</h2>
-        <ul>
-            <li><a href="#variable-scopes">Variable Scopes</a></li>
-            <li><a href="#object">Object</a></li>
-            <li><a href="#object-prototype">Object Prototype</a></li>
-            <li><a href="#prototypal-inheritance">Prototypal Inheritance</a></li>
-            <li><a href="#built-in-objects">Built-in Objects</a></li>
-            <li><a href="#primitive-types">Primitive Types</a></li>
-            <li><a href="#typeof-operator">typeof operator</a></li>
-            <li><a href="#data-structures">Data Structures</a></li>
-        </ul>
-
-        <h2>Advanced Topics</h2>
-        <ul>
-            <li><a href="#loops-and-iterations">Loops and Iterations</a></li>
-            <li><a href="#control-flow">Control Flow</a></li>
-            <li><a href="#exception-handling">Exception Handling</a></li>
-            <li><a href="#expressions-and-operators">Expressions and Operators</a></li>
-            <li><a href="#functions">Functions</a></li>
-            <li><a href="#asynchronous-javascript">Asynchronous JavaScript</a></li>
-            <li><a href="#classes">Classes</a></li>
-            <li><a href="#iterators-and-generators">Iterators and Generators</a></li>
-            <li><a href="#modules-in-javascript">Modules in JavaScript</a></li>
-            <li><a href="#memory-management">Memory Management</a></li>
-        </ul>
-
-        <h2 id="what-is-javascript">Resources</h2>
-        <p><a href="https://codeharborhub.github.io/docs/category/javascript">Codeharbour Javascript Resources</a></p>
-        <p><a href="https://www.geeksforgeeks.org/javascript/">Geeks For Geeks Javascript Resources</a></p>
-        <p><a href="https://www.w3schools.com/js/">W3schools Javascript Resources</a></p>
-
-        
-        
-    </section>
-
-
+	
+  </div>
+</div>
     </Layout>
     );}

@@ -1,50 +1,96 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-}
-.roadmap-title {
-    text-align: center;
-    margin-top: 20px;
-}
-.roadmap {
-    margin-top: 20px;
-    max-width: 800px;
-    margin: 40px auto;
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .maincontainer {
+    width: 500px;
+    margin: 0 auto;
+    background-color: white;
     padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1, h2 {
-    margin-top: 0;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-li {
-    margin-bottom: 10px;
-}
-li a {
-    text-decoration: none;
-    color: #337ab7;
-    
-}
-a:link , a:visited , a:active{
-    text-decoration: none; }
-
-a:hover {
-    color: #23527c;
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-h2 {
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .button {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    padding: 10px;
+    padding-bottom: 0px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+  }
+  
+  .flowchart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 20px;
+  }
+  
+  .step {
+    width: 250px;
+    padding: 15px;
+    margin-bottom: 0px;
+    background-color: #ffff00;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  .step:hover {
+    background-color: #eded0a;
+    cursor: pointer;
+  }
+  .arrow {
+    display: block;
+    width: 2px;
+    height: 50px;
+    background-color: black;
+
+  }
+  
+  .checkmark {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    margin-left: 10px;
+    top: 2px;
+  }
+  
+  .checkmark::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: white;
+    transform: rotate(45deg);
+    top: 9px;
+    left: 5px;
+  }
+  
+  .checkmark::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    background-color: white;
+    transform: rotate(45deg);
+    top: 5px;
+    left: 9px;
 }
