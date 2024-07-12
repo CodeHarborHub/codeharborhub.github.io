@@ -31,7 +31,7 @@ A black lonely pixel is a character 'B' that located at a specific position wher
 - m == picture.length
 - n == picture[i].length
 - 1 <= m, n <= 500
--   picture[i][j] is 'W' or 'B'.
+- picture[i][j] is 'W' or 'B'.
 
 ---
 
