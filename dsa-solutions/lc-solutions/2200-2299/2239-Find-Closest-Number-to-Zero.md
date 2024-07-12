@@ -41,8 +41,8 @@ Explanation: 1 and -1 are both the closest numbers to 0, so 1 being larger is re
 
 ### Constraints
 
-- 1 &lt= n &lt= 1000
-- -105 &lt= nums[i] &lt= 105
+- 1 &lt;= n &lt;= 1000
+- 105 &lt;= nums[i] &lt;= 105
 
 ### Approach
 Iterate through the array and keep track of the number with the smallest absolute value (closest to zero). If two numbers have the same absolute value, the larger number is preferred.
