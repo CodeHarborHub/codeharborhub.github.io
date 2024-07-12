@@ -3,15 +3,15 @@ id: n-repeated-element-in-size-2n-array
 title: N-Repeated Element in Size 2N Array
 sidebar_label: 961-N-Repeated-Element-in-Size-2N-Array
 tags:
-- Array
-- Hash Table
-- Counting
+  - Array
+  - Hash Table
+  - Counting
 description: "Given an array of size 2N, find the element that is repeated N times."
 ---
 
 ## Problem
 
-You are given an integer array `nums` with a length of `2n`, where `n` is an integer greater than 1. The array contains `n + 1` unique elements, and exactly one of these elements is repeated `n` times. 
+You are given an integer array `nums` with a length of `2n`, where `n` is an integer greater than 1. The array contains `n + 1` unique elements, and exactly one of these elements is repeated `n` times.
 
 Return the element that is repeated `n` times.
 
@@ -105,11 +105,13 @@ class Solution:
 
 ### Complexity Analysis
 
-**Time Complexity:** O(n)  
->Reason: We iterate through the array once, and the operations we perform (insertion and lookup in a dictionary) are O(1) on average.
+**Time Complexity:** O(n)
 
-**Space Complexity:** O(n)  
->Reason: We use a dictionary to store the frequency of each element, which in the worst case can contain `n + 1` unique elements.
+> Reason: We iterate through the array once, and the operations we perform (insertion and lookup in a dictionary) are O(1) on average.
+
+**Space Complexity:** O(n)
+
+> Reason: We use a dictionary to store the frequency of each element, which in the worst case can contain `n + 1` unique elements.
 
 ### References
 
