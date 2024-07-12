@@ -37,8 +37,8 @@ Hierarchical Binary Search is a search algorithm designed to search for a target
 
 ## Complexity Analysis
 
-- **Time Complexity**: \( O(\log(n)) \) where \( n \) is the total number of elements in the dataset. This is due to the binary search applied at each hierarchical level.
-- **Space Complexity**: \( O(\log(n)) \) due to the recursive calls on the call stack.
+- **Time Complexity**: $O(\log(n))$ where $n$ is the total number of elements in the dataset. This is due to the binary search applied at each hierarchical level.
+- **Space Complexity**: $O(\log(n))$ due to the recursive calls on the call stack.
 
 ## Example
 
