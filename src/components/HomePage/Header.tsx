@@ -1,9 +1,11 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./header.css"; // Importing styles from external CSS file
 import Link from "@docusaurus/Link"; // Importing Link component from Docusaurus
 import VanillaTilt from "vanilla-tilt"; // Importing VanillaTilt for image tilt effect
 import { motion } from "framer-motion"; // Importing motion components from Framer Motion
 import ParticlesComponent from "../Particles/Particle"; // Importing custom ParticlesComponent
+import { auth, provider } from './Auth';
+import { signInWithPopup, signOut } from 'firebase/auth';
 
 /**
  * Renders the header content section of the application.
@@ -11,6 +13,27 @@ import ParticlesComponent from "../Particles/Particle"; // Importing custom Part
  * @returns JSX element representing the header content.
  */
 const HeaderContent = () => {
+  const [user,setUser]= useState(null);
+  //function for login handle
+  const handleLogin = ()=>{
+    signInWithPopup(auth,provider)
+    .then((result) =>{
+      setUser(result.user);
+    })
+    .catch((error)=>{
+      console.error("error signin in",error);
+    })
+  }
+  //function for logout
+  const handleLogout= ()=>{
+    signOut(auth)
+    .then(()=>{
+      setUser(null);
+    })
+    .catch((error)=>{
+      console.error("error  logging out",error);
+    })
+  }
   return (
     <div className="chh__header-content">
       {/* Title with animated text gradient and particles effect */}
@@ -87,6 +110,40 @@ const HeaderContent = () => {
             Courses
           </Link>
         </motion.button>
+        <br />
+        {user ? (
+          <motion.button
+            initial={{ opacity: 0, x: 10 }} // Initial animation properties
+            whileInView={{ opacity: 1, x: 0 }} // Animation while in view
+            viewport={{ once: true }} // Animation triggers once
+            transition={{ // Animation transition settings
+              duration: 1,
+              type: "spring",
+              stiffness: 100,
+              delay: 0.2,
+            }}
+            type="button" // Button type
+            onClick={handleLogout} // Logout on click
+          >
+            Hello, {user.displayName}
+          </motion.button>
+        ) : (
+          <motion.button
+            initial={{ opacity: 0, x: 10 }} // Initial animation properties
+            whileInView={{ opacity: 1, x: 0 }} // Animation while in view
+            viewport={{ once: true }} // Animation triggers once
+            transition={{ // Animation transition settings
+              duration: 1,
+              type: "spring",
+              stiffness: 100,
+              delay: 0.2,
+            }}
+            type="button" // Button type
+            onClick={handleLogin} // Login on click
+          >
+            Login
+          </motion.button>
+        )}
       </div>
     </div>
   );
