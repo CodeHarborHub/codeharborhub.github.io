@@ -44,7 +44,7 @@ export const Users: User[] = [
     description:
       "The Starter app is a feature-rich Next.js and Tailwind CSS blogging starter template.",
     preview: require("./showcase/TailwindBlog.jpg"),
-    website: "#",
+    website: null,
     source: "https://github.com/Ajay-Dhangar/starter",
     tags: ["opensource", "clone", "templates", "documentation"],
   },
@@ -81,7 +81,7 @@ export const Users: User[] = [
       "Broadcast Web is a modern and responsive web application for broadcasting your own channel.",
     preview: require("./showcase/broadcast-web.jpg"),
     website: "https://codeharborhub-broadcast-web.vercel.app/",
-    source: "",
+    source: null,
     tags: ["opensource", "product", "nextjs", "javascript"],
   },
 
@@ -338,7 +338,7 @@ export const Users: User[] = [
       description: "Front-end development for a horse ride booking system using React.js, redux, and montion animation.",
       preview: require("./showcase/horse-ride-booking.jpg"),
       website: "https://horse-ride-booking.vercel.app/",
-      source: "#",
+      source: null,
       tags: ["opensource", "react", "redux", "motion", "javascript"],
     }
 ];
