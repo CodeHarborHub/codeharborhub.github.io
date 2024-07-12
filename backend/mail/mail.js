@@ -16,7 +16,8 @@ const sendEmail = async (name, userMail, message) => {
           <div style="margin: auto; width:90%; background-color: white; max-width: 800px; padding: 1.2rem; border-radius: 0.6rem; box-shadow: 0 1px 5px rgb(0,0,0); position: relative; justify-content: center; align-items: center;">
               <h1 style="margin-top: 2rem; font-family: monospace;">Thank You for Contacting Us!</h1>
               <p style="margin-top: 2rem; font-family: sans-serif; font-size: 1rem;"> 
-                  <span style="font-weight: 700;">Your Message:</span> ${message}<br><br>
+                  <span style="font-weight: 700;">Your Message:</span> ${
+      message}<br><br>
                   Thank you for reaching out to us. Your message is very important to our team, and we appreciate your interest in CodeHarborHub.
                   <br><br>
                   At CodeHarborHub, we are dedicated to providing you with the resources and tools to enhance your learning journey. Whether you are interested in learning new programming languages, exploring various technologies, or tackling challenging coding problems, we have something for everyone.
@@ -46,20 +47,20 @@ const sendEmail = async (name, userMail, message) => {
   </html>`;
 
   const transporter = nodemailer.createTransport({
-    service: process.env.SERVICE,
-    host: process.env.HOST,
-    port: process.env.MAIL_PORT,
-    auth: {
-      user: process.env.USER,
-      pass: process.env.PASS,
+    service : process.env.SERVICE,
+    host : process.env.HOST,
+    port : process.env.MAIL_PORT,
+    auth : {
+      user : process.env.USER,
+      pass : process.env.PASS,
     },
   });
 
   const mailOptions = {
-    from: process.env.USER,
-    to: userMail,
-    subject: `Thank you for Contacting ${name}`,
-    html: HTML,
+    from : process.env.USER,
+    to : userMail,
+    subject : `Thank you for Contacting ${name}`,
+    html : HTML,
   };
 
   try {
