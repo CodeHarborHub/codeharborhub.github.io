@@ -9,7 +9,7 @@ description: "Return the kth lexicographically smallest integer."
 
 ## Problem Description
 
-Given two integers `n` and ``k, return the kth lexicographically smallest integer in the range `[1, n]`.
+Given two integers `n` and `k`, return the kth lexicographically smallest integer in the range `[1, n]`.
 
 ### Examples
 
@@ -60,8 +60,7 @@ Therefore, we can easily calculate the number of elements prefixed by result.
 
 ## Code in Different Languages
 
-<Tabs>
-<TabItem value="cpp" label="C++">
+### C++
 
 ```cpp
 class Solution {
@@ -100,25 +99,21 @@ public:
 
 
 ```
-</TabItem>
-<TabItem value="java" label="Java">
-```java
-public class Solution {
+### JAVA
+```java 
+  public class Solution {
     public int findKthNumber(int n, int k) {
         int result = 1;
         k--; // adjust k to be zero-indexed
-        
         while (k > 0) {
             int count = 0;
             long first = result;
             long last = first + 1;
-            
             while (first <= n) {
                 count += Math.min(n + 1, last) - first; // add the length of interval
                 first *= 10;
                 last *= 10;
             }
-            
             if (k >= count) {
                 // Skip all numbers starting with 'result'
                 result++;
@@ -129,15 +124,12 @@ public class Solution {
                 k--;
             }
         }
-        
         return result;
     }
 }
-
 ```
 
-</TabItem>
-<TabItem value="python" label="Python">
+### PYTHON
 ```python
 class Solution(object):
     def findKthNumber(self, n, k):
@@ -158,8 +150,6 @@ class Solution(object):
                 k -= 1
         return result
 ```
-</TabItem>
-</Tabs>
 
 ## Complexity Analysis
 
