@@ -125,11 +125,13 @@ class Solution:
                     ans += 1
         return ans
 ```
+
 ### Complexity Analysis
-**Time Complexity:** O(m x n)
+
+**Time Complexity:** $O(m x n)$
 >Reason: We iterate over each element in the picture array to count the number of 'B' pixels in each row and column.
 
-**Space Complexity:** O(m + n)
+**Space Complexity:** $O(m + n)$
 >Reason: We use two additional arrays, `rows` and `cols`, each of size mm and nn respectively, to count the number of 'B' pixels in each row and column.
 
 ### References
