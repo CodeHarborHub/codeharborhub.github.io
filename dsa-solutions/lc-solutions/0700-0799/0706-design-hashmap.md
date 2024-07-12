@@ -1,15 +1,11 @@
 ---
-
----
 id: design-hashmap
 title: Design HashMap
 sidebar_label: 706. Design HashMap
-
 tags:
-- Hash Table
-- Design
-- HashMap
-
+ - Hash Table
+ - Design
+ - HashMap
 description: "This is a solution to the Design HashMap problem on LeetCode."
 ---
 
@@ -243,5 +239,3 @@ public:
 - **LeetCode Problem**: [Design HashMap](https://leetcode.com/problems/design-hashmap/description)
 
 - **Solution Link**: [LeetCode Solution](https://leetcode.com/problems/design-hashmap/solutions)
-
----
