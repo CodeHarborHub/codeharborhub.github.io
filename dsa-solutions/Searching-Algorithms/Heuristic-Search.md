@@ -39,6 +39,7 @@ Heuristic Search is a search algorithm that uses heuristic functions to guide th
 
 Given a graph representing a map:
 
+```
 graph = {
 'A': [('B', 1), ('C', 3)],
 'B': [('D', 5)],
@@ -48,6 +49,7 @@ graph = {
 start = 'A'
 
 goal = 'D'
+```
 
 
 
