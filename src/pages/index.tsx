@@ -51,7 +51,7 @@ function TweetsSection() {
           slidesPerView={1}
           spaceBetween={30}
           autoplay={{ delay: 2000 }}
-          loop={true}
+          loop
           // pagination={{ clickable: true }}
           breakpoints={{
             640: { slidesPerView: 1, spaceBetween: 20 },
