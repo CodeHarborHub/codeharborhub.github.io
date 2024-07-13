@@ -1,16 +1,25 @@
-# Threading in Python
+---
+id: threading-Python
+title: Threading in Python
+sidebar_label: Threading in Python
+sidebar_position: 1
+tags: [python, threading,advance python]
+description: In this tutorial, you will learn about threading and how it is done in Python.
+---
+
+## What is threading and threads ?
 Threading is a sequence of instructions in a program that can be executed independently of the remaining process and 
 Threads are like lightweight processes that share the same memory space but can execute independently. 
 The process is an executable instance of a computer program. 
 This guide provides an overview of the threading module and its key functionalities.
 
-## Key Characteristics of Threads:
+### Key Characteristics of Threads:
 * Shared Memory: All threads within a process share the same memory space, which allows for efficient communication between threads.
 * Independent Execution: Each thread can run independently and concurrently.
 * Context Switching: The operating system can switch between threads, enabling concurrent execution.
 
-## Threading Module
-This module will allows you to create and manage threads easily. This module includes several functions and classes to work with threads.
+## Implementation of Threading 
+This module will allows you to create and manage threads easily in python. This module includes several functions and classes to work with threads.
 
 **1. Creating Thread:**
 To create a thread in Python, you can use the Thread class from the threading module.
