@@ -69,11 +69,11 @@ Output:
 
 ### Constraints
 
-- 1 &lt;= words.length &lt;= 300
-- 1 &lt;= words[i].length &lt;= 20
+- 1 <= words.length <= 300
+- 1 <= words[i].length <= 20
 - words[i] consists of only English letters and symbols.
-- 1 &lt;= maxWidth &lt;= 100
-- words[i].length &lt;= maxWidth
+- 1 <= maxWidth <= 100
+- words[i].length <= maxWidth
 
 ### Approach
 
