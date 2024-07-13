@@ -47,7 +47,7 @@ Explanation: Let the indices 1 and 3 form a pair. The difference of that pair is
 ### Approach 
 - First we don't care the original order of A[i], we want to compare the difference, so we sort them.
 - The result is in range of left = 0 and right = A[n - 1] - A[0] each iteration of search, we assume the minimum maximum differenceis mid = (left + right) / 2, then we check if we can have p pairs.
-- We take pairs (A[i], A[i - 1]) greedily if A[i] - A[i - 1] <= mid.
+- We take pairs (A[i], A[i - 1]) greedily if A[i] - A[i - 1] &lt;= mid.
 - If we take this pair, we move to next availble pair (A[i + 2], A[i + 1])
 - If not, we move to next availble pair (A[i + 1], A[i])
 - In the end of each iteration, we check if we can have p pairs.
@@ -58,6 +58,7 @@ Explanation: Let the indices 1 and 3 form a pair. The difference of that pair is
 ### Complexity
 
 Time complexity: $O(nlog(max(A)) + nlogn)$
+
 Space complexity: $O(logn)$
 
 ### Solution
