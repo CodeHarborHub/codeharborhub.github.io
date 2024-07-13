@@ -70,8 +70,7 @@ my-nextjs-app/
 ### Step 4: Creating Pages
 Create a new page by adding a file to the pages directory. For example, create `pages/about.js`:
 
-javascript
-```
+```javascript
 const About = () => {
   return <h1>About Page</h1>;
 };
@@ -88,8 +87,7 @@ Navigate to `http://localhost:3000/about` to see the new page.
 #### Global Styles
 Edit the `styles/globals.css` file to add global styles:
 
-css
-```
+```css
 body {
   font-family: Arial, sans-serif;
 }
@@ -99,8 +97,7 @@ These styles will apply to the entire application.
 #### CSS Modules
 Create a `CSS module` in the styles directory:
 
-css
-```
+```css
 /* styles/Home.module.css */
 .container {
   padding: 20px;
@@ -110,8 +107,7 @@ css
 
 Use this `module` in a component:
 
-javascript
-```
+```javascript
 // pages/index.js
 import styles from '../styles/Home.module.css';
 
@@ -131,8 +127,7 @@ export default Home;
 #### Server-Side Rendering (SSR)
 Fetch data on each request with `getServerSideProps`:
 
-javascript
-```
+```javascript
 // pages/index.js
 export async function getServerSideProps() {
   const res = await fetch('https://api.example.com/data');
@@ -151,8 +146,7 @@ export default Home;
 #### Static Site Generation (SSG)
 Fetch data at build time with `getStaticProps`:
 
-javascript
-```
+```javascript
 // pages/index.js
 export async function getStaticProps() {
   const res = await fetch('https://api.example.com/data');
@@ -174,8 +168,8 @@ Next.js allows you to create API endpoints inside the `pages/api` directory.
 #### Example API Route
 Create `pages/api/hello.js`:
 
-javascript
-```
+
+```javascript
 export default function handler(req, res) {
   res.status(200).json({ message: 'Hello, world!' });
 }
