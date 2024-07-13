@@ -9,6 +9,7 @@ updates:
     directory: "/"
     schedule:
       interval: "daily" # Changed to daily from weekly
+    # open-pull-requests-limit: 0 # Disable version updates for npm dependencies
     labels:
       - 'pr: dependencies'
 
