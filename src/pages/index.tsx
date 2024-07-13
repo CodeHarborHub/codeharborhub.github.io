@@ -91,12 +91,12 @@ export default function Home() {
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5832817025080991"
           crossOrigin="anonymous"
-        ></script>
+         />
         <script
           async
           custom-element="amp-auto-ads"
           src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"
-        ></script>
+         />
         <meta name="google-adsense-account" content="ca-pub-5832817025080991" />
       </Head>
       <main className={style.main__home}>
