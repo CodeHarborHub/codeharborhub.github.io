@@ -95,8 +95,8 @@ export default function Contact(): JSX.Element {
       <section id="contact" className={styles.main__contact}>
         {/* Background divs for styling */}
         {checker.popup? <Popup status={checker.status?"✔":"✖"} message={checker.status?"Success":"Something went wrong"} />:<></> }
-        <div className={styles.main__contact_child1}></div>
-        <div className={styles.main__contact_child2}></div>
+        <div className={styles.main__contact_child1} />
+        <div className={styles.main__contact_child2} />
         <div className={styles.main__contact_container}>
           <div className={styles.main__contact_contains}>
             <div className={styles.main__contact_contains_left}>
@@ -345,7 +345,7 @@ export default function Contact(): JSX.Element {
                   {/* Form submit button */}
                   <div className={styles.form_group}>
                     <button type="submit" className={styles.form_button}>
-                      {checker.loading?<div className={styles.loader}></div>:"Send"}
+                      {checker.loading?<div className={styles.loader} />:"Send"}
                     </button>
                   </div>
                 </form>
