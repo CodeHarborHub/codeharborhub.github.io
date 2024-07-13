@@ -1,6 +1,9 @@
 // @ts-check
 
-/** @typedef {Record<'performance' | 'accessibility' | 'best-practices' | 'seo', number>} LighthouseSummary */
+/**
+ * @typedef {Record<'performance' | 'accessibility' | 'best-practices' | 'seo',
+ * number>} LighthouseSummary
+ */
 
 /** @type {Record<keyof LighthouseSummary, string>} */
 const summaryKeys = {
