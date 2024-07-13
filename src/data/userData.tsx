@@ -108,6 +108,17 @@ export const Users: User[] = [
     source: "https://github.com/komal-agarwal5/Giggle-Hub------Meme-Generator",
     tags: ["opensource", "product", "html", "css", "javascript"],
   },
+    // URL Shortner
+
+    {
+      title: "URL Shortner",
+      description:
+        "It  Short  URL by using the technique of API Fetching and also supports the feature of copy url.",
+      preview: require("./showcase/URLShortner.png"),
+      website: "https://url-shortner-tau-woad.vercel.app//",
+      source: "https://github.com/kartikmehta18/URLshortner",
+      tags: ["opensource", "product", "html", "css", "javascript"],
+    },
 
   // Age Calculator Clone
 
