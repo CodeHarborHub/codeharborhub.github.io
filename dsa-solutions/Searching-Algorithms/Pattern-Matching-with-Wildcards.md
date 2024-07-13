@@ -32,8 +32,8 @@ Pattern Matching with Wildcards is an advanced search algorithm that extends tra
 
 ## Complexity Analysis
 
-- **Time Complexity**: Depends on the specific implementation. It can range from \( O(m \times n) \) to \( O(m + n) \), where \( m \) is the length of the pattern and \( n \) is the length of the text.
-- **Space Complexity**: \( O(m \times n) \) in worst cases due to the potential recursion depth or dynamic programming table.
+- **Time Complexity**: Depends on the specific implementation. It can range from $O(m \times n) )$ to $ O(m + n) $, where $m$ is the length of the pattern and $n$ is the length of the text.
+- **Space Complexity**: $O(m \times n) )$ in worst cases due to the potential recursion depth or dynamic programming table.
 
 ## Example
 
