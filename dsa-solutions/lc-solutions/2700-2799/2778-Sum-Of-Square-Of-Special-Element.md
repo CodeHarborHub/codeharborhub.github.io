@@ -5,6 +5,8 @@ sidebar_label: 2778-Sum-Of-Square-Of-Special-Element
 tags:
   - Array
   - Enumeration
+
+description: "This is a solution to the  2778. Find Sum of Squares of Special Elements."
 ---
 
 ## Problem Description
