@@ -3,9 +3,9 @@ id: text-justification
 title: Text Justification
 sidebar_label: 0068. Text Justification
 tags:
-- String
-- Greedy
-description: "Solution to Leetcode 68. Text Justification"
+ - String
+ - Greedy
+description: Solution to Leetcode 68 Text Justification
 ---
 
 ## Problem Description
@@ -69,11 +69,11 @@ Output:
 
 ### Constraints
 
-- 1 <= words.length <= 300
-- 1 <= words[i].length <= 20
+- 1 &lt;= words.length &lt;= 300
+- 1 &lt;= words[i].length &lt;= 20
 - words[i] consists of only English letters and symbols.
-- 1 <= maxWidth <= 100
-- words[i].length <= maxWidth
+- 1 &lt;= maxWidth &lt;= 100
+- words[i].length &lt;= maxWidth
 
 ### Approach
 
@@ -83,8 +83,8 @@ Output:
 
 ### Complexity
 
-- Time complexity: O(n), where n is the number of words.
-- Space complexity: O(n), where n is the number of words.
+- Time complexity: $O(n)$, where n is the number of words.
+- Space complexity: $O(n)$, where n is the number of words.
 
 ### Solution
 
@@ -214,10 +214,9 @@ class Solution {
 
 ### Complexity Analysis
 
-- Time Complexity: O(n), where n is the number of words.
-- Space Complexity: O(n), where n is the number of words.
+- Time Complexity: $O(n)$, where n is the number of words.
+- Space Complexity: $O(n)$, where n is the number of words.
 
 ### References
 
 - **LeetCode Problem**: Text Justification
-```
