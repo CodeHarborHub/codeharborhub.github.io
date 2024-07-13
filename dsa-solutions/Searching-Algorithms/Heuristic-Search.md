@@ -186,5 +186,3 @@ int main() {
 
 # Conclusion
 The Heuristic Search algorithm efficiently searches for a target state by leveraging heuristic functions to guide the search process. It is widely used in AI, optimization problems, and various applications where informed search strategies are beneficial.
-
-```
