@@ -3,9 +3,10 @@ id: split-array-with-equal-sum
 title: Split Array with Equal Sum
 sidebar_label: 0548-split-array-with-equal-sum
 tags:
-  -	Array
-description: "This is a solution to split-array-with-equal-sum problem on LeetCode."
+- Array
+description: "This is a solution to the Number of Provincess problem on LeetCode."
 ---
+
 
 ## Problem Description
 
