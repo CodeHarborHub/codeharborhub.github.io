@@ -34,7 +34,7 @@ Return the minimum number of moves required to make `s` valid.
 ## Constraints
 
 - $1 <= s.length <= 1000$
-- $s[i] is either '(' or ')'.$
+- s[i] is either '(' or ')'.
 
 ## Algorithm
 
