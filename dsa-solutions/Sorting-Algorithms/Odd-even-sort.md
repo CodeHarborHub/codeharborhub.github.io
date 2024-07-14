@@ -33,8 +33,8 @@ Odd-Even Sort, also known as Brick Sort, is a simple comparison-based sorting al
 
 ## Complexity Analysis
 
-- **Time Complexity**: The worst-case time complexity is \( O(n^2) \), where \( n \) is the number of elements in the array.
-- **Space Complexity**: The space complexity is \( O(1) \) since it is an in-place sorting algorithm.
+- **Time Complexity**: The worst-case time complexity is $O(n^2)$, where $n$ is the number of elements in the array.
+- **Space Complexity**: The space complexity is $O(1)$ since it is an in-place sorting algorithm.
 
 ## Example
 
