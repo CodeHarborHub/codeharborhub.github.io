@@ -1,4 +1,3 @@
-## Hierarchical Clustering
 
 ---
 id: Hierarchical Clustering
