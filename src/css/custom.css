@@ -359,7 +359,7 @@ th {
   min-width: 180px;
 }
 @media (max-width:400px) {
-  .dropdown-content{
+  .dsa-content{
     flex-direction: column;
   }
 }
