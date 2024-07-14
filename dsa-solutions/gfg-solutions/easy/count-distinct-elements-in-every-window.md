@@ -52,8 +52,8 @@ Output: 2 1
 
 ### Constraints
 
-- 1 &lt K &lt N &lt 105
-- 1 &lt A[i] &lt 105 , for each valid i
+- `1 <= K <= N <= 105`
+- `1 <= A[i] <= 105 , for each valid i`
 
 ---
 
