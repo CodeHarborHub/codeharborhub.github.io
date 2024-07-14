@@ -115,7 +115,7 @@ export const Users: User[] = [
       description:
         "It  Short  URL by using the technique of API Fetching and also supports the feature of copy url.",
       preview: require("./showcase/URLShortner.png"),
-      website: "https://url-shortner-tau-woad.vercel.app//",
+      website: "https://url-shortner-tau-woad.vercel.app/",
       source: "https://github.com/kartikmehta18/URLshortner",
       tags: ["opensource", "product", "html", "css", "javascript"],
     },
