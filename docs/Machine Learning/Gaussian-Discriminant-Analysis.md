@@ -19,7 +19,7 @@ Gaussian Discriminant Analysis involves modeling the conditional probability dis
   
   - **Covariance**: Describes how the features of the data are correlated with each other.
 
-- **Decision Rule**: Classify new data points by choosing the class that maximizes the posterior probability \( P(y | X) \) using Bayes' theorem.
+- **Decision Rule**: Classify new data points by choosing the class that maximizes the posterior probability $P(y | X)$ using Bayes' theorem.
 
 
 **Gaussian Distribution**: Assumes feature values are normally distributed within each class.
