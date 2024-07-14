@@ -11,15 +11,15 @@ description: In this tutorial, you will learn about Gaussian Discriminant Analys
 Gaussian Discriminant Analysis (GDA) is a classical supervised learning algorithm used for classification tasks. It models the probability distributions of features for each class using Gaussian distributions. GDA aims to classify new data points based on the likelihood that they belong to a particular class, making it a powerful tool for probabilistic classification tasks.
 
 ### What is Gaussian Discriminant Analysis?
-Gaussian Discriminant Analysis involves modeling the conditional probability distributions of features \( X \) given each class \( y \):
+Gaussian Discriminant Analysis involves modeling the conditional probability distributions of features $X$ given each class \( y \):
 
-- **Single Class Model**: Each class \( y \) has its own Gaussian distribution parameters (mean \( \mu \) and covariance \( \Sigma \)).
+- **Single Class Model**: Each class \( y \) has its own Gaussian distribution parameters (mean $ \mu $ and covariance $ \Sigma$).
 - **Decision Rule**: Classify new data points by choosing the class that maximizes the posterior probability \( P(y | X) \) using Bayes' theorem.
 
-:::info
+
 **Gaussian Distribution**: Assumes feature values are normally distributed within each class.
 **Bayes' Theorem**: Formula used to determine the probability of a hypothesis given prior knowledge.
-:::
+
 
 ### Example:
 Consider GDA for email spam detection. The algorithm estimates Gaussian distributions of word frequencies in emails for spam and non-spam classes. By calculating posterior probabilities using these distributions, it predicts whether new emails are spam or not.
