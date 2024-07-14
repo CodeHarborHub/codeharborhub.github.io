@@ -1,8 +1,6 @@
 ---
-
 id: max-consecutive-ones-iii
 title: Max Consecutive Ones III
-level: medium
 sidebar_label: Max Consecutive Ones III
 tags:
   - Array
@@ -11,7 +9,6 @@ tags:
   - Python
   - C++
 description: "This document provides solutions for the Max Consecutive Ones III problem on LeetCode."
-
 ---
 
 ## Problem Statement
