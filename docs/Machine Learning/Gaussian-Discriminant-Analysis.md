@@ -13,12 +13,9 @@ Gaussian Discriminant Analysis (GDA) is a classical supervised learning algorith
 ### What is Gaussian Discriminant Analysis?
 Gaussian Discriminant Analysis involves modeling the conditional probability distributions of features $X$ given each class \( y \):
 
--**Single Class Model**
-
-Each class \( y \) is characterized by its own Gaussian distribution parameters:
-
-1. **Mean**: Represents the average value or center of the distribution.
-2. **Covariance**: Describes how the features of the data are correlated with each other.
+-**Single Class Model**Each class \( y \) is characterized by its own Gaussian distribution parameters:
+-- **Mean**: Represents the average value or center of the distribution.
+-- **Covariance**: Describes how the features of the data are correlated with each other.
 
 
 
