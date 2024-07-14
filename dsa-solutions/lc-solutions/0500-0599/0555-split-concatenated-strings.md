@@ -4,9 +4,8 @@ title: Split Concatenated Strings
 sidebar_label: 0555-split-concatenated-strings
 tags:
   - Greedy
-  -	Array
-  -	String
-
+  - String
+  - Array
 description: "This is a solution to split-concatenated-strings problem on LeetCode."
 ---
 

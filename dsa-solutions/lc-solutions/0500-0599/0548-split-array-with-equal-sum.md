@@ -3,11 +3,13 @@ id: binary-tree-longest-consecutive-sequence-ii
 title: Binary Tree Longest Consecutive Sequence-ii
 sidebar_label: 0549-binary-tree-longest-consecutive-sequence-ii
 tags:
-- Tree
-- Depth-First Search
-- Binary Tree
+ - Tree
+ - Depth-First Search
+ - Binary Tree
+ - Array
 description: "This is a solution to the Number of Provincess problem on LeetCode."
 ---
+
 
 ## Problem Description
 
