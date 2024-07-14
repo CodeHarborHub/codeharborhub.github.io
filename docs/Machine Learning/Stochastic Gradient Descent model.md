@@ -1,5 +1,5 @@
 ---
-id: Stochastic Gradient Descent
+id: stochastic-gradient-descent
 title: Stochastic Gradient Descent
 sidebar_label: Introduction to Stochastic Gradient Descent
 sidebar_position: 1
