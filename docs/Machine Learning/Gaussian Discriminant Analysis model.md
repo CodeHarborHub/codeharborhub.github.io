@@ -15,6 +15,7 @@ Gaussian Discriminant Analysis involves modeling the conditional probability dis
 
 - **Single Class Model:** Each class \( y \) has its own Gaussian distribution parameters (mean \( \mu \) and covariance \( \Sigma \)).
 
+
 - **Decision Rule**: Classify new data points by choosing the class that maximizes the posterior probability \( P(y | X) \) using Bayes' theorem.
 
 
