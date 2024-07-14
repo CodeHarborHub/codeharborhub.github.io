@@ -16,8 +16,8 @@ const RoadmapJavaScript: React.FC = () => {
       <div className="roadmaps">
         {roadmapJavaScript.map((item, index) => (
           <div key={index} className="roadmap-item">
-            <h3 
-              className={`roadmap-title ${activeIndex === index ? 'active' : ''}`} 
+            <h3
+              className={`roadmap-title ${activeIndex === index ? 'active' : ''}`}
               onClick={() => handleToggle(index)}
             >
               {item.title}
