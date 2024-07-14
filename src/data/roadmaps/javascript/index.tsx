@@ -9,7 +9,7 @@ export interface RoadmapItem {
     description: string;
     topics: Topic[];
   }
-  
+
   const roadmapJavaScript: RoadmapItem[] = [
     {
       title: "Beginner Topics",
@@ -187,5 +187,5 @@ export interface RoadmapItem {
     },
     // Add more items as needed
   ];
-  
+
   export default roadmapJavaScript;
