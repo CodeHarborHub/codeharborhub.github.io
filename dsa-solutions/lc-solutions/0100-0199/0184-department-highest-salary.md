@@ -83,7 +83,7 @@ Max and Jim both have the highest salary in the IT department and Henry has the 
 ## Solution
 
 ### Approach 
-1. We will selects three columns for the final output:<br />
+1. We will select three columns for the final output:<br />
 
    * D.Name as Department: The name of the department.
    * E.Name as Employee: The name of the employee.
