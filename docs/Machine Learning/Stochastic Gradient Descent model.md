@@ -13,11 +13,10 @@ Stochastic Gradient Descent (SGD) is a fundamental optimization algorithm widely
 ### What is Stochastic Gradient Descent?
 Stochastic Gradient Descent is an optimization technique that updates model parameters iteratively to minimize a loss function by taking small steps in the direction of the steepest gradient calculated from a subset (batch) of training data at each iteration. Unlike traditional Gradient Descent, which computes gradients using the entire dataset (batch gradient descent), SGD processes data in smaller batches, making it faster and more suitable for online learning and dynamic environments.
 
-:::info
-**Batch Size**: Number of data points used in each iteration to compute the gradient and update parameters.
+-**Batch Size**: Number of data points used in each iteration to compute the gradient and update parameters.
 
-**Learning Rate**: Step size that controls the magnitude of parameter updates in each iteration.
-:::
+-**Learning Rate**: Step size that controls the magnitude of parameter updates in each iteration.
+
 
 ### Example:
 Consider training a deep neural network (DNN) for image classification using SGD. Instead of computing gradients over the entire dataset in one go, SGD updates model weights incrementally after processing each batch of images. This stochastic process helps in navigating complex optimization landscapes efficiently.
