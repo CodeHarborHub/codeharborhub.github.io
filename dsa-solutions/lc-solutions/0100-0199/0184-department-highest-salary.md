@@ -36,6 +36,14 @@ Table: Department
 id is the primary key (column with unique values) for this table. It is guaranteed that department name is not NULL.
 Each row of this table indicates the ID of a department and its name.
 
+Write a solution to find employees who have the highest salary in each of the departments.
+
+Return the result table in any order.
+
+The result format is in the following example.
+
+ 
+
 ### Examples
 
 **Example 1:**
