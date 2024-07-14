@@ -1,12 +1,12 @@
 ---
 id: binary-tree-longest-consecutive-sequence-ii
-title: Binary Tree Longest Consecutive Sequence-ii
+title:  Binary Tree Longest Consecutive Sequence-ii
 sidebar_label: 0549-binary-tree-longest-consecutive-sequence-ii
 tags:
-  -	Tree
-  - Depth-First Search
-  - Binary Tree
-description: "This is a solution to binary-tree-longest-consecutive-sequence-ii problem on LeetCode."
+- Depth-First Search
+- Trees
+- Binary tree
+description: "This is a solution to the binary-tree-longest-consecutive-sequence-ii problem on LeetCode."
 ---
 
 ## Problem Description
