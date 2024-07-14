@@ -105,10 +105,10 @@ In the Sales department:
 
    * D.ID = E.DepartmentId: Ensures that the department ID in the Department table matches the department ID in the Employee table (aliased as E).
    * E.DepartmentId = E2.DepartmentId: Ensures that the department ID in the Employee table (aliased as E) matches the department ID in the Employee table (aliased as E2).
-   * E.Salary <= E2.Salary: Ensures that the salary of E is less than or equal to the salary of E2. This creates a comparison to find the top salaries within each department.
+   * E.Salary &lt;= E2.Salary: Ensures that the salary of E is less than or equal to the salary of E2. This creates a comparison to find the top salaries within each department.
 3. Then we will use Group By clause to group the results by department ID and employee name.
 4. Then we will use Having clause
-   * count(distinct E2.Salary) <= 3: Filters the groups to include only those where the distinct count of salaries in E2 is less than or equal to 3. This effectively limits the results to the top 3 salaries per department.
+   * count(distinct E2.Salary) &lt;= 3: Filters the groups to include only those where the distinct count of salaries in E2 is less than or equal to 3. This effectively limits the results to the top 3 salaries per department.
 5. Then finally we order the final results by department name in ascending order and employee salary in descending order.
 #### Implementation
 
