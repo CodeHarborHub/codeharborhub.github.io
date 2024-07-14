@@ -17,7 +17,7 @@ Gaussian Discriminant Analysis involves modeling the conditional probability dis
 
 Each class \( y \) is characterized by its own Gaussian distribution parameters:
 
-- **Mean (\( \mu \))**: Represents the average value or center of the distribution.
+- **Mean (\( \mu )\)**: Represents the average value or center of the distribution.
 - **Covariance (\( \Sigma \))**: Describes how the features of the data are correlated with each other.
 
 
