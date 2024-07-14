@@ -8,13 +8,11 @@ hide_table_of_contents: true
 
 This is a markdown page.
 
-
 I can use markdown syntax here.
 
 ```js
-console.log('Hello World');
+console.log("Hello World");
 ```
-
 
 ### 2. Create a new page in the `src/pages` directory
 
@@ -34,7 +32,6 @@ hide_table_of_contents: true
 # Hello
 
 This is a markdown page.
-
 ```
 
 ### 4. Run the project
