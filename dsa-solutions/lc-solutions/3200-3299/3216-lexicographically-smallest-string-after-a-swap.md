@@ -28,7 +28,7 @@ s[1] == '5' and s[2] == '3' both have the same parity, and swapping them results
 
 ### Constraints
 - `1 <= s.length <= 10^5`
-## Solution for 3216. Lexicographically Smallest String After a Swap
+## Solution for  3216. Lexicographically Smallest String After a Swap
 
 <Tabs>
   <TabItem value="Solution" label="Solution">
