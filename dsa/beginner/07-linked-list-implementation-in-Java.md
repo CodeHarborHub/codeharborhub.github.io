@@ -31,7 +31,7 @@ Why do we need linked list, even though we can use arrays?
 
 ## Implementation: 
 
-Now, we'll implement a singly linked list in Java from scratch.<br> You may wonder, why should we implement it from scratch instead of using the in built data structure? Well,this way we can customise the data structure! We can add new operations to suit our specific requirements.It also helps us to develop a deeper understanding of how the data structure works.
+Now, we'll implement a singly linked list in Java from scratch.<br /> You may wonder, why should we implement it from scratch instead of using the in built data structure? Well,this way we can customise the data structure! We can add new operations to suit our specific requirements.It also helps us to develop a deeper understanding of how the data structure works.
 
 ## **Code:**
 
