@@ -2,6 +2,7 @@ import React, { type ReactNode } from "react";
 import Translate from "@docusaurus/Translate";
 import Link from "@docusaurus/Link";
 import Heading from "@theme/Heading";
+import "./teamcards.css";
 
 function WebsiteLink({ to, children }: { to: string; children?: ReactNode }) {
   return (
