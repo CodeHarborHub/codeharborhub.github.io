@@ -11,7 +11,7 @@ description: "This is a solution to the Split Array with Equal Sum problem on Le
 
 ## Problem Description
 
-Given an array `nums` of length `n`, return `true` if there are four indices `i`, `j`, `k`, `l` (1 <= i < j < k < l < n-1) such that the sum of the subarrays `nums[0..i-1]`, `nums[i+1..j-1]`, `nums[j+1..k-1]`, and `nums[k+1..l-1]` are all equal.
+Given an array `nums` of length `n`, return `true` if there are four indices `i`, `j`, `k`, `l` (1 &lt;= i &lt; j &lt; k &lt; l &lt; n-1) such that the sum of the subarrays `nums[0..i-1]`, `nums[i+1..j-1]`, `nums[j+1..k-1]`, and `nums[k+1..l-1]` are all equal.
 
 ### Examples
 
