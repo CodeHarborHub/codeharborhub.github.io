@@ -123,7 +123,7 @@ const ResponseForm = () => {
               value={inputData.message}
               className={style.response_input}
               onChange={updateInputs}
-            ></textarea>
+             />
           </div>
           <button type="submit" className={style.response_btn}>
             SUBMIT
