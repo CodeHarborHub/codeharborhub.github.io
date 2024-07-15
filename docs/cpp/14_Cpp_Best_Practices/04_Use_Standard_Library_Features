@@ -12,4 +12,36 @@ tags:
     Standard Library Features
   ]
 description: In this tutorial, We Leverage the rich features of the C++ Standard Library. It provides a vast collection of containers, algorithms, and utilities that can simplify your code and make it more expressive. Use containers like `std::vector`, `std::map`, and algorithms from the `<algorithm>` header to avoid reinventing the wheel and to take advantage of optimized, well-tested code.
+
+C++ Standard Library
+1. Containers:
+
+vector, list, deque, set, map: Standard container classes.
+
+2. Algorithms:
+
+algorithm: Functions for sorting, searching, and manipulating ranges of elements.
+numeric: Numeric operations on ranges of elements.
+
+3. Utilities:
+
+utility: General-purpose utilities like pair and tuple.
+functional: Function objects, binders, and reference wrappers.
+
+4. I/O:
+
+iostream: Standard input/output stream objects.
+fstream: File stream classes.
+sstream: String stream classes.
+
+5. Concurrency:
+
+thread: Support for multithreading.
+mutex: Mutual exclusion primitives.
+future: Support for asynchronous operations.
+
+6. Math and Random:
+
+cmath: Mathematical functions.
+random: Random number generation.
 ---
