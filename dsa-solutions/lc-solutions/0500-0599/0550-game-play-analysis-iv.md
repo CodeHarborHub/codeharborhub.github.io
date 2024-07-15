@@ -11,6 +11,7 @@ description: "This is a solution to game-play-analysis-iv problem on LeetCode."
 ## Problem Description
 
 Table: `Activity`
+
 ```
 +--------------+---------+
 | Column Name  | Type    |
