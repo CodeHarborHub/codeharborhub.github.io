@@ -1,7 +1,7 @@
 ---
 id: binary-tree-longest-consecutive-sequence-ii
 title: Binary Tree Longest Consecutive Sequence-ii
-sidebar_label: 0549-binary-tree-longest-consecutive-sequence-ii
+sidebar_label: 0549-binary-tree-longest-consecutive-sequence-iiQ549-lc
 tags:
 - Depth-First Search
 - Tree
