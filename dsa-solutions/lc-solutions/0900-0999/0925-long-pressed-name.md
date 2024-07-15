@@ -2,15 +2,15 @@
 id: long-pressed-name
 title: Long Pressed Name
 sidebar_label: Long Pressed Name
-tags: 
-    - strings
-    - two-pointers
+tags:
+  - strings
+  - two-pointers
 ---
 
 ## Problem Description
 
-| Problem Statement                                       | Solution Link                                                              | LeetCode Profile                                        |
-| :------------------------------------------------------ | :------------------------------------------------------------------------- | :------------------------------------------------------ |
+| Problem Statement                                                                 | Solution Link                                                                                        | LeetCode Profile                                     |
+| :-------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- | :--------------------------------------------------- |
 | [Long Pressed Name](https://leetcode.com/problems/long-pressed-name/description/) | [Long Pressed Name Solution on LeetCode](https://leetcode.com/problems/Long-Pressed-Name/solutions/) | [Nikita Saini](https://leetcode.com/u/Saini_Nikita/) |
 
 ## Problem Description
@@ -119,17 +119,18 @@ bool isLongPressedName(char * name, char * typed){
 ### JavaScript
 
 ```javascript
-var isLongPressedName = function(name, typed) {
-    let i = 0, j = 0;
-    while (j < typed.length) {
-        if (i < name.length && name[i] === typed[j]) {
-            i++;
-        } else if (j === 0 || typed[j] !== typed[j - 1]) {
-            return false;
-        }
-        j++;
+var isLongPressedName = function (name, typed) {
+  let i = 0,
+    j = 0;
+  while (j < typed.length) {
+    if (i < name.length && name[i] === typed[j]) {
+      i++;
+    } else if (j === 0 || typed[j] !== typed[j - 1]) {
+      return false;
     }
-    return i === name.length;
+    j++;
+  }
+  return i === name.length;
 };
 ```
 
