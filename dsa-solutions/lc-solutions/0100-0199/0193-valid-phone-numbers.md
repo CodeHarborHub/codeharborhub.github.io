@@ -33,7 +33,7 @@ Your script should output the following valid phone numbers:
 ```
 
 ### Constraints
-- The file `file.txt` will be at most 10^4 lines.
+- The file `file.txt` will be at most $10^4$ lines.
 - The phone numbers in the file are either valid or invalid according to the described formats.
 
 ## Solution Approach
@@ -61,6 +61,6 @@ grep -E '^\(\d{3}\) \d{3}-\d{4}$|^\d{3}-\d{3}-\d{4}$' file.txt
 
 ## Complexity
 
-- **Time Complexity**: `O(n)`, where `n` is the number of lines in the file. The `grep` command processes each line in the file once.
+- **Time Complexity**: $O(n)$, where $n$ is the number of lines in the file. The `grep` command processes each line in the file once.
   
-- **Space Complexity**: `O(1)`, as the space used by `grep` is constant and does not depend on the input size.
+- **Space Complexity**: $O(1)$, as the space used by `grep` is constant and does not depend on the input size.
