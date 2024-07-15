@@ -1,208 +1,141 @@
 ---
-id: binary-tree-longest-consecutive-sequence-ii
-title: Binary Tree Longest Consecutive Sequence-ii
-sidebar_label: 0549-binary-tree-longest-consecutive-sequence-ii
+id: split-array-with-equal-sum
+title: Split Array with Equal Sum
+sidebar_label: 0548 - Split Array with Equal Sum
 tags:
- - Tree
- - Depth-First Search
- - Binary Tree
  - Array
-description: "This is a solution to the Number of Provincess problem on LeetCode."
+ - Prefix Sum
+ - Divide and Conquer
+description: "This is a solution to the Split Array with Equal Sum problem on LeetCode."
 ---
-
 
 ## Problem Description
 
-Given the `root` of a binary tree, return the length of the `longest consecutive path` in the tree.
-
-A consecutive path is a path where the values of the consecutive nodes in the path differ by one. This path can be either `increasing` or `decreasing`.
-
-  ~ For example, `[1,2,3,4]` and `[4,3,2,1]` are both considered valid, but the path `[1,2,4,3]` is not valid.
-
-On the other hand, the path can be in the` child-Parent-child` order, where not necessarily be `parent-child` order.
+Given an array `nums` of length `n`, return `true` if there are four indices `i`, `j`, `k`, `l` (1 <= i < j < k < l < n-1) such that the sum of the subarrays `nums[0..i-1]`, `nums[i+1..j-1]`, `nums[j+1..k-1]`, and `nums[k+1..l-1]` are all equal.
 
 ### Examples
 
 **Example 1:**
 
 ```
-Input: root = [1,2,3]
-Output: 2
-Explanation: The longest consecutive path is [1, 2] or [2, 1].
-
+Input: nums = [1,2,1,2,1,2,1]
+Output: true
+Explanation: i = 1, j = 3, k = 5, l = 6 satisfy the conditions.
 ```
 
 **Example 2:**
 
 ```
-Input: root = [2,1,3]
-Output: 3
-Explanation: The longest consecutive path is [1, 2, 3] or [3, 2, 1].
-
+Input: nums = [1,2,1,2,1,2,1,2]
+Output: false
 ```
-
 
 ### Constraints
 
-- The number of nodes in the tree is in the range `[1, 3 * 104]`.
-- `-3 * 10^4 <= Node.val <= 3 * 10^4`
+- The array's length is `[7, 2000]`.
+- `-10^6 <= nums[i] <= 10^6`
 
-## Solution for Assign Cookies
+## Solution for Split Array with Equal Sum
 
 ### Approach:
 
-1- Define a helper function dfs to perform a `depth-first search` on the tree.
-2- Handle the base case where the current node is None, returning `[0, 0]`.
-3- Initialize incr and decr to `1`, then perform `DFS` on the left and right children.
-4- Update `incr` and `decr` based on the values of the left and right children relative to the current node.
-5- Update the global ans variable to the maximum of ans and incr `+` `decr - 1`, then return `[incr, decr]`.
+1. Use a prefix sum array to store the sum of elements from the start of the array to each index.
+2. Iterate through possible positions of `j` and `k` to find valid indices.
+3. Check if an index `i` before `j` and an index `l` after `k` exists so that the sums of the corresponding subarrays are equal.
 
 ## Code in Different Languages
 
 ### C++
 
 ```cpp
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
 class Solution {
 public:
-    int ans;
-
-    int longestConsecutive(TreeNode* root) {
-        ans = 0;
-        dfs(root);
-        return ans;
-    }
-
-    vector<int> dfs(TreeNode* root) {
-        if (!root) return {0, 0};
-        int incr = 1, decr = 1;
-        auto left = dfs(root->left);
-        auto right = dfs(root->right);
-        if (root->left) {
-            if (root->left->val + 1 == root->val) incr = left[0] + 1;
-            if (root->left->val - 1 == root->val) decr = left[1] + 1;
+    bool splitArray(vector<int>& nums) {
+        int n = nums.size();
+        vector<int> prefixSum(n, 0);
+        prefixSum[0] = nums[0];
+        for (int i = 1; i < n; ++i) {
+            prefixSum[i] = prefixSum[i - 1] + nums[i];
         }
-        if (root->right) {
-            if (root->right->val + 1 == root->val) incr = max(incr, right[0] + 1);
-            if (root->right->val - 1 == root->val) decr = max(decr, right[1] + 1);
+        
+        for (int j = 3; j < n - 3; ++j) {
+            unordered_set<int> sums;
+            for (int i = 1; i < j - 1; ++i) {
+                if (prefixSum[i - 1] == prefixSum[j - 1] - prefixSum[i]) {
+                    sums.insert(prefixSum[i - 1]);
+                }
+            }
+            for (int k = j + 2; k < n - 1; ++k) {
+                if (prefixSum[n - 1] - prefixSum[k] == prefixSum[k - 1] - prefixSum[j] && sums.count(prefixSum[k - 1] - prefixSum[j])) {
+                    return true;
+                }
+            }
         }
-        ans = max(ans, incr + decr - 1);
-        return {incr, decr};
+        return false;
     }
 };
-
 ```
+
 ### Java
 
 ```java
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
 class Solution {
-    private int ans;
+    public boolean splitArray(int[] nums) {
+        int n = nums.length;
+        int[] prefixSum = new int[n];
+        prefixSum[0] = nums[0];
+        for (int i = 1; i < n; i++) {
+            prefixSum[i] = prefixSum[i - 1] + nums[i];
+        }
 
-    public int longestConsecutive(TreeNode root) {
-        ans = 0;
-        dfs(root);
-        return ans;
-    }
-
-    private int[] dfs(TreeNode root) {
-        if (root == null) {
-            return new int[] {0, 0};
-        }
-        int incr = 1, decr = 1;
-        int[] left = dfs(root.left);
-        int[] right = dfs(root.right);
-        if (root.left != null) {
-            if (root.left.val + 1 == root.val) {
-                incr = left[0] + 1;
+        for (int j = 3; j < n - 3; j++) {
+            Set<Integer> sums = new HashSet<>();
+            for (int i = 1; i < j - 1; i++) {
+                if (prefixSum[i - 1] == prefixSum[j - 1] - prefixSum[i]) {
+                    sums.add(prefixSum[i - 1]);
+                }
             }
-            if (root.left.val - 1 == root.val) {
-                decr = left[1] + 1;
+            for (int k = j + 2; k < n - 1; k++) {
+                if (prefixSum[n - 1] - prefixSum[k] == prefixSum[k - 1] - prefixSum[j] && sums.contains(prefixSum[k - 1] - prefixSum[j])) {
+                    return true;
+                }
             }
         }
-        if (root.right != null) {
-            if (root.right.val + 1 == root.val) {
-                incr = Math.max(incr, right[0] + 1);
-            }
-            if (root.right.val - 1 == root.val) {
-                decr = Math.max(decr, right[1] + 1);
-            }
-        }
-        ans = Math.max(ans, incr + decr - 1);
-        return new int[] {incr, decr};
+        return false;
     }
 }
-
 ```
 
 ### Python
 
 ```python
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
 class Solution:
-    def longestConsecutive(self, root: TreeNode) -> int:
-        def dfs(root):
-            if root is None:
-                return [0, 0]
-            nonlocal ans
-            incr = decr = 1
-            i1, d1 = dfs(root.left)
-            i2, d2 = dfs(root.right)
-            if root.left:
-                if root.left.val + 1 == root.val:
-                    incr = i1 + 1
-                if root.left.val - 1 == root.val:
-                    decr = d1 + 1
-            if root.right:
-                if root.right.val + 1 == root.val:
-                    incr = max(incr, i2 + 1)
-                if root.right.val - 1 == root.val:
-                    decr = max(decr, d2 + 1)
-            ans = max(ans, incr + decr - 1)
-            return [incr, decr]
+    def splitArray(self, nums: List[int]) -> bool:
+        n = len(nums)
+        prefix_sum = [0] * n
+        prefix_sum[0] = nums[0]
+        for i in range(1, n):
+            prefix_sum[i] = prefix_sum[i - 1] + nums[i]
 
-        ans = 0
-        dfs(root)
-        return ans
+        for j in range(3, n - 3):
+            sums = set()
+            for i in range(1, j - 1):
+                if prefix_sum[i - 1] == prefix_sum[j - 1] - prefix_sum[i]:
+                    sums.add(prefix_sum[i - 1])
+            for k in range(j + 2, n - 1):
+                if prefix_sum[n - 1] - prefix_sum[k] == prefix_sum[k - 1] - prefix_sum[j] and (prefix_sum[k - 1] - prefix_sum[j]) in sums:
+                    return True
+        return False
 ```
 
 ## Complexity Analysis
 
-### Time Complexity: O(n)
-**Reason**: The algorithm performs a depth-first search (DFS) on the binary tree. In a DFS, each node in the tree is visited exactly once.
+### Time Complexity: $O(n^2)$
+**Reason**: The algorithm iterates through all possible positions of `j` and `k`, and within these loops, it iterates through all possible positions of `i` and `l`.
 
-### Space Complexity: O(h)
-**Reason**: It is determined by the maximum depth of the recursion stack. In the case of a binary tree, this is equal to the height of the tree, h.
+### Space Complexity: $O(n)$
+**Reason**: It uses a prefix sum array to store the sum of elements from the start of the array to each index, and a set to store the unique sums.
 
 ## References
 
-- **LeetCode Problem**: [Binary Tree Longest Consecutive Sequence-ii](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii/)
+- **LeetCode Problem**: [Split Array with Equal Sum](https://leetcode.com/problems/split-array-with-equal-sum/)
