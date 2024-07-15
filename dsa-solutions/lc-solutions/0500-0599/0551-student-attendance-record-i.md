@@ -3,11 +3,9 @@ id: student-attendance-record-i
 title: Student Attendance Record I
 sidebar_label: 0551-student-attendance-record-i
 tags:
-  -	String
-
+  - String
 description: "This is a solution to student-attendance-record-i problem on LeetCode."
 ---
-
 ## Problem Description
 
 You are given a string s representing an attendance record for a student where each character signifies whether the student was absent, late, or present on that day. The record only contains the following three characters:
