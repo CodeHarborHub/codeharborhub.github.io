@@ -1,19 +1,22 @@
 // @ts-check
 
-/** @typedef {Record<'performance' | 'accessibility' | 'best-practices' | 'seo', number>} LighthouseSummary */
+/**
+ * @typedef {Record<'performance' | 'accessibility' | 'best-practices' | 'seo',
+ * number>} LighthouseSummary
+ */
 
 /** @type {Record<keyof LighthouseSummary, string>} */
 const summaryKeys = {
-  performance: 'Performance 🚀',
-  accessibility: 'Accessibility ♿',
-  'best-practices': 'Best Practices 💡',
-  seo: 'SEO 🔍',
+  performance: "Performance 🚀",
+  accessibility: "Accessibility ♿",
+  "best-practices": "Best Practices 💡",
+  seo: "SEO 🔍",
 };
 
 /** @param {number} rawScore */
 const scoreEntry = (rawScore) => {
   const score = Math.round(rawScore * 100);
-  const scoreIcon = score >= 90 ? '🟢' : score >= 50 ? '🟡' : '🔴';
+  const scoreIcon = score >= 90 ? "🟢" : score >= 50 ? "🟡" : "🔴";
   return `${scoreIcon} ${score}`;
 };
 
@@ -42,11 +45,13 @@ const createMarkdownTableRow = ({ url, summary, reportUrl }) =>
       Object.keys(summaryKeys)
     ).map((k) => scoreEntry(summary[k])),
     `[Report](${reportUrl}) 📄 |`,
-  ].join(' | ');
+  ].join(" | ");
 
 const createMarkdownTableHeader = () => [
-  ['| URL 🌐', ...Object.values(summaryKeys), 'Report 📊 |'].join(' | '),
-  ['|---', ...Array(Object.keys(summaryKeys).length).fill('---'), '---|'].join('|'),
+  ["| URL 🌐", ...Object.values(summaryKeys), "Report 📊 |"].join(" | "),
+  ["|---", ...Array(Object.keys(summaryKeys).length).fill("---"), "---|"].join(
+    "|",
+  ),
 ];
 
 /**
@@ -69,15 +74,15 @@ const createLighthouseReport = ({ results, links }) => {
     });
   });
   const comment = [
-    '### ⚡️ Lighthouse Report for the Deploy Preview of this PR 🚀',
-    '',
+    "### ⚡️ Lighthouse Report for the Deploy Preview of this PR 🚀",
+    "",
     `🔗 Site: [CodeHarborHub](https://github.com/CodeHarborHub/codeharborhub.github.io) | [Live Site](https://codeharborhub.github.io/)`,
-    '',
+    "",
     ...tableHeader,
     ...tableBody,
-    '',
+    "",
   ];
-  return comment.join('\n');
+  return comment.join("\n");
 };
 
 export default createLighthouseReport;
