@@ -28,7 +28,8 @@ At CodeHarborHub, our mission is clear: to provide accessible and comprehensive 
 
 Now, resolve your all doubts and communicate with our all contributors.
 
-[![](https://img.shields.io/badge/Discord-5865F2.svg?style=for-the-badge&logo=Discord&logoColor=white)](https://discord.com/channels/1231112132595028008/1238672287037919333)
+[![](https://img.shields.io/badge/Discord-5865F2.svg?style=for-the-badge&logo=Discord&logoColor=white)](https://discord.com/channels/1231112132595028008/1238672287037919333) [![Follow on LinkedIn](https://img.shields.io/badge/Follow%20on-LinkedIn-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=ajay-dhangar)
+
 
 ## Getting Started
 
