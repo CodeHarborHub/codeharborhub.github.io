@@ -6,6 +6,8 @@ tags:
   - Array
   - Binary Search
   - Matrix
+
+description: The problem no. is 1351. The Problem is Count Negative Numbers in a Sorted Matrix.
 ---
 
 ## Problem Description
