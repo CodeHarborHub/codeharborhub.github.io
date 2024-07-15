@@ -1,5 +1,5 @@
 ---
-id:  Design an ATM Machine
+id:  Design-an-ATM-Machine
 title:  Design an ATM Machine
 sidebar_label: 2241-Design an ATM Machine
 tags:
