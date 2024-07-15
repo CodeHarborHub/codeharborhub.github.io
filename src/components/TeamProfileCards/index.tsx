@@ -42,7 +42,7 @@ function TeamProfileCard({
   linkedInUrl
 }: ProfileProps) {
   return (
-    <div className={className}>
+    <div className={`team-profile-card ${className}`}>
       <div className="card card--full-height">
         <div className="card__header">
           <div className="avatar avatar--vertical">
