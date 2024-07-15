@@ -319,7 +319,7 @@ const config = {
               },
               {
                 label: "Careers",
-                to: "#",
+                to: "/careers/",
               },
               {
                 label: "Team",
