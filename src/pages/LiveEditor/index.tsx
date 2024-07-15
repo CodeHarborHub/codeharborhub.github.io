@@ -2,16 +2,14 @@ import React,{useEffect, useState} from "react";
 import Layout from "@theme/Layout";
 
 export default function LiveEditor() {
-  const [Theme,setNewTheme]=useState("dark")
-  const [theme, setTheme] = useState(document.documentElement.getAttribute('data-theme'));
+  const [Theme,setNewTheme]=useState("dark") 
 
   useEffect(() => {
     const htmlElement = document.documentElement;
 
     // Function to update theme
     const updateTheme = () => {
-      const newTheme = htmlElement.getAttribute('data-theme');
-      setTheme(newTheme);
+      const newTheme = htmlElement.getAttribute('data-theme'); 
 
       if (newTheme === 'dark') {
         setNewTheme("dark")
