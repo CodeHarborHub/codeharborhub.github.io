@@ -1,0 +1,8 @@
+documentation:
+  - 'docs/**'
+tests:
+  - 'tests/**'
+frontend:
+  - 'frontend/**'
+dsa:
+  - 'dsa/**'
