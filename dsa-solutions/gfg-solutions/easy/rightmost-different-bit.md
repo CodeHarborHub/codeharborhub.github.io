@@ -46,7 +46,7 @@ Binary representation of the given numbers are: 110100 and 0100, 5th-bit from ri
 
 ### Intuition and Approach
 
-This problem can be solved usnig bitwise operations
+This problem can be solved by using bitwise operations
 
 ### Approach: 
 
