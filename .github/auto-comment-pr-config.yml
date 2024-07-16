@@ -1,4 +1,0 @@
-newPR:
-  - message: >
-      Hi @${{ payload.pull_request.user.login }}, thank you for submitting this pull request!
-      Our team will review it and provide feedback soon.
