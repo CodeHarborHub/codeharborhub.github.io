@@ -6,7 +6,7 @@ const courses = [
       category: "html",
       imageUrl: "/img/svg/static_website.svg",
       author: "Ajay Dhangar",
-      link: "#"
+      link: "/courses/category/HTML"
     },
     {
       id: 2,
