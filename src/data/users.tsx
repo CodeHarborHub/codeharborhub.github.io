@@ -31,14 +31,19 @@ export type TagType =
   | "ml"
   | "mdx"
   | "game"
+  | "scss"
+  | "php"
   | "documentation"
+  | "gym"
+  | "motion"
+  | "redux"
   | "clone";
 
 export type User = {
   title: string;
   description: string;
   preview: string;
-  website: string;
+  website: string | null;
   source: string | null;
   tags: TagType[];
 };
@@ -132,10 +137,28 @@ export const Tags: { [type in TagType]: Tag } = {
     color: "#8c2f00",
   },
 
+  motion: {
+    label: "Motion",
+    description: "",
+    color: "#f06529",
+  },
+
+  redux: {
+    label: "Redux",
+    description: "",
+    color: "#764abc",
+  },
+
   meta: {
     label: "Meta",
     description: "",
     color: "#4267b2",
+  },
+
+  php: {
+    label: "PHP",
+    description: "",
+    color: "#8892be",
   },
 
   personal: {
@@ -183,8 +206,18 @@ export const Tags: { [type in TagType]: Tag } = {
     description: "",
     color: "#007acc",
   },
+  gym: {
+    label: "Gym",
+    description: "",
+    color: "#FF5733",
+  },
   mdx: {
     label: "MDX",
+    description: "",
+    color: "#007acc",
+  },
+  scss: {
+    label: "SCSS",
     description: "",
     color: "#007acc",
   },

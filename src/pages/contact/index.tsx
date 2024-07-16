@@ -2,9 +2,14 @@ import Layout from "@theme/Layout";
 import styles from "./Contact.module.css";
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import { motion } from "framer-motion";
-import PhoneInput from 'react-phone-input-2';
-import 'react-phone-input-2/lib/style.css';
-
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
+import { FaYoutube, FaDiscord, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import Popup from "../popup/popup";
+import axios from 'axios'
+// import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import { log } from "console";
 // Interface defining the structure of form values
 interface FormValues {
   fullName: string;
@@ -20,6 +25,9 @@ interface FormValues {
  * @returns {JSX.Element} A JSX element for the contact page.
  */
 export default function Contact(): JSX.Element {
+  // const {
+  //   siteConfig: { customFields },
+  // } = useDocusaurusContext();
   // State to manage form values
   const [formValues, setFormValues] = useState<FormValues>({
     fullName: "",
@@ -29,7 +37,7 @@ export default function Contact(): JSX.Element {
     feedbackType: "Question",
     otherFeedback: "",
   });
-
+    const [checker,setChecker]=useState({popup:false,status:false,loading:false})
   // Function to handle input changes for text inputs, textarea, and select
   const handleInputChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -50,10 +58,33 @@ export default function Contact(): JSX.Element {
   };
 
   // Function to handle form submission
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async(e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Handle form submission logic (e.g., send data to backend)
-    console.log("Form submitted:", formValues);
+    setChecker(pre=>({...pre,loading:true}))
+    let response=await axios.post("https://codeharborhub-email-back-end.onrender.com/contact",{
+      name:formValues.fullName,
+      email:formValues.email,
+      message:formValues.message
+    })
+    console.log(response.data);
+
+    setFormValues({
+      fullName: "",
+      email: "",
+      phone: "",
+      message: "",
+      feedbackType: "Question",
+      otherFeedback: "",
+    })
+    if(response.data.ok){
+      setChecker(pre=>({...pre,popup:true,status:true,loading:false}))
+    }
+    else{
+      setChecker(pre=>({...pre,popup:true,status:false,loading:false}))
+    }
+    setTimeout(()=>{
+    setChecker(pre=>({...pre,popup:false,status:false}))
+    },2000)
   };
 
   return (
@@ -61,8 +92,9 @@ export default function Contact(): JSX.Element {
       {/* Contact section with styled components */}
       <section id="contact" className={styles.main__contact}>
         {/* Background divs for styling */}
-        <div className={styles.main__contact_child1}></div>
-        <div className={styles.main__contact_child2}></div>
+        {checker.popup? <Popup status={checker.status?"✔":"✖"} message={checker.status?"Success":"Something went wrong"} />:<></> }
+        <div className={styles.main__contact_child1} />
+        <div className={styles.main__contact_child2} />
         <div className={styles.main__contact_container}>
           <div className={styles.main__contact_contains}>
             <div className={styles.main__contact_contains_left}>
@@ -169,6 +201,30 @@ export default function Contact(): JSX.Element {
                   </motion.div>
                 </div>
               </div>
+              {/* Social Media Icons*/}
+              <motion.div>
+                <h5 className={styles.social_media_heading}>Find Us On</h5>
+                <div className={styles.social_media_icons}>
+                  <a
+                    href="https://www.linkedin.com/company/codeharborhub/"
+                    target="_blank"
+                  >
+                    <FaLinkedin />
+                  </a>
+                  <a href="https://www.youtube.com/" target="_blank">
+                    <FaYoutube />
+                  </a>
+                  <a
+                    href="https://discord.com/invite/c53FQn3pRv"
+                    target="_blank"
+                  >
+                    <FaDiscord />
+                  </a>
+                  <a href="https://x.com/CodesWithAjay?mx=2" target="_blank">
+                    <FaXTwitter />
+                  </a>
+                </div>
+              </motion.div>
             </div>
             {/* Section for the contact form */}
             <motion.div
@@ -224,11 +280,12 @@ export default function Contact(): JSX.Element {
                       Phone Number
                     </label>
                     <PhoneInput
-                      country={'us'}
+                      country={"us"}
                       value={formValues.phone}
                       onChange={handlePhoneChange}
                       containerClass={styles.phone_input_container}
                       inputClass={styles.phone_input}
+                      dropdownStyle={{color:"black"}}
                     />
                   </div>
                   {/* Form select for feedback type */}
@@ -252,7 +309,10 @@ export default function Contact(): JSX.Element {
                   {/* Conditional input for other feedback */}
                   {formValues.feedbackType === "Other" && (
                     <div className={styles.form_group}>
-                      <label htmlFor="otherFeedback" className={styles.form_label}>
+                      <label
+                        htmlFor="otherFeedback"
+                        className={styles.form_label}
+                      >
                         Please specify
                       </label>
                       <input
@@ -283,7 +343,7 @@ export default function Contact(): JSX.Element {
                   {/* Form submit button */}
                   <div className={styles.form_group}>
                     <button type="submit" className={styles.form_button}>
-                      Send
+                      {checker.loading?<div className={styles.loader} />:"Send"}
                     </button>
                   </div>
                 </form>

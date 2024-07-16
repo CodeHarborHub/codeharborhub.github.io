@@ -1,7 +1,7 @@
 ---
-id: Container With Most Water
+id: container-with-most-water
 title: Container With Most Water (LeetCode)
-sidebar_label: 0011-Container With Most Water
+sidebar_label: 0011 - Container With Most Water
 tags:
     - Array
     - Two Pointers

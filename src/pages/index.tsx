@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import React from "react";
+import React, { useState } from "react";
 import style from "./index.module.css";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
@@ -12,6 +12,10 @@ import { motion } from "framer-motion";
 import ResourcesSection from "../components/HomePage/ResourcesSection";
 import ScrollTopToButton from "../components/Buttons/bottom/ScrollTopToButton";
 import ScrollBottomToTop from "../components/Buttons/top/ScrollBottomToTop";
+import { LandingCommunity } from "../components/HomePage/Community";
+import { CommunityStatsProvider } from "../context/CommunityStats";
+import Faq from "./Faq";
+import Organizations from "../components/HomePage/organizations";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -47,7 +51,7 @@ function TweetsSection() {
           slidesPerView={1}
           spaceBetween={30}
           autoplay={{ delay: 2000 }}
-          loop={true}
+          loop
           // pagination={{ clickable: true }}
           breakpoints={{
             640: { slidesPerView: 1, spaceBetween: 20 },
@@ -87,12 +91,12 @@ export default function Home() {
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5832817025080991"
           crossOrigin="anonymous"
-        ></script>
+         />
         <script
           async
           custom-element="amp-auto-ads"
           src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"
-        ></script>
+         />
         <meta name="google-adsense-account" content="ca-pub-5832817025080991" />
       </Head>
       <main className={style.main__home}>
@@ -106,7 +110,34 @@ export default function Home() {
           <ResourcesSection />
         </div>
 
+        <hr className={style.home__hr} />
+
+        <CommunityStatsProvider>
+          <LandingCommunity className="codeharborhub" />
+        </CommunityStatsProvider>
+
+        <hr className={style.home__hr} />
+
+        <div className={style.home__divider}>
+          <Heading as="h2" className={clsx("text--center")}>
+            Our GitHub Organizations
+          </Heading>
+        </div>
+        <Organizations />
+
+        <hr className={style.home__hr} />
+
         <TweetsSection />
+
+        <hr className={style.home__hr} />
+
+        <div className={style.home__divider}>
+          <Heading as="h2" className={clsx("text--center", style.mainHeading)}>
+            Frequently Asked Questions
+          </Heading>
+        </div>
+
+        <Faq />
 
         <ScrollTopToButton />
         <ScrollBottomToTop />

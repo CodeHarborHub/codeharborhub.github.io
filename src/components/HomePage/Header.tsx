@@ -68,7 +68,7 @@ const HeaderContent = () => {
             Get Started
           </Link>
         </motion.button>
-        
+
         {/* Button with animated entrance */}
         <motion.button
           initial={{ opacity: 0, x: 10 }} // Initial animation properties
@@ -112,7 +112,7 @@ const HeaderImage = () => {
 
     // Cleanup function to destroy VanillaTilt instance
     return () => {
-      if (imgRef.current && imgRef.current.vanillaTilt) {
+      if (imgRef.current?.vanillaTilt) {
         imgRef.current.vanillaTilt.destroy();
       }
     };

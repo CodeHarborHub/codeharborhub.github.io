@@ -348,14 +348,29 @@ th {
   align-items: center;
 }
 
-.dropdown-content {
-  min-width: 200px;
-  margin: 2px 5px;
+.dropdown_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
+.dropdown-content {
+  position: relative;
+  min-width: 180px;
+}
+@media (max-width:400px) {
+  .dsa-content{
+    flex-direction: column;
+  }
+}
 .dropdown-content a:hover {
   text-decoration: none;
-  background-color: #cccccc45;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(252, 176, 69, 0.285) 50%,
+    rgba(253, 29, 29, 0.33) 100%
+  );
   border-radius: 50% 40%;
 }
 

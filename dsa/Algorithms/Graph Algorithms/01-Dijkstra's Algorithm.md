@@ -134,6 +134,7 @@ def dijkstra(graph, start):
 #include <vector>
 #include <queue>
 #include <unordered_map>
+#include <set>
 using namespace std;
 
 typedef pair<int, int> pii;
@@ -170,6 +171,40 @@ unordered_map<int, int> dijkstra(unordered_map<int, vector<pii>>& graph, int sta
 
     return distances;
 }
+
+void shortDijkstra(int src, int n, vector<vector<pii>>& adjList) {
+    vector<int> dist(n, INT_MAX);
+    set<pii> st;
+    
+    dist[src] = 0;
+    st.insert({0, src});
+    
+    while (!st.empty()) {
+        auto mini = *st.begin();
+        
+        int nodedistance = mini.first;
+        int node = mini.second;
+        
+        st.erase(st.begin());
+        
+        for (auto nbr : adjList[node]) {
+            int dis = nodedistance + nbr.second;
+            if (dis < dist[nbr.first]) {
+                auto result = st.find(make_pair(dist[nbr.first], nbr.first));
+                if (result != st.end()) {
+                    st.erase(result);
+                }
+                dist[nbr.first] = dis;
+                st.insert(make_pair(dist[nbr.first], nbr.first));
+            }
+        }
+    }
+    cout << "Printing ans" << endl;
+    for (auto i : dist) {
+        cout << i << " ";
+    }
+}
+
 ```
 
 ### Java

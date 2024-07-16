@@ -35,6 +35,20 @@
   padding: 1rem;
 }
 
+
+
+.rateUsButton {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
 .tweetContainer {
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   margin-bottom: 1rem;  
