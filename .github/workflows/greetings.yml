@@ -1,4 +1,4 @@
-name: 'Greetings'
+name: Greetings
 
 on:
   issues:
@@ -34,7 +34,7 @@ jobs:
           ISSUE_NUMBER=${{ github.event.issue.number || github.event.pull_request.number }}
           curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
           -d '{"assignees":["team-member"]}' \
-          "https://api.github.com/repos/${{ github.repository }}/issues/${ISSUE_NUMBER}"
+          "https://api.github.com/repos/${ github.repository }}/issues/${ ISSUE_NUMBER }"
 
       - name: Welcome message for community contributors
         if: github.event_name == 'issues' || github.event_name == 'pull_request_target'
@@ -50,7 +50,7 @@ jobs:
           ISSUE_NUMBER=${{ github.event.issue.number }}
           curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
           -d '{"labels":["CodeHarborHub - Thanks for creating an issue!"]}' \
-          "https://api.github.com/repos/${{ github.repository }}/issues/${ISSUE_NUMBER}"
+          "https://api.github.com/repos/${{ github.repository }}/issues/${ ISSUE_NUMBER }"
 
       - name: Label first-time pull requests
         if: github.event_name == 'pull_request_target'
@@ -58,4 +58,4 @@ jobs:
           PR_NUMBER=${{ github.event.pull_request.number }}
           curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
           -d '{"labels":["CodeHarborHub - Thanks for creating a pull request!"]}' \
-          "https://api.github.com/repos/${{ github.repository }}/issues/${PR_NUMBER}"
+          "https://api.github.com/repos/${{ github.repository }}/issues/${ PR_NUMBER }"
