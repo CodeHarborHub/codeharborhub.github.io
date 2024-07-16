@@ -9,6 +9,7 @@ on:
 jobs:
   addContent:
     runs-on: ubuntu-latest
+
     steps:
       - name: Check for Labels
         id: check_labels
