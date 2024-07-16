@@ -44,7 +44,7 @@ const createMarkdownTableRow = ({ url, summary, reportUrl }) =>
     .../** @type {(keyof LighthouseSummary)[]} */ (
       Object.keys(summaryKeys)
     ).map((k) => scoreEntry(summary[k])),
-    `[Report](${reportUrl}) 📄 |`,
+    `[📄](${reportUrl}) |`,
   ].join(" | ");
 
 const createMarkdownTableHeader = () => [

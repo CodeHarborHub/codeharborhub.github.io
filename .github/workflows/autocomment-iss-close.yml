@@ -9,7 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       issues: write
-
     steps:
       - name: Greet User
         uses: actions/github-script@v7
