@@ -212,6 +212,5 @@ console.log("BWT =", bwt);
 
 ## 10. References
 
-- **GFG Problem:** [GFG Problem](https://www.geeksforgeeks.org/burrows-wheeler-transform-for-data-compression/)
-- **HackerRank Problem:** [HackerRank](https://www.hackerrank.com/challenges/bwtcompression/problem)
+- **GFG Problem:** [GFG Problem](https://www.geeksforgeeks.org/burrows-wheeler-data-transform-algorithm/)
 - **Author's Geeks for Geeks Profile:** GeeksforGeeks
