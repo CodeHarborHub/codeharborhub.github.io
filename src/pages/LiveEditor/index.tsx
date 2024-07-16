@@ -1,7 +1,37 @@
-import React from "react";
+import React,{useEffect, useState} from "react";
 import Layout from "@theme/Layout";
 
 export default function LiveEditor() {
+  const [Theme,setNewTheme]=useState("dark") 
+
+  useEffect(() => {
+    const htmlElement = document.documentElement;
+
+    // Function to update theme
+    const updateTheme = () => {
+      const newTheme = htmlElement.getAttribute('data-theme'); 
+
+      if (newTheme === 'dark') {
+        setNewTheme("dark")
+      } else {
+       setNewTheme("light")
+      }
+    };
+
+    // Initial theme setup
+    updateTheme(); 
+    const observer = new MutationObserver(() => {
+      updateTheme();
+    });
+
+    observer.observe(htmlElement, {
+      attributes: true,
+      attributeFilter: ['data-theme'],
+    });
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
   return (
     <Layout>
       <div
@@ -13,7 +43,7 @@ export default function LiveEditor() {
         }}
       >
         <iframe
-          src="https://codesandbox.io/embed/github/Ajay-Dhangar/my-react-app/main?fontsize=14&hidenavigation=1&theme=dark"
+          src={`https://codesandbox.io/embed/github/Ajay-Dhangar/my-react-app/main?fontsize=14&hidenavigation=1&theme=${Theme==="dark"?"dark":"light"}`}
           style={{
             width: "100%",
             height: "600px",

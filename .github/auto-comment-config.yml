@@ -1,0 +1,4 @@
+newIssue:
+  - message: >
+      Hi @${{ payload.issue.user.login }}, thank you for opening this issue!
+      Our team will review it and get back to you as soon as possible.
