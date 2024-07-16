@@ -1,0 +1,34 @@
+name: Auto Content on Labels
+
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
+
+jobs:
+  addContent:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check for Labels
+        id: check_labels
+        run: echo "::set-output name=labels::${{ toJson(github.event.issue.labels) }}"
+
+      - name: Add Guidance Comment
+        if: ${{ contains(steps.check_labels.outputs.labels, 'dsa-solution') }}
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const issueOrPR = github.context.payload.issue || github.context.payload.pull_request;
+            const comment = `
+              Hello there! 🌟 It looks like you've added the \`dsa-solution\` label.
+              Please refer to our guidance on Data Structures & Algorithms solutions here: [DSA Solution Guidance](https://github.com/orgs/CodeHarborHub/discussions/3369#discussion-6940372).
+              Thank you!
+            `;
+            github.issues.createComment({
+              issue_number: issueOrPR.number,
+              owner: github.context.repo.owner,
+              repo: github.context.repo.repo,
+              body: comment
+            });

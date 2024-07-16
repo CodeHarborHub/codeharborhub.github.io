@@ -20,6 +20,15 @@ const sponsors: Sponsor[] = [
 //   },
 
   {
+    name: "Sanjay Viswanathan",
+    image: "https://github.com/sanjay-kv.png",
+    description: "Program Manager at GirlScript",
+    github: "https://github.com/sanjay-kv",
+    linkedin: "https://www.linkedin.com/in/sanjay-k-v/",
+    twitter: "https://x.com/sanjay_kv_",
+  },
+
+  {
     name: "Narendra Dhangar",
     image: "/sponsors/narendra-dhangar.jpg",
     description: "B.Tech (CSE) Student",
