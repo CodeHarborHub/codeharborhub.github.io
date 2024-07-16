@@ -4,13 +4,12 @@ import React, { useState, ChangeEvent, FormEvent } from "react";
 import { motion } from "framer-motion";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import { FaYoutube } from "react-icons/fa";
-import { FaDiscord } from "react-icons/fa";
+import { FaYoutube, FaDiscord, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
 import Popup from "../popup/popup";
 import axios from 'axios'
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+// import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import { log } from "console";
 // Interface defining the structure of form values
 interface FormValues {
   fullName: string;
@@ -26,9 +25,9 @@ interface FormValues {
  * @returns {JSX.Element} A JSX element for the contact page.
  */
 export default function Contact(): JSX.Element {
-  const {
-    siteConfig: { customFields },
-  } = useDocusaurusContext();
+  // const {
+  //   siteConfig: { customFields },
+  // } = useDocusaurusContext();
   // State to manage form values
   const [formValues, setFormValues] = useState<FormValues>({
     fullName: "",
@@ -62,12 +61,13 @@ export default function Contact(): JSX.Element {
   const handleSubmit = async(e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setChecker(pre=>({...pre,loading:true}))
-    let response=await axios.post(customFields.emailService + "/contact",{
+    let response=await axios.post("https://codeharborhub-email-back-end.onrender.com/contact",{
       name:formValues.fullName,
       email:formValues.email,
-      feedback:formValues.message
+      message:formValues.message
     })
-          // Handle form submission logic (e.g., send data to backend)
+    console.log(response.data);
+
     setFormValues({
       fullName: "",
       email: "",
@@ -93,8 +93,8 @@ export default function Contact(): JSX.Element {
       <section id="contact" className={styles.main__contact}>
         {/* Background divs for styling */}
         {checker.popup? <Popup status={checker.status?"✔":"✖"} message={checker.status?"Success":"Something went wrong"} />:<></> }
-        <div className={styles.main__contact_child1}></div>
-        <div className={styles.main__contact_child2}></div>
+        <div className={styles.main__contact_child1} />
+        <div className={styles.main__contact_child2} />
         <div className={styles.main__contact_container}>
           <div className={styles.main__contact_contains}>
             <div className={styles.main__contact_contains_left}>
@@ -343,7 +343,7 @@ export default function Contact(): JSX.Element {
                   {/* Form submit button */}
                   <div className={styles.form_group}>
                     <button type="submit" className={styles.form_button}>
-                      {checker.loading?<div className={styles.loader}></div>:"Send"}
+                      {checker.loading?<div className={styles.loader} />:"Send"}
                     </button>
                   </div>
                 </form>
