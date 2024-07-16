@@ -48,7 +48,7 @@ Binary representation of the given numbers are: 110100 and 0100, 5th-bit from ri
 
 This problem can be solved usnig bitwise operations
 
-### Approach: Inorder Traversal
+### Approach: 
 
 1. We will first XOR operation (^) between two integers, it will produce a result where each bit is set to 1 if the corresponding bits of m and n are different, and 0 if they are the same and then the result is stored in res variable
 2. If res is 0, it means that m and n are identical and therefore we return -1 to indicate that there is no differing bit.
