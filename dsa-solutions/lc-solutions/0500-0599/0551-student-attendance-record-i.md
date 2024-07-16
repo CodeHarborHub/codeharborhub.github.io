@@ -3,8 +3,7 @@ id: student-attendance-record-i
 title: Student Attendance Record I
 sidebar_label: 0551-student-attendance-record-i
 tags:
-  -	String
-
+  - String
 description: "This is a solution to student-attendance-record-i problem on LeetCode."
 ---
 
