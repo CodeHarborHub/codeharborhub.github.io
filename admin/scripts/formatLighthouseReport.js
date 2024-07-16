@@ -7,10 +7,10 @@
 
 /** @type {Record<keyof LighthouseSummary, string>} */
 const summaryKeys = {
-  performance: "Performance 🚀",
-  accessibility: "Accessibility ♿",
-  "best-practices": "Best Practices 💡",
-  seo: "SEO 🔍",
+  performance: "Performance",
+  accessibility: "Accessibility",
+  "best-practices": "Best Practices",
+  seo: "SEO",
 };
 
 /** @param {number} rawScore */
