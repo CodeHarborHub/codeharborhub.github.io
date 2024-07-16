@@ -1,7 +1,4 @@
-Sure, I'll provide the solution in C++ first, with comments added to the code.
-
 ---
-
 id: the-skyline-problem
 title: The Skyline Problem
 difficulty: Hard
@@ -59,60 +56,6 @@ To solve the skyline problem, we use a combination of a priority queue (max-heap
    - After processing each event, check the current maximum height. If it changes, add a new key point to the result list.
 
 ## Code Examples
-
-### C++
-```cpp
-#include <vector>
-#include <queue>
-#include <algorithm>
-
-using namespace std;
-
-class Solution {
-public:
-    vector<vector<int>> getSkyline(vector<vector<int>>& buildings) {
-        // Create events for all the buildings
-        vector<pair<int, int>> events;
-        for (const auto& b : buildings) {
-            events.emplace_back(b[0], -b[2]);  // Building start event with negative height
-            events.emplace_back(b[1], b[2]);   // Building end event with positive height
-        }
-        // Sort the events: by x coordinate, and in case of a tie, by height
-        sort(events.begin(), events.end());
-        
-        // Multiset to keep track of current heights
-        multiset<int> heights = {0};
-        // Result vector to store the skyline points
-        vector<vector<int>> result;
-        // Variable to track the previous maximum height
-        int prevMaxHeight = 0;
-        
-        // Process each event
-        for (const auto& event : events) {
-            int x = event.first;
-            int h = event.second;
-            
-            if (h < 0) {
-                // Start event: add the building height to the set
-                heights.insert(-h);
-            } else {
-                // End event: remove the building height from the set
-                heights.erase(heights.find(h));
-            }
-            
-            // Get the current maximum height from the set
-            int currentMaxHeight = *heights.rbegin();
-            // If the maximum height changes, add a new key point to the result
-            if (currentMaxHeight != prevMaxHeight) {
-                result.push_back({x, currentMaxHeight});
-                prevMaxHeight = currentMaxHeight;
-            }
-        }
-        
-        return result;
-    }
-};
-```
 
 ### Python
 ```python
@@ -177,8 +120,50 @@ class Solution {
         }
         
         return result;
+```
+
+### C++
+```cpp
+#include <vector>
+#include <queue>
+#include <algorithm>
+
+using namespace std;
+
+class Solution {
+public:
+    vector<vector<int>> getSkyline(vector<vector<int>>& buildings) {
+        vector<pair<int, int>> events;
+        for (const auto& b : buildings) {
+            events.emplace_back(b[0], -b[2]);
+            events.emplace_back(b[1], b[2]);
+        }
+        sort(events.begin(), events.end());
+        
+        multiset<int> heights = {0};
+        vector<vector<int>> result;
+        int prevMaxHeight = 0;
+        
+        for (const auto& event : events) {
+            int x = event.first;
+            int h = event.second;
+            
+            if (h < 0) {
+                heights.insert(-h);
+            } else {
+                heights.erase(heights.find(h));
+            }
+            
+            int currentMaxHeight = *heights.rbegin();
+            if (currentMaxHeight != prevMaxHeight) {
+                result.push_back({x, currentMaxHeight});
+                prevMaxHeight = currentMaxHeight;
+            }
+        }
+        
+        return result;
     }
-}
+};
 ```
 
 ### C
@@ -229,4 +214,27 @@ int* getSkyline(int** buildings, int buildingsSize, int* buildingsColSize, int* 
         }
         
         int currentMaxHeight = 0;
-        for
+        for (int j = 0; j < heightsSize; ++j) {
+            if (heights[j] > currentMaxHeight) {
+                currentMaxHeight = heights[j];
+            }
+        }
+        
+        if (currentMaxHeight != prevMaxHeight) {
+            result[resultSize++] = events[i].x;
+            result[resultSize++] = currentMaxHeight;
+            prevMaxHeight = currentMaxHeight;
+        }
+    }
+    
+    free(events);
+    free(heights);
+    
+    *returnSize = resultSize;
+    return result;
+}
+```
+
+## Complexity
+
+- **Time Complexity**: `O(n log n)`, where `n` is the number of events (2
