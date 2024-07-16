@@ -21,6 +21,8 @@ Convolutional Neural Networks involve several key components and layers:
 
 - **Activation Functions**: Non-linear functions like ReLU (Rectified Linear Unit) are applied to introduce non-linearity into the model, allowing it to learn more complex patterns.
 
+![alt text](img4.png)
+
 ### Example:
 Consider using a CNN for handwritten digit recognition. The network might learn edges and simple shapes in early layers and complex digit shapes in deeper layers. This hierarchical learning enables accurate classification of handwritten digits.
 
