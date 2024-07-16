@@ -1,5 +1,5 @@
 ---
-id: Reinforcement Learning
+id: reinforcement-learning
 title: Reinforcement Learning
 sidebar_label: Introduction to Reinforcement Learning
 sidebar_position: 1
