@@ -86,7 +86,7 @@ Update the SortedDict and ans: Insert the new node v with its
 
 return ans
 
-## Solution for Remove Linked List Elements
+## Solution for Depth of BST Given Insertion Order
 
 ### Java Solution
 
