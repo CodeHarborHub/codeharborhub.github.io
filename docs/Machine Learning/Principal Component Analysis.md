@@ -13,20 +13,22 @@ Principal Component Analysis (PCA) is a powerful unsupervised learning algorithm
 ### What is Principal Component Analysis?
 Principal Component Analysis involves identifying the principal components that capture the most variance in the data:
 
-- **Principal Components**: Orthogonal vectors that represent directions of maximum variance in the data. These components are linear combinations of the original features.
-  
-  - **Eigenvectors**: Represent the direction of the principal components.
-  
-  - **Eigenvalues**: Represent the magnitude of the variance captured by each principal component.
+**Principal Components:** Orthogonal vectors that represent directions of maximum variance in the data. These components are linear combinations of the original features.
 
-- **Transformation**: Projects the original data onto the new subspace defined by the principal components.
+**Eigenvectors:** Represent the direction of the principal components.
 
-**Variance**: Measures the spread of the data points. PCA aims to maximize the variance in the projected subspace.
-**Covariance Matrix**: A matrix representing the covariance between pairs of features. PCA uses the covariance matrix to identify principal components.
+**Eigenvalues:** Represent the magnitude of the variance captured by each principal component.
 
-### Example:
+**Transformation:** Projects the original data onto the new subspace defined by the principal components.
+
+**Variance:** Measures the spread of the data points. PCA aims to maximize the variance in the projected subspace.
+
+**Covariance Matrix:** A matrix representing the covariance between pairs of features. PCA uses the covariance matrix to identify principal components.
+
+**Linear Correlation:** Two variables are linearly correlated if a linear function of one variable can be used to predict the other variable. Understanding linear correlation is crucial as PCA relies on these relationships to identify the principal components that best summarize the data's variance.
+
+**Example:**
 Consider PCA for image compression. The algorithm reduces the dimensionality of image data by finding principal components that capture the most significant features, allowing for efficient storage and transmission of images with minimal loss of quality.
-
 ### Advantages of Principal Component Analysis
 Principal Component Analysis offers several advantages:
 
