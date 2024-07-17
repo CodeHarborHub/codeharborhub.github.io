@@ -49,11 +49,11 @@ Therefore, we return [1, 3].
 ### Constraints
 
 -` 1 <= rectangles.length, points.length <= 5 * 104`
-- rectangles[i].length == points[j].length == 2
-- 1 <= li, xj <= 109
-- 1 <= hi, yj <= 100
-- All the rectangles are unique.
-- All the points are unique.
+-` rectangles[i].length == points[j].length == 2`
+-` 1 <= li, xj <= 109`
+- `1 <= hi, yj <= 100`
+-` All the rectangles are unique.`
+- `All the points are unique.`
 ### Approach
 
 Sort Rectangles by Height: First, we sort the rectangles by their height in ascending order.
