@@ -63,7 +63,7 @@ The space complexity is dominated by the space required for the `unordered_map`,
 ### Code
 
 ### C++
-```
+
     class Solution {
     public:
         vector<int> twoOutOfThree(vector<int>& nums1, vector<int>& nums2, vector<int>& nums3) {
@@ -86,10 +86,9 @@ The space complexity is dominated by the space required for the `unordered_map`,
             return ans;
         }
     };
-```
-### JavaScript
-```
 
+### JS
+```js
     /**
      * @param {number[]} nums1
      * @param {number[]} nums2
@@ -97,10 +96,10 @@ The space complexity is dominated by the space required for the `unordered_map`,
      * @return {number[]}
      */
     var twoOutOfThree = function(nums1, nums2, nums3) {
-    
+
         const res = []
         const arr = new Set ([...nums1,...nums2,...nums3])
-    
+
         arr.forEach((val)=>{
             if(nums1.includes(val) && nums2.includes(val) || nums1.includes(val) 
             && nums3.includes(val) || nums2.includes(val) && nums3.includes(val)){
@@ -111,8 +110,9 @@ The space complexity is dominated by the space required for the `unordered_map`,
         return res    
     };
 ```
+
 ### Java
-```
+```Java
 
     class Solution {
         public List<Integer> twoOutOfThree(int[] nums1, int[] nums2, int[] nums3) {
