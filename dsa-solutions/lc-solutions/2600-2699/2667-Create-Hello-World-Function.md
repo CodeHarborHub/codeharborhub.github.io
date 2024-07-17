@@ -47,7 +47,10 @@ Any arguments could be passed to the function but it should still always return 
 
 ## Solution
 
+<Tabs>
 #### JavaScript Implementation
+  <TabItem value="JavaScript" label="JavaScript" default>
+  <SolutionAuthor name="@Ishitamukherjee2004"/>
 
 ```javascript
 /**
@@ -61,14 +64,15 @@ var createHelloWorld = function() {
     }
 };
 
-/**
- * const f = createHelloWorld();
- * f(); // "Hello World"
- */
 
 ```
+</TabItem>
+
 
 #### TypeScript Implementation
+
+  <TabItem value="TypeScript" label="TypeScript">
+  <SolutionAuthor name="@Ishitamukherjee2004"/> 
 
 ```typescript
 function createHelloWorld(): (...args: any[]) => string {
@@ -78,6 +82,9 @@ function createHelloWorld(): (...args: any[]) => string {
 }
 
 ```
+</TabItem>
+</Tabs>
+
 
 ### Complexity Analysis
 
