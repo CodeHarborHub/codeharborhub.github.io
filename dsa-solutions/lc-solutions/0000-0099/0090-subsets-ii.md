@@ -1,5 +1,4 @@
 ---
-
 id: subsets-ii
 title: Subsets II
 difficulty: Medium
@@ -31,58 +30,25 @@ Output: [[],[0]]
 - `1 <= nums.length <= 10`
 - `-10 <= nums[i] <= 10`
 
-## Institution
-There are three important things to consider:
+## Solution Approach
 
-1. **Sort the Input:** Sort the `nums` array to handle duplicates easily.
-2. **Backtracking:** Use backtracking to generate subsets.
-3. **Avoid Duplicates:** Skip duplicates by checking if the current element is the same as the previous element and the previous element was not included in the current subset.
+### Approach Overview
+The problem can be solved using backtracking. To handle duplicates, we need to sort the array first and then ensure that we do not include the same element twice in the same position within the subset.
 
-## Approach
+### Detailed Steps
 
-# Generating All Unique Subsets
+1. **Sort the Input Array**:
+   - Sorting helps in easily skipping duplicates.
+   
+2. **Backtracking Function**:
+   - Use a helper function to generate all subsets.
+   - Skip over duplicate elements by checking the previous element in the sorted array.
 
-This solution defines a class `Solution` containing a method `subsetsWithDup` which generates all possible unique subsets for a given list of numbers, including handling duplicates.
+3. **Generate Subsets**:
+   - Initialize an empty list to store all subsets.
+   - Start backtracking from the first index.
 
-## Implementation Steps
-
-### Step 1: Define the `Solution` Class
-
-Define a class `Solution` containing a method `subsetsWithDup` which takes a list of integers `nums` as input and returns a list of lists of integers.
-
-### Step 2: Sort the Input List
-
-Sort the `nums` list to handle duplicates easily.
-
-### Step 3: Initialize Result List
-
-Initialize an empty list called `result` to store the generated subsets.
-
-### Step 4: Define the Backtracking Function
-
-Define a function called `backtrack` which takes two parameters: `start` (the current index in `nums`) and `path` (the current subset being generated).
-
-### Step 5: Append the Current Path
-
-Append the current `path` to the `result`.
-
-### Step 6: Loop Through the Elements
-
-Loop through each element in `nums` starting from the `start` index:
-  - If the current element is the same as the previous element and the previous element was not included in the current path, skip it to avoid duplicates.
-  - Otherwise, include the current element in the path and recursively call the `backtrack` function with the next index.
-
-### Step 7: Call the Backtrack Function
-
-Initially call the `backtrack` function with `start` set to 0 and an empty `path`.
-
-### Step 8: Return Result
-
-Return the `result` list.
-
-This algorithm generates all possible unique subsets for a given list of numbers by using backtracking and handling duplicates by sorting the input list and skipping duplicate elements appropriately.
-
-## Code
+## Code Examples
 
 ### C++
 ```cpp
@@ -92,17 +58,17 @@ public:
         vector<vector<int>> result;
         vector<int> subset;
         sort(nums.begin(), nums.end());
-        backtrack(nums, result, subset, 0);
+        backtrack(nums, 0, subset, result);
         return result;
     }
-    
+
 private:
-    void backtrack(vector<int>& nums, vector<vector<int>>& result, vector<int>& subset, int start) {
+    void backtrack(vector<int>& nums, int start, vector<int>& subset, vector<vector<int>>& result) {
         result.push_back(subset);
         for (int i = start; i < nums.size(); ++i) {
-            if (i > start && nums[i] == nums[i - 1]) continue; // skip duplicates
+            if (i > start && nums[i] == nums[i - 1]) continue;
             subset.push_back(nums[i]);
-            backtrack(nums, result, subset, i + 1);
+            backtrack(nums, i + 1, subset, result);
             subset.pop_back();
         }
     }
@@ -114,16 +80,16 @@ private:
 class Solution:
     def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
         def backtrack(start, path):
-            result.append(path)
+            res.append(path)
             for i in range(start, len(nums)):
                 if i > start and nums[i] == nums[i - 1]:
                     continue
                 backtrack(i + 1, path + [nums[i]])
-
+        
         nums.sort()
-        result = []
+        res = []
         backtrack(0, [])
-        return result
+        return res
 ```
 
 ### Java
@@ -132,22 +98,60 @@ class Solution {
     public List<List<Integer>> subsetsWithDup(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         Arrays.sort(nums);
-        backtrack(result, new ArrayList<>(), nums, 0);
+        backtrack(nums, 0, new ArrayList<>(), result);
         return result;
     }
-    
-    private void backtrack(List<List<Integer>> result, List<Integer> tempList, int[] nums, int start) {
-        result.add(new ArrayList<>(tempList));
+
+    private void backtrack(int[] nums, int start, List<Integer> subset, List<List<Integer>> result) {
+        result.add(new ArrayList<>(subset));
         for (int i = start; i < nums.length; i++) {
-            if (i > start && nums[i] == nums[i - 1]) continue; // skip duplicates
-            tempList.add(nums[i]);
-            backtrack(result, tempList, nums, i + 1);
-            tempList.remove(tempList.size() - 1);
+            if (i > start && nums[i] == nums[i - 1]) continue;
+            subset.add(nums[i]);
+            backtrack(nums, i + 1, subset, result);
+            subset.remove(subset.size() - 1);
         }
     }
 }
 ```
 
+### C
+```c
+#include <stdlib.h>
+
+// Function to sort the array
+int compare(const void *a, const void *b) {
+    return (*(int*)a - *(int*)b);
+}
+
+void backtrack(int* nums, int numsSize, int start, int* subset, int subsetSize, int** result, int* returnSize, int** columnSizes) {
+    result[*returnSize] = (int*)malloc(subsetSize * sizeof(int));
+    for (int i = 0; i < subsetSize; i++) {
+        result[*returnSize][i] = subset[i];
+    }
+    (*columnSizes)[*returnSize] = subsetSize;
+    (*returnSize)++;
+    
+    for (int i = start; i < numsSize; i++) {
+        if (i > start && nums[i] == nums[i - 1]) continue;
+        subset[subsetSize] = nums[i];
+        backtrack(nums, numsSize, i + 1, subset, subsetSize + 1, result, returnSize, columnSizes);
+    }
+}
+
+int** subsetsWithDup(int* nums, int numsSize, int* returnSize, int** columnSizes) {
+    qsort(nums, numsSize, sizeof(int), compare);
+    int** result = (int**)malloc(1000 * sizeof(int*));
+    *returnSize = 0;
+    *columnSizes = (int*)malloc(1000 * sizeof(int));
+    int* subset = (int*)malloc(numsSize * sizeof(int));
+    backtrack(nums, numsSize, 0, subset, 0, result, returnSize, columnSizes);
+    free(subset);
+    return result;
+}
+```
+
 ## Complexity
-- Time complexity: `O(2^n)`
-- Space complexity: `O(2^n)`
+
+- **Time Complexity**: `O(2^n * n)`, where `n` is the length of the input array. This accounts for generating all subsets and sorting the array.
+  
+- **Space Complexity**: `O(2^n * n)`, as we need to store all subsets. Each subset can be of length `n` and there
