@@ -42,7 +42,7 @@ A reverse pair is defined as a pair `(i, j)` where:
 
 ## Algorithm
 
-To solve this problem efficiently, we can use a modified merge sort algorithm, which not only sorts the array but also counts the number of reverse pairs during the merging process. The idea is to leverage the divide-and-conquer approach to count pairs in \(O(n \log n)\) time complexity.
+To solve this problem efficiently, we can use a modified merge sort algorithm, which not only sorts the array but also counts the number of reverse pairs during the merging process. The idea is to leverage the divide-and-conquer approach to count pairs in `O(n log n)` time complexity.
 
 ### Steps:
 
