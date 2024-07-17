@@ -5,9 +5,8 @@ sidebar_label: 2257-Count-Unguarded-Cells-in-the-Grid
 tags: 
   - Arrays
   - Brute Force
+  - Optimized approach
   - LeetCode
-  - JavaScript
-  - TypeScript
   - Python
   - Java
   - C++
@@ -17,7 +16,7 @@ sidebar_position: 2
 ---
 
 ## Problem Statement 
-In this tutorial, we will solve the Count Unguarded Cells in the Grid problem . We will provide the implementation of the solution in JavaScript, TypeScript, Python, Java, and C++.
+In this tutorial, we will solve the Count Unguarded Cells in the Grid problem . We will provide the implementation of the solution in Python, Java, and C++.
 
 ### Problem Description
 
@@ -57,7 +56,7 @@ There are a total of 4 unguarded cells, so we return 4.
 
 ### Intuition and Approach
 
-The problem can be solved using a brute force approach or a two-pointer technique.
+The problem can be solved using a brute force approach or an optimized technique.
 
 ### Approache 1:Brute Force (Naive)
 
