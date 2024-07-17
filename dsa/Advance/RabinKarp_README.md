@@ -2,19 +2,13 @@
 id: rabin-karp
 title: Rabin Karp Algorithm Solution
 sidebar_label: 0004 - Rabin Karp Algorithm
-tags:
-  - Rabin Karp
-  - Substring Search
-  - Algorithm
-  - C++
-  - Problem Solving
-description: "This is a solution to the Rabin Karp algorithm problem."
-sidebar_position: 4
+tags: [Rabin Karp, Substring Search, Algorithm, C++]
+description: Efficient solution to the Rabin Karp algorithm problem using C++.
 ---
 
-In this tutorial, we will solve the Rabin Karp algorithm problem using C++. The Rabin Karp algorithm is efficient for substring searching and is particularly useful in scenarios where we need to search for multiple patterns in a text.
+## Problem Statement 
 
-## Problem Description
+### Problem Description
 
 The Rabin Karp algorithm searches for a pattern in a text using a hashing function. It compares the hash value of the pattern with the hash value of substrings of the text. If the hash values match, it performs a further comparison to confirm the match.
 
@@ -39,8 +33,10 @@ Output: Pattern found at index 10
 - The input should be a text and a pattern.
 - The algorithm should efficiently handle large texts and multiple pattern searches.
 
-### Solution for Rabin Karp Algorithm Problem
-- Intuition and Approach
+## Solution of Given Problem
+
+### Intuition and Approach
+
 The Rabin Karp algorithm follows these steps:
 
 1. Calculate the hash value of the pattern.
@@ -48,11 +44,16 @@ The Rabin Karp algorithm follows these steps:
 3. Slide the pattern over the text one by one and compare the hash value of the current substring of the text with the hash value of the pattern.
 4. If the hash values match, perform a further comparison to confirm the match.
 5. If the hash values do not match, continue to the next substring.
-<Tabs>
-<tabItem value="C++" label="C++" default>
 
-### Implementation in C++
-```cpp
+### Approaches
+
+#### Codes in Different Languages
+
+<Tabs>
+  
+  <TabItem value="cpp" label="C++" default>
+  <SolutionAuthor name="@sjain1909"/>
+   ```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -98,12 +99,32 @@ int main() {
     search(pat, txt, q);
     return 0;
 }
-```
+   ```
+  </TabItem>  
+</Tabs>
 
 ### Complexity Analysis
-- Time Complexity: Average case: $O(n + m)$, Worst case: $O(nm)$ (if all characters of the pattern and text are the same).
-- Space Complexity: $O(1)$.
-- Where `n` is the length of the text and m is the length of the pattern.
 
-</tabItem>
-</Tabs>
+- **Time Complexity:** Average case: $O(n + m)$, Worst case: $O(nm)$ (if all characters of the pattern and text are the same).
+- **Space Complexity:** $O(1)$.
+- Where `n` is the length of the text and `m` is the length of the pattern.
+
+## Video Explanation of Given Problem
+
+        <LiteYouTubeEmbed
+          id="video_id"
+          params="autoplay=1&autohide=1&showinfo=0&rel=0"
+          title="Problem Explanation | Solution | Approach"
+          poster="maxresdefault"
+          webp 
+        />
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['sjain1909'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>
