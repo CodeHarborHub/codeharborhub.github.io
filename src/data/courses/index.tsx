@@ -52,7 +52,7 @@ const courses = [
       category: "tailwind-css",
       imageUrl: "/img/svg/developer_activity.svg",
       author: "Ajay Dhangar",
-      link: "/courses"
+      link: "/courses/category/tailwind-css"
     },
 
     {
