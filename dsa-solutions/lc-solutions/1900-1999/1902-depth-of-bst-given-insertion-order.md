@@ -55,31 +55,31 @@ Explanation: The binary search tree has a depth of 4 with path `1->2->3->4`.
 1- Initialization: We initiate the SortedDict with a mapping from 0 to
    depth 0, infinity to depth 0, and the first element of the order array (which is the root node) to depth 1. Both 0 and infinity are sentinel values that assist in determining the depth of the subsequent nodes.
 
-    - sd = SortedDict({0: 0, inf: 0, order[0]: 1})
+  - `sd = SortedDict({0: 0, inf: 0, order[0]: 1})`
 
 2- Iterate through order: After the root node is added, we iterate
    through the remaining numbers in order array. For each number (node) v, we want to find where it fits in the tree and calculate its depth.
 
-     - for v in order[1:]:  # Skip the first element as it is the root
+  - `for v in order[1:]:  # Skip the first element as it is the root`
 
 
 3- Binary Search for Depth: For each number, we perform a binary search
    (bisect_left(v)) on the SortedDict keys to find the closest smaller value (the predecessor or lower) and the direct successor (higher). These are the two possible parents in the BST.
 
-    - lower = sd.bisect_left(v) - 1
-    - higher = lower + 1
+  - `lower = sd.bisect_left(v) - 1`
+  - `higher = lower + 1`
 
 4- Calculate the Depth of the Node: The depth of the new node we are
    inserting is one more than the maximum depth between its potential parents (lower and higher), this is because in the BST the new node will become the child of one of these nodes.
 
-    - depth = 1 + max(sd.values()[lower], sd.values()[higher])
+  - `depth = 1 + max(sd.values()[lower], sd.values()[higher])`
 
 5- 
 Update the SortedDict and ans: Insert the new node v with its
    calculated depth into the SortedDict. Also, update ans with the new depth if it is greater than the current maximum depth found.
 
-    - ans = max(ans, depth)
-    - sd[v] = depth
+  - `ans = max(ans, depth)`
+  - `sd[v] = depth`
 
 6 - Return the Maximum Depth: Once we have inserted all the elements,
     ans will hold the maximum depth of the tree, which we then return.
