@@ -11,7 +11,7 @@ description: In this tutorial, you will learn about Gradient Boosting Machine (G
 Gradient Boosting Machine (GBM) is a powerful supervised learning algorithm used for classification and regression tasks. It builds an ensemble of decision trees in a sequential manner, where each tree attempts to correct the errors of its predecessor. GBM is widely used in data science and machine learning due to its ability to produce highly accurate models.
 
 ### What is Gradient Boosting Machine?
-Gradient Boosting Machine involves constructing a series of decision trees, each focusing on reducing the errors of the previous trees:
+A **Gradient Boosting Machine (GBM)** is an ensemble learning algorithm that builds a model from a series of weaker models, typically decision trees, in a sequential manner. Each new model attempts to correct the errors made by the previous models, and the models are combined to produce a final prediction. GBM uses gradient descent to minimize a loss function, which measures the difference between the predicted and actual values.
 
 - **Boosting**: An ensemble technique that combines the predictions of multiple weak learners (e.g., decision trees) to create a strong learner. Boosting iteratively adjusts the weights of incorrectly predicted instances, ensuring subsequent trees focus more on difficult cases.
   
@@ -20,6 +20,7 @@ Gradient Boosting Machine involves constructing a series of decision trees, each
 **Decision Trees**: Simple models that split data based on feature values to make predictions. In GBM, trees are typically shallow to avoid overfitting.
 
 **Loss Function**: Measures the difference between the predicted and actual values. GBM minimizes the loss function to improve model accuracy.
+
 
 ### Example:
 Consider GBM for predicting house prices. The algorithm sequentially builds decision trees, each one correcting the errors made by the previous trees. This results in a highly accurate predictive model that considers various factors influencing house prices.
