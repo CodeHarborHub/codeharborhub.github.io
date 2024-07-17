@@ -7,10 +7,10 @@
 
 /** @type {Record<keyof LighthouseSummary, string>} */
 const summaryKeys = {
-  performance: "Performance 🚀",
-  accessibility: "Accessibility ♿",
-  "best-practices": "Best Practices 💡",
-  seo: "SEO 🔍",
+  performance: "Performance",
+  accessibility: "Accessibility",
+  "best-practices": "Best Practices",
+  seo: "SEO",
 };
 
 /** @param {number} rawScore */
@@ -44,11 +44,11 @@ const createMarkdownTableRow = ({ url, summary, reportUrl }) =>
     .../** @type {(keyof LighthouseSummary)[]} */ (
       Object.keys(summaryKeys)
     ).map((k) => scoreEntry(summary[k])),
-    `[Report](${reportUrl}) 📄 |`,
+    `[📄](${reportUrl}) |`,
   ].join(" | ");
 
 const createMarkdownTableHeader = () => [
-  ["| URL 🌐", ...Object.values(summaryKeys), "Report 📊 |"].join(" | "),
+  ["| URL 🌐", ...Object.values(summaryKeys), "📊 |"].join(" | "),
   ["|---", ...Array(Object.keys(summaryKeys).length).fill("---"), "---|"].join(
     "|",
   ),
