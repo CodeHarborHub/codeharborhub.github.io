@@ -12,7 +12,7 @@ tags:
   - C++
 
 description: "This is a solution to Count Unguarded Cells in the Grid problem on LeetCode."
-sidebar_position: 2
+sidebar_position: 58
 ---
 
 ## Problem Statement 
