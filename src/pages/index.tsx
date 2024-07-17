@@ -51,7 +51,7 @@ function TweetsSection() {
           slidesPerView={1}
           spaceBetween={30}
           autoplay={{ delay: 2000 }}
-          loop={true}
+          loop
           // pagination={{ clickable: true }}
           breakpoints={{
             640: { slidesPerView: 1, spaceBetween: 20 },
@@ -91,12 +91,12 @@ export default function Home() {
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5832817025080991"
           crossOrigin="anonymous"
-        ></script>
+         />
         <script
           async
           custom-element="amp-auto-ads"
           src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"
-        ></script>
+         />
         <meta name="google-adsense-account" content="ca-pub-5832817025080991" />
       </Head>
       <main className={style.main__home}>
@@ -132,7 +132,7 @@ export default function Home() {
         <hr className={style.home__hr} />
 
         <div className={style.home__divider}>
-          <Heading as="h2" className={clsx("text--center")}>
+          <Heading as="h2" className={clsx("text--center", style.mainHeading)}>
             Frequently Asked Questions
           </Heading>
         </div>

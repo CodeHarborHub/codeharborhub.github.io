@@ -35,13 +35,15 @@ export type TagType =
   | "php"
   | "documentation"
   | "gym"
+  | "motion"
+  | "redux"
   | "clone";
 
 export type User = {
   title: string;
   description: string;
   preview: string;
-  website: string;
+  website: string | null;
   source: string | null;
   tags: TagType[];
 };
@@ -133,6 +135,18 @@ export const Tags: { [type in TagType]: Tag } = {
     label: "Large",
     description: "",
     color: "#8c2f00",
+  },
+
+  motion: {
+    label: "Motion",
+    description: "",
+    color: "#f06529",
+  },
+
+  redux: {
+    label: "Redux",
+    description: "",
+    color: "#764abc",
   },
 
   meta: {

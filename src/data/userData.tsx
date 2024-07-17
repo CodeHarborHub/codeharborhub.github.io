@@ -44,7 +44,7 @@ export const Users: User[] = [
     description:
       "The Starter app is a feature-rich Next.js and Tailwind CSS blogging starter template.",
     preview: require("./showcase/TailwindBlog.jpg"),
-    website: "#",
+    website: null,
     source: "https://github.com/Ajay-Dhangar/starter",
     tags: ["opensource", "clone", "templates", "documentation"],
   },
@@ -81,7 +81,7 @@ export const Users: User[] = [
       "Broadcast Web is a modern and responsive web application for broadcasting your own channel.",
     preview: require("./showcase/broadcast-web.jpg"),
     website: "https://codeharborhub-broadcast-web.vercel.app/",
-    source: "",
+    source: null,
     tags: ["opensource", "product", "nextjs", "javascript"],
   },
 
@@ -108,6 +108,17 @@ export const Users: User[] = [
     source: "https://github.com/komal-agarwal5/Giggle-Hub------Meme-Generator",
     tags: ["opensource", "product", "html", "css", "javascript"],
   },
+    // URL Shortner
+
+    {
+      title: "URL Shortner",
+      description:
+        "It  Short  URL by using the technique of API Fetching and also supports the feature of copy url.",
+      preview: require("./showcase/URLShortner.png"),
+      website: "https://url-shortner-tau-woad.vercel.app/",
+      source: "https://github.com/kartikmehta18/URLshortner",
+      tags: ["opensource", "product", "html", "css", "javascript"],
+    },
 
   // Age Calculator Clone
 
@@ -330,4 +341,15 @@ export const Users: User[] = [
         "https://github.com/AsmitaMishra24/Othello",
       tags: ["opensource", "html", "css", "javascript", "game"],
     },
+
+    // horse ride booking system
+
+    {
+      title: "Horse Ride Booking",
+      description: "Front-end development for a horse ride booking system using React.js, redux, and montion animation.",
+      preview: require("./showcase/horse-ride-booking.jpg"),
+      website: "https://horse-ride-booking.vercel.app/",
+      source: null,
+      tags: ["opensource", "react", "redux", "motion", "javascript"],
+    }
 ];
