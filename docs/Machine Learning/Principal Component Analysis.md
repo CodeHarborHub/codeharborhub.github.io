@@ -11,6 +11,10 @@ description: In this tutorial, you will learn about Principal Component Analysis
 Principal Component Analysis (PCA) is a powerful unsupervised learning algorithm used for dimensionality reduction. It transforms high-dimensional data into a lower-dimensional form while retaining as much variability as possible. PCA is widely used in data preprocessing, visualization, and noise reduction, making it an essential tool for data scientists and machine learning practitioners.
 
 ### What is Principal Component Analysis?
+Principal Component Analysis (PCA) is a powerful unsupervised learning algorithm used for dimensionality reduction. It transforms high-dimensional data into a lower-dimensional form while retaining as much variability as possible. PCA achieves this by identifying the directions, called principal components, along which the data varies the most. These principal components are new orthogonal axes where the original data can be projected, effectively reducing its dimensionality.
+
+PCA is widely used in data preprocessing, visualization, and noise reduction tasks, making it an essential tool for data scientists and machine learning practitioners.
+
 Principal Component Analysis involves identifying the principal components that capture the most variance in the data:
 
 **Principal Components:** Orthogonal vectors that represent directions of maximum variance in the data. These components are linear combinations of the original features.
