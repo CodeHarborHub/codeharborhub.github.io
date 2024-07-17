@@ -118,7 +118,7 @@ public class Solution {
   <SolutionAuthor name="@Ishitamukherjee2004"/>
    ```cpp
 
-   class Solution {
+class Solution {
 public:
     bool isFascinating(int n) {
         string concat = to_string(n) + to_string(2 * n) + to_string(3 * n);
