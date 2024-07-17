@@ -53,7 +53,7 @@ There are a total of 4 unguarded cells, so we return 4.
 
 ### Intuition and Approach
 
-The problem can be solved using a brute force approach or an optimized technique.
+The problem can be solved using a brute force approach or an optimized Technique.
 
 <Tabs>
 <tabItem value="Brute Force" label="Brute Force">
