@@ -1,10 +1,10 @@
 ---
-id: 2032-two-out-of-three
+id: Two-out-of-three
 title: Two Out of Three
 sidebar_label: 2032 - Two Out of Three
 tags: [Array, Hash Table, Set, C++]
 description: Return a distinct array containing all the values that are present in at least two out of the three arrays.
-sidebar_position: 1
+sidebar_position: 33
 ---
 
 ## Problem Statement 
@@ -63,7 +63,7 @@ The space complexity is dominated by the space required for the `unordered_map`,
 ### Code
 
 ### C++
-
+```
     class Solution {
     public:
         vector<int> twoOutOfThree(vector<int>& nums1, vector<int>& nums2, vector<int>& nums3) {
@@ -86,8 +86,9 @@ The space complexity is dominated by the space required for the `unordered_map`,
             return ans;
         }
     };
-
+```
 ### JavaScript
+```
 
     /**
      * @param {number[]} nums1
@@ -109,8 +110,9 @@ The space complexity is dominated by the space required for the `unordered_map`,
         
         return res    
     };
-
+```
 ### Java
+```
 
     class Solution {
         public List<Integer> twoOutOfThree(int[] nums1, int[] nums2, int[] nums3) {
@@ -134,3 +136,4 @@ The space complexity is dominated by the space required for the `unordered_map`,
             return result;
         }
     }
+```
