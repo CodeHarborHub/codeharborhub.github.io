@@ -28,19 +28,19 @@ The first element of order is the root of the BST. All subsequent elements are i
 
 Input: order = [2,1,4,3]
 Output: 3
-Explanation: The binary search tree has a depth of 3 with path 2->3->4.
+Explanation: The binary search tree has a depth of 3 with path `2->3->4`.
 
 **Example 2:**
 
 Input: order = [2,1,3,4]
 Output: 3
-Explanation: The binary search tree has a depth of 3 with path 2->3->4.
+Explanation: The binary search tree has a depth of 3 with path `2->3->4`.
 
 **Example 3:**
 
 Input: order = [1,2,3,4]
 Output: 4
-Explanation: The binary search tree has a depth of 4 with path 1->2->3->4.
+Explanation: The binary search tree has a depth of 4 with path `1->2->3->4`.
 
 ### Constraints
 
