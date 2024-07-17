@@ -50,16 +50,16 @@ There are a total of 4 unguarded cells, so we return 4.
 - `0 <= coli, colj < n`
 - `All the positions in guards and walls are unique.`
 
-
-
-
 ## Solution of Given Problem
 
 ### Intuition and Approach
 
 The problem can be solved using a brute force approach or a two-pointer technique.
 
-### Approache 1:Brute Force (Naive)
+<Tabs>
+<tabItem value="Brute Force" label="Brute Force">
+
+### Approach 1:Brute Force (Naive)
 
 
 Brute Force Approach: Simulates each guard's visibility across the entire grid, marking cells until obstacles are encountered. It then counts unguarded cells.
@@ -128,6 +128,7 @@ int countUnguarded(int m, int n, vector<vector<int>>& guards, vector<vector<int>
 </TabItem>
 <TabItem value="Java" label="Java">
 <SolutionAuthor name="@AmruthaPariprolu"/>
+
 ```java
 import java.util.*;
 
@@ -168,7 +169,20 @@ class Solution {
         }
         
         // Count unguarded cells
-        int unguardedCount =
+        int unguardedCount = 0;
+        for (int i = 0; i < m; ++i) {
+            for (int j = 0; j < n; ++j) {
+                if (grid[i][j] == 0) {
+                    unguardedCount++;
+                }
+            }
+        }
+        
+        return unguardedCount;
+    }
+}
+
+
 
 
 ```
@@ -221,15 +235,12 @@ def countUnguarded(m, n, guards, walls):
 
 - Time Complexity: $O((g+w)*(n+m))$
 - Space Complexity: $O(n*m)$
-- where:
-
-        g is the number of guards.
-        w is the number of walls.
-        n is the number of rows in the grid.
-        m is the number of columns in the grid.
+- where:g is the number of guards,w is the number of walls,n is the number of rows in the grid,m is the number of columns in the grid.
 - The time complexity is  $O((g+w)*(n+m))$ .This complexity arises because each guard potentially scans in all four cardinal directions, and each scan operation could traverse up to n or m cells.
 -  Additional space may be required for storing guards' and walls' positions, but this is typically bounded by O(g + w), where g is the number of guards and w is the number of walls.
 
+</tabItem>
+<tabItem value="Optimized approach" label="Optimized approach">
 
 ### Approach 2: Optimized approach
 
@@ -298,6 +309,7 @@ int countUnguarded(int m, int n, vector<vector<int>>& guards, vector<vector<int>
 </TabItem>
 <TabItem value="Java" label="Java">
 <SolutionAuthor name="@AmruthaPariprolu"/>
+
 ```java
 import java.util.*;
 
