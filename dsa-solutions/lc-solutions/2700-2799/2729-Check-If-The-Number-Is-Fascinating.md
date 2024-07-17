@@ -119,9 +119,9 @@ public class Solution {
    ```cpp
 
 class Solution {
-public:
-    bool isFascinating(int n) {
-        string concat = to_string(n) + to_string(2 * n) + to_string(3 * n);
+    public:
+       bool isFascinating(int n) {
+            string concat = to_string(n) + to_string(2 * n) + to_string(3 * n);
   sort(concat.begin(), concat.end());
   return concat == "123456789";
  }
