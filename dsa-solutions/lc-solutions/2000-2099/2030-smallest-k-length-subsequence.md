@@ -1,3 +1,4 @@
+---
 id: smallest-k-length-subsequence
 title: Smallest K-Length Subsequence With Occurrences of a Letter
 sidebar_label: 2030 Smallest K-Length Subsequence With Occurrences of a Letter
