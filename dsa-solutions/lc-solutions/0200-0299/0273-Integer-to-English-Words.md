@@ -72,151 +72,152 @@ The method begins with the largest unit that can be used, billions, then gradual
   <TabItem value="JavaScript" label="JavaScript" default>
 
 ```javascript
- const map = new Map();
-  map.set(1, "One");
-  map.set(2, "Two");
-  map.set(3, "Three");
-  map.set(4, "Four");
-  map.set(5, "Five");
-  map.set(6, "Six");
-  map.set(7, "Seven");
-  map.set(8, "Eight");
-  map.set(9, "Nine");
-  map.set(10, "Ten");
-  map.set(11, "Eleven");
-  map.set(12, "Twelve");
-  map.set(13, "Thirteen");
-  map.set(14, "Fourteen");
-  map.set(15, "Fifteen");
-  map.set(16, "Sixteen");
-  map.set(17, "Seventeen");
-  map.set(18, "Eighteen");
-  map.set(19, "Nineteen");
-  map.set(20, "Twenty");
-  map.set(30, "Thirty");
-  map.set(40, "Forty");
-  map.set(50, "Fifty");
-  map.set(60, "Sixty");
-  map.set(70, "Seventy");
-  map.set(80, "Eighty");
-  map.set(90, "Ninety");
-  map.set(100, "Hundred");
-  map.set(1000, "Thousand");
-  map.set(1000000, "Million");
-  map.set(1000000000, "Billion");
+const map = new Map();
+map.set(1, "One");
+map.set(2, "Two");
+map.set(3, "Three");
+map.set(4, "Four");
+map.set(5, "Five");
+map.set(6, "Six");
+map.set(7, "Seven");
+map.set(8, "Eight");
+map.set(9, "Nine");
+map.set(10, "Ten");
+map.set(11, "Eleven");
+map.set(12, "Twelve");
+map.set(13, "Thirteen");
+map.set(14, "Fourteen");
+map.set(15, "Fifteen");
+map.set(16, "Sixteen");
+map.set(17, "Seventeen");
+map.set(18, "Eighteen");
+map.set(19, "Nineteen");
+map.set(20, "Twenty");
+map.set(30, "Thirty");
+map.set(40, "Forty");
+map.set(50, "Fifty");
+map.set(60, "Sixty");
+map.set(70, "Seventy");
+map.set(80, "Eighty");
+map.set(90, "Ninety");
+map.set(100, "Hundred");
+map.set(1000, "Thousand");
+map.set(1000000, "Million");
+map.set(1000000000, "Billion");
 
-  function numberToWords(num) {
+function numberToWords(num) {
   if (num === 0) {
-      return "Zero";
+    return "Zero";
   }
   let result = "";
   for (let i = 1000000000; i >= 1000; i /= 1000) {
-      if (num >= i) {
-          result += get3Digits(Math.floor(num / i)) + " " + map.get(i) + " ";
-          num %= i;
-      }
+    if (num >= i) {
+      result += get3Digits(Math.floor(num / i)) + " " + map.get(i) + " ";
+      num %= i;
+    }
   }
   if (num > 0) {
-      result += get3Digits(num);
+    result += get3Digits(num);
   }
   return result.trim();
-  }
+}
 
-  function get3Digits(num) {
+function get3Digits(num) {
   let result = "";
   if (num >= 100) {
-      result += " " + map.get(Math.floor(num / 100)) + " " + map.get(100);
-      num %= 100;
+    result += " " + map.get(Math.floor(num / 100)) + " " + map.get(100);
+    num %= 100;
   }
   if (num > 0) {
-      if (num < 20 || num % 10 === 0) {
-          result += " " + map.get(num);
-      } else {
-          result += " " + map.get(Math.floor(num / 10) * 10) + " " + map.get(num % 10);
-      }
+    if (num < 20 || num % 10 === 0) {
+      result += " " + map.get(num);
+    } else {
+      result +=
+        " " + map.get(Math.floor(num / 10) * 10) + " " + map.get(num % 10);
+    }
   }
   return result.trim();
-  }
+}
 ```
 
 </TabItem>
 <TabItem value="TypeScript" label="TypeScript">
 
 ```typescript
-  const map: Map<number, string> = new Map([
-      [1, "One"],
-      [2, "Two"],
-      [3, "Three"],
-      [4, "Four"],
-      [5, "Five"],
-      [6, "Six"],
-      [7, "Seven"],
-      [8, "Eight"],
-      [9, "Nine"],
-      [10, "Ten"],
-      [11, "Eleven"],
-      [12, "Twelve"],
-      [13, "Thirteen"],
-      [14, "Fourteen"],
-      [15, "Fifteen"],
-      [16, "Sixteen"],
-      [17, "Seventeen"],
-      [18, "Eighteen"],
-      [19, "Nineteen"],
-      [20, "Twenty"],
-      [30, "Thirty"],
-      [40, "Forty"],
-      [50, "Fifty"],
-      [60, "Sixty"],
-      [70, "Seventy"],
-      [80, "Eighty"],
-      [90, "Ninety"],
-      [100, "Hundred"],
-      [1000, "Thousand"],
-      [1000000, "Million"],
-      [1000000000, "Billion"],
-  ]);
-  function numberToWords(num: number): string {
-      if (num === 0) {
-          return "Zero";
-      }
-
-      const sb: string[] = [];
-      for (let i = 1000000000; i >= 1000; i /= 1000) {
-          if (num >= i) {
-              sb.push(get3Digits(Math.floor(num / i)));
-              sb.push(map.get(i) as string);
-              num %= i;
-          }
-      }
-
-      if (num > 0) {
-          sb.push(get3Digits(num));
-      }
-
-      return sb.join(" ").trim();
-  };
-
-  function get3Digits(num: number): string {
-      const sb: string[] = [];
-      if (num >= 100) {
-          sb.push(map.get(Math.floor(num / 100)) as string);
-          sb.push(map.get(100) as string);
-          num %= 100;
-      }
-
-      if (num > 0) {
-          if (num < 20 || num % 10 === 0) {
-              sb.push(map.get(num) as string);
-          } else {
-              sb.push(map.get(Math.floor(num / 10) * 10) as string);
-              sb.push(map.get(num % 10) as string);
-          }
-      }
-
-      return sb.join(" ");
+const map: Map<number, string> = new Map([
+  [1, "One"],
+  [2, "Two"],
+  [3, "Three"],
+  [4, "Four"],
+  [5, "Five"],
+  [6, "Six"],
+  [7, "Seven"],
+  [8, "Eight"],
+  [9, "Nine"],
+  [10, "Ten"],
+  [11, "Eleven"],
+  [12, "Twelve"],
+  [13, "Thirteen"],
+  [14, "Fourteen"],
+  [15, "Fifteen"],
+  [16, "Sixteen"],
+  [17, "Seventeen"],
+  [18, "Eighteen"],
+  [19, "Nineteen"],
+  [20, "Twenty"],
+  [30, "Thirty"],
+  [40, "Forty"],
+  [50, "Fifty"],
+  [60, "Sixty"],
+  [70, "Seventy"],
+  [80, "Eighty"],
+  [90, "Ninety"],
+  [100, "Hundred"],
+  [1000, "Thousand"],
+  [1000000, "Million"],
+  [1000000000, "Billion"],
+]);
+function numberToWords(num: number): string {
+  if (num === 0) {
+    return "Zero";
   }
- ```
+
+  const sb: string[] = [];
+  for (let i = 1000000000; i >= 1000; i /= 1000) {
+    if (num >= i) {
+      sb.push(get3Digits(Math.floor(num / i)));
+      sb.push(map.get(i) as string);
+      num %= i;
+    }
+  }
+
+  if (num > 0) {
+    sb.push(get3Digits(num));
+  }
+
+  return sb.join(" ").trim();
+}
+
+function get3Digits(num: number): string {
+  const sb: string[] = [];
+  if (num >= 100) {
+    sb.push(map.get(Math.floor(num / 100)) as string);
+    sb.push(map.get(100) as string);
+    num %= 100;
+  }
+
+  if (num > 0) {
+    if (num < 20 || num % 10 === 0) {
+      sb.push(map.get(num) as string);
+    } else {
+      sb.push(map.get(Math.floor(num / 10) * 10) as string);
+      sb.push(map.get(num % 10) as string);
+    }
+  }
+
+  return sb.join(" ");
+}
+```
 
 </TabItem>
 <TabItem value="Python" label="Python">
@@ -224,26 +225,26 @@ The method begins with the largest unit that can be used, billions, then gradual
 ```python
   class Solution:
     def numberToWords(self, num: int) -> str:
-    
+
         if num == 0:
             return 'Zero'
 
-    
+
         less_than_20 = [
             '', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine',
             'Ten', 'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen',
             'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen'
         ]
-      
-    
+
+
         tens = [
             '', 'Ten', 'Twenty', 'Thirty', 'Forty', 'Fifty', 'Sixty', 'Seventy', 'Eighty', 'Ninety'
         ]
-      
-    
+
+
         thousands = ['Billion', 'Million', 'Thousand', '']
 
-    
+
         def translate(num):
             if num == 0:
                 return ''
@@ -254,21 +255,21 @@ The method begins with the largest unit that can be used, billions, then gradual
             else:
                 return less_than_20[num // 100] + ' Hundred ' + translate(num % 100)
 
-        result = [] 
-        i, j = 1000000000, 0 
-      
-    
+        result = []
+        i, j = 1000000000, 0
+
+
         while i > 0:
             if num // i != 0:
-                result.append(translate(num // i)) 
-                result.append(thousands[j])        
-                result.append(' ')                 
-                num %= i                           
-            j += 1 
-            i //= 1000 
-      
-        return ''.join(result).strip() 
- ```
+                result.append(translate(num // i))
+                result.append(thousands[j])
+                result.append(' ')
+                num %= i
+            j += 1
+            i //= 1000
+
+        return ''.join(result).strip()
+```
 
 </TabItem>
 <TabItem value="Java" label="Java">
@@ -278,13 +279,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Solution {
-    
+
     private static final Map<Integer, String> NUMBER_TO_WORDS_MAP;
 
-    
+
     static {
         NUMBER_TO_WORDS_MAP = new HashMap<>();
-        
+
         NUMBER_TO_WORDS_MAP.put(1, "One");
         NUMBER_TO_WORDS_MAP.put(2, "Two");
         NUMBER_TO_WORDS_MAP.put(3, "Three");
@@ -294,7 +295,7 @@ public class Solution {
         NUMBER_TO_WORDS_MAP.put(7, "Seven");
         NUMBER_TO_WORDS_MAP.put(8, "Eight");
         NUMBER_TO_WORDS_MAP.put(9, "Nine");
-        
+
         NUMBER_TO_WORDS_MAP.put(10, "Ten");
         NUMBER_TO_WORDS_MAP.put(11, "Eleven");
         NUMBER_TO_WORDS_MAP.put(12, "Twelve");
@@ -305,7 +306,7 @@ public class Solution {
         NUMBER_TO_WORDS_MAP.put(17, "Seventeen");
         NUMBER_TO_WORDS_MAP.put(18, "Eighteen");
         NUMBER_TO_WORDS_MAP.put(19, "Nineteen");
-        
+
         NUMBER_TO_WORDS_MAP.put(20, "Twenty");
         NUMBER_TO_WORDS_MAP.put(30, "Thirty");
         NUMBER_TO_WORDS_MAP.put(40, "Forty");
@@ -314,43 +315,43 @@ public class Solution {
         NUMBER_TO_WORDS_MAP.put(70, "Seventy");
         NUMBER_TO_WORDS_MAP.put(80, "Eighty");
         NUMBER_TO_WORDS_MAP.put(90, "Ninety");
-        
+
         NUMBER_TO_WORDS_MAP.put(100, "Hundred");
         NUMBER_TO_WORDS_MAP.put(1000, "Thousand");
         NUMBER_TO_WORDS_MAP.put(1000000, "Million");
         NUMBER_TO_WORDS_MAP.put(1000000000, "Billion");
     }
 
-    
+
     public String numberToWords(int num) {
-        
+
         if (num == 0) {
             return "Zero";
         }
 
         StringBuilder wordsBuilder = new StringBuilder();
-      
-        
+
+
         for (int i = 1000000000; i >= 1000; i /= 1000) {
             if (num >= i) {
                 wordsBuilder.append(processThreeDigits(num / i)).append(" ").append(NUMBER_TO_WORDS_MAP.get(i));
                 num %= i;
             }
         }
-      
-        
+
+
         if (num > 0) {
             wordsBuilder.append(processThreeDigits(num));
         }
-      
-        
+
+
         return wordsBuilder.substring(1);
     }
 
-    
+
     private String processThreeDigits(int num) {
         StringBuilder threeDigitsBuilder = new StringBuilder();
-      
+
         if (num >= 100) {
             threeDigitsBuilder.append(" ")
                              .append(NUMBER_TO_WORDS_MAP.get(num / 100))
@@ -359,11 +360,11 @@ public class Solution {
             num %= 100;
         }
         if (num > 0) {
-            
+
             if (num < 20 || num % 10 == 0) {
                 threeDigitsBuilder.append(" ").append(NUMBER_TO_WORDS_MAP.get(num));
             } else {
-                
+
                 threeDigitsBuilder.append(" ")
                                   .append(NUMBER_TO_WORDS_MAP.get(num / 10 * 10))
                                   .append(" ")
@@ -373,7 +374,7 @@ public class Solution {
         return threeDigitsBuilder.toString();
     }
 }
- ```
+```
 
 </TabItem>
 <TabItem value="C++" label="C++">
@@ -388,7 +389,7 @@ using std::unordered_map;
 
 class Solution {
 public:
-    
+
 
     string numberToWords(int num) {
         unordered_map<int, string> number_to_words_map = {{1, "One"},
@@ -468,7 +469,7 @@ private:
         return result;
     }
 };
- ```
+```
 
 </TabItem>
 </Tabs>
