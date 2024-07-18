@@ -151,7 +151,7 @@ const courses = [
     author: "Figma",
     link: "https://www.figma.com/resource-library/design-basics/"
   }
-  
+
 ];
 
 export default courses;
