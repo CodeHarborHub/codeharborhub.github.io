@@ -21,7 +21,7 @@ const Chatbot = () => {
 
   return (
     <div>
-      <div id="bp-web-widget" className={styles.bpwLayoutLeft}></div>
+      <div id="bp-web-widget" className={styles.bpwLayoutLeft} />
     </div>
   );
 };

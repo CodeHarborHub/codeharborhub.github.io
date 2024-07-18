@@ -1,0 +1,25 @@
+/* teamcards.css */
+
+.team-profile-card > .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 0.5px solid black;
+  }
+  
+  .team-profile-card > .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  .team-profile-card > .card > .card__header > .avatar > .avatar__photo--xl {
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+   
+  .team-profile-card > .card > .card__footer > .button-group > .button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .team-profile-card > .card > .card__footer > .button-group > .button:hover {
+    background-color: #0056b3;
+  }
+  
