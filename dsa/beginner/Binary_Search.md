@@ -1,4 +1,4 @@
-
+# Binary search
 
 Binary search is a classic algorithm for finding an element in a sorted array. It repeatedly divides the search interval in half and compares the middle element of the interval to the target value. If the target value matches the middle element, the search is successful. Otherwise, the search continues in the half of the array that may contain the target value.
 
