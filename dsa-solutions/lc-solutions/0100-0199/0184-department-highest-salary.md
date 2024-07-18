@@ -3,8 +3,8 @@ id: department-highest-salary
 title: Department Highest Salary
 sidebar_label: 0184. Department Highest Salary
 tags: [SQL, Database]
-description: Solution to Leetcode 184. Department Highest Salary
-sidebar_position: enter position number
+description: Solution to Leetcode 184 Department Highest Salary
+sidebar_position: 85
 ---
 
 ## Problem Statement 
