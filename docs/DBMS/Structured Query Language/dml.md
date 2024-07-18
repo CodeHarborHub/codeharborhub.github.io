@@ -1,4 +1,5 @@
-## Data Manipulation Language (DML)
+# Data Manipulation Language
+
 DML is used for performing non-structural updates to a database. For example, adding a row to an existing table, retrieving data from a table, etc.
 
 ### DML commands include:
@@ -75,6 +76,3 @@ We can also delete multiple rows at a time:
 delete from customers where address="India";
 ```
 This query would delete information of all customers from India.
-
-
-
