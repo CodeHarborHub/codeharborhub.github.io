@@ -1,5 +1,5 @@
 ---
-title: 'Cryptography and Its Use in Cyber Security'
+title: "Cryptography and Its Use in Cyber Security"
 sidebar_label: Cryptography and Cyber Security
 authors: [pujan-sarkar]
 tags: [cryptography, cyber security, encryption, technology]
@@ -81,4 +81,3 @@ Zero-knowledge proofs enable one party to prove to another that a statement is t
 ## Conclusion
 
 Cryptography is a cornerstone of cyber security, providing the means to protect data and maintain privacy in an increasingly interconnected world. As technology advances and new threats emerge, the field of cryptography will continue to evolve, offering innovative solutions to ensure the security and integrity of our digital lives. By understanding and implementing cryptographic techniques, individuals and organizations can safeguard their information and build a secure future.
-
