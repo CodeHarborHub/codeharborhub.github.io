@@ -118,7 +118,7 @@ const courses = [
       category: "mongodb",
       imageUrl: "/img/svg/developer_activity.svg",
       author: "Ajay Dhangar",
-      link: "https://www.w3schools.com/mongodb/"
+      link: "/courses/category/mongodb"
     },
     {
       id: 15,
