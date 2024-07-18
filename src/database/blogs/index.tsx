@@ -5,7 +5,7 @@ interface Blog {
     description: string;
     slug: string;
   }
-  
+
   const blogs: Blog[] = [
     {
       id: 1,
@@ -50,5 +50,5 @@ interface Blog {
       slug: '#'
     }
   ];
-  
+
   export default blogs;
