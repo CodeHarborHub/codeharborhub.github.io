@@ -32,8 +32,8 @@ Stooge Sort is a simple and recursive sorting algorithm. It is known for its hig
 
 ## Complexity Analysis
 
-- **Time Complexity**: \( O(n^{\log_3 2}) \) which is approximately \( O(n^{2.7095}) \).
-- **Space Complexity**: \( O(n) \) due to the recursive call stack.
+- **Time Complexity**: $O(n^{\log_3 2})$ which is approximately $O(n^{2.7095})$.
+- **Space Complexity**: $O(n)$ due to the recursive call stack.
 
 ## Example
 
@@ -120,5 +120,5 @@ int main() {
   </TabItem>
 </Tabs>
 
-# Conclusion
+## Conclusion
 Stooge Sort is a straightforward but inefficient sorting algorithm. It is not practical for large datasets due to its high time complexity but can be useful for educational purposes to understand recursive sorting techniques.
