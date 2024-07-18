@@ -222,8 +222,8 @@ So, the final cardinality between ticket and seat is **one-to-many**
 
 | husband | --- married to --- | wife |
 | ------- | ------------------ | ---- |
-| 1       | -->                | 1    |
-| 1       | <--                | 1    |
+| 1       | &gt;                | 1    |
+| 1       | &lt;              | 1    |
 
 
 In a monogamous community, 1 man is married to 1 woman and vice versa. Hence, the cardinality is **one-to-one**
