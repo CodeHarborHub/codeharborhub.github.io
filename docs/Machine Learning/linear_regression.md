@@ -27,6 +27,42 @@ Linear regression models the relationship between a dependent variable (target) 
 
 In predicting house prices, linear regression may model the relationship between house size, number of bedrooms, and location to estimate the sale price of a property.
 
+### Code:
+```python
+#import libraries
+from matplotlib import pyplot as plt
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import r2_score
+
+#read the file
+df=pd.read_csv("data.csv")
+
+#assign x(independent variable) and y(dependent variable) from the dataset
+y=df['A']
+x=df['B']
+
+#split the data into training and testing sets
+X_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.25,random_state=50)
+
+#object
+linreg=LinearRegression()
+linreg.fit(X_train,y_train)
+
+#predict for test data
+y_pred=linreg.predict(x_test)
+
+#regression line
+plt.xlabel("B")
+plt.ylabel("A")
+plt.plot(x_test,y_pred)
+plt.scatter(x_test,y_test)
+
+#evaluation of model
+print("r2 score : ",r2_score(y_test,y_pred)) 
+```
+
 ### Advantages of Linear Regression
 
 #### Linear regression offers several advantages:
