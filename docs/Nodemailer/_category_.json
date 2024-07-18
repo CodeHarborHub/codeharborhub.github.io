@@ -1,0 +1,8 @@
+{
+    "label": "Nodemailer",
+    "position": 25,
+    "link": {
+      "type": "generated-index",
+      "description": "Nodemailer is a module for Node.js applications that allows you to send emails. It is designed to be easy to set up and use."
+    }
+  }

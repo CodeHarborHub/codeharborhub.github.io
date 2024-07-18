@@ -9,6 +9,7 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "deploy-gh-pages": "gh-pages -d build",
+    "build:fast": "docusaurus build --no-minify",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
@@ -77,9 +78,11 @@
     "@babel/preset-react": "^7.24.7",
     "@docusaurus/module-type-aliases": "^3.3.2",
     "@docusaurus/types": "^3.3.2",
+    "@types/node": "^20.14.10",
     "@types/react-icons": "^3.0.0",
     "dotenv": "^16.4.5",
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.1.1",
+    "lighthouse": "^12.1.0"
   },
   "browserslist": {
     "production": [

@@ -6,7 +6,7 @@ const courses = [
       category: "html",
       imageUrl: "/img/svg/static_website.svg",
       author: "Ajay Dhangar",
-      link: "#"
+      link: "/courses/category/HTML"
     },
     {
       id: 2,
@@ -42,7 +42,7 @@ const courses = [
       category: "angular",
       imageUrl: "/img/svg/developer_activity.svg",
       author: "Ajay Dhangar",
-      link: "/courses"
+      link: "/courses/category/angular"
     },
     // tailwind-css
     {
@@ -52,7 +52,7 @@ const courses = [
       category: "tailwind-css",
       imageUrl: "/img/svg/developer_activity.svg",
       author: "Ajay Dhangar",
-      link: "/courses"
+      link: "/courses/category/tailwind-css"
     },
 
     {

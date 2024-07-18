@@ -1,0 +1,141 @@
+.career-page {
+  padding: 1rem;
+}
+
+.career-page h1 {
+  margin: 1rem 0;
+  background: linear-gradient(
+    90deg,
+    rgb(152 0 255) 0%,
+    rgb(246 41 41) 50%,
+    rgb(255 169 8) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.career-page .career-intro {
+  margin: 1rem 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.career-page .career-filters {
+  margin: 2.5rem 0;
+}
+
+.career-page .search-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.career-page .search-bar input[type="search"] {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.career-page .search-bar select {
+  width: 20%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.career-page .career-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.career-page .career-card {
+  padding: 1px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.career-page .career-card:hover {
+  transform: translateY(-10px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.career-page .career-card .image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+  animation: fadeIn 0.5s;
+}
+
+.career-page .career-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.career-page .career-card .image-container:hover img {
+  transform: scale(1.1);
+}
+
+.career-page .career-card h3 {
+  font-weight: 600;
+  margin-bottom: 8px;
+  padding: 0.5rem;
+}
+
+.career-page .career-card .career-description {
+  padding: 0.5rem;
+}
+
+.career-page .career-card .career-footer {
+  padding: 10px;
+  border-top: 1px solid #dddddd72;
+  margin-top: 5px;
+}
+
+.career-footer .career-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.career-footer .career-details p {
+  margin: 5px 0;
+}
+
+.career-footer .career-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.career-footer .career-tags .tag {
+  border: 1px solid var(--ifm-color-primary);
+  margin: 2px 5px;
+  border-radius: 5px;
+}
+
+.career-footer .career-link {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  font-weight: 600;
+  margin: 1rem 0;
+  display: inline-block;
+}
+
+.career-footer .career-link:hover {
+  text-decoration: underline;
+}

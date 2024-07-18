@@ -155,7 +155,7 @@
 }
 
 .main__contact_contains_right .form_container .form_group .form_button:hover{
-  background-color: #2c4aa6;
+  background-color: #816bd1b5;
 }
 
 @media screen and (max-width: 768px) {
@@ -191,4 +191,14 @@
   line-height: 1.5;
 }
 
-
+.loader {
+  width: 1rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #040404 100%, #000) top / 8px 4px no-repeat, conic-gradient(#fff0 70%, #000000);
+  animation: spinner 1s infinite linear;
+  margin: auto;
+}
+@keyframes spinner{ 
+  100%{transform: rotate(1turn)}
+}

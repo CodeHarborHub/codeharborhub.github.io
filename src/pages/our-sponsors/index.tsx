@@ -60,7 +60,7 @@ const OurSponsors: React.FC = () => {
             height="32"
             width="114"
             style={{ border: 0, borderRadius: "6px" }}
-          ></iframe>
+           />
           <a
             href="https://www.patreon.com/ajay_dhangar"
             target="_blank"

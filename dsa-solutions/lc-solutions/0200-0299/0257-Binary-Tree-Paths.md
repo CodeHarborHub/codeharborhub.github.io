@@ -32,7 +32,7 @@ Output: ["1"]
 
 ### Constraints
 - The number of nodes in the tree is in the range [1, 100].
-- -100 <= Node.val <= 100
+- $-100 \leq \text{Node.val} \leq 100$
 
 ### Approach 
 1. Define a `TreeNode` class to represent the nodes in the binary tree.

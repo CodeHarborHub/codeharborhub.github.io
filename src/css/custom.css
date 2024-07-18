@@ -358,7 +358,11 @@ th {
   position: relative;
   min-width: 180px;
 }
-
+@media (max-width:400px) {
+  .dsa-content{
+    flex-direction: column;
+  }
+}
 .dropdown-content a:hover {
   text-decoration: none;
   background: linear-gradient(
