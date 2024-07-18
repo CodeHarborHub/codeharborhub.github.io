@@ -1,8 +1,8 @@
 ---
-id: lesson-3
+id: lesson-2
 title: "Using HTML with JavaScript Frameworks (e.g., React.js)"
 sidebar_label: HTML with Frameworks
-sidebar_position: 3
+sidebar_position: 2
 description: "Learn to Using HTML with JavaScript Frameworks (e.g., React.js)."
 tags: [courses,advance-level,Frameworks,Introduction]
 ---  

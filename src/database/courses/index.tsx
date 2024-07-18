@@ -30,7 +30,7 @@ const courses = [
     imageUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcCYXBgQbUIL58YlTKTeLKh4qYDT5Aoy0QMGsiBtdixSOvP5rzdqKc_IrjpYL61zJ_6qE&usqp=CAU",
     author: "Ajay Dhangar (CHH)",
-    link: "/code-harbor-hub/docs/category/javascript",
+    link: "/docs/category/javascript",
   },
   {
     id: 4,
