@@ -5,7 +5,7 @@ import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import books from "../../database/ebooks";
 
-export default function Books() {
+export default function Books() {    // Books component
   const { siteConfig } = useDocusaurusContext();
 
   return (
