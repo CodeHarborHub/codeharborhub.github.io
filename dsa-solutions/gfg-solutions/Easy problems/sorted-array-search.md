@@ -1,7 +1,7 @@
 ---
 id: sorted-arrray-search
 title: Sorted Array Search
-sidebar_label: sorted-Array-Search
+sidebar_label: Sorted-Array-Search
 tags:
   - Searching
   - Binary Search
