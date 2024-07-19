@@ -1,10 +1,17 @@
 ---
 id: reverse-pairs
 title: Reverse Pairs
-sidebar_label: 0493 - Reverse Pairs
+sidebar_label: 493-Reverse-Pairs
 tags:
-  - Leetcode
+  - Array
+  - Binary Search
+  - Divide and conquer
+  - Binary Indexed Tree
+  - Segment Tree
   - Merge Sort
+  - Ordered Set
+description: The problem is to reverse the pairs.
+sidebar_position: 2667
 ---
 
 ## Problem Statement 
@@ -204,6 +211,7 @@ class Solution:
     public int reversePairs(int[] nums) {
         return mergeSort(nums, 0, nums.length - 1);
     }
+
     public int mergeSort(int[] nums, int left, int right) {
         if (left >= right) {
             return 0;
