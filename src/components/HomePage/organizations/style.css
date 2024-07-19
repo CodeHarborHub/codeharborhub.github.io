@@ -1,50 +1,67 @@
 #organization {
-    padding: 35px 50px;
+  padding: 2rem 1rem;
 }
 
 #organization h2 {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 #organization .organization-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
 }
 
 #organization .organization-container .organization-card {
-    border: 1px solid var(--ifm-color-primary);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 25px;
-    text-align: center;
-    transition: transform 0.2s;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(5, 174, 216, 0.386);
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.2s;
 }
 
 #organization .organization-container .organization-card:hover {
-    transform: scale(1.01) translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
-    cursor: pointer;
+  transform: scale(1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
 }
 
 #organization .organization-container .organization-card:hover img {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #organization .organization-container .organization-card img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
-    object-fit: contain;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  object-fit: contain;
 }
 
 #organization .organization-container .organization-card h3 {
-    margin-bottom: 10px;
-    font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
 }
 
 #organization .organization-container .organization-card p {
-    font-size: 1rem;
-    text-align: justify;
+  font-size: 1rem;
+  text-align: justify;
 }
+
+
+@media (max-width: 768px) {
+    #organization .organization-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    #organization .organization-container .organization-card p {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #organization .organization-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
