@@ -204,8 +204,8 @@ const config = {
           },
 
           {
-            to: "/blog",
-            html: '<span class="nav-emoji">📰</span> Blog',
+            to: "/blogs",
+            html: '<span class="nav-emoji">📰</span> Blogs',
           },
 
           {
