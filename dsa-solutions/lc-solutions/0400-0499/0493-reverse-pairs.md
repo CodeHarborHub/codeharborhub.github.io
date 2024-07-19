@@ -321,4 +321,3 @@ public:
 {['Ishitamukherjee2004'].map(username => (
  <Author key={username} username={username} />
 ))}
-</div>
