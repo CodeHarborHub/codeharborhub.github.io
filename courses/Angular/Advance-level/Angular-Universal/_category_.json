@@ -1,0 +1,8 @@
+{
+    "label": "Angular Universal(server-side Rendering)",
+    "position": 3,
+    "link": {
+      "type": "generated-index",
+      "description": "How to server-side Rendering."
+    }
+  }

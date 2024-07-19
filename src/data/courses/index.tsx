@@ -42,7 +42,7 @@ const courses = [
       category: "angular",
       imageUrl: "/img/svg/developer_activity.svg",
       author: "Ajay Dhangar",
-      link: "/courses"
+      link: "/courses/category/angular"
     },
     // tailwind-css
     {
@@ -118,7 +118,7 @@ const courses = [
       category: "mongodb",
       imageUrl: "/img/svg/developer_activity.svg",
       author: "Ajay Dhangar",
-      link: "https://www.w3schools.com/mongodb/"
+      link: "/courses/category/mongodb"
     },
     {
       id: 15,
