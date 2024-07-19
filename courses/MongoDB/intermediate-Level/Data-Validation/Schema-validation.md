@@ -1,8 +1,8 @@
 ---
-id: lesson-1
+id: lesson-3
 title: "Data Validation in MongoDB"
 sidebar_label: Data Validation
-sidebar_position: 1
+sidebar_position: 3
 description: "Data Validation in MongoDB"
 tags: [courses,beginner-level,Data Validation,Introduction]
 ---  

@@ -22,7 +22,13 @@ export default function Blogs() {
       description="Welcome to CodeHarborHub Bloge. Learn the basics to advanced concepts of web development. html, css, javascript, react, node.js, dsa, and more."
     >
       <section className="blog-page margin-top--lg margin-bottom--lg">
-        <h1 className="TitleText">Latest Blogs</h1>
+        <div className="blog-header">
+          <h1 className="TitleText">Welcome to CodeHarborHub Blogs </h1>
+          <p className="SubTitleText">
+            Learn the basics to advanced concepts of web development. html, css,
+            javascript, react, node.js, dsa, and more.
+          </p>
+        </div>
         <div className="card-container">
           {blogs.map((blog) => (
             <div key={blog.id} className="card">
