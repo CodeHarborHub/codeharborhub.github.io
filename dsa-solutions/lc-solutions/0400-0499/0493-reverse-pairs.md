@@ -318,7 +318,6 @@ public:
 <h2>Authors:</h2>
 
 <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
-{['Ishitamukherjee2004', 'ImmidiSivani'].map(username => (
+{['Ishitamukherjee2004'].map(username => (
  <Author key={username} username={username} />
-))}
-</div>
+))} </div>
