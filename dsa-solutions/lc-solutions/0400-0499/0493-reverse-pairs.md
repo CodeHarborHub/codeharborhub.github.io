@@ -320,4 +320,4 @@ public:
 <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
 {['Ishitamukherjee2004'].map(username => (
  <Author key={username} username={username} />
-))}
+))} </div>
