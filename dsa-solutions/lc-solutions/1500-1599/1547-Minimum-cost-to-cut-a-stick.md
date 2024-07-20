@@ -66,20 +66,20 @@ Output:
 ### Time Complexity and Space Complexity Analysis
 
 - **Initialization**:
-  - Sorting the cuts array takes O(m log m) time, where m is the number of cuts.
-  - Initializing the `dp` array takes O(m^2) time.
-  - Overall initialization time complexity is O(m log m + m^2).
+  - Sorting the cuts array takes $O(m log m)$ time, where m is the number of cuts.
+  - Initializing the `dp` array takes $O(m^3)$ time.
+  - Overall initialization time complexity is $O(m log m + m^2)$.
 
 - **DP Table Calculation**:
   - Filling the `dp` table involves iterating over all possible subintervals and calculating the minimum cost for each subinterval using nested loops.
-  - This takes O(m^3) time in the worst case.
+  - This takes $O(m^3)$ time in the worst case.
 
 - **Overall Time Complexity**:
-  - The overall time complexity is O(m^3).
+  - The overall time complexity is $O(m^3)$.
 
 - **Space Complexity**:
-  - The `dp` table requires O(m^2) space.
-  - The space complexity is O(m^2).
+  - The `dp` table requires $O(m^2)$ space.
+  - The space complexity is $O(m^2)$.
 
 ### Code
 
