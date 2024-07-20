@@ -63,6 +63,22 @@ interface Blog {
         "Learn the basics of the MERN stack, from building an API with Express.js to creating a React app.",
       link: "dockerizing-a-rust-application-with-multi-stage-builds",
     },
+    {
+      id: 8,
+      title: "Git Best Practices: Commit Often, Perfect Later, Publish Once",
+      image: "/img/svg/coding.svg",
+      description:
+        "Git is a powerful tool for managing the development of software projects, but it can be challenging to use effectively. ",
+      link: "git-best-practicies.md",
+    },
+    {
+      id: 9,
+      title: "Mastering Data Structures in Python",
+      image: "/img/svg/programming.svg",
+      description:
+        "Data structures are essential components in computer science, enabling efficient data storage, manipulation, and retrieval.",
+      link: "Mastering Data Structures in Python.md",
+    },
   ];
   
 

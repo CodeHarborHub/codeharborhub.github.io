@@ -50,6 +50,9 @@
     font-size: 1rem;
     color: #353434;
 }
+.blog-description:hover{
+    text-decoration: none;
+}
 [data-theme="dark"] .blog-description {
     color: #ddd;
 }

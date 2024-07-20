@@ -1,13 +1,11 @@
 import React, { useState, useMemo, useEffect } from "react";
-import "./style.css";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Head from "@docusaurus/Head";
 import BlogPage from "../../components/Blogs/BlogPage";
 import Layout from "@theme/Layout";
-import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
 import Translate, { translate } from "@docusaurus/Translate";
 import { motion } from "framer-motion";
-import styles from "../showcase/styles.module.css";
+import styles from "./styles.module.css";
 
 const TITLE = "CodeHarborHub Blogs";
 const DESCRIPTION =
