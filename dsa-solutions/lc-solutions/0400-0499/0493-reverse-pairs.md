@@ -110,7 +110,7 @@ return mergeSort(nums, 0, nums.length - 1);
 
   </TabItem>
   <TabItem value="TypeScript" label="TypeScript">
-  <SolutionAuthor name="@Ishitamukherjee2004"/> 
+  <SolutionAuthor name="@Ishitamukherjee2004"/>
    ```typescript
     function mergeSortedArrays(nums: number[], left: number, mid: number, right: number, temp: number[]) {
   let i = left, j = mid + 1, k = 0;
@@ -151,7 +151,7 @@ return mergeSort(nums, 0, nums.length - 1);
     ```
 
   </TabItem>
-  <TabItem value="Python" label="Python"> 
+  <TabItem value="Python" label="Python">
   <SolutionAuthor name="@Ishitamukherjee2004"/>
    ```python
     def merge_sorted_arrays(nums, left, mid, right, temp):
@@ -299,7 +299,7 @@ return mergeSort(nums, 0, nums.size() - 1);
 
 };
 ```
-</TabItem>  
+</TabItem>
 </Tabs>
 
 ### Complexity Analysis
