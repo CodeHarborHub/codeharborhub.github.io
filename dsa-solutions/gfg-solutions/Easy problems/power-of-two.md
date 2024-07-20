@@ -1,8 +1,14 @@
 ---
 id: power-of-2
 title: Power of 2
-tags: [Easy, Bit Manipulation, GeeksforGeeks, CPP, Python, DSA]
-description: "This tutorial covers the solution to the Power of 2 problem from the GeeksforGeeks website, featuring implementations in Python and C++."
+tags:
+   - Easy
+   - Bit Manipulation
+   - GeeksforGeeks
+   - CPP
+   - Python
+   - DSA
+description: "This tutorial covers the solution to the Power of 2 problem from the GeeksforGeeks."
 ---
 
 ## Problem Description
@@ -55,7 +61,7 @@ A number is a power of 2 if there exists an integer `x` such that `n = 2^x`.
 
 <Tabs>
   <TabItem value="Python" label="Python" default>
-  <SolutionAuthor name="@YourUsername"/>
+  <SolutionAuthor name="@Ishitamukherjee2004"/>
 
   ```python
   class Solution:
@@ -74,7 +80,7 @@ A number is a power of 2 if there exists an integer `x` such that `n = 2^x`.
 
   </TabItem>
   <TabItem value="C++" label="C++">
-  <SolutionAuthor name="@YourUsername"/>
+  <SolutionAuthor name="@Ishitamukherjee2004"/>
 
   ```cpp
   #include <bits/stdc++.h>
@@ -108,6 +114,79 @@ A number is a power of 2 if there exists an integer `x` such that `n = 2^x`.
   ```
 
   </TabItem>
+
+    <TabItem value="Javascript" label="Javascript">
+  <SolutionAuthor name="@Ishitamukherjee2004"/>
+
+  ```javascript
+class Solution {
+  isPowerofTwo(n) {
+    if (n <= 0) return false;
+    return (n & (n - 1)) == 0;
+  }
+}
+
+let t = parseInt(prompt("Enter number of testcases"));
+for (let i = 0; i < t; i++) {
+  let n = parseInt(prompt("Enter a number"));
+  let sol = new Solution();
+  console.log(sol.isPowerofTwo(n));
+}
+
+  ```
+
+  </TabItem>
+    <TabItem value="Typescript" label="Typescript">
+  <SolutionAuthor name="@Ishitamukherjee2004"/>
+
+  ```typescript
+class Solution {
+  isPowerofTwo(n: number): boolean {
+    if (n <= 0) return false;
+    return (n & (n - 1)) == 0;
+  }
+}
+
+let t: number = parseInt(prompt("Enter number of testcases"));
+for (let i: number = 0; i < t; i++) {
+  let n: number = parseInt(prompt("Enter a number"));
+  let sol: Solution = new Solution();
+  console.log(sol.isPowerofTwo(n));
+}
+
+  ```
+
+  </TabItem>
+
+
+    <TabItem value="Java" label="Java">
+  <SolutionAuthor name="@Ishitamukherjee2004"/>
+
+  ```java
+import java.util.Scanner;
+
+class Solution {
+  boolean isPowerofTwo(long n) {
+    if (n <= 0) return false;
+    return (n & (n - 1)) == 0;
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int t = sc.nextInt();
+    for (int i = 0; i < t; i++) {
+      long n = sc.nextLong();
+      Solution sol = new Solution();
+      System.out.println(sol.isPowerofTwo(n));
+    }
+  }
+}
+
+  ```
+
+  </TabItem>
 </Tabs>
 
 ## Solution Logic:
@@ -123,8 +202,3 @@ A number is a power of 2 if there exists an integer `x` such that `n = 2^x`.
 ## Space Complexity
 
 - The function uses constant space, $O(1)$.
-
-## References
-
-- **GeeksforGeeks Problem:** [Power of 2](https://www.geeksforgeeks.org/problems/power-of-2-1587115620/1)
-- **Solution Author:** [arunimad6yuq](https://www.geeksforgeeks.org/user/arunimad6yuq/)
