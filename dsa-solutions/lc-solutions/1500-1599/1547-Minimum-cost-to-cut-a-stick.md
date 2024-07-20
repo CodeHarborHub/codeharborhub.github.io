@@ -49,9 +49,9 @@ Output:
 
 ### Constraints
 
-- 2 <= `n` <= 10^6
-- 1 <= `cuts.length` <= min(`n` - 1, 100)
-- 1 <= `cuts[i]` <= `n` - 1
+- 2 &lt;= `n` &lt;= 10^6
+- 1 &lt;= `cuts.length` &lt;= min(`n` - 1, 100)
+- 1 &lt;= `cuts[i]` &lt;= `n` - 1
 - All the integers in the `cuts` array are distinct.
 
 ## Solution
