@@ -207,6 +207,10 @@ const config = {
             to: "/blogs",
             html: '<span class="nav-emoji">📰</span> Blogs',
           },
+          {
+            to: "/ebooks",
+            html: '<span class="nav-emoji">📚</span> E-books',
+          },
 
           {
             type: "dropdown",
