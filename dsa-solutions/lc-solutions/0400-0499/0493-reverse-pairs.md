@@ -14,7 +14,7 @@ description: The problem is to reverse the pairs.
 sidebar_position: 2667
 ---
 
-## Problem Statement 
+## Problem Statement
 
 ### Problem Description
 
@@ -58,13 +58,11 @@ Explanation: The reverse pairs are:
 
 The intuition behind this solution is to use a modified Merge Sort algorithm to count the number of reverse pairs in the array.
 
-
 ### Approaches
 
 - Divide the array into smaller subarrays until each subarray has only one element.
 - Merge the subarrays back together, counting the number of reverse pairs between each pair of subarrays.
 - The merge step is done in a way that ensures the count of reverse pairs is accurate.
-
 
 #### Codes in Different Languages
 
@@ -83,37 +81,36 @@ The intuition behind this solution is to use a modified Merge Sort algorithm to 
 }
 
 function merge(nums, left, mid, right) {
-  let count = 0;
-  let j = mid + 1;
-  for (let i = left; i <= mid; i++) {
-    while (j <= right && nums[i] > 2 * nums[j]) j++;
-    count += j - mid - 1;
-  }
-  let temp = new Array(right - left + 1);
-  mergeSortedArrays(nums, left, mid, right, temp);
-  for (let i = left; i <= right; i++) nums[i] = temp[i - left];
-  return count;
+let count = 0;
+let j = mid + 1;
+for (let i = left; i <= mid; i++) {
+while (j <= right && nums[i] > 2 \* nums[j]) j++;
+count += j - mid - 1;
+}
+let temp = new Array(right - left + 1);
+mergeSortedArrays(nums, left, mid, right, temp);
+for (let i = left; i <= right; i++) nums[i] = temp[i - left];
+return count;
 }
 function mergeSort(nums, left, right) {
-  if (left >= right) return 0;
-  let mid = left + (right - left) / 2;
-  let count = mergeSort(nums, left, mid) + mergeSort(nums, mid + 1, right);
-  count += merge(nums, left, mid, right);
-  return count;
+if (left >= right) return 0;
+let mid = left + (right - left) / 2;
+let count = mergeSort(nums, left, mid) + mergeSort(nums, mid + 1, right);
+count += merge(nums, left, mid, right);
+return count;
 }
 
 class Solution {
-  reversePairs(nums) {
-    return mergeSort(nums, 0, nums.length - 1);
-  }
+reversePairs(nums) {
+return mergeSort(nums, 0, nums.length - 1);
 }
-
+}
 
     ```
 
   </TabItem>
   <TabItem value="TypeScript" label="TypeScript">
-  <SolutionAuthor name="@Ishitamukherjee2004"/> 
+  <SolutionAuthor name="@Ishitamukherjee2004"/>
    ```typescript
     function mergeSortedArrays(nums: number[], left: number, mid: number, right: number, temp: number[]) {
   let i = left, j = mid + 1, k = 0;
@@ -126,35 +123,35 @@ class Solution {
 }
 
 function merge(nums: number[], left: number, mid: number, right: number) {
-  let count = 0;
-  let j = mid + 1;
-  for (let i = left; i <= mid; i++) {
-    while (j <= right && nums[i] > 2 * nums[j]) j++;
-    count += j - mid - 1;
-  }
-  let temp = new Array(right - left + 1);
-  mergeSortedArrays(nums, left, mid, right, temp);
-  for (let i = left; i <= right; i++) nums[i] = temp[i - left];
-  return count;
+let count = 0;
+let j = mid + 1;
+for (let i = left; i <= mid; i++) {
+while (j <= right && nums[i] > 2 \* nums[j]) j++;
+count += j - mid - 1;
+}
+let temp = new Array(right - left + 1);
+mergeSortedArrays(nums, left, mid, right, temp);
+for (let i = left; i <= right; i++) nums[i] = temp[i - left];
+return count;
 }
 function mergeSort(nums: number[], left: number, right: number) {
-  if (left >= right) return 0;
-  let mid = left + (right - left) / 2;
-  let count = mergeSort(nums, left, mid) + mergeSort(nums, mid + 1, right);
-  count += merge(nums, left, mid, right);
-  return count;
+if (left >= right) return 0;
+let mid = left + (right - left) / 2;
+let count = mergeSort(nums, left, mid) + mergeSort(nums, mid + 1, right);
+count += merge(nums, left, mid, right);
+return count;
 }
 
 class Solution {
-  reversePairs(nums: number[]) {
-    return mergeSort(nums, 0, nums.length - 1);
-  }
+reversePairs(nums: number[]) {
+return mergeSort(nums, 0, nums.length - 1);
+}
 }
 
     ```
 
   </TabItem>
-  <TabItem value="Python" label="Python"> 
+  <TabItem value="Python" label="Python">
   <SolutionAuthor name="@Ishitamukherjee2004"/>
    ```python
     def merge_sorted_arrays(nums, left, mid, right, temp):
@@ -177,29 +174,29 @@ class Solution {
         k += 1
 
 def merge(nums, left, mid, right):
-    count = 0
-    j = mid + 1
-    for i in range(left, mid + 1):
-        while j <= right and nums[i] > 2 * nums[j]:
-            j += 1
-        count += j - mid - 1
-    temp = [0] * (right - left + 1)
-    merge_sorted_arrays(nums, left, mid, right, temp)
-    for i in range(left, right + 1):
-        nums[i] = temp[i - left]
-    return count
+count = 0
+j = mid + 1
+for i in range(left, mid + 1):
+while j <= right and nums[i] > 2 _ nums[j]:
+j += 1
+count += j - mid - 1
+temp = [0] _ (right - left + 1)
+merge_sorted_arrays(nums, left, mid, right, temp)
+for i in range(left, right + 1):
+nums[i] = temp[i - left]
+return count
 
 def merge_sort(nums, left, right):
-    if left >= right:
-        return 0
-    mid = left + (right - left) // 2
-    count = merge_sort(nums, left, mid) + merge_sort(nums, mid + 1, right)
-    count += merge(nums, left, mid, right)
-    return count
+if left >= right:
+return 0
+mid = left + (right - left) // 2
+count = merge_sort(nums, left, mid) + merge_sort(nums, mid + 1, right)
+count += merge(nums, left, mid, right)
+return count
 
 class Solution:
-    def reversePairs(self, nums):
-        return merge_sort(nums, 0, len(nums) - 1)
+def reversePairs(self, nums):
+return merge_sort(nums, 0, len(nums) - 1)
 
     ```
 
@@ -255,9 +252,11 @@ class Solution:
             temp[k++] = nums[j++];
         }
     }
+
 }
 
     ```
+
   </TabItem>
   <TabItem value="cpp" label="C++">
   <SolutionAuthor name="@Ishitamukherjee2004"/>
@@ -291,27 +290,23 @@ int mergeSort(vector<int>& nums, int left, int right) {
     return count;
 }
 
-
 class Solution {
 public:
-    int reversePairs(vector<int>& nums) {
-       return mergeSort(nums, 0, nums.size() - 1);
-
+int reversePairs(vector<int>& nums) {
+return mergeSort(nums, 0, nums.size() - 1);
 
     }
+
 };
-    ```
-  </TabItem>  
+```
+</TabItem>
 </Tabs>
 
 ### Complexity Analysis
 
 - **Time Complexity**: $$O(n*log(n))$$, where n is the length of the input array. This is because the solution uses a modified Merge Sort algorithm, which has a time complexity of O(n log n).
 
-
 - **Space Complexity**: $$O(n)$$, where n is the length of the input array. This is because the solution uses a temporary array to store the merged sorted arrays.
-
-
 
 ---
 
