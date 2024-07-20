@@ -80,6 +80,7 @@ Route-level code splitting ensures that only the necessary code for the current 
 2. **Using `dynamic` for Code Splitting with Custom Loading**:
    ```javascript
    // pages/index.js
+   import { useState } from 'react';
    import dynamic from 'next/dynamic';
 
    const DynamicComponentWithCustomLoading = dynamic(() => import('../components/DynamicComponent'), {
@@ -87,12 +88,49 @@ Route-level code splitting ensures that only the necessary code for the current 
    });
 
    export default function Home() {
+    const [loadDynamicComponent, setLoadDynamicComponent] = useState(false);
+
+    const handleClick = () => {
+      setLoadDynamicComponent(true);
+    };
      return (
        <div>
          <h1>Home Page</h1>
-         <DynamicComponentWithCustomLoading />
+         <button onClick={handleClick}>Load Dynamic Component</button>
+         {loadDynamicComponent && <DynamicComponentWithCustomLoading />}
        </div>
      );
    }
    ```
- 
+ **Output:**
+    <BrowserWindow>
+      <div>
+         <h1 style={{fontSize:"1.5rem"}}>Home Page</h1>
+         <button onClick={()=>{
+          let button=document.getElementById("button")
+          button.style.display="none"
+          let Interval=setInterval(()=>{
+          let Dynamic=document.getElementById("Dynamic")
+          let datas=["1st Content","2nd Content","3rd Content"]
+          let Index
+          if(Dynamic && Dynamic.textContent && Dynamic.textContent.length>1){
+          if(Dynamic.textContent==="Switch Dynamic Content"){
+            Index=0
+          }
+          else{
+            if(datas.indexOf(Dynamic.textContent)==2){
+              Index=0
+            }
+            else{Index=datas.indexOf(Dynamic.textContent)+1}
+          }
+          Dynamic.textContent=datas[Index]
+          } 
+          else{
+            clearInterval(Interval)
+            return
+          }
+          },1000)
+         }} id="button" style={{padding:"0.8rem 2rem",fontWeight:"600",borderRadius:"0.6rem",border:"0.1rem solid",margin:"0.5rem"}}>Load Dynamic Component</button>
+         <h2 style={{fontSize:"1.3rem"}} id="Dynamic">Switch Dynamic Content</h2>
+      </div>
+    </BrowserWindow>

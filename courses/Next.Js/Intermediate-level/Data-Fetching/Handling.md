@@ -64,3 +64,10 @@ Handling errors in data fetching is crucial to provide a good user experience.
      );
    }
    ``` 
+
+  **Output:**
+  <BrowserWindow >
+    <div>  
+         Failed to load: 404 server not found
+    </div>
+  </BrowserWindow>

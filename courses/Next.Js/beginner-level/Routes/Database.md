@@ -117,4 +117,24 @@ You can connect your API routes to a database using popular database libraries l
        }
      }
      ```
- 
+    <BrowserWindow url="http://localhost:3000/users">
+        <div>
+          Fetched user Details
+          <br />
+          <button onClick={()=>{
+             let text=document.getElementById("text")
+             let details=[{
+                    id:"1",
+                    name:"siva",
+                    info:"Developer"
+                   },{
+                     id:"2",
+                     name:"John",
+                     info:"Developer"
+                   }]
+              text.textContent=JSON.stringify(details, null, 2)
+             }}>click to Fetch</button>
+          <br />
+          <pre id="text">No results Found</pre>
+        </div>
+     </BrowserWindow>

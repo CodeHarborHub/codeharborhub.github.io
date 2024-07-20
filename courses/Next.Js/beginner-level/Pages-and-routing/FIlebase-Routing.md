@@ -63,6 +63,12 @@ Nested routes can be achieved by creating folders within the `src/pages` directo
        return <h1>Products Page</h1>;
      }
      ```
+    <BrowserWindow url="http://localhost:3000/product">
+        <div>
+          <h1>Products Page</h1>   
+        </div>
+    </BrowserWindow>
+
 
 3. **Nested Dynamic Route**:
    - The `[id].js` file inside the `products` directory maps to dynamic routes like `/products/1`, `/products/2`, etc.:
@@ -77,4 +83,9 @@ Nested routes can be achieved by creating folders within the `src/pages` directo
        return <h1>Product {id}</h1>;
      }
      ```
+    <BrowserWindow url="http://localhost:3000/products/3">
+        <div>
+          <h1>Products 3</h1> 
+        </div>
+    </BrowserWindow>
  
