@@ -4,21 +4,24 @@ title: "Concepts of static and server-side rendering"
 sidebar_label: Concepts
 sidebar_position: 2
 description: "Concepts of static and server-side rendering"
-tags: [courses,beginner-level,FramWorks,Introduction]
+tags: [courses, beginner-level, FramWorks, Introduction]
 ---
- 
+
 #### Implementing Static Generation (`getStaticProps`)
 
 `getStaticProps` is a Next.js function that allows you to fetch data at build time to pre-render a page.
 
 1. **Creating a Page with `getStaticProps`**:
+
    ```javascript
    // src/pages/posts/[id].js
-   import { useRouter } from 'next/router';
+   import { useRouter } from "next/router";
 
    export async function getStaticProps({ params }) {
      // Fetch data for the post using the id from params
-     const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`);
+     const res = await fetch(
+       `https://jsonplaceholder.typicode.com/posts/${params.id}`,
+     );
      const post = await res.json();
 
      return {
@@ -30,10 +33,10 @@ tags: [courses,beginner-level,FramWorks,Introduction]
 
    export async function getStaticPaths() {
      // Specify dynamic routes to pre-render based on data
-     const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+     const res = await fetch("https://jsonplaceholder.typicode.com/posts");
      const posts = await res.json();
 
-     const paths = posts.map(post => ({
+     const paths = posts.map((post) => ({
        params: { id: post.id.toString() },
      }));
 
@@ -68,11 +71,12 @@ tags: [courses,beginner-level,FramWorks,Introduction]
 `getServerSideProps` is a Next.js function that allows you to fetch data on each request to pre-render a page.
 
 1. **Creating a Page with `getServerSideProps`**:
+
    ```javascript
    // src/pages/profile.js
    export async function getServerSideProps(context) {
      // Fetch data on each request
-     const res = await fetch('https://jsonplaceholder.typicode.com/users/1');
+     const res = await fetch("https://jsonplaceholder.typicode.com/users/1");
      const profile = await res.json();
 
      return {
@@ -101,10 +105,13 @@ tags: [courses,beginner-level,FramWorks,Introduction]
 ISR allows you to update static pages after they have been built, without requiring a full rebuild of the site.
 
 1. **Implementing ISR with `revalidate`**:
+
    ```javascript
    // src/pages/posts/[id].js
    export async function getStaticProps({ params }) {
-     const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`);
+     const res = await fetch(
+       `https://jsonplaceholder.typicode.com/posts/${params.id}`,
+     );
      const post = await res.json();
 
      return {
@@ -116,10 +123,10 @@ ISR allows you to update static pages after they have been built, without requir
    }
 
    export async function getStaticPaths() {
-     const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+     const res = await fetch("https://jsonplaceholder.typicode.com/posts");
      const posts = await res.json();
 
-     const paths = posts.map(post => ({
+     const paths = posts.map((post) => ({
        params: { id: post.id.toString() },
      }));
 
@@ -147,4 +154,7 @@ ISR allows you to update static pages after they have been built, without requir
 2. **Explanation**:
    - `revalidate`: Specifies the number of seconds after which the page should be regenerated.
    - With ISR, the page will be updated in the background after the specified time, providing fresh content without a full rebuild.
- 
+
+#### Conclusion
+
+Next.js provides various methods for rendering pages, including static generation, server-side rendering, and incremental static regeneration. These features allow you to optimize performance and user experience by fetching data at build time or on each request.
