@@ -1,18 +1,11 @@
+import React, { useState, useMemo, useEffect } from "react";
 import "./style.css";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import Link from "@docusaurus/Link";
-import blogs from "../../database/blogs";
 import Head from "@docusaurus/Head";
-
-
-import React, { useState, useMemo, useEffect } from "react";
 import BlogPage from "../../components/Blogs/BlogPage";
 import Layout from "@theme/Layout";
-import clsx from "clsx";
 import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
 import Translate, { translate } from "@docusaurus/Translate";
-import { useHistory, useLocation } from "@docusaurus/router";
-import { usePluralForm } from "@docusaurus/theme-common";
 import { motion } from "framer-motion";
 import styles from "../showcase/styles.module.css";
 
@@ -26,7 +19,7 @@ interface Blog {
   title: string;
   image: string;
   description: string;
-  slug: string;
+  link: string;
 }
 
 export default function Blogs() {
@@ -37,26 +30,6 @@ type UserState = {
   focusedElementId: string | undefined;
 };
 
-function restoreUserState(userState: UserState | null) {
-  const { scrollTopPosition, focusedElementId } = userState ?? {
-    scrollTopPosition: 0,
-    focusedElementId: undefined,
-  };
-  // @ts-expect-error: if focusedElementId is undefined it returns null
-  document.getElementById(focusedElementId)?.focus();
-  window.scrollTo({ top: scrollTopPosition });
-}
-
- function prepareUserState(): UserState | undefined {
-  if (ExecutionEnvironment.canUseDOM) {
-    return {
-      scrollTopPosition: window.scrollY,
-      focusedElementId: document.activeElement?.id,
-    };
-  }
-
-  return undefined;
-}
 
 function BlogsHeader() {
   return (
