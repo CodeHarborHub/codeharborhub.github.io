@@ -4,9 +4,8 @@ title: Introduction to Next.js
 sidebar_label: Introduction
 sidebar_position: 1
 description: Introduction to Next.js
-tags: [courses,beginner-level,FramWorks,Introduction]
---- 
-  
+tags: [courses, beginner-level, FramWorks, Introduction]
+---
 
 ## What is Next.js?
 
@@ -29,7 +28,7 @@ Next.js offers several key features that make it a popular choice for building R
 6. **Built-in CSS and Sass Support**: Next.js has built-in support for importing CSS and Sass files, making it easy to style your applications.
 
 7. **Developer Experience**: Features like fast refresh, which provides instantaneous feedback on edits without losing component state, make the development process more efficient and enjoyable.
-:::
+   :::
 
 ## Why Learn Next.js?
 
