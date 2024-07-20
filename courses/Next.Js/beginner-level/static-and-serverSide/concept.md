@@ -147,4 +147,7 @@ ISR allows you to update static pages after they have been built, without requir
 2. **Explanation**:
    - `revalidate`: Specifies the number of seconds after which the page should be regenerated.
    - With ISR, the page will be updated in the background after the specified time, providing fresh content without a full rebuild.
- 
+
+#### Conclusion
+
+Next.js provides various methods for rendering pages, including static generation, server-side rendering, and incremental static regeneration. These features allow you to optimize performance and user experience by fetching data at build time or on each request.
