@@ -180,3 +180,13 @@ class Solution:
 - **LeetCode Problem**: [Assign Cookies](https://leetcode.com/problems/assign-cookies/description/)
 
 - **Solution Link**: [Assign Cookies](https://leetcode.com/problems/assign-cookies/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>
