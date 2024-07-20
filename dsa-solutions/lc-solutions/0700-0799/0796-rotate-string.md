@@ -312,3 +312,13 @@ class Solution(object):
 - **LeetCode Problem**: [Rotate String](https://leetcode.com/problems/rotate-string/description/)
 
 - **Solution Link**: [Rotate String](https://leetcode.com/problems/rotate-string/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

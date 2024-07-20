@@ -322,3 +322,13 @@ class Solution:
 - **LeetCode Problem**: [Find Duplicate File in System](https://leetcode.com/problems/find-duplicate-file-in-system/description/)
 
 - **Solution Link**: [Find Duplicate File in System](https://leetcode.com/problems/find-duplicate-file-in-system/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

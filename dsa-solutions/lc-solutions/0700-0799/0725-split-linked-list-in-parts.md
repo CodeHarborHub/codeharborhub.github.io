@@ -288,3 +288,13 @@ class Solution(object):
 - **LeetCode Problem**: [Split Linked List](https://leetcode.com/problems/split-linked-list-in-parts/description/)
 
 - **Solution Link**: [Split Linked List](https://leetcode.com/problems/split-linked-list-in-parts/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

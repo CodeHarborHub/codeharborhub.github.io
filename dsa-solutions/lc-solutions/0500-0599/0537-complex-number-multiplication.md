@@ -149,3 +149,13 @@ class Solution:
 - **LeetCode Problem**: [Complex Number Multiplication](https://leetcode.com/problems/complex-number-multiplication/description/)
 
 - **Solution Link**: [Complex Number Multiplication](https://leetcode.com/problems/complex-number-multiplication/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>
