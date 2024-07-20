@@ -4,6 +4,20 @@ description: In this page, I will introduce myself.
 hide_table_of_contents: true
 ---
 
+<Head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5832817025080991"
+          crossOrigin="anonymous"
+         />
+        <script
+          async
+          custom-element="amp-auto-ads"
+          src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"
+         />
+        <meta name="google-adsense-account" content="ca-pub-5832817025080991" />
+      </Head>
+
 # Introduction (परिचयः) 🙏
 
 [![An image of @ajaydhangar's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/ajaydhangar)](https://holopin.io/@ajaydhangar)
