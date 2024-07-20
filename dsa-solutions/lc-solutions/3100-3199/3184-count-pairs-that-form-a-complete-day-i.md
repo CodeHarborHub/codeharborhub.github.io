@@ -1,15 +1,11 @@
 ---
 id: search-in-a-binary-search-tree
-title:   ---
-id: search-in-a-binary-search-tree
-title:   Count Pairs That Form a Complete Day I
-sidebar_label: 3184. Count Pairs That Form a Complete Day I
-
+title: Count Pairs That Form a Complete Day I
+sidebar_label: 3184 - Count Pairs That Form a Complete Day I
 tags:
-- Array
-- Hashtable
-- Counting
-
+   - Array
+   - Hashtable
+   - Counting
 description: "This is a solution to the Search in a Binary Search Tree problem on LeetCode."
 ---
 ## Problem Description
@@ -147,6 +143,5 @@ function countCompleteDayPairs(hours) {
     
     return completeDayPairs;
 }
-
 
 ```
