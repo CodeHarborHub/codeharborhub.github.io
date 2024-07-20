@@ -129,3 +129,13 @@ class Solution(object):
 - **LeetCode Problem**: [Degree of an Array](https://leetcode.com/problems/degree-of-an-array/description/)
 
 - **Solution Link**: [Degree of an Array](https://leetcode.com/problems/degree-of-an-array/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

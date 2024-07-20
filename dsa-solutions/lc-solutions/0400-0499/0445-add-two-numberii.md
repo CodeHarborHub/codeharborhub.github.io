@@ -404,3 +404,13 @@ class Solution:
 - **LeetCode Problem**: [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/description/)
 
 - **Solution Link**: [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

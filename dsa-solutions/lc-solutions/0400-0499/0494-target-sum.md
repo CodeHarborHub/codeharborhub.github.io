@@ -498,3 +498,13 @@ class Solution:
 - **LeetCode Problem**: [Target Sum](https://leetcode.com/problems/target-sum/description/)
 
 - **Solution Link**: [Target Sum](https://leetcode.com/problems/target-sum/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>
