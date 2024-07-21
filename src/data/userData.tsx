@@ -147,10 +147,11 @@ export const Users: User[] = [
     tags: ["opensource", "product", "web3", "css", "javascript", "react"],
   },
 
+  //  Dictionary
   {
     title: "Portfolio",
     description:
-      " provide a secure and transparent platform for tracking goods at every stage of the supply chain. Leveraging smart contracts, the DApp automates various tasks such as verifying product authenticity, recording transactions.",
+      "used for show casing your skills certificate and also it is a one kind of your resume.",
     preview: require("./showcase/portfolio.png"),
     website: "https://kartikmehta18.github.io/myportfolio/",
     source: "hhttps://github.com/kartikmehta18/myportfolio",
