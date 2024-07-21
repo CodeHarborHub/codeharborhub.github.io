@@ -1,18 +1,17 @@
 .blog-page {
   margin: 2rem 1rem;
 }
-.blog-page .blog-header {  
+
+.blog-page .blog-header {
   text-align: center;
   margin: 1rem 0;
 }
 
 .blog-page .blog-header .TitleText {
-  background: linear-gradient(
-    90deg,
-    rgb(152 0 255) 0%,
-    rgb(246 41 41) 50%,
-    rgb(255 169 8) 100%
-  );
+  background: linear-gradient(90deg,
+      rgb(152 0 255) 0%,
+      rgb(246 41 41) 50%,
+      rgb(255 169 8) 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
