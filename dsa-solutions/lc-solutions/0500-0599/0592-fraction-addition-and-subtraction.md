@@ -250,3 +250,13 @@ class Solution:
 - **LeetCode Problem**: [Fraction Addition and Subtraction](https://leetcode.com/problems/fraction-addition-and-subtraction/description/)
 
 - **Solution Link**: [Fraction Addition and Subtraction](https://leetcode.com/problems/fraction-addition-and-subtraction/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

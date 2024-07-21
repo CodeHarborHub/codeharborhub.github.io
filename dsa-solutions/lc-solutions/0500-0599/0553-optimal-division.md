@@ -399,3 +399,13 @@ class Solution:
 - **LeetCode Problem**: [Optimal Division](https://leetcode.com/problems/optimal-division/description/)
 
 - **Solution Link**: [Optimal Division](https://leetcode.com/problems/optimal-division/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

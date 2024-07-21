@@ -91,7 +91,7 @@ export const Users: User[] = [
     title: "Scientific Calculator",
     description:
       "Build and Deploy a Modern and Beginner-friendly Scientific Calculator using HTML, CSS and Vanilla Javascript",
-    preview: require("./showcase/calculator-app.png"),
+    preview: require("./showcase/calculator-app-ss.png"),
     website: "https://calcu-plus.vercel.app/",
     source: "https://github.com/ParnaRoyChowdhury777/Calculator---CalcuPlus",
     tags: ["opensource", "clone", "html", "css", "vanilla"],
