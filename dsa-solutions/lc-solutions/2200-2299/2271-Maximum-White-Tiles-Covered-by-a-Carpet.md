@@ -20,7 +20,7 @@ In this tutorial, we will solve the Maximum White Tiles Covered by a Carpet prob
 
 ### Problem Description
 
-You are given a 2D integer array tiles where tiles[i] = [li, ri] represents that every tile j in the range li <= j <= ri is colored white.
+You are given a 2D integer array tiles where tiles[i] = [li, ri] represents that every tile j in the range `li <= j <= ri` is colored white.
 
 You are also given an integer carpetLen, the length of a single carpet that can be placed anywhere.
 
