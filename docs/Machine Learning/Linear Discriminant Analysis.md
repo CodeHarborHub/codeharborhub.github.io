@@ -1,5 +1,5 @@
 ---
-id: Linear Discriminant Analysis
+id: linear-discriminant-analysis
 title: Linear Discriminant Analysis
 sidebar_label: Introduction to Linear Discriminant Analysis
 sidebar_position: 3
