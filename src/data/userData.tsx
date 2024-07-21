@@ -126,7 +126,7 @@ export const Users: User[] = [
     title: "Age Calculator",
     description:
       "It calculates the exact age in years, months and days on entering a date of birth with proper error handling.",
-    preview: require("./showcase/age-calculator.png"),
+    preview: require("./showcase/age-calculator-ss.png"),
     website: "https://age-calculator-rho-two.vercel.app/",
     source: "https://github.com/ParnaRoyChowdhury777/Age-Calculator",
     tags: ["opensource", "product", "react", "css", "javascript"],
