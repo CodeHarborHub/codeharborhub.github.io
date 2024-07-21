@@ -1,5 +1,5 @@
 ---
-id: t-Distributed Stochastic Neighbor Embedding
+id: t-distributed-stochastic-neighbor-embedding
 title: t-Distributed Stochastic Neighbor Embedding
 sidebar_label: Introduction to t-Distributed Stochastic Neighbor Embedding
 sidebar_position: 2
