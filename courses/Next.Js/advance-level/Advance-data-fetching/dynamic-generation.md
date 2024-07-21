@@ -31,12 +31,12 @@ You can combine static and dynamic data fetching to build more flexible and perf
    export default function Home({ staticData }) {
      const [dynamicData, setDynamicData] = useState(null);
 
-     useEffect(() => {
+     function handleClick(){
        // Fetch dynamic data on client-side
        fetch('https://api.example.com/dynamic-data')
          .then((res) => res.json())
          .then((data) => setDynamicData(data));
-     }, []);
+     }
 
      return (
        <div>
@@ -44,6 +44,7 @@ You can combine static and dynamic data fetching to build more flexible and perf
          <h2>Static Data</h2>
          <pre>{JSON.stringify(staticData, null, 2)}</pre>
          <h2>Dynamic Data</h2>
+         <button onClick={handleClick}>click to Fetch</button>
          {dynamicData ? (
            <pre>{JSON.stringify(dynamicData, null, 2)}</pre>
          ) : (
@@ -53,7 +54,44 @@ You can combine static and dynamic data fetching to build more flexible and perf
      );
    }
    ```
-
+**Output:**
+    <BrowserWindow url="http://localhost:3000/users">
+      <div>
+          <h1 style={{fontSize:"1.5rem"}}>Combining Static and Dynamic Data Fetching</h1>
+          <h2 style={{fontSize:"1.3rem"}}>Static Data</h2>
+          <pre style={{margin:"2rem auto"}}>{`${JSON.stringify([{ id:"1",
+                    name:"siva",
+                    info:"Developer"
+                   },{
+                     id:"2",
+                     name:"Kumar",
+                     info:"Developer"
+                   }],null,2)}`}</pre>
+          <h2 style={{fontSize:"1.3rem"}}>Dynamic Data</h2>
+          <button onClick={()=>{
+             let text=document.getElementById("text")
+             let loading=document.getElementById("loading")
+             let details=[{
+                    id:"11",
+                    name:"Rohan",
+                    info:"Jr.Developer"
+                   },{
+                     id:"15",
+                     name:"Mano",
+                     info:"Sr.Developer"
+                   }]
+              loading.textContent="Loading..."
+              setTimeout(() => {
+              text.style.display="block"
+              loading.textContent=" "
+              text.textContent=JSON.stringify(details, null, 2)
+              }, 2000)
+             }} style={{padding:"1rem 2rem",border:"none",borderRadius:"0.6rem",color:"white",background:"black",fontWeight:"600",cursor:"pointer"}}>click to Fetch</button>
+          <br />
+          <p id="loading"  style={{margin:"2rem auto"}}></p>
+          <pre id="text" style={{margin:"2rem auto",display:"none"}}></pre>
+      </div>
+    </BrowserWindow> 
 #### Optimizing Data Fetching for Performance
 
 1. **Minimizing API Calls**:
@@ -86,6 +124,21 @@ You can combine static and dynamic data fetching to build more flexible and perf
    }
    ```
 
+**Output:**
+    <BrowserWindow url="http://localhost:3000/data">
+      <div>
+          <h1 style={{fontSize:"1.5rem"}}>Optimized Data Fetching</h1> 
+          <pre style={{margin:"2rem auto"}}>{`${JSON.stringify([{ id:"1",
+                    name:"siva",
+                    info:"Developer"
+                   },{
+                     id:"2",
+                     name:"Kumar",
+                     info:"Developer"
+                   }],null,2)}`}</pre>
+      </div>
+    </BrowserWindow> 
+
 3. **Prefetching Data**:
    - Prefetch data for links using the `next/link` component to improve navigation speed.
    ```javascript
@@ -103,6 +156,22 @@ You can combine static and dynamic data fetching to build more flexible and perf
    }
    ```
 
+**Output:**
+    <BrowserWindow>
+      <div>
+          <h1 style={{fontSize:"1.5rem"}} id="Text">Home Page</h1> 
+          <button style={{textDecoration:"underline",color:"blue",border:"none",background:"transparent",cursor:"pointer"}}
+          onClick={()=>{
+            let text=document.getElementById("Text")
+            text.textContent="About page"
+            let button=document.getElementById("button")
+            button.style.display="none"
+          }}
+           id="button">Go to About</button>
+      </div>
+    </BrowserWindow> 
+
+
 4. **Using SWR for Client-side Caching**:
    - `SWR` (Stale-While-Revalidate) is a React Hooks library for data fetching that provides caching and revalidation.
    ```javascript
@@ -119,4 +188,4 @@ You can combine static and dynamic data fetching to build more flexible and perf
      return <div>Data: {JSON.stringify(data)}</div>;
    }
    ```
- 
+

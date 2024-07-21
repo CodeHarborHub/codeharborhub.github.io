@@ -46,6 +46,8 @@ Next.js provides built-in commands to build and deploy your application.
      yarn start
      ```
 
+ ![Screenshot from 2024-07-20 07-58-50](https://github.com/user-attachments/assets/5dbec61f-cd1f-458f-9856-e8f9d82af8de)
+ 
 3. **Deploying the Application**:
    - **Vercel**: Vercel is the company behind Next.js and provides seamless integration for deploying Next.js applications.
      - Install the Vercel CLI:

@@ -242,3 +242,13 @@ class Solution(object):
 - **LeetCode Problem**: [Strong Password Checker](https://leetcode.com/problems/strong-password-checker/description/)
 
 - **Solution Link**: [Strong Password Checker](https://leetcode.com/problems/strong-password-checker/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

@@ -103,3 +103,17 @@ export default function Home() {
   );
 }
 ```
+
+**Output:**
+
+  <BrowserWindow url="http://localhost:3000/post/3">
+    <h1>Posts</h1>
+    <ul>
+      <li>Post 1</li>
+      <li>Post 2</li>
+      <li>Post 3</li>
+      <li>Post 4</li>
+      <li>Post 5</li>
+      <li>Post 6</li>
+    </ul>
+  </BrowserWindow>

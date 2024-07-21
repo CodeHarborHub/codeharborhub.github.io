@@ -22,6 +22,12 @@ In Next.js, pages are React components that are stored in the `src/pages` direct
      ```
    - This file will be accessible at the `/about` URL.
 
+    <BrowserWindow url="http://localhost:3000/about">
+        <div>
+          <h1>About Us</h1>   
+        </div>
+    </BrowserWindow>
+
 2. **Home Page**:
    - The default home page is created by adding `index.js` to the `src/pages` directory:
      ```javascript
@@ -31,3 +37,9 @@ In Next.js, pages are React components that are stored in the `src/pages` direct
      }
      ```
    - This file will be accessible at the root URL `/`.
+
+    <BrowserWindow url="http://localhost:3000/">
+        <div>
+          <h1>Welcome to Our Site</h1>   
+        </div>
+    </BrowserWindow>

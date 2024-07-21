@@ -267,3 +267,13 @@ class Solution:
 - **LeetCode Problem**: [Array Nesting](https://leetcode.com/problems/array-nesting/description/)
 
 - **Solution Link**: [Array Nesting](https://leetcode.com/problems/array-nesting/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>
