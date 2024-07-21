@@ -165,3 +165,13 @@ class Solution:
 - **LeetCode Problem**: [String Compression](https://leetcode.com/problems/string-compression/description/)
 
 - **Solution Link**: [String Compression](https://leetcode.com/problems/string-compression/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

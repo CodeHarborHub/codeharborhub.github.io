@@ -145,3 +145,13 @@ class Solution(object):
 - **LeetCode Problem**: [Binary Number with Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits/description/)
 
 - **Solution Link**: [Binary Number with Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

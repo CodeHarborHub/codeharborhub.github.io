@@ -132,7 +132,7 @@ export default function ResourcesSection() {
             <h2 className="resources-title">Want to know more?</h2>
           </div>
           {/* Link to view all blogs */}
-          <Link to="/blog" className="resources-all-blogs">
+          <Link to="/blogs" className="resources-all-blogs">
             All Blogs <ArrowRightFilled className="arrow-icon" />
           </Link>
         </div>

@@ -30,6 +30,7 @@
   --ifm-task-complete-color: #2e9e32e1;
   --ifm-task-incomplete-color: #3d78cbe1;
   --ifm-bg-color: #f8f9fa;
+  --site-color-svg-icon-favorite: #ff1100cb;
 }
 
 [data-theme="dark"] {
@@ -44,6 +45,7 @@
   --ifm-task-complete-color: #25c2a0;
   --ifm-task-incomplete-color: #3d78cbe1;
   --ifm-bg-color: #1a202c;
+  --site-color-svg-icon-favorite: #ff9100e5;
 }
 
 .header-github-link::before {
