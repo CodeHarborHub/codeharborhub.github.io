@@ -1,6 +1,6 @@
 ---
-id: multilayer-perceptron-(MLP)-in-deep-learning
-title: Multilayer Perceptron (MLP) in Deep Learning
+id: multilayer-perceptron-in-deep-learning
+title: Multilayer Perceptron in Deep Learning
 sidebar_label: Introduction to Multilayer Perceptron (MLP)
 sidebar_position: 5
 tags: [Multilayer Perceptron, MLP, deep learning, neural networks, machine learning, supervised learning, classification, regression]
