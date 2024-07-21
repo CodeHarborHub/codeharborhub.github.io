@@ -64,10 +64,6 @@ Student with id 217 havs empty value in the name column, so it will be removed.
 
 ## Solution for Drop Missing Data
 
-</TabItem>
-<TabItem value="Python" label="Python">
-<SolutionAuthor name="@avdhut-pailwan"/>
-
 ```py
 import pandas as pd
 
@@ -75,10 +71,7 @@ def dropMissingData(students: pd.DataFrame) -> pd.DataFrame:
     return students[students['name'].notnull()]
 ```
 
-</TabItem>
-</Tabs>
-
-#### Complexity Analysis
+### Complexity Analysis
 
 - **Time Complexity:** $O(n)$
 - **Space Complexity:** $O(n)$
@@ -86,9 +79,6 @@ def dropMissingData(students: pd.DataFrame) -> pd.DataFrame:
 - **Boolean indexing:** Usually an O(n) process, this involves building a new DataFrame from the boolean mask (the output of notnull()).
 - **New DataFrame:** To hold the filtered data, the function builds a new DataFrame. The number of rows with complete "name" values determines the size of this new DataFrame, and in the worst scenario, that number may reach n.  
   As a result, O(n) is also the space complexity.
-
-</tabItem>
-</Tabs>
 
 ---
 
