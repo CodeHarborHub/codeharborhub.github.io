@@ -147,16 +147,27 @@ export const Users: User[] = [
     tags: ["opensource", "product", "web3", "css", "javascript", "react"],
   },
 
-  //  Dictionary
-  {
-    title: "Portfolio",
-    description:
-      "used for show casing your skills certificate and also it is a one kind of your resume.",
-    preview: require("./showcase/portfolio.png"),
-    website: "https://kartikmehta18.github.io/myportfolio/",
-    source: "hhttps://github.com/kartikmehta18/myportfolio",
-    tags: ["opensource", "portfolio", "css", "javascript", "html"],
-  },
+ // Portfolio
+ {
+  title: "Portfolio",
+  description:
+    "used for show casing your skills certificate and also it is a one kind of your resume.",
+  preview: require("./showcase/portfolio.png"),
+  website: "https://kartikmehta18.github.io/myportfolio/",
+  source: "https://github.com/kartikmehta18/myportfolio",
+  tags: ["opensource", "portfolio", "css", "javascript", "html"],
+},
+
+// Dictonary app
+{
+  title: "Dictonary",
+  description:
+    "Dictionary API is use for any english literature project of any geammer project which is used to find the meaning of words and where you can search for words and it outputs word meaning, word pronunciation, audio pronunciation and usage example.",
+  preview: require("./showcase/Dictonary.png"),
+  website: "https://kartikmehta18.github.io/Dictonary-app/",
+  source: "https://github.com/kartikmehta18/Dictonary-app",
+  tags: ["opensource", "portfolio", "css", "javascript", "html"],
+},
   
   // Currency Converter Clone
 
