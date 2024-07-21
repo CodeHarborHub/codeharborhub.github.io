@@ -1,5 +1,5 @@
 ---
-id: Multilayer Perceptron (MLP) in Deep Learning
+id: multilayer-perceptron-(MLP)-in-deep-learning
 title: Multilayer Perceptron (MLP) in Deep Learning
 sidebar_label: Introduction to Multilayer Perceptron (MLP)
 sidebar_position: 5
