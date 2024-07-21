@@ -1,5 +1,5 @@
 ---
-id: Dimensionality Reduction Techniques
+id: dimensionality-reduction-techniques
 title: Dimensionality Reduction Techniques
 sidebar_label: Introduction to Dimensionality Reduction Techniques
 sidebar_position: 4
