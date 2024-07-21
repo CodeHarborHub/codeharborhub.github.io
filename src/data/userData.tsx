@@ -126,7 +126,7 @@ export const Users: User[] = [
     title: "Age Calculator",
     description:
       "It calculates the exact age in years, months and days on entering a date of birth with proper error handling.",
-    preview: require("./showcase/age-calculator.png"),
+    preview: require("./showcase/age-calculator-ss.png"),
     website: "https://age-calculator-rho-two.vercel.app/",
     source: "https://github.com/ParnaRoyChowdhury777/Age-Calculator",
     tags: ["opensource", "product", "react", "css", "javascript"],
@@ -164,7 +164,7 @@ export const Users: User[] = [
     title: "Guess The Number Game",
     description:
       "It allows users to play the Guess The Number Game based on the choice of Easy(3 rounds), Intermediate(5 rounds) and Hard(7 rounds).",
-    preview: require("./showcase/guessnumber.png"),
+    preview: require("./showcase/guessnumber-ss.png"),
     website: "https://guess-me-tau.vercel.app/",
     source: "https://github.com/ParnaRoyChowdhury777/Guess_The_Number_Game",
     tags: ["opensource", "product", "html", "css", "javascript", "vanilla"],
