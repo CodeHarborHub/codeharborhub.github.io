@@ -181,3 +181,13 @@ class KthLargest:
 - **LeetCode Problem**: [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/description/)
 
 - **Solution Link**: [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

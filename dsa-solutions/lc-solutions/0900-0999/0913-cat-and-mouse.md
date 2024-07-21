@@ -361,3 +361,13 @@ class Solution(object):
 - **LeetCode Problem**: [Cat and Mouse](https://leetcode.com/problems/cat-and-mouse/description/)
 
 - **Solution Link**: [Cat and Mouse](https://leetcode.com/problems/cat-and-mouse/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

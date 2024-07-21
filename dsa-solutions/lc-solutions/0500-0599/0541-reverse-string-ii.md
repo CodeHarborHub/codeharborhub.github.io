@@ -125,3 +125,13 @@ class Solution(object):
 - **LeetCode Problem**: [Reverse String II](https://leetcode.com/problems/reverse-string-ii/description/)
 
 - **Solution Link**: [Reverse String II](https://leetcode.com/problems/reverse-string-ii/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

@@ -193,3 +193,13 @@ class Solution(object):
 - **LeetCode Problem**: [Word Subsets](https://leetcode.com/problems/word-subsets/description/)
 
 - **Solution Link**: [Word Subsets](https://leetcode.com/problems/word-subsets/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

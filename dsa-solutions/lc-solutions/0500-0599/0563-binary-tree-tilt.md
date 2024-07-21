@@ -209,3 +209,13 @@ class Solution:
 - **LeetCode Problem**: [Binary Tree Tilt](https://leetcode.com/problems/binary-tree-tilt/description/)
 
 - **Solution Link**: [Binary Tree Tilt](https://leetcode.com/problems/binary-tree-tilt/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

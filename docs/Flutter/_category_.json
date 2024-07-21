@@ -1,0 +1,8 @@
+{
+    "label": "Flutter",
+    "position": 9,
+    "link": {
+      "type": "generated-index",
+      "description": "Flutter is an open-source UI framework developed by Google for building natively compiled applications for mobile, web, and desktop using a single codebase."
+    }
+}
