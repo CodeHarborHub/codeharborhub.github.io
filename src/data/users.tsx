@@ -28,6 +28,7 @@ export type TagType =
   | "vanilla"
   | "typescript"
   | "ai"
+  | "web3"
   | "ml"
   | "mdx"
   | "game"
@@ -79,6 +80,12 @@ export const Tags: { [type in TagType]: Tag } = {
     description: "",
     color: "#000000",
   },
+  web3: {
+    label: "web3",
+    description: "",
+    color: "#000000",
+  },
+  
   typescript: {
     label: "TypeScript",
     description: "",

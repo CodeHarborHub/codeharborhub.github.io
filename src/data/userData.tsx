@@ -135,6 +135,18 @@ export const Users: User[] = [
     tags: ["html", "css", "javascript"],
   },
 
+   // Supply Chain Management DApp
+
+   {
+    title: "Supply Chain Management DApp",
+    description:
+      " provide a secure and transparent platform for tracking goods at every stage of the supply chain. Leveraging smart contracts, the DApp automates various tasks such as verifying product authenticity, recording transactions.",
+    preview: require("./showcase/URLShortner.png"),
+    website: "https://supply-chain-management-beta.vercel.app/",
+    source: "https://github.com/kartikmehta18/URLshortner",
+    tags: ["opensource", "product", "web3", "css", "javascript", "react"],
+  },
+
   // Currency Converter Clone
 
   {
