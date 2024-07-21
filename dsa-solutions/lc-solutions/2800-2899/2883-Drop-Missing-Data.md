@@ -77,7 +77,7 @@ def dropMissingData(students: pd.DataFrame) -> pd.DataFrame:
 - **Space Complexity:** $O(n)$
 - **Iterating over the DataFrame:** The notnull() function on the 'name' column performs an O(n) operation, iterating through each row of the DataFrame, where n is the number of rows.
 - **Boolean indexing:** Usually an O(n) process, this involves building a new DataFrame from the boolean mask (the output of notnull()).
-- **New DataFrame:** To hold the filtered data, the function builds a new DataFrame. The number of rows with complete "name" values determines the size of this new DataFrame, and in the worst scenario, that number may reach n.  
+- **New DataFrame:** To hold the filtered data, the function builds a new DataFrame. The number of rows with complete "name" values determines the size of this new DataFrame, and in the worst scenario, that number may reach n.
   As a result, O(n) is also the space complexity.
 
 ---
