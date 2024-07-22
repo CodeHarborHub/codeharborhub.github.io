@@ -43,7 +43,7 @@ Output: [[3,null],[3,0],[3,null]]
 ### Constraints:
 
 - The number of nodes in the list is in the range [0, 1000].
-- -10000 <= Node.val <= 10000
+- `-10000 <= Node.val <= 10000`
 - Node.random is null or is pointing to a node in the linked list.
 
 ---
