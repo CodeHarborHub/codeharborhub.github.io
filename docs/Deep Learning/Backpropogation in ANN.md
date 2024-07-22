@@ -34,24 +34,27 @@ where f is the activation function, zᵢˡ is the net input of neuron i in layer
 ### Mathematical Formulation
 
 - The loss function measures how well the neural network's output matches the target values. Common loss functions include:
-1) **Mean Squared Error (MSE):** 
+1) **Mean Squared Error (MSE):**
+   
 $$
 L = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
-$$
-2) **Cross-Entropy Loss:**
-$$
+$$ 
+1) **Cross-Entropy Loss:**
+
+$$ 
 L = -\frac{1}{n} \sum_{i=1}^{n} \left[ y_i \log(\hat{y}_i) + (1 - y_i) \log(1 - \hat{y}_i) \right]
 $$
 
 
 - For each weight 𝑤 in the network, the gradient of the loss L with respect to w is computed as:
+  
 $$
 \frac{\partial L}{\partial w} = \frac{\partial L}{\partial \hat{y}} \cdot \frac{\partial \hat{y}}{\partial w}
-
 $$
 
 
 - Weights are updated using the gradient descent algorithm:
+  
 $$
 w \leftarrow w - \eta \frac{\partial L}{\partial w}
 $$
