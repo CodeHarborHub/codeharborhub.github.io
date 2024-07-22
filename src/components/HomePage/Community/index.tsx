@@ -51,8 +51,7 @@ export const LandingCommunity: FC<Props> = ({ className }) => {
     }, 20);
   };
 
-  useEffect(() => {
-    console.log('worked')
+  useEffect(() => { 
     const list = generateList();
     list.forEach((item, index) => {
       handleDynamicChange(item.stat, index);
