@@ -344,6 +344,15 @@ const courses = [
       imageUrl: "/img/svg/developer_activity.svg",
       author: "Ajay Dhangar",
       link: "/courses/category/nextjs"
+    },
+    {
+      "id": 40,
+      "title": "C Language",
+      "description": "This course is for absolute beginners who want to learn C Language.",
+      "category": "c-language",
+      "imageUrl": "/img/svg/developer_activity.svg",
+      "author": "Ajay Dhangar",
+      "link": "/courses/category/c-language"
     }
   ];
   
