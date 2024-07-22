@@ -108,8 +108,6 @@ class Solution:
 - **Time Complexity**: $O(n)$, where $n$ is the number of integers between `low` and `high`. This is because we iterate through each number in the range.
 - **Space Complexity**: $O(1)$. We use a constant amount of extra space for the counter variable.
 
-</tabItem>
-<tabItem value="Optimized" label="Optimized">
 
 ### Optimized Approach
 
