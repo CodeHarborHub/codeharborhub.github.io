@@ -1,39 +1,63 @@
-import React, { type FC, useMemo } from "react";
+import React, { type FC, useEffect, useState } from "react";
 import { useCommunityStatsContext } from "../../../context/CommunityStats";
-import "./LandingCommunity.css";
+import "./LandingCommunity.css";  
 
 type Props = {
   className?: string;
 };
 
 export const LandingCommunity: FC<Props> = ({ className }) => {
-  const { githubStarCountText } = useCommunityStatsContext();
+  const { githubStarCountText } = useCommunityStatsContext();  
+  const [state, setState] = useState({ 
+    stat0: 0, 
+    stat1: 0, 
+    stat2: 0, 
+    stat3: 0,  
+  });
 
-  const list = useMemo(() => {
-    return [
-      {
-        stat: githubStarCountText,
-        description:
-          "Stars on our GitHub repository, showcasing our community's support and contribution.",
-        href: "https://github.com/CodeHarborHub/codeharborhub.github.io",
-      },
-      {
-        stat: "30+",
-        description:
-          "Live projects on CodeHarborHub, demonstrating the power of open-source collaboration.",
-      },
-      {
-        stat: "100+",
-        description:
-          "Active developers engaged in our vibrant open-source community, collaborating and innovating.",
-      },
-      {
-        stat: "600+",
-        description:
-          "Active learners in the CodeHarborHub community, continuously expanding their knowledge and skills.",
-      },
-    ];
-  }, [githubStarCountText]);
+  const generateList = () => [
+    {
+      stat: Number(githubStarCountText)>0?githubStarCountText:83,
+      description: "Stars on our GitHub repository, showcasing our community's support and contribution.",
+      href: "https://github.com/CodeHarborHub/codeharborhub.github.io",
+    },
+    {
+      stat: 30,
+      description: "Live projects on CodeHarborHub, demonstrating the power of open-source collaboration.",
+    },
+    {
+      stat: 100,
+      description: "Active developers engaged in our vibrant open-source community, collaborating and innovating.",
+    },
+    {
+      stat: 600,
+      description: "Active learners in the CodeHarborHub community, continuously expanding their knowledge and skills.",
+    },
+  ];
+
+  const handleDynamicChange = (target, index) => {
+    let count = 0;
+    const increment = target / 100;
+    const interval = setInterval(() => {
+      count += increment;
+      setState(prev => ({ ...prev, [`stat${index}`]: Math.round(count) }));
+      if (count >= target) {
+        setState(prev => ({ ...prev, [`stat${index}`]: target }));
+        clearInterval(interval);
+        setTimeout(() => {
+          handleDynamicChange(target, index);
+        }, 3000);
+      }
+    }, 20);
+  };
+
+  useEffect(() => {
+    console.log('worked')
+    const list = generateList();
+    list.forEach((item, index) => {
+      handleDynamicChange(item.stat, index);
+    });
+  },[githubStarCountText]);
 
   return (
     <div className="landing-community">
@@ -49,11 +73,8 @@ export const LandingCommunity: FC<Props> = ({ className }) => {
 
       <div className="landing-community__content">
         <div className="landing-community__stats">
-          {list.map((item, index) => (
-            <span
-              key={index}
-              className="landing-community__stat-item"
-            >
+          {generateList().map((item, index) => (
+            <span key={index} className="landing-community__stat-item">
               <div className="landing-community__stat-value">
                 <a
                   href={item.href}
@@ -61,7 +82,7 @@ export const LandingCommunity: FC<Props> = ({ className }) => {
                   rel="noopener noreferrer"
                   key={index}
                 >
-                  {item.stat}
+                  {`${state[`stat${index}`]}${index !== 0 ? "+" : ""}`}
                 </a>
               </div>
               <div className="landing-community__stat-description">
