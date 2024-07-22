@@ -7,7 +7,7 @@ tags:
 - Data Structure
 - C++
 - Java
-- Python
+- Python 
 description: "This document provides a solution to the Median Finder problem, where you need to efficiently find the median of a stream of numbers."
 ---
 

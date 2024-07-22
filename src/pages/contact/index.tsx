@@ -4,10 +4,8 @@ import React, { useState, ChangeEvent, FormEvent } from "react";
 import { motion } from "framer-motion";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import { FaYoutube } from "react-icons/fa";
-import { FaDiscord } from "react-icons/fa";
+import { FaYoutube, FaDiscord, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
 import Popup from "../popup/popup";
 import axios from 'axios'
 // import useDocusaurusContext from "@docusaurus/useDocusaurusContext";

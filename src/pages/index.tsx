@@ -132,7 +132,7 @@ export default function Home() {
         <hr className={style.home__hr} />
 
         <div className={style.home__divider}>
-          <Heading as="h2" className={clsx("text--center")}>
+          <Heading as="h2" className={clsx("text--center", style.mainHeading)}>
             Frequently Asked Questions
           </Heading>
         </div>

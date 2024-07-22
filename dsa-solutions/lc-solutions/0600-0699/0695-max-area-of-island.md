@@ -217,3 +217,13 @@ class Solution(object):
 - **LeetCode Problem**: [Max Area of Island](https://leetcode.com/problems/max-area-of-island/description/)
 
 - **Solution Link**: [Max Area of Island](https://leetcode.com/problems/max-area-of-island/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

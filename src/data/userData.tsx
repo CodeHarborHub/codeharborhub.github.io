@@ -91,7 +91,7 @@ export const Users: User[] = [
     title: "Scientific Calculator",
     description:
       "Build and Deploy a Modern and Beginner-friendly Scientific Calculator using HTML, CSS and Vanilla Javascript",
-    preview: require("./showcase/calculator-app.png"),
+    preview: require("./showcase/calculator-app-ss.png"),
     website: "https://calcu-plus.vercel.app/",
     source: "https://github.com/ParnaRoyChowdhury777/Calculator---CalcuPlus",
     tags: ["opensource", "clone", "html", "css", "vanilla"],
@@ -108,6 +108,17 @@ export const Users: User[] = [
     source: "https://github.com/komal-agarwal5/Giggle-Hub------Meme-Generator",
     tags: ["opensource", "product", "html", "css", "javascript"],
   },
+    // URL Shortner
+
+    {
+      title: "URL Shortner",
+      description:
+        "It  Short  URL by using the technique of API Fetching and also supports the feature of copy url.",
+      preview: require("./showcase/URLShortner.png"),
+      website: "https://url-shortner-tau-woad.vercel.app/",
+      source: "https://github.com/kartikmehta18/URLshortner",
+      tags: ["opensource", "product", "html", "css", "javascript"],
+    },
 
   // Age Calculator Clone
 
@@ -115,7 +126,7 @@ export const Users: User[] = [
     title: "Age Calculator",
     description:
       "It calculates the exact age in years, months and days on entering a date of birth with proper error handling.",
-    preview: require("./showcase/age-calculator.png"),
+    preview: require("./showcase/age-calculator-ss.png"),
     website: "https://age-calculator-rho-two.vercel.app/",
     source: "https://github.com/ParnaRoyChowdhury777/Age-Calculator",
     tags: ["opensource", "product", "react", "css", "javascript"],
@@ -187,7 +198,7 @@ export const Users: User[] = [
     title: "Guess The Number Game",
     description:
       "It allows users to play the Guess The Number Game based on the choice of Easy(3 rounds), Intermediate(5 rounds) and Hard(7 rounds).",
-    preview: require("./showcase/guessnumber.png"),
+    preview: require("./showcase/guessnumber-ss.png"),
     website: "https://guess-me-tau.vercel.app/",
     source: "https://github.com/ParnaRoyChowdhury777/Guess_The_Number_Game",
     tags: ["opensource", "product", "html", "css", "javascript", "vanilla"],
@@ -198,7 +209,7 @@ export const Users: User[] = [
   {
     title: "QR Generator",
     description: "It generates a QR code based on a typed text or URL.",
-    preview: require("./showcase/qr_generator.png"),
+    preview: require("./showcase/qr_generator-ss.png"),
     website: "https://scan--me.vercel.app/",
     source: "https://github.com/ParnaRoyChowdhury777/ScanMe",
     tags: ["opensource", "product", "html", "css", "javascript", "vanilla"],

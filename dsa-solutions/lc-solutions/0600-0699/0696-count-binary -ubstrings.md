@@ -182,3 +182,13 @@ class Solution(object):
 - **LeetCode Problem**: [Count Binary Substrings](https://leetcode.com/problems/count-binary-substrings/description/)
 
 - **Solution Link**: [Count Binary Substrings](https://leetcode.com/problems/count-binary-substrings/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

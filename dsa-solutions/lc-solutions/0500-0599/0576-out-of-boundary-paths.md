@@ -231,3 +231,13 @@ class Solution:
 - **LeetCode Problem**: [Out of Boundary Paths](https://leetcode.com/problems/out-of-boundary-paths/description/)
 
 - **Solution Link**: [Out of Boundary Paths](https://leetcode.com/problems/out-of-boundary-paths/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

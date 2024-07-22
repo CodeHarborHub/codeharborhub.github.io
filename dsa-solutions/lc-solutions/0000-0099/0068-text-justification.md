@@ -1,8 +1,8 @@
 ---
 id: text-justification
-title: Text Justification
-sidebar_label: 0068. Text Justification
-tags:
+title: Text Justification (LeetCode)
+sidebar_label: 0068-TextJustification
+topics:
  - String
  - Greedy
 description: Solution to Leetcode 68 Text Justification
@@ -18,11 +18,11 @@ Extra spaces between words should be distributed as evenly as possible. If the n
 
 For the last line of text, it should be left-justified, and no extra space is inserted between words.
 
-**Note:**
-
+:::note
 - A word is defined as a character sequence consisting of non-space characters only.
 - Each word's length is guaranteed to be greater than 0 and not exceed `maxWidth`.
 - The input array `words` contains at least one word.
+:::
 
 ### Examples
 
@@ -69,11 +69,11 @@ Output:
 
 ### Constraints
 
-- 1 &lt;= words.length &lt;= 300
-- 1 &lt;= words[i].length &lt;= 20
+- 1 &lt; = words.length &lt; = 300
+- 1 &lt; = words[i].length &lt; = 20
 - words[i] consists of only English letters and symbols.
-- 1 &lt;= maxWidth &lt;= 100
-- words[i].length &lt;= maxWidth
+- 1 &lt;= maxWidth &lt; = 100
+- words[i].length &lt; = maxWidth
 
 ### Approach
 
@@ -81,12 +81,8 @@ Output:
 2. Distribute the extra spaces evenly among the words in each line.
 3. For the last line, left-justify the text without adding extra spaces between the words.
 
-### Complexity
 
-- Time complexity: $O(n)$, where n is the number of words.
-- Space complexity: $O(n)$, where n is the number of words.
-
-### Solution
+## Solution
 
 #### Code in Different Languages
 

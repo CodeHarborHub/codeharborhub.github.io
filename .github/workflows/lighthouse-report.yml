@@ -40,12 +40,19 @@ jobs:
         with:
           urls: |
             http://localhost:3000
-            http://localhost:3000/docs/javascript/basic-javascript
+            http://localhost:3000/docs
             http://localhost:3000/docs/category/javascript
+            http://localhost:3000/courses
+            http://localhost:3000/courses/category/reactjs
+            http://localhost:3000/dsa-problems
+            http://localhost:3000/dsa-problems/category/leetcode-problems
+            http://localhost:3000/dsa-solutions
+            http://localhost:3000/dsa-solutions/category/leetcode-solutions
             http://localhost:3000/blog
-            http://localhost:3000/blog/getting-started-with-mern
-            http://localhost:3000/blog/tags/mern-stack
-            http://localhost:3000/blog/tags
+            http://localhost:3000/showcase
+            http://localhost:3000/community
+            http://localhost:3000/docs/tags
+            http://localhost:3000/product
           configPath: ./.github/workflows/lighthouserc.json
           uploadArtifacts: true
           temporaryPublicStorage: true

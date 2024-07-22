@@ -204,8 +204,12 @@ const config = {
           },
 
           {
-            to: "/blog",
-            html: '<span class="nav-emoji">📰</span> Blog',
+            to: "/blogs",
+            html: '<span class="nav-emoji">📰</span> Blogs',
+          },
+          {
+            to: "/ebooks",
+            html: '<span class="nav-emoji">📚</span> E-books',
           },
 
           {
@@ -319,7 +323,7 @@ const config = {
               },
               {
                 label: "Careers",
-                to: "#",
+                to: "/careers/",
               },
               {
                 label: "Team",
