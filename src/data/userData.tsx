@@ -145,7 +145,18 @@ export const Users: User[] = [
       "https://github.com/dhairyagothi/50_days_50_web_project/tree/Main/public/TO_DO_LIST",
     tags: ["html", "css", "javascript"],
   },
-
+  
+  // Portfolio
+  {
+    title: "Portfolio",
+    description:
+      "Portfolio can showcase your skills ,certificate and serve as part of your resume.",
+    preview: require("./showcase/portfolio.png"),
+    website: "https://kartikmehta18.github.io/myportfolio/",
+    source: "hhttps://github.com/kartikmehta18/myportfolio",
+    tags: ["opensource", "portfolio", "css", "javascript", "html"],
+  },
+  
   // Currency Converter Clone
 
   {
