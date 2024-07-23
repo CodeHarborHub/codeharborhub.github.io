@@ -353,6 +353,15 @@ const courses = [
       "imageUrl": "/img/svg/developer_activity.svg",
       "author": "Ajay Dhangar",
       "link": "/courses/category/c-language"
+    },
+    {
+      "id": 41,
+      "title": "C++ Language",
+      "description": "This course is for absolute beginners who want to learn C++ Language.",
+      "category": "cpp-language",
+      "imageUrl": "/img/svg/developer_activity.svg",
+      "author": "Ajay Dhangar",
+      "link": "/courses/category/c-language-1"
     }
   ];
   
