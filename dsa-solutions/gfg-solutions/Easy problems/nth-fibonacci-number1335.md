@@ -12,6 +12,7 @@ tags:
   - DSA
 description: "This tutorial covers the solution to the Nth Fibonacci Number problem from the GeeksforGeeks website, featuring implementations in Python and C++."
 ---
+
 ## Problem Description
 
 Given a positive integer `n`, find the nth Fibonacci number. Since the answer can be very large, return the answer modulo `1000000007`.
@@ -44,7 +45,7 @@ Expected Auxiliary Space: $O(n)$ for dynamic programming or $O(1)$ for iterative
 
 ## Constraints
 
-* `1 ≤ n ≤ 10^7`
+- `1 ≤ n ≤ 10^7`
 
 ## Problem Explanation
 
@@ -56,68 +57,68 @@ The Fibonacci sequence is a series of numbers where each number is the sum of th
   <TabItem value="Python" label="Python" default>
   <SolutionAuthor name="@arunimad6yuq"/>
 
-  ```py
-  MOD = 1000000007
+```py
+MOD = 1000000007
 
-  class Solution:
-      def nthFibonacci(self, n: int) -> int:
-          if n == 1 or n == 2:
-              return 1
-          
-          a, b = 1, 1
-          for i in range(3, n + 1):
-              a, b = b, (a + b) % MOD
-          
-          return b
+class Solution:
+    def nthFibonacci(self, n: int) -> int:
+        if n == 1 or n == 2:
+            return 1
 
-  # Example usage
-  if __name__ == "__main__":
-      solution = Solution()
-      print(solution.nthFibonacci(1))  # Expected output: 1
-      print(solution.nthFibonacci(5))  # Expected output: 5
-  ```
+        a, b = 1, 1
+        for i in range(3, n + 1):
+            a, b = b, (a + b) % MOD
+
+        return b
+
+# Example usage
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.nthFibonacci(1))  # Expected output: 1
+    print(solution.nthFibonacci(5))  # Expected output: 5
+```
 
   </TabItem>
   <TabItem value="C++" label="C++">
   <SolutionAuthor name="@YourUsername"/>
 
-  ```cpp
-  //{ Driver Code Starts
-  #include <bits/stdc++.h>
-  using namespace std;
+```cpp
+//{ Driver Code Starts
+#include <bits/stdc++.h>
+using namespace std;
 
-  // } Driver Code Ends
-  class Solution {
-  public:
-      // Function to find nth Fibonacci number
-      int nthFibonacci(int n) {
-          const int MOD = 1000000007;
-          if (n == 1 || n == 2) return 1;
+// } Driver Code Ends
+class Solution {
+public:
+    // Function to find nth Fibonacci number
+    int nthFibonacci(int n) {
+        const int MOD = 1000000007;
+        if (n == 1 || n == 2) return 1;
 
-          int a = 1, b = 1, c;
-          for (int i = 3; i <= n; ++i) {
-              c = (a + b) % MOD;
-              a = b;
-              b = c;
-          }
-          return b;
-      }
-  };
+        int a = 1, b = 1, c;
+        for (int i = 3; i <= n; ++i) {
+            c = (a + b) % MOD;
+            a = b;
+            b = c;
+        }
+        return b;
+    }
+};
 
-  //{ Driver Code Starts.
-  int main() {
-      int t;
-      cin >> t;
-      while (t--) {
-          int n;
-          cin >> n;
-          Solution obj;
-          cout << obj.nthFibonacci(n) << endl;
-      }
-      return 0;
-  }
-  // } Driver Code Ends
-  ```
+//{ Driver Code Starts.
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
+        Solution obj;
+        cout << obj.nthFibonacci(n) << endl;
+    }
+    return 0;
+}
+// } Driver Code Ends
+```
 
   </TabItem>
 </Tabs>
@@ -141,11 +142,11 @@ For `n = 5`:
 
 ## Time Complexity
 
-* The iterative approach has a time complexity of $O(n)$.
+- The iterative approach has a time complexity of $O(n)$.
 
 ## Space Complexity
 
-* The space complexity is $O(1)$ since we are using only a fixed amount of extra space.
+- The space complexity is $O(1)$ since we are using only a fixed amount of extra space.
 
 ## References
 
