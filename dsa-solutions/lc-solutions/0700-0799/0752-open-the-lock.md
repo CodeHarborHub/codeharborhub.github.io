@@ -443,3 +443,13 @@ class Solution:
 - **LeetCode Problem**: [Open the Lock](https://leetcode.com/problems/open-the-lock/description/)
 
 - **Solution Link**: [Open the Lock](https://leetcode.com/problems/open-the-lock/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

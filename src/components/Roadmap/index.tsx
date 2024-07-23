@@ -16,7 +16,7 @@ const techCategories: TechCategory[] = [
       { id: 1, name: "HTML", link: "/roadmap/html" },
       { id: 2, name: "CSS", link: "#" },
       { id: 3, name: "JavaScript", link: "#" },
-      { id: 4, name: "React", link: "#" },
+      { id: 4, name: "React", link: "https://roadmap.sh/react" },
       { id: 5, name: "Angular", link: "#" },
       { id: 6, name: "Vue.js", link: "#" },
       { id: 7, name: "Svelte", link: "#" },
@@ -280,6 +280,12 @@ const Roadmap: React.FC = () => {
     );
   };
 
+  const handleButtonClick = (link: string) => {
+    if(link === "https://roadmap.sh/react") {
+      window.open(link, "_blank");
+    }
+  }
+
   const filteredCategories = techCategories
     .map((category) => ({
       ...category,
@@ -313,7 +319,10 @@ const Roadmap: React.FC = () => {
             <ul className="roadmap-cards">
               {category.technologies.map((tech) => (
                 <li key={tech.id} className="roadmap-card">
-                  <a href={tech.link} className="roadmap-link">
+                  <a href={tech.link} onClick= {(e) => {
+                    e.preventDefault(); 
+                    handleButtonClick(tech.link); }}
+                    className="roadmap-link">
                     {tech.name}
                   </a>
                 </li>

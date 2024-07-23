@@ -12,7 +12,7 @@ tags:
 description: "This document provides solutions to a problem using the Fenwick Tree (Binary Indexed Tree) data structure, implemented in C++, Java, and Python."
 ---
 
-## Problem
+## Problem 
 The problem requires efficiently processing a series of queries that involve updating and retrieving maximum values within a range. The solution uses the Fenwick Tree (Binary Indexed Tree) data structure to achieve this efficiently.
 
 ## Solution

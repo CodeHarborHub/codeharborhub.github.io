@@ -290,3 +290,13 @@ class Solution:
 - **LeetCode Problem**: [Tag Validator](https://leetcode.com/problems/tag-validator/description/)
 
 - **Solution Link**: [Tag Validator](https://leetcode.com/problems/tag-validator/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

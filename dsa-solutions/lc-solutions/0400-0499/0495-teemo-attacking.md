@@ -138,3 +138,13 @@ class Solution:
 - **LeetCode Problem**: [Teemo Attacking](https://leetcode.com/problems/teemo-attacking/description/)
 
 - **Solution Link**: [Teemo Attacking](https://leetcode.com/problems/teemo-attacking/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

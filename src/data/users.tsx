@@ -43,7 +43,7 @@ export type User = {
   title: string;
   description: string;
   preview: string;
-  website: string;
+  website: string | null;
   source: string | null;
   tags: TagType[];
 };

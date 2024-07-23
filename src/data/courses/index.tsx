@@ -6,7 +6,7 @@ const courses = [
       category: "html",
       imageUrl: "/img/svg/static_website.svg",
       author: "Ajay Dhangar",
-      link: "#"
+      link: "/courses/category/HTML"
     },
     {
       id: 2,
@@ -42,7 +42,7 @@ const courses = [
       category: "angular",
       imageUrl: "/img/svg/developer_activity.svg",
       author: "Ajay Dhangar",
-      link: "/courses"
+      link: "/courses/category/angular"
     },
     // tailwind-css
     {
@@ -52,7 +52,7 @@ const courses = [
       category: "tailwind-css",
       imageUrl: "/img/svg/developer_activity.svg",
       author: "Ajay Dhangar",
-      link: "/courses"
+      link: "/courses/category/tailwind-css"
     },
 
     {
@@ -118,7 +118,7 @@ const courses = [
       category: "mongodb",
       imageUrl: "/img/svg/developer_activity.svg",
       author: "Ajay Dhangar",
-      link: "https://www.w3schools.com/mongodb/"
+      link: "/courses/category/mongodb"
     },
     {
       id: 15,
@@ -335,6 +335,24 @@ const courses = [
       "imageUrl": "/img/svg/developer_activity.svg",
       "author": "Ajay Dhangar",
       "link": "https://www.figma.com/resources/learn-design/"
+    },
+    {
+      id: 39,
+      title: "Next.Js for Beginners",
+      description: "This course is for absolute beginners who want to learn the Next.Js Framework.",
+      category: "nextjs",
+      imageUrl: "/img/svg/developer_activity.svg",
+      author: "Ajay Dhangar",
+      link: "/courses/category/nextjs"
+    },
+    {
+      "id": 40,
+      "title": "C Language",
+      "description": "This course is for absolute beginners who want to learn C Language.",
+      "category": "c-language",
+      "imageUrl": "/img/svg/developer_activity.svg",
+      "author": "Ajay Dhangar",
+      "link": "/courses/category/c-language"
     }
   ];
   
