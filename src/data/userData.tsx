@@ -139,7 +139,7 @@ export const Users: User[] = [
   {
     title: "Portfolio",
     description:
-      "used for show casing your skills certificate and also it is a one kind of your resume.",
+      "Portfolio can showcase your skills ,certificate and serve as part of your resume.",
     preview: require("./showcase/portfolio.png"),
     website: "https://kartikmehta18.github.io/myportfolio/",
     source: "hhttps://github.com/kartikmehta18/myportfolio",
