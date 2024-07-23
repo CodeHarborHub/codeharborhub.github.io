@@ -4,9 +4,7 @@
 
 Naive Bayes is a probabilistic machine learning algorithm based on Bayes' theorem, with an assumption of independence between predictors. It's particularly useful for classification tasks and is known for its simplicity and effectiveness, especially with high-dimensional datasets.
 
-<p align="center">
-  <img src= "Images/thomas bayes.webp">
-</p>
+ <img src= "Images/thomas bayes.webp" />
  
 
 ## Theory
@@ -24,9 +22,8 @@ Where:
 - $P(A)$ is the prior probability
 - $P(B)$ is the marginal likelihood
 
-<p align="center">
-  <img src= "Images/equation.webp">
-</p>
+<img src= "Images/equation.webp" />
+
 
 ### Naive Bayes Classifier
 
