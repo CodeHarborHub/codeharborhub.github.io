@@ -83,7 +83,7 @@ const config = {
       announcementBar: {
         id: "announcementBar",
         content:
-          '⭐️ If you like CodeHarborHub, give it a star on <a target="_blank" href="https://github.com/codeharborhub/codeharborhub">GitHub</a> and join us on <a target="_blank" href="https://www.linkedin.com/company/codeharborhub/">LinkedIn</a> ⭐️',
+          '🔗 Check out our latest project: <a target="_blank" href="https://www.linkedin.com/posts/ajay-dhangar_loan-calculator-activity-7221402171957768195-1WYs/?utm_source=share&utm_medium=member_desktop">Loan Calculator</a>! Like, comment, and share! 🚀',
         isCloseable: true,
         backgroundColor: "var(--ifm-color-primary)",
       },

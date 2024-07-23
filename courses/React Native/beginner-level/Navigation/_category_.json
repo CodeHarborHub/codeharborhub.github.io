@@ -1,0 +1,8 @@
+{
+    "label": "Navigation",
+    "position": 4,
+    "link": {
+      "type": "generated-index",
+      "description": "Learn Navigation in React Native."
+    }
+  }
