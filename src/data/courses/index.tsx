@@ -355,13 +355,13 @@ const courses = [
       "link": "/courses/category/c-language"
     },
     {
-      "id": 41,
-      "title": "C++ Language",
-      "description": "This course is for absolute beginners who want to learn C++ Language.",
-      "category": "cpp-language",
+      "id": 41, 
+      "title": "React Native",
+      "description": "This course is for absolute beginners who want to learn React Native.",
+      "category": "react-native",
       "imageUrl": "/img/svg/developer_activity.svg",
       "author": "Ajay Dhangar",
-      "link": "/courses/category/c-language-1"
+      "link": "/courses/category/react-native" 
     }
   ];
   
