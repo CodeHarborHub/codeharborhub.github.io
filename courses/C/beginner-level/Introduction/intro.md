@@ -4,8 +4,8 @@ title: "Introduction to C Programming"
 sidebar_label: Get Started
 sidebar_position: 1
 description: "Introduction to C Programming"
-tags: [courses,beginner-level,C,Introduction]
---- 
+tags: [courses, beginner-level, C, Introduction]
+---
 
 ## History of C
 
