@@ -24,6 +24,10 @@ At CodeHarborHub, our mission is clear: to provide accessible and comprehensive 
 - **Inspiring Showcases**: Explore inspiring showcases of real-world projects and innovative web solutions.
 - **Engaging Community**: Connect with a vibrant community of developers, share knowledge, and collaborate on projects.
 
+## Announcement:
+
+**New Project:** Loan Calculator! Check it out on [LinkedIn](https://www.linkedin.com/posts/ajay-dhangar_loan-calculator-activity-7221402171957768195-1WYs?utm_source=share&utm_medium=member_desktop) 🚀
+
 ## Discord Channel for GSSoC 2024 Contributors
 
 Now, resolve your all doubts and communicate with our all contributors.
