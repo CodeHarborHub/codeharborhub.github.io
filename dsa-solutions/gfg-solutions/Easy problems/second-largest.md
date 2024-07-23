@@ -1,14 +1,12 @@
 ---
 id: second-largest-element
-title: Second Largest Distinct Element
+title: Second Largest Element
 sidebar_label: 0012 - Second Largest Distinct Element
 tags:
   - Easy
   - Array
-  - GeeksforGeeks
-  - CPP
   - DSA
-description: "This tutorial covers the solution to the Second Largest Distinct Element problem from the GeeksforGeeks website, featuring implementations in Python and C++."
+description: "This tutorial covers the solution to the Second Largest Distinct Element problem from the GeeksforGeeks."
 ---
 
 ## Problem Description
@@ -50,7 +48,7 @@ To solve this problem, you need to find the second largest distinct element in t
 
 <Tabs>
   <TabItem value="Python" label="Python" default>
-  <SolutionAuthor name="@arunimad6yuq"/>
+  <SolutionAuthor name="@Ishitamukherjee2004"/>
 
   ```python
   class Solution:
@@ -77,7 +75,7 @@ To solve this problem, you need to find the second largest distinct element in t
 
   </TabItem>
   <TabItem value="C++" label="C++">
-  <SolutionAuthor name="@arunimad6yuq"/>
+  <SolutionAuthor name="@Ishitamukherjee2004"/>
 
   ```cpp
   //{ Driver Code Starts
@@ -125,27 +123,88 @@ To solve this problem, you need to find the second largest distinct element in t
   ```
 
   </TabItem>
+
+  <TabItem value="Javascript" label="Javascript" default>
+  <SolutionAuthor name="@Ishitamukherjee2004"/>
+
+  ```javascript
+  class Solution {
+  print2largest(arr, n) {
+    if (n < 2) return -1;
+    let first = second = -1;
+    for (let num of arr) {
+      if (num > first) {
+        second = first;
+        first = num;
+      } else if (num > second && num != first) {
+        second = num;
+      }
+    }
+    return second;
+  }
+}
+
+  ```
+
+  </TabItem>
+
+  <TabItem value="Typescript" label="Typescript" default>
+  <SolutionAuthor name="@Ishitamukherjee2004"/>
+
+  ```typescript
+  class Solution {
+  print2largest(arr: number[], n: number): number {
+    if (n < 2) return -1;
+    let first: number = second: number = -1;
+    for (let num of arr) {
+      if (num > first) {
+        second = first;
+        first = num;
+      } else if (num > second && num != first) {
+        second = num;
+      }
+    }
+    return second;
+  }
+}
+
+  ```
+
+  </TabItem>
+
+  <TabItem value="Java" label="Java" default>
+  <SolutionAuthor name="@Ishitamukherjee2004"/>
+
+  ```java
+ public class Solution {
+  public int print2largest(int[] arr, int n) {
+    if (n < 2) return -1;
+    int first = Integer.MIN_VALUE;
+    int second = Integer.MIN_VALUE;
+    for (int num : arr) {
+      if (num > first) {
+        second = first;
+        first = num;
+      } else if (num > second && num != first) {
+        second = num;
+      }
+    }
+    return second;
+  }
+}
+public class Main {
+  public static void main(String[] args) {
+    Solution solution = new Solution();
+    int[] arr = {10, 5, 10};
+    System.out.println(solution.print2largest(arr, arr.length)); // Expected output: 5
+  }
+}
+
+  ```
+
+  </TabItem>
 </Tabs>
 
-## Example Walkthrough
-
-For the array:
-
-```
-arr = [10, 5, 10]
-```
-
-1. The largest element is `10`.
-2. The second largest distinct element is `5`.
-
-For the array:
-
-```
-arr = [10, 10, 10]
-```
-
-1. The largest element is `10`.
-2. There is no second largest distinct element, so the output is `-1`.
 
 ## Solution Logic:
 
@@ -154,11 +213,6 @@ arr = [10, 10, 10]
 
 ## Time Complexity
 
-* The function visits each element once, so the time complexity is $O(N)$.
+* The function visits each element once, so the time complexity is $O(n)$, where n is the length of the array. This is because we are iterating through the array once.
 
-## Space Complexity
-
-* The auxiliary space complexity is $O(1)$.
-##References
- **gfg Problem:** [gfg Problem](https://www.geeksforgeeks.org/problems/second-largest3735/1)
-- **Solution Author:** [arunimad6yuq](https://www.geeksforgeeks.org/user/arunimad6yuq/)
+* The space complexity of the solution is $O(1)$, which means the space required does not change with the size of the input array. This is because we are using a fixed amount of space to store the variables first, second, and num.

@@ -10,11 +10,12 @@ tags: [courses,beginner-level,C,Structures,Unions,Introduction]
 
 Structures and unions are user-defined data types that allow the grouping of variables of different types. They provide a way to model complex data structures in a single unit.
 
-#### Defining and Using Structures
+### Defining and Using Structures
 
 A structure is a collection of variables, possibly of different types, grouped together under a single name.
 
 ### Flowchart for Using Structures
+
 :::note
 1. **Define a structure**: Define the structure with the required members.
 2. **Declare structure variables**: Declare variables of the structure type.
@@ -33,7 +34,7 @@ flowchart TD
 
 **Defining a Structure:**
 
-```c
+```c title="filename.c"
 #include <stdio.h>
 
 // Define a structure

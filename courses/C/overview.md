@@ -9,7 +9,7 @@ author: [CodeHarborHub, Ajay Dhangar]
 ---
  
 
-#### Beginner Level
+### Beginner Level
 
 **1. Introduction to C Programming**
    - History of C 
@@ -42,7 +42,7 @@ author: [CodeHarborHub, Ajay Dhangar]
    - Defining and using structures 
    - Introduction to unions 
 
-#### Intermediate Level
+### Intermediate Level
 
 **1. Dynamic Memory Allocation**
    - Introduction to dynamic memory allocation 
@@ -68,7 +68,7 @@ author: [CodeHarborHub, Ajay Dhangar]
    - Types of errors (syntax, runtime, logical)  
    - Error handling in file operations
 
-#### Advanced Level
+### Advanced Level
 
 **1. Data Structures**
    - Introduction to data structures 

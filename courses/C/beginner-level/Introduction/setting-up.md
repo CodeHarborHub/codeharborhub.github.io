@@ -24,14 +24,14 @@ To write and compile C programs, you need a C compiler and a text editor or an i
 1. **Writing Your First C Program**:
    - Open your text editor or IDE and write the following C program:
 
-   ```c
-   #include <stdio.h>
-
-   int main() {
-       printf("Hello, World!\n");
-       return 0;
-   }
-   ```
+      ```c title="hello.c"
+      #include <stdio.h>
+         
+      int main() {
+          printf("Hello, World!\n");
+          return 0;
+      }
+      ```
 
    - Save the file with a `.c` extension, for example, `hello.c`.
 
@@ -40,22 +40,22 @@ To write and compile C programs, you need a C compiler and a text editor or an i
    - Navigate to the directory where you saved your `hello.c` file.
    - Compile the program using the C compiler. For GCC, you can use the following command:
 
-   ```sh
-   gcc hello.c -o hello
-   ```
+      ```sh
+      gcc hello.c -o hello
+      ```
 
    - This command compiles `hello.c` and creates an executable file named `hello`.
 
 3. **Running Your C Program**:
    - After compiling, run the executable file by typing the following command in your terminal or command prompt:
 
-   ```sh
-   ./hello
-   ```
+      ```sh
+      ./hello
+      ```
 
 4. **Output**:
    - You should see the output `Hello, World!` printed on the screen.
 
-   ```
-   Hello, World!
-   ``` 
+      ```
+      Hello, World!
+      ``` 

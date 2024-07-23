@@ -1,5 +1,5 @@
 ---
-id: common-in-3-sorted-arrays
+id: common-elements-sorted-arrays
 title: Common in 3 Sorted Arrays
 sidebar_label: 0014 - Common in 3 Sorted Arrays
 tags:
@@ -11,6 +11,7 @@ tags:
   - DSA
 description: "This tutorial covers the solution to the Common in 3 Sorted Arrays problem from the GeeksforGeeks website, featuring implementations in Python and C++."
 ---
+
 ## Problem Description
 
 Given three arrays sorted in increasing order. Find the elements that are common in all three arrays. Note: Handle duplicates without using any additional data structure.
