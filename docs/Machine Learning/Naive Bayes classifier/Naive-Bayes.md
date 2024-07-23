@@ -32,13 +32,13 @@ Where:
 
 The Naive Bayes classifier extends this to classify data points into categories. It assumes that the presence of a particular feature in a class is unrelated to the presence of any other feature (the "naive" assumption).
 
-For a data point $X = (x_1, x_2, ..., x_n)$ and a class variable $C$:
+For a data point $X = (x_1, x_2, ..., x_n)$ and a class variable $$:
 
 $$ P(C|X) = \frac{P(X|C) \cdot P(C)}{P(X)} $$
 
 The classifier chooses the class with the highest posterior probability:
 
-$$ C^* = \underset{c \in C}{\operatorname{argmax}} P(X|c) \cdot P(c) $$
+$$ C^* = \underset{c \in C}{argmax} P(X|c) \cdot P(c) $$
 
 ### Mathematical Formulation
 
