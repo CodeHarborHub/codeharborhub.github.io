@@ -204,7 +204,7 @@ const config = {
           {
             to: "/blogs",
             html: '<span class="nav-emoji">📰</span> Blogs',
-          }, 
+          },
           {
             type: "dropdown",
             html: '<span class="nav-emoji">🔗</span> More',
@@ -230,7 +230,7 @@ const config = {
               {
                 label: "📺 Broadcast",
                 to: "https://codeharborhub-broadcast-web.vercel.app/",
-              },              
+              },
             ],
           },
           // {
