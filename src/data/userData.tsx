@@ -146,6 +146,18 @@ export const Users: User[] = [
     tags: ["html", "css", "javascript"],
   },
   
+  // Dictonary app
+
+  {
+   title: "Dictonary",
+   description:
+    "In this Dictonary search for words and it outputs word meaning, word pronunciation and usage example.",
+   preview: require("./showcase/Dictonary.png"),
+   website: "https://kartikmehta18.github.io/Dictonary-app/",
+   source: "https://github.com/kartikmehta18/Dictonary-app",
+   tags: ["opensource", "portfolio", "css", "javascript", "html"],
+  },
+  
   // Portfolio
   {
     title: "Portfolio",
