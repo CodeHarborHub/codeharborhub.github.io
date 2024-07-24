@@ -451,3 +451,13 @@ class Solution(object):
 - **LeetCode Problem**: [Number of Atoms](https://leetcode.com/problems/number-of-atoms/description/)
 
 - **Solution Link**: [Number of Atoms](https://leetcode.com/problems/number-of-atoms/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

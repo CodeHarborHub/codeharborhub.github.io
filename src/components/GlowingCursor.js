@@ -19,7 +19,7 @@ const CursorComponent = () => {
 
     return (
         <div className="cursor-container">
-            <div className="cursor"></div>
+            <div className="cursor" />
         </div>
     );
 };
