@@ -2,7 +2,6 @@
 
 id: copy-list-with-random-pointer
 title: Copy List With Random Pointer
-level: medium
 sidebar_label: Copy List With Random Pointer
 tags:
   - Hash Table 
@@ -43,12 +42,12 @@ Output: [[3,null],[3,0],[3,null]]
 ### Constraints:
 
 - The number of nodes in the list is in the range [0, 1000].
-- -10000 <= Node.val <= 10000
-- Node.random is null or is pointing to a node in the linked list.
+- `-10000 <= Node.val <= 10000`
+- Node.random is null or is pointing to some node in the linked list.
 
 ---
 
-## Approach to Solve the Copy List with Random Pointer Problem
+##  Approach to Solve the Copy List with Random Pointer Problem
 
 To create a deep copy of a linked list with an additional random pointer, follow these steps:
 
