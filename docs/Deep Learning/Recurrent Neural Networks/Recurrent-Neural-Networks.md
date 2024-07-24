@@ -47,10 +47,12 @@ Many-to-Many architecture can also be represented in models where input and outp
 The basic RNN can be described by the following equations:
 
 1. Hidden state update:
-   $$ h_t = f(W_{hh}h_{t-1} + W_{xh}x_t + b_h) $$
 
-2. Output calculation:
-   $$ y_t = g(W_{hy}h_t + b_y) $$
+   $$h_t = f(W_{hh}h_{t-1} + W_{xh}x_t + b_h)$$
+
+3. Output calculation:
+
+   $$y_t = g(W_{hy}h_t + b_y)$$
 
 Where:
 - $h_t$ is the hidden state at time $t$
@@ -66,7 +68,7 @@ Where:
 
 RNNs are trained using Backpropagation Through Time (BPTT), an extension of the standard backpropagation algorithm. The loss is calculated at each time step and propagated backwards through the network:
 
-$$ \frac{\partial L}{\partial W} = \sum_{t=1}^T \frac{\partial L_t}{\partial W} $$
+$$\frac{\partial L}{\partial W} = \sum_{t=1}^T \frac{\partial L_t}{\partial W}$$
 
 Where $L$ is the total loss and $L_t$ is the loss at time step $t$.
 
@@ -77,12 +79,15 @@ Where $L$ is the total loss and $L_t$ is the loss at time step $t$.
 
 LSTMs address the vanishing gradient problem in standard RNNs by introducing a memory cell and gating mechanisms. The LSTM architecture contains three gates and a memory cell:
 
-$$ f_t = \sigma(W_f \cdot [h_{t-1}, x_t] + b_f) $$
-$$ i_t = \sigma(W_i \cdot [h_{t-1}, x_t] + b_i) $$
-$$ \tilde{C}_t = \tanh(W_C \cdot [h_{t-1}, x_t] + b_C) $$
-$$ C_t = f_t * C_{t-1} + i_t * \tilde{C}_t $$
-$$ o_t = \sigma(W_o \cdot [h_{t-1}, x_t] + b_o) $$
-$$ h_t = o_t * \tanh(C_t) $$
+$$f_t = \sigma(W_f \cdot [h_{t-1}, x_t] + b_f)$$
+
+$$i_t = \sigma(W_i \cdot [h_{t-1}, x_t] + b_i)$$
+
+$$C_t = f_t * C_{t-1} + i_t * \tilde{C}_t$$
+
+$$o_t = \sigma(W_o \cdot [h_{t-1}, x_t] + b_o)$$
+
+$$h_t = o_t * \tanh(C_t)$$
 
 Where:
 - $f_t$, $i_t$, and $o_t$ are the forget, input, and output gates respectively
@@ -110,8 +115,6 @@ Where:
      - $i_t$: Decides which values we'll update.
      - $\tilde{C}_t$: Creates a vector of new candidate values that could be added to the state.
     - This is how as Input gate look like:
-
-
      ![alt text](<images/input gate.webp>)
 
 3. **Cell State Update**:
