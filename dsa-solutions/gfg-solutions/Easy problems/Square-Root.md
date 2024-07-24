@@ -1,11 +1,16 @@
 ---
 id: square-root
 title: Square Root
-sidebar_label: Square-Root
+sidebar_label: 9 Square Root
 tags:
 - Math
 - Binary Search
-description: "This document provides solutions to the problem of finding the Square Root of an integer."
+- Python
+- Java
+- C++
+- JavaScript
+- TypeScript
+description: "This document provides solutions to the problem of finding the square root of a given integer using various programming languages."
 ---
 
 ## Problem
@@ -38,7 +43,7 @@ You don't need to read input or print anything. The task is to complete the func
 **Expected Auxiliary Space:** $O(1)$
 
 **Constraints**
-- `1 ≤ x ≤ 10^7`
+- $1 ≤ x ≤ 10^7$
 
 ## Solution
 
@@ -186,3 +191,10 @@ The provided solutions efficiently find the floor value of the square root of a 
 
 **Time Complexity:** $O(log N)$
 **Auxiliary Space:** $O(1)$
+
+---
+
+## References
+
+- **GeeksforGeeks Problem:** [Square root](https://www.geeksforgeeks.org/problems/square-root/0)
+- **Author GeeksforGeeks Profile:** [GeeksforGeeks](https://www.geeksforgeeks.org/user/GeeksforGeeks/)
