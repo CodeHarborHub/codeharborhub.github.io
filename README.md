@@ -24,10 +24,6 @@ At CodeHarborHub, our mission is clear: to provide accessible and comprehensive 
 - **Inspiring Showcases**: Explore inspiring showcases of real-world projects and innovative web solutions.
 - **Engaging Community**: Connect with a vibrant community of developers, share knowledge, and collaborate on projects.
 
-## Announcement:
-
-**New Project:** Loan Calculator! Check it out on [LinkedIn](https://www.linkedin.com/posts/ajay-dhangar_loan-calculator-activity-7221402171957768195-1WYs?utm_source=share&utm_medium=member_desktop) 🚀
-
 ## Discord Channel for GSSoC 2024 Contributors
 
 Now, resolve your all doubts and communicate with our all contributors.
@@ -105,13 +101,8 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contributors
 
-<!--
-[![Contributors](https://contributors-img.web.app/image?repo=codeharborhub/codeharborhub)](https://github.com/CodeHarborHub/codeharborhub/graphs/contributors)
--->
-
-![Contributors](https://opencollective.com/codeharborhub/contributors.svg?button=false&avatarHeight=50&width=1000)
+![Contributors](https://opencollective.com/codeharborhub/contributors.svg?button=false&avatarHeight=40&width=1000)
 
 ## Chat with us
 
 [![Chat with us](https://github.com/CodeHarborHub/codeharborhub/assets/99037494/e898e0e8-7985-4adb-9730-a2588fcba78e)](https://www.patreon.com/ajay_dhangar/membership)
-
