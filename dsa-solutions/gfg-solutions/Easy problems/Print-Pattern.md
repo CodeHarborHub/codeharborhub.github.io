@@ -1,14 +1,14 @@
 ---
-id: nth-fibonacci-number
-title: Nth Fibonacci Number
-sidebar_label: Nth Fibonacci Number
+id: print-pattern
+title: Print Pattern
+sidebar_label: Print-Pattern
 tags:
   - Recursion
   - Algorithms
-description: "This tutorial covers the solution to the Nth Fibonacci Number problem from the GeeksforGeeks."
+description: "This tutorial covers the solution to the Print Pattern problem from the GeeksforGeeks."
 ---
 ## Problem Description
-Print a sequence of numbers starting with nn, without using a loop. Replace `nn` with `n−5n - 5n−5` until `n≤0n` `\leq 0n≤0`. Then, replace n with `n+5n + 5n+5` until nn regains its initial value. Complete the function pattern(n) which takes n as input and returns a list containing the pattern.
+Print a sequence of numbers starting with nn, without using a loop. Replace `nn` with `n−5n - 5n−5` until `n≤0n` `\leq 0n≤0`. Then, replace n with `n+5n + 5n+5` until `nn` regains its initial value. Complete the function pattern(n) which takes n as input and returns a list containing the pattern.
 
 ## Examples
 
