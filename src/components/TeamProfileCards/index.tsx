@@ -112,24 +112,6 @@ export function ActiveTeamRow(): JSX.Element {
           }
         </Translate>
       </TeamProfileCardCol>
-      <TeamProfileCardCol
-        name="MOHD ARIF"
-        githubUrl="https://github.com/mrmohdarif"
-        linkedInUrl="https://www.linkedin.com/in/mohd-arif-115b87231/"
-      >
-        <Translate
-          id="team.profile.Sebastien Lorber.body"
-          values={{
-            compony: <CompanyLink to="https://www.linkedin.com/company/techneutron/" />,
-            portfolio: <Link to="https://mrmohdarif.github.io/portfolio/">Portfolio</Link>,
-          }}
-        >
-          {
-            "Lead Developer at CodeHarborHub, we are passionate about contributing to open source. Currently working at {compony} and  Explore {portfolio}."
-          }
-        </Translate>
-      </TeamProfileCardCol>
-
       {/* other team members */}
     </div>
   );
