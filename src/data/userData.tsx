@@ -145,7 +145,30 @@ export const Users: User[] = [
       "https://github.com/dhairyagothi/50_days_50_web_project/tree/Main/public/TO_DO_LIST",
     tags: ["html", "css", "javascript"],
   },
+  
+  // Dictonary app
 
+  {
+   title: "Dictonary",
+   description:
+    "In this Dictonary search for words and it outputs word meaning, word pronunciation and usage example.",
+   preview: require("./showcase/Dictonary.png"),
+   website: "https://kartikmehta18.github.io/Dictonary-app/",
+   source: "https://github.com/kartikmehta18/Dictonary-app",
+   tags: ["opensource", "portfolio", "css", "javascript", "html"],
+  },
+  
+  // Portfolio
+  {
+    title: "Portfolio",
+    description:
+      "Portfolio can showcase your skills ,certificate and serve as part of your resume.",
+    preview: require("./showcase/portfolio.png"),
+    website: "https://kartikmehta18.github.io/myportfolio/",
+    source: "hhttps://github.com/kartikmehta18/myportfolio",
+    tags: ["opensource", "portfolio", "css", "javascript", "html"],
+  },
+  
   // Currency Converter Clone
 
   {

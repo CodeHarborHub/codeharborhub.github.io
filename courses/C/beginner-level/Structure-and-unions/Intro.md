@@ -4,24 +4,24 @@ title: "Structures and Unions in C"
 sidebar_label: Structures and Unions
 sidebar_position: 1
 description: "Learn Structures and Unions in C"
-tags: [courses,beginner-level,C,Structures,Unions,Introduction]
----  
-
+tags: [courses, beginner-level, C, Structures, Unions, Introduction]
+---
 
 Structures and unions are user-defined data types that allow the grouping of variables of different types. They provide a way to model complex data structures in a single unit.
 
-#### Defining and Using Structures
+### Defining and Using Structures
 
 A structure is a collection of variables, possibly of different types, grouped together under a single name.
 
 ### Flowchart for Using Structures
+
 :::note
+
 1. **Define a structure**: Define the structure with the required members.
 2. **Declare structure variables**: Declare variables of the structure type.
 3. **Assign values to structure members**: Use the dot operator to assign values.
 4. **Access and use structure members**: Access values using the dot operator.
-:::
-
+   :::
 
 ```mermaid
 flowchart TD
@@ -30,10 +30,9 @@ flowchart TD
     C --> D[Access and use structure members]
 ```
 
-
 **Defining a Structure:**
 
-```c
+```c title="filename.c"
 #include <stdio.h>
 
 // Define a structure
@@ -169,7 +168,6 @@ Birthdate: 15-05-1990
 Salary: 55000.50
 ```
 
-
 #### Example : Using Structures
 
 ```c
@@ -199,7 +197,6 @@ int main() {
     return 0;
 }
 ```
- 
 
 **Output:**
 
