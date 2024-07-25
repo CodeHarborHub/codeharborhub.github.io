@@ -1,0 +1,8 @@
+{
+    "label": "Beginner Level",
+    "position": 2,
+    "link": {
+      "type": "generated-index",
+      "description": "Learn Beginner Concepts of Ruby."
+    }
+  }
