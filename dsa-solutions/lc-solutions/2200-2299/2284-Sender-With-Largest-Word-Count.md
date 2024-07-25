@@ -303,7 +303,7 @@ def largest_word_count(messages, senders):
     <Tabs>
       <TabItem value="c++" label="C++">
         <LiteYouTubeEmbed
-          id="https://youtu.be/aH2bWWV_KVk?si=TKIN3grMJsQy8Ujw"
+          id="aH2bWWV_KVk?si=TKIN3grMJsQy8Ujw"
           params="autoplay=1&autohide=1&showinfo=0&rel=0"
           title="Problem Explanation | Solution | Approach"
           poster="maxresdefault"
@@ -312,7 +312,7 @@ def largest_word_count(messages, senders):
       </TabItem>
       <TabItem value="java" label="Java">
         <LiteYouTubeEmbed
-          id="https://youtu.be/GYZNCUVQOJo?si=skYtdNag51nGkKjs"
+          id="GYZNCUVQOJo?si=skYtdNag51nGkKjs"
           params="autoplay=1&autohide=1&showinfo=0&rel=0"
           title="Problem Explanation | Solution | Approach"
           poster="maxresdefault"
@@ -321,7 +321,7 @@ def largest_word_count(messages, senders):
       </TabItem>
       <TabItem value="python" label="Python">
         <LiteYouTubeEmbed
-          id="https://youtu.be/h5-nuBDpHjI?si=RTRLPTqsLUcyB-yL"
+          id="h5-nuBDpHjI?si=RTRLPTqsLUcyB-yL"
           params="autoplay=1&autohide=1&showinfo=0&rel=0"
           title="Problem Explanation | Solution | Approach"
           poster="maxresdefault"
