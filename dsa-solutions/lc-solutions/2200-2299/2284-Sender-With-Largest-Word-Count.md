@@ -292,8 +292,7 @@ def largest_word_count(messages, senders):
 
 - This approach is efficient and straightforward.
 
-</tabItem>
-</Tabs>
+
 
 
 ## Video Explanation of Given Problem
