@@ -3,7 +3,7 @@ id: Sender-With-Largest-Word-Count
 title: Sender With Largest Word Count
 sidebar_label: 2284-Sender With Largest Word Count
 tags: 
-  - Arrays
+  - Strings
   - Brute Force
   - Optimized approach
   - LeetCode
