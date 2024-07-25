@@ -2,7 +2,7 @@
 id: search-insert-position
 title: Search Insert Position
 difficulty: Easy
-sidebar_label: 0038-SearchInsertPosition
+sidebar_label: 0035-SearchInsertPosition
 tags:
   - Array
   - Binary Search

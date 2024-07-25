@@ -806,8 +806,12 @@ The key idea is to use binary search to partition the smaller array in such a wa
 
 :::
 
+---
 
-## References
+<h2>Authors:</h2>
 
-- [LeetCode Problem](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)
-- [GeeksforGeeks Article](https://www.geeksforgeeks.org/median-of-two-sorted-arrays/)
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['ajay-dhangar'].map(username => (
+    <Author key={username} username={username} />
+))}
+</div>

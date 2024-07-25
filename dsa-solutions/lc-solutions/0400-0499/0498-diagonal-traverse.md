@@ -553,3 +553,13 @@ class Solution:
 - **LeetCode Problem**: [Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse/description/)
 
 - **Solution Link**: [Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

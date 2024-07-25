@@ -1,5 +1,5 @@
 ---
-id: Reverse Integer
+id: reverse-integer
 title: Reverse Integer(LeetCode)
 sidebar_label: 0007-Reverse Integer
 tags: 

@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import styled from 'styled-components';
 
-// Styled Components
+// Styled components for styling the CookiePolicy component
 const CookiePolicyContainer = styled.div`
   width: 50%;
   display: block;
@@ -47,7 +47,7 @@ const Content = styled.div`
   margin-bottom: 20px;
 `;
 
-// Reusable Components
+// Reusable functional component for each section with a title
 const Section = ({ title, children }) => (
   <section>
     <SubTitle>{title}</SubTitle>
@@ -55,7 +55,7 @@ const Section = ({ title, children }) => (
   </section>
 );
 
-// Reusable Components
+// Reusable functional component for list items in sections
 const ListItem = ({ title, description }) => (
   <StyledLi>
     <strong>{title}</strong>
@@ -63,26 +63,23 @@ const ListItem = ({ title, description }) => (
   </StyledLi>
 );
 
-// Separate Sections as Components
+// Separate section components for organizing content
 const LastUpdated = () => (
   <p><strong>Last Updated:</strong> 23rd May 2024</p>
 );
 
-// Separate Sections as Components
 const Mission = () => (
   <Section title="Our Mission">
     <p>Welcome to CodeHarborHub. Our mission is to provide accessible and comprehensive educational resources to learners of all levels. This Cookie Policy explains how we use cookies on our website.</p>
   </Section>
 );
 
-// Separate Sections as Components
 const WhatAreCookies = () => (
   <Section title="What Are Cookies?">
     <p>Cookies are small text files stored on your device when you visit a website. They help the site to remember your preferences and activities over time.</p>
   </Section>
 );
 
-// Separate Sections as Components
 const HowWeUseCookies = () => (
   <Section title="How We Use Cookies">
     <p>We use cookies to:</p>
@@ -94,7 +91,6 @@ const HowWeUseCookies = () => (
   </Section>
 );
 
-// Separate Sections as Components
 const TypesOfCookies = () => (
   <Section title="Types of Cookies We Use">
     <StyledOl>
@@ -118,28 +114,24 @@ const TypesOfCookies = () => (
   </Section>
 );
 
-// Separate Sections as Components
 const ManagingCookies = () => (
   <Section title="Managing Cookies">
     <p>You can manage or disable cookies through your browser settings. For more information on how to do this, visit your browser’s help section.</p>
   </Section>
 );
 
-// Separate Sections as Components
 const ThirdPartyCookies = () => (
   <Section title="Third-Party Cookies">
     <p>We may use third-party cookies for various purposes such as analytics and advertising. These cookies are governed by the privacy policies of the respective third parties.</p>
   </Section>
 );
 
-// Separate Sections as Components
 const CookiePolicyUpdates = () => (
   <Section title="Cookie Policy Updates">
     <p>We may update this Cookie Policy from time to time. We will notify you of any significant changes by posting the new policy on our website and updating the date at the top of this page.</p>
   </Section>
 );
 
-// Separate Sections as Components
 const ContactUs = () => (
   <Section title="Contact Us">
     <p>If you have any questions or concerns about our Cookie Policy, please contact us at:</p>
@@ -147,7 +139,7 @@ const ContactUs = () => (
   </Section>
 );
 
-// Cookie Policy Component
+// Main CookiePolicy component combining all sections and content
 const CookiePolicy = () => (
   <Layout>
     <CookiePolicyContainer>

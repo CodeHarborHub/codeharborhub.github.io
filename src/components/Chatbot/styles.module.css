@@ -1,0 +1,220 @@
+
+.bpw-layout-left {
+  width: 400px !important;
+  height: 70vh;
+  border-radius: 10px;
+  left: 10px;
+  bottom: 5px;
+  border: 1px solid transparent;
+  position: fixed !important;
+  z-index: 9999;
+}
+
+.bpw-from-bot > div,
+#input-message {
+  direction: ltr;
+}
+
+.bpw-new-messages-indicator {
+  background-color: #f5f5f51e;
+}
+
+.bpw-header-container {
+  margin: 10px;
+  background: var(--ifm-color-primary);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  border: 1px;
+}
+
+.bpw-header-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.bpw-typing-bubble {
+  background: #00000050;
+}
+
+.bpw-chat-bubble-content {
+  border-radius: 3px;
+  border: 1px transparent;
+}
+
+.bpw-date-container,
+.bpw-header-name,
+.bpw-header-subtitle {
+  color: #ffffff3e;
+}
+
+.bpw-layout {
+  width: 400px !important;
+  height: 70vh;
+  border-radius: 10px;
+  right: 10px;
+  bottom: 5px;
+  border: 1px;
+}
+
+@media (max-width: 450px) {
+  .bpw-layout-left {
+    width: 100% !important;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 0;
+  }
+}
+
+.bpw-header-icon,
+.bpw-header-icon svg,
+.bpw-header-icon svg path {
+  fill: #ffffff !important;
+}
+
+#input-message::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.bpw-composer textarea {
+  outline: none !important;
+  border: 1px solid black;
+}
+
+.bpw-composer textarea:focus {
+  outline: none !important;
+  border: 1px solid black;
+}
+
+.bpw-keyboard-single-choice {
+  background-color: #ffffff33;
+  border: none;
+}
+
+.bpw-button,
+.bpw-button-alt {
+  background-color: var(--ifm-color-primary);
+  color: #000000;
+  border-radius: 10px;
+  border: none;
+}
+
+.bpw-button:hover,
+.bpw-button-alt:hover {
+  background-color: #f5f5f55c;
+}
+
+.bpw-chat-container {
+  background-color: #ffffff3e;
+  scrollbar-width: thin;
+  scrollbar-color: #f5f5f5 #ffffff;
+  border: none;
+}
+
+.bpw-from-bot .bpw-chat-bubble .bpw-chat-bubble-content {
+  background-color: #f5f5f537;
+  color: #000000;
+}
+
+.bpw-from-user .bpw-chat-bubble .bpw-chat-bubble-content {
+  background-color: #00bfa6;
+  color: #ffffff;
+}
+
+.bpw-composer {
+  background-color: #ffffff45;
+  border-top: none;
+}
+
+.bpw-chat-container::-webkit-scrollbar,
+.bpw-chat-container::-moz-scrollbar {
+  width: 10px;
+  background-color: #ffffff42;
+  border: none;
+}
+
+::-webkit-scrollbar-track,
+.bpw-chat-container::-webkit-scrollbar-track,
+.bpw-chat-container::-moz-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb,
+.bpw-chat-container::-webkit-scrollbar-thumb,
+.bpw-chat-container::-moz-scrollbar-thumb {
+  background-color: #ffffff30;
+  border-radius: 1rem;
+  border: 0.5rem solid transparent;
+}
+
+.bpw-bot-avatar img,
+.bpw-bot-avatar svg {
+  border: 3px solid #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  border: 0.5rem solid transparent;
+}
+
+.bpw-floating-button i svg path {
+  fill: var(--ifm-color-primary);
+}
+
+.bpw-powered {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.bpw-powered a {
+  color: rgba(82, 82, 163, 0.777);
+  text-decoration: underline;
+}
+
+.bpw-powered a:hover {
+  text-decoration: underline;
+}
+
+.bpw-send-button {
+  background: var(--ifm-color-primary);
+}
+
+.bpw-send-button:hover {
+  background: #00bfa6b5;
+}
+
+.bpw-widget-btn {
+  border-radius: 50%;
+  background: var(--ifm-color-primary);
+}
+
+.bpw-floating-button::before {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='white' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z' /%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: undefinedpx !important;
+  width: undefinedpx !important;
+}
+
+.bpw-floating-button {
+  box-shadow: none !important;
+}
+
+.bpw-floating-button:hover {
+  background-color: var(--ifm-color-primary);
+  box-shadow: none !important;
+}

@@ -1,0 +1,12 @@
+contact_links:
+  - name: CodeHarborHub Q&A
+    url: https://codeharborhub.github.io/community/supports#-how-to-get-support
+    about: Get help from the community with any questions or issues.
+
+  - name: CodeHarborHub Features
+    url: https://codeharborhub.github.io/community/features
+    about: Explore the features and capabilities of CodeHarborHub.
+
+  - name: Meet the Founder or Owner
+    url: https://codeharborhub.github.io/me/
+    about: Learn more about the founder and owner of CodeHarborHub.

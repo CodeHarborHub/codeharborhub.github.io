@@ -1,6 +1,8 @@
 import { User } from "./users";
 
 export const Users: User[] = [
+  // Youtube Clone
+
   {
     title: "You Tube Clone",
     description:
@@ -10,6 +12,9 @@ export const Users: User[] = [
     source: "https://github.com/Ajay-Dhangar/youtube_clone",
     tags: ["opensource", "clone", "favorite", "react"],
   },
+
+  //  Quiz App
+
   {
     title: "Quiz App",
     description:
@@ -19,6 +24,9 @@ export const Users: User[] = [
     source: "https://github.com/Ajay-Dhangar/Quiz-app",
     tags: ["opensource", "clone", "templates"],
   },
+
+  //  Music App Clone
+
   {
     title: "Music App",
     description:
@@ -28,15 +36,21 @@ export const Users: User[] = [
     source: "https://github.com/Ajay-Dhangar/music-app",
     tags: ["opensource", "clone", "templates"],
   },
+
+  // Tailwind Blog Clone
+
   {
     title: "TailwindBlog",
     description:
       "The Starter app is a feature-rich Next.js and Tailwind CSS blogging starter template.",
     preview: require("./showcase/TailwindBlog.jpg"),
-    website: "https://starter-aj-zero-coding.vercel.app/",
+    website: null,
     source: "https://github.com/Ajay-Dhangar/starter",
-    tags: ["opensource", "clone", "templates"],
+    tags: ["opensource", "clone", "templates", "documentation"],
   },
+
+  // Restaurant Clone
+
   {
     title: "GERIGHT",
     description:
@@ -46,6 +60,9 @@ export const Users: User[] = [
     source: "https://github.com/Ajay-Dhangar/gericht-restaurant-modern-ui",
     tags: ["opensource", "templates", "clone"],
   },
+
+  // Tic Tac Toe Game
+
   {
     title: "Tic Tac Toe Game",
     description:
@@ -55,24 +72,33 @@ export const Users: User[] = [
     source: "https://github.com/Ajay-Dhangar/react-tic-tac-toe",
     tags: ["opensource", "game", "react"],
   },
+
+  // Broadcast Web Clone
+
   {
     title: "Broadcast Web",
     description:
       "Broadcast Web is a modern and responsive web application for broadcasting your own channel.",
     preview: require("./showcase/broadcast-web.jpg"),
     website: "https://codeharborhub-broadcast-web.vercel.app/",
-    source: "",
+    source: null,
     tags: ["opensource", "product", "nextjs", "javascript"],
   },
+
+  //  Scientific Calculator Clone
+
   {
     title: "Scientific Calculator",
     description:
       "Build and Deploy a Modern and Beginner-friendly Scientific Calculator using HTML, CSS and Vanilla Javascript",
-    preview: require("./showcase/calculator-app.png"),
+    preview: require("./showcase/calculator-app-ss.png"),
     website: "https://calcu-plus.vercel.app/",
     source: "https://github.com/ParnaRoyChowdhury777/Calculator---CalcuPlus",
     tags: ["opensource", "clone", "html", "css", "vanilla"],
   },
+
+  // Random Meme Generator Clone
+
   {
     title: "Random Meme Generator",
     description:
@@ -82,15 +108,32 @@ export const Users: User[] = [
     source: "https://github.com/komal-agarwal5/Giggle-Hub------Meme-Generator",
     tags: ["opensource", "product", "html", "css", "javascript"],
   },
+    // URL Shortner
+
+    {
+      title: "URL Shortner",
+      description:
+        "It  Short  URL by using the technique of API Fetching and also supports the feature of copy url.",
+      preview: require("./showcase/URLShortner.png"),
+      website: "https://url-shortner-tau-woad.vercel.app/",
+      source: "https://github.com/kartikmehta18/URLshortner",
+      tags: ["opensource", "product", "html", "css", "javascript"],
+    },
+
+  // Age Calculator Clone
+
   {
     title: "Age Calculator",
     description:
       "It calculates the exact age in years, months and days on entering a date of birth with proper error handling.",
-    preview: require("./showcase/age-calculator.png"),
+    preview: require("./showcase/age-calculator-ss.png"),
     website: "https://age-calculator-rho-two.vercel.app/",
     source: "https://github.com/ParnaRoyChowdhury777/Age-Calculator",
     tags: ["opensource", "product", "react", "css", "javascript"],
   },
+
+  // To Do List App Clone
+
   {
     title: "To Do List App",
     description:
@@ -102,6 +145,32 @@ export const Users: User[] = [
       "https://github.com/dhairyagothi/50_days_50_web_project/tree/Main/public/TO_DO_LIST",
     tags: ["html", "css", "javascript"],
   },
+  
+  // Dictonary app
+
+  {
+   title: "Dictonary",
+   description:
+    "In this Dictonary search for words and it outputs word meaning, word pronunciation and usage example.",
+   preview: require("./showcase/Dictonary.png"),
+   website: "https://kartikmehta18.github.io/Dictonary-app/",
+   source: "https://github.com/kartikmehta18/Dictonary-app",
+   tags: ["opensource", "portfolio", "css", "javascript", "html"],
+  },
+  
+  // Portfolio
+  {
+    title: "Portfolio",
+    description:
+      "Portfolio can showcase your skills ,certificate and serve as part of your resume.",
+    preview: require("./showcase/portfolio.png"),
+    website: "https://kartikmehta18.github.io/myportfolio/",
+    source: "hhttps://github.com/kartikmehta18/myportfolio",
+    tags: ["opensource", "portfolio", "css", "javascript", "html"],
+  },
+  
+  // Currency Converter Clone
+
   {
     title: "Currency Converter",
     description:
@@ -111,23 +180,32 @@ export const Users: User[] = [
     source: "https://github.com/komal-agarwal5/CoinShift-Currency-Converter",
     tags: ["opensource", "product", "react", "css", "javascript"],
   },
+
+  // Guess The Number Game Clone
+
   {
     title: "Guess The Number Game",
     description:
       "It allows users to play the Guess The Number Game based on the choice of Easy(3 rounds), Intermediate(5 rounds) and Hard(7 rounds).",
-    preview: require("./showcase/guessnumber.png"),
+    preview: require("./showcase/guessnumber-ss.png"),
     website: "https://guess-me-tau.vercel.app/",
     source: "https://github.com/ParnaRoyChowdhury777/Guess_The_Number_Game",
     tags: ["opensource", "product", "html", "css", "javascript", "vanilla"],
   },
+
+  // QR Generator Clone
+
   {
     title: "QR Generator",
     description: "It generates a QR code based on a typed text or URL.",
-    preview: require("./showcase/qr_generator.png"),
+    preview: require("./showcase/qr_generator-ss.png"),
     website: "https://scan--me.vercel.app/",
     source: "https://github.com/ParnaRoyChowdhury777/ScanMe",
     tags: ["opensource", "product", "html", "css", "javascript", "vanilla"],
   },
+
+  // captcha code generator
+
   {
     title: "Captcha-Code Generator",
     description:
@@ -138,6 +216,9 @@ export const Users: User[] = [
       "https://github.com/dhairyagothi/50_days_50_web_project/tree/Main/public/captcha",
     tags: ["html", "css", "javascript"],
   },
+
+  // Algo: Algorithm Learning Platform
+
   {
     title: "Algo",
     description:
@@ -145,6 +226,153 @@ export const Users: User[] = [
     preview: require("./showcase/algo.jpg"),
     website: "https://ajay-dhangar.github.io/algo/",
     source: "https://github.com/Ajay-Dhangar/algo",
-    tags: ["opensource", "react", "typescript", "templates", "favorite"],
+    tags: [
+      "opensource",
+      "react",
+      "typescript",
+      "templates",
+      "favorite",
+      "documentation",
+      "mdx",
+    ],
   },
+
+  // CodeMasterMind: Web Development Learning Platform
+
+  {
+    title: "CodeMasterMind",
+    description:
+      "CodeMasterMind is a modern and responsive web application for learning and practicing Web Development.",
+    preview: require("./showcase/cmhq.jpg"),
+    website: "https://cmhq.tech/",
+    source: "https://github.com/Ajay-Dhangar/CodeMastermindHQ",
+    tags: ["opensource", "react", "typescript", "documentation", "mdx"],
+  },
+
+  // Personal Portfolio Website
+
+  {
+    title: "Portfolio Website",
+    description:
+      "A modern and responsive web application for showcasing my portfolio. And also with adsense integration.",
+    preview: require("./showcase/ajay-portfolio.jpg"),
+    website: "https://ajay-dhangar.github.io/",
+    source: "https://github.com/Ajay-Dhangar/ajay-dhangar.github.io",
+    tags: ["opensource", "portfolio", "react", "typescript", "mdx"],
+  },
+
+  // BMI Calculator
+
+  {
+    title: "BMI Calculator",
+    description:
+      "A BMI Calculator is a tool that quickly determines body mass index from a person's weight and height,  categorizing results into underweight, normal weight, overweight .",
+    preview: require("./showcase/BMI-calculator.png"),
+    website: "https://bmi-calculator-liart-five.vercel.app",
+    source: "https://github.com/parikhitritgithub/BMI-Calculator",
+    tags: ["opensource", "javascript", "html", "css"],
+  },
+
+  // Gemini AI Chatbot
+
+  {
+    title: "Gemini AI Chabot",
+    description:
+      "The Gemini AI Chatbot is a modern chatbot that can help you with your queries.",
+    preview: require("./showcase/gemini-ai-chatbot.png"),
+    website: "https://code-harbor-hub-gemini-ai-chatbot.vercel.app/",
+    source: "https://github.com/Ajay-Dhangar/gemini-ai-chatbot",
+    tags: ["opensource", "nextjs", "typescript", "ai", "favorite"],
+  },
+
+  {
+    title: "Movie Recommendation App",
+    description:
+      "A movie recommendation app that suggests movies based on the keywords searched by the user.",
+    preview: require("./showcase/movie_recommender.png"),
+    website: "https://movie-recommender-phi.vercel.app/",
+    source: "https://github.com/ParnaRoyChowdhury777/movie_recommender",
+    tags: ["opensource", "react", "javascript", "product", "css"],
+  },
+
+  // FlappyBird Game
+
+  {
+    title: "Flappy Bird Game",
+    description:
+      "Flappy Bird Game using HTML, CSS and JavaScript. Play the game and enjoy the fun.",
+    preview: require("./showcase/flappy_game.png"),
+    website:
+      "https://50-days-50-web-project.vercel.app/Flappy-bird-main/index.html",
+    source:
+      "https://github.com/dhairyagothi/50_days_50_web_project/tree/Main/public/Flappy-bird-main",
+    tags: ["opensource", "html", "css", "javascript", "game"],
+  },
+
+  // To Do List App
+
+  {
+    title: "To Do List",
+    description:
+      "A simple To-Do List App using HTML CSS JS with Local Storage. Add your tasks and manage them easily.",
+    preview: require("./showcase/todo-list.png"),
+    website:
+      "https://ajay-dhangar.github.io/to-do-list/",
+    source:
+      "https://github.com/Ajay-Dhangar/to-do-list",
+    tags: ["opensource", "html", "css", "javascript"],
+  },
+
+  // Zacson GYM Template
+
+  {
+    title: "Zacson",
+    description:
+      "Zacson is a modern and responsive web application for GYM and Fitness.",
+    preview: require("./showcase/zacson.jpg"),
+    website:
+      "https://ajay-dhangar.github.io/zacson/",
+    source:
+      "https://github.com/Ajay-Dhangar/zacson",
+    tags: ["opensource", "html", "css", "javascript", "gym", "templates", "scss", "php"],
+  },
+
+  // Activitar GYM Template
+
+  {
+    title: "Activitar",
+    description:
+      "Activitar is a modern and responsive web application designed for GYM and Fitness.",
+    preview: require("./showcase/activitar.png"),
+    website:
+      "https://ajay-dhangar.github.io/activitar",
+    source:
+      "https://github.com/Ajay-Dhangar/activitar",
+    tags: ["opensource", "html", "css", "javascript", "gym", "templates", "scss"],
+  },
+
+    // Othello Game
+
+    {
+      title: "Othello Game",
+      description:
+        "Othello Game using HTML, CSS and JavaScript. Play the game and enjoy the fun.",
+      preview: require("./showcase/Othello.png"),
+      website:
+        "https://asmitamishra24.github.io/Othello/index.html",
+      source:
+        "https://github.com/AsmitaMishra24/Othello",
+      tags: ["opensource", "html", "css", "javascript", "game"],
+    },
+
+    // horse ride booking system
+
+    {
+      title: "Horse Ride Booking",
+      description: "Front-end development for a horse ride booking system using React.js, redux, and montion animation.",
+      preview: require("./showcase/horse-ride-booking.jpg"),
+      website: "https://horse-ride-booking.vercel.app/",
+      source: null,
+      tags: ["opensource", "react", "redux", "motion", "javascript"],
+    }
 ];

@@ -1,0 +1,27 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
+version: 2
+updates:
+  - package-ecosystem: "npm" # Using npm for Docusaurus
+    directory: "/"
+    schedule:
+      interval: "daily" # Changed to daily from weekly
+    # open-pull-requests-limit: 0 # Disable version updates for npm dependencies
+    labels:
+      - 'pr: dependencies'
+
+  - package-ecosystem: "github-actions"
+    directory: "/" 
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 99
+    labels:
+      - 'pr: dependencies'
+
+  - package-ecosystem: "docker"
+    directory: "/" 
+    schedule:
+      interval: "weekly"

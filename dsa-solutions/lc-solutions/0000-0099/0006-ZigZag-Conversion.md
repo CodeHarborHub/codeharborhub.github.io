@@ -1,5 +1,5 @@
 ---
-id: Zigzag Conversion
+id: zigzag-conversion
 title: Zigzag Conversion (LeetCode)
 sidebar_label: 0006-Zigzag Conversion
 tags:
@@ -16,7 +16,6 @@ The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of 
 P   A   H   N
 A P L S I I G
 Y   I   R
-
 ```
 
 And then read line by line: "PAHNAPLSIIGYIR"

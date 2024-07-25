@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { instructors } from '../../database/Instructor';
 
+// Styled components for styling the section, title, instructor grid, and cards
 const Container = styled.section`
   padding: 50px 20px;
   text-align: center;
@@ -46,21 +47,22 @@ const InstructorTitle = styled.p`
   font-style: italic;
 `;
 
-// const InstructorBio = styled.p`
-//   margin: 0;
-// `;
-
+// Main component function to render the instructors section
 export default function OurInstructors() {
   return (
     <Container>
       <Title>Meet Our Instructors</Title>
+      {/* Grid layout for displaying instructors */}
       <InstructorGrid>
         {instructors.map((instructor) => (
           <InstructorCard key={instructor.id}>
+            {/* Instructor image */}
             <InstructorImage src={instructor.imageUrl} alt={instructor.name} />
+            {/* Instructor information */}
             <InstructorInfo>
               <InstructorName>{instructor.name}</InstructorName>
               <InstructorTitle>{instructor.title}</InstructorTitle>
+              {/* Optional: Bio can be added here */}
               {/* <InstructorBio>{instructor.bio}</InstructorBio> */}
             </InstructorInfo>
           </InstructorCard>

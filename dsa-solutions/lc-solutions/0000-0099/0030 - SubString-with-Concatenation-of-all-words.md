@@ -10,11 +10,6 @@ tags:
 description: A concatenated string is a string that exactly contains all the strings of any permutation of `words` concatenated.
 ---
 
-### Problem Description:
-| Problem Statement                                       | Solution Link                                                              | LeetCode Profile                                        |
-| :------------------------------------------------------ | :------------------------------------------------------------------------- | :------------------------------------------------------ |
-| [Substring with Concatenation of All Words](https://leetcode.com/problems/0030-Substring-with-Concatenation-of-All-Words/description/) | [Substring with Concatenation of All Words Solution on LeetCode](https://leetcode.com/problems/0030-Substring-with-Concatenation-of-All-Words/solutions/) | [Nikita Saini](https://leetcode.com/u/Saini_Nikita/) |
-
 ## Problem Description
 You are given a string `s` and an array of strings `words`. All the strings in `words` are of the same length.
 

@@ -1,5 +1,5 @@
 ---
-id: String to Integer
+id: string-to-integer
 title: String to Integer(LeetCode)
 sidebar_label: 0008-String to Integer
 tags: 

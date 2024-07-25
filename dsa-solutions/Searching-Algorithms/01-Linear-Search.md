@@ -30,7 +30,8 @@ Linear Search is a simple search algorithm used to find the presence of a target
 - It starts from the first element and compares the target element with each element in the list.
 - If a match is found, it returns the index of the matching element.
 - If no match is found after checking all elements, it returns -1 indicating the target is not present in the list.
-![Example for Linear Search (GFG) ](../../assets/LinearSearch_GFG.webp)
+
+<LinearSearchVisualizer />
 
 ## Problem Description
 

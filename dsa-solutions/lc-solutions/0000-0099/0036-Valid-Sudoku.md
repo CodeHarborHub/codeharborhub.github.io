@@ -13,7 +13,7 @@ tags:
 
 | Problem Statement | Solution Link | LeetCode Profile |
 | :---------------- | :------------ | :--------------- |
-| [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) | [Valid Sudoku Solution on LeetCode](https://leetcode.com/problems/valid-sudoku/solutions/) |  [Debangi Ghosh](https://leetcode.com/u/debangi_29/) |
+| [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) | [Valid Sudoku Solution on LeetCode](https://leetcode.com/problems/valid-sudoku/description/) |  [Abhishikta Ray](https://leetcode.com/u/Abhishikta03/) |
 
 ## Problem Description
 
@@ -95,24 +95,15 @@ Only the filled cells need to be validated according to the mentioned rules.
 #### Python
 
 ```
-class Solution:
-  def isValidSudoku(self, board: List[List[str]]) -> bool:
-    seen = set()
-
-    for i in range(9):
-      for j in range(9):
-        c = board[i][j]
-        if c == '.':
-          continue
-        if c + '@row ' + str(i) in seen or \
-           c + '@col ' + str(j) in seen or \
-           c + '@box ' + str(i // 3) + str(j // 3) in seen:
-          return False
-        seen.add(c + '@row ' + str(i))
-        seen.add(c + '@col ' + str(j))
-        seen.add(c + '@box ' + str(i // 3) + str(j // 3))
-
-    return True
+class Solution(object):
+    def isValidSudoku(self, board):
+        res = []
+        for i in range(9):
+            for j in range(9):
+                element = board[i][j]
+                if element != '.':
+                    res += [(i, element), (element, j), (i // 3, j // 3, element)]
+        return len(res) == len(set(res))
 
 ```
 
@@ -143,24 +134,33 @@ class Solution {
 
 ```
 class Solution {
- public:
-  bool isValidSudoku(vector<vector<char>>& board) {
-    unordered_set<string> seen;
+public:
+    bool isValidSudoku(vector<vector<char>>& board) {
+        unordered_set<char> rows[9];
+        unordered_set<char> cols[9];
+        unordered_set<char> boxes[9];
 
-    for (int i = 0; i < 9; ++i)
-      for (int j = 0; j < 9; ++j) {
-        if (board[i][j] == '.')
-          continue;
-        const string c(1, board[i][j]);
-        if (!seen.insert(c + "@row" + to_string(i)).second ||
-            !seen.insert(c + "@col" + to_string(j)).second ||
-            !seen.insert(c + "@box" + to_string(i / 3) + to_string(j / 3))
-                 .second)
-          return false;
-      }
+        for (int r = 0; r < 9; ++r) {
+            for (int c = 0; c < 9; ++c) {
+                if (board[r][c] == '.') {
+                    continue;
+                }
 
-    return true;
-  }
+                char value = board[r][c];
+                int boxIndex = (r / 3) * 3 + (c / 3);
+
+                if (rows[r].count(value) || cols[c].count(value) || boxes[boxIndex].count(value)) {
+                    return false;
+                }
+
+                rows[r].insert(value);
+                cols[c].insert(value);
+                boxes[boxIndex].insert(value);
+            }
+        }
+
+        return true;        
+    }
 };
 ```
 

@@ -1,25 +1,43 @@
 import React, { useState, useEffect } from 'react';
 import './BubbleSortVisualization.css'; 
 
+/**
+ * BubbleSortVisualization Component
+ * This component visualizes the Bubble Sort algorithm.
+ * 
+ * @returns {JSX.Element} The rendered component
+ */
 const BubbleSortVisualization: React.FC = () => {
+  // State to store the array of numbers to be sorted
   const [array, setArray] = useState<number[]>([]);
+  // State to control the delay for visualization speed
   const [delay, setDelay] = useState<number>(200); 
+  // State to indicate if sorting is in progress
   const [isSorting, setIsSorting] = useState<boolean>(false); 
+  // State to store the indices of elements being compared
   const [comparingIndices, setComparingIndices] = useState<number[]>([]);
 
+  // Effect to generate a new array when the component mounts
   useEffect(() => {
     generateArray();    
   }, []);
 
+  // Effect to update the CSS transition duration when the delay changes
   useEffect(() => {
     updateMoveDuration();
   }, [delay]);
 
+  /**
+   * Generates a new array of random numbers and updates the state.
+   */
   const generateArray = () => {
     const newArray = Array.from({ length: 50 }, () => Math.ceil(Math.random() * 100));
     setArray(newArray);
   };
 
+  /**
+   * Updates the CSS transition duration for the sorting visualization.
+   */
   const updateMoveDuration = () => {
     const stylesheets = document.styleSheets;
     for (let i = 0; i < stylesheets.length; i++) {
@@ -33,6 +51,9 @@ const BubbleSortVisualization: React.FC = () => {
     }
   };
 
+  /**
+   * Performs the Bubble Sort algorithm on the array with visualization.
+   */
   const bubbleSort = async () => {
     setIsSorting(true);
     let tempArray = [...array];
@@ -54,7 +75,9 @@ const BubbleSortVisualization: React.FC = () => {
 
   return (
     <div className='bubble-sort-visualization'>
-      <p>Speed: <input type="range" min="10" max="200" value={delay} onChange={e => setDelay(Number(e.target.value))} /></p>
+      <p>
+        Speed: <input type="range" min="10" max="200" value={delay} onChange={e => setDelay(Number(e.target.value))} />
+      </p>
       <button onClick={bubbleSort} disabled={isSorting}>Sort</button>
       &nbsp;
       <button onClick={generateArray} disabled={isSorting}>Generate New Array</button>
@@ -68,7 +91,7 @@ const BubbleSortVisualization: React.FC = () => {
             key={index}
             className={`array-bar ${comparingIndices.includes(index) ? 'comparing' : ''}`}
             style={{ height: `${value * 3}px` }}
-           />
+          />
         ))}
       </div>
     </div>

@@ -1,0 +1,189 @@
+.sponsor-page {
+    padding: 2rem;
+}
+
+.sponsor-page .sponsor-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.TitleText {
+    background: linear-gradient(
+      90deg,
+      rgb(152 0 255) 0%,
+      rgb(246 41 41) 50%,
+      rgb(255 169 8) 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.sponsor-page .sponsors-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.sponsor-page .sponsor-card {
+    position: relative; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.sponsor-page .sponsor-card::before {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transition: left 0.3s ease-in-out;
+}
+
+.sponsor-page .sponsor-card:hover::before {
+    left: 100%;
+}
+
+.sponsor-page .sponsor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sponsor-page .sponsor-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.sponsor-page .sponsor-card .social-links {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.sponsor-page .sponsor-card .social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: var(--ifm-color-primary);
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sponsor-page .sponsor-card .social-links a:hover {
+    transform: scale(1.1);
+}
+
+.sponsor-page .sponsor-card .social-links a.github:hover {
+    background-color: #333;
+}
+
+.sponsor-page .sponsor-card .social-links a.linkedin:hover {
+    background-color: #0073b1;
+}
+
+.sponsor-page .sponsor-card .social-links a.twitter:hover {
+    background-color: #1da1f2;
+}
+
+.sponsor-page .sponsor-card .social-links a.instagram:hover {
+    background-color: #e4405f;
+}
+
+.sponsor-page .sponsor-card.empty-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 2px dashed #007bff;
+    color: #007bff;
+    position: relative;
+    overflow: hidden;
+}
+
+.sponsor-page .sponsor-card.empty-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.178);
+    transition: left 0.3s ease-in-out;
+}
+
+.sponsor-page .sponsor-card.empty-card:hover::before {
+    left: 100%;
+}
+
+.sponsor-page .sponsor-card.empty-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sponsor-page .sponsor-card.empty-card h3 {
+    margin: 0;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sponsor-page .sponsor-card.empty-card .join-icon {
+    font-size: 1.5em;
+}
+
+.sponsor-page .scanner-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.scanner-content {
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    background: white;
+}
+
+.support-links {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+}
+
+.scanner-button {
+    background: var(--ifm-color-primary);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+@media (max-width: 600px) {
+    .sponsor-card {
+        width: 100%;
+    }
+}

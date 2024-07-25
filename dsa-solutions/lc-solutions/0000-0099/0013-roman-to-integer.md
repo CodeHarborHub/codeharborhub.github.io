@@ -1,7 +1,7 @@
 ---
-id: Roman to Integer
+id: roman-to-integer
 title: Roman to Integer (LeetCode)
-sidebar_label: 0013-Roman to Integer
+sidebar_label: 0013 - Roman to Integer
 tags:
     - Hash Table
     - Math
