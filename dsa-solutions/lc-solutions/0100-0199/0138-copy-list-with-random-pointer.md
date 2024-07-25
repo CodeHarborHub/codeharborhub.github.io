@@ -43,12 +43,7 @@ Output: [[3,null],[3,0],[3,null]]
 
 - The number of nodes in the list is in the range [0, 1000].
 - `-10000 <= Node.val <= 10000`
-<<<<<<< HEAD
 - Node.random is null or is pointing to some node in the linked list.
-=======
-- Node.random is null or is pointing to a node in the linked list.
->>>>>>> d1e5b6b9625337acbd0c1a6ab0f47200eec03e80
-
 ---
 
 ##  Approach to Solve the Copy List with Random Pointer Problem
