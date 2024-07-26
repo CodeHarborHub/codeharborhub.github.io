@@ -77,7 +77,7 @@ This approach ensures that we eliminate one row or one column in each step, lead
 
 <Tabs>
  <tabItem value="Greedy Search" label="Greedy Search">
-  
+
 ### Approach: Greedy Search
 
 By leveraging the sorted properties of the matrix, we can search for the target value efficiently using a greedy approach. This involves starting from the top-right corner and adjusting our search direction based on the current value.
@@ -178,7 +178,7 @@ return (
     ```
 
   </TabItem>
-  <TabItem value="Python" label="Python"> 
+  <TabItem value="Python" label="Python">
   <SolutionAuthor name="@aryansh-patel"/>
    ```python
     def searchMatrix(matrix: List[List[int]], target: int) -> bool:
@@ -255,7 +255,7 @@ return (
     };
     ```
 
-  </TabItem>  
+  </TabItem>
 </Tabs>
 
 #### Complexity Analysis
@@ -325,7 +325,7 @@ This solution leverages the matrix's properties to reduce the search space effic
           params="autoplay=1&autohide=1&showinfo=0&rel=0"
           title="Search a 2D Matrix II Problem Explanation | Search a 2D Matrix II Solution"
           poster="maxresdefault"
-          webp 
+          webp
         />
   </TabItem>
 
