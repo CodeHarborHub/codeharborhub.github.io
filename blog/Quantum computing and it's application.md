@@ -37,8 +37,8 @@ Entanglement is a quantum phenomenon where two or more qubits become correlated 
 Quantum gates are the building blocks of quantum circuits, analogous to classical logic gates. They manipulate qubits through unitary transformations. Some fundamental quantum gates include:
 
 - **Pauli-X Gate**: Flips the state of a qubit, analogous to a NOT gate in classical computing.
-- **Hadamard Gate**: Creates superposition, transforming a qubit from state $|0\rangle$ to $\frac{1}{\sqrt{2}} (|0\rangle + |1\rangle)$.
-- **CNOT Gate**: A two-qubit gate that flips the second qubit if the first qubit is in the state $|1\rangle$.
+- **Hadamard Gate**: Creates superposition, transforming a qubit from the state.
+- **CNOT Gate**: A two-qubit gate that flips the second qubit if the first qubit is in the state.
 
 ## Applications of Quantum Computing
 
