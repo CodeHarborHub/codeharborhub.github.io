@@ -1,12 +1,12 @@
 ---
-title: "Introduction to Quantum Computing and it's application"
+title: "Introduction to Quantum Computing and Its Applications"
 sidebar_label: Quantum Computing
 authors: [pujan-sarkar]
-tags: [Quantum Computing, application]
+tags: [Quantum Computing, Applications]
 date: 2024-07-22
 ---
 
-# Quantum Computing: Basics and Applications
+## Quantum Computing: Basics and Applications
 
 Quantum computing is a revolutionary field that leverages the principles of quantum mechanics to process information in fundamentally different ways compared to classical computing. This blog will introduce the basics of quantum computing, explore its potential applications, and provide resources for further learning.
 
@@ -20,9 +20,9 @@ Quantum computing harnesses the peculiar principles of quantum mechanics, such a
 
 A qubit is the fundamental unit of quantum information. Unlike a classical bit, which can be either 0 or 1, a qubit can exist in a state that is a linear combination of both. This property is called superposition. Mathematically, a qubit's state can be represented as:
 
-$\[ |\psi\rangle = \alpha|0\rangle + \beta|1\rangle \]$
+$$ |\psi\rangle = \alpha|0\rangle + \beta|1\rangle $$
 
-where $|\alpha|^2 \)$ and $\( |\beta|^2$ are the probabilities of the qubit being in the state $|0\rangle$ and $|1\rangle$ respectively, and $|\alpha|^2 + |\beta|^2 = 1$.
+where $|\alpha|^2$ and $|\beta|^2$ are the probabilities of the qubit being in the state $|0\rangle$ and $|1\rangle$ respectively, and $|\alpha|^2 + |\beta|^2 = 1$.
 
 ### Superposition
 
@@ -36,9 +36,9 @@ Entanglement is a quantum phenomenon where two or more qubits become correlated 
 
 Quantum gates are the building blocks of quantum circuits, analogous to classical logic gates. They manipulate qubits through unitary transformations. Some fundamental quantum gates include:
 
-- *Pauli-X Gate*: Flips the state of a qubit, analogous to a NOT gate in classical computing.
-- *Hadamard Gate*: Creates superposition, transforming a qubit from state $|0\rangle$ to $\frac{1}{\sqrt{2}} (|0\rangle + |1\rangle)$.
-- *CNOT Gate*: A two-qubit gate that flips the second qubit if the first qubit is in the state  $|1\rangle$.
+- **Pauli-X Gate**: Flips the state of a qubit, analogous to a NOT gate in classical computing.
+- **Hadamard Gate**: Creates superposition, transforming a qubit from state \(|0\rangle\) to \(\frac{1}{\sqrt{2}} (|0\rangle + |1\rangle)\).
+- **CNOT Gate**: A two-qubit gate that flips the second qubit if the first qubit is in the state \(|1\rangle\).
 
 ## Applications of Quantum Computing
 
@@ -48,7 +48,7 @@ Quantum computing poses a significant threat to classical cryptographic systems.
 
 ### Optimization Problems
 
-Many real-world problems, such as supply chain management, financial modeling, and route optimization, involve finding the best solution among a vast number of possibilities. Quantum computing can provide significant speed-ups for solving these optimization problems using algorithms like the Quantum Approximate Optimization Algorithm (QAOA) and Grover's algorithm.
+Many real-world problems, such as supply chain management, financial modelling, and route optimization, involve finding the best solution among a vast number of possibilities. Quantum computing can provide significant speed-ups for solving these optimization problems using algorithms like the Quantum Approximate Optimization Algorithm (QAOA) and Grover's algorithm.
 
 ### Drug Discovery
 
@@ -61,31 +61,31 @@ Quantum machine learning combines quantum computing and classical machine learni
 ## Resources for Further Learning
 
 ### Books
-1. *"Quantum Computing: A Gentle Introduction" by Eleanor Rieffel and Wolfgang Polak*
+1. **"Quantum Computing: A Gentle Introduction" by Eleanor Rieffel and Wolfgang Polak**
    - A comprehensive introduction to the principles and applications of quantum computing.
 
-2. *"Quantum Computation and Quantum Information" by Michael A. Nielsen and Isaac L. Chuang*
+2. **"Quantum Computation and Quantum Information" by Michael A. Nielsen and Isaac L. Chuang**
    - Often considered the definitive textbook on quantum computing, covering a wide range of topics in depth.
 
 ### Papers
-1. *"Simulating Physics with Computers" by Richard Feynman*
+1. **"Simulating Physics with Computers" by Richard Feynman**
    - One of the foundational papers in quantum computing, introducing the concept of using quantum systems for simulation.
 
-2. *"Shor's Algorithm for Quantum Factoring" by Peter Shor*
+2. **"Shor's Algorithm for Quantum Factoring" by Peter Shor**
    - The seminal paper that introduced Shor's algorithm, demonstrating the potential of quantum computers to solve certain problems exponentially faster than classical computers.
 
 ### Online Courses
-1. *"Quantum Computing for the Very Curious" by Michael Nielsen*
+1. **"Quantum Computing for the Very Curious" by Michael Nielsen**
    - A free, interactive online book that provides a hands-on introduction to quantum computing.
 
-2. *Coursera: "Quantum Computing" by University of Toronto*
+2. **Coursera: "Quantum Computing" by University of Toronto**
    - A comprehensive course covering the basics of quantum computing, quantum algorithms, and quantum hardware.
 
 ### Tutorials and Blogs
-1. *Qiskit Tutorials*
+1. **Qiskit Tutorials**
    - IBM's open-source quantum computing framework provides extensive tutorials and resources for learning quantum programming.
    
-2. *Quantum Computing Report*
+2. **Quantum Computing Report**
    - A blog that keeps up with the latest news, developments, and insights in the field of quantum computing.
 
 By understanding these basic concepts and exploring the resources provided, you can build a strong foundation in quantum computing and appreciate its potential to revolutionize various industries.
