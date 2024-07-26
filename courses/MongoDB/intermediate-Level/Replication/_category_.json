@@ -1,8 +1,0 @@
-{
-    "label": "Replication",
-    "position": 4,
-    "link": {
-      "type": "generated-index",
-      "description": "Learn MongoDB Advanced Replication."
-    }
-  }

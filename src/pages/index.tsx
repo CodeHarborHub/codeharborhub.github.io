@@ -137,7 +137,7 @@ export default function Home() {
           </Heading>
         </div>
 
-        <Faq />
+        <Faq />      
 
         <ScrollTopToButton />
         <ScrollBottomToTop />

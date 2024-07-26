@@ -1,5 +1,5 @@
 ---
-id: nth-fibonacci-number
+id: lucky-number
 title: Nth Fibonacci Number
 sidebar_label: Nth Fibonacci Number
 tags:
