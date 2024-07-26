@@ -69,7 +69,6 @@ Output: false
 ### Intuition and Approach
 
 To search for a value in this matrix efficiently, we can utilize the properties of the matrix. Since the matrix is sorted both row-wise and column-wise, we can start our search from the top-right corner of the matrix. From here, we have two options:
-
 1. If the target is greater than the current value, move downwards.
 2. If the target is less than the current value, move leftwards.
 
@@ -77,7 +76,7 @@ This approach ensures that we eliminate one row or one column in each step, lead
 
 <Tabs>
  <tabItem value="Greedy Search" label="Greedy Search">
-
+  
 ### Approach: Greedy Search
 
 By leveraging the sorted properties of the matrix, we can search for the target value efficiently using a greedy approach. This involves starting from the top-right corner and adjusting our search direction based on the current value.
@@ -109,7 +108,7 @@ const matrix = [
   [2, 5, 8, 12, 19],
   [3, 6, 9, 16, 22],
   [10, 13, 14, 17, 24],
-  [18, 21, 23, 26, 30],
+  [18, 21, 23, 26, 30]
 ];
 const target = 5;
 const result = searchMatrix(matrix, target);
@@ -117,8 +116,13 @@ const result = searchMatrix(matrix, target);
 return (
   <div>
     <p>
-      <b>Input:</b> matrix = [ [1, 4, 7, 11, 15], [2, 5, 8, 12, 19], [3, 6, 9,
-      16, 22], [10, 13, 14, 17, 24], [18, 21, 23, 26, 30] ], target = 5
+      <b>Input:</b> matrix = [
+        [1, 4, 7, 11, 15],
+        [2, 5, 8, 12, 19],
+        [3, 6, 9, 16, 22],
+        [10, 13, 14, 17, 24],
+        [18, 21, 23, 26, 30]
+      ], target = 5
     </p>
     <p>
       <b>Output:</b> {result ? "true" : "false"}
@@ -178,7 +182,7 @@ return (
     ```
 
   </TabItem>
-  <TabItem value="Python" label="Python">
+  <TabItem value="Python" label="Python"> 
   <SolutionAuthor name="@aryansh-patel"/>
    ```python
     def searchMatrix(matrix: List[List[int]], target: int) -> bool:
@@ -255,7 +259,7 @@ return (
     };
     ```
 
-  </TabItem>
+  </TabItem>  
 </Tabs>
 
 #### Complexity Analysis
@@ -265,8 +269,7 @@ return (
 
 - The time complexity is linear in terms of the dimensions of the matrix. Each step eliminates either a row or a
 
-column, leading to a linear time complexity of $O(m + n)$.
-
+ column, leading to a linear time complexity of $O(m + n)$.
 - The space complexity is constant because we only use a few extra variables regardless of the matrix size.
 
 </tabItem>
@@ -284,8 +287,8 @@ This solution leverages the matrix's properties to reduce the search space effic
 
   <TabItem value="en" label="English">
 
----
-
+  ---
+  
     <Tabs>
       <TabItem value="javascript" label="JavaScript">
         <LiteYouTubeEmbed
@@ -293,7 +296,7 @@ This solution leverages the matrix's properties to reduce the search space effic
           params="autoplay=1&autohide=1&showinfo=0&rel=0"
           title="Search a 2D Matrix II Problem Explanation | Search a 2D Matrix II Solution"
           poster="maxresdefault"
-          webp
+          webp 
         />
       </TabItem>
 
@@ -303,7 +306,7 @@ This solution leverages the matrix's properties to reduce the search space effic
           params="autoplay=1&autohide=1&showinfo=0&rel=0"
           title="Search a 2D Matrix II Problem Explanation | Search a 2D Matrix II Solution"
           poster="maxresdefault"
-          webp
+          webp 
         />
       </TabItem>
       <TabItem value="java" label="Java">
@@ -312,7 +315,7 @@ This solution leverages the matrix's properties to reduce the search space effic
           params="autoplay=1&autohide=1&showinfo=0&rel=0"
           title="Search a 2D Matrix II Problem Explanation | Search a 2D Matrix II Solution"
           poster="maxresdefault"
-          webp
+          webp 
         />
       </TabItem>
     </Tabs>
@@ -325,7 +328,7 @@ This solution leverages the matrix's properties to reduce the search space effic
           params="autoplay=1&autohide=1&showinfo=0&rel=0"
           title="Search a 2D Matrix II Problem Explanation | Search a 2D Matrix II Solution"
           poster="maxresdefault"
-          webp
+          webp 
         />
   </TabItem>
 
