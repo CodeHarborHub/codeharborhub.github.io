@@ -17,8 +17,9 @@ description: "This tutorial covers the solution to the Find Duplicates in an Arr
 Given an array `arr` of size `n` which contains elements in the range from 0 to `n-1`, you need to find all the elements occurring more than once in the given array. Return the answer in ascending order. If no such element is found, return a list containing [-1].
 
 :::note
- Try and perform all operations within the provided array. The extra (non-constant) space needs to be used only for the array to be returned.
+Try and perform all operations within the provided array. The extra (non-constant) space needs to be used only for the array to be returned.
 :::
+
 ## Examples
 
 **Example 1:**
@@ -47,8 +48,8 @@ Expected Auxiliary Space: $O(1)$ (excluding the space for the output list)
 
 ## Constraints
 
-* `1 ≤ n ≤ 10^5`
-* `0 ≤ arr[i] ≤ n-1`
+- `1 ≤ n ≤ 10^5`
+- `0 ≤ arr[i] ≤ n-1`
 
 ## Problem Explanation
 
@@ -60,89 +61,89 @@ The problem is to find the duplicate elements in an array of size `n`, where the
   <TabItem value="Python" label="Python" default>
   <SolutionAuthor name="@YourUsername"/>
 
-  ```py
-  class Solution:
-      def duplicates(self, arr):
-          n = len(arr)
-          # Use the array elements as index
-          for i in range(n):
-              arr[arr[i] % n] += n
+```py
+class Solution:
+    def duplicates(self, arr):
+        n = len(arr)
+        # Use the array elements as index
+        for i in range(n):
+            arr[arr[i] % n] += n
 
-          # Collect elements that occur more than once
-          result = [i for i in range(n) if arr[i] // n > 1]
+        # Collect elements that occur more than once
+        result = [i for i in range(n) if arr[i] // n > 1]
 
-          return result if result else [-1]
+        return result if result else [-1]
 
-  # Example usage
-  if __name__ == "__main__":
-      solution = Solution()
-      print(solution.duplicates([2, 3, 1, 2, 3]))  # Expected output: [2, 3]
-      print(solution.duplicates([0, 1, 2, 3]))  # Expected output: [-1]
-  ```
+# Example usage
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.duplicates([2, 3, 1, 2, 3]))  # Expected output: [2, 3]
+    print(solution.duplicates([0, 1, 2, 3]))  # Expected output: [-1]
+```
 
   </TabItem>
   <TabItem value="C++" label="C++">
   <SolutionAuthor name="@YourUsername"/>
 
-  ```cpp
-  #include <iostream>
-  #include <vector>
-  #include <algorithm>
-  using namespace std;
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
 
-  class Solution {
-  public:
-      vector<int> duplicates(vector<long long>& arr) {
-          int n = arr.size();
-          vector<int> result;
+class Solution {
+public:
+    vector<int> duplicates(vector<long long>& arr) {
+        int n = arr.size();
+        vector<int> result;
 
-          // Use the array elements as index
-          for (int i = 0; i < n; i++) {
-              arr[arr[i] % n] += n;
-          }
+        // Use the array elements as index
+        for (int i = 0; i < n; i++) {
+            arr[arr[i] % n] += n;
+        }
 
-          // Collect elements that occur more than once
-          for (int i = 0; i < n; i++) {
-              if (arr[i] / n > 1) {
-                  result.push_back(i);
-              }
-          }
+        // Collect elements that occur more than once
+        for (int i = 0; i < n; i++) {
+            if (arr[i] / n > 1) {
+                result.push_back(i);
+            }
+        }
 
-          if (result.empty()) {
-              return {-1};
-          }
+        if (result.empty()) {
+            return {-1};
+        }
 
-          return result;
-      }
-  };
+        return result;
+    }
+};
 
-  // Example usage
-  void solve() {
-      int n;
-      cin >> n;
-      vector<long long> arr(n);
-      for (int i = 0; i < n; i++) {
-          cin >> arr[i];
-      }
+// Example usage
+void solve() {
+    int n;
+    cin >> n;
+    vector<long long> arr(n);
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
 
-      Solution obj;
-      vector<int> ans = obj.duplicates(arr);
-      for (int i : ans) {
-          cout << i << ' ';
-      }
-      cout << endl;
-  }
+    Solution obj;
+    vector<int> ans = obj.duplicates(arr);
+    for (int i : ans) {
+        cout << i << ' ';
+    }
+    cout << endl;
+}
 
-  int main() {
-      int t;
-      cin >> t;
+int main() {
+    int t;
+    cin >> t;
 
-      while (t--) {
-          solve();
-      }
-      return 0;
-  }
-  ```
+    while (t--) {
+        solve();
+    }
+    return 0;
+}
+```
 
   </TabItem>
 </Tabs>
@@ -170,11 +171,11 @@ For the array `arr = [0, 1, 2, 3]`:
 
 ## Time Complexity
 
-* The time complexity is $O(n)$, where n is the size of the input array.
+- The time complexity is $O(n)$, where n is the size of the input array.
 
 ## Space Complexity
 
-* The auxiliary space complexity is $O(1)$ because we are not using any extra space proportional to the size of the input array.
+- The auxiliary space complexity is $O(1)$ because we are not using any extra space proportional to the size of the input array.
 
 ## References
 

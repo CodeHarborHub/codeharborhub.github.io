@@ -31,10 +31,10 @@ const courses = [
       imageUrl: "/img/svg/static_assets.svg",
       author: "Ajay Dhangar",
       link: "/docs/category/javascript"
-    },   
-    
+    },
+
     // React for beginners
-    
+
     {
       id: 5,
       title: "React for Beginners",
@@ -46,7 +46,7 @@ const courses = [
     },
 
     // angular for beginners
-    
+
     // {
     //   id: 6,
     //   title: "Angular for Beginners",
@@ -351,6 +351,5 @@ const courses = [
       "link": "https://www.figma.com/resources/learn-design/"
     },
   ];
-  
+
   export default courses;
-  
