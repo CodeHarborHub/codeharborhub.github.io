@@ -69,7 +69,7 @@
     "rehype-katex": "^7.0.0",
     "remark-math": "^6.0.0",
     "styled-components": "^6.1.8",
-    "swiper": "^11.1.4",
+    "swiper": "^11.1.8",
     "three": "^0.167.0",
     "vanilla-tilt": "^1.8.1"
   },
