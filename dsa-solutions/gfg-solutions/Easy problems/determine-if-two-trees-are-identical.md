@@ -1,7 +1,7 @@
 ---
-id: determine-if-two-trees-are-identical  
-title: Determine if Two Trees are Identical (gfg)  
-sidebar_label: 0012 - Determine if Two Trees are Identical  
+id: determine-if-two-trees-are-identical
+title: Determine if Two Trees are Identical (gfg)
+sidebar_label: 0012 - Determine if Two Trees are Identical
 tags:
   - Easy
   - Tree
@@ -9,9 +9,10 @@ tags:
   - GeeksforGeeks
   - CPP
   - Python
-  - DSA  
+  - DSA
 description: "This tutorial covers the solution to the Determine if Two Trees are Identical problem from the GeeksforGeeks website, featuring implementations in Python and C++."
 ---
+
 ## Problem Description
 
 Given two binary trees, the task is to find if both of them are identical or not. Note: You need to return true or false, the printing is done by the driver code.
@@ -60,8 +61,8 @@ Expected Auxiliary Space: $O(H)$, where H is the height of the trees.
 
 ## Constraints
 
-* `1 ≤ Number of nodes ≤ 10^5`
-* `1 ≤ Data of a node ≤ 10^5`
+- `1 ≤ Number of nodes ≤ 10^5`
+- `1 ≤ Data of a node ≤ 10^5`
 
 ## Problem Explanation
 
@@ -73,125 +74,125 @@ Two trees are considered identical if they have the same structure and their cor
   <TabItem value="Python" label="Python" default>
   <SolutionAuthor name="@arunimad6yuq"/>
 
-  ```py
-  # Definition for a binary tree node.
-  class TreeNode:
-      def __init__(self, val=0, left=None, right=None):
-          self.val = val
-          self.left = left
-          self.right = right
+```py
+# Definition for a binary tree node.
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
 
-  class Solution:
-      def isIdentical(self, r1: TreeNode, r2: TreeNode) -> bool:
-          if not r1 and not r2:
-              return True
-          if not r1 or not r2:
-              return False
-          return (r1.val == r2.val) and self.isIdentical(r1.left, r2.left) and self.isIdentical(r1.right, r2.right)
+class Solution:
+    def isIdentical(self, r1: TreeNode, r2: TreeNode) -> bool:
+        if not r1 and not r2:
+            return True
+        if not r1 or not r2:
+            return False
+        return (r1.val == r2.val) and self.isIdentical(r1.left, r2.left) and self.isIdentical(r1.right, r2.right)
 
-  # Example usage
-  if __name__ == "__main__":
-      root1 = TreeNode(1)
-      root1.left = TreeNode(2)
-      root1.right = TreeNode(3)
-      
-      root2 = TreeNode(1)
-      root2.left = TreeNode(2)
-      root2.right = TreeNode(3)
-      
-      solution = Solution()
-      print(solution.isIdentical(root1, root2))  # Expected output: True
-  ```
+# Example usage
+if __name__ == "__main__":
+    root1 = TreeNode(1)
+    root1.left = TreeNode(2)
+    root1.right = TreeNode(3)
+
+    root2 = TreeNode(1)
+    root2.left = TreeNode(2)
+    root2.right = TreeNode(3)
+
+    solution = Solution()
+    print(solution.isIdentical(root1, root2))  # Expected output: True
+```
 
   </TabItem>
   <TabItem value="C++" label="C++">
   <SolutionAuthor name="@arunimad6yuq"/>
 
-  ```cpp
-  //{ Driver Code Starts
-  #include <bits/stdc++.h>
-  using namespace std;
+```cpp
+//{ Driver Code Starts
+#include <bits/stdc++.h>
+using namespace std;
 
-  struct Node {
-      int data;
-      Node* left;
-      Node* right;
+struct Node {
+    int data;
+    Node* left;
+    Node* right;
 
-      Node(int val) {
-          data = val;
-          left = right = NULL;
-      }
-  };
+    Node(int val) {
+        data = val;
+        left = right = NULL;
+    }
+};
 
-  // } Driver Code Ends
-  class Solution {
-  public:
-      // Function to check if two trees are identical.
-      bool isIdentical(Node* r1, Node* r2) {
-          if (!r1 && !r2) return true;
-          if (!r1 || !r2) return false;
-          return (r1->data == r2->data) && isIdentical(r1->left, r2->left) && isIdentical(r1->right, r2->right);
-      }
-  };
+// } Driver Code Ends
+class Solution {
+public:
+    // Function to check if two trees are identical.
+    bool isIdentical(Node* r1, Node* r2) {
+        if (!r1 && !r2) return true;
+        if (!r1 || !r2) return false;
+        return (r1->data == r2->data) && isIdentical(r1->left, r2->left) && isIdentical(r1->right, r2->right);
+    }
+};
 
-  //{ Driver Code Starts.
-  // Function to Build Tree
-  Node* buildTree(string str) {
-      if (str.length() == 0 || str[0] == 'N') return NULL;
+//{ Driver Code Starts.
+// Function to Build Tree
+Node* buildTree(string str) {
+    if (str.length() == 0 || str[0] == 'N') return NULL;
 
-      vector<string> ip;
-      istringstream iss(str);
-      for (string str; iss >> str;) ip.push_back(str);
+    vector<string> ip;
+    istringstream iss(str);
+    for (string str; iss >> str;) ip.push_back(str);
 
-      Node* root = new Node(stoi(ip[0]));
-      queue<Node*> queue;
-      queue.push(root);
+    Node* root = new Node(stoi(ip[0]));
+    queue<Node*> queue;
+    queue.push(root);
 
-      int i = 1;
-      while (!queue.empty() && i < ip.size()) {
-          Node* currNode = queue.front();
-          queue.pop();
+    int i = 1;
+    while (!queue.empty() && i < ip.size()) {
+        Node* currNode = queue.front();
+        queue.pop();
 
-          string currVal = ip[i];
-          if (currVal != "N") {
-              currNode->left = new Node(stoi(currVal));
-              queue.push(currNode->left);
-          }
+        string currVal = ip[i];
+        if (currVal != "N") {
+            currNode->left = new Node(stoi(currVal));
+            queue.push(currNode->left);
+        }
 
-          i++;
-          if (i >= ip.size()) break;
-          currVal = ip[i];
+        i++;
+        if (i >= ip.size()) break;
+        currVal = ip[i];
 
-          if (currVal != "N") {
-              currNode->right = new Node(stoi(currVal));
-              queue.push(currNode->right);
-          }
-          i++;
-      }
+        if (currVal != "N") {
+            currNode->right = new Node(stoi(currVal));
+            queue.push(currNode->right);
+        }
+        i++;
+    }
 
-      return root;
-  }
+    return root;
+}
 
-  int main() {
-      int tc;
-      scanf("%d ", &tc);
-      while (tc--) {
-          string str, str1;
-          getline(cin, str);
-          Node* rootA = buildTree(str);
-          getline(cin, str1);
-          Node* rootB = buildTree(str1);
-          Solution ob;
-          if (ob.isIdentical(rootA, rootB)) {
-              cout << "Yes\n";
-          } else {
-              cout << "No\n";
-          }
-      }
-      return 0;
-  }
-  // } Driver Code Ends
-  ```
+int main() {
+    int tc;
+    scanf("%d ", &tc);
+    while (tc--) {
+        string str, str1;
+        getline(cin, str);
+        Node* rootA = buildTree(str);
+        getline(cin, str1);
+        Node* rootB = buildTree(str1);
+        Solution ob;
+        if (ob.isIdentical(rootA, rootB)) {
+            cout << "Yes\n";
+        } else {
+            cout << "No\n";
+        }
+    }
+    return 0;
+}
+// } Driver Code Ends
+```
 
   </TabItem>
 </Tabs>
@@ -245,11 +246,11 @@ For the trees:
 
 ## Time Complexity
 
-* The function visits each node once, so the time complexity is $O(N)$.
+- The function visits each node once, so the time complexity is $O(N)$.
 
 ## Space Complexity
 
-* The auxiliary space complexity is $O(H)$ due to the recursion stack, where H is the height of the tree.
+- The auxiliary space complexity is $O(H)$ due to the recursion stack, where H is the height of the tree.
 
 ## References
 

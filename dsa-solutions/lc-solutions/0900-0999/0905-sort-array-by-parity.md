@@ -2,15 +2,15 @@
 id: Sort-Array-By-Parity
 title: Sort Array By Parity
 sidebar_label: Sort Array By Parity
-tags: 
-    - Arrays
-    - Sorting
+tags:
+  - Arrays
+  - Sorting
 ---
 
 ## Problem Description
 
-| Problem Statement                                       | Solution Link                                                              | LeetCode Profile                                        |
-| :------------------------------------------------------ | :------------------------------------------------------------------------- | :------------------------------------------------------ |
+| Problem Statement                                                                       | Solution Link                                                                                              | LeetCode Profile                                     |
+| :-------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- | :--------------------------------------------------- |
 | [Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/description/) | [Sort Array By Parity Solution on LeetCode](https://leetcode.com/problems/sort-array-by-parity/solutions/) | [Nikita Saini](https://leetcode.com/u/Saini_Nikita/) |
 
 ## Problem Description
@@ -64,7 +64,7 @@ public class EvenOddArray {
     public static int[] sortArrayByParity(int[] nums) {
         List<Integer> even = new ArrayList<>();
         List<Integer> odd = new ArrayList<>();
-        
+
         for (int num : nums) {
             if (num % 2 == 0) {
                 even.add(num);
@@ -72,11 +72,11 @@ public class EvenOddArray {
                 odd.add(num);
             }
         }
-        
+
         even.addAll(odd);
         return even.stream().mapToInt(i -> i).toArray();
     }
-    
+
     public static void main(String[] args) {
         int[] nums = {3, 1, 2, 4};
         System.out.println(Arrays.toString(sortArrayByParity(nums)));  // Output: [2, 4, 3, 1]
@@ -122,7 +122,7 @@ int main() {
 void sortArrayByParity(int* nums, int numsSize, int* returnSize) {
     int* result = (int*)malloc(numsSize * sizeof(int));
     int evenIndex = 0, oddIndex = numsSize - 1;
-    
+
     for (int i = 0; i < numsSize; ++i) {
         if (nums[i] % 2 == 0) {
             result[evenIndex++] = nums[i];
@@ -142,7 +142,7 @@ int main() {
     int numsSize = sizeof(nums) / sizeof(nums[0]);
     int returnSize;
     sortArrayByParity(nums, numsSize, &returnSize);
-    
+
     for (int i = 0; i < numsSize; ++i) {
         printf("%d ", nums[i]);
     }
@@ -155,23 +155,23 @@ int main() {
 
 ```javascript
 function sortArrayByParity(nums) {
-    let even = [];
-    let odd = [];
-    
-    for (let num of nums) {
-        if (num % 2 === 0) {
-            even.push(num);
-        } else {
-            odd.push(num);
-        }
+  let even = [];
+  let odd = [];
+
+  for (let num of nums) {
+    if (num % 2 === 0) {
+      even.push(num);
+    } else {
+      odd.push(num);
     }
-    
-    return [...even, ...odd];
+  }
+
+  return [...even, ...odd];
 }
 
 // Example usage
 let nums = [3, 1, 2, 4];
-console.log(sortArrayByParity(nums));  // Output: [2, 4, 3, 1]
+console.log(sortArrayByParity(nums)); // Output: [2, 4, 3, 1]
 ```
 
 ## Step-by-Step Algorithm
