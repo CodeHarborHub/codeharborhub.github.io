@@ -16,7 +16,7 @@ sidebar_position: 85
 ---
 
 ## Problem Statement 
-In this tutorial, we will solve the Sender With Largest Word Count problem . We will provide the implementation of the solution in Python, Java, and C++.
+In this tutorial, we will solve the Sender With Largest Word Count problem. We will provide the implementation of the solution in Python, Java, and C++.
 
 ### Problem Description
 
@@ -29,7 +29,7 @@ Return the sender with the largest word count. If there is more than one sender 
 ### Examples
 
 **Example 1:**
-Input: messages = ["Hello userTwooo","Hi userThree","Wonderful day Alice","Nice day userThree"], senders = ["Alice","userTwo","userThree","Alice"]
+Input: messages = ["Hello userTwooo", "Hi userThree", "Wonderful day Alice", "Nice day userThree"], senders = ["Alice", "userTwo", "userThree", "Alice"]
 Output: "Alice"
 Explanation: Alice sends a total of 2 + 3 = 5 words.
 userTwo sends a total of 2 words.
@@ -57,11 +57,7 @@ Since there is a tie for the largest word count, we return the sender with the l
 
 The problem can be solved using a brute force approach or an optimized Technique.
 
-<Tabs>
-<tabItem value="Brute Force" label="Brute Force">
-
-### Approach 1:Brute Force (Naive)
-
+## Approach 1:Brute Force (Naive)
 
 Count Words for Each Sender:
 
@@ -180,10 +176,7 @@ def largest_word_count(messages, senders):
 - Space Complexity: $O(k)$
 -  for storing word counts of senders.
 
-</tabItem>
-<tabItem value="Optimized approach" label="Optimized approach">
-
-### Approach 2: Optimized approach
+## Approach 2: Optimized approach
 
 Optimized Approach: Word Count Calculation:
 For each message, split the message string and count the words. This step is O(1) in complexity since the maximum length of a message is fixed.
@@ -292,9 +285,6 @@ def largest_word_count(messages, senders):
 
 - This approach is efficient and straightforward.
 
-
-
-
 ## Video Explanation of Given Problem
 
 <Tabs>
@@ -330,8 +320,6 @@ def largest_word_count(messages, senders):
     </Tabs>
   </TabItem>
 </Tabs>
-
-
 
 
 ---
