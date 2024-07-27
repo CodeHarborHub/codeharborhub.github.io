@@ -4,6 +4,7 @@ import "./Sponsors.css";
 import Layout from "@theme/Layout";
 import sponsors from "../../database/sponsors";
 import { FaPlusCircle } from 'react-icons/fa';
+import Head from "@docusaurus/Head";
 
 const OurSponsors: React.FC = () => {
   const [showScanner, setShowScanner] = useState(false);
@@ -20,6 +21,19 @@ const OurSponsors: React.FC = () => {
 
   return (
     <Layout>
+      <Head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5832817025080991"
+          crossOrigin="anonymous"
+         />
+        <script
+          async
+          custom-element="amp-auto-ads"
+          src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"
+         />
+        <meta name="google-adsense-account" content="ca-pub-5832817025080991" />
+      </Head>
       <div className="sponsor-page">
         <div className="sponsor-header">
           <h1 className="TitleText">Our Sponsors</h1>
@@ -60,7 +74,7 @@ const OurSponsors: React.FC = () => {
             height="32"
             width="114"
             style={{ border: 0, borderRadius: "6px" }}
-          ></iframe>
+           />
           <a
             href="https://www.patreon.com/ajay_dhangar"
             target="_blank"

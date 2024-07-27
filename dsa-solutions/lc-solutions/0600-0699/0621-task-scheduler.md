@@ -419,3 +419,13 @@ We sort the frequency array, which has a size of 26. The space used for sorting 
 - **LeetCode Problem**: [Task Scheduler](https://leetcode.com/problems/task-scheduler/description/)
 
 - **Solution Link**: [Task Scheduler](https://leetcode.com/problems/task-scheduler/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

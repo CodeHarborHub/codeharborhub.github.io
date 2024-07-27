@@ -1,5 +1,5 @@
 {
-  "name": "code-harbor-hub",
+  "name": "codeharborhub",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -9,13 +9,14 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "deploy-gh-pages": "gh-pages -d build",
+    "build:fast": "docusaurus build --no-minify",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
-    "@docusaurus/core": "^3.3.2",
+    "@docusaurus/core": "^3.4.0",
     "@docusaurus/plugin-content-pages": "^3.3.2",
     "@docusaurus/plugin-google-analytics": "^3.3.2",
     "@docusaurus/plugin-google-gtag": "^3.3.2",
@@ -25,6 +26,7 @@
     "@docusaurus/plugin-vercel-analytics": "^3.3.2",
     "@docusaurus/preset-classic": "^3.3.2",
     "@docusaurus/remark-plugin-npm2yarn": "^3.4.0",
+    "@docusaurus/theme-classic": "^3.4.0",
     "@docusaurus/theme-live-codeblock": "^3.3.2",
     "@docusaurus/theme-mermaid": "^3.3.2",
     "@docusaurus/theme-search-algolia": "^3.3.2",
@@ -68,7 +70,7 @@
     "remark-math": "^6.0.0",
     "styled-components": "^6.1.8",
     "swiper": "^11.1.4",
-    "three": "^0.166.0",
+    "three": "^0.167.0",
     "vanilla-tilt": "^1.8.1"
   },
   "devDependencies": {
@@ -77,9 +79,11 @@
     "@babel/preset-react": "^7.24.7",
     "@docusaurus/module-type-aliases": "^3.3.2",
     "@docusaurus/types": "^3.3.2",
+    "@types/node": "^20.14.10",
     "@types/react-icons": "^3.0.0",
     "dotenv": "^16.4.5",
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.1.1",
+    "lighthouse": "^12.1.0"
   },
   "browserslist": {
     "production": [

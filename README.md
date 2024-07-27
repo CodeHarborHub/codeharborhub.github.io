@@ -8,7 +8,7 @@ Welcome to CodeHarborHub! Your gateway to top-notch tech education. **Tired of l
 
 <a href="https://www.producthunt.com/posts/codeharborhub"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=464236&theme=light" alt="CodeHarborHub - Tired&#0032;of&#0032;limitations&#0063;&#0032;CodeHarborHub&#0032;shatters&#0032;them&#0046; | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
 
-[![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.codeharborhub.live%2F)](https://www.codeharborhub.live/)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fcodeharborhub.github.io%2F)](https://codeharborhub.github.io/)
 [![License](https://img.shields.io/github/license/CodeHarborHub/codeharborhub)](https://github.com/CodeHarborHub/codeharborhub/blob/main/LICENSE)
 [![Contributors](https://img.shields.io/github/contributors/CodeHarborHub/codeharborhub)](https://github.com/CodeHarborHub/codeharborhub/graphs/contributors)
 [![slack](https://img.shields.io/badge/slack-CodeHarborHub-brightgreen.svg?logo=slack)](https://join.slack.com/t/codeharborhub/shared_invite/zt-2mana2uz5-oUQqFAnLqoywHjB9fXTGpA)
@@ -28,7 +28,8 @@ At CodeHarborHub, our mission is clear: to provide accessible and comprehensive 
 
 Now, resolve your all doubts and communicate with our all contributors.
 
-[![](https://img.shields.io/badge/Discord-5865F2.svg?style=for-the-badge&logo=Discord&logoColor=white)](https://discord.com/channels/1231112132595028008/1238672287037919333)
+[![](https://img.shields.io/badge/Discord-5865F2.svg?style=for-the-badge&logo=Discord&logoColor=white)](https://discord.com/channels/1231112132595028008/1238672287037919333) [![Follow on LinkedIn](https://img.shields.io/badge/Follow%20on-LinkedIn-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=ajay-dhangar)
+
 
 ## Getting Started
 
@@ -100,13 +101,9 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contributors
 
-<!--
-[![Contributors](https://contributors-img.web.app/image?repo=codeharborhub/codeharborhub)](https://github.com/CodeHarborHub/codeharborhub/graphs/contributors)
--->
-
-![Contributors](https://opencollective.com/codeharborhub/contributors.svg?button=false&avatarHeight=50&width=1000)
+![Contributors](https://opencollective.com/codeharborhub/contributors.svg?button=false&avatarHeight=40&width=1000)
 
 ## Chat with us
 
-[![Chat with us](https://github.com/CodeHarborHub/codeharborhub/assets/99037494/e898e0e8-7985-4adb-9730-a2588fcba78e)](https://www.patreon.com/ajay_dhangar/membership)
 
+[![Chat with us](https://github.com/CodeHarborHub/codeharborhub/assets/99037494/e898e0e8-7985-4adb-9730-a2588fcba78e)](https://www.patreon.com/ajay_dhangar/membership)

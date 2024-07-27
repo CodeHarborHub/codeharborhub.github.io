@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import MyChart from "./MyChart";
 
 // Define the Course interface to type the props
 interface Course {
@@ -128,6 +129,10 @@ const Courses: React.FC<Props> = ({ courses }) => {
 
   return (
     <CoursesContainer>
+   
+   {/* Chart */}
+      <MyChart />
+
       {/* Filter buttons */}
       <FilterButtons>
         <Button onClick={() => setFilter("all")}>All</Button>

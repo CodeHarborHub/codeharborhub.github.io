@@ -8,7 +8,6 @@ keywords:
   - gfg problems problems
 ---
 
-
 export const problems = [
   {
     "problemName": "1. Inorder Traversal",

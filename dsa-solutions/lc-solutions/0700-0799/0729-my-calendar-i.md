@@ -246,3 +246,13 @@ class MyCalendar:
 - **LeetCode Problem**: [My Calendar I](https://leetcode.com/problems/my-calendar-i/description/)
 
 - **Solution Link**: [My Calendar I](https://leetcode.com/problems/my-calendar-i/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

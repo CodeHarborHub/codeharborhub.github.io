@@ -44,7 +44,7 @@ export const Users: User[] = [
     description:
       "The Starter app is a feature-rich Next.js and Tailwind CSS blogging starter template.",
     preview: require("./showcase/TailwindBlog.jpg"),
-    website: "#",
+    website: null,
     source: "https://github.com/Ajay-Dhangar/starter",
     tags: ["opensource", "clone", "templates", "documentation"],
   },
@@ -81,7 +81,7 @@ export const Users: User[] = [
       "Broadcast Web is a modern and responsive web application for broadcasting your own channel.",
     preview: require("./showcase/broadcast-web.jpg"),
     website: "https://codeharborhub-broadcast-web.vercel.app/",
-    source: "",
+    source: null,
     tags: ["opensource", "product", "nextjs", "javascript"],
   },
 
@@ -91,7 +91,7 @@ export const Users: User[] = [
     title: "Scientific Calculator",
     description:
       "Build and Deploy a Modern and Beginner-friendly Scientific Calculator using HTML, CSS and Vanilla Javascript",
-    preview: require("./showcase/calculator-app.png"),
+    preview: require("./showcase/calculator-app-ss.png"),
     website: "https://calcu-plus.vercel.app/",
     source: "https://github.com/ParnaRoyChowdhury777/Calculator---CalcuPlus",
     tags: ["opensource", "clone", "html", "css", "vanilla"],
@@ -108,6 +108,17 @@ export const Users: User[] = [
     source: "https://github.com/komal-agarwal5/Giggle-Hub------Meme-Generator",
     tags: ["opensource", "product", "html", "css", "javascript"],
   },
+    // URL Shortner
+
+    {
+      title: "URL Shortner",
+      description:
+        "It  Short  URL by using the technique of API Fetching and also supports the feature of copy url.",
+      preview: require("./showcase/URLShortner.png"),
+      website: "https://url-shortner-tau-woad.vercel.app/",
+      source: "https://github.com/kartikmehta18/URLshortner",
+      tags: ["opensource", "product", "html", "css", "javascript"],
+    },
 
   // Age Calculator Clone
 
@@ -115,7 +126,7 @@ export const Users: User[] = [
     title: "Age Calculator",
     description:
       "It calculates the exact age in years, months and days on entering a date of birth with proper error handling.",
-    preview: require("./showcase/age-calculator.png"),
+    preview: require("./showcase/age-calculator-ss.png"),
     website: "https://age-calculator-rho-two.vercel.app/",
     source: "https://github.com/ParnaRoyChowdhury777/Age-Calculator",
     tags: ["opensource", "product", "react", "css", "javascript"],
@@ -134,7 +145,30 @@ export const Users: User[] = [
       "https://github.com/dhairyagothi/50_days_50_web_project/tree/Main/public/TO_DO_LIST",
     tags: ["html", "css", "javascript"],
   },
+  
+  // Dictonary app
 
+  {
+   title: "Dictonary",
+   description:
+    "In this Dictonary search for words and it outputs word meaning, word pronunciation and usage example.",
+   preview: require("./showcase/Dictonary.png"),
+   website: "https://kartikmehta18.github.io/Dictonary-app/",
+   source: "https://github.com/kartikmehta18/Dictonary-app",
+   tags: ["opensource", "portfolio", "css", "javascript", "html"],
+  },
+  
+  // Portfolio
+  {
+    title: "Portfolio",
+    description:
+      "Portfolio can showcase your skills ,certificate and serve as part of your resume.",
+    preview: require("./showcase/portfolio.png"),
+    website: "https://kartikmehta18.github.io/myportfolio/",
+    source: "hhttps://github.com/kartikmehta18/myportfolio",
+    tags: ["opensource", "portfolio", "css", "javascript", "html"],
+  },
+  
   // Currency Converter Clone
 
   {
@@ -153,7 +187,7 @@ export const Users: User[] = [
     title: "Guess The Number Game",
     description:
       "It allows users to play the Guess The Number Game based on the choice of Easy(3 rounds), Intermediate(5 rounds) and Hard(7 rounds).",
-    preview: require("./showcase/guessnumber.png"),
+    preview: require("./showcase/guessnumber-ss.png"),
     website: "https://guess-me-tau.vercel.app/",
     source: "https://github.com/ParnaRoyChowdhury777/Guess_The_Number_Game",
     tags: ["opensource", "product", "html", "css", "javascript", "vanilla"],
@@ -164,7 +198,7 @@ export const Users: User[] = [
   {
     title: "QR Generator",
     description: "It generates a QR code based on a typed text or URL.",
-    preview: require("./showcase/qr_generator.png"),
+    preview: require("./showcase/qr_generator-ss.png"),
     website: "https://scan--me.vercel.app/",
     source: "https://github.com/ParnaRoyChowdhury777/ScanMe",
     tags: ["opensource", "product", "html", "css", "javascript", "vanilla"],
@@ -330,4 +364,15 @@ export const Users: User[] = [
         "https://github.com/AsmitaMishra24/Othello",
       tags: ["opensource", "html", "css", "javascript", "game"],
     },
+
+    // horse ride booking system
+
+    {
+      title: "Horse Ride Booking",
+      description: "Front-end development for a horse ride booking system using React.js, redux, and montion animation.",
+      preview: require("./showcase/horse-ride-booking.jpg"),
+      website: "https://horse-ride-booking.vercel.app/",
+      source: null,
+      tags: ["opensource", "react", "redux", "motion", "javascript"],
+    }
 ];

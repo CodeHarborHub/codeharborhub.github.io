@@ -185,3 +185,13 @@ class Solution(object):
 - **LeetCode Problem**: [1-bit and 2-bit Characters](https://leetcode.com/problems/1-bit-and-2-bit-characters/description/)
 
 - **Solution Link**: [1-bit and 2-bit Characters](https://leetcode.com/problems/1-bit-and-2-bit-characters/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

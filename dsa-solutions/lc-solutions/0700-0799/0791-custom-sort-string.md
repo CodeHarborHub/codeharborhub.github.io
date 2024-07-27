@@ -310,3 +310,13 @@ class Solution:
 - **LeetCode Problem**: [Custom Sort String](https://leetcode.com/problems/custom-sort-string/description/)
 
 - **Solution Link**: [Custom Sort String](https://leetcode.com/problems/custom-sort-string/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

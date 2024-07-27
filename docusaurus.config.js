@@ -83,7 +83,7 @@ const config = {
       announcementBar: {
         id: "announcementBar",
         content:
-          '⭐️ If you like CodeHarborHub, give it a star on <a target="_blank" href="https://github.com/codeharborhub/codeharborhub">GitHub</a> and join us on <a target="_blank" href="https://www.linkedin.com/company/codeharborhub/">LinkedIn</a> ⭐️',
+          '🔗 Check out our latest project: <a target="_blank" href="https://www.linkedin.com/posts/ajay-dhangar_loan-calculator-activity-7221402171957768195-1WYs/?utm_source=share&utm_medium=member_desktop">Loan Calculator</a>! Like, comment, and share! 🚀',
         isCloseable: true,
         backgroundColor: "var(--ifm-color-primary)",
       },
@@ -197,17 +197,14 @@ const config = {
             html: '<span class="nav-emoji">🤝</span> Community',
             position: "left",
           },
-
           {
             to: "/our-sponsors/",
             html: '<span class="nav-emoji">💰</span> Donate',
           },
-
           {
-            to: "/blog",
-            html: '<span class="nav-emoji">📰</span> Blog',
+            to: "/blogs",
+            html: '<span class="nav-emoji">📰</span> Blogs',
           },
-
           {
             type: "dropdown",
             html: '<span class="nav-emoji">🔗</span> More',
@@ -217,17 +214,15 @@ const config = {
                 label: "🌍 Web Dev",
                 to: "/web-dev/",
               },
+              {
+                label: "📚 E-books",
+                to: "/ebooks/",
+              },
 
               {
                 label: "🛣️ Roadmap",
                 to: "/roadmap/",
               },
-
-              {
-                label: "📊 Quiz",
-                to: "https://quiz-app-ajay-dhangar.vercel.app/",
-              },
-
               {
                 label: "🧑‍💻 Live Editor",
                 to: "/LiveEditor/",
@@ -236,24 +231,30 @@ const config = {
                 label: "📺 Broadcast",
                 to: "https://codeharborhub-broadcast-web.vercel.app/",
               },
-              {
-                label: "🏷️ Tutorial Tags 📚",
-                to: "/docs/tags/",
-                activeBaseRegex: "/docs/tags/",
-              },
-              {
-                label: "🏷️ Courses Tags 🎓",
-                to: "/courses/tags/",
-                activeBaseRegex: "/courses/tags/",
-              },
-              {
-                label: "🏷️ DSA Tags 🧠",
-                to: "/dsa/tags/",
-                activeBaseRegex: "/dsa/tags/",
-              },
             ],
           },
-
+          // {
+          //   type: "dropdown",
+          //   html: '<span class="nav-emoji">🏷️</span> Tags',
+          //   position: "left",
+          //   items: [
+          //     {
+          //       label: "🏷️ Tutorial Tags 📚",
+          //       to: "/docs/tags/",
+          //       activeBaseRegex: "/docs/tags/",
+          //     },
+          //     {
+          //       label: "🏷️ Courses Tags 🎓",
+          //       to: "/courses/tags/",
+          //       activeBaseRegex: "/courses/tags/",
+          //     },
+          //     {
+          //       label: "🏷️ DSA Tags 🧠",
+          //       to: "/dsa/tags/",
+          //       activeBaseRegex: "/dsa/tags/",
+          //     },
+          //   ],
+          // },
           {
             type: "search",
             position: "right",
@@ -319,7 +320,7 @@ const config = {
               },
               {
                 label: "Careers",
-                to: "#",
+                to: "/careers/",
               },
               {
                 label: "Team",

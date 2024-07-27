@@ -83,10 +83,53 @@ For each letter:
 Add the letter to the current_perm.
 Make a recursive call to permute with the updated current_perm and the remaining letters (excluding the chosen letter).
 After the recursive call (exploring possibilities with the chosen letter), remove the letter from current_perm to backtrack and explore other options (avoiding duplicates).
-Code:
+#### Codes in Different Languages
 
-Python
-```python
+<Tabs>
+  
+  <TabItem value="cpp" label="C++" default>
+  <SolutionAuthor name="@jay"/>
+   ```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+void permute(vector<char>& letters, vector<char>& current_perm, vector<vector<char>>& all_permutations) {
+    if (current_perm.size() == letters.size()) {
+        all_permutations.push_back(current_perm);
+        return;
+    }
+
+    for (size_t i = 0; i < letters.size(); ++i) {
+        if (find(current_perm.begin(), current_perm.end(), letters[i]) == current_perm.end()) {
+            current_perm.push_back(letters[i]);
+            permute(letters, current_perm, all_permutations);
+            current_perm.pop_back();
+        }
+    }
+}
+
+int main() {
+    vector<char> letters = {'a', 'b', 'c'};
+    vector<char> current_perm;
+    vector<vector<char>> all_permutations;
+
+    permute(letters, current_perm, all_permutations);
+
+    cout << "All permutations:\n";
+    for (const auto& perm : all_permutations) {
+        for (char c : perm) {
+            cout << c << ' ';
+        }
+        cout << '\n';
+    }
+
+    return 0;
+}
+
+   ```
+  </TabItem>  
+  <TabItem value="Python" label="Python">
+```Python showLineNumbers
 def permute(letters, current_perm=[], all_permutations=[]):
   """Finds all permutations (arrangements) of the given letters."""
   if len(current_perm) == len(letters):
@@ -104,4 +147,77 @@ letters = ['a', 'b', 'c']
 permute(letters, all_permutations=[])
 print("All permutations:", all_permutations)
 
+
 ```
+</TabItem>
+ <TabItem value="Java" label="Java">
+``` jsx showLineNumbers
+import java.util.ArrayList;
+import java.util.List;
+
+public class Permutations {
+    public static void permute(char[] letters, List<Character> currentPerm, List<List<Character>> allPermutations) {
+        if (currentPerm.size() == letters.length) {
+            allPermutations.add(new ArrayList<>(currentPerm));
+            return;
+        }
+
+        for (char letter : letters) {
+            if (!currentPerm.contains(letter)) {
+                currentPerm.add(letter);
+                permute(letters, currentPerm, allPermutations);
+                currentPerm.remove(currentPerm.size() - 1);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        char[] letters = {'a', 'b', 'c'};
+        List<Character> currentPerm = new ArrayList<>();
+        List<List<Character>> allPermutations = new ArrayList<>();
+
+        permute(letters, currentPerm, allPermutations);
+
+        System.out.println("All permutations:");
+        for (List<Character> perm : allPermutations) {
+            for (char c : perm) {
+                System.out.print(c + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+```
+</TabItem>
+
+<TabItem value="JavaScript" label="JavaScript">
+``` jsx showLineNumbers
+function permute(letters, currentPerm = [], allPermutations = []) {
+    if (currentPerm.length === letters.length) {
+        allPermutations.push([...currentPerm]); // Append a copy
+        return;
+    }
+
+    for (let i = 0; i < letters.length; i++) {
+        if (!currentPerm.includes(letters[i])) {
+            currentPerm.push(letters[i]);
+            permute(letters, currentPerm, allPermutations);
+            currentPerm.pop(); // Backtrack
+        }
+    }
+}
+
+// Example usage
+let letters = ['a', 'b', 'c'];
+let allPermutations = [];
+permute(letters, [], allPermutations);
+console.log("All permutations:", allPermutations);
+
+
+```
+</TabItem>
+
+
+</Tabs>
