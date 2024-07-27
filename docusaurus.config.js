@@ -165,6 +165,7 @@ const config = {
                 value: `<div class="dropdown_grid">
                 <a class="dropbtn" href="/courses/"> Courses </a>
                 <div class="dropdown-content">
+                  <a href="/courses/category/html" class="nav__icons"> <img src="/icons/html-5.svg" alt="HTML" /> </a>
                   <a href="/courses/category/reactjs/" class="nav__icons"> <img src="/icons/jsx.svg" alt="React" /> </a>
                 </div>
               </div>`,
