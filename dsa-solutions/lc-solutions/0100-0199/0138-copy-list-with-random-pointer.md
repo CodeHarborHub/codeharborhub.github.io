@@ -1,42 +1,41 @@
 ---
-
 id: copy-list-with-random-pointer
-title: Copy List With Random Pointer
-sidebar_label: Copy List With Random Pointer
+title: Copy List with Random Pointer
+sidebar_label: 0138 Copy List with Random Pointer
 tags:
-  - Hash Table 
-  - Linked List
   - Java
   - Python
   - C++
-description: "This document provides solutions for the Copy List With Random Pointer problem on LeetCode."
-
+  - JavaScript  
+description: "This is a solution to the Copy List with Random Pointer problem on LeetCode."
 ---
 
 ## Problem Description
 
-A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null.
+A linked list of length n is given such that each node contains an additional random pointer, which could point to any node in the list, or `null`.
 
-Construct a deep copy of the list.
+Construct a deep copy of the list. The deep copy should consist of exactly `n` brand new nodes, where each new node has its value set to the value of its corresponding original node. Both the `next` and `random` pointer of the new nodes should point to new nodes in the copied list such that the pointers in the original list and copied list represent the same list state. None of the pointers in the new list should point to nodes in the original list.
+
+For example, if there are two nodes `X` and `Y` in the original list, where `X.random --> Y`, then for the corresponding two nodes `x` and `y` in the copied list, `x.random --> y`.
 
 ### Examples
 
 **Example 1:**
+
+![e1](https://github.com/user-attachments/assets/af16a7ff-3439-4683-8f77-9fdbb3332bef)
+
 ```
 Input: head = [[7,null],[13,0],[11,4],[10,2],[1,0]]
 Output: [[7,null],[13,0],[11,4],[10,2],[1,0]]
 ```
 
 **Example 2:**
+
+![e2](https://github.com/user-attachments/assets/f805c77f-c6cd-4b92-9f9a-c17665bfa317)
+
 ```
 Input: head = [[1,1],[2,1]]
 Output: [[1,1],[2,1]]
-```
-
-**Example 3:**
-```
-Input: head = [[3,null],[3,0],[3,null]]
-Output: [[3,null],[3,0],[3,null]]
 ```
 
 ### Constraints:
@@ -48,178 +47,125 @@ Output: [[3,null],[3,0],[3,null]]
 
 ##  Approach to Solve the Copy List with Random Pointer Problem
 
-To create a deep copy of a linked list with an additional random pointer, follow these steps:
+### Understand the Problem:
+
+Create a deep copy of a linked list where each node has a `next` and a `random` pointer. The new list should be identical in structure to the original, but with all new nodes. Ensure the `random` pointers in the new list accurately reflect the original's `random` pointer relationships.
 
 ### Approach
 
-1. **Create Clones Adjacent to Original Nodes:**
-   - Iterate through the original list and create a new node for each original node. Insert this new node right next to the original node. This way, each original node will have its clone right next to it.
-
-2. **Assign Random Pointers to Cloned Nodes:**
-   - Iterate through the list again. For each original node, if it has a random pointer, set the random pointer of the clone node to point to the clone of the node that the original node’s random pointer is pointing to. This can be achieved because the clone of any node `A` is next to `A`.
-
-3. **Restore the Original List and Extract the Cloned List:**
-   - Iterate through the list once more to restore the original list by separating the original nodes from their clones. Extract the cloned list by linking the cloned nodes together.
+1. **Interweaving Nodes**: Create and insert new nodes immediately after each original node, forming an interwoven list.
+2. **Assigning Random Pointers**: Set the `random` pointers of the new nodes based on the `random` pointers of the original nodes.
+3. **Separating Lists**: Restore the original list and extract the copied list by adjusting the `next` pointers of both original and new nodes.
 
 #### Code in Different Languages
 
-### C++
-```cpp
-class Node {
-public:
-    int val;
-    Node* next;
-    Node* random;
+<Tabs>
+  
+    
+<TabItem value="Python" label="Python" default>
 
-    Node(int _val) {
-        val = _val;
-        next = NULL;
-        random = NULL;
-    }
-};
+  <SolutionAuthor name="sivaprasath2004"/>
 
-class Solution {
-public:
-    Node* copyRandomList(Node* head) {
-        if (!head) return nullptr;
+  ```python
 
-        // Step 1: Create a new node for each original node and insert it next to the original node.
-        Node* curr = head;
-        while (curr) {
-            Node* newNode = new Node(curr->val);
-            newNode->next = curr->next;
-            curr->next = newNode;
-            curr = newNode->next;
-        }
-
-        // Step 2: Assign random pointers for the new nodes.
-        curr = head;
-        while (curr) {
-            if (curr->random) {
-                curr->next->random = curr->random->next;
-            }
-            curr = curr->next->next;
-        }
-
-        // Step 3: Restore the original list and extract the copied list.
-        curr = head;
-        Node* copiedHead = head->next;
-        Node* copiedCurr = copiedHead;
-        while (curr) {
-            curr->next = curr->next->next;
-            if (copiedCurr->next) {
-                copiedCurr->next = copiedCurr->next->next;
-            }
-            curr = curr->next;
-            copiedCurr = copiedCurr->next;
-        }
-
-        return copiedHead;
-    }
-};
-```
-
-### Java
-```java
-class Node {
-    int val;
-    Node next;
-    Node random;
-
-    public Node(int val) {
-        this.val = val;
-        this.next = null;
-        this.random = null;
-    }
-}
-
-class Solution {
-    public Node copyRandomList(Node head) {
-        if (head == null) return null;
-
-        // Step 1: Create a new node for each original node and insert it next to the original node.
-        Node curr = head;
-        while (curr != null) {
-            Node newNode = new Node(curr.val);
-            newNode.next = curr.next;
-            curr.next = newNode;
-            curr = newNode.next;
-        }
-
-        // Step 2: Assign random pointers for the new nodes.
-        curr = head;
-        while (curr != null) {
-            if (curr.random != null) {
-                curr.next.random = curr.random.next;
-            }
-            curr = curr.next.next;
-        }
-
-        // Step 3: Restore the original list and extract the copied list.
-        curr = head;
-        Node copiedHead = head.next;
-        Node copiedCurr = copiedHead;
-        while (curr != null) {
-            curr.next = curr.next.next;
-            if (copiedCurr.next != null) {
-                copiedCurr.next = copiedCurr.next.next;
-            }
-            curr = curr.next;
-            copiedCurr = copiedCurr.next;
-        }
-
-        return copiedHead;
-    }
-}
-```
-
-### Python
-```python
 class Node:
     def __init__(self, x: int, next: 'Node' = None, random: 'Node' = None):
         self.val = x
         self.next = next
         self.random = random
 
-class Solution:
-    def copyRandomList(self, head: 'Node') -> 'Node':
-        if not head:
-            return None
+def copyRandomList(head: 'Node') -> 'Node':
+    if not head:
+        return None
+     
+    current = head
+    while current:
+        new_node = Node(current.val, current.next, None)
+        current.next = new_node
+        current = new_node.next
+     
+    current = head
+    while current:
+        if current.random:
+            current.next.random = current.random.next
+        current = current.next.next
+     
+    original = head
+    copy = head.next
+    copy_head = copy
+    
+    while original:
+        original.next = original.next.next
+        if copy.next:
+            copy.next = copy.next.next
+        original = original.next
+        copy = copy.next
+    
+    return copy_head
 
-        # Step 1: Create a new node for each original node and insert it next to the original node.
-        curr = head
-        while curr:
-            newNode = Node(curr.val)
-            newNode.next = curr.next
-            curr.next = newNode
-            curr = newNode.next
+  ```
+  </TabItem>
 
-        # Step 2: Assign random pointers for the new nodes.
-        curr = head
-        while curr:
-            if curr.random:
-                curr.next.random = curr.random.next
-            curr = curr.next.next
+ <TabItem value="Js" label="JavaScript" default>
 
-        # Step 3: Restore the original list and extract the copied list.
-        curr = head
-        copiedHead = head.next
-        copiedCurr = copiedHead
-        while curr:
-            curr.next = curr.next.next
-            if copiedCurr.next:
-                copiedCurr.next = copiedCurr.next.next
-            curr = curr.next
-            copiedCurr = copiedCurr.next
+  <SolutionAuthor name="sivaprasath2004"/>
 
-        return copiedHead
+   ```JS
+class Node {
+    constructor(val, next = null, random = null) {
+        this.val = val;
+        this.next = next;
+        this.random = random;
+    }
+}
+
+function copyRandomList(head) {
+    if (!head) return null;
+ 
+    let current = head;
+    while (current) {
+        const newNode = new Node(current.val);
+        newNode.next = current.next;
+        current.next = newNode;
+        current = newNode.next;
+    }
+ 
+    current = head;
+    while (current) {
+        if (current.random) {
+            current.next.random = current.random.next;
+        }
+        current = current.next.next;
+    } 
+    current = head;
+    const newHead = head.next;
+    let copyCurrent = newHead;
+
+    while (current) {
+        current.next = current.next.next;
+        if (copyCurrent.next) {
+            copyCurrent.next = copyCurrent.next.next;
+        }
+        current = current.next;
+        copyCurrent = copyCurrent.next;
+    }
+
+    return newHead;
+}
+
 ```
+   </TabItem>
+   
+ </Tabs>
+ 
+
+### Output
+
+![Screenshot from 2024-07-19 21-11-44](https://github.com/user-attachments/assets/2c2a7efb-711d-4f6e-aebd-8f540de015c3)
 
 ### Complexity
 
-- **Time Complexity:** $O(n)$ - Each of the three steps involves a single pass through the list.
-- **Space Complexity:** $O(1)$ - The space complexity is constant as we are not using any additional data structures for storage.
+- **Time Complexity:** O(n), where `n` is the number of nodes in the linked list. The algorithm iterates through the list three times: once for interweaving nodes, once for setting random pointers, and once for separating the lists.
 
-### Summary
+- **Space Complexity:** O(1), since the algorithm uses a constant amount of extra space beyond the input list itself (e.g., pointers for traversal and temporary variables).
 
-This approach efficiently creates a deep copy of a linked list with random pointers by leveraging the existing structure of the list and ensuring that each node and its clone are linked adjacently.
