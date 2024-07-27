@@ -160,30 +160,6 @@ function App() {
 export default App;
 ```
 
-<BrowserWindow>
-     <div>
-     <h1>Welcome to My React app</h1>
-     <p id="loading" style={{fontFamily:"monospace",textAlign:'center',fontWeight:"600",fontSize:"1.2rem"}}>Fetching....</p>
-     <ul id="ul"></ul>
-          <script>
-            document.addEventListener("DOMContentLoaded", (event) => {
-              setTimeout(()=>{
-              if(document.getElementById("loading")?.style){document.getElementById("loading").style.display="none";}
-              [{id:1,name:"John"},{id:2,name:"sam"},{id:3,name:"Arjun"},{id:4,name:"siva"},{id:5,name:"Anbhu"},{id:6,name:"Krishna"}].map(item=>{
-                let li=document.createElement("li")
-                li.textContent=item.name
-                let ul=document.getElementById("ul")
-                if(ul){
-                ul.appendChild(li)
-                }
-              })
-              },2500)
-            })
-          </script>
-     </div>
-</BrowserWindow>
-
-
 ## "Invalid Host Header" Error and How to Handle It
 
 In some cases, after configuring the proxy, you might encounter an "Invalid Host Header" error when developing remotely. This issue arises due to stricter host checks to prevent DNS rebinding attacks.
