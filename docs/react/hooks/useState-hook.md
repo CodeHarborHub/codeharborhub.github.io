@@ -35,11 +35,8 @@ function Counter() {
 ```
 <BrowserWindow>
     <div>
-       <p>You clicked <span id="display">0</span> times</p>
-       <button onClick={()=>{
-        let display=document.getElementById("display")
-        display.textContent=Number(display.textContent)+1
-       }}>Click me</button>
+       <p>You clicked <span id="displayCount">0</span> times</p>
+       <button onClick={()=>{document.getElementById("displayCount").textContent=Number(document.getElementById("displayCount").textContent)+1}}>Click me</button>
     </div>
 </BrowserWindow>
 
