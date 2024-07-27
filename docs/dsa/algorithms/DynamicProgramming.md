@@ -59,32 +59,94 @@ Dynamic programming can be applied to a wide range of problems, including optimi
 ## Example 
 
 Here's an example of dynamic programming in Python:
+#### Codes in Different Languages
 
-```python
+<Tabs>
+  <TabItem value="Python" label="Python" default>
+```Python showLineNumbers
 def fibonacci(n):
-    # Create a memoization table to store computed values
-    memo = {}
-
-    # Base cases
-    memo[0] = 0
-    memo[1] = 1
-
-    # Recursive function to compute Fibonacci numbers
-    def fib(n):
-        # Check if value is already computed
-        if n in memo:
-            return memo[n]
-
-        # Compute and store the value
-        memo[n] = fib(n-1) + fib(n-2)
-        return memo[n]
-
-    return fib(n)
+    if n <= 1:
+        return n
+    
+    a, b = 0, 1
+    for _ in range(2, n + 1):
+        a, b = b, a + b
+    return b
 
 # Test the function
-print(fibonacci(5))  # Output: 5
-print(fibonacci(10))  # Output: 55
+print("Fibonacci of 5:", fibonacci(5))  # Output: 5
+print("Fibonacci of 10:", fibonacci(10)) # Output: 55
+
 ```
+</TabItem>
+  <TabItem value="cpp" label="C++" >
+   ```cpp
+ #include <iostream>
+using namespace std;
+int fibonacci(int n) {
+    if (n <= 1) return n;
+    
+    int a = 0, b = 1, c;
+    for (int i = 2; i <= n; i++) {
+        c = a + b;
+        a = b;
+        b = c;
+    }
+    return b;
+}
+
+int main() {
+    cout << "Fibonacci of 5: " << fibonacci(5) << endl;  // Output: 5
+    cout << "Fibonacci of 10: " << fibonacci(10) << endl; // Output: 55
+    return 0;
+}
+   ```
+  </TabItem>  
+ <TabItem value="Java" label="Java">
+``` jsx showLineNumbers
+public class Fibonacci {
+    public static int fibonacci(int n) {
+        if (n <= 1) return n;
+        
+        int a = 0, b = 1, c;
+        for (int i = 2; i <= n; i++) {
+            c = a + b;
+            a = b;
+            b = c;
+        }
+        return b;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Fibonacci of 5: " + fibonacci(5));  // Output: 5
+        System.out.println("Fibonacci of 10: " + fibonacci(10)); // Output: 55
+    }
+}
+```
+</TabItem>
+
+<TabItem value="JavaScript" label="JavaScript">
+``` jsx showLineNumbers
+function fibonacci(n) {
+    if (n <= 1) return n;
+    
+    let a = 0, b = 1, c;
+    for (let i = 2; i <= n; i++) {
+        c = a + b;
+        a = b;
+        b = c;
+    }
+    return b;
+}
+
+// Test the function
+console.log("Fibonacci of 5:", fibonacci(5));  // Output: 5
+console.log("Fibonacci of 10:", fibonacci(10)); // Output: 55
+```
+</TabItem>
+
+
+</Tabs>
 
 In this example, we use dynamic programming to efficiently compute Fibonacci numbers. We create a memoization table to store the computed values and avoid redundant computations. The recursive function `fib` checks if the value is already computed in the memoization table before computing it. This approach significantly improves the efficiency of the algorithm.
 

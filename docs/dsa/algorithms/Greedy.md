@@ -63,9 +63,12 @@ These are just a few examples of greedy algorithms. Each algorithm has its own s
 Note that the Greedy algorithm may not always be the best choice. Analyze the problem and consider other approaches for the most efficient solution.
 
 **Here's an example code using the Greedy algorithm:**
+#### Codes in Different Languages
 
-```python
-    def knapsack_greedy(values, weights, capacity):
+<Tabs>
+  <TabItem value="Python" label="Python" default>
+```Python showLineNumbers
+def knapsack_greedy(values, weights, capacity):
     # Create a list of items with their values and weights
     items = list(zip(values, weights))
     
@@ -93,7 +96,157 @@ capacity = 50
 
 max_value = knapsack_greedy(values, weights, capacity)
 print("Maximum value:", max_value)
+
 ```
+</TabItem>
+  <TabItem value="cpp" label="C++" >
+   ```cpp
+   #include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+struct Item {
+    int value;
+    int weight;
+};
+
+bool compare(Item a, Item b) {
+    double r1 = (double)a.value / a.weight;
+    double r2 = (double)b.value / b.weight;
+    return r1 > r2;
+}
+
+int knapsack_greedy(vector<int>& values, vector<int>& weights, int capacity) {
+    vector<Item> items(values.size());
+    for (size_t i = 0; i < values.size(); ++i) {
+        items[i] = {values[i], weights[i]};
+    }
+
+    sort(items.begin(), items.end(), compare);
+
+    int total_value = 0;
+    int total_weight = 0;
+
+    for (auto& item : items) {
+        if (total_weight + item.weight <= capacity) {
+            total_value += item.value;
+            total_weight += item.weight;
+        }
+    }
+
+    return total_value;
+}
+
+int main() {
+    vector<int> values = {60, 100, 120};
+    vector<int> weights = {10, 20, 30};
+    int capacity = 50;
+
+    int max_value = knapsack_greedy(values, weights, capacity);
+    cout << "Maximum value: " << max_value << endl;
+
+    return 0;
+}
+
+   ```
+  </TabItem>  
+ <TabItem value="Java" label="Java">
+``` jsx showLineNumbers
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+class Item {
+    int value;
+    int weight;
+
+    Item(int value, int weight) {
+        this.value = value;
+        this.weight = weight;
+    }
+}
+
+public class KnapsackGreedy {
+
+    public static int knapsackGreedy(int[] values, int[] weights, int capacity) {
+        List<Item> items = new ArrayList<>();
+        for (int i = 0; i < values.length; i++) {
+            items.add(new Item(values[i], weights[i]));
+        }
+
+        Collections.sort(items, new Comparator<Item>() {
+            public int compare(Item a, Item b) {
+                double r1 = (double) a.value / a.weight;
+                double r2 = (double) b.value / b.weight;
+                return Double.compare(r2, r1);
+            }
+        });
+
+        int totalValue = 0;
+        int totalWeight = 0;
+
+        for (Item item : items) {
+            if (totalWeight + item.weight <= capacity) {
+                totalValue += item.value;
+                totalWeight += item.weight;
+            }
+        }
+
+        return totalValue;
+    }
+
+    public static void main(String[] args) {
+        int[] values = {60, 100, 120};
+        int[] weights = {10, 20, 30};
+        int capacity = 50;
+
+        int maxValue = knapsackGreedy(values, weights, capacity);
+        System.out.println("Maximum value: " + maxValue);
+    }
+}
+
+```
+</TabItem>
+
+<TabItem value="JavaScript" label="JavaScript">
+``` jsx showLineNumbers
+function knapsackGreedy(values, weights, capacity) {
+    let items = [];
+    for (let i = 0; i < values.length; i++) {
+        items.push({ value: values[i], weight: weights[i] });
+    }
+
+    items.sort((a, b) => (b.value / b.weight) - (a.value / a.weight));
+
+    let totalValue = 0;
+    let totalWeight = 0;
+
+    for (let item of items) {
+        if (totalWeight + item.weight <= capacity) {
+            totalValue += item.value;
+            totalWeight += item.weight;
+        }
+    }
+
+    return totalValue;
+}
+
+// Example usage
+let values = [60, 100, 120];
+let weights = [10, 20, 30];
+let capacity = 50;
+
+let maxValue = knapsackGreedy(values, weights, capacity);
+console.log("Maximum value:", maxValue);
+
+
+```
+</TabItem>
+
+
+</Tabs>
 
 This code demonstrates the Greedy algorithm in action by solving the Knapsack problem. The goal is to maximize the total value of items that can be put into a knapsack with a given capacity. The algorithm selects items based on their value-to-weight ratio, choosing the most valuable items first until the knapsack is full.
 
