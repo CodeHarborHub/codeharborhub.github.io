@@ -2,7 +2,7 @@
 id: Interleaving-Strings
 title: Interleaving Strings
 sidebar_label: Interleaving Strings
-tags: 
+tags:
     - Dynamic Programming
     - Strings
     - Interleaving String
@@ -10,7 +10,7 @@ tags:
 
 ## Problem Description
 
-| Problem Statement                                       | Solution Link                                                              | LeetCode Profile                                        |
+| Problem Statement        | Solution Link                                                              | LeetCode Profile                                        |
 | :------------------------------------------------------ | :------------------------------------------------------------------------- | :------------------------------------------------------ |
 | [Interleaving-Strings](https://leetcode.com/problems/Interleaving-Strings/description/) | [Interleaving-Strings Solution on LeetCode](https://leetcode.com/problems/Interleaving-Strings/solutions/) | [Nikita Saini](https://leetcode.com/u/Saini_Nikita/) |
 
@@ -30,8 +30,15 @@ The interleaving is `s1 + t1 + s2 + t2 + s3 + t3 + ...` or `t1 + s1 + t2 + s2 + 
 
 ### Examples
 
-#### Example 1:
 
+#### Example 1:
+**Input:** `s1 = "aabcc", s2 = "dbbca", s3 = "aadbbbaccc"`
+**Output:** `false`
+**Explanation:** 
+Notice how it is impossible to interleave `s2` with any other string to obtain `s3`.
+
+
+#### Example 2:
 **Input:** `s1 = "aabcc", s2 = "dbbca", s3 = "aadbbcbcac"`
 **Output:** `true`
 **Explanation:** 
@@ -40,12 +47,8 @@ Split `s1` into `s1 = "aa" + "bc" + "c"`, and `s2` into `s2 = "dbbc" + "a"`.
 Interleaving the two splits, we get `"aa" + "dbbc" + "bc" + "a" + "c" = "aadbbcbcac"`.
 Since `s3` can be obtained by interleaving `s1` and `s2`, we return `true`.
 
-#### Example 2:
 
-**Input:** `s1 = "aabcc", s2 = "dbbca", s3 = "aadbbbaccc"`
-**Output:** `false`
-**Explanation:** 
-Notice how it is impossible to interleave `s2` with any other string to obtain `s3`.
+
 
 #### Example 3:
 
@@ -54,6 +57,7 @@ Notice how it is impossible to interleave `s2` with any other string to obtain `
 
 
 ### Constraints
+
 - $0 \leq \text{s1.length}, \text{s2.length} \leq 100$
 - $0 \leq \text{s3.length} \leq 200$
 - $\text{s1}$, $\text{s2}$, and $\text{s3}$ consist of lowercase English letters.$
@@ -100,6 +104,7 @@ class Solution:
 ```
 
 ## Solution in Java
+
 ```java
 class Solution {
     public boolean isInterleave(String s1, String s2, String s3) {
@@ -129,7 +134,9 @@ class Solution {
 }
 ```
 
+
 ## Solution in C++
+
 ```cpp
 class Solution {
 public:
@@ -193,6 +200,7 @@ bool isInterleave(char* s1, char* s2, char* s3) {
 }
 ```
 
+
 ## Solution in JavaScript
 ```js
 var isInterleave = function(s1, s2, s3) {
@@ -220,6 +228,7 @@ var isInterleave = function(s1, s2, s3) {
     return dp[s1.length][s2.length];
 };
 ```
+
 
 ## Conclusion
 By utilizing dynamic programming, we can efficiently determine whether a given string `s3` is an interleaving of two other strings `s1` and `s2`. This approach ensures that we consider all possible ways to form `s3` from `s1` and `s2` while adhering to the interleaving constraints.
