@@ -31,9 +31,8 @@ To create your first web page, you need to create an HTML file. An HTML file is 
 
 Here is an example of a simple HTML file:
 
-
 ```html title="index.html"
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>My First Web Page</title>
@@ -49,7 +48,6 @@ Here is an example of a simple HTML file:
     <h1>Hello, World!</h1>
     <p>Welcome to my first web page.</p>
 </BrowserWindow>
-
 
 In this example, the HTML file contains the following elements:
 
