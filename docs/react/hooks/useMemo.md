@@ -6,9 +6,6 @@ sidebar_position: 6
 tags: [react, create-react-app, useMemo, hooks, react-scripts, react-dom, react-app]
 ---
 
-### useMemo
-
-**Explanation:**
 `useMemo` is used to memoize expensive calculations or computations so that they are only recomputed when necessary. It is similar to `useCallback`, but instead of memoizing functions, it memoizes the result of a computation.
 
 When you call `useMemo`, you pass it a function that performs the expensive computation and a dependency array. It returns the memoized value that only changes when one of the dependencies has changed.
@@ -31,17 +28,17 @@ function MemoizedFactorial() {
 
   return (
     <div>
+      <span>Enter a number to calculate its factorial: </span>
+      <input type="number" value={number} onChange={(e) => setNumber(Number(e.target.value))} />      
       <p>Factorial of {number} is: {factorial}</p>
-      {/* Input updates 'number' to recompute factorial */}
-      <input type="number" value={number} onChange={(e) => setNumber(Number(e.target.value))} />
     </div>
   );
 }
 ```
 
 <BrowserWindow>
-      <div>
-          <p>Factorial of <span id="give_num"></span> is: <span id="output_num"></span></p>
+      <div>      
+        <span>Enter a number to calculate its factorial: </span>
           <input type="number" onChange={(e) => {
             let number=Number(e.target.value)
             let give_num=document.getElementById("give_num")
@@ -53,6 +50,9 @@ function MemoizedFactorial() {
             give_num.textContent=number
             output_num.textContent=fact
           }} />
+            <br />
+            <br />
+          <p>Factorial of <span id="give_num"> </span> is: <span id="output_num"> </span></p>
       </div>
 </BrowserWindow>
 
