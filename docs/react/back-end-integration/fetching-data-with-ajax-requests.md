@@ -144,31 +144,6 @@ const DataFetcher = () => {
 export default DataFetcher;
 ```
 
-<BrowserWindow>
-     <div>
-     <h2>Fetched Data</h2>
-     <p id="load_ing" style={{fontFamily:"monospace",textAlign:'center',fontWeight:"600",fontSize:"1.2rem"}}>Fetching....</p>
-     <ul id="u_l"></ul>
-          <script>
-            document.addEventListener("DOMContentLoaded", (event) => {
-              setTimeout(()=>{
-              if(document.getElementById("load_ing")?.style){document.getElementById("load_ing").style.display="none";}
-              [{id:1,name:"John"},{id:2,name:"sam"},{id:3,name:"Arjun"},{id:4,name:"siva"},{id:5,name:"Anbhu"},{id:6,name:"Krishna"}].map(item=>{
-                let li=document.createElement("li")
-                li.textContent=item.name
-                let ul=document.getElementById("u_l")
-                if(ul){
-                ul.appendChild(li)
-                }
-              })
-              },1500)
-            })
-          </script>
-     </div>
-</BrowserWindow>
-
-
-
 In this component, we use the `useEffect` hook to fetch data from the API when the component mounts. We store the fetched data in the `data` state variable using the `useState` hook.
 
 ### Step 4: Using the DataFetcher Component
