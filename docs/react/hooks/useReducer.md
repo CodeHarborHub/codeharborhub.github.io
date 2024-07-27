@@ -48,14 +48,12 @@ function Counter() {
 ```
 
 <BrowserWindow> 
-         <p>Count: <span id="count">0</span></p>
+         <p>Count: <span id="countValue">0</span></p>
           <button onClick={() =>{
-            let count=document.getElementById("count")
-            count.textContent=Number(count.textContent)+1
-          }}>Increment</button>
+            document.getElementById("countValue").textContent=Number(document.getElementById("countValue").textContent)+1
+          }}>Increment</button> &nbsp;
       <button onClick={() => {
-             let count=document.getElementById("count")
-             count.textContent=Number(count.textContent)-1
+             document.getElementById("countValue").textContent=Number(document.getElementById("countValue").textContent)-1
       }}>Decrement</button> 
 </BrowserWindow>
 
