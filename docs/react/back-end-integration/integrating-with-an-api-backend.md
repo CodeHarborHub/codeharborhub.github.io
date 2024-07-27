@@ -91,6 +91,29 @@ const App = () => {
 export default App;
 ```
 
+<BrowserWindow>
+     <div>
+     <h2>My React App</h2>
+     <p id="loa_d_ing" style={{fontFamily:"monospace",textAlign:'center',fontWeight:"600",fontSize:"1.2rem"}}>Fetching....</p>
+     <ul id="u_l_"></ul>
+          <script>
+            document.addEventListener("DOMContentLoaded", (event) => {
+              setTimeout(()=>{
+              if(document.getElementById("loa_d_ing")?.style){document.getElementById("loa_d_ing").style.display="none";}
+              [{id:1,name:"Leet Code Solutions"},{id:2,name:"Responsive Missing"},{id:3,name:"Amazing work projects"},{id:4,name:"Blogs news"},{id:5,name:"130+ contributors"},{id:6,name:"Our Team Members"}].map(item=>{
+                let li=document.createElement("li")
+                li.textContent=item.name
+                let ul=document.getElementById("u_l_")
+                if(ul){
+                ul.appendChild(li)
+                }
+              })
+              },2500)
+            })
+          </script>
+     </div>
+</BrowserWindow>
+
 In this code, we use the `useState` and `useEffect` hooks from React to manage the state of the `posts` array. The `useEffect` hook makes an HTTP GET request to `/api/posts` when the component mounts. The response data is then used to update the `posts` state, and the list of posts is displayed in the app.
 
 ### Sending Data to the Backend
@@ -134,7 +157,7 @@ const App = () => {
       </form>
       <ul>
         {posts.map(post => (
-          <li key={post.id}>{post.title}</li>
+          <li key={post.id}><span>{post.title}</span><span>{post.body}</span></li>
         ))}
       </ul>
     </div>
@@ -143,6 +166,36 @@ const App = () => {
 
 export default App;
 ```
+
+<BrowserWindow>
+     <div>
+     <h2>My React App</h2>
+     <form style={{display:"flex",flexDirection:"column",gap:"0.4rem"}} onSubmit={(event)=>{
+        event.preventDefault();
+        let dispaly_data=document.getElementById("dispaly_data")
+        let li=document.createElement("li")
+        li.style.display="flex"
+        li.style.flexDirection="column"
+        li.style.border="0.1rem solid"
+        li.style.margin="0.5rem"
+        li.style.padding="0.5rem"
+        let span1=document.createElement("span")
+        let span2=document.createElement("span")
+        span1.textContent=`Title: ${event.target.title.value}`
+        span2.textContent=`body: ${event.target.body.value}`
+        li.appendChild(span1)
+        li.appendChild(span2)
+        dispaly_data.appendChild(li)
+     }}>
+        <input type="text" name="title" placeholder="Enter title" required  style={{padding:"0.5rem 2rem 0.5rem 0.5rem"}}/>
+        <textarea name="body" placeholder="Enter body" required style={{padding:"0.5rem 2rem 0.5rem 0.5rem"}}/>
+        <button type="submit" style={{padding:"0.8rem",width:"200px",background:"rgb(0,123,255)",border:"none",borderRadius:"0.5rem",color:"white"}}>Create Post</button>
+     </form>
+     <ul id="dispaly_data">
+        <li style={{display:"flex",flexDirection:"column",border:"0.1rem solid",margin:"0.5rem",padding:"0.5rem"}}><span>Title: Sample Post</span><span>body: Hello Users, This is sample post create you own post</span></li>
+     </ul>
+     </div>
+</BrowserWindow>
 
 In this code, we added a form with inputs for the title and body of the post. When the form is submitted, the `handleSubmit` function is called, which captures the values of the form fields and sends a POST request to `/api/posts`. If the request is successful, the new post is added to the `posts` state, and the list is updated automatically.
 

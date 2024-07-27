@@ -28,4 +28,10 @@ function ThemeComponent() {
 }
 ```
 
+<BrowserWindow>
+     <div>
+         <p>Current theme:<span id="Theme">light</span></p>
+     </div>
+</BrowserWindow>
+
 In this example, `ThemeComponent` uses `useContext` to consume the current theme value (`'light'`) provided by the nearest `ThemeContext.Provider` higher up in the component tree.

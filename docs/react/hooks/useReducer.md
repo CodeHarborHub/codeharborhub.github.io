@@ -47,4 +47,16 @@ function Counter() {
 }
 ```
 
+<BrowserWindow> 
+         <p>Count: <span id="count">0</span></p>
+          <button onClick={() =>{
+            let count=document.getElementById("count")
+            count.textContent=Number(count.textContent)+1
+          }}>Increment</button>
+      <button onClick={() => {
+             let count=document.getElementById("count")
+             count.textContent=Number(count.textContent)-1
+      }}>Decrement</button> 
+</BrowserWindow>
+
 In this example, `useReducer` manages state updates for `count`. `dispatch` is used to trigger actions (`{ type: 'increment' }` or `{ type: 'decrement' }`), which are processed by the `reducer` function to compute the next state.

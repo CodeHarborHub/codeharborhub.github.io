@@ -38,5 +38,23 @@ function Timer() {
   );
 }
 ```
+<BrowserWindow>
+    <div>
+       <p>Timer: <span id="Timer" >0</span></p>
+       <script>
+        document.addEventListener("DOMContentLoaded", () => { 
+            setInterval(() => { 
+                if(document.getElementById("Timer")){
+                document.getElementById("Timer").textContent = Number(document.getElementById("Timer").textContent)+1 
+                }
+                else{
+                  return 
+                }
+            }, 1000) 
+        })
+    </script>
+    </div>
+</BrowserWindow>
+
 
 In this example, `useEffect` is used to create a timer that updates the `seconds` state every second (`1000ms`). The cleanup function returned by `useEffect` clears the interval when the component unmounts or when `seconds` changes due to a dependency array (`[]`) change.
