@@ -1,7 +1,7 @@
 ---
 title: 'Dockerize Spring-boot with Github-Actions'
 sidebar_label: Dockerize Spring-boot with Github-Actions
-authors: [Dharshi Balasubramaniyam]
+authors: [DharshiBalasubramaniyam]
 tags: [docker, githubactions, springboot, ci-cd]
 date: 2024-07-28
 hide_table_of_contents: true
