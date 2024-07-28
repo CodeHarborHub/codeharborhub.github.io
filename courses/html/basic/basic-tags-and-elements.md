@@ -4,8 +4,20 @@ title: Basic Tags and Elements
 sidebar_label: Basic Tags and Elements
 sidebar_position: 3
 description: "Learn the basic tags and elements of HTML, the foundation of web development."
-tags: [html courses, web development in html courses, html basic, basic tags and elements]
-keywoards: [html courses, web development in html courses, html basic, basic tags and elements]
+tags:
+  [
+    html courses,
+    web development in html courses,
+    html basic,
+    basic tags and elements,
+  ]
+keywoards:
+  [
+    html courses,
+    web development in html courses,
+    html basic,
+    basic tags and elements,
+  ]
 author: [CodeHarborHub, Ajay Dhangar]
 ---
 
@@ -26,19 +38,19 @@ HTML elements can be nested within each other to create a hierarchy of content. 
 
 Here are some of the basic HTML tags that you will use frequently when creating web pages:
 
-| Tag | Description |
-| --- | ----------- |
-| `<html>` | Defines the root element of an HTML page |
-| `<head>` | Contains meta-information about the document, such as the title and links to external resources |
-| `<title>` | Defines the title of the document, which is displayed in the browser tab |
-| `<body>` | Contains the content of the document, such as text, images, and links |
-| `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>` | Defines headings of different levels |
-| `<p>` | Defines a paragraph of text |
-| `<a>` | Defines a hyperlink to another web page or resource |
-| `<img>` | Defines an image to be displayed on the page |
-| `<ul>`, `<ol>`, `<li>` | Defines unordered and ordered lists |
-| `<table>`, `<tr>`, `<th>`, `<td>` | Defines a table with rows, headers, and data cells |
-| `<div>`, `<span>` | Defines generic containers for grouping and styling content |
+| Tag                                            | Description                                                                                     |
+| ---------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| `<html>`                                       | Defines the root element of an HTML page                                                        |
+| `<head>`                                       | Contains meta-information about the document, such as the title and links to external resources |
+| `<title>`                                      | Defines the title of the document, which is displayed in the browser tab                        |
+| `<body>`                                       | Contains the content of the document, such as text, images, and links                           |
+| `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>` | Defines headings of different levels                                                            |
+| `<p>`                                          | Defines a paragraph of text                                                                     |
+| `<a>`                                          | Defines a hyperlink to another web page or resource                                             |
+| `<img>`                                        | Defines an image to be displayed on the page                                                    |
+| `<ul>`, `<ol>`, `<li>`                         | Defines unordered and ordered lists                                                             |
+| `<table>`, `<tr>`, `<th>`, `<td>`              | Defines a table with rows, headers, and data cells                                              |
+| `<div>`, `<span>`                              | Defines generic containers for grouping and styling content                                     |
 
 These are just a few of the many HTML tags available for creating web pages. As you learn more about HTML, you will discover additional tags and elements that can be used to enhance the structure and appearance of your pages.
 
@@ -47,17 +59,22 @@ These are just a few of the many HTML tags available for creating web pages. As 
 Let's create a simple HTML page that demonstrates the use of some basic tags and elements. Open a text editor and create a new file named `index.html`. Copy and paste the following code into the file:
 
 ```html title="index.html"
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
+  <head>
     <title>My First Web Page</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Welcome to My Web Page</h1>
     <p>This is a paragraph of text.</p>
-    <a href="https://codeharborhub.github.io/">Visit CodeHarborHub</a> <br /><br />
-    <img src="https://github.com/codeharborhub.png" alt="CodeHarborHub Logo" width="40" />
-</body>
+    <a href="https://codeharborhub.github.io/">Visit CodeHarborHub</a>
+    <br /><br />
+    <img
+      src="https://github.com/codeharborhub.png"
+      alt="CodeHarborHub Logo"
+      width="40"
+    />
+  </body>
 </html>
 ```
 
@@ -82,7 +99,6 @@ In this example, the HTML file contains the following elements:
 - `<img>`: This element defines an image to be displayed on the page.
 
 You can open the `index.html` file in a web browser to see the rendered web page. Experiment with adding and modifying different elements to create your own web pages using HTML tags and elements.
-
 
 ## Summary
 
