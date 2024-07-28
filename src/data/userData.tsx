@@ -388,7 +388,7 @@ export const Users: User[] = [
       source: null,
       tags: ["opensource", "react", "redux", "motion", "javascript"],
     },
-    //
+    //The Pull
 
     {
       title: "The Pull",
@@ -396,6 +396,15 @@ export const Users: User[] = [
       preview: require("./showcase/pull.png"),
       website: "https://github.com/Ridhima10/The_Pull",
       source: null,
+      tags: ["html", "css", "javascript"],
+    },
+    // QR Generator
+    {
+      title: "QR Generator",
+      description: "Simple QR generator made with HTML, CSS and Javacsript",
+      preview: require("./showcase/QR.png"),
+      website: "https://github.com/Ridhima10/Js-mini-projects/tree/main/QR%20code%20generator",
+      source: "https://github.com/Ridhima10/Js-mini-projects/tree/main/QR%20code%20generator",
       tags: ["html", "css", "javascript"],
     }
 ];
