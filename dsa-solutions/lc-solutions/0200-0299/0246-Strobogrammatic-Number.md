@@ -264,39 +264,39 @@ int main() {
 
 <TabItem value="javascript" label="Javascript">
 
-1. **Time complexity**: \(O(n)\), where \(n\) is the length of the input string, as we only iterate through the string once.
-2. **Space complexity**: \(O(1)\), as we use a fixed amount of extra space for the map and pointers.
+1. **Time complexity**: $O(n)$, where $n$ is the length of the input string, as we only iterate through the string once.
+2. **Space complexity**: $O(1)$, as we use a fixed amount of extra space for the map and pointers.
 3. This makes the approach efficient and suitable for checking strobogrammatic properties in linear time.
 
 </TabItem>
 
 <TabItem value="typescript" label="TypeScript">
 
-1. **Time complexity**: \(O(n)\), where \(n\) is the length of the input string, as we only iterate through the string once.
-2. **Space complexity**: \(O(1)\), as we use a fixed amount of extra space for the map and pointers.
+1. **Time complexity**: $O(n)$, where $n$ is the length of the input string, as we only iterate through the string once.
+2. **Space complexity**: $O(1)$, as we use a fixed amount of extra space for the map and pointers.
 3. This makes the approach efficient and suitable for checking strobogrammatic properties in linear time.
 
 </TabItem>
 
 <TabItem value="python" label="Python"> 
 
-1. Time complexity: \(O(n)\), where \(n\) is the length of the input string, as we only iterate through the string once.
-2. Space complexity: \(O(1)\), as we use a fixed amount of extra space for the dictionary and pointers.
+1. Time complexity: $O(n)$, where $n$ is the length of the input string, as we only iterate through the string once.
+2. Space complexity: $O(1)$, as we use a fixed amount of extra space for the dictionary and pointers.
 3. This makes the approach efficient and suitable for checking strobogrammatic properties in linear time.
 
 </TabItem>
 
 <TabItem value="java" label="Java">
 
-1. **Time complexity**: \(O(n)\), where \(n\) is the length of the input string, as we only iterate through the string once.
-2. **Space complexity**: \(O(1)\), as we use a fixed amount of extra space for the map and pointers.
+1. **Time complexity**: $O(n)$, where $n$ is the length of the input string, as we only iterate through the string once.
+2. **Space complexity**: $O(1)$, as we use a fixed amount of extra space for the map and pointers.
 3. This makes the approach efficient and suitable for checking strobogrammatic properties in linear time.
 
 </TabItem>
 <TabItem value="cpp" label="C++">
 
-1. **Time complexity**: \(O(n)\), where \(n\) is the length of the input string, as we only iterate through the string once.
-2. **Space complexity**: \(O(1)\), as we use a fixed amount of extra space for the map and pointers.
+1. **Time complexity**: $O(n)$, where $n$ is the length of the input string, as we only iterate through the string once.
+2. **Space complexity**: $O(1)$, as we use a fixed amount of extra space for the map and pointers.
 3. This makes the approach efficient and suitable for checking strobogrammatic properties in linear time.
 
 </TabItem>
