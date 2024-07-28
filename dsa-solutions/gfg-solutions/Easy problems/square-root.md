@@ -1,10 +1,11 @@
 ---
+---
 id: square-root
 title: Square Root
 sidebar_label: Square-Root
 tags:
-- Math
-- Binary Search
+  - Math
+  - Binary Search
 description: "This document provides solutions to the problem of finding the Square Root of an integer."
 ---
 
@@ -38,6 +39,7 @@ You don't need to read input or print anything. The task is to complete the func
 **Expected Auxiliary Space:** $O(1)$
 
 **Constraints**
+
 - `1 ≤ x ≤ 10^7`
 
 ## Solution
@@ -128,25 +130,27 @@ public:
 
 ```javascript
 class Solution {
-    floorSqrt(x) {
-        if (x === 0 || x === 1) {
-            return x;
-        }
-        let start = 1, end = x, ans = 0;
-        while (start <= end) {
-            let mid = Math.floor((start + end) / 2);
-            if (mid * mid === x) {
-                return mid;
-            }
-            if (mid * mid < x) {
-                start = mid + 1;
-                ans = mid;
-            } else {
-                end = mid - 1;
-            }
-        }
-        return ans;
+  floorSqrt(x) {
+    if (x === 0 || x === 1) {
+      return x;
     }
+    let start = 1,
+      end = x,
+      ans = 0;
+    while (start <= end) {
+      let mid = Math.floor((start + end) / 2);
+      if (mid * mid === x) {
+        return mid;
+      }
+      if (mid * mid < x) {
+        start = mid + 1;
+        ans = mid;
+      } else {
+        end = mid - 1;
+      }
+    }
+    return ans;
+  }
 }
 ```
 
@@ -155,25 +159,27 @@ class Solution {
 
 ```typescript
 class Solution {
-    floorSqrt(x: number): number {
-        if (x === 0 || x === 1) {
-            return x;
-        }
-        let start = 1, end = x, ans = 0;
-        while (start <= end) {
-            let mid = Math.floor((start + end) / 2);
-            if (mid * mid === x) {
-                return mid;
-            }
-            if (mid * mid < x) {
-                start = mid + 1;
-                ans = mid;
-            } else {
-                end = mid - 1;
-            }
-        }
-        return ans;
+  floorSqrt(x: number): number {
+    if (x === 0 || x === 1) {
+      return x;
     }
+    let start = 1,
+      end = x,
+      ans = 0;
+    while (start <= end) {
+      let mid = Math.floor((start + end) / 2);
+      if (mid * mid === x) {
+        return mid;
+      }
+      if (mid * mid < x) {
+        start = mid + 1;
+        ans = mid;
+      } else {
+        end = mid - 1;
+      }
+    }
+    return ans;
+  }
 }
 ```
 
@@ -185,5 +191,4 @@ class Solution {
 The provided solutions efficiently find the floor value of the square root of a given integer `x` using binary search. This approach ensures a time complexity of $ O(log N) and an auxiliary space complexity of $O(1)$. The algorithms are designed to handle large values of `x` up to 10^7 efficiently without relying on built-in square root functions.
 
 **Time Complexity:** $O(log N)$
-
-**Space Complexity:** $O(1)$
+**Auxiliary Space:** $O(1)$

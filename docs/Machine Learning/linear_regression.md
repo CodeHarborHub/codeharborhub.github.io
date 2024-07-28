@@ -10,7 +10,7 @@ Linear regression models the relationship between a dependent variable (target) 
 
 ### Formula:
 
-#### $\ Y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_3 + \cdots + \beta_n x_n + \epsilon \$
+$$Y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_3 + \cdots + \beta_n x_n + \epsilon$$
 
 
 #### y: Dependent variable (target)
@@ -126,9 +126,3 @@ In environmental science, linear regression models are used to analyze the relat
 
 ### Conclusion
 Linear regression is a versatile and widely used statistical technique that provides valuable insights into relationships between variables. Understanding its principles and limitations is essential for leveraging its predictive power effectively across various domains and applications.
-
-
-
-
-
-

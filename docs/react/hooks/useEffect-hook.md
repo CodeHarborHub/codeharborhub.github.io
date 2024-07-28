@@ -39,4 +39,24 @@ function Timer() {
 }
 ```
 
+<BrowserWindow>
+    <div id="output_ele_1" style={{display:"none"}}>
+       <p>Timer: <span id="Timer" >0</span></p>
+    </div>
+    <button id="output_btn_1" onClick={()=>{
+        let output_ele_1=document.getElementById("output_ele_1")
+        output_ele_1.style.display="block"
+        let output_btn_1=document.getElementById("output_btn_1")
+        output_btn_1.style.display="none"
+        setInterval(() => { 
+                if(document.getElementById("Timer")){
+                document.getElementById("Timer").textContent = Number(document.getElementById("Timer").textContent)+1 
+                }
+                else{
+                  return 
+                }
+            }, 1000) 
+    }}>click to view output</button>
+</BrowserWindow>
+
 In this example, `useEffect` is used to create a timer that updates the `seconds` state every second (`1000ms`). The cleanup function returned by `useEffect` clears the interval when the component unmounts or when `seconds` changes due to a dependency array (`[]`) change.

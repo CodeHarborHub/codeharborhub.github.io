@@ -19,7 +19,7 @@ plt.show()
 
 
 Logistic Regression is a statistical method used for binary
-classification problems. It models the probability that a given input
+classification problem. It models the probability that a given input
 belongs to a particular category.
 
 Logistic Function (Sigmoid Function): The core of logistic regression is
