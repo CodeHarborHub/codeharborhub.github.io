@@ -12,6 +12,7 @@ author: [CodeHarborHub, Ajay Dhangar]
 <img src="/courses/html/intro-html.png" alt="Introduction HTML banner" />
 
 <br />
+<br />
 
 In this section, you will learn the basics of HTML, the foundation of web development, and create your first web page. HTML stands for HyperText Markup Language. It is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
 
