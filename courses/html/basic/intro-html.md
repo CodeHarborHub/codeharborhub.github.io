@@ -4,8 +4,20 @@ title: Introduction to HTML
 sidebar_label: Introduction to HTML
 sidebar_position: 1
 description: "Learn the basics of HTML, the foundation of web development, and create your first web page."
-tags: [html courses, web development in html courses, html basic, introduction to html]
-keywoards: [html courses, web development in html courses, html basic, introduction to html]
+tags:
+  [
+    html courses,
+    web development in html courses,
+    html basic,
+    introduction to html,
+  ]
+keywoards:
+  [
+    html courses,
+    web development in html courses,
+    html basic,
+    introduction to html,
+  ]
 author: [CodeHarborHub, Ajay Dhangar]
 ---
 
