@@ -336,6 +336,19 @@ export const Users: User[] = [
       "https://github.com/Ajay-Dhangar/zacson",
     tags: ["opensource", "html", "css", "javascript", "gym", "templates", "scss", "php"],
   },
+  // Crossfits GYM Template
+
+  {
+    title: "Crossfits",
+    description:
+      "Crossfits is a responsive landing page for GYM and Fitness.",
+    preview: require("./showcase/crossfits.png"),
+    website:
+      "https://github.com/Ridhima10/Crossfits",
+    source:
+      "https://github.com/Ridhima10/Crossfits",
+    tags: ["opensource", "html", "css",  "gym", "templates"],
+  },
 
   // Activitar GYM Template
 
