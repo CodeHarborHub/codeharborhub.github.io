@@ -1,4 +1,5 @@
 ---
+---
 id: square-root
 title: Square Root
 sidebar_label: Square-Root
