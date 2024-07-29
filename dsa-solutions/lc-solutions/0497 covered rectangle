@@ -1,0 +1,109 @@
+You are given an array of non-overlapping axis-aligned rectangles rects where rects[i] = [ai, bi, xi, yi] indicates that (ai, bi) is the bottom-left corner point of the ith rectangle and (xi, yi) is the top-right corner point of the ith rectangle. Design an algorithm to pick a random integer point inside the space covered by one of the given rectangles. A point on the perimeter of a rectangle is included in the space covered by the rectangle.
+
+Any integer point inside the space covered by one of the given rectangles should be equally likely to be returned.
+
+Note that an integer point is a point that has integer coordinates.
+
+Implement the Solution class:
+
+
+Example 1:
+
+
+Input
+["Solution", "pick", "pick", "pick", "pick", "pick"]
+[[[[-2, -2, 1, 1], [2, 2, 4, 6]]], [], [], [], [], []]
+Output
+[null, [1, -2], [1, -1], [-1, -2], [-2, -2], [0, 0]]
+
+Explanation
+Solution solution = new Solution([[-2, -2, 1, 1], [2, 2, 4, 6]]);
+solution.pick(); // return [1, -2]
+solution.pick(); // return [1, -1]
+solution.pick(); // return [-1, -2]
+solution.pick(); // return [-2, -2]
+solution.pick(); // return [0, 0]
+ 
+
+Constraints:
+
+1 <= rects.length <= 100
+rects[i].length == 4
+-109 <= ai < xi <= 109
+-109 <= bi < yi <= 109
+xi - ai <= 2000
+yi - bi <= 2000
+All the rectangles do not overlap.
+At most 104 calls will be made to pick. 
+
+To solve the problem of picking a random integer point inside one of the given non-overlapping rectangles, we'll need to implement a strategy that efficiently handles the randomness while ensuring that every point within the given rectangles is equally likely to be chosen.
+
+Here’s a step-by-step explanation of the approach to solve this problem:
+
+Approach
+Calculate Total Area and Prefix Sum:
+
+First, compute the area of each rectangle and maintain a cumulative sum (prefix sum) of these areas. This will help us in choosing a rectangle based on its proportional area and then picking a random point within the selected rectangle.
+For each rectangle, store its area and the cumulative sum of areas up to that rectangle.
+Pick a Random Rectangle:
+
+Generate a random number between 0 and the total area of all rectangles.
+Determine which rectangle this random number falls into using the prefix sum array. This will be the rectangle from which we will pick a random point.
+Generate a Random Point within the Selected Rectangle:
+
+For the selected rectangle, generate random coordinates within its bounds.
+Implementation
+Here's the Python implementation of the above approach:
+
+python
+Copy code
+import random
+
+class Solution:
+    def __init__(self, rects):
+        self.rects = rects
+        self.areas = []
+        self.prefix_sum = []
+        self.total_area = 0
+        
+        # Calculate areas and prefix sums
+        for rect in rects:
+            x1, y1, x2, y2 = rect
+            width = x2 - x1 + 1
+            height = y2 - y1 + 1
+            area = width * height
+            self.total_area += area
+            self.areas.append(area)
+            self.prefix_sum.append(self.total_area)
+    
+    def pick(self):
+        # Pick a random point in the total area
+        target = random.randint(1, self.total_area)
+        
+        # Find the rectangle where this target falls
+        rect_index = 0
+        while target > self.prefix_sum[rect_index]:
+            rect_index += 1
+        
+        # Determine the rectangle
+        x1, y1, x2, y2 = self.rects[rect_index]
+        
+        # Pick a random point within the chosen rectangle
+        px = random.randint(x1, x2)
+        py = random.randint(y1, y2)
+        
+        return [px, py]
+Explanation
+Initialization (__init__ method):
+
+Compute the area of each rectangle.
+Store the cumulative area of rectangles up to each index in prefix_sum.
+Pick Method (pick method):
+
+Generate a random integer in the range [1, total_area].
+Determine which rectangle this number corresponds to using the prefix sum array.
+Randomly select a point within the identified rectangle’s boundaries.
+Complexity
+Initialization: O(N), where N is the number of rectangles, since we compute areas and prefix sums once.
+Pick: O(N), where N is the number of rectangles, due to the search through prefix sums. However, searching through prefix sums is efficient and will handle up to 10,000 calls as required.
+This approach ensures that each point inside the combined area of all rectangles has an equal probability of being picked, leveraging the prefix sum technique to efficiently determine the correct rectangle.
