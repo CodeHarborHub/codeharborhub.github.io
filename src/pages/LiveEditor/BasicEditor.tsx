@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
+import style from '../../components/BrowserWindow/BrowserWindow.module.css'; 
 
-const BasicEditor: React.FC= () => {
+const BasicEditor= () => {
   const [checker, setChecker] = useState({ html: true, css: false, js: false,settings:false,fontSize:10,fontColor:false,backcolor:false });
   const [html, setHtml] = useState("");
   const [css, setCss] = useState("");
@@ -80,7 +81,24 @@ const BasicEditor: React.FC= () => {
         <textarea style={{fontSize:`${checker.fontSize}pt`,color:checker.fontColor==false?"unset":checker.fontColor,background:checker.backcolor==false?"transparent":checker.backcolor}} className={checker.css ? 'editor_textarea_activate' : 'editor_textarea_deactivate'} value={css} placeholder="CSS" onChange={(e) => setCss(e.target.value)}></textarea>
         <textarea style={{fontSize:`${checker.fontSize}pt`,color:checker.fontColor==false?"unset":checker.fontColor,background:checker.backcolor==false?"transparent":checker.backcolor}} className={checker.js ? 'editor_textarea_activate' : 'editor_textarea_deactivate'} value={js} placeholder="JavaScript" onChange={(e) => setJs(e.target.value)}></textarea>
       </div>
-      <iframe ref={iframeRef} className='output_container' id="preview"></iframe>
+      <div className={style.browserWindow} style={{height:"35.3rem",flex:"1 0 30rem",marginTop:"1.3rem"}}>
+      <div className={style.browserWindowHeader}>
+        <div className={style.buttons}>
+          <span className={style.dot} style={{background: '#f25f58'}} />
+          <span className={style.dot} style={{background: '#fbbe3c'}} />
+          <span className={style.dot} style={{background: '#58cb42'}} />
+        </div> 
+        <div className={style.browserWindowMenuIcon}>
+          <div>
+            <span className={style.bar} />
+            <span className={style.bar} />
+            <span className={style.bar} />
+          </div>
+        </div>
+      </div>
+ 
+      <iframe ref={iframeRef} className='output_container' id="preview"></iframe> 
+    </div>
     </div>
   );
 }
