@@ -403,8 +403,8 @@ export const Users: User[] = [
       title: "QR Generator",
       description: "Simple QR generator made with HTML, CSS and Javacsript",
       preview: require("./showcase/QR.png"),
-      website: "https://github.com/Ridhima10/Js-mini-projects/tree/main/QR%20code%20generator",
-      source: "https://github.com/Ridhima10/Js-mini-projects/tree/main/QR%20code%20generator",
+      website: "https://ridhima10.github.io/QR-generator/",
+      source: "https://github.com/Ridhima10/QR-generator",
       tags: ["html", "css", "javascript"],
     }
 ];
