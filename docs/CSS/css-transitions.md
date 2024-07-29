@@ -1,11 +1,13 @@
 # CSS Transitions
 
 ## Introduction
+
 CSS transitions provide a way to control the speed of animation changes to CSS properties. This can enhance the user experience by making the changes appear smooth and visually appealing.
 
 ## Basic Concepts
 
 ### What is a Transition?
+
 A transition is a way to animate a property change over a given duration.
 
 ```css
@@ -14,6 +16,7 @@ A transition is a way to animate a property change over a given duration.
 }
 ```
 ## Transition Properties
+
 ### transition-property
 
 Specifies the name of the CSS property the transition effect is for.
@@ -60,6 +63,7 @@ Example: 0s, 1s, etc.
 
 
 ## Shorthand Property
+
 You can combine all the individual transition properties into one shorthand property.
 
 ```css
@@ -68,7 +72,8 @@ You can combine all the individual transition properties into one shorthand prop
 }
 ```
 
-# Basic Transition
+## Basic Transition
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -93,7 +98,7 @@ You can combine all the individual transition properties into one shorthand prop
 </html>
 ```
 
-# Transition Multiple Properties
+## Transition Multiple Properties
 
 ```html
 <!DOCTYPE html>
@@ -122,7 +127,8 @@ You can combine all the individual transition properties into one shorthand prop
 </html>
 ```
 
-# Delayed Transition
+## Delayed Transition
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -147,10 +153,5 @@ You can combine all the individual transition properties into one shorthand prop
 </html>
 ```
 
-# Conclusion
-CSS transitions provide a simple way to create smooth animations and improve the user experience. By using the various transition properties, you can control the timing, speed, and behavior of your animations to create visually appealing effects.
-
-```bash
-
-This guide covers the essential properties, concepts, and examples to help users understand and apply CSS transitions in their projects.
-```
+## Conclusion
+CSS transitions provide a simple way to create smooth animations and improve the user experience. Using the various transition properties, you can control your animations' timing, speed, and behaviour to create visually appealing effects.
