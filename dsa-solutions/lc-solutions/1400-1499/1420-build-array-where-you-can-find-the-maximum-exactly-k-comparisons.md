@@ -1,7 +1,6 @@
 ---
 id: build-array-where-you-can-find-the-maximum-exactly-k-comparisons
 title: 1420. Build Array Where You Can Find The Maximum Exactly K Comparisons
-level: hard
 sidebar_label: 1420-build-array-where-you-can-find-the-maximum-exactly-k-comparisons
 description: "This document provides solutions for leetcode problem 1420."
 ---
