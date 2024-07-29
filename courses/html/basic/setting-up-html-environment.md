@@ -4,8 +4,22 @@ title: Setting Up HTML Environment
 sidebar_label: Setting Up HTML Environment
 sidebar_position: 2
 description: "Learn how to set up your HTML development environment and create your first HTML file."
-tags: [html courses, web development in html courses, html basic, html environment, setting up html environment]
-keywoards: [html courses, web development in html courses, html basic, html environment, setting up html environment]
+tags:
+  [
+    html courses,
+    web development in html courses,
+    html basic,
+    html environment,
+    setting up html environment,
+  ]
+keywoards:
+  [
+    html courses,
+    web development in html courses,
+    html basic,
+    html environment,
+    setting up html environment,
+  ]
 author: [CodeHarborHub, Ajay Dhangar]
 ---
 
@@ -38,6 +52,12 @@ You can choose any text editor based on your preference and install it on your c
 
 We recommend using **Visual Studio Code** as it is a popular text editor for web development and has many features that make it easy to write and edit HTML code.
 
+**Visual Studio Code** is a free source code editor developed by Microsoft. It has built-in support for HTML, CSS, and JavaScript, as well as extensions that can enhance your web development experience. You can download Visual Studio Code from the official website: [https://code.visualstudio.com/](https://code.visualstudio.com/).
+
+<BrowserWindow url="https://code.visualstudio.com/" bodyStyle={{padding: 0}}>    
+    [![Visual Studio Code](./image.png)](https://code.visualstudio.com/)
+</BrowserWindow>
+
 :::
 
 ### Step 2: Install a Web Browser
@@ -68,7 +88,7 @@ We recommend using **Google Chrome** as it is a popular web browser with good de
 To set up your HTML environment with Visual Studio Code, follow these steps:
 
 1. Install Visual Studio Code on your computer. You can download Visual Studio Code from the official website: [https://code.visualstudio.com/](https://code.visualstudio.com/).
-2. Open Visual Studio Code. 
+2. Open Visual Studio Code.
 3. Create a new file by clicking on `File` $\rightarrow$ `New File`.
 4. Save the file with the `.html` extension, such as `index.html`.
 5. Write your HTML code in the file.
@@ -88,27 +108,27 @@ To create your first HTML file, follow these steps:
 2. Create a new file and save it with the `.html` extension, such as `index.html`.
 3. Write the following HTML code in the file:
 
-    ```html title="index.html"
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <title>My First Web Page</title>
-      </head>
-      <body>
-        <h1>Hello, World!</h1>
-        <p>Welcome to my first web page.</p>
-      </body>
-    </html>
-    ```
+   ```html title="index.html"
+   <!DOCTYPE html>
+   <html>
+     <head>
+       <title>My First Web Page</title>
+     </head>
+     <body>
+       <h1>Hello, World!</h1>
+       <p>Welcome to my first web page.</p>
+     </body>
+   </html>
+   ```
 
 4. Save the file.
 5. Open the HTML file in your web browser to view the web page.
 6. You should see the following output in your web browser and try to use url `http://127.0.0.1:5500/index.html` to view the web page:
 
-    <BrowserWindow url="http://127.0.0.1:5500/index.html">
-        <h1>Hello, World!</h1>
-        <p>Welcome to my first web page.</p>
-    </BrowserWindow>
+<BrowserWindow url="http://127.0.0.1:5500/index.html">
+    <h1>Hello, World!</h1>
+    <p>Welcome to my first web page.</p>
+</BrowserWindow>
 
 In this example, the HTML file contains the following elements:
 
