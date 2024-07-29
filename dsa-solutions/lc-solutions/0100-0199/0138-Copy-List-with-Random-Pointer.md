@@ -6,8 +6,7 @@ tags:
   - Java
   - Python
   - C++
-  - JavaScript
-  
+  - JavaScript  
 description: "This is a solution to the Copy List with Random Pointer problem on LeetCode."
 ---
 
@@ -37,13 +36,16 @@ Output: [[7,null],[13,0],[11,4],[10,2],[1,0]]
 ```
 Input: head = [[1,1],[2,1]]
 Output: [[1,1],[2,1]]
-
 ```
 
+### Constraints:
+
+- The number of nodes in the list is in the range [0, 1000].
+- `-10000 <= Node.val <= 10000`
+- Node.random is null or is pointing to some node in the linked list.
 ---
 
-## Solution for Copy List with Random Pointer
-
+##  Approach to Solve the Copy List with Random Pointer Problem
 
 ### Understand the Problem:
 
