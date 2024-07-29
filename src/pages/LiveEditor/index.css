@@ -5,11 +5,12 @@
 .editor_container{flex:1 0 20rem;display:flex;gap:1rem;justify-content:center;align-items:center;position:relative;padding:3rem;cursor:pointer}
 .editor_container:hover{border: 1px solid;}
 .normal_editor{display: flex;flex-wrap: wrap;justify-content: center;align-items: center;width:100vw}
-.normal_editor .editor_box,.normal_editor .output_container{
+.normal_editor .editor_box{
     flex: 1 0 30rem;
     height: 35rem; 
     position:relative;
 }
+.normal_editor .output_container{height: 32.3rem;width: 100%;}
 .normal_editor .output_container{background: white;}
 .editor_box .editor_nav{position: absolute;z-index: 2;gap: 1rem;display: flex;top: 2%;justify-content: center;align-items: center;right: 1%;}
 .editor_nav .btn_activated{padding: 0.3rem 1rem;border: none;font-family: monospace;font-weight: 600;cursor: pointer;}
