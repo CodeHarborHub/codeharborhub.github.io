@@ -55,7 +55,7 @@ export default function LiveEditor() {
                 Basic Text Editor
               </h2>
               <div className="editor_select_image_container">
-                <img src={html} alt="html" className="editor_select_image" />              
+                <img src={html} alt="html" className="editor_select_image" />
                 <img src={css} alt="css" className="editor_select_image" />
                 <img src={Js} alt="js" className="editor_select_image" />
               </div>
