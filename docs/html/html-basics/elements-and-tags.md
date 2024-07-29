@@ -195,7 +195,7 @@ An HTML document has a specific structure that includes the following elements:
 
 ### Self-Closing Tags
 
-Some HTML tags do not have closing tags and are known as self-closing tags (or void elements). Examples include `<img>`, `<br>`, `<hr>`, and `<input>`.
+Some HTML tags do not have closing tags and are known as self-closing tags (or void elements). Examples include `<img>`, `<br>`, `<hr>`,`<meta>` and `<input>`.
 
 ### Attributes
 
