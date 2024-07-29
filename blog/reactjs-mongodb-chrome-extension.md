@@ -171,4 +171,4 @@ PORT= 5000
 
 Building a Chrome extension with ReactJS and MongoDB was a learning experience filled with challenges and triumphs. While finding the perfect tutorial was tough, the process of solving problems using StackOverflow and other resources was incredibly rewarding. I hope this guide helps you in your journey to create your own Chrome extension.
 
-Feel free to connect on github, and happy coding!
+Feel free to connect on GitHub, and happy coding!
