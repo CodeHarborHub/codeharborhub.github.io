@@ -25,7 +25,7 @@ To get an animation to work, you must bind the animation to an element.
 }
 
 /* The element to apply the animation to */
-div {
+div{
   width: 100px;
   height: 100px;
   background-color: red;

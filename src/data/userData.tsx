@@ -343,8 +343,7 @@ export const Users: User[] = [
     description:
       "Crossfits is a responsive landing page for GYM and Fitness.",
     preview: require("./showcase/crossfits.png"),
-    website:
-      "https://github.com/Ridhima10/Crossfits",
+    website: "https://ridhima10.github.io/Crossfits/",
     source:
       "https://github.com/Ridhima10/Crossfits",
     tags: ["opensource", "html", "css",  "gym", "templates"],

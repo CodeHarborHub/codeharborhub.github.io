@@ -34,4 +34,14 @@ function Counter() {
 }
 ```
 
+<BrowserWindow>
+    <div>
+       <p>You clicked <span id="display">0</span> times</p>
+       <button onClick={()=>{
+        let display=document.getElementById("display")
+        display.textContent=Number(display.textContent)+1
+       }}>Click me</button>
+    </div>
+</BrowserWindow>
+
 In this example, `count` is the state variable initialized to 0, and `setCount` is the function used to update `count`. When the button is clicked, `setCount` is called with the new value of `count + 1`, causing the component to rerender with the updated count displayed.

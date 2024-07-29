@@ -27,8 +27,11 @@ This algorithm compares the pattern with each possible substring of the text, st
 
 Here's an example code problem to illustrate the usage of the Pattern Searching Algorithm:
 
-```python
-```python
+#### Codes in Different Languages
+
+<Tabs>
+  <TabItem value="Python" label="Python" default>
+```Python showLineNumbers
 def pattern_search(text, pattern):
     result = []
     text_length = len(text)
@@ -49,7 +52,124 @@ text = "ABABDABACDABABCABAB"
 pattern = "ABABC"
 matches = pattern_search(text, pattern)
 print("Pattern found at positions:", matches)
+
 ```
+</TabItem>
+  <TabItem value="cpp" label="C++" >
+   ```cpp
+   #include <iostream>
+#include <vector>
+#include <algorithm>
+#include<string>
+using namespace std;
+vector<int> pattern_search(const string &text, const string &pattern) {
+    vector<int> result;
+    int text_length = text.length();
+    int pattern_length = pattern.length();
+
+    for (int i = 0; i <= text_length - pattern_length; i++) {
+        int j = 0;
+        while (j < pattern_length && text[i + j] == pattern[j]) {
+            j++;
+        }
+        if (j == pattern_length) {
+            result.push_back(i);
+        }
+    }
+
+    return result;
+}
+
+int main() {
+    string text = "ABABDABACDABABCABAB";
+    string pattern = "ABABC";
+    vector<int> matches = pattern_search(text, pattern);
+
+    cout << "Pattern found at positions: ";
+    for (int position : matches) {
+        cout << position << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
+
+
+   ```
+  </TabItem>  
+ <TabItem value="Java" label="Java">
+``` jsx showLineNumbers
+import java.util.ArrayList;
+import java.util.List;
+
+public class PatternSearch {
+    public static List<Integer> patternSearch(String text, String pattern) {
+        List<Integer> result = new ArrayList<>();
+        int textLength = text.length();
+        int patternLength = pattern.length();
+
+        for (int i = 0; i <= textLength - patternLength; i++) {
+            int j = 0;
+            while (j < patternLength && text.charAt(i + j) == pattern.charAt(j)) {
+                j++;
+            }
+            if (j == patternLength) {
+                result.add(i);
+            }
+        }
+
+        return result;
+    }
+
+    public static void main(String[] args) {
+        String text = "ABABDABACDABABCABAB";
+        String pattern = "ABABC";
+        List<Integer> matches = patternSearch(text, pattern);
+
+        System.out.print("Pattern found at positions: ");
+        for (int position : matches) {
+            System.out.print(position + " ");
+        }
+        System.out.println();
+    }
+}
+
+
+```
+</TabItem>
+
+<TabItem value="JavaScript" label="JavaScript">
+``` jsx showLineNumbers
+function patternSearch(text, pattern) {
+    let result = [];
+    let textLength = text.length;
+    let patternLength = pattern.length;
+
+    for (let i = 0; i <= textLength - patternLength; i++) {
+        let j = 0;
+        while (j < patternLength && text[i + j] === pattern[j]) {
+            j++;
+        }
+        if (j === patternLength) {
+            result.push(i);
+        }
+    }
+
+    return result;
+}
+
+let text = "ABABDABACDABABCABAB";
+let pattern = "ABABC";
+let matches = patternSearch(text, pattern);
+console.log("Pattern found at positions:", matches);
+
+
+
+```
+</TabItem>
+
+
+</Tabs>
 
 In this example, we have a text string "ABABDABACDABABCABAB" and we want to search for the pattern "ABABC" within it. The `patternSearch` function implements the Naive Pattern Searching Algorithm. It iterates through the text, comparing each substring of the same length as the pattern with the pattern itself. If a match is found, the starting position of the match is added to the result array. Finally, the function returns the array of positions where the pattern was found.
 
