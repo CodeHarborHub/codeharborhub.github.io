@@ -24,6 +24,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<MyForm />);
 ```
 
+<BrowserWindow>
+    <form>
+      <label htmlFor="name">Enter your name: </label>
+      <input type="text" id="name" />
+    </form>
+</BrowserWindow>
+
 This will work as normal, the form will submit and the page will refresh.
 
 But this is generally not what we want to happen in React.
@@ -67,6 +74,13 @@ function MyForm() {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<MyForm />);
 ```
+
+<BrowserWindow>
+    <form>
+      <label htmlFor="name">Enter your name: </label>
+      <input type="text" id="name" />
+    </form>
+</BrowserWindow>
 
 ## Forms
 
@@ -133,6 +147,20 @@ class NameForm extends React.Component {
 }
 ```
 
+<BrowserWindow> 
+    <form onSubmit={(event)=>{
+       event.preventDefault();
+        let name = event.target.elements.name.value;
+        alert(`A name was submitted: ${name}`);
+    }}>
+      <label >Name: </label>
+      <input type="text" id="name" required />
+      <br />
+      <input type="submit" />
+    </form>
+</BrowserWindow>
+
+
 Since the `value` attribute is set on our form element, the displayed value will always be `this.state.value`, making the React state the source of truth. Since `handleChange` runs on every keystroke to update the React state, the displayed value will update as the user types.
 
 With a controlled component, the input’s value is always driven by the React state. While this means you have to type a bit more code, you can now pass the value to other UI elements too or reset it from other event handlers.
@@ -183,6 +211,21 @@ class EssayForm extends React.Component {
   }
 }
 ```
+
+<BrowserWindow> 
+    <form onSubmit={(event)=>{
+       event.preventDefault();
+        let name = event.target.elements.name.value;
+        alert(`An essay was submitted: ${name}`);
+      }}>
+      <div style={{display:"flex",justifyContent:"flex-start",gap:"0.5rem",alignItems:"center"}}>
+          <label >Essay: </label>
+          <textarea type="text" id="name" required />
+      </div>
+      <br />
+      <input type="submit" />
+    </form>
+</BrowserWindow>
 
 Notice that `this.state.value` is initialized in the constructor so that the text area starts off with some text in it.
 
@@ -238,6 +281,26 @@ class FlavorForm extends React.Component {
   }
 }
 ```
+
+<BrowserWindow> 
+    <form onSubmit={(event)=>{
+       event.preventDefault();
+        let name = event.target.elements.name.value;
+        alert(`Your favorite flavor is: ${name}`);
+    }}>
+      <div style={{display:"flex",justifyContent:"flex-start",gap:"0.5rem",alignItems:"center"}}>
+          <label >  Pick your favorite flavor: </label>
+          <select id="name" >
+            <option value="grapefruit">Grapefruit</option>
+            <option value="lime">Lime</option>
+            <option value="coconut">Coconut</option>
+            <option value="mango">Mango</option>
+          </select>
+      </div>
+      <br />
+      <input type="submit" />
+    </form>
+</BrowserWindow>
 
 Overall, this makes it so that `<input type="text">`, `<textarea>`, and `<select>` all work very similarly - they all accept a `value` attribute that you can use to implement a controlled component.
 

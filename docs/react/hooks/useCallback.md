@@ -33,5 +33,14 @@ function MemoizedCounter() {
   );
 }
 ```
+<BrowserWindow>
+    <div>
+       <p>You clicked <span id="display">0</span> times</p>
+       <button onClick={()=>{
+        let display=document.getElementById("display")
+        display.textContent=Number(display.textContent)+1
+       }}>Click me</button>
+    </div>
+</BrowserWindow>
 
 In this example, `useCallback` memoizes the `increment` function to ensure that it only changes when `count` changes. This optimization prevents unnecessary re-renders of `MemoizedCounter` when passed as a prop to child components.

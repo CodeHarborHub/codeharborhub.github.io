@@ -7,6 +7,7 @@ date: 2024-06-17
 hide_table_of_contents: true
 ---
 
+
 ## 1. Understanding the importance Microservices
 
 - Microservices are an architectural style that structures an application as a collection of small, loosely coupled services. Each service is self-contained, focused on a specific business functionality, and can be developed, deployed, and scaled independently. This modular approach to software design offers several benefits, including increased agility, scalability, and resilience.
