@@ -58,4 +58,16 @@ Linked via a separate .css file, using the `<link>`  tag.
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 ```
+## Directory Structure:
+css-basics/: Basic concepts and fundamentals of CSS.
+css-borders.md: Information about CSS borders.
+css-margins.md: Guide on CSS margins.
+css-outline.md: Details about CSS outlines.
+css-padding.md: Insights on CSS padding.
 
+## Contributing : 
+If you would like to contribute to this project, please fork the repository and submit a pull request. For major changes, please open an issue
+first to discuss what you would like to change.
+
+## License:
+This project is licensed under the MIT License - see the LICENSE file for details.
