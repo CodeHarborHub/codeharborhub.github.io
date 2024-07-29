@@ -89,7 +89,7 @@ export default function LiveEditor() {
           title="dazzling-swanson-wne32"
           allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
           sandbox="allow-autoplay allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-        /> :<BasicEditor />
+        /> :<BasicEditor  />
 }
       </div>
     </Layout>

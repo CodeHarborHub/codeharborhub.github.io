@@ -5,11 +5,12 @@
 .editor_container{flex:1 0 20rem;display:flex;gap:1rem;justify-content:center;align-items:center;position:relative;padding:3rem;cursor:pointer}
 .editor_container:hover{border: 1px solid;}
 .normal_editor{display: flex;flex-wrap: wrap;justify-content: center;align-items: center;width:100vw}
-.normal_editor .editor_box,.normal_editor .output_container{
+.normal_editor .editor_box{
     flex: 1 0 30rem;
     height: 35rem; 
     position:relative;
 }
+.normal_editor .output_container{height: 32.3rem;width: 100%;}
 .normal_editor .output_container{background: white;}
 .editor_box .editor_nav{position: absolute;z-index: 2;gap: 1rem;display: flex;top: 2%;justify-content: center;align-items: center;right: 1%;}
 .editor_nav .btn_activated{padding: 0.3rem 1rem;border: none;font-family: monospace;font-weight: 600;cursor: pointer;}
@@ -17,12 +18,21 @@
 .editor_nav .css{background:rgb(2,119,189);color: white;}
 .editor_nav .js{background:rgb(255,214,0);color: rgb(0, 0, 0);}
 .editor_nav .btn_deactivated{display: none;}
+.editor_settings_nav{position: absolute;bottom: 1%;right: 1%;}
+.editor_settings_nav img{height: 1.5rem;cursor: pointer;filter: var(--image-filter);}
+.editor_settings_nav .editor_setting_icon{display: flex;justify-content: flex-end;}
+.editor_settings_menu_con{border: 1px solid;padding: 0.3rem;margin-bottom: 0.2rem;transition: 0.3s ease-in;background: var(--docsearch-hit-background);}
+.editor_settings_menu_con.activate_menu{opacity: 1;}
+.editor_settings_menu_con.deactivate_menu{display: none;}
+.editor_settings_menu{display: flex;gap: 1rem;justify-content: space-between;align-items: center;margin: 0.5rem;}
+.editor_settings_menu p{margin: 0;}
+.editor_settings_menu button{height: 1.5rem; width: 1.5rem;display: flex;justify-content: center;font-family: monospace;font-weight: 900;background:rgb(2,119,189);color: white;border: none;align-items: center;}
+.editor_settings_menu input{height: 3rem;width: 3rem;}
 .editor_textarea_activate{
         font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
         width: 100%;
         min-height: 100%; 
-        float: left;
-        font-size: 10pt;
+        float: left; 
         line-height: 14pt;
         font-weight: 200;
         padding: 10px; 
