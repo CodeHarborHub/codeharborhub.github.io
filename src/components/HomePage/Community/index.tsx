@@ -1,41 +1,43 @@
-import React, { type FC, useEffect, useState } from "react";
+import React, { type FC, useEffect, useState, useMemo } from "react";
 import { useCommunityStatsContext } from "../../../context/CommunityStats";
-import "./LandingCommunity.css";  
+import "./LandingCommunity.css";
 
 type Props = {
   className?: string;
 };
 
 export const LandingCommunity: FC<Props> = ({ className }) => {
-  const { githubStarCountText } = useCommunityStatsContext();  
-  const [state, setState] = useState({ 
-    stat0: 0, 
-    stat1: 0, 
-    stat2: 0, 
-    stat3: 0,  
+  const { githubStarCountText, githubContributorsCount, githubForksCount } = useCommunityStatsContext();
+  const [state, setState] = useState({
+    stat0: 0,
+    stat1: 0,
+    stat2: 0,
+    stat3: 0,
   });
 
-  const generateList = () => [
+  const generateList = useMemo(() => [
     {
-      stat: Number(githubStarCountText)>0?githubStarCountText:83,
+      stat: githubStarCountText,
       description: "Stars on our GitHub repository, showcasing our community's support and contribution.",
-      href: "https://github.com/CodeHarborHub/codeharborhub.github.io",
+      href: "https://github.com/CodeHarborHub/codeharborhub.github.io/stargazers",
     },
     {
       stat: 30,
       description: "Live projects on CodeHarborHub, demonstrating the power of open-source collaboration.",
     },
     {
-      stat: 100,
-      description: "Active developers engaged in our vibrant open-source community, collaborating and innovating.",
+      stat: githubContributorsCount,
+      description: "Contributors who have made our repository better.",
+      href: "https://github.com/CodeHarborHub/codeharborhub.github.io/graphs/contributors",
     },
     {
-      stat: 600,
-      description: "Active learners in the CodeHarborHub community, continuously expanding their knowledge and skills.",
+      stat: githubForksCount,
+      description: "Forks of our repository, showing how our community extends our work.",
+      href: "https://github.com/CodeHarborHub/codeharborhub.github.io/network/members",
     },
-  ];
+  ], [githubStarCountText, githubContributorsCount, githubForksCount]);
 
-  const handleDynamicChange = (target, index) => {
+  const handleDynamicChange = (target: number, index: number) => {
     let count = 0;
     const increment = target / 100;
     const interval = setInterval(() => {
@@ -44,45 +46,41 @@ export const LandingCommunity: FC<Props> = ({ className }) => {
       if (count >= target) {
         setState(prev => ({ ...prev, [`stat${index}`]: target }));
         clearInterval(interval);
-        setTimeout(() => {
-          handleDynamicChange(target, index);
-        }, 3000);
       }
     }, 20);
   };
 
-  useEffect(() => { 
-    const list = generateList();
-    list.forEach((item, index) => {
-      handleDynamicChange(item.stat, index);
+  useEffect(() => {
+    generateList.forEach((item, index) => {
+      handleDynamicChange(Number(item.stat), index);
     });
-  },[githubStarCountText]);
+  }, [generateList]);
 
   return (
-    <div className="landing-community">
+    <div className={`landing-community ${className || ""}`}>
       <div className="landing-community__header">
         <h2 className="landing-community__title">
           Discover the strength of our{" "}
-          <span className="landing-community__highlight">
-            amazing community
-          </span>
-          .
+          <span className="landing-community__highlight">amazing community</span>.
         </h2>
       </div>
 
       <div className="landing-community__content">
         <div className="landing-community__stats">
-          {generateList().map((item, index) => (
+          {generateList.map((item, index) => (
             <span key={index} className="landing-community__stat-item">
               <div className="landing-community__stat-value">
-                <a
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  key={index}
-                >
-                  {`${state[`stat${index}`]}${index !== 0 ? "+" : ""}`}
-                </a>
+                {item.href ? (
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {`${state[`stat${index}`]}${index !== 1 ? "" : ""}`}
+                  </a>
+                ) : (
+                  `${state[`stat${index}`]}`
+                )}
               </div>
               <div className="landing-community__stat-description">
                 {item.description}
@@ -95,11 +93,11 @@ export const LandingCommunity: FC<Props> = ({ className }) => {
           <img
             className="landing-community__image"
             src="/img/svg/team_collaboration.svg"
-            alt="investors"
+            alt="team collaboration"
             loading="lazy"
           />
           <div className="landing-community__info-text">
-            Our developer is the heartbeat of CodeHarborHub. We take pride in
+            Our developers are the heartbeat of CodeHarborHub. We take pride in
             our{" "}
             <a
               href="https://github.com/CodeHarborHub/codeharborhub.github.io/graphs/contributors"
@@ -107,27 +105,18 @@ export const LandingCommunity: FC<Props> = ({ className }) => {
               rel="noopener noreferrer"
               className="landing-community__link"
             >
-              LinkedIn community
-            </a>
-            {" with over, "}
-            <a
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-              className="landing-community__link"
-            >
-              100+ contributors
-            </a>
-            {" and "}
+              GitHub community
+            </a>{" "}
+            with over{" "}
             <a
               href="https://github.com/CodeHarborHub/codeharborhub.github.io"
               target="_blank"
               rel="noopener noreferrer"
               className="landing-community__link"
             >
-              powering CodeHarborHub
-            </a>
-            .
+              100+ contributors
+            </a>{" "}
+            powering CodeHarborHub.
           </div>
         </div>
       </div>

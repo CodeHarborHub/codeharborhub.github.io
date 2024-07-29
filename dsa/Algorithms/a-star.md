@@ -260,4 +260,4 @@ Here is the pseudocode for the A* Algorithm:
 ## Conclusion
 The A* Algorithm is a powerful and efficient pathfinding algorithm that can be implemented in various programming languages. By understanding its principles and applying the appropriate heuristic functions, you can leverage A* for a wide range of applications.
 
-In this tutorial, we have covered the theoretical background, provided pseudocode, and demonstrated implementations in Python, Java, C++, and JavaScript. With this knowledge, you should be well-equipped to utilize the A* Algorithm in your own projects.
+In this tutorial, we have covered the theoretical background, provided pseudocode, and demonstrated implementations in Python, Java, C++, and JavaScript. With this knowledge, you should be well-equipped to utilize the A* Algorithm in your projects.

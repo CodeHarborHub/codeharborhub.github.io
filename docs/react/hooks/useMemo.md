@@ -39,4 +39,21 @@ function MemoizedFactorial() {
 }
 ```
 
+<BrowserWindow>
+      <div>
+          <p>Factorial of <span id="give_num"></span> is: <span id="output_num"></span></p>
+          <input type="number" onChange={(e) => {
+            let number=Number(e.target.value)
+            let give_num=document.getElementById("give_num")
+            let output_num=document.getElementById("output_num")
+            let fact = 1;
+            for (let i = 1; i <= number; i++) {
+            fact *= i;
+            }
+            give_num.textContent=number
+            output_num.textContent=fact
+          }} />
+      </div>
+</BrowserWindow>
+
 In this example, `useMemo` memoizes the `factorial` calculation based on the `number` state. It ensures that the factorial computation is only recalculated when `number` changes, optimizing performance by avoiding unnecessary computations on each render.
