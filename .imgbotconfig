@@ -1,0 +1,14 @@
+{
+  "schedule": "daily",
+  "ignoredFiles": [
+    "*.svg",
+    "/static/img/svg*"
+  ],
+  "quality": 75,
+  "aggressiveCompression": false,
+  "resizeImages": {
+    "enabled": true,
+    "maxWidth": 1920,
+    "maxHeight": 1080
+  }
+}
