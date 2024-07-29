@@ -1,0 +1,52 @@
+.editor_select_container{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;height:25rem;width:100vw}
+.editor_selcet_text{font-family:monospace;position:absolute;top:2%}
+.editor_select_imgage_container{display:flex;flex-direction:column;align-items:center}
+.editor_select_image{height:10rem}
+.editor_container{flex:1 0 20rem;display:flex;gap:1rem;justify-content:center;align-items:center;position:relative;padding:3rem;cursor:pointer}
+.editor_container:hover{border: 1px solid;}
+.normal_editor{display: flex;flex-wrap: wrap;justify-content: center;align-items: center;width:100vw}
+.normal_editor .editor_box,.normal_editor .output_container{
+    flex: 1 0 30rem;
+    height: 35rem; 
+    position:relative;
+}
+.normal_editor .output_container{background: white;}
+.editor_box .editor_nav{position: absolute;z-index: 2;gap: 1rem;display: flex;top: 2%;justify-content: center;align-items: center;right: 1%;}
+.editor_nav .btn_activated{padding: 0.3rem 1rem;border: none;font-family: monospace;font-weight: 600;cursor: pointer;}
+.editor_nav .html{background: rgb(230,81,0);color: white;}
+.editor_nav .css{background:rgb(2,119,189);color: white;}
+.editor_nav .js{background:rgb(255,214,0);color: rgb(0, 0, 0);}
+.editor_nav .btn_deactivated{display: none;}
+.editor_settings_nav{position: absolute;bottom: 1%;right: 1%;}
+.editor_settings_nav img{height: 1.5rem;cursor: pointer;filter: var(--image-filter);}
+.editor_settings_nav .editor_setting_icon{display: flex;justify-content: flex-end;}
+.editor_settings_menu_con{border: 1px solid;padding: 0.3rem;margin-bottom: 0.2rem;transition: 0.3s ease-in;background: var(--docsearch-hit-background);}
+.editor_settings_menu_con.activate_menu{opacity: 1;}
+.editor_settings_menu_con.deactivate_menu{display: none;}
+.editor_settings_menu{display: flex;gap: 1rem;justify-content: space-between;align-items: center;margin: 0.5rem;}
+.editor_settings_menu p{margin: 0;}
+.editor_settings_menu button{height: 1.5rem; width: 1.5rem;display: flex;justify-content: center;font-family: monospace;font-weight: 900;background:rgb(2,119,189);color: white;border: none;align-items: center;}
+.editor_settings_menu input{height: 3rem;width: 3rem;}
+.editor_textarea_activate{
+        font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+        width: 100%;
+        min-height: 100%; 
+        float: left; 
+        line-height: 14pt;
+        font-weight: 200;
+        padding: 10px; 
+        border: 1px solid;
+        background: transparent;
+        box-shadow: inset rgba(0,0,0,.05) 0 3px 10px;
+        border-radius: 3px;
+        transition: all 0.2s ease-in-out;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+      }
+      
+      .editor_textarea_activate:focus {
+        border-color: #33dd33;
+      }
+      .editor_textarea_deactivate{display: none;}
+      
