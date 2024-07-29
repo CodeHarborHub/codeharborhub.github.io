@@ -386,5 +386,15 @@ export const Users: User[] = [
       website: "https://horse-ride-booking.vercel.app/",
       source: null,
       tags: ["opensource", "react", "redux", "motion", "javascript"],
+    },
+    //The Pull
+
+    {
+      title: "The Pull",
+      description: "Ecommerce wesbite template from where we can buy variety of shoes",
+      preview: require("./showcase/pull.png"),
+      website:"https://ridhima10.github.io/The_Pull/",
+      source: "https://github.com/Ridhima10/The_Pull",
+      tags: ["html", "css", "javascript"],
     }
 ];

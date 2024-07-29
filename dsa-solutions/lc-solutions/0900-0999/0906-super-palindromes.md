@@ -2,15 +2,15 @@
 id: super-palindromes
 title: Super Palindromes
 sidebar_label: Super Palindromes
-tags:
-  - Palindrome
-  - Math
+tags: 
+    - Palindrome
+    - Math
 ---
 
 ## Problem Description
 
-| Problem Statement                                                                 | Solution Link                                                                                        | LeetCode Profile                                     |
-| :-------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- | :--------------------------------------------------- |
+| Problem Statement                                       | Solution Link                                                              | LeetCode Profile                                        |
+| :------------------------------------------------------ | :------------------------------------------------------------------------- | :------------------------------------------------------ |
 | [Super Palindromes](https://leetcode.com/problems/super-palindromes/description/) | [Super Palindromes Solution on LeetCode](https://leetcode.com/problems/super-palindromes/solutions/) | [Nikita Saini](https://leetcode.com/u/Saini_Nikita/) |
 
 ## Problem Description
@@ -62,7 +62,7 @@ def super_palindromes(left, right):
     left, right = int(left), int(right)
     count = 0
     limit = int(math.sqrt(right)) + 1
-
+    
     for i in range(1, limit):
         s = str(i)
         pal = s + s[::-1]
@@ -71,14 +71,14 @@ def super_palindromes(left, right):
             break
         if num >= left and is_palindrome(str(num)):
             count += 1
-
+        
         pal = s + s[-2::-1]
         num = int(pal) ** 2
         if num > right:
             break
         if num >= left and is_palindrome(str(num)):
             count += 1
-
+    
     return count
 ```
 
@@ -178,7 +178,7 @@ int superPalindromes(char* left, char* right) {
     for (long long i = 1; i < limit; i++) {
         sprintf(s, "%lld", i);
         int len = strlen(s);
-
+        
         // Palindrome of even length
         snprintf(pal, 40, "%s%s", s, strrev(strdup(s)));
         long long num1 = atoll(pal) * atoll(pal);
@@ -200,29 +200,28 @@ int superPalindromes(char* left, char* right) {
 
 ```javascript
 function isPalindrome(s) {
-  return s === s.split("").reverse().join("");
+    return s === s.split('').reverse().join('');
 }
 
 function superPalindromes(left, right) {
-  let l = BigInt(left),
-    r = BigInt(right);
-  let count = 0;
-  let limit = BigInt(Math.sqrt(Number(r))) + BigInt(1);
+    let l = BigInt(left), r = BigInt(right);
+    let count = 0;
+    let limit = BigInt(Math.sqrt(Number(r))) + BigInt(1);
 
-  for (let i = BigInt(1); i < limit; i++) {
-    let s = i.toString();
-    let pal1 = s + s.split("").reverse().join("");
-    let num1 = BigInt(pal1) ** BigInt(2);
-    if (num1 > r) break;
-    if (num1 >= l && isPalindrome(num1.toString())) count++;
+    for (let i = BigInt(1); i < limit; i++) {
+        let s = i.toString();
+        let pal1 = s + s.split('').reverse().join('');
+        let num1 = BigInt(pal1) ** BigInt(2);
+        if (num1 > r) break;
+        if (num1 >= l && isPalindrome(num1.toString())) count++;
 
-    let pal2 = s + s.slice(0, -1).split("").reverse().join("");
-    let num2 = BigInt(pal2) ** BigInt(2);
-    if (num2 > r) break;
-    if (num2 >= l && isPalindrome(num2.toString())) count++;
-  }
+        let pal2 = s + s.slice(0, -1).split('').reverse().join('');
+        let num2 = BigInt(pal2) ** BigInt(2);
+        if (num2 > r) break;
+        if (num2 >= l && isPalindrome(num2.toString())) count++;
+    }
 
-  return count;
+    return count;
 }
 ```
 
@@ -231,13 +230,12 @@ function superPalindromes(left, right) {
 1. **Generate Palindromes:**
    - Iterate through possible values of `i` from 1 to the square root of the right boundary.
    - Construct palindromes by concatenating `s` with its reverse and with its reverse minus the last character.
+   
 2. **Square Palindromes:**
-
    - Compute the square of each palindrome.
    - Check if the squared value is within the range `[left, right]`.
 
 3. **Check for Super-Palindromes:**
-
    - Verify if the squared palindrome is also a palindrome.
 
 4. **Count and Return:**
