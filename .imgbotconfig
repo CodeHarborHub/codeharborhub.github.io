@@ -6,6 +6,9 @@
   ],
   "quality": 75,
   "aggressiveCompression": false,
+  "commitMessage": "🤖 Optimized images by [ImgBot]",
+  "prTitle": "🤖 Image optimization",
+  "prDescription": "This PR optimizes images using ImgBot. Image compression helps improve page load speed and performance.",
   "resizeImages": {
     "enabled": true,
     "maxWidth": 1920,
