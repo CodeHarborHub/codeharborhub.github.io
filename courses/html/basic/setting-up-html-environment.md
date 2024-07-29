@@ -54,8 +54,8 @@ We recommend using **Visual Studio Code** as it is a popular text editor for web
 
 **Visual Studio Code** is a free source code editor developed by Microsoft. It has built-in support for HTML, CSS, and JavaScript, as well as extensions that can enhance your web development experience. You can download Visual Studio Code from the official website: [https://code.visualstudio.com/](https://code.visualstudio.com/).
 
-<BrowserWindow url="https://code.visualstudio.com/" bodyStyle={{padding: 0}}>    
-    [![Visual Studio Code](./image.png)](https://code.visualstudio.com/)
+<BrowserWindow url="https://code.visualstudio.com/" bodyStyle={{padding: 0}}>  
+ [![Visual Studio Code](./image.png)](https://code.visualstudio.com/)
 </BrowserWindow>
 
 :::
@@ -109,7 +109,7 @@ To create your first HTML file, follow these steps:
 3. Write the following HTML code in the file:
 
    ```html title="index.html"
-   <!DOCTYPE html>
+   <!doctype html>
    <html>
      <head>
        <title>My First Web Page</title>
