@@ -53,7 +53,6 @@ Thus we can solve this problem with a single loop.
             max_ending_here = 0
 return max_so_far
 
-
 ## Implementing Kadane’s Algorithm
 
 ### Python Implementation

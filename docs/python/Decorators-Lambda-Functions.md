@@ -38,7 +38,7 @@ class MyClass:
 
 **2. Custom Function Decorators:**
 
-- Simple Function Decorators : Adds functionality to a function.
+- Simple Function Decorators :Adds functionality to a function.
   ```python
   def my_decorator(func):
     def wrapper():

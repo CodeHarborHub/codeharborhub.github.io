@@ -9,6 +9,7 @@ tags:
   - LeetCode
   - C++
 description: "This is a solution to the Find The Town Judge problem on LeetCode."
+
 ---
 
 ## Problem Description

@@ -343,8 +343,7 @@ export const Users: User[] = [
     description:
       "Crossfits is a responsive landing page for GYM and Fitness.",
     preview: require("./showcase/crossfits.png"),
-    website:
-      "https://github.com/Ridhima10/Crossfits",
+    website: "https://ridhima10.github.io/Crossfits/",
     source:
       "https://github.com/Ridhima10/Crossfits",
     tags: ["opensource", "html", "css",  "gym", "templates"],
@@ -394,8 +393,8 @@ export const Users: User[] = [
       title: "The Pull",
       description: "Ecommerce wesbite template from where we can buy variety of shoes",
       preview: require("./showcase/pull.png"),
-      website: "https://github.com/Ridhima10/The_Pull",
-      source: null,
+      website:"https://ridhima10.github.io/The_Pull/",
+      source: "https://github.com/Ridhima10/The_Pull",
       tags: ["html", "css", "javascript"],
     },
     // QR Generator

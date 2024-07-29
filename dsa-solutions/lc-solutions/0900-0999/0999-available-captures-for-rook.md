@@ -8,6 +8,7 @@ tags:
   - matrix
 ---
 
+
 ## Problem Description
 
 You are given an 8 x 8 matrix representing a chessboard. There is exactly one white rook represented by 'R', some number of white bishops 'B', and some number of black pawns 'p'. Empty squares are represented by '.'.
