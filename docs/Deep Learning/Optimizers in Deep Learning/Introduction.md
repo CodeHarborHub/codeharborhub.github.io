@@ -42,7 +42,7 @@ SGD updates the weights for each training example, rather than at the end of eac
 
 **Mathematical Equation:**
 
-$$ \theta = \theta - \eta \nabla J(\theta; x^{(i)}; y^{(i)}) $$
+$$\theta = \theta - \eta \nabla J(\theta; x^{(i)}; y^{(i)})$$
 
 **Keras Code:**
 
@@ -75,7 +75,7 @@ AdaGrad adapts the learning rate to the parameters, performing larger updates fo
 
 **Mathematical Equation:**
 
-$$\theta = \theta - \frac{\eta}{\sqrt{G_{ii} + \epsilon}} \nabla J(\theta)$$
+$$ \theta = \theta - \frac{\eta}{\sqrt{G_{ii} + \epsilon}} \nabla J(\theta) $$
 
 **Keras Code:**
 
@@ -91,8 +91,7 @@ RMSprop modifies AdaGrad to perform better in the non-convex setting by changing
 
 **Mathematical Equation:**
 
-$$ E[g^2]_t = \gamma E[g^2]_{t-1} + (1 - \gamma) g_t^2 $$
-$$ \theta = \theta - \frac{\eta}{\sqrt{E[g^2]_t + \epsilon}} \nabla J(\theta) $$
+$$\theta = \theta - \frac{\eta}{\sqrt{E[g^2]_t + \epsilon}} \nabla J(\theta)$$
 
 **Keras Code:**
 
