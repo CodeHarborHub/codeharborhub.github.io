@@ -60,3 +60,18 @@ event - compiled successfully
 ## Verify Output
 
 Open localhost:3000 in a browser
+
+<BrowserWindow>
+      <div id="browsing_static_files">
+         <h1>My First Post</h1>
+         <h2 onClick={()=>{
+                 let browsing_static_files=document.getElementById("browsing_static_files")
+                 browsing_static_files.style.display="none"
+                 setTimeout(()=>{
+                  browsing_static_files.style.display="block"
+                 },1000)
+               }} style={{fontSize:"1rem",color:"blue",textDecoration:"underline",cursor:"pointer"}}>Home</h2>
+         <br />
+         <img src="/img/favicon_io/android-chrome-192x192.png" alt="CodeHarborhub Logo" style={{height:"5rem",width:"5rem"}} />
+      </div>
+</BrowserWindow>

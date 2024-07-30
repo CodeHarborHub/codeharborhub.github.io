@@ -112,3 +112,95 @@ event - compiled successfully
 ```Open localhost:3000/posts/one in a browser and you will see the following output. ```
 
 ``` Open localhost:3000/posts/two in a browser and you will see the following output. ```
+
+<BrowserWindow>
+       <div id="buttons_con" style={{display:"flex",flexDirection:"column",gap:"1rem",justifyContent:"center",alignItems:"center"}}>
+            <button
+            onClick={()=>{
+               let buttons_con=document.getElementById("buttons_con")
+               buttons_con.style.display="none"
+               let get_all_post_con=document.getElementById("get_all_post_con")
+               get_all_post_con.style.display="block"
+               let data=[{id:1,title:"This is 1st post",body:"Thank you for visiting in our 1st post"},{id:2,title:"This is 2nd post",body:"Thank you for visiting in our 2nd post"},{id:3,title:"This is 3rd post",body:"Thank you for visiting in our 3rd  post"}]
+               data.map((item)=>{
+                  let h4=document.createElement("h4")
+                  h4.textContent=item.title
+                  let p=document.createElement("p")
+                  p.textContent=item.body
+                  let hr=document.createElement("hr")
+                  get_all_post_con.appendChild(h4)
+                  get_all_post_con.appendChild(p)
+                  get_all_post_con.appendChild(hr)
+               })
+            }}
+             style={{padding:"0.6rem 1.4rem",backgroundImage:"radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%)",border:"none",color:"white",fontWeight:"700",borderRadius:"0.6rem",cursor:"pointer"}}>All Post</button>
+            <button
+            onClick={()=>{
+               let buttons_con=document.getElementById("buttons_con")
+               buttons_con.style.display="none"
+               let see_1st_post_con=document.getElementById("see_1st_post_con")
+               see_1st_post_con.style.display="block"
+               let data=[{id:1,title:"This is 1st post",body:"Thank you for visiting in our 1st post"}]
+               data.map((item)=>{
+                  let h4=document.createElement("h4")
+                  h4.textContent=item.title
+                  let p=document.createElement("p")
+                  p.textContent=item.body
+                  let hr=document.createElement("hr")
+                  see_1st_post_con.appendChild(h4)
+                  see_1st_post_con.appendChild(p)
+                  see_1st_post_con.appendChild(hr)
+               })
+            }}
+             style={{padding:"0.6rem 1.4rem",backgroundImage:"radial-gradient(100% 100% at 100% 0px, rgb(90 255 165) 0px, rgb(255 130 84) 100%)",border:"none",color:"white",fontWeight:"700",borderRadius:"0.6rem",cursor:"pointer"}}
+            >1st Post</button>
+            <button
+            onClick={()=>{
+               let buttons_con=document.getElementById("buttons_con")
+               buttons_con.style.display="none"
+               let see_2nd_post_con=document.getElementById("see_2nd_post_con")
+               see_2nd_post_con.style.display="block"
+               let data=[{id:2,title:"This is 2nd post",body:"Thank you for visiting in our 2nd post"}]
+               data.map((item)=>{
+                  let h4=document.createElement("h4")
+                  h4.textContent=item.title
+                  let p=document.createElement("p")
+                  p.textContent=item.body
+                  let hr=document.createElement("hr")
+                  see_2nd_post_con.appendChild(h4)
+                  see_2nd_post_con.appendChild(p)
+                  see_2nd_post_con.appendChild(hr)
+               })
+            }}
+             style={{padding:"0.6rem 1.4rem",backgroundImage:"radial-gradient(100% 100% at 100% 0px, rgb(255 90 172) 0px, rgb(84 201 255) 100%)",border:"none",color:"white",fontWeight:"700",borderRadius:"0.6rem",cursor:"pointer"}}
+            >2nd Post</button>
+            <button
+            onClick={()=>{
+               let buttons_con=document.getElementById("buttons_con")
+               buttons_con.style.display="none"
+               let see_3rd_post_con=document.getElementById("see_3rd_post_con")
+               see_3rd_post_con.style.display="block"
+               let data=[{id:3,title:"This is 3rd post",body:"Thank you for visiting in our 3rd post"}]
+               data.map((item)=>{
+                  let h4=document.createElement("h4")
+                  h4.textContent=item.title
+                  let p=document.createElement("p")
+                  p.textContent=item.body
+                  let hr=document.createElement("hr")
+                  see_3rd_post_con.appendChild(h4)
+                  see_3rd_post_con.appendChild(p)
+                  see_3rd_post_con.appendChild(hr)
+               })
+            }}
+             style={{padding:"0.6rem 1.4rem",backgroundImage:"radial-gradient(100% 100% at 100% 0px, rgb(255, 90, 90) 0px, rgb(39 185 106) 100%)",border:"none",color:"white",fontWeight:"700",borderRadius:"0.6rem",cursor:"pointer"}}
+            >3rd Post</button>            
+       </div>
+       <div id="get_all_post_con" style={{display:"none"}}>
+       </div>
+       <div id="see_1st_post_con" style={{display:"none"}}>
+       </div>
+       <div id="see_2nd_post_con" style={{display:"none"}}>
+       </div>
+       <div id="see_3rd_post_con" style={{display:"none"}}>
+       </div>
+</BrowserWindow>
