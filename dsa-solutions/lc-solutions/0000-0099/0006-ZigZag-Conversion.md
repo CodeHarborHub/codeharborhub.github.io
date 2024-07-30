@@ -4,6 +4,9 @@ title: Zigzag Conversion (LeetCode)
 sidebar_label: 0006-Zigzag Conversion
 tags:
   - String
+  - Java
+  - C++
+  - Python
 description: Convert the given string into a zigzag pattern with a specified number of rows.
 sidebar_position: 6
 ---
