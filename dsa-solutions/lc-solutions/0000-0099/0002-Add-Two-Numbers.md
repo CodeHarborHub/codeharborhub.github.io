@@ -250,75 +250,73 @@ function addTwoNumbersProblem() {
             int x = l1 ? l1->val : 0;
             int y
 
- = l2 ? l2->val : 0;
-            int sum = x + y + carry;
-            carry = sum / 10;
-            curr->next = new ListNode(sum % 10);
-            curr = curr->next;
-            if (l1) l1 = l1->next;
-            if (l2) l2 = l2->next;
-        }
-        if (carry > 0) {
-            curr->next = new ListNode(carry);
-        }
-        return dummy->next;
-    }
-    ```
-    </TabItem>
+= l2 ? l2->val : 0;
+int sum = x + y + carry;
+carry = sum / 10;
+curr->next = new ListNode(sum % 10);
+curr = curr->next;
+if (l1) l1 = l1->next;
+if (l2) l2 = l2->next;
+}
+if (carry > 0) {
+curr->next = new ListNode(carry);
+}
+return dummy->next;
+}
+`    </TabItem>
     <TabItem value="C" label="C">
     <SolutionAuthor name="@ajay-dhangar"/>
-    ```c
-    struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
-        struct ListNode* dummy = (struct ListNode*)malloc(sizeof(struct ListNode));
-        dummy->val = 0;
-        dummy->next = NULL;
-        struct ListNode* curr = dummy;
-        int carry = 0;
-        while (l1 || l2) {
-            int x = l1 ? l1->val : 0;
-            int y = l2 ? l2->val : 0;
-            int sum = x + y + carry;
-            carry = sum / 10;
-            curr->next = (struct ListNode*)malloc(sizeof(struct ListNode));
-            curr->next->val = sum % 10;
-            curr->next->next = NULL;
-            curr = curr->next;
-            if (l1) l1 = l1->next;
-            if (l2) l2 = l2->next;
-        }
-        if (carry > 0) {
-            curr->next = (struct ListNode*)malloc(sizeof(struct ListNode));
-            curr->next->val = carry;
-            curr->next->next = NULL;
-        }
-        return dummy->next;
-    }
-    ```
-    </TabItem>
+   `c
+struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
+struct ListNode* dummy = (struct ListNode*)malloc(sizeof(struct ListNode));
+dummy->val = 0;
+dummy->next = NULL;
+struct ListNode* curr = dummy;
+int carry = 0;
+while (l1 || l2) {
+int x = l1 ? l1->val : 0;
+int y = l2 ? l2->val : 0;
+int sum = x + y + carry;
+carry = sum / 10;
+curr->next = (struct ListNode*)malloc(sizeof(struct ListNode));
+curr->next->val = sum % 10;
+curr->next->next = NULL;
+curr = curr->next;
+if (l1) l1 = l1->next;
+if (l2) l2 = l2->next;
+}
+if (carry > 0) {
+curr->next = (struct ListNode*)malloc(sizeof(struct ListNode));
+curr->next->val = carry;
+curr->next->next = NULL;
+}
+return dummy->next;
+}
+`    </TabItem>
     <TabItem value="ts" label="TypeScript">
     <SolutionAuthor name="@ajay-dhangar"/>
-    ```typescript
-    function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {
-        let dummy = new ListNode(0);
-        let curr = dummy;
-        let carry = 0;
-        while (l1 || l2) {
-            let x = l1 ? l1.val : 0;
-            let y = l2 ? l2.val : 0;
-            let sum = x + y + carry;
-            carry = Math.floor(sum / 10);
-            curr.next = new ListNode(sum % 10);
-            curr = curr.next;
-            if (l1) l1 = l1.next;
-            if (l2) l2 = l2.next;
-        }
-        if (carry > 0) {
-            curr.next = new ListNode(carry);
-        }
-        return dummy.next;
-    }
-    ```
-    </TabItem>
+   `typescript
+function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {
+let dummy = new ListNode(0);
+let curr = dummy;
+let carry = 0;
+while (l1 || l2) {
+let x = l1 ? l1.val : 0;
+let y = l2 ? l2.val : 0;
+let sum = x + y + carry;
+carry = Math.floor(sum / 10);
+curr.next = new ListNode(sum % 10);
+curr = curr.next;
+if (l1) l1 = l1.next;
+if (l2) l2 = l2.next;
+}
+if (carry > 0) {
+curr.next = new ListNode(carry);
+}
+return dummy.next;
+}
+```
+</TabItem>
 </Tabs>
 
 ### Complexity Analysis
@@ -351,7 +349,7 @@ Output: [8,9,9,9,0,0,0,1]
 
 :::info
 
-**Note:** The above code is a solution to the Add Two Numbers problem on LeetCode. It is a simple and efficient solution that uses a dummy node to keep track of the result linked list. The solution iterates through both linked lists, adding the corresponding node values and carry to generate the result. The time complexity of this solution is $O(\max(m, n))$, where m and n are the lengths of the two linked lists, and the space complexity is $O(\max(m, n))$.
+**Note:** The above code is a solution of the Add Two Numbers problem on LeetCode. It is a simple and efficient solution that uses a dummy node to keep a track of the result linked list. The solution iterates through both linked lists, adding the corresponding node values and carry to generate the result. The time complexity of this solution is $O(\max(m, n))$, where m and n are the lengths of the two linked lists, and the space complexity is $O(\max(m, n))$.
 
 :::
 
