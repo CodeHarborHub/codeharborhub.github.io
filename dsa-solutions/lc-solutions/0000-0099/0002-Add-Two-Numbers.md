@@ -190,10 +190,10 @@ function addTwoNumbersProblem() {
         return dummy.next;
     };
     ```
-    </TabItem>
+  </TabItem>
 
-    <TabItem value="Python" label="Python">
-    <SolutionAuthor name="@amruta-jayanti"/>
+  <TabItem value="Python" label="Python">
+  <SolutionAuthor name="@ajay-dhangar"/>
     ```python
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         dummy = ListNode(0)
@@ -214,9 +214,10 @@ function addTwoNumbersProblem() {
             curr.next = ListNode(carry)
         return dummy.next
     ```
-    </TabItem>
-    <TabItem value="Java" label="Java">
-    <SolutionAuthor name="@amruta-jayanti"/>
+  </TabItem>
+  
+  <TabItem value="Java" label="Java">
+  <SolutionAuthor name="@ajay-dhangar"/>
     ```java
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0);
@@ -238,120 +239,53 @@ function addTwoNumbersProblem() {
         return dummy.next;
     }
     ```
-    </TabItem>
-    <TabItem value="C++" label="C++">
-    <SolutionAuthor name="@amruta-jayanti"/>
+  </TabItem>
+  
+  <TabItem value="C++" label="C++">
+  <SolutionAuthor name="@ajay-dhangar"/>
     ```cpp
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         ListNode* dummy = new ListNode(0);
         ListNode* curr = dummy;
         int carry = 0;
         while (l1 || l2) {
-            int x = l1 ? l1->val : 0;
-            int y
-
-= l2 ? l2->val : 0;
-int sum = x + y + carry;
-carry = sum / 10;
-curr->next = new ListNode(sum % 10);
-curr = curr->next;
-if (l1) l1 = l1->next;
-if (l2) l2 = l2->next;
-}
-if (carry > 0) {
-curr->next = new ListNode(carry);
-}
-return dummy->next;
-}
-`    </TabItem>
-    <TabItem value="C" label="C">
-    <SolutionAuthor name="@ajay-dhangar"/>
-   `c
-struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
-struct ListNode* dummy = (struct ListNode*)malloc(sizeof(struct ListNode));
-dummy->val = 0;
-dummy->next = NULL;
-struct ListNode* curr = dummy;
-int carry = 0;
-while (l1 || l2) {
-int x = l1 ? l1->val : 0;
-int y = l2 ? l2->val : 0;
-int sum = x + y + carry;
-carry = sum / 10;
-curr->next = (struct ListNode*)malloc(sizeof(struct ListNode));
-curr->next->val = sum % 10;
-curr->next->next = NULL;
-curr = curr->next;
-if (l1) l1 = l1->next;
-if (l2) l2 = l2->next;
-}
-if (carry > 0) {
-curr->next = (struct ListNode*)malloc(sizeof(struct ListNode));
-curr->next->val = carry;
-curr->next->next = NULL;
-}
-return dummy->next;
-}
-`    </TabItem>
-    <TabItem value="ts" label="TypeScript">
-    <SolutionAuthor name="@ajay-dhangar"/>
-   `typescript
-function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {
-let dummy = new ListNode(0);
-let curr = dummy;
-let carry = 0;
-while (l1 || l2) {
-let x = l1 ? l1.val : 0;
-let y = l2 ? l2.val : 0;
-let sum = x + y + carry;
-carry = Math.floor(sum / 10);
-curr.next = new ListNode(sum % 10);
-curr = curr.next;
-if (l1) l1 = l1.next;
-if (l2) l2 = l2.next;
-}
-if (carry > 0) {
-curr.next = new ListNode(carry);
-}
-return dummy.next;
-}
-```
-</TabItem>
+            int x = (l1) ? l1->val : 0;
+            int y = (l2) ? l2->val : 0;
+            int sum = x + y + carry;
+            carry = sum / 10;
+            curr->next = new ListNode(sum % 10);
+            curr = curr->next;
+            if (l1) l1 = l1->next;
+            if (l2) l2 = l2->next;
+        }
+        if (carry > 0) {
+            curr->next = new ListNode(carry);
+        }
+        return dummy->next;
+    }
+    ```
+  </TabItem>
 </Tabs>
 
-### Complexity Analysis
+## Complexity Analysis
 
-The time complexity for this solution is $O(\max(m, n))$, where m and n are the lengths of the two linked lists. We iterate through both linked lists once, and the space complexity is $O(\max(m, n))$, where m and n are the lengths of the two linked lists. The space complexity is due to the new linked list created to store the result.
+### Time Complexity
+The time complexity of the solution is **O(n)**, where **n** is the maximum length of the input linked lists.
 
-### Test Cases
+### Space Complexity
+The space complexity is **O(n)** due to the space required to store the resulting linked list.
 
-<Tabs>
- <TabItem value="TestCase1" label="Case 1">
-```plaintext
-Input: l1 = [2,4,3], l2 = [5,6,4]
-Output: [7,0,8]
-```
-</TabItem>
-<TabItem value="TestCase2" label="Case 2">
-```plaintext
-Input: l1 = [0], l2 = [0]
-Output: [0]
-```
-</TabItem>
+## Conclusion
 
-<TabItem value="TestCase3" label="Case 3">
-```plaintext
-Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
-Output: [8,9,9,9,0,0,0,1]
-```
-</TabItem>
-</Tabs>
+The solution provided efficiently adds two numbers represented by linked lists. By using dummy nodes and handling carry, we ensure that the solution is both easy to understand and efficient. The detailed explanation, flowchart, and code in multiple languages aim to help you understand and implement the solution effectively.
 
-:::info
+---
 
-**Note:** The above code is a solution of the Add Two Numbers problem on LeetCode. It is a simple and efficient solution that uses a dummy node to keep a track of the result linked list. The solution iterates through both linked lists, adding the corresponding node values and carry to generate the result. The time complexity of this solution is $O(\max(m, n))$, where m and n are the lengths of the two linked lists, and the space complexity is $O(\max(m, n))$.
+## References
 
-:::
+- [LeetCode Problem](https://leetcode.com/problems/add-two-numbers/)
+- [GeeksforGeeks Solution](https://www.geeksforgeeks.org/add-two-numbers-represented-by-linked-lists/)
+- [YouTube Explanation](https://www.youtube.com/watch?v=wgFPrzTjm7s)
 
 ---
 
