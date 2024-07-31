@@ -40,9 +40,11 @@ Momentum adds a fraction of the previous update to the current update, which hel
 The update rule for gradient descent with momentum is as follows:
 
 $$v_t = γ v_{t-1} + η ∇J(θ)$$  
-$$ θ = θ - v_t $$
+$$θ = θ - v_t$$
+
 where:
-- $v_t:$ Velocity (or momentum) at time step t.
+
+- $v_t$: Velocity (or momentum) at time step t.
 - $γ$ (gamma): Momentum coefficient (usually between 0.5 and 0.9).
 - $η$ (eta): Learning rate.
 - $∇J(θ):$$ Gradient of the loss function with respect to the parameters.
