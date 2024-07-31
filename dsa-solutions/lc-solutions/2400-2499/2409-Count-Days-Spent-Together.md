@@ -1,7 +1,7 @@
 ---
-id:  Count Days Spent Together
+id:  Count-Days-Spent-Together
 title:  Count Days Spent Together
-sidebar_label: Count Days Spent Together
+sidebar_label: 2409-Count Days Spent Together
 tags: [dsa, leetcode]
 description: Problem solution of  Count Days Spent Together
 ---
