@@ -1,7 +1,3 @@
-Here is the updated README file, including sections on why Momentum is better than other optimizers and its limitations:
-
----
-
 # Add Momentum in Deep Learning Optimizers
 
 This repository contains an explanation and implementation of the Momentum optimization algorithm used in deep learning. Momentum helps accelerate the convergence of the gradient descent algorithm by adding a fraction of the previous update to the current update.
