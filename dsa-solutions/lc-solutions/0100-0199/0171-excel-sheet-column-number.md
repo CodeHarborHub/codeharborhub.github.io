@@ -15,7 +15,8 @@ description: "This is a solution to the Excel Sheet Column Number on LeetCode."
 Given a string **columnTitle** that represents the column title as appears in an Excel sheet, return its corresponding column number.
 For example:
 
-```A -> 1
+```
+A -> 1
 B -> 2
 C -> 3
 ...
@@ -42,7 +43,7 @@ AB -> 28
 **Input**: columnTitle = "ZY"
 **Output**: 701
 
-### Constraints
+## Constraints
 
 - `1 <= columnTitle.length <= 7`
 - `columnTitle consists only of uppercase English letters.`
@@ -51,6 +52,7 @@ AB -> 28
 ---
 
 ## Solution for Best Time to Buy and Sell Stock Problem
+
 ### Intuition
 The intuition behind the solution is to treat each letter as a digit in a base-26 number system, where 'A' represents 1, 'B' represents 2, ..., 'Z' represents 26. The solution then iterates through each character in the column title, calculates the numeric value of the corresponding letter, and accumulates the result by considering the positional weight of each letter.
 
@@ -65,6 +67,7 @@ The intuition behind the solution is to treat each letter as a digit in a base-2
 
 
 ### Code in Different languages
+
 #### Code in C++
 
 ```c++
@@ -102,8 +105,7 @@ class Solution:
         
 ```
 
-### Complexity Analiysis
+### Complexity Analysis
 
-- Time complexity:` O(n)`
-- Space complexity: `O(1)`
----
+- Time complexity: $O(n)$
+- Space complexity: $O(1)$
