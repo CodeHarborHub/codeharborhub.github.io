@@ -42,7 +42,7 @@
     "@tsparticles/slim": "^3.4.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "axios": "^1.7.2",
+    "axios": "^1.7.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "docusaurus2-dotenv": "^1.4.0",
