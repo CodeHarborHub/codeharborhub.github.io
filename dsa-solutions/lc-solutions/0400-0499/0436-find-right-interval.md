@@ -224,3 +224,13 @@ class Solution:
 - **LeetCode Problem**: [Find Right Interval](https://leetcode.com/problems/find-right-interval/description/)
 
 - **Solution Link**: [Find Right Interval](https://leetcode.com/problems/find-right-interval/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

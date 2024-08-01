@@ -231,3 +231,13 @@ class Solution:
 - **LeetCode Problem**: [Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/description/)
 
 - **Solution Link**: [Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

@@ -66,3 +66,27 @@ event - compiled successfully
 Open localhost:3000/api/user in a browser and you will see the following output.
 
 ```{"name":"Robert"} ```
+
+
+<BrowserWindow>
+      <div style={{display:'flex',flexWrap:"wrap",justifyContent:"center",alignItems:"center"}}>
+      <div style={{flex:"1 0 20rem",minHeight:"20rem"}} id="output">
+      <p>app listen in 3000...</p>
+      </div>
+      <div style={{flex:"1 0 20rem",minHeight:"20rem"}}>
+      <button onClick={()=>{
+         let button_ele=document.getElementById("button_ele")
+          button_ele.style.display="none" 
+          let output=document.getElementById("output")
+          let p=document.createElement("p")
+          p.textContent="GET /api/user "
+          output.appendChild(p) 
+          setTimeout(()=>{
+          let fontend=document.getElementById("fontend")
+          fontend.textContent= JSON.stringify({"name":"Robert"},null,2)
+          },1500)
+      }} id="button_ele">click to see the output</button>
+      <pre id="fontend"></pre>
+      </div>
+      </div>
+</BrowserWindow>

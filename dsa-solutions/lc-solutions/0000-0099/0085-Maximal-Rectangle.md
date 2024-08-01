@@ -1,7 +1,7 @@
 ---
 id: Maximal-Rectangle
 title: Maximal Rectangle
-sidebar_label: Maximal Rectangle
+sidebar_label: 085-Maximal Rectangle
 tags:
   - algorithms
   - dynamic programming
@@ -9,6 +9,7 @@ tags:
   - matrix
   - binary matrix
   - rectangle
+description: This gives the solution for maximal Rectangle problem of leetcode
 ---
 
 ## Problem Description
@@ -101,7 +102,7 @@ def largestRectangleArea(heights):
 ```
 
 ### Java Solution
-```java
+```Java
 import java.util.Stack;
 
 class Solution {

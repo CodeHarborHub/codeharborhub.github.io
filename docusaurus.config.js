@@ -1,9 +1,11 @@
-import { themes as prismThemes } from "prism-react-renderer";
 import { default as npm2yarn } from "@docusaurus/remark-plugin-npm2yarn";
+import { themes as prismThemes } from "prism-react-renderer";
+
 const remarkMath = require("remark-math");
 const rehypeKatex = require("rehype-katex");
 
 const path = require("path");
+require("dotenv").config();
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -15,6 +17,10 @@ const config = {
   customFields: {
     admin: "Ajay Dhangar",
     superman: "Shivay",
+    serviceId: process.env.EMAILJS_SERVICE_ID,
+    templateId: process.env.EMAILJS_TEMPLATE_ID,
+    userId: process.env.EMAILJS_USER_ID,
+    emailService: process.env.EMAIL_SERVICE,
   },
 
   organizationName: "codeharborhub",
@@ -77,7 +83,7 @@ const config = {
       announcementBar: {
         id: "announcementBar",
         content:
-          '⭐️ If you like CodeHarborHub, give it a star on <a target="_blank" href="https://github.com/codeharborhub/codeharborhub">GitHub</a> and join us on <a target="_blank" href="https://www.linkedin.com/company/codeharborhub/">LinkedIn</a> ⭐️',
+          '🔗 Check out our latest project: <a target="_blank" href="https://www.linkedin.com/posts/ajay-dhangar_loan-calculator-activity-7221402171957768195-1WYs/?utm_source=share&utm_medium=member_desktop">Loan Calculator</a>! Like, comment, and share! 🚀',
         isCloseable: true,
         backgroundColor: "var(--ifm-color-primary)",
       },
@@ -86,18 +92,27 @@ const config = {
         {
           name: "keywords",
           content:
-            "CodeHarborHub, CodeHarbor, CodeHarborHub, CodeHarborHub Blog, CodeHarborHub Community, CodeHarborHub Courses, CodeHarborHub DSA, CodeHarborHub Web Dev, CodeHarborHub Tutorials, CodeHarborHub Showcase, CodeHarborHub Donate, CodeHarborHub Blog, CodeHarborHub Team, CodeHarborHub About, CodeHarborHub Contact, CodeHarborHub Careers, CodeHarborHub Terms, CodeHarborHub Privacy, CodeHarborHub Cookie, CodeHarborHub Code of Conduct, CodeHarborHub Quiz, CodeHarborHub Broadcast, CodeHarborHub Tags, CodeHarborHub Courses Tags, CodeHarborHub DSA Tags, CodeHarborHub Web Dev Tags, CodeHarborHub Product, CodeHarborHub LinkedIn, CodeHarborHub YouTube, CodeHarborHub Discord, CodeHarborHub Twitter, CodeHarborHub GitHub, CodeHarborHub Products, CodeHarborHub Web Dev, CodeHarborHub DSA, CodeHarborHub Courses, CodeHarborHub Tutorials, CodeHarborHub Showcase, CodeHarborHub Donate, CodeHarborHub Blog, CodeHarborHub Team, CodeHarborHub About, CodeHarborHub Contact, CodeHarborHub Careers, CodeHarborHub Terms, CodeHarborHub Privacy, CodeHarborHub Cookie, CodeHarborHub Code of Conduct, CodeHarborHub Quiz, CodeHarborHub Broadcast, CodeHarborHub Tags, CodeHarborHub Courses Tags, CodeHarborHub DSA Tags, CodeHarborHub Web Dev Tags, CodeHarborHub Product, CodeHarborHub LinkedIn, CodeHarborHub YouTube, CodeHarborHub Discord, CodeHarborHub Twitter, CodeHarborHub GitHub, CodeHarborHub Products, CodeHarborHub Web Dev, CodeHarborHub DSA, CodeHarborHub Courses, CodeHarborHub Tutorials, CodeHarborHub Showcase, CodeHarborHub Donate, CodeHarborHub Blog, CodeHarborHub Team, CodeHarborHub About, CodeHarborHub Contact, CodeHarborHub Careers, CodeHarborHub Terms, CodeHarborHub Privacy, CodeHarborHub Cookie, CodeHarborHub Code of Conduct, CodeHarborHub Quiz, CodeHarborHub Broadcast, CodeHarborHub Tags, CodeHarborHub, leetcode, codeforces, hackerrank, geeksforgeeks, interviewbit, educative, udemy, coursera, udacity, khanacademy, codecademy, w3schools, tutorialspoint, javatpoint, geeksforgeeks, stackoverflow, github, gitlab, bitbucket, codepen, jsfiddle, repl.it, codesandbox, stackblitz, gfg, GeeksForGeeks, tech",
+            "CodeHarborHub, Docs, Tutorials, Courses, DSA, Problems, Solutions, Showcase, Community, Blog, Web Dev, Live Editor, Quiz, Tags, Donate, Careers, Team, GitHub, Products, LinkedIn, YouTube, Discord, Twitter, Privacy Policy, Terms of Service, Code of Conduct, Cookie Policy, Licensing, Web Development, React, JavaScript, Python, Java, Tailwind CSS, CPP, NextJs, MATLAB, Julia, HTML, CSS, TypeScript, DSA, Data Structures, Algorithms, Competitive Programming",
         },
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:site", content: "@CodesWithAjay" },
         { name: "twitter:creator", content: "@CodesWithAjay" },
         { property: "og:type", content: "website" },
         { property: "og:site_name", content: "CodeHarborHub" },
-        { property: "og:title", content: "CodeHarborHub - A place to learn and grow" },
-        { property: "og:description", content: "CodeHarborHub is a place to learn and grow. We provide accessible and comprehensive educational resources to learners of all levels, from beginners to advanced professionals."},
-        { property: "og:image", content: "https://codeharborhub.github.io/img/nav-logo.jpg" },
+        {
+          property: "og:title",
+          content: "CodeHarborHub - A place to learn and grow",
+        },
+        {
+          property: "og:description",
+          content:
+            "CodeHarborHub is a place to learn and grow. We provide accessible and comprehensive educational resources to learners of all levels, from beginners to advanced professionals.",
+        },
+        {
+          property: "og:image",
+          content: "https://codeharborhub.github.io/img/nav-logo.jpg",
+        },
         { property: "og:url", content: "https://codeharborhub.github.io" },
-        { name: "robots", content: "index, follow" },          
       ],
 
       algolia: {
@@ -121,19 +136,21 @@ const config = {
             items: [
               {
                 type: "html",
-                value: `<div class="dropdown">
-                <a class="dropbtn" href="/docs/"> Tutorials </a>
+                value: `<div class="dropdown_grid">
+                <a class="dropbtn" href="/docs/">Tutorials</a>
                 <div class="dropdown-content">
                   <a href="/docs/category/html/" class="nav__icons"> <img src="/icons/html-5.svg" title="HTML5" alt="HTML" /> </a>
                   <a href="/docs/" class="nav__icons"> <img src="/icons/css.svg" title="CSS" alt="CSS" /> </a>
                   <a href="/docs/category/javascript/" class="nav__icons" > <img src="/icons/js.svg" title="JavaScript" alt="JavaScript" /> </a>
-                  <a href="/docs/category/react/" class="nav__icons"> <img src="/icons/jsx.svg" title="React.Js" alt="React" /> </a>                  
-                  <a href="/docs/category/typescript/" class="nav__icons"> <img src="/icons/ts.svg" title="TypeScript" alt="TypeScript" /> </a>                  
-                  <a href="/docs/category/python/" class="nav__icons"> <img src="/icons/py.svg" title="Python" alt="Python" /> </a>                  
-                  <a href="/docs/category/java/" class="nav__icons"> <img src="/icons/java.svg" title="Java" alt="Java" /> </a>                  
+                  <a href="/docs/category/react/" class="nav__icons"> <img src="/icons/jsx.svg" title="React.Js" alt="React" /> </a>
+                  <a href="/docs/category/typescript/" class="nav__icons"> <img src="/icons/ts.svg" title="TypeScript" alt="TypeScript" /> </a>
+                  <a href="/docs/category/python/" class="nav__icons"> <img src="/icons/py.svg" title="Python" alt="Python" /> </a>
+                  <a href="/docs/category/java/" class="nav__icons"> <img src="/icons/java.svg" title="Java" alt="Java" /> </a>
                   <a href="/docs/category/tailwind/" class="nav__icons"> <img src="/icons/tailwind-css.svg" title="Tailwind CSS" alt="Tailwind" /> </a>
-                  <a href="/docs/category/cpp/" class="nav__icons"> <img src="/icons/cpp.svg" title="CPP" alt="CPP" /> </a>      
-                  <a href="/docs/category/NextJs/" class="nav__icons"> <img src="/icons/next-js.svg" title="NextJs" alt="Next" /> </a>          
+                  <a href="/docs/category/cpp/" class="nav__icons"> <img src="/icons/cpp.svg" title="CPP" alt="CPP" /> </a>
+                  <a href="/docs/category/NextJs/" class="nav__icons"> <img src="/icons/next-js.svg" title="NextJs" alt="Next" /> </a>
+                  <a href="/docs/category/MATLAB/" class="nav__icons"> <img src="/icons/matlab.svg" title="MATLAB" alt="MATLAB" /> </a>
+                  <a href="/docs/category/Julia/" class="nav__icons"> <img src="/icons/julia.svg" title="Julia" alt="Julia" /> </a>
                 </div>
               </div>`,
               },
@@ -145,10 +162,11 @@ const config = {
 
               {
                 type: "html",
-                value: `<div class="dropdown">
-                <a class="dropbtn" href="/courses/"> Courses&nbsp; </a>
+                value: `<div class="dropdown_grid">
+                <a class="dropbtn" href="/courses/"> Courses </a>
                 <div class="dropdown-content">
-                  <a href="/courses/category/reactjs/" class="nav__icons"> <img src="/icons/jsx.svg" alt="React" /> </a>                  
+                  <a href="/courses/category/html" class="nav__icons"> <img src="/icons/html-5.svg" alt="HTML" /> </a>
+                  <a href="/courses/category/reactjs/" class="nav__icons"> <img src="/icons/jsx.svg" alt="React" /> </a>
                 </div>
               </div>`,
               },
@@ -158,23 +176,13 @@ const config = {
                 value: '<hr style="margin: 0.3rem 0;">',
               },
 
-              // {
-              //   to: "/web-dev/",
-              //   html: '<span class="nav-emoji">🌐</span> Web Dev',
-              // },
-
               {
                 type: "html",
-                value: '<hr style="margin: 0.3rem 0;">',
-              },
-
-              {
-                type: "html",
-                value: `<div class="dropdown">
-                <a class="dropbtn" href="/dsa/"> DSA&nbsp; </a>
-                <div class="dropdown-content">
-                  <a href="/dsa-problems/" class="nav__icons"> Problems </a> <br />
-                  <a href="/dsa-solutions/" class="nav__icons"> Solutions </a>
+                value: `<div class="dropdown_grid">
+                <a class="dropbtn" href="/dsa/"> DSA </a>
+                <div class="dropdown-content dsa-content ">
+                  <a href="/dsa-problems/" class="nav__icons"> 🧩Problems </a> <br />
+                  <a href="/dsa-solutions/" class="nav__icons  "> 💡Solutions </a>
                 </div>
               </div>`,
               },
@@ -190,54 +198,64 @@ const config = {
             html: '<span class="nav-emoji">🤝</span> Community',
             position: "left",
           },
-
           {
             to: "/our-sponsors/",
             html: '<span class="nav-emoji">💰</span> Donate',
           },
-
           {
-            to: "/blog",
-            html: '<span class="nav-emoji">📰</span> Blog',
+            to: "/blogs",
+            html: '<span class="nav-emoji">📰</span> Blogs',
           },
-
           {
             type: "dropdown",
             html: '<span class="nav-emoji">🔗</span> More',
             position: "left",
             items: [
               {
-                html: '<span class="nav-emoji">🌍</span> Web Dev',
+                label: "🌍 Web Dev",
                 to: "/web-dev/",
               },
               {
-                html: '<span class="nav-emoji"> 📊</span> Quiz',
-                to: "https://quiz-app-ajay-dhangar.vercel.app/",
+                label: "📚 E-books",
+                to: "/ebooks/",
+              },
+
+              {
+                label: "🛣️ Roadmap",
+                to: "/roadmap/",
               },
               {
-                html: '<span class="nav-emoji"> 📺</span> Broadcast',
+                label: "🧑‍💻 Live Editor",
+                to: "/LiveEditor/",
+              },
+              {
+                label: "📺 Broadcast",
                 to: "https://codeharborhub-broadcast-web.vercel.app/",
-              },
-              {
-                label: "🏷️ Tutorial Tags 📚",
-                to: "/docs/tags/",
-                activeBaseRegex: "/docs/tags/",
-              },
-
-              {
-                label: "🏷️ Courses Tags 🎓",
-                to: "/courses/tags/",
-                activeBaseRegex: "/courses/tags/",
-              },
-
-              {
-                label: "🏷️ DSA Tags 🧠",
-                to: "/dsa/tags/",
-                activeBaseRegex: "/dsa/tags/",
               },
             ],
           },
-
+          // {
+          //   type: "dropdown",
+          //   html: '<span class="nav-emoji">🏷️</span> Tags',
+          //   position: "left",
+          //   items: [
+          //     {
+          //       label: "🏷️ Tutorial Tags 📚",
+          //       to: "/docs/tags/",
+          //       activeBaseRegex: "/docs/tags/",
+          //     },
+          //     {
+          //       label: "🏷️ Courses Tags 🎓",
+          //       to: "/courses/tags/",
+          //       activeBaseRegex: "/courses/tags/",
+          //     },
+          //     {
+          //       label: "🏷️ DSA Tags 🧠",
+          //       to: "/dsa/tags/",
+          //       activeBaseRegex: "/dsa/tags/",
+          //     },
+          //   ],
+          // },
           {
             type: "search",
             position: "right",
@@ -303,7 +321,7 @@ const config = {
               },
               {
                 label: "Careers",
-                to: "#",
+                to: "/careers/",
               },
               {
                 label: "Team",
@@ -329,6 +347,11 @@ const config = {
               {
                 label: "Cookie Policy",
                 to: "/cookie-policy",
+              },
+
+              {
+                label: "License",
+                to: "/License/",
               },
             ],
           },
@@ -363,6 +386,7 @@ const config = {
               {
                 label: "YouTube",
                 href: "https://www.youtube.com/",
+                icon: "faYoutube",
               },
               {
                 label: "Discord",
@@ -375,6 +399,11 @@ const config = {
             ],
           },
         ],
+        logo: {
+          alt: "Powered by CodeHarborHub | Product Hunt",
+          src: "https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=464236&theme=light",
+          href: "https://www.producthunt.com/posts/codeharborhub",
+        },
         copyright: `Copyright © ${new Date().getFullYear()} CodeHarborHub, Made by <a href="https://github.com/Ajay-Dhangar/">Ajay Dhangar</a>`,
       },
       prism: {

@@ -1,0 +1,8 @@
+{
+    "label": "JWT",
+    "position": 25,
+    "link": {
+        "type": "generated-index",
+        "description": "JSON Web Token (JWT) is an open standard (RFC 7519) for securely transmitting information between parties as a JSON object. It is commonly used for authentication and information exchange. "
+    }
+}

@@ -1,7 +1,7 @@
 ---
-id: Regular Expression Matching
+id: regular-expression-matching
 title: Regular Expression Matching (LeetCode)
-sidebar_label: 0010-Regular Expression Matching
+sidebar_label: 0010 - Regular Expression Matching
 tags: 
   - String
   - Dynamic Programming

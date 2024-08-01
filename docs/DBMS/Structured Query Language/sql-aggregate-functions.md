@@ -82,3 +82,4 @@ You can combine multiple aggregate functions in a single query to perform variou
     This query returns the total number of rows, the sum of column_name, and the average value of column_name.
 
 Aggregate functions are powerful tools in SQL for summarizing and analyzing data. By mastering these functions, you can perform complex data analysis and gain valuable insights from your database.
+

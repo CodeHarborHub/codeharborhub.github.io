@@ -327,3 +327,13 @@ class Solution:
 - **LeetCode Problem**: [Binary Search](https://leetcode.com/problems/binary-search/description/)
 
 - **Solution Link**: [Binary Search](https://leetcode.com/problems/binary-search/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

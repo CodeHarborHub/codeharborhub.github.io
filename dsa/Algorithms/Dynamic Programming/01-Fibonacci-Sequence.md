@@ -4,7 +4,7 @@ title: Fibonacci Sequence using Dynamic Programming
 sidebar_label: Fibonacci Sequence
 tags: [python, java, c++, javascript, programming, algorithms, dynamic programming, tutorial, in-depth]
 description: In this tutorial, we will learn about the Fibonacci sequence and its implementation using Dynamic Programming in Python, Java, C++, and JavaScript with detailed explanations and examples.
----
+---  
 
 # Fibonacci Sequence using Dynamic Programming
 
@@ -12,7 +12,6 @@ The Fibonacci sequence is a classic example that can be efficiently solved using
 $[ F(n) = F(n-1) + F(n-2) ]$
 with the base cases:
 $[ F(0) = 0, F(1) = 1 ]$
-
 
 ## Problem Statement
 

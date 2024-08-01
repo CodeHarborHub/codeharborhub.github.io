@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import MyChart from "./MyChart";
 
+// Define the Course interface to type the props
 interface Course {
   id: number;
   title: string;
@@ -11,10 +13,12 @@ interface Course {
   link: string;
 }
 
+// Define the Props interface for the component's props
 interface Props {
   courses: Course[];
 }
 
+// Styled-components for various parts of the UI
 const CoursesContainer = styled.div`
   margin: 5px;
 `;
@@ -59,9 +63,11 @@ const CourseItem = styled.div`
   padding: 10px;
   border-radius: 5px;
   transition: transform 0.3s, box-shadow 0.3s;
+  
   &:hover {
-  box-shadow: 0 0 10px 0 rgba(255, 64, 102, 1); transform: scale(1.05);
-  border-color: red;
+    box-shadow: 0 0 10px 0 rgba(255, 64, 102, 1); 
+    transform: scale(1.05);
+    border-color: red;
   }
 `;
 
@@ -111,11 +117,11 @@ const VisitCourse = styled.div`
   }
 `;
 
-
-
+// Courses component with filter functionality
 const Courses: React.FC<Props> = ({ courses }) => {
   const [filter, setFilter] = useState("all");
 
+  // Filter courses based on the selected filter
   const filteredCourses =
     filter === "all"
       ? courses
@@ -123,6 +129,11 @@ const Courses: React.FC<Props> = ({ courses }) => {
 
   return (
     <CoursesContainer>
+   
+   {/* Chart */}
+      <MyChart />
+
+      {/* Filter buttons */}
       <FilterButtons>
         <Button onClick={() => setFilter("all")}>All</Button>
         <Button onClick={() => setFilter("html")}>HTML</Button>
@@ -180,6 +191,7 @@ const Courses: React.FC<Props> = ({ courses }) => {
         <Button onClick={() => setFilter("aidev")}>AI Developer</Button>
       </FilterButtons>
 
+      {/* Display the filtered list of courses */}
       <CoursesList>
         {filteredCourses.map((course) => (
           <CourseItem key={course.id}>

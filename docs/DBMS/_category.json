@@ -1,6 +1,6 @@
 {
     "label": "DBMS",
-    "position": 11,
+    "position": 5,
     "link": {
         "type": "generated-index",
         "description": "Database Management Systems (DBMS) are software systems designed to manage databases. They provide an interface for users and applications to interact with data efficiently and securely. DBMSs support various types of databases, such as relational, NoSQL, and distributed databases, each serving different purposes and use cases. Relational databases use structured query language (SQL) for defining and manipulating data, while NoSQL databases are designed for specific data models and scalability. Key features of DBMS include data integrity, concurrency control, transaction management, and data security. Examples of popular DBMS include MySQL, PostgreSQL, MongoDB, and Oracle Database."

@@ -88,3 +88,25 @@ Open localhost:3000 in a browser and you will see the following output.
 Home page
 ```
 Click on First Link and you will see the following output.
+
+
+<BrowserWindow>
+       <div id="output_con_1">
+            <h1>My First Post</h1>
+            <h2 onClick={()=>{
+               let output_con_1=document.getElementById("output_con_1")
+               output_con_1.style.display="none"
+               let output_con_2=document.getElementById("output_con_2")
+               output_con_2.style.display="block"
+            }} style={{color:"blue",textDecoration:"underline",cursor:"pointer"}}>Home</h2>
+       </div>
+       <div style={{display:"none"}} id="output_con_2">
+            <h1>Welcome to Next.js!</h1>
+            <h2 onClick={()=>{
+               let output_con_2=document.getElementById("output_con_2")
+               output_con_2.style.display="none"
+               let output_con_1=document.getElementById("output_con_1")
+               output_con_1.style.display="block"
+            }} style={{color:"blue",textDecoration:"underline",cursor:"pointer"}}>First Post</h2>
+       </div>
+</BrowserWindow>

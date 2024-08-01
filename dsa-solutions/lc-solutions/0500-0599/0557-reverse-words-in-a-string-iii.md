@@ -349,3 +349,13 @@ class Solution:
 - **LeetCode Problem**: [Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/description/)
 
 - **Solution Link**: [Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

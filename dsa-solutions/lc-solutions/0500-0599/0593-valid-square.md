@@ -138,3 +138,13 @@ class Solution:
 - **LeetCode Problem**: [Valid Square](https://leetcode.com/problems/valid-square/description/)
 
 - **Solution Link**: [Valid Square](https://leetcode.com/problems/valid-square/solutions/)
+
+---
+
+<h2>Authors:</h2>
+
+<div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '10px'}}>
+{['shreyash3087'].map(username => (
+ <Author key={username} username={username} />
+))}
+</div>

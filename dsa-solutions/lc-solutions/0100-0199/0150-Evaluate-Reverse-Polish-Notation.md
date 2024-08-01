@@ -1,7 +1,7 @@
 ---
-id: Evaluate-Reverse-Polish_Notation
-title: Evaluate-Reverse-Polish_Notation
-sidebar_label: Evaluate-Reverse-Polish_Notation
+id: evaluate-reverse-polish-notation
+title: Evaluate Reverse Polish Notation
+sidebar_label: 150-Evaluate-Reverse-Polish_Notation
 tags: 
     - Reverse Polish Notation
     - Stack
