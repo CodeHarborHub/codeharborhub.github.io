@@ -432,5 +432,14 @@ export const Users: User[] = [
       website: "https://ridhima10.github.io/Smart_Tv_Clone/",
       source: "https://github.com/Ridhima10/Smart_Tv_Clone",
       tags: ["html", "css", "javascript", "opensource"],
+    },
+    // upasthiti
+    {
+      title: "Upasthiti",
+      description: "Online attendance taking website which is made up of html, css , javascript, nuxt and vue js",
+      preview: require("./showcase/upasthiti.png"),
+      website: "https://ridhima10.github.io/Upasthiti-frontend/",
+      source: "https://github.com/Ridhima10/Upasthiti-frontend",
+      tags: ["html", "css", "javascript", "opensource"],
     }
 ];
