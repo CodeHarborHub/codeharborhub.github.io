@@ -1,5 +1,5 @@
 ---
-id: Min falling path sum in a Triangle
+id: Min-falling-path-sum-in-a-Triangle
 title: Min falling path sum in a Triangle
 sidebar_label: 120-Min falling path sum in a Triangle
 tags:
