@@ -60,6 +60,14 @@ Two-way data binding is a feature in Vue.js (and other frameworks like Angular) 
    </script>
    ```
 
+  <BrowserWindow>
+       <input id="vue_two_way" type="text" placeholder="Type Something" onChange={(e)=>{
+        let two_way_op=document.getElementById("two_way_op") 
+        two_way_op.textContent=e.target.value 
+       }} />
+       <p id="two_way_op">Type something</p>
+  </BrowserWindow>
+
    In this example:
    - The parent component (`ParentComponent.vue`) passes `parentData` to the child component (`ChildComponent.vue`) using `v-model`.
    - The child component receives `value` as a prop and emits an `input` event to update `parentData` in the parent component.

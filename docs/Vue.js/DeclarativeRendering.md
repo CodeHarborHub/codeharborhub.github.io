@@ -29,6 +29,10 @@ Consider a simple Vue.js component that displays a user's name:
 </script>
 ```
 
+<BrowserWindow>
+    <p>Hello, Vue.js!</p>
+</BrowserWindow>
+
 In this example:
 - The `{{ message }}` syntax in the `<p>` tag is a template syntax in Vue.js.
 - Vue.js automatically binds the `message` data property to the text content of the `<p>` tag.
@@ -54,6 +58,10 @@ You can also use declarative rendering to conditionally display elements based o
   });
 </script>
 ```
+
+<BrowserWindow>
+    <p>Now you see me</p>
+</BrowserWindow>
 
 Here:
 - The `v-if` directive in Vue.js conditionally renders the `<p>` element based on the `seen` data property.
