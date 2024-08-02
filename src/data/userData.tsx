@@ -414,5 +414,14 @@ export const Users: User[] = [
       website: "https://github.com/Ridhima10/complete-web-dev.-boot-camp/tree/master/Buttons/Styling%20of%20buttons",
       source: "https://github.com/Ridhima10/complete-web-dev.-boot-camp/tree/master/Buttons/Styling%20of%20buttons",
       tags: ["html", "css", "javascript"],
+    },
+    // Portfolio Website
+    {
+      title: "Portfolio website",
+      description: "It is a personal portfolio website consists of my skills, projects and experience",
+      preview: require("./showcase/ridhi-portfolio.png"),
+      website: "https://ridhima10.github.io/RidhiPortfolio/",
+      source: "https://github.com/Ridhima10/RidhiPortfolio",
+      tags: ["html", "css", "javascript", "react"],
     }
 ];
