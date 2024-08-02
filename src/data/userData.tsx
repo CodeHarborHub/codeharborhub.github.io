@@ -423,5 +423,14 @@ export const Users: User[] = [
       website: "https://ridhima10.github.io/RidhiPortfolio/",
       source: "https://github.com/Ridhima10/RidhiPortfolio",
       tags: ["html", "css", "javascript", "react"],
+    },
+    // landing page
+    {
+      title: "Smart TV Clone",
+      description: "A landing page made up of HTML, CSS and Javascript which is a clone of netflix in which we can watch movies, tv shows etc",
+      preview: require("./showcase/Smart-tv.png"),
+      website: "https://ridhima10.github.io/Smart_Tv_Clone/",
+      source: "https://github.com/Ridhima10/Smart_Tv_Clone",
+      tags: ["html", "css", "javascript", "opensource"],
     }
 ];
