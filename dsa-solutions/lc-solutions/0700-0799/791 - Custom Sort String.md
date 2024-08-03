@@ -36,10 +36,11 @@ Output: "bcad"
 
 ### Constraints
 
-- 1 <= `order.length` <= 26
-- 1 <= `s.length` <= 200
+- 1 &lt;= `order.length` &lt;= 26
+- 1 &lt;= `s.length` &lt;= 200
 - `order` and `s` consist of lowercase English letters.
 - All the characters in `order` are unique.
+
 
 ## Solution
 
