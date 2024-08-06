@@ -79,7 +79,7 @@ export const Tags: { [type in TagType]: Tag } = {
     label: "Next.js",
     description: "",
     color: "#000000",
-  }, 
+  },
   typescript: {
     label: "TypeScript",
     description: "",
