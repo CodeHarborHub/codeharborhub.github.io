@@ -9,7 +9,6 @@ tags:
 description: "This is a solution to the Excel Sheet Column Number on LeetCode."
 ---
 
-
 ## Problem Description
 
 Given a string **columnTitle** that represents the column title as appears in an Excel sheet, return its corresponding column number.
@@ -22,10 +21,9 @@ C -> 3
 ...
 Z -> 26
 AA -> 27
-AB -> 28 
+AB -> 28
 ...
 ```
-
 
 ### Examples
 
@@ -54,6 +52,7 @@ AB -> 28
 ## Solution for Best Time to Buy and Sell Stock Problem
 
 ### Intuition
+
 The intuition behind the solution is to treat each letter as a digit in a base-26 number system, where 'A' represents 1, 'B' represents 2, ..., 'Z' represents 26. The solution then iterates through each character in the column title, calculates the numeric value of the corresponding letter, and accumulates the result by considering the positional weight of each letter.
 
 ### Approach
@@ -61,10 +60,9 @@ The intuition behind the solution is to treat each letter as a digit in a base-2
 - Initialize variables x and ans to keep track of the positional weight and the accumulated result, respectively.
 - Iterate through each character s in the columnTitle.
 - Convert the character s to its numeric representation by using the ord function (ASCII value) and subtracting 64 (since 'A' corresponds to 65 in ASCII).
-- Update the result (ans) by adding the product of the numeric representation, positional weight (26**x), and decrease the positional weight x by 1.
+- Update the result (ans) by adding the product of the numeric representation, positional weight (26\*\*x), and decrease the positional weight x by 1.
 - Repeat this process for each character in the column title.
 - Return the final accumulated result.
-
 
 ### Code in Different languages
 
@@ -87,7 +85,7 @@ public:
     }
 };
 
-    
+
 ```
 
 ```python
@@ -102,7 +100,7 @@ class Solution:
             x -= 1
 
         return ans
-        
+
 ```
 
 ### Complexity Analysis
