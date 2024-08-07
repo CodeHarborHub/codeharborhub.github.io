@@ -405,4 +405,13 @@ export const Users: User[] = [
       source: "https://github.com/Ridhima10/Js-mini-projects/tree/main/QR%20code%20generator",
       tags: ["html", "css", "javascript"],
     },
+    // CSS Buttons sample
+    {
+      title: "Custom made CSS Buttons",
+      description: "Variety of custom made CSS Buttons.Hover on it to get more insight of the buttons. Customize it , use it and have fun ",
+      preview: require("./showcase/buttons.png"),
+      website: "https://github.com/Ridhima10/complete-web-dev.-boot-camp/tree/master/Buttons/Styling%20of%20buttons",
+      source: "https://github.com/Ridhima10/complete-web-dev.-boot-camp/tree/master/Buttons/Styling%20of%20buttons",
+      tags: ["html", "css", "javascript"],
+    }
 ];

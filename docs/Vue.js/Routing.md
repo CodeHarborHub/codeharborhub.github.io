@@ -110,6 +110,67 @@ router.beforeEach((to, from, next) => {
 });
 ```
 
+<BrowserWindow>
+    <div id="Home_page_element_vue">
+        <h4>Hello,Welcome to our website</h4>
+        <p>This is Home page</p>
+        <button onClick={()=>{
+          let Home=document.getElementById("Home_page_element_vue")
+          Home.style.display="none"
+          let About_page_element_vue=document.getElementById("About_page_element_vue")
+          About_page_element_vue.style.display="block"
+          let Contact_page_element_vue=document.getElementById("Contact_page_element_vue")
+          Contact_page_element_vue.style.display="none"
+        }}>About Page</button>
+        <button onClick={()=>{
+          let Home=document.getElementById("Home_page_element_vue")
+          Home.style.display="none"
+          let About_page_element_vue=document.getElementById("About_page_element_vue")
+          About_page_element_vue.style.display="none"
+          let Contact_page_element_vue=document.getElementById("Contact_page_element_vue")
+          Contact_page_element_vue.style.display="block"
+        }}>Contact Page</button>
+    </div>
+    <div id="About_page_element_vue" style={{display:"none"}}>
+        <p>This is About page</p>
+        <button onClick={()=>{
+          let Home=document.getElementById("Home_page_element_vue")
+          Home.style.display="block"
+          let About_page_element_vue=document.getElementById("About_page_element_vue")
+          About_page_element_vue.style.display="none"
+          let Contact_page_element_vue=document.getElementById("Contact_page_element_vue")
+          Contact_page_element_vue.style.display="none"
+        }}>Home Page</button>
+        <button onClick={()=>{
+          let Home=document.getElementById("Home_page_element_vue")
+          Home.style.display="none"
+          let About_page_element_vue=document.getElementById("About_page_element_vue")
+          About_page_element_vue.style.display="none"
+          let Contact_page_element_vue=document.getElementById("Contact_page_element_vue")
+          Contact_page_element_vue.style.display="block"
+        }}>Contact Page</button>
+    </div>
+    <div id="Contact_page_element_vue" style={{display:"none"}}> 
+        <p>This is Contact page</p>
+        <button onClick={()=>{
+          let Home=document.getElementById("Home_page_element_vue")
+          Home.style.display="block"
+          let About_page_element_vue=document.getElementById("About_page_element_vue")
+          About_page_element_vue.style.display="none"
+          let Contact_page_element_vue=document.getElementById("Contact_page_element_vue")
+          Contact_page_element_vue.style.display="none"
+        }}>Home Page</button>
+        <button onClick={()=>{
+          let Home=document.getElementById("Home_page_element_vue")
+          Home.style.display="none"
+          let About_page_element_vue=document.getElementById("About_page_element_vue")
+          About_page_element_vue.style.display="block"
+          let Contact_page_element_vue=document.getElementById("Contact_page_element_vue")
+          Contact_page_element_vue.style.display="none"
+        }}>About Page</button>
+    </div>
+</BrowserWindow>
+
 ### Summary:
 
 Vue Router is a powerful tool for managing navigation and state in Vue.js SPAs. It allows you to define routes, navigate between views, pass parameters dynamically, and implement navigation guards for more control over your application's flow. Understanding Vue Router is essential for building robust single-page applications with Vue.js.

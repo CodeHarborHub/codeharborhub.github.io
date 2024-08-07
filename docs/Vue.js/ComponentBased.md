@@ -62,6 +62,14 @@ export default {
 </style>
 ```
 
+<BrowserWindow>
+  <div class="user-profile" style={{padding:'1rem',border:"1px solid"}}>
+    <img src="/img/svg/coding.svg" alt="User Avatar" style={{height:"10rem",width:"10rem"}} />
+    <h2>John</h2>
+    <p>Apiring Full Stack Developer</p>
+  </div>
+</BrowserWindow>
+
 In this example:
 - The `UserProfile` component encapsulates the structure of a user profile, including an image, name, and bio.
 - It receives a `user` object as a prop, which allows it to display dynamic data based on the parent component's data.
