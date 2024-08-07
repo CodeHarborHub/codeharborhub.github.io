@@ -2,11 +2,9 @@
 title: Data Structures and Algorithms Problems
 sidebar_label: DSA Problems
 sidebar_position: 1
-
 ---
 
 DSA Problems are a collection of problems that are frequently asked in coding interviews. These problems are categorized based on the data structures and algorithms they use. The problems are available in multiple programming languages like C++, Java, Python, and JavaScript. The problems are also available in the form of video tutorials and solutions.
-
 
 ## What is Data Structures and Algorithms?
 
