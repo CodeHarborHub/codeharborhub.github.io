@@ -23,20 +23,15 @@ AB -> 28
 
 **Example 1:**
 
-
 **Example 2:**
 
-
 **Example 3:**
-
-
 
 ## Solution for Best Time to Buy and Sell Stock Problem
 
 ### Intuition
 
 The intuition behind the solution is to treat each letter as a digit in a base-26 number system, where 'A' represents 1, 'B' represents 2, ..., 'Z' represents 26. The solution then iterates through each character in the column title, calculates the numeric value of the corresponding letter, and accumulates the result by considering the positional weight of each letter.
-
 
 - Initialize variables x and ans to keep track of the positional weight and the accumulated result, respectively.
 - Iterate through each character s in the columnTitle.
@@ -81,7 +76,7 @@ class Solution:
             x -= 1
 
         return ans
-      
+
 ```
 
 ### Complexity Analysis
