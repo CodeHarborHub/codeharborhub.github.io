@@ -155,10 +155,10 @@ public:
 
 ### Complexity Analysis
 
-- **Time Complexity**: \( O(n) \)
+- **Time Complexity**: O(n)
   - The algorithm iterates through each character in the input string exactly once, resulting in a linear time complexity relative to the length of the string \( n \).
 
-- **Space Complexity**: \( O(1) \)
+- **Space Complexity**: O(1)
   - The algorithm uses a fixed amount of extra space (for the `count` and `ch` variables), regardless of the input size, resulting in constant space complexity.
 
 
