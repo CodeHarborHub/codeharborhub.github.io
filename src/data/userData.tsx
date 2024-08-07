@@ -46,7 +46,7 @@ export const Users: User[] = [
     preview: require("./showcase/TailwindBlog.jpg"),
     website: null,
     source: "https://github.com/Ajay-Dhangar/starter",
-    tags: ["opensource", "clone", "templates", "documentation"],
+    tags: ["opensource", "clone", "templates", "documentation", "nextjs", "tailwind"],
   },
 
   // Restaurant Clone
@@ -145,7 +145,7 @@ export const Users: User[] = [
       "https://github.com/dhairyagothi/50_days_50_web_project/tree/Main/public/TO_DO_LIST",
     tags: ["html", "css", "javascript"],
   },
-  
+
   // Dictonary app
 
   {
@@ -157,7 +157,7 @@ export const Users: User[] = [
    source: "https://github.com/kartikmehta18/Dictonary-app",
    tags: ["opensource", "portfolio", "css", "javascript", "html"],
   },
-  
+
   // Portfolio
   {
     title: "Portfolio",
@@ -168,7 +168,7 @@ export const Users: User[] = [
     source: "hhttps://github.com/kartikmehta18/myportfolio",
     tags: ["opensource", "portfolio", "css", "javascript", "html"],
   },
-  
+
   // Currency Converter Clone
 
   {
@@ -230,7 +230,6 @@ export const Users: User[] = [
       "opensource",
       "react",
       "typescript",
-      "templates",
       "favorite",
       "documentation",
       "mdx",
@@ -258,7 +257,7 @@ export const Users: User[] = [
     preview: require("./showcase/ajay-portfolio.jpg"),
     website: "https://ajay-dhangar.github.io/",
     source: "https://github.com/Ajay-Dhangar/ajay-dhangar.github.io",
-    tags: ["opensource", "portfolio", "react", "typescript", "mdx"],
+    tags: ["opensource", "portfolio", "react", "typescript", "mdx", "tailwind"],
   },
 
   // BMI Calculator
@@ -414,23 +413,5 @@ export const Users: User[] = [
       website: "https://github.com/Ridhima10/complete-web-dev.-boot-camp/tree/master/Buttons/Styling%20of%20buttons",
       source: "https://github.com/Ridhima10/complete-web-dev.-boot-camp/tree/master/Buttons/Styling%20of%20buttons",
       tags: ["html", "css", "javascript"],
-    },
-    // Portfolio Website
-    {
-      title: "Portfolio website",
-      description: "It is a personal portfolio website consists of my skills, projects and experience",
-      preview: require("./showcase/ridhi-portfolio.png"),
-      website: "https://ridhima10.github.io/RidhiPortfolio/",
-      source: "https://github.com/Ridhima10/RidhiPortfolio",
-      tags: ["html", "css", "javascript", "react"],
-    },
-    // landing page
-    {
-      title: "Smart TV Clone",
-      description: "A landing page made up of HTML, CSS and Javascript which is a clone of netflix in which we can watch movies, tv shows etc",
-      preview: require("./showcase/Smart-tv.png"),
-      website: "https://ridhima10.github.io/Smart_Tv_Clone/",
-      source: "https://github.com/Ridhima10/Smart_Tv_Clone",
-      tags: ["html", "css", "javascript", "opensource"],
     }
 ];

@@ -37,6 +37,7 @@ export type TagType =
   | "gym"
   | "motion"
   | "redux"
+  | "tailwind"
   | "clone";
 
 export type User = {
@@ -78,7 +79,7 @@ export const Tags: { [type in TagType]: Tag } = {
     label: "Next.js",
     description: "",
     color: "#000000",
-  }, 
+  },
   typescript: {
     label: "TypeScript",
     description: "",
@@ -213,6 +214,11 @@ export const Tags: { [type in TagType]: Tag } = {
   },
   mdx: {
     label: "MDX",
+    description: "",
+    color: "#007acc",
+  },
+  tailwind: {
+    label: "Tailwind",
     description: "",
     color: "#007acc",
   },
