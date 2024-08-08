@@ -1,7 +1,7 @@
 ---
-id: evaluate-bracket-pairs
-title: Evaluate Bracket Pairs
-sidebar_label: Evaluate Bracket Pairs
+id: evaluate-the-bracket-pairs-of-a-string
+title: Evaluate  the Bracket Pairs of a String
+sidebar_label: 1807-Evaluate the Bracket Pairs of a String
 tags:
   - String Manipulation
   - Hash Table
