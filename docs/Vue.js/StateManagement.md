@@ -121,6 +121,21 @@ export default {
 </script>
 ```
 
+<BrowserWindow>
+     <div>
+         <p>Count: <span id="single_count">0</span></p>
+         <p>Double Count: <span id="double_count">0</span></p>
+     </div>
+     <button onClick={()=>{
+      let span=document.getElementById("single_count")
+      span.textContent=Number(span.textContent)+1
+     }}>single Increment</button>
+     <button onClick={()=>{
+      let span=document.getElementById("double_count")
+      span.textContent=Number(span.textContent)+2
+     }}>Double Increment</button>
+</BrowserWindow>
+
 ### Conclusion
 
 State management in Vue.js is a nuanced topic that evolves with the complexity of applications. For simpler cases, local component state suffices, while Vuex provides a robust solution for larger, more complex applications needing centralized state management. Understanding these concepts and choosing the right approach based on your application's needs is crucial for building scalable and maintainable Vue.js applications.

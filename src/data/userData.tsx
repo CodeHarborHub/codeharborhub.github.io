@@ -46,7 +46,7 @@ export const Users: User[] = [
     preview: require("./showcase/TailwindBlog.jpg"),
     website: null,
     source: "https://github.com/Ajay-Dhangar/starter",
-    tags: ["opensource", "clone", "templates", "documentation"],
+    tags: ["opensource", "clone", "templates", "documentation", "nextjs", "tailwind"],
   },
 
   // Restaurant Clone
@@ -145,7 +145,7 @@ export const Users: User[] = [
       "https://github.com/dhairyagothi/50_days_50_web_project/tree/Main/public/TO_DO_LIST",
     tags: ["html", "css", "javascript"],
   },
-  
+
   // Dictonary app
 
   {
@@ -157,7 +157,7 @@ export const Users: User[] = [
    source: "https://github.com/kartikmehta18/Dictonary-app",
    tags: ["opensource", "portfolio", "css", "javascript", "html"],
   },
-  
+
   // Portfolio
   {
     title: "Portfolio",
@@ -168,7 +168,7 @@ export const Users: User[] = [
     source: "hhttps://github.com/kartikmehta18/myportfolio",
     tags: ["opensource", "portfolio", "css", "javascript", "html"],
   },
-  
+
   // Currency Converter Clone
 
   {
@@ -230,7 +230,6 @@ export const Users: User[] = [
       "opensource",
       "react",
       "typescript",
-      "templates",
       "favorite",
       "documentation",
       "mdx",
@@ -258,7 +257,7 @@ export const Users: User[] = [
     preview: require("./showcase/ajay-portfolio.jpg"),
     website: "https://ajay-dhangar.github.io/",
     source: "https://github.com/Ajay-Dhangar/ajay-dhangar.github.io",
-    tags: ["opensource", "portfolio", "react", "typescript", "mdx"],
+    tags: ["opensource", "portfolio", "react", "typescript", "mdx", "tailwind"],
   },
 
   // BMI Calculator

@@ -46,7 +46,7 @@ export const CommunityStatsProvider: FC = ({ children }) => {
 
       const json = await response.json();
       setGithubStarCount(json.stargazers_count || 0);
-      setGithubContributorsCount(json.open_issues || 0); // Assuming this property exists
+      setGithubContributorsCount(140 || 0); // Assuming this property exists
       setGithubForksCount(json.forks_count || 0);
     } catch (error) {
       console.error("Error fetching GitHub data:", error);

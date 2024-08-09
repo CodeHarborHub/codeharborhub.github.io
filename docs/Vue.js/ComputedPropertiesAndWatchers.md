@@ -88,6 +88,71 @@ export default {
 };
 </script>
 ```
+<BrowserWindow>
+  <div id="showing_results_window">
+    <input type="text" placeholder="search" onChange={(e) => {
+      let target_ele = document.getElementById("showing_results");
+      let showing_results_window = document.getElementById("showing_results_window"); 
+      if (target_ele) {
+        showing_results_window.removeChild(target_ele);
+      } 
+      if(e.target.value?.length>0){
+      let target = document.createElement("div");
+      target.setAttribute("id", "showing_results"); 
+      let data = [
+        {"id": 1, "name": "Ajith Kumar"},
+        {"id": 2, "name": "Brad Pitt"},
+        {"id": 3, "name": "Chris Hemsworth"},
+        {"id": 4, "name": "Denzel Washington"},
+        {"id": 5, "name": "Emma Watson"},
+        {"id": 6, "name": "Fahadh Faasil"},
+        {"id": 7, "name": "George Clooney"},
+        {"id": 8, "name": "Hugh Jackman"},
+        {"id": 9, "name": "Idris Elba"},
+        {"id": 10, "name": "Johnny Depp"},
+        {"id": 11, "name": "Keanu Reeves"},
+        {"id": 12, "name": "Leonardo DiCaprio"},
+        {"id": 13, "name": "Morgan Freeman"},
+        {"id": 14, "name": "Nicolas Cage"},
+        {"id": 15, "name": "Orlando Bloom"},
+        {"id": 16, "name": "Priyanka Chopra"},
+        {"id": 17, "name": "Quentin Tarantino"},
+        {"id": 18, "name": "Robert Downey Jr."},
+        {"id": 19, "name": "Scarlett Johansson"},
+        {"id": 20, "name": "Tom Hanks"},
+        {"id": 21, "name": "Uma Thurman"},
+        {"id": 22, "name": "Viggo Mortensen"},
+        {"id": 23, "name": "Will Smith"},
+        {"id": 24, "name": "Xavier Samuel"},
+        {"id": 25, "name": "Yvonne Strahovski"},
+        {"id": 26, "name": "Zendaya"}
+      ];
+      let values = [];
+      data.forEach((item) => {
+        if (item.name.toLowerCase().includes(e.target.value.toLowerCase())) {
+          values.push(item.name);
+        }
+      });
+      if (values.length > 0) {
+        values.forEach((item) => {
+          let p = document.createElement("p");
+          p.textContent = item;
+          target.appendChild(p);
+        });
+        document.getElementById("no_results").style.display = "none";
+      } else {
+        document.getElementById("no_results").style.display = "block";
+      }
+      showing_results_window.appendChild(target);
+      }
+      else{
+        document.getElementById("no_results").style.display = "block";
+      }
+    }} />
+    <p id="no_results" style={{display:"none"}}>No Results Found</p>
+  </div>
+</BrowserWindow>
+
 
 In this example:
 - The `watch` option is used to define a watcher for `searchQuery`.
