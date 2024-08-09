@@ -33,13 +33,14 @@ Output: 1
 ### Constraints
 - m == image.length
 - n == image[i].length
-- 1 <= m, n <= 100
+- 1 &lt;= m, n &lt;= 100
 - image[i][j] is either '0' or '1'.
-- 0 <= x < m
-- 0 <= y < n
+- 0 &lt;= x &lt; m
+- 0 &lt;= y &lt; n
 - image[x][y] == '1'
 - The black pixels in the image only form one component.
-- At most 104 calls will be made to `add` and `find`.
+- At most 10^4 calls will be made to `add` and `find`.
+
 
 ## Solution
 
