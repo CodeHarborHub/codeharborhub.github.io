@@ -47,7 +47,7 @@ Output: [1]
 - 0 &lt;= ci &lt; n
 
 ### Follow up
-Could you solve it in time complexity O(k log(mn)), where k == positions.length?
+Could you solve it in time complexity $O(k log(mn))$, where k == positions.length?
 
 ## Solution
 
