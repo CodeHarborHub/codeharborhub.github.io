@@ -29,7 +29,7 @@
     "@docusaurus/theme-classic": "^3.4.0",
     "@docusaurus/theme-live-codeblock": "^3.3.2",
     "@docusaurus/theme-mermaid": "^3.3.2",
-    "@docusaurus/theme-search-algolia": "^3.3.2",
+    "@docusaurus/theme-search-algolia": "^3.5.0",
     "@docusaurus/utils-validation": "^3.3.2",
     "@fluentui/react-icons": "^2.0.242",
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
