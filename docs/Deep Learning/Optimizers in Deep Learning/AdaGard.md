@@ -30,21 +30,20 @@ The update rule for AdaGrad is as follows:
 
 1. Accumulate the squared gradients:
 
-      $
+      $$
       G_t = G_{t-1} + g_t^2
-      $
+      $$
 
 2. Update the parameters:
 
-    $
-    \theta_t = \theta_{t-1} - \frac{\eta}{\sqrt{G_t} + \epsilon} \cdot g_t
-    $
+    
+$$η = \theta_{t-1} - \frac{\eta}{\sqrt{G_t} + \epsilon} \cdot g_t$$
 
 where:
-- $ G_t $ is the accumulated sum of squares of gradients up to time step $ t $
-- $ g_t $ is the gradient at time step $ t $
-- $ \eta $ is the learning rate
-- $ \epsilon $ is a small constant to prevent division by zero
+- $G_t$ is the accumulated sum of squares of gradients up to time step $t$
+- $g_t$ is the gradient at time step $t$
+- $\eta$ is the learning rate
+- $\epsilon$ is a small constant to prevent division by zero
 
 ## Implementation in Keras
 
