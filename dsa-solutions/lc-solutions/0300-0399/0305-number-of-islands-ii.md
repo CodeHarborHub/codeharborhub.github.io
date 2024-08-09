@@ -40,11 +40,11 @@ Output: [1]
 ```
 
 ### Constraints
-- 1 <= m, n, positions.length <= 10^4
-- 1 <= m * n <= 10^4
+- 1 &lt;= m, n, positions.length &lt;= 10^4
+- 1 &lt;= m * n &lt;= 10^4
 - positions[i].length == 2
-- 0 <= ri < m
-- 0 <= ci < n
+- 0 &lt;= ri &lt; m
+- 0 &lt;= ci &lt; n
 
 ### Follow up
 Could you solve it in time complexity O(k log(mn)), where k == positions.length?
