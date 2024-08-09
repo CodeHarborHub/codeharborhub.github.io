@@ -160,4 +160,3 @@ class Solution:
  <Author key={username} username={username} />
 ))}
 </div>
-```
