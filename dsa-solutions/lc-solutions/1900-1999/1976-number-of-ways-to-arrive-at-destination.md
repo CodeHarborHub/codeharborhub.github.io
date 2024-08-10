@@ -279,9 +279,9 @@ class Solution:
 
 #### Complexity Analysis
 
-- **Time Complexity**:  $O(E \times log(V))$ { As we are using simple Dijkstra's algorithm here, the time complexity will be or the order E*log(V)}
+- **Time Complexity**:  $O(E \times log(V))$ ( As we are using simple Dijkstra's algorithm here, the time complexity will be or the order $E*log(V)$)
 Where E = Number of edges and V = No. of vertices.
-- **Space Complexity**: $O(N)$ { for dist array + ways array + approximate complexity for priority queue }
+- **Space Complexity**: $O(N)$ ( for dist array + ways array + approximate complexity for priority queue )
 Where, N = Number of nodes.
 
 ---
