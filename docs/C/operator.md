@@ -115,6 +115,42 @@ Operators in C are special symbols used to perform operations on variables and v
    printf("a: %d, b: %d, c: %d\n", a, b, c); // Output: a: 5, b: 3, c: 5
    ```
 
+### Type Conversion in C
+
+A variable's data type can be changed from one data type to another by type conversion.Type conversion is mainly of two types:
+- Implicit Type Conversion
+- Explicit Type Conversion
+
+1. **Implicit Type Conversion**:
+   - The type conversion that is done automatically by the compiler is known as implicit type conversion. This usually occurs when variables of different data types are used together in an expression in order to avoid loss of data. All the variables are upgraded to the data type of variable with largest data type.
+   - Example:
+     ```c
+     #include <stdio.h>
+     int main() {
+     int a = 5;
+     float b = 4.5;
+     float result;
+     result = a + b; // Implicit conversion of 'a' to float before the addition
+     printf("Result: %f\n", result);
+     return 0;
+     }
+     ```
+
+2. **Explicit Type Conversion**:
+   - Explicit type conversion is when the user explicitly specifies the type to which a variable should be converted. This is done using the cast operator `(type)`.
+   - Example:
+     ```c
+     #include <stdio.h>
+     int main() {
+     int a = 5;
+     float b = 4.5;
+     int result;
+     result = a + (int)b; // Explicit conversion of 'b' to int before the addition
+     printf("Result: %d\n", result);
+     return 0;
+     }
+     ```
+
 ### Key Points about C Operators
 
 1. **Versatility**:
