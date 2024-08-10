@@ -1,12 +1,12 @@
 ---
 id: number-of-ways-to-arrive-at-destination
-title: 1976. Number of Ways to Arrive at Destination
-sidebar_label: 1976. Number of Ways to Arrive at Destination
+title: 1976-Number of Ways to Arrive at Destination
+sidebar_label: 1976-Number of Ways to Arrive at Destination
 tags:
-- Dynamic Programming
-- Graph
-- Topological Sort
-- Shortest Path
+ - Dynamic Programming
+ - Graph
+ - Topological Sort
+ - Shortest Path
 
 description: "This is a solution to the 1976. Number of Ways to Arrive at Destination."
 ---
