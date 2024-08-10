@@ -3,20 +3,17 @@ ajay-dhangar:
   title: Founder of CodeHarborHub
   url: https://ajay-dhangar.github.io/
   image_url: https://avatars.githubusercontent.com/u/99037494?v=4
+  email: ajaydhangar49@gmail.com
+  page: true # Turns the feature on
+  description: >
+    A freelance React and React-Native developer near Paris and Docusaurus maintainer. Also runs ThisWeekInReact.com, a newsletter to stay updated with the React ecosystem.
 
-ajay-dhangar_2024:
-  name: Ajay Dhangar
-  title: Software Engineer at OptimumAI
-  url: https://www.optimumai.in/community
-  image_url: https://avatars.githubusercontent.com/u/99037494?v=4
-
-
-ajay-dhangar_2020:
-  name: Ajay Dhangar
-  title: B.Tech (CSE) Student
-  url: https://github.com/ajay-dhangar
-  image_url: https://avatars.githubusercontent.com/u/99037494?v=4
-
+  socials:
+    x: CodesWithAjay
+    linkedin: ajay-dhangar
+    github: ajay-dhangar
+    # stackoverflow: 18530900
+    
 hitesh-gahanolia:
   name: Hitesh Gahanolia
   tile: Final Year Student At MNNIT ALLAHABAD
