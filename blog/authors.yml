@@ -3,20 +3,18 @@ ajay-dhangar:
   title: Founder of CodeHarborHub
   url: https://ajay-dhangar.github.io/
   image_url: https://avatars.githubusercontent.com/u/99037494?v=4
+  email: ajaydhangar49@gmail.com
+  page: true # Turns the feature on
+  description: >
+    A passionate developer who loves to code and build new things. I am a Full Stack Developer and a Cyber Security, ML & AI  Enthusiast. I am also a Technical Content Writer and a Speaker. I love to share my knowledge with the community. I am the Founder of CodeHarborHub. I am also a Technical Content Writer at GeeksforGeeks. I am a Girl Script Summer of Code 2024 Project Manager (PA).    
 
-ajay-dhangar_2024:
-  name: Ajay Dhangar
-  title: Software Engineer at OptimumAI
-  url: https://www.optimumai.in/community
-  image_url: https://avatars.githubusercontent.com/u/99037494?v=4
-
-
-ajay-dhangar_2020:
-  name: Ajay Dhangar
-  title: B.Tech (CSE) Student
-  url: https://github.com/ajay-dhangar
-  image_url: https://avatars.githubusercontent.com/u/99037494?v=4
-
+  socials:
+    x: CodesWithAjay
+    linkedin: ajay-dhangar
+    github: ajay-dhangar
+    stackoverflow: 18530900
+    newsletter: https://ajay-dhangar.github.io
+    
 hitesh-gahanolia:
   name: Hitesh Gahanolia
   tile: Final Year Student At MNNIT ALLAHABAD
@@ -27,7 +25,7 @@ dharshibalasubramaniyam:
   name: Dharshi B.
   tile: Software Engineering undergraduate
   url: https://github.com/dharshibalasubramaniyam
-  image_url:  https://avatars.githubusercontent.com/u/139672976?s=400&v=4
+  image_url: https://avatars.githubusercontent.com/u/139672976?s=400&v=4
 
 abhijith-m-s:
   name: Abhijith M S
@@ -82,4 +80,3 @@ akshitha-chiluka:
   title: Software Engineering Undergraduate
   url: https://github.com/AKSHITHA-CHILUKA
   image_url: https://avatars.githubusercontent.com/u/120377576?v=4
-
