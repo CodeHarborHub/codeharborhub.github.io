@@ -25,7 +25,7 @@ dharshibalasubramaniyam:
   name: Dharshi B.
   tile: Software Engineering undergraduate
   url: https://github.com/dharshibalasubramaniyam
-  image_url:  https://avatars.githubusercontent.com/u/139672976?s=400&v=4
+  image_url: https://avatars.githubusercontent.com/u/139672976?s=400&v=4
 
 abhijith-m-s:
   name: Abhijith M S
@@ -74,3 +74,9 @@ DharshiBalasubramaniyam:
   title: Full Stack Developer
   url: "https://github.com/DharshiBalasubramaniyam"
   image_url: https://avatars.githubusercontent.com/u/139672976?s=400&v=4
+
+akshitha-chiluka:
+  name: Akshitha Chiluka
+  title: Software Engineering Undergraduate
+  url: https://github.com/AKSHITHA-CHILUKA
+  image_url: https://avatars.githubusercontent.com/u/120377576?v=4
