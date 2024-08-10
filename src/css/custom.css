@@ -160,6 +160,32 @@ mark {
 .footer_info--container {
   width: 380px;
 }
+.newsletter-subscription {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.newsletter-subscription h4 {
+  margin-bottom: 0.5rem;
+}
+
+.newsletter-subscription p {
+  margin-bottom: 0.5rem;
+}
+
+.newsletter-subscription a {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.newsletter-subscription a:hover {
+  background-color: #0056b3;
+}
 
 .footer_info--container img {
   width: 62px;

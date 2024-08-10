@@ -397,6 +397,24 @@ const config = {
               },
             ],
           },
+          // Add a new section for the LinkedIn newsletter
+          {
+            title: "Newsletter",
+            items: [
+              {
+                html: `
+                  <div class="newsletter-subscription">
+                    <h4>Subscribe to our Newsletter</h4>
+                    <p>Stay updated with the latest news and tutorials from CodeHarborHub by subscribing to our LinkedIn newsletter.</p>
+                    <a href="https://www.linkedin.com/newsletters/advance-development-and-coding-7030185990174515200" target="_blank" rel="noopener noreferrer">
+                      Subscribe on LinkedIn
+                    </a>
+                  </div>
+                `,
+              },
+            ],
+          },
+          
         ],
         logo: {
           alt: "Powered by CodeHarborHub | Product Hunt",
