@@ -9,7 +9,7 @@ export interface CareerCardProps {
     category: string;
     tags: string[];
   }
-  
+
   const careersData: CareerCardProps[] = [
     {
       id: 1,
@@ -84,7 +84,7 @@ export interface CareerCardProps {
       tags: ["nodejs", "express", "mongodb"],
     },
     {
-      id: 7,      
+      id: 7,
       title: "UI/UX Designers",
       description:
         "Design user interfaces, create wireframes, and work on user experience.",
@@ -156,5 +156,5 @@ export interface CareerCardProps {
       tags: ["devops", "automation", "infrastructure"],
     },
   ];
-  
-  export default careersData;  
+
+  export default careersData;
