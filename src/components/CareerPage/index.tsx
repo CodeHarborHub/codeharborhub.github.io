@@ -2,18 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "@docusaurus/Link";
 import "./styles.css";
-
-interface CareerCardProps {
-  id: number;
-  title: string;
-  description: string;
-  image: string;
-  link: string;
-  duration: string;
-  location: string;
-  category: string;
-  tags: string[];
-}
+import careersData, { CareerCardProps } from "../../data/careersData";
 
 const CareerCard: React.FC<CareerCardProps> = ({
   id,
@@ -69,46 +58,18 @@ const CareerCard: React.FC<CareerCardProps> = ({
 };
 
 const CareerPage: React.FC = () => {
-  const [careers, setCareers] = useState<CareerCardProps[]>([]);
   const [filteredCareers, setFilteredCareers] = useState<CareerCardProps[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("All");
 
   useEffect(() => {
-    const careersData = [
-      {
-        id: 1,
-        title: "Software Engineer",
-        description:
-          "Join our engineering team to build amazing products for our customers.",
-        image: "/img/careers/software-engineer.jpg",
-        link: "#",
-        duration: "Full-time",
-        location: "India",
-        category: "Engineering",
-        tags: ["javascript", "react", "nodejs"],
-      },
-      {
-        id: 2,
-        title: "Data Scientist",
-        description: "Work with our data team to drive business insights.",
-        image: "/img/careers/data-scientist.jpg",
-        link: "#",
-        duration: "Contract",
-        location: "India",
-        category: "Data Science",
-        tags: ["python", "machine learning", "data analysis"],
-      },
-      // Add more career opportunities as needed
-    ];
-    setCareers(careersData);
     setFilteredCareers(careersData);
   }, []);
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     const searchTerm = e.target.value.toLowerCase();
     setSearchTerm(searchTerm);
-    const filteredCareers = careers.filter((career) => {
+    const filteredCareers = careersData.filter((career) => {
       return (
         career.title.toLowerCase().includes(searchTerm) ||
         career.description.toLowerCase().includes(searchTerm) ||
@@ -122,9 +83,9 @@ const CareerPage: React.FC = () => {
     const category = e.target.value;
     setCategoryFilter(category);
     if (category === "All") {
-      setFilteredCareers(careers);
+      setFilteredCareers(careersData);
     } else {
-      const filteredCareers = careers.filter(
+      const filteredCareers = careersData.filter(
         (career) => career.category === category
       );
       setFilteredCareers(filteredCareers);
@@ -152,6 +113,12 @@ const CareerPage: React.FC = () => {
             <option value="All">All Categories</option>
             <option value="Engineering">Engineering</option>
             <option value="Data Science">Data Science</option>
+            <option value="Management">Management</option>
+            <option value="Design">Design</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Community">Community</option>
+            <option value="Content">Content</option>
+            <option value="Quality Assurance">Quality Assurance</option>
             {/* Add more categories as needed */}
           </select>
         </div>

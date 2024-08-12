@@ -83,7 +83,7 @@ const config = {
       announcementBar: {
         id: "announcementBar",
         content:
-          '🔗 Check out our latest project: <a target="_blank" href="https://www.linkedin.com/posts/ajay-dhangar_loan-calculator-activity-7221402171957768195-1WYs/?utm_source=share&utm_medium=member_desktop">Loan Calculator</a>! Like, comment, and share! 🚀',
+          '🔗 Check out our latest post: <a target="_blank" href="https://www.linkedin.com/posts/ajay-dhangar_docusaurus-webdevelopment-opensource-activity-7227962677250207745-6rBB?utm_source=share&utm_medium=member_desktop">Docusaurus 3.5 Released</a>! Like, comment, and share! 🚀',
         isCloseable: true,
         backgroundColor: "var(--ifm-color-primary)",
       },
