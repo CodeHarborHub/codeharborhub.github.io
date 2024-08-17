@@ -93,7 +93,6 @@ ES5 was a significant step forward, making JavaScript more reliable, maintainabl
     <Tabs>
       <TabItem value="index.js" label="Main Module">
 
-        ```js title="index.js"
         ```js title="app/index.js"
         import { greet } from "./utils.js";
         
