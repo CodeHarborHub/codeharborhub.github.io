@@ -24,7 +24,7 @@ Think of a static web page as a plain book. It has text and images, but you can'
 Let’s say you visit a web page to check the current time. Without JavaScript, you’d just see a static number, maybe updated each minute. But with JavaScript, the time can tick in real-time, changing every second as if the page is alive.
 
 ```html title="index.html"
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>Real-Time Clock</title>
