@@ -370,10 +370,6 @@ const config = {
                 label: "GitHub",
                 href: "https://github.com/codeharborhub",
               },
-              {
-                label: "Products",
-                href: "/product/",
-              },
             ],
           },
           {
@@ -539,21 +535,6 @@ const config = {
         showLastUpdateTime: true,
       },
     ],
-    [
-      "@docusaurus/plugin-content-docs",
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
-      {
-        id: "product",
-        path: "product",
-        routeBasePath: "product",
-        sidebarPath: require.resolve("./sidebarsCommunity.js"),
-        remarkPlugins: [remarkMath],
-        rehypePlugins: [rehypeKatex],
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
-      },
-    ],
-
     [
       "@docusaurus/plugin-content-docs",
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
