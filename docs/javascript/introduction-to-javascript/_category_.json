@@ -1,0 +1,8 @@
+{
+    "label": "Introduction to JavaScript",
+    "position": 1,
+    "link": {
+      "type": "generated-index",
+      "description": "In this tutorial, you'll learn what is JavaScript, history of JavaScript, JavaScript versions, and how to use it to create interactive web experiences."
+    }
+  }
