@@ -49,7 +49,7 @@ const Community: React.FC = () => {
           <Legend />
           <Bar dataKey="Community" fill="rgba(239,216,29,0.9)">
           {data.map((entry, index) => (
-              <Cell fill={colors[index]} />
+              <Cell key={index} fill={colors[index]} />
             ))}
            </Bar>
         </BarChart>
@@ -78,7 +78,7 @@ const Community: React.FC = () => {
           <Legend />
           <Bar dataKey="Courses" fill={colors[1]}>
           {data.map((entry, index) => (
-              <Cell fill={colors[1]} />
+              <Cell key={index} fill={colors[1]} />
             ))}
            </Bar>
         </BarChart>
@@ -107,7 +107,7 @@ const Community: React.FC = () => {
           <Legend />
           <Bar dataKey="Tutorials" fill={colors[2]}>
           {data.map((entry, index) => (
-              <Cell fill={colors[2]} />
+              <Cell key={index} fill={colors[2]} />
             ))}
            </Bar>
         </BarChart>
@@ -135,7 +135,7 @@ const Community: React.FC = () => {
           <Legend />
           <Bar dataKey="Problems" fill={colors[3]}>
           {data.map((entry, index) => (
-              <Cell fill={colors[3]} />
+              <Cell key={index} fill={colors[3]} />
             ))}
            </Bar>
         </BarChart>
@@ -163,7 +163,7 @@ const Community: React.FC = () => {
           <Legend />
           <Bar dataKey="Solutions" fill={colors[4]}>
           {data.map((entry, index) => (
-              <Cell fill={colors[4]} />
+              <Cell key={index} fill={colors[4]} />
             ))}
            </Bar>
         </BarChart>
@@ -188,7 +188,7 @@ const Chart: React.FC = () => {
           <Legend />
           <Bar dataKey="team" fill='rgb(51, 212, 91)'>
             {data.map((entry, index) => (
-              <Cell fill={colors[index]} />
+              <Cell key={index} fill={colors[index]} />
             ))}
           </Bar>
         </BarChart>
@@ -197,4 +197,4 @@ const Chart: React.FC = () => {
   );
 };
 
-export { Chart,Community,Courses,Tutorials,Problems,Solutions};
+export { Chart, Community, Courses, Tutorials, Problems, Solutions};
