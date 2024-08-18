@@ -12,7 +12,7 @@ const config = {
   title: "CodeHarborHub",
   tagline: "A place to learn and grow",
   favicon: "img/favicon_io/favicon.ico",
-  url: process.env.URL || "http://localhost:3000/",
+  url: process.env.URL || "https://codeharborhub.github.io/",
   baseUrl: "/",
   customFields: {
     admin: "Ajay Dhangar",
