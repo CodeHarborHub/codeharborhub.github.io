@@ -206,11 +206,11 @@ export default function Contact(): JSX.Element {
                 <div className={styles.social_media_icons}>
                   <a
                     href="https://www.linkedin.com/company/codeharborhub/"
-                    target="_blank"
+                    target="_blank" rel="noopener noreferrer"
                   >
                     <FaLinkedin />
                   </a>
-                  <a href="https://www.youtube.com/" target="_blank">
+                  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
                     <FaYoutube />
                   </a>
                   <a
@@ -219,7 +219,7 @@ export default function Contact(): JSX.Element {
                   >
                     <FaDiscord />
                   </a>
-                  <a href="https://x.com/CodesWithAjay?mx=2" target="_blank">
+                  <a href="https://x.com/CodesWithAjay?mx=2" target="_blank" rel="noopener noreferrer">
                     <FaXTwitter />
                   </a>
                 </div>
