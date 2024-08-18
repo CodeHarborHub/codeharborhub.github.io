@@ -20,7 +20,7 @@ The simplest way to run JavaScript in the browser is through the developer conso
 Here, you can type JavaScript code directly into the console and press `Enter` to execute it. For example, you can run the following code to display a message:
 
 ```javascript
-console.log('Hello, world!');
+console.log("Hello, world!");
 ```
 
 ### Inline Script Tags
@@ -30,17 +30,17 @@ Another way to run JavaScript in the browser is by embedding it directly into an
 Here's an example of an inline script that displays a message when the page loads:
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <title>Inline Script Example</title>
-</head>
-<body>
-  <h1>Running JavaScript in the Browser</h1>
-  <script>
-    console.log('Hello, world!');
-  </script>
-</body>
+  <head>
+    <title>Inline Script Example</title>
+  </head>
+  <body>
+    <h1>Running JavaScript in the Browser</h1>
+    <script>
+      console.log("Hello, world!");
+    </script>
+  </body>
 </html>
 ```
 
@@ -80,7 +80,7 @@ JavaScript is not limited to the browser; you can also run it on the server usin
 ### Installing Node.js
 
 1. **Download Node.js:** Visit the [Node.js website](https://nodejs.org/) and download the latest LTS (Long-Term Support) version for your operating system. Node.js comes with npm (Node Package Manager) to install additional packages.
-2. **Install Node.js:** Follow the installation instructions for your platform (Windows, macOS, or Linux). 
+2. **Install Node.js:** Follow the installation instructions for your platform (Windows, macOS, or Linux).
 3. **Verify Installation:** Open a terminal or command prompt and run the following commands to check if Node.js and npm are installed:
 
 <Tabs>
@@ -96,7 +96,6 @@ npm -v
   </TabItem>
 </Tabs>
 
-
 If you see version numbers for Node.js and npm, you've successfully installed Node.js on your system.
 
 ### Running JavaScript with Node.js
@@ -104,7 +103,7 @@ If you see version numbers for Node.js and npm, you've successfully installed No
 Once Node.js is installed, you can create JavaScript files with Node.js code and run them from the command line. Here's an example of a simple Node.js script that displays a message:
 
 ```javascript title="hello.js"
-console.log('Hello, Node.js!');
+console.log("Hello, Node.js!");
 ```
 
 To run this script, save it as `hello.js` and open a terminal or command prompt. Navigate to the directory where the script is saved and run the following command:
@@ -123,17 +122,17 @@ Picture Node.js as a powerful engine that can take your JavaScript code and run 
 
 ```javascript title="server.js"
 // Load the HTTP module
-const http = require('http');
+const http = require("http");
 
 // Create an HTTP server that responds with a message
 const server = http.createServer((req, res) => {
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('Hello, Node.js Server!');
+  res.writeHead(200, { "Content-Type": "text/plain" });
+  res.end("Hello, Node.js Server!");
 });
 
 // Listen on port 3000
 server.listen(3000, () => {
-  console.log('Server running at http://localhost:3000/');
+  console.log("Server running at http://localhost:3000/");
 });
 ```
 
@@ -144,7 +143,6 @@ node server.js
 ```
 
 You've now created a simple web server that listens on port 3000 and responds with the message `Hello, Node.js Server!` when accessed in a browser.
-
 
 ## 3. Running JavaScript in Online Editors
 
@@ -165,14 +163,15 @@ These online editors provide a convenient way to write and run JavaScript code w
 
 1. **[Open CodePen](https://codepen.io/pen/):** Create a new pen.
 2. **Write JavaScript:** Add your JavaScript code in the JavaScript editor.
-   
-    ```javascript
-    console.log('Hello, CodePen!');
-    ```
+
+   ```javascript
+   console.log("Hello, CodePen!");
+   ```
+
 3. **Run Code:** Click the "Run" button to execute the code and see the output in the console.
 4. **Share Your Pen:** You can share your pen with others by copying the URL or embedding it in a webpage.
 5. **Explore More:** CodePen offers additional features like HTML, CSS, preprocessors, and frameworks to enhance your projects.
-:::
+   :::
 
 :::tip
 When using online editors, remember that your code runs in a sandboxed environment, so you may encounter limitations compared to running JavaScript locally on your machine.
@@ -198,16 +197,16 @@ These IDEs offer features like code completion, syntax highlighting, version con
 1. **[Download Visual Studio Code](https://code.visualstudio.com/):** Install the editor on your machine.
 2. **Create a New Project:** Open Visual Studio Code and create a new folder for your project.
 3. **Write JavaScript Code:** Add your JavaScript code to a new file in the project folder.
-   
-    ```javascript
-    console.log('Hello, Visual Studio Code!');
-    ```
+
+   ```javascript
+   console.log("Hello, Visual Studio Code!");
+   ```
+
 4. **Run Code:** Use the built-in terminal to run your JavaScript code and see the output in the console.
 
-    ![Visual Studio Code](image.png)
+   ![Visual Studio Code](image.png)
 
 :::
-
 
 ## Conclusion
 
