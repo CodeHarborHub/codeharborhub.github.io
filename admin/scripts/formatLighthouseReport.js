@@ -76,7 +76,7 @@ const createLighthouseReport = ({ results, links }) => {
   const comment = [
     "### ⚡️ Lighthouse Report for the Deploy Preview of this PR 🚀",
     "",
-    `🔗 Site: [CodeHarborHub](https://github.com/CodeHarborHub/codeharborhub.github.io) | [Live Site](https://codeharborhub.github.io/)`,
+    "🔗 Site: [CodeHarborHub](https://github.com/CodeHarborHub/codeharborhub.github.io) | [Live Site](https://codeharborhub.github.io/)",
     "",
     ...tableHeader,
     ...tableBody,
