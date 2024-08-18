@@ -7,10 +7,7 @@ tags: [javascript, introduction to javascript, what is javascript]
 description: JavaScript is a high-level, interpreted programming language that is widely used for front-end web development. It is a versatile language that can be used for a variety of purposes, including building interactive websites, web applications, and server-side applications.
 ---
 
-<Head>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5832817025080991" crossOrigin="anonymous" />
-  <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js" />
-</Head>
+<AdsComponent />
 
 JavaScript is a powerful and versatile programming language that is widely used for front-end web development. It is a high-level, interpreted language that can be used to create interactive websites, web applications, and server-side applications. If you've ever interacted with a website—whether it's clicking a button, filling out a form, or watching content update dynamically—JavaScript was likely at work behind the scenes, making it all happen. JavaScript is the "magic" that brings web pages to life, allowing them to respond to user actions and create engaging experiences.
 

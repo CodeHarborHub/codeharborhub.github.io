@@ -1,6 +1,6 @@
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 /* Track */
@@ -297,6 +297,10 @@ th {
   border: none !important;
 }
 
+thead, tbody, tr,
+td, th {
+  border: 1px solid var(--ifm-color-primary) !important;
+}
 .easy {
   color: rgb(153, 183, 180);
 }

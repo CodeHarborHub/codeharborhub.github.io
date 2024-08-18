@@ -7,10 +7,7 @@ tags: [javascript, introduction to javascript, history of javascript]
 description: JavaScript has a rich history that dates back to the early days of the web. Learn about the origins of JavaScript, its evolution, and how it has become one of the most popular programming languages in the world.
 ---
 
-<Head>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5832817025080991" crossOrigin="anonymous" />
-  <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js" />
-</Head>
+<AdsComponent />
 
 JavaScript, the language that powers the dynamic behavior of websites today, has an interesting history that dates back to the early days of the internet. It was created in just **10 days**, but its impact on the web has been profound and long-lasting. JavaScript has evolved significantly over the years, growing from a simple scripting language to a versatile and powerful programming language that is used by millions of developers worldwide. JavaScript was initially developed by **Brendan Eich** in 1995 while he was working at Netscape Communications Corporation.
 
@@ -47,3 +44,7 @@ Today, JavaScript is used by millions of developers worldwide to build a wide ra
 As the web continues to evolve, JavaScript will play an increasingly important role in shaping the future of web development. New features and enhancements are being added to the language to make it more powerful, expressive, and efficient. JavaScript frameworks like React, Angular, and Vue.js are driving innovation in front-end development, while Node.js is expanding the possibilities of server-side development.
 
 JavaScript's rich history, rapid evolution, and widespread adoption make it a language that is here to stay. Whether you're a seasoned developer or just starting out, JavaScript offers a world of possibilities for building dynamic, interactive web applications that engage users and deliver rich, immersive experiences. As the web landscape continues to change, JavaScript will remain at the forefront, powering the next generation of web development.
+
+### Conclusion
+
+JavaScript has come a long way since its humble beginnings in 1995. From a simple scripting language to a versatile and powerful programming language, JavaScript has transformed the way we interact with the web. Its rich history, rapid evolution, and widespread adoption make it one of the most popular programming languages in the world today. Whether you're a front-end developer, a full-stack developer, or just getting started with web development, JavaScript offers a world of possibilities for building dynamic, interactive web applications that engage users and deliver rich, immersive experiences. As the web continues to evolve, JavaScript will continue to play a central role in shaping the future of web development, driving innovation and enabling developers to create cutting-edge applications that push the boundaries of what is possible on the web. 
