@@ -66,7 +66,6 @@ export default function Contact(): JSX.Element {
       email:formValues.email,
       message:formValues.message
     })
-    console.log(response.data);
 
     setFormValues({
       fullName: "",
