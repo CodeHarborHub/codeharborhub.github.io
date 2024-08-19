@@ -52,7 +52,6 @@ jobs:
             http://localhost:3000/showcase
             http://localhost:3000/community
             http://localhost:3000/docs/tags
-            http://localhost:3000/product
           configPath: ./.github/workflows/lighthouserc.json
           uploadArtifacts: true
           temporaryPublicStorage: true
