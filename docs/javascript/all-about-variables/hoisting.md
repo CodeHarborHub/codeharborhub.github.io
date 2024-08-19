@@ -94,7 +94,7 @@ Function expressions are not hoisted in the same way as function declarations. O
 ```javascript title="app.js"
 sayHello(); // Throws a TypeError
 
-var sayHello = function() {
+var sayHello = function () {
   console.log("Hello, World!");
 };
 ```
@@ -118,6 +118,7 @@ By understanding how hoisting works, you can avoid common pitfalls and write mor
 To avoid confusion and potential issues related to hoisting, it's a good practice to declare your variables and functions at the beginning of their containing scope. This makes your code more readable and predictable.
 
 **Remember:**
+
 - Use `let` and `const` for variable declarations to avoid hoisting-related bugs.
 - Declare functions before calling them to ensure they are hoisted correctly.
 - Be mindful of the TDZ when using `let` and `const` to prevent `ReferenceError` issues.
