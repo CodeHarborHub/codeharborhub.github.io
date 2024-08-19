@@ -9,7 +9,7 @@ description: Learn about the rules and best practices for naming variables in Ja
 
 <AdsComponent />
 
-When writing JavaScript code, it's essential to follow consistent naming conventions for variables to improve code readability and maintainability. Variable names should be descriptive, meaningful, and follow certain rules to ensure clarity and avoid conflicts. 
+When writing JavaScript code, it's essential to follow consistent naming conventions for variables to improve code readability and maintainability. Variable names should be descriptive, meaningful, and follow certain rules to ensure clarity and avoid conflicts.
 
 In this tutorial, we'll cover the essential rules for naming variables in JavaScript, along with examples and tips to help you avoid common mistakes.
 
@@ -44,11 +44,12 @@ By following the rules and best practices for naming variables, you can write be
 
 When naming variables in JavaScript, you need to follow certain rules and conventions to ensure consistency and readability. Here are the essential rules for naming variables:
 
-### 1. Variable Names Must Begin with a Letter, Underscore (_), or Dollar Sign ($)
+### 1. Variable Names Must Begin with a Letter, Underscore (\_), or Dollar Sign ($)
 
 A variable name can start with any of these three characters:
+
 - **Letter**: The first character of a variable name must be a letter (a-z, A-Z) or an uppercase or lowercase letter.
-- Underscore (_): You can use an underscore as the first character of a variable name. It is commonly used to indicate a private or internal variable.
+- Underscore (\_): You can use an underscore as the first character of a variable name. It is commonly used to indicate a private or internal variable.
 - Dollar Sign ($): While the dollar sign can be used in variable names, it is less common and not recommended due to its use in certain JavaScript libraries and frameworks.
 
 **Example:**
@@ -58,12 +59,14 @@ let name = "Alice";
 let _count = 10;
 let $price = 25.99;
 ```
+
 ### 2. Variable Names Can Contain Letters, Numbers, Underscores, and Dollar Signs
 
 After the first character, variable names can include:
+
 - Letters (a-z, A-Z)
 - Numbers (0-9)
-- Underscores (_)
+- Underscores (\_)
 - Dollar Signs ($)
 
 **Examples:**
@@ -130,7 +133,7 @@ let coordinateX = 10;
 
 // Acceptable in loops
 for (let i = 0; i < 10; i++) {
-    console.log(i);
+  console.log(i);
 }
 ```
 
