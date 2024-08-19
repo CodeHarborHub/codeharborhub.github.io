@@ -22,7 +22,7 @@ Think of variables as containers that hold data. Just like a box where you can s
 **Example:**
 
 Imagine you're working on a to-do list app. You might need to store the user's name, the tasks they want to complete, and the status of each task. Variables allow you to store these pieces of information:
-    
+
     ```javascript title="app.js"
     // Declare variables to store user information
     let userName = "Ajay";
@@ -30,7 +30,7 @@ Imagine you're working on a to-do list app. You might need to store the user's n
     // Declare variables to store tasks
     let task = "Complete JavaScript tutorial";
 
-    // Declare variables to store task status    
+    // Declare variables to store task status
     let isTaskCompleted = false;
     ```
 
@@ -110,8 +110,8 @@ console.log(count); // Outputs: 0
 
 ```javascript title="app.js"
 if (true) {
-    let x = 10;
-    console.log(x); // Outputs: 10
+  let x = 10;
+  console.log(x); // Outputs: 10
 }
 
 console.log(x); // Error: x is not defined
@@ -166,14 +166,13 @@ By understanding the differences between `var`, `let`, and `const`, you can choo
 
 Here's a quick comparison of the key characteristics of `var`, `let`, and `const`:
 
-|No. | Feature         | `var`                  | `let`                  | `const`                |
-|:--- |:----------------|:-----------------------|:-----------------------|:-----------------------|
-|1. | Scope           | Function-level         | Block-level            | Block-level            |
-|2. | Hoisting        | Yes                    | No                     | No                     |
-|3. | Re-declaration  | Allowed                | Not allowed            | Not allowed            |
-|4. | Reassignment    | Allowed                | Allowed                | Not allowed            |
-|5. | Initialization   | Optional               | Optional               | Required               |
-
+| No. | Feature        | `var`          | `let`       | `const`     |
+| :-- | :------------- | :------------- | :---------- | :---------- |
+| 1.  | Scope          | Function-level | Block-level | Block-level |
+| 2.  | Hoisting       | Yes            | No          | No          |
+| 3.  | Re-declaration | Allowed        | Not allowed | Not allowed |
+| 4.  | Reassignment   | Allowed        | Allowed     | Not allowed |
+| 5.  | Initialization | Optional       | Optional    | Required    |
 
 ## Conclusion
 

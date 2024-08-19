@@ -1,8 +1,8 @@
 {
-    "label": "All About Variables",
-    "position": 2,
-    "link": {
-      "type": "generated-index",
-      "description": "In this tutorial, you'll learn what is a variable, how to declare a variable, how to assign a value to a variable, and how to use variables in JavaScript."
-    }
+  "label": "All About Variables",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "In this tutorial, you'll learn what is a variable, how to declare a variable, how to assign a value to a variable, and how to use variables in JavaScript."
   }
+}
