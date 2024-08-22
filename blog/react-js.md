@@ -6,7 +6,10 @@ tags: [javascript , framework , frontend , react , node ]
 date: 2024-06-13 12:29
 hide_table_of_contents: true
 ---
+
 React is a JavaScript library primarily used for building user interfaces in single-page applications. While it's often integrated with tools like Webpack for bundling JavaScript and CSS files, React itself does not directly incorporate Webpack. Despite its nature as a library rather than a full framework or programming language, React remains instrumental in modern web development.
+
+<!-- truncate -->
 
 React offers various extensions for entire application architectural support, such as Flux and React Native, beyond mere UI.
 

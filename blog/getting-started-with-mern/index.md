@@ -40,6 +40,8 @@ meta:
 
 A comprehensive guide to get you started with MERN stack. From building an API with Express.js to creating a React app, this guide covers all the basics of the MERN stack.
 
+<!-- truncate -->
+
 ![Getting started with MERN](./mern.jpg)
 
 :::caution

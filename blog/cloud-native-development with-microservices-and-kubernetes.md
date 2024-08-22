@@ -7,6 +7,9 @@ date: 2024-07-31
 hide_table_of_contents: true
 ---
 
+In the era of cloud computing, cloud-native development has emerged as a paradigm for building scalable, resilient, and maintainable applications. This guide explores the key concepts, tools, and best practices associated with cloud-native development using microservices and Kubernetes.
+
+<!-- truncate -->
 
 ## Introduction to Cloud-Native Development
 

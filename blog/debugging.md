@@ -7,7 +7,11 @@ description: Step-by-Step Guide Debugging Tests in Create React App
 draft: false
 ---
 
-Debugging tests in a React application can be challenging, but fear not! We've got you covered with this step-by-step guide to help you overcome the common hurdles and make your tests shine. Let's dive in:
+Debugging tests in a React application can be challenging, but fear not! We've got you covered with this step-by-step guide to help you overcome the common hurdles and make your tests shine. 
+
+<!-- truncate -->
+
+Let's dive in:
 
 **Step 1: Install Create React App**
 

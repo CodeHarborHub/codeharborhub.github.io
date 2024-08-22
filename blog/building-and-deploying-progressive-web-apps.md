@@ -7,6 +7,10 @@ date: 2024-07-27
 hide_table_of_contents: true
 ---
 
+In the world of modern web development, Progressive Web Apps (PWAs) have gained popularity for providing a native app-like experience on the web. This guide explores the concept of PWAs, their benefits, and provides a step-by-step guide to building and deploying them.
+
+<!-- truncate -->
+
 ## Introduction
 
 Progressive Web Apps (PWAs) are web applications that provide a native app-like experience to users. By leveraging modern web capabilities, PWAs offer benefits such as offline access, push notifications, and improved performance. This documentation introduces PWAs, their advantages, and provides a step-by-step guide to building and deploying them.

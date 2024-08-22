@@ -9,6 +9,8 @@ hide_table_of_contents: true
 
 SOLID principles are one of the object-oriented approaches used in software development, intended to create quality software. The broad goal of the SOLID principles is to reduce dependencies, so that developers can change one area of the software without affecting others. Furthermore, they are intended to make designs easier to understand, maintain, reuse, and extend.
 
+<!-- truncate -->
+
 ## 1. Single responsibility principle (SRP)
 
 - SRP states that, a class should have only one reason to change, meaning it should have a single responsibility.

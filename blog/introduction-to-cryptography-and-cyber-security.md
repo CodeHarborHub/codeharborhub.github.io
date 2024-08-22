@@ -7,9 +7,9 @@ date: 2024-06-24
 hide_table_of_contents: true
 ---
 
-## Introduction
-
 In the realm of cyber security, cryptography stands as a critical tool for protecting information. As digital data exchange grows exponentially, the importance of cryptography in ensuring data security and privacy cannot be overstated. This blog explores the fundamental concepts of cryptography, its historical significance, and its contemporary applications in cyber security.
+
+<!-- truncate -->
 
 ## Understanding Cryptography
 

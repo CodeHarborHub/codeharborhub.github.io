@@ -7,7 +7,9 @@ date: 2024-07-28
 hide_table_of_contents: true
 ---
 
-# Dockerize Spring-boot with Github-Actions
+In this blog, we will learn how to Dockerize a Spring Boot application and set up a Continuous Integration/Continuous Deployment (CI/CD) pipeline using GitHub Actions.
+
+<!-- truncate -->
 
 - This Blog article demonstrates a complete Docker CI/CD pipeline for a Spring Boot application using GitHub Actions.
 

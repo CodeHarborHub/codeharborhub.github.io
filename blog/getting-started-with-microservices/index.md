@@ -7,6 +7,9 @@ date: 2024-06-17
 hide_table_of_contents: true
 ---
 
+In the era of cloud-native development, microservices have emerged as a popular architectural style for building scalable, resilient, and maintainable applications. This guide provides an introduction to microservices, explores their benefits, and offers a step-by-step tutorial on developing a microservice application using Spring Boot and MongoDB.
+
+<!-- truncate -->
 
 ## 1. Understanding the importance Microservices
 

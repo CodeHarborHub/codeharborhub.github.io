@@ -7,9 +7,9 @@ date: 2024-07-27
 hide_table_of_contents: true
 ---
 
-## Introduction
-
 Cross-platform development allows developers to build applications that can run on multiple operating systems with a single codebase. Flutter, paired with the Dart programming language, is a powerful framework for creating high-performance, visually attractive applications for both mobile and web platforms.
+
+<!-- truncate -->
 
 ## What is Flutter?
 

@@ -7,9 +7,9 @@ date: 2024-08-01
 hide_table_of_contents: true
 ---
 
-## Introduction
-
 Composable architecture emphasizes building applications using modular, interchangeable components. This approach enhances flexibility, scalability, and maintainability, allowing developers to adapt to changing requirements efficiently. This documentation explores the principles, design strategies, and practical applications of composable architecture.
+
+<!-- truncate -->
 
 ## Designing Modular Components
 

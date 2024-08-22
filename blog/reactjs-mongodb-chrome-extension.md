@@ -7,9 +7,9 @@ date: 2024-06-13 23:23:23
 hide_table_of_contents: true
 ---
 
-# Chrome Extension Using MERN
-
 Creating a Chrome extension can seem like a daunting task, especially when you're trying to combine it with technologies like ReactJS and MongoDB. When I first set out to build my extension, I found it challenging to find a perfect YouTube tutorial or blog post that covered everything I needed. So, I turned to StackOverflow and other resources to piece together my project.
+
+<!-- truncate -->
 
 You can always take help from my github repository: https://github.com/abckhush/Basic-Chrome-Extension
 

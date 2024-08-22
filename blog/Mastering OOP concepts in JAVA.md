@@ -7,7 +7,11 @@ date: 2024-06-18
 hide_table_of_contents: true
 ---
 
-Programing paradigms are approaches to write code, each with its own principles, concepts and guidelines. These paradigms guide how developers structure and organize their programs, as well as how they think about problem-solving. Here are some common programming paradigms.
+Programing paradigms are approaches to write code, each with its own principles, concepts and guidelines. These paradigms guide how developers structure and organize their programs, as well as how they think about problem-solving. 
+
+<!-- truncate -->
+
+Here are some common programming paradigms.
 
 - Imperative Programming: Imperative programming is based on the idea of giving the computer a sequence of instructions to perform. Eg., C, Assembly
 - Declarative Programing: Declarative programming emphasizes expressing what should be accomplished rather than how to achieve it. Eg., SQL

@@ -7,9 +7,9 @@ date: 2024-08-01
 hide_table_of_contents: true
 ---
 
-## Introduction
-
 Microfrontends represent a new architectural trend in web development, aiming to extend the benefits of microservices to the frontend. This documentation delves into leveraging GPT models for architecting front-end applications at scale using microfrontends.
+
+<!-- truncate -->
 
 ## Introduction to Microfrontends
 

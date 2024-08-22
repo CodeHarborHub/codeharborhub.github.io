@@ -7,6 +7,10 @@ date: 2024-06-25
 hide_table_of_contents: true
 ---
 
+In web development, the Document Object Model (DOM) is a crucial aspect of creating dynamic and interactive web pages. The DOM represents the structure of a web document as a tree of nodes, allowing developers to access, modify, and interact with the content and elements of a web page using JavaScript.
+
+<!-- truncate -->
+
 ## 1. Understanding DOM
 
 - The Document Object Model (DOM) is a programming interface for web documents.

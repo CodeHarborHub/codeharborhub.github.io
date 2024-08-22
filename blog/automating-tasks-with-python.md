@@ -7,6 +7,10 @@ date: 2024-07-13
 hide_table_of_contents: true
 ---
 
+In today's fast-paced world, automation plays a crucial role in enhancing productivity and efficiency. Python, with its rich set of libraries and modules, provides a powerful framework for automating various system-level tasks. This blog explores how to leverage Python's OS and Subprocess modules to automate tasks such as file and directory operations and executing system commands.
+
+<!-- truncate -->
+
 ## Introduction
 
 Automation is a powerful way to boost productivity and efficiency by minimizing manual intervention in repetitive tasks. Python, with its versatile libraries and modules, provides an excellent framework for task automation. This blog explores how to use Python's OS and Subprocess modules to automate various system-level tasks, including file and directory operations and executing system commands.

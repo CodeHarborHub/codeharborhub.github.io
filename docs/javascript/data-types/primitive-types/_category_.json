@@ -1,0 +1,8 @@
+{
+  "label": "Primitive Types",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Primitive types are the most basic data types in JavaScript. In this tutorial, you'll learn about the primitive types in JavaScript, such as string, number, boolean, null, undefined, and symbol."
+  }
+}

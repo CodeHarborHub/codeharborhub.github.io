@@ -9,6 +9,8 @@ hide_table_of_contents: true
 
 The PostgreSQL language, primarily SQL (Structured Query Language), is the standard language for interacting with the PostgreSQL database. SQL is used to define the structure of the database (Data Definition Language or DDL), manipulate the data (Data Manipulation Language or DML), control access (Data Control Language or DCL), and query the data (Data Query Language or DQL). In addition to standard SQL, PostgreSQL supports procedural languages like PL/pgSQL, which allows for writing complex functions and triggers with control structures, error handling, and more. This makes PostgreSQL a versatile and powerful tool for database management, providing both simplicity for basic queries and advanced features for complex database operations. The extensibility of PostgreSQL allows users to define custom functions, operators, and data types, enhancing the database's capabilities beyond the typical relational model.
 
+<!-- truncate -->
+
 ## Introduction to PostgreSQL
 
 PostgreSQL, often referred to as Postgres, is a powerful, open-source object-relational database management system (ORDBMS) known for its robustness, reliability, and performance. Developed by a global community of developers, PostgreSQL has a history spanning over 30 years, which has contributed to its reputation as one of the most advanced and feature-rich databases available.

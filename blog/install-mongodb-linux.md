@@ -9,6 +9,8 @@ draft: false
 
 MongoDB is a popular NoSQL database that is known for its flexibility and scalability. It is widely used in modern web applications and is a great choice for storing and managing large volumes of data. In this article, we will walk you through the process of installing MongoDB on a Linux system, specifically Debian Bullseye.
 
+<!-- truncate -->
+
 ## Step 1: Import the MongoDB GPG Key
 
 The first step is to import the MongoDB GPG key, which is used to verify the authenticity of the MongoDB packages. You can do this by running the following command in your terminal:

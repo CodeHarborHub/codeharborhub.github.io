@@ -1,56 +1,8 @@
 # Web Development with Django
 
-## Overview
 Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. This guide will introduce you to Django, walk you through setting up a Django project, and cover key features and best practices for developing robust web applications.
 
-## Table of Contents
-1. Introduction to Django
-2. Setting Up the Development Environment
-    - Installing Python and Django
-    - Setting Up a Virtual Environment
-    - Creating a New Django Project
-3. Understanding the Django Project Structure
-    - Project vs. App
-    - Key Files and Directories
-4. Building Your First Django App
-    - Creating a New App
-    - Defining Models
-    - Creating and Applying Migrations
-    - Registering Models in Admin
-5. Django Views and Templates
-    - Creating Views
-    - URL Routing
-    - Using Templates
-    - Template Inheritance
-6. Working with Forms
-    - Creating Forms
-    - Handling Form Submissions
-    - Form Validation
-    - Using Django Forms with Models
-7. Handling Static Files and Media
-    - Configuring Static Files
-    - Serving Media Files
-8. Django's Built-in Authentication System
-    - User Authentication and Authorization
-    - Managing Users and Permissions
-    - Customizing the Authentication Workflow
-9. Testing in Django
-    - Writing Unit Tests
-    - Using the Django Test Client
-    - Best Practices for Testing
-10. Deploying Django Applications
-    - Preparing for Deployment
-    - Using Gunicorn and Nginx
-    - Deploying on Popular Platforms (Heroku, AWS, etc.)
-11. Advanced Django Features
-    - Django REST Framework for APIs
-    - Caching in Django
-    - Internationalization and Localization
-12. Best Practices and Tips
-    - Code Organization
-    - Security Best Practices
-    - Performance Optimization
-13. Conclusion
+<!-- truncate -->
 
 ## 1. Introduction to Django
 Django is a powerful and flexible framework that follows the "batteries-included" philosophy. It provides many built-in features such as an ORM, authentication, and an admin panel, which make it an excellent choice for web development.

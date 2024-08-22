@@ -7,9 +7,9 @@ date: 2024-07-22
 hide_table_of_contents: true
 ---
 
-## Introduction
-
 Serverless architecture is a cloud computing execution model where the cloud provider dynamically manages the allocation and provisioning of servers. AWS Lambda, a key component of serverless architecture, allows you to run code without provisioning or managing servers. This guide will introduce you to AWS Lambda and provide a step-by-step approach to getting started with serverless architecture.
+
+<!-- truncate -->
 
 ## Key Concepts
 

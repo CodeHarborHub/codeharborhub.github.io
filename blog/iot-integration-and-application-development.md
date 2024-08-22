@@ -7,7 +7,9 @@ date: 2024-07-31
 hide_table_of_contents: true
 ---
 
-The Internet of Things (IoT) represents a network of interconnected devices that communicate and share data to drive intelligent actions, transforming industries and everyday life.
+The Internet of Things (IoT) is a transformative technology that connects physical devices to the internet, enabling data collection, exchange, and automation. This documentation provides an overview of IoT, including its architecture, communication protocols, sensors, actuators, and integration with cloud and edge computing.
+
+<!-- truncate -->
 
 ## Introduction to IoT
 

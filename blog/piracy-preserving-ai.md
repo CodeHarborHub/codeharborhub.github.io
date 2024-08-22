@@ -7,9 +7,9 @@ date: 2024-08-01
 hide_table_of_contents: true
 --- 
 
-## Introduction
-
 Privacy-Preserving AI is an emerging field focused on protecting individuals' privacy while enabling the use of AI for data analysis and decision-making. This documentation covers various techniques and applications, exploring how AI can be developed and deployed without compromising data privacy.
+
+<!-- truncate -->
 
 ## Differential Privacy
 

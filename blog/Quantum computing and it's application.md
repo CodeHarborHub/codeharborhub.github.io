@@ -6,6 +6,10 @@ tags: [Quantum Computing, Applications]
 date: 2024-07-22
 ---
 
+In the realm of computing, quantum computing stands as a revolutionary field that leverages the principles of quantum mechanics to process information in fundamentally different ways compared to classical computing. This blog aims to introduce the basics of quantum computing, explore its potential applications, and provide resources for further learning.
+
+<!-- truncate -->
+
 ## Quantum Computing: Basics and Applications
 
 Quantum computing is a revolutionary field that leverages the principles of quantum mechanics to process information in fundamentally different ways compared to classical computing. This blog will introduce the basics of quantum computing, explore its potential applications, and provide resources for further learning.

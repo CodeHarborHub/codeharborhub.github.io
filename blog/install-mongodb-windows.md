@@ -9,6 +9,8 @@ draft: false
 
 MongoDB is a popular NoSQL database that is known for its flexibility and scalability. It is widely used in modern web applications and is a great choice for storing and managing large volumes of data. In this article, we will walk you through the process of installing MongoDB on a Windows system.
 
+<!-- truncate -->
+
 ## Step 1: Download the MongoDB Installer
 
 The first step is to download the MongoDB installer from the official MongoDB website. You can find the installer at the following URL: [https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community)

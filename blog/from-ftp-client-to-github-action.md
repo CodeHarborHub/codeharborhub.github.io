@@ -9,6 +9,8 @@ draft: false
 
 In the early days of web development, the most common way to deploy a website was to use an FTP client. This involved manually uploading files to a remote server, which was a time-consuming and error-prone process. As web development practices evolved, so did the tools and techniques for deploying websites. One of the most significant advancements in this area has been the introduction of continuous integration (CI) and continuous deployment (CD) pipelines, which automate the process of building and deploying web applications.
 
+<!-- truncate -->
+
 In this article, we'll take a look at the evolution of remote file management, from the use of FTP clients to the adoption of GitHub Actions for automated deployment.
 
 ## The FTP client era

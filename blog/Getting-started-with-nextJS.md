@@ -8,6 +8,8 @@ hide_table_of_contents: true
 ---
 
 Next.js is a popular React framework that enables server-side rendering and static site generation, offering an optimized, flexible approach to building modern web applications.
+
+<!-- truncate -->
   
 ### What is Next.js?
   

@@ -7,9 +7,9 @@ date: 2024-08-01
 hide_table_of_contents: true
 ---
 
-## Introduction
-
 The Generative Pre-trained Transformer (GPT) model, developed by OpenAI, is a powerful tool for Natural Language Processing (NLP) tasks. Its ability to understand and generate human-like text has revolutionized various applications in AI, from chatbots to content creation. This documentation provides a comprehensive guide to leveraging the GPT model for a range of NLP tasks, detailing its capabilities, implementation, and best practices.
+
+<!-- truncate -->
 
 ## Understanding GPT
 

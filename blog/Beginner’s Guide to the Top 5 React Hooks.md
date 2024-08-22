@@ -7,6 +7,10 @@ date: 2024-06-19
 hide_table_of_contents: true
 ---
 
+In this beginner’s guide, we’ll explore the top 5 React hooks that every React developer should know. React hooks are a powerful feature introduced in React 16.8 that allow you to use state and other React features in functional components. They provide a more elegant and composable way to manage component logic compared to class components. Let’s dive into the top 5 React hooks you should be familiar with.
+
+<!-- truncate -->
+
 ## Why React Hooks?
 
 ### Evolution of React:

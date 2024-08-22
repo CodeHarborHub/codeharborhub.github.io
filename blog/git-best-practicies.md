@@ -9,6 +9,8 @@ hide_table_of_contents: true
 
 Git is a powerful tool for managing the development of software projects, but it can be challenging to use effectively. In this article, we'll take a look at some best practices for using Git, including how to structure your commits, how to manage branches, and how to collaborate with others. By following these best practices, you can make your development process more efficient and less error-prone.
 
+<!-- truncate -->
+
 ## Commit Often, Perfect Later, Publish Once
 
 One of the most important best practices for using Git is to commit your changes often. This means that you should make small, focused commits that capture a single logical change to your code. By committing often, you can keep a detailed history of your changes, which makes it easier to understand the evolution of your codebase and to track down bugs.

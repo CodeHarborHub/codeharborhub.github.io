@@ -33,6 +33,10 @@ meta:
     content: "https://codeharborhub.github.io/assets/images/mern-8a27add30515e58f789f89a4c9072818.jpg"
 ---
 
+In this blog post, we will learn how to get started with MERN stack development. The MERN stack consists of four technologies: MongoDB, Express.js, React, and Node.js. We will cover the basics of each technology and guide you through building a simple web application using the MERN stack.
+
+<!-- truncate -->
+
 Create a Docker image for your Rust application with minimal image size ⚒️
 
 ![Dockerizing a Rust application with Multi-Stage Builds](./rust-docker.png)

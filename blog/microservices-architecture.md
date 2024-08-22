@@ -7,9 +7,9 @@ date: 2024-07-29
 hide_table_of_contents: true
 ---
 
-## Introduction
-
 Microservices architecture is an approach to designing software systems where the application is broken down into smaller, loosely coupled, and independently deployable services. Each service focuses on a specific business functionality and communicates with other services through well-defined APIs. This architecture enables easier maintenance, scalability, and faster deployment cycles.
+
+<!-- truncate -->
 
 ## Designing Microservices Architecture
 
