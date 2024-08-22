@@ -1,5 +1,5 @@
 ---
-title: 'Building and Deploying Progressive Web Apps'
+title: "Building and Deploying Progressive Web Apps"
 sidebar_label: Progressive Web Apps
 authors: [nayanika-mukherjee]
 tags: [progressive web apps, pwa, web development, technology]
@@ -30,6 +30,7 @@ Progressive Web Apps (PWAs) are web applications that provide a native app-like 
 ### Step 3: Add a Web App Manifest
 
 - Create manifest.json: Add a web app manifest to define how your app appears on a user's device.
+
 ```json
 {
   "name": "My PWA",
@@ -56,47 +57,51 @@ Progressive Web Apps (PWAs) are web applications that provide a native app-like 
 ### Step 4: Implement Service Workers
 
 - Register Service Worker: Add a service worker to cache assets and enable offline functionality.
+
 ```javascript
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js')
-      .then(registration => {
-        console.log('Service Worker registered with scope:', registration.scope);
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("/service-worker.js")
+      .then((registration) => {
+        console.log(
+          "Service Worker registered with scope:",
+          registration.scope,
+        );
       })
-      .catch(error => {
-        console.error('Service Worker registration failed:', error);
+      .catch((error) => {
+        console.error("Service Worker registration failed:", error);
       });
   });
 }
 ```
 
 - Create Service Worker: Write the logic for caching and fetching resources in `service-worker.js`.
+
 ```javascript
-const CACHE_NAME = 'my-pwa-cache-v1';
+const CACHE_NAME = "my-pwa-cache-v1";
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/styles.css',
-  '/app.js',
-  '/icon-192x192.png',
-  '/icon-512x512.png'
+  "/",
+  "/index.html",
+  "/styles.css",
+  "/app.js",
+  "/icon-192x192.png",
+  "/icon-512x512.png",
 ];
 
-self.addEventListener('install', event => {
+self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(cache => {
-        return cache.addAll(urlsToCache);
-      })
+    caches.open(CACHE_NAME).then((cache) => {
+      return cache.addAll(urlsToCache);
+    }),
   );
 });
 
-self.addEventListener('fetch', event => {
+self.addEventListener("fetch", (event) => {
   event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        return response || fetch(event.request);
-      })
+    caches.match(event.request).then((response) => {
+      return response || fetch(event.request);
+    }),
   );
 });
 ```
@@ -129,7 +134,7 @@ self.addEventListener('fetch', event => {
 - Pinterest: Pinterest's PWA improved user engagement and performance, especially on mobile devices.
 - Forbes: Forbes' PWA provides a fast, app-like reading experience for users.
 
-## Future Trends in PWAs 
+## Future Trends in PWAs
 
 - Advancements in Web Capabilities: Ongoing improvements in web technologies will enhance PWA capabilities.
 - Increased Adoption: More businesses and developers are adopting PWAs for their versatility and performance benefits.
@@ -142,5 +147,5 @@ self.addEventListener('fetch', event => {
 - PWA.rocks: Collection of PWA examples and inspiration.
 
 ## Conclusion
-Progressive Web Apps offer a powerful way to build modern web applications that provide a native app-like experience. By following best practices and leveraging modern web technologies, developers can create high-performance, secure, and accessible PWAs. This documentation provides a comprehensive guide to building and deploying PWAs, ensuring you have the tools and knowledge to succeed.
 
+Progressive Web Apps offer a powerful way to build modern web applications that provide a native app-like experience. By following best practices and leveraging modern web technologies, developers can create high-performance, secure, and accessible PWAs. This documentation provides a comprehensive guide to building and deploying PWAs, ensuring you have the tools and knowledge to succeed.

@@ -1,5 +1,5 @@
 ---
-title: 'Sed: Normalize markdown file with Regex'
+title: "Sed: Normalize markdown file with Regex"
 author: ajay-dhangar
 tags: [sed, regex, web clipper]
 date: 2024-03-15 14:37:46
@@ -15,7 +15,7 @@ One of the common issues I encounter is inconsistent formatting of the front mat
 
 ```markdown
 ---
-title: 'Sed: Normalize markdown file with Regex'
+title: "Sed: Normalize markdown file with Regex"
 author: Ajay Dhangar
 tags: [sed, regex, web clipper]
 date: 2020-11-26 21:13:28

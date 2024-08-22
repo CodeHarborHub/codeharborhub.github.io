@@ -1,5 +1,5 @@
 ---
-title: 'Leveraging GPT Model for Natural Language Processing Tasks'
+title: "Leveraging GPT Model for Natural Language Processing Tasks"
 sidebar_label: GPT for NLP
 authors: [pujan-sarkar]
 tags: [NLP, GPT, AI, machine learning, technology]

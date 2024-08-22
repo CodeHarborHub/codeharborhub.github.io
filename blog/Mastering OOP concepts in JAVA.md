@@ -1,5 +1,5 @@
 ---
-title: 'Mastering OOP concepts in JAVA'
+title: "Mastering OOP concepts in JAVA"
 sidebar_label: OOP
 authors: [dharshibalasubramaniyam]
 tags: [oop, java, best-practices]
@@ -7,7 +7,7 @@ date: 2024-06-18
 hide_table_of_contents: true
 ---
 
-Programing paradigms are approaches to write code, each with its own principles, concepts and guidelines. These paradigms guide how developers structure and organize their programs, as well as how they think about problem-solving. 
+Programing paradigms are approaches to write code, each with its own principles, concepts and guidelines. These paradigms guide how developers structure and organize their programs, as well as how they think about problem-solving.
 
 <!-- truncate -->
 
@@ -56,27 +56,27 @@ public class Student {
     private String name;
     private int age;
     private String major;
-    
+
     // Method to study
     public void study() {
         System.out.println(name + " is studying " + major + ".");
     }
-    
+
     // Method to attend class
     public void attendClass() {
         System.out.println(name + " is attending class.");
     }
-    
+
     // Method to take an exam
     public void takeExam() {
         System.out.println(name + " is taking an exam.");
     }
-    
+
     // Method to submit assignment
     public void submitAssignment() {
         System.out.println(name + " is submitting an assignment.");
     }
-    
+
 }
 ```
 
@@ -93,7 +93,8 @@ public class Student {
 - To create a new student object, we use the ‘new’ keyword followed by the class name, along with any required arguments for the constructor.
 - There are different types of constructors:
 
-### Default Constructor: 
+### Default Constructor:
+
 - If a class does not explicitly define any constructors, Java provides a default constructor with no arguments. The default constructor initializes the object’s attributes to default values (e.g., numeric types to 0, object references to null).
 
 ```
@@ -103,7 +104,7 @@ public class Student {
     private String name;
     private int age;
     private String major;
-    
+
     // Default Constructor
     // (will discuss about `this` keyword later in this aricle)
     public Student() {
@@ -113,13 +114,14 @@ public class Student {
     }
 
     // Other methods...
-    
+
 }
 // Creating a student object using the default constructor
 Student john = new Student();
 ```
 
-### Parameterized Constructors: 
+### Parameterized Constructors:
+
 - Constructors can accept parameters to initialize the object with specific values. You can define multiple constructors with different parameter lists, allowing for constructor overloading.
 
 ```
@@ -127,7 +129,7 @@ public class Student {
     private String name;
     private int age;
     private String major;
-    
+
     // Parameterized Constructor
     public Student(String name, int age, String major) {
         this.name = name;
@@ -141,7 +143,8 @@ public class Student {
 Student alice = new Student("Alice", 20, "Computer Science");
 ```
 
-### Copy constructor: 
+### Copy constructor:
+
 - A copy constructor creates a new object by copying the values of another object. It’s used to create a new object that is a copy of an existing one.
 
 ```
@@ -149,7 +152,7 @@ public class Student {
     private String name;
     private int age;
     private String major;
-    
+
     // Copy Constructor
     public Student(Student otherStudent) {
         this.name = otherStudent.name;
@@ -248,14 +251,13 @@ public class Student {
 - They determine which parts of your code can be accessed or modified from other parts of your program, as well as from external code.
 - Java has four main access modifiers:
 
-   1. public: The public access modifier makes the class, method, or variable accessible from any other class.
+  1.  public: The public access modifier makes the class, method, or variable accessible from any other class.
 
-   2. protected: The protected access modifier allows access to the member within the same package or by subclasses (will discuss later about subclasses), even if they are in a different package. It restricts access to classes outside the package unless they are subclasses of the class containing the protected member.
+  2.  protected: The protected access modifier allows access to the member within the same package or by subclasses (will discuss later about subclasses), even if they are in a different package. It restricts access to classes outside the package unless they are subclasses of the class containing the protected member.
 
-   3. default (no modifier): If no access modifier is specified, the default access level is package-private. Members with default access are accessible only within the same package. They cannot be accessed from outside the package, even by subclasses.
+  3.  default (no modifier): If no access modifier is specified, the default access level is package-private. Members with default access are accessible only within the same package. They cannot be accessed from outside the package, even by subclasses.
 
-   4. private: The private access modifier restricts access to the member only within the same class. It is the most restrictive access level and prevents access from outside the class, including subclasses.
-
+  4.  private: The private access modifier restricts access to the member only within the same class. It is the most restrictive access level and prevents access from outside the class, including subclasses.
 
 let’s demonstrate the use of access modifiers with the Student class we used earlier.
 
@@ -263,16 +265,16 @@ let’s demonstrate the use of access modifiers with the Student class we used e
 public class Student {
     // Public access modifier
     public String name;
-    
+
     // Protected access modifier
     protected int age;
-    
+
     // Default (package-private) access modifier
     String major;
-    
+
     // Private access modifier
     private double gpa;
-    
+
     // Constructor
     public Student(String name, int age, String major, double gpa) {
         this.name = name;
@@ -280,7 +282,7 @@ public class Student {
         this.major = major;
         this.gpa = gpa;
     }
-    
+
     // Public method
     public void displayInfo() {
         System.out.println("Name: " + name);
@@ -288,17 +290,17 @@ public class Student {
         System.out.println("Major: " + major);
         System.out.println("GPA: " + gpa);
     }
-    
+
     // Protected method
     protected void study() {
         System.out.println(name + " is studying.");
     }
-    
+
     // Default method (package-private)
     void attendClass() {
         System.out.println(name + " is attending class.");
     }
-    
+
     // Private method
     private void calculateGPA() {
         // GPA calculation logic
@@ -307,14 +309,15 @@ public class Student {
 ```
 
 ## Encapsulation
+
 - Encapsulation refers to the bundling of data (attributes) and methods (functions) that operate on an object into a single unit, often referred to as a class.
 - Encapsulation hides the internal state and implementation details of an object from the outside world, providing controlled access to the object’s properties and behaviors.
 - The primary goal of encapsulation is to restrict access to some of the object’s components, while exposing only what is necessary and safe for the outside world.
 - In Java, encapsulation is achieved using access modifiers (public, private, protected, and default) to control the visibility and accessibility of class members (attributes and methods).
 - key principles and practices related to encapsulation in Java:
-    1. Declare the attributes (fields) of a class as private.
-    2. Provide public methods (getters and setters) to access and manipulate the private fields. Getters allow read-only access, and setters allow modification, ensuring controlled access to the data.
-    3. Let’s achieve encapsulation in previously discussed Car class by declaring attributes as private and providing getters and setters .
+  1. Declare the attributes (fields) of a class as private.
+  2. Provide public methods (getters and setters) to access and manipulate the private fields. Getters allow read-only access, and setters allow modification, ensuring controlled access to the data.
+  3. Let’s achieve encapsulation in previously discussed Car class by declaring attributes as private and providing getters and setters .
 
 ```
 public class Student {
@@ -399,6 +402,7 @@ public class Main {
 - Encapsulation is a key principle in Java and other object-oriented languages that promotes data integrity, code maintainability, and code security by controlling access to the internal state of objects. It is an essential practice for creating well-structured and robust Java programs.
 
 ## Inheritance
+
 - Inheritance is a key concept in object-oriented programming (OOP) that allows a new class (called a subclass or derived class) to inherit attributes and methods from an existing class (called a superclass or base class).
 - The subclass can then extend or modify the behavior of the superclass while also inheriting its properties.
 - Superclass (Base Class): The class whose members (attributes and methods) are inherited by another class is known as the superclass or base class.
@@ -491,14 +495,14 @@ public class Main {
 
         // Accessing properties of the superclass (Student)
         System.out.println("Student Information:");
-        System.out.println("Name: " + gradStudent.getName()); 
-        System.out.println("Age: " + gradStudent.getAge()); 
-        System.out.println("Major: " + gradStudent.getMajor()); 
+        System.out.println("Name: " + gradStudent.getName());
+        System.out.println("Age: " + gradStudent.getAge());
+        System.out.println("Major: " + gradStudent.getMajor());
 
         // Accessing properties of the subclass (GraduateStudent)
         System.out.println("\nGraduate Student Information:");
-        System.out.println("Advisor: " + gradStudent.getAdvisor()); 
-        System.out.println("Research Topic: " + gradStudent.getResearchTopic()); 
+        System.out.println("Advisor: " + gradStudent.getAdvisor());
+        System.out.println("Research Topic: " + gradStudent.getResearchTopic());
 
         // Calling methods of the superclass
         System.out.println("\nDisplaying student information:");
@@ -512,46 +516,54 @@ public class Main {
 ```
 
 ### Types of inheritance
+
 1. Single inheritance
+
 - In single inheritance, a subclass inherits from only one superclass.
 - Java supports single inheritance, where a class can have only one direct superclass.
 - Example: Class Dog inherits from class Animal.
 
 2. Multilevel Inheritance
+
 - In multilevel inheritance, a subclass inherits from another subclass, forming a chain of inheritance.
 - Each subclass in the chain inherits properties and behaviors from its immediate superclass.
 - Example: Class GrandChild inherits from class Child, which in turn inherits from class Parent.
 
 3. Hierarchical Inheritance
+
 - In hierarchical inheritance, multiple subclasses inherit from a single superclass.
 - Each subclass shares common properties and behaviors inherited from the same superclass.
 - Example: Classes Cat, Dog, and Rabbit all inherit from class Animal.
 
 4. Multiple Inheritance (Not Supported in Java)
+
 - Multiple inheritance allows a subclass to inherit from multiple superclasses.
 - While Java doesn’t support multiple inheritance of classes, it supports multiple inheritance of interfaces through interface implementation.
 - Example: Class Student inherits from both class Person and class Scholar.
 
 5. Hybrid Inheritance (Not Supported in Java)
+
 - Hybrid inheritance is a combination of two or more types of inheritance.
 - It can involve single, multilevel, and hierarchical inheritance, along with multiple inheritance if supported by the programming language.
 - Java doesn’t directly support hybrid inheritance due to the absence of multiple inheritance of classes.
 
 ## Polymorphism
+
 - The word “poly” means many and “morphs” means forms, so it means many forms. we can define Java Polymorphism as the ability of a message to be displayed in more than one form. It allows us to perform a single action in different ways.
 - In Java, polymorphism is primarily achieved through method overriding and method overloading.
 
 ### Compile-Time Polymorphism (Static Binding or Early Binding) — Method overloading.
+
 - Compile-time polymorphism occurs when the compiler determines which method or operation to execute at compile time based on the method signature (method overloading)
-Method overloading allows multiple methods with the same name, but different parameter lists within the same class.
+  Method overloading allows multiple methods with the same name, but different parameter lists within the same class.
 
 ```
 public class Box {
-    
+
     public double calculateVolume(double sideLength) {
         return sideLength * sideLength * sideLength;
     }
-    
+
     public double calculateArea(double length, double width, double height) {
         return length * width * height;
     }
@@ -561,7 +573,7 @@ public class Box {
 ### Run-Time Polymorphism (Dynamic Binding or Late Binding) — Method overriding.
 
 - Run-time polymorphism occurs when the JVM determines which method or operation to execute at runtime based on the actual object type (method overriding).
-Method overriding allows a subclass to provide a specific implementation of a method that is already defined in its superclass.
+  Method overriding allows a subclass to provide a specific implementation of a method that is already defined in its superclass.
 
 ```
 class Shape {
@@ -573,11 +585,11 @@ class Shape {
 
 class Circle extends Shape {
     private double radius;
-    
+
     public Circle(double radius) {
         this.radius = radius;
     }
-    
+
     @Override
     public double calculateArea() {
         return Math.PI * radius * radius; // Override to calculate the area of a circle
@@ -587,12 +599,12 @@ class Circle extends Shape {
 class Triangle extends Shape {
     private double base;
     private double height;
-    
+
     public Triangle(double base, double height) {
         this.base = base;
         this.height = height;
     }
-    
+
     @Override
     public double calculateArea() {
         return 0.5 * base * height; // Override to calculate the area of a triangle
@@ -601,10 +613,12 @@ class Triangle extends Shape {
 ```
 
 ## Abstraction
+
 - Abstraction involves hiding the unnecessary details while exposing only what is relevant and important.
 - In Java, abstraction is primarily achieved through abstract classes and interfaces.
 
 ### Abstract classes
+
 - An abstract class is a class that cannot be instantiated on its own and is meant to be extended by other classes.
 - It may contain abstract methods (methods without a body) that are meant to be implemented by its subclasses.
 - Abstract classes can also have concrete (implemented) methods.
@@ -623,11 +637,11 @@ abstract class Shape {
 
 class Circle extends Shape {
     private double radius;
-    
+
     public Circle(double radius) {
         this.radius = radius;
     }
-    
+
     @Override
     public double calculateArea() {
         return Math.PI * radius * radius; // Override to calculate the area of a circle
@@ -637,12 +651,12 @@ class Circle extends Shape {
 class Triangle extends Shape {
     private double base;
     private double height;
-    
+
     public Triangle(double base, double height) {
         this.base = base;
         this.height = height;
     }
-    
+
     @Override
     public double calculateArea() {
         return 0.5 * base * height; // Override to calculate the area of a triangle
@@ -652,14 +666,14 @@ public class Main {
     public static void main(String[] args) {
         // Create a Shape object
         Shape shape = new Shape(); // Compilation Error: Cannot instantiate the abstract class Shape
-        
+
         // Create a Circle object
         Shape circle = new Circle(5.0);
-        
+
         // Calculate and print the area of the circle
         double circleArea = circle.calculateArea();
         System.out.println("Area of the circle: " + circleArea);
-        
+
         // Set the color of the circle
         circle.setColor("Red");
     }
@@ -680,17 +694,17 @@ public class Main {
 public interface Shape {
     // Abstract method to calculate the area
     double calculateArea();
-    
+
 }
 
 // Circle class implementing the Shape interface
 public class Circle implements Shape {
     private double radius;
-    
+
     public Circle(double radius) {
         this.radius = radius;
     }
-    
+
     @Override
     public double calculateArea() {
         return Math.PI * radius * radius;
@@ -701,12 +715,12 @@ public class Circle implements Shape {
 public class Triangle implements Shape {
     private double base;
     private double height;
-    
+
     public Triangle(double base, double height) {
         this.base = base;
         this.height = height;
     }
-    
+
     @Override
     public double calculateArea() {
         return 0.5 * base * height;
@@ -716,22 +730,22 @@ public class Triangle implements Shape {
     public static void main(String[] args) {
         // Create a Circle object
         Shape circle = new Circle(5.0);
-        
+
         // Calculate and print the area of the circle
         double circleArea = circle.calculateArea();
         System.out.println("Area of the circle: " + circleArea);
-        
+
         // Create a Triangle object
         Shape triangle = new Triangle(4.0, 3.0);
-        
+
         // Calculate and print the area of the triangle
         double triangleArea = triangle.calculateArea();
         System.out.println("Area of the triangle: " + triangleArea);
     }
 }
 ```
-- Abstract classes and Interfaces are used to define a generic template for other classes to follow. They define a set of rules and guidelines that their subclasses must follow. By providing an abstract class, we can ensure that the classes that extend it have a consistent structure and behavior. This makes the code more organized and easier to maintain.
 
+- Abstract classes and Interfaces are used to define a generic template for other classes to follow. They define a set of rules and guidelines that their subclasses must follow. By providing an abstract class, we can ensure that the classes that extend it have a consistent structure and behavior. This makes the code more organized and easier to maintain.
 
 ### Up casting and Down casting in Abstraction
 
@@ -743,13 +757,13 @@ public class Triangle implements Shape {
 public interface Shape {
     // Abstract method to calculate the area
     double calculateArea();
-    
+
 }
 
 // Circle class implementing the Shape interface
 public class Circle implements Shape {
     private double radius;
-    
+
     public Circle(double radius) {
         this.radius = radius;
     }
@@ -758,7 +772,7 @@ public class Circle implements Shape {
     public double getRadius() {
         return this.radius;
     }
-    
+
     @Override
     public double calculateArea() {
         return Math.PI * radius * radius;
@@ -769,7 +783,7 @@ public class Main {
    public static void main(String[] args) {
         // Implicit Upcasting
         Shape circle = new Circle(5.0);
-        
+
         // We have access to calculate area, since it is overridden from the Shape interface (Parent)
         double circleArea = circle.calculateArea();
         System.out.println("Area of the circle: " + circleArea);
@@ -777,20 +791,21 @@ public class Main {
         // compilation error, because it's not part of the Shape interface (Parent)
         System.out.println(circle.getRadius());
 
-        // Implicit down casting: compilation error 
+        // Implicit down casting: compilation error
         Circle circle2 = new Shape();
 
-        // Explicit down casting        
+        // Explicit down casting
         Circle circle2 = (Circle) circle;
-      
-        // We have access, because the reference variable circle2 is of type sub class, which has this method 
+
+        // We have access, because the reference variable circle2 is of type sub class, which has this method
         System.out.println(circle2.getRadius());
-        
+
    }
 }
 ```
 
 ## Conclusion
+
 - In conclusion, Object-Oriented Programming (OOP) is a powerful paradigm that promotes code organization, reusability, and maintainability by modeling real-world entities as objects with properties and behaviors. Throughout this article, we’ve explored the four main concepts of OOP: encapsulation, inheritance, polymorphism, and abstraction, and how they can be applied in various scenarios to improve software design and development.
 
 - Encapsulation allows us to hide the internal details of an object and expose only the necessary functionalities through well-defined interfaces, enhancing security and modularity.
@@ -800,4 +815,3 @@ public class Main {
 - Polymorphism allows us to perform a single action in different ways.
 
 - Abstraction simplifies complex systems by focusing on essential features and hiding implementation details, promoting clarity and maintainability.
-
