@@ -440,7 +440,7 @@ Let's get started with creating a React app. Follow these steps to create a simp
         <br/>
         <p>
           Edit src/App.js and save to reload.
-        </p> 
+        </p>
         <a
           style={{color: '#61dafb'}}
           href="https://reactjs.org"
