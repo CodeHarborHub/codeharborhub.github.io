@@ -41,7 +41,7 @@ You can also use the `typeof` operator to check if a variable is `undefined`. Th
 
 ```javascript title="app.js"
 let undefinedValue;
-console.log(typeof undefinedValue === 'undefined'); // Output: true
+console.log(typeof undefinedValue === "undefined"); // Output: true
 ```
 
 ## Common Operations with Undefined Values
@@ -73,7 +73,7 @@ console.log(noReturnValue()); // Output: undefined
 You can delete properties from an object using the `delete` operator. After deleting a property, accessing the property will return `undefined`. Here's an example:
 
 ```javascript title="app.js"
-let person = { name: 'Alice', age: 30 };
+let person = { name: "Alice", age: 30 };
 
 delete person.age;
 
@@ -85,9 +85,9 @@ console.log(person.age); // Output: undefined
 You can check if an object has a property with an `undefined` value using the `in` operator. The `in` operator returns `true` if the property exists in the object, even if its value is `undefined`. Here's an example:
 
 ```javascript title="app.js"
-let person = { name: 'Alice', age: undefined };
+let person = { name: "Alice", age: undefined };
 
-console.log('age' in person); // Output: true
+console.log("age" in person); // Output: true
 ```
 
 ### Passing Undefined Arguments
@@ -99,7 +99,7 @@ function greet(name, message) {
   console.log(`Hello, ${name}! ${message}`);
 }
 
-greet('Alice'); // Output: Hello, Alice! undefined
+greet("Alice"); // Output: Hello, Alice! undefined
 ```
 
 In this example, the `greet` function is called with one argument (`'Alice'`) instead of two. The `message` parameter is assigned the value `undefined` because it is missing in the function call.

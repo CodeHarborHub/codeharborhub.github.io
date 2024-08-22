@@ -16,18 +16,17 @@ In JavaScript, a string is a sequence of characters enclosed within single or do
 You can create strings in JavaScript using single quotes (`'`), double quotes (`"`), or backticks (`` ` ``). Here are examples of each:
 
 ```javascript title="app.js"
-let singleQuoted = 'Hello, World!';
+let singleQuoted = "Hello, World!";
 let doubleQuoted = "Hello, World!";
 let backticks = `Hello, World!`;
 ```
-
 
 ### Single Quotes
 
 Strings enclosed within single quotes are the most common way to create strings in JavaScript. You can use single quotes to represent text data:
 
 ```javascript title="app.js"
-let singleQuoted = 'Hello, World!';
+let singleQuoted = "Hello, World!";
 
 console.log(singleQuoted); // Output: Hello, World!
 ```
@@ -61,11 +60,11 @@ Strings in JavaScript support various operations, such as concatenation, interpo
 String concatenation is the process of combining two or more strings into a single string. You can use the `+` operator or template literals for string concatenation:
 
 ```javascript title="app.js"
-let firstName = 'John';
-let lastName = 'Doe';
+let firstName = "John";
+let lastName = "Doe";
 
 // Using the + operator
-let fullName = firstName + ' ' + lastName;
+let fullName = firstName + " " + lastName;
 console.log(fullName); // Output: John Doe
 
 // Using template literals
@@ -78,7 +77,7 @@ console.log(fullNameTemplate); // Output: John Doe
 String interpolation allows you to embed expressions within a string. You can use template literals to interpolate variables and expressions directly within the string:
 
 ```javascript title="app.js"
-let name = 'Alice';
+let name = "Alice";
 let greeting = `Hello, ${name}!`;
 
 console.log(greeting); // Output: Hello, Alice!
@@ -111,20 +110,20 @@ JavaScript provides built-in methods for working with strings. Here are some com
 Here's an example using some of these string methods:
 
 ```javascript title="app.js"
-let text = 'Hello, World!';
+let text = "Hello, World!";
 let substring = text.substring(0, 5); // Extracts 'Hello'
 let uppercaseText = text.toUpperCase(); // Converts text to uppercase
-let replacedText = text.replace('World', 'JavaScript'); // Replaces 'World' with 'JavaScript'
-let splitText = text.split(','); // Splits text into an array ['Hello', ' World!']
-let includesText = text.includes('Hello'); // Checks if text contains 'Hello' (returns true)
-let indexOfText = text.indexOf('World'); // Returns the index of 'World' (returns 7)
+let replacedText = text.replace("World", "JavaScript"); // Replaces 'World' with 'JavaScript'
+let splitText = text.split(","); // Splits text into an array ['Hello', ' World!']
+let includesText = text.includes("Hello"); // Checks if text contains 'Hello' (returns true)
+let indexOfText = text.indexOf("World"); // Returns the index of 'World' (returns 7)
 let length = text.length; // Returns the length of the text (returns 13)
 let charAt = text.charAt(7); // Returns the character at index 7 (returns 'W')
-let startsWith = text.startsWith('Hello'); // Checks if text starts with 'Hello' (returns true)
-let endsWith = text.endsWith('World!'); // Checks if text ends with 'World!' (returns true)
+let startsWith = text.startsWith("Hello"); // Checks if text starts with 'Hello' (returns true)
+let endsWith = text.endsWith("World!"); // Checks if text ends with 'World!' (returns true)
 let repeatText = text.repeat(2); // Repeats text twice ('Hello, World!Hello, World!')
-let paddedText = text.padStart(20, '*'); // Pads text with '*' until it reaches a length of 20 from the start
-let trimmedText = '  Hello, World!  '.trim(); // Removes whitespace from the beginning and end of the text
+let paddedText = text.padStart(20, "*"); // Pads text with '*' until it reaches a length of 20 from the start
+let trimmedText = "  Hello, World!  ".trim(); // Removes whitespace from the beginning and end of the text
 
 console.log(substring);
 console.log(uppercaseText);

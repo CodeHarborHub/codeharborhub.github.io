@@ -1,5 +1,5 @@
 ---
-title: 'Artificial Intelligence in Healthcare: Innovations and Ethical Considerations'
+title: "Artificial Intelligence in Healthcare: Innovations and Ethical Considerations"
 sidebar_label: AI in Healthcare
 authors: [nayanika-mukherjee]
 tags: [AI, healthcare, machine learning, medical devices, ethics, case studies]
@@ -72,10 +72,11 @@ print(f'Accuracy: {accuracy}')
 ```
 
 ## AI-Powered Medical Devices
+
 AI-powered medical devices enhance patient care and operational efficiency:
 
 - **Wearables:** Devices that monitor vital signs and alert patients and doctors to potential issues.
-Robotics: Surgical robots that assist in precision surgeries.
+  Robotics: Surgical robots that assist in precision surgeries.
 - **Diagnostic Tools:** AI-driven tools that provide real-time diagnostic support to clinicians.
 
 ### Example: Using AI in Wearables

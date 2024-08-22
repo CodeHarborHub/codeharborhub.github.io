@@ -1,5 +1,5 @@
 ---
-title: 'Automating Tasks with Python: Using the OS and Subprocess Modules'
+title: "Automating Tasks with Python: Using the OS and Subprocess Modules"
 sidebar_label: Automating Tasks with Python
 authors: [nayanika-mukherjee]
 tags: [automation, Python, OS module, Subprocess module, technology]

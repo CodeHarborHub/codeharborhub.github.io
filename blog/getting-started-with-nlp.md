@@ -1,11 +1,10 @@
 ---
-title: 'Getting Started with Natural Language Processing (NLPs)'
+title: "Getting Started with Natural Language Processing (NLPs)"
 sidebar_label: NLP Basics
 authors: [nayanika-mukherjee]
 tags: [natural language processing, nlp, machine learning, technology]
 date: 2024-07-27
 hide_table_of_contents: true
-
 ---
 
 Natural Language Processing (NLP) is a field of artificial intelligence that focuses on the interaction between computers and humans through natural language. The goal of NLP is to enable computers to understand, interpret, and generate human language in a way that is valuable. This documentation provides an introduction to NLP, its basic concepts, techniques, tools, and practical applications.
@@ -32,6 +31,7 @@ Text preprocessing is a crucial step in NLP, involving cleaning and preparing te
 - **Stemming and Lemmatization:** Reducing words to their base forms.
 
 Example of text preprocessing in Python:
+
 ```python
 import nltk
 from nltk.corpus import stopwords
@@ -76,6 +76,7 @@ To build a simple NLP model, follow these steps:
 6. **Evaluation:** Evaluate the model's performance using appropriate metrics.
 
 Example of text classification using scikit-learn:
+
 ```python
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
@@ -140,10 +141,11 @@ Future trends in NLP include:
 - **Human-AI Collaboration:** Combining human expertise with AI for better results.
 
 :::tip
+
 - Start Simple: Begin with basic NLP tasks and gradually move to complex ones.
 - Experiment: Try different preprocessing techniques, models, and libraries.
 - Stay Updated: Follow the latest advancements in NLP through research papers and conferences.
-:::
+  :::
 
 ## Resources for Further Learning
 

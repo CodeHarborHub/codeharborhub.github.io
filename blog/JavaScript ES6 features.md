@@ -1,5 +1,5 @@
 ---
-title: 'Unveiling the Significance of JS ES6 features'
+title: "Unveiling the Significance of JS ES6 features"
 sidebar_label: Design-Patterns
 authors: [dharshibalasubramaniyam, ajay-dhangar]
 tags: [ES6, javascript, best-practices]
@@ -32,7 +32,7 @@ Arrow functions are especially useful when working with higher-order functions l
 Template literals are a new way to create strings in JavaScript. They allow you to embed expressions and multiline strings directly within the string using backticks (\`\`). Here's an example of a template literal:
 
 ```javascript title="app.js"
-const name = 'Alice';
+const name = "Alice";
 const greeting = `Hello, ${name}!`;
 
 console.log(greeting); // Output: Hello, Alice!
@@ -59,13 +59,13 @@ Destructuring assignment can also be used with objects to extract properties int
 Default parameters allow you to specify default values for function parameters in case no argument is provided. This feature simplifies the process of handling missing arguments and provides a more robust way to define function behavior. Here's an example of default parameters:
 
 ```javascript title="app.js"
-function greet(name = 'World') {
+function greet(name = "World") {
   console.log(`Hello, ${name}!`);
 }
 
 greet(); // Output: Hello, World!
 
-greet('Alice'); // Output: Hello, Alice!
+greet("Alice"); // Output: Hello, Alice!
 ```
 
 Default parameters make functions more flexible and self-contained by providing sensible defaults for missing arguments. They enhance code clarity and reduce the need for explicit parameter checks.
