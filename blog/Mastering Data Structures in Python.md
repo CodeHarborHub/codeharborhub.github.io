@@ -1,5 +1,5 @@
 ---
-title: 'Mastering Data Structures in Python'
+title: "Mastering Data Structures in Python"
 sidebar_label: Data Structures
 authors: [santhosh-siddhardha]
 tags: [data-structures, python, best-practices]
@@ -16,6 +16,7 @@ Data structures are essential components in computer science, enabling efficient
 ### Types of Data Structures
 
 1. **Primitive Data Structures**
+
    - Integers
    - Floats
    - Strings

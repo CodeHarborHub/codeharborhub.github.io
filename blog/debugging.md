@@ -7,7 +7,7 @@ description: Step-by-Step Guide Debugging Tests in Create React App
 draft: false
 ---
 
-Debugging tests in a React application can be challenging, but fear not! We've got you covered with this step-by-step guide to help you overcome the common hurdles and make your tests shine. 
+Debugging tests in a React application can be challenging, but fear not! We've got you covered with this step-by-step guide to help you overcome the common hurdles and make your tests shine.
 
 <!-- truncate -->
 
@@ -27,7 +27,7 @@ cd my-app
 Create a simple React component (e.g., a Button) in a separate file and write a test for it. For example:
 
 ```jsx title="src/Button.js"
-import React from 'react';
+import React from "react";
 
 const Button = () => {
   return <button>Click Me</button>;
@@ -37,13 +37,13 @@ export default Button;
 ```
 
 ```jsx title="src/Button.test.js"
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import Button from './Button';
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import Button from "./Button";
 
-test('renders the button', () => {
+test("renders the button", () => {
   render(<Button />);
-  const buttonElement = screen.getByText('Click Me');
+  const buttonElement = screen.getByText("Click Me");
   expect(buttonElement).toBeInTheDocument();
 });
 ```
@@ -73,10 +73,10 @@ Now, let's employ some debugging techniques to resolve the issue:
 Place `console.log` statements at different points in your test to check the values of variables or components. For example:
 
 ```jsx
-test('renders the button', () => {
+test("renders the button", () => {
   render(<Button />);
-  console.log(screen.getByRole('button').outerHTML);
-  const buttonElement = screen.getByText('Click Me');
+  console.log(screen.getByRole("button").outerHTML);
+  const buttonElement = screen.getByText("Click Me");
   console.log(buttonElement); // Check the button element in the console
   expect(buttonElement).toBeInTheDocument();
 });
@@ -87,10 +87,10 @@ test('renders the button', () => {
 You can use the `debugger` keyword to pause test execution at a specific point. Open your browser's developer tools to inspect variables and the call stack. For example:
 
 ```jsx
-test('renders the button', () => {
+test("renders the button", () => {
   render(<Button />);
   debugger; // Execution will pause here, and you can inspect the app and test code.
-  const buttonElement = screen.getByText('Click Me');
+  const buttonElement = screen.getByText("Click Me");
   expect(buttonElement).toBeInTheDocument();
 });
 ```

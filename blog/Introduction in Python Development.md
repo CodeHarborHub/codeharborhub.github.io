@@ -1,11 +1,11 @@
 ---
-title: 'Comprehensive Documentation on Linux Development and Cybersecurity'
+title: "Comprehensive Documentation on Linux Development and Cybersecurity"
 sidebar_label: Linux development and cyber security
 authors: [pujan-sarkar]
-tags: [cyber security, python , internet, technology]
+tags: [cyber security, python, internet, technology]
 date: 2024-07-11
 hide_table_of_contents: true
---- 
+---
 
 Python, renowned for its simplicity, readability, and versatility, is a popular programming language used across various domains, including web development, data science, machine learning, and automation. This documentation explores the essential aspects of Python development, including its ecosystem, tools, libraries, and best practices.
 

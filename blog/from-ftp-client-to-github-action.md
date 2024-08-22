@@ -1,5 +1,5 @@
 ---
-title: 'CI evolution: From FTP client to GitHub Action'
+title: "CI evolution: From FTP client to GitHub Action"
 author: Ajay Dhangar
 tags: [ftp, sftp, GitHub Action, ftp deploy]
 date: 2024-03-15 11:37:46
