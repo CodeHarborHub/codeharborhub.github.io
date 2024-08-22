@@ -1,16 +1,15 @@
-
 ---
-title: 'Comprehensive Documentation on Linux Development and Cybersecurity'
+title: "Comprehensive Documentation on Linux Development and Cybersecurity"
 sidebar_label: Linux development and cyber security
 authors: [pujan-sarkar]
-tags: [cyber security, Linux , internet, technology]
+tags: [cyber security, Linux, internet, technology]
 date: 2024-06-23
 hide_table_of_contents: true
---- 
-
-## Introduction
+---
 
 Linux, renowned for its stability, security, and open-source nature, plays a pivotal role in modern computing environments, particularly in development and cybersecurity. This documentation explores how Linux facilitates software development processes and serves as a secure foundation for cybersecurity operations.
+
+<!-- truncate -->
 
 ## Linux in Development
 

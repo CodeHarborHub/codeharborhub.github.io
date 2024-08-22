@@ -1,5 +1,5 @@
 ---
-title: 'Getting Started with Serverless Architecture Using AWS Lambda'
+title: "Getting Started with Serverless Architecture Using AWS Lambda"
 sidebar_label: Serverless Architecture and AWS Lambda
 authors: [nayanika-mukherjee]
 tags: [serverless, AWS Lambda, cloud computing, Python, technology]
@@ -7,9 +7,9 @@ date: 2024-07-22
 hide_table_of_contents: true
 ---
 
-## Introduction
-
 Serverless architecture is a cloud computing execution model where the cloud provider dynamically manages the allocation and provisioning of servers. AWS Lambda, a key component of serverless architecture, allows you to run code without provisioning or managing servers. This guide will introduce you to AWS Lambda and provide a step-by-step approach to getting started with serverless architecture.
+
+<!-- truncate -->
 
 ## Key Concepts
 
@@ -42,7 +42,9 @@ Before creating a Lambda function, you need an IAM role that Lambda assumes when
 ```bash
 aws iam create-role --role-name lambda-execution-role --assume-role-policy-document file://trust-policy.json
 ```
+
 `trust-policy.json`:
+
 ```json
 {
   "Version": "2012-10-17",
@@ -57,7 +59,9 @@ aws iam create-role --role-name lambda-execution-role --assume-role-policy-docum
   ]
 }
 ```
+
 Attach the necessary policies to the role:
+
 ```bash
 aws iam attach-role-policy --role-name lambda-execution-role --policy-arn arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
 ```
@@ -65,9 +69,11 @@ aws iam attach-role-policy --role-name lambda-execution-role --policy-arn arn:aw
 ## Writing and Deploying Lambda Functions
 
 ### Basic Lambda Function
+
 Here is a simple Python function that returns a greeting.
 
 `lambda_function.py`:
+
 ```python
 def lambda_handler(event, context):
     return {
@@ -77,12 +83,15 @@ def lambda_handler(event, context):
 ```
 
 ### Creating and Deploying the Function
+
 - Create a ZIP file containing your code:
+
 ```bash
 zip function.zip lambda_function.py
 ```
 
 - Deploy the Lambda Function:
+
 ```bash
 aws lambda create-function --function-name HelloWorldFunction \
 --zip-file fileb://function.zip --handler lambda_function.lambda_handler \
@@ -98,34 +107,44 @@ Lambda functions have an execution model that includes:
 - Execution Duration: You can configure the timeout for your function (default is 3 seconds, maximum is 15 minutes).
 
 ## Managing Lambda Functions
+
 - Updating a Function
-To update the function code:
+  To update the function code:
+
 ```bash
 zip function.zip lambda_function.py
 aws lambda update-function-code --function-name HelloWorldFunction --zip-file fileb://function.zip
 ```
 
 - Monitoring and Logging
-AWS Lambda integrates with Amazon CloudWatch to provide monitoring and logging. You can view logs by navigating to the CloudWatch Logs in the AWS Management Console.
+  AWS Lambda integrates with Amazon CloudWatch to provide monitoring and logging. You can view logs by navigating to the CloudWatch Logs in the AWS Management Console.
 
 ## Advanced Topics
 
 ### Environment Variables
+
 You can use environment variables to pass configuration settings to your Lambda function.
+
 ```bash
 aws lambda update-function-configuration --function-name HelloWorldFunction \
 --environment "Variables={ENV_VAR1=value1,ENV_VAR2=value2}"
 ```
+
 ### Layers
+
 Lambda layers allow you to package libraries and other dependencies separately from your function code.
 
 - Create a layer:
+
 ```bash
 zip -r myLayer.zip python/
 aws lambda publish-layer-version --layer-name myLayer --zip-file fileb://myLayer.zip
 ```
+
 ### VPC Integration
+
 You can configure your Lambda function to access resources in a VPC.
+
 ```bash
 aws lambda update-function-configuration --function-name HelloWorldFunction \
 --vpc-config SubnetIds=subnet-abc123,SecurityGroupIds=sg-abc123
@@ -134,26 +153,34 @@ aws lambda update-function-configuration --function-name HelloWorldFunction \
 ## Performance and Scaling
 
 ### Cold Starts
+
 A cold start occurs when a new instance of the function is invoked after being idle. To mitigate cold starts:
 
 - Optimize initialization code.
 - Use Provisioned Concurrency for predictable performance.
 
 ### Concurrency Limits
+
 You can configure reserved concurrency to limit the number of concurrent executions:
+
 ```bash
 aws lambda put-function-concurrency --function-name HelloWorldFunction --reserved-concurrent-executions 10
 ```
+
 ## Testing and Debugging
 
 ### Local Testing
+
 Use the AWS SAM CLI to test Lambda functions locally:
+
 ```bash
 sam local invoke HelloWorldFunction -e event.json
 ```
 
 ### Debugging
+
 Utilize CloudWatch Logs to debug issues by adding log statements in your code:
+
 ```python
 import logging
 logger = logging.getLogger()
@@ -166,10 +193,13 @@ def lambda_handler(event, context):
         'body': 'Hello, World!'
     }
 ```
+
 ## Real-World Examples
 
 ### S3 Event Trigger
+
 Trigger a Lambda function when an object is uploaded to an S3 bucket:
+
 ```python
 import json
 
@@ -186,7 +216,9 @@ def lambda_handler(event, context):
 ```
 
 ### DynamoDB Stream
+
 Process DynamoDB stream events:
+
 ```python
 import json
 

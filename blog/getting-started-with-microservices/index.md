@@ -7,6 +7,9 @@ date: 2024-06-17
 hide_table_of_contents: true
 ---
 
+In the era of cloud-native development, microservices have emerged as a popular architectural style for building scalable, resilient, and maintainable applications. This guide provides an introduction to microservices, explores their benefits, and offers a step-by-step tutorial on developing a microservice application using Spring Boot and MongoDB.
+
+<!-- truncate -->
 
 ## 1. Understanding the importance Microservices
 
@@ -685,9 +688,9 @@ Then check the endpoints using postman to ensure that everything is working cool
 - There will be no changes in the eureka dashboard. It will be display same as before.
 - Let’s check the add expense endpoint from frontend.
 
-    ![img10](./images/image10.png)
+  ![img10](./images/image10.png)
 
-    ![img11](./images/image11.png)
+  ![img11](./images/image11.png)
 
 - In wrapping up our discussion on microservices, there’s one critical aspect left to address: the challenge of accessing microservices individually via their own port numbers. This approach becomes impractical as the number of microservices, or instances thereof increases. That’s precisely where an API gateway steps in.
 
@@ -780,7 +783,7 @@ Now let’s see how we can develop an Api-gateway for our application.
 - It matches the incoming request against the defined routes based on the configured predicates. In this case, it identifies that the request path starts with “/expense-service/”, indicating that it should be directed to the expense service.
 - Before forwarding the request to the expense service, the API gateway rewrites the URI to match the expected format of the microservice. Since the expense service expects requests without the “/expense-service” prefix, the API gateway removes this prefix from the URI.
 - Once the URI is properly formatted, the API gateway forwards the request to the identified microservice. In this example, it sends the request to the expense service, ensuring that it reaches the correct endpoint (“/expense/all”).
-  
+
   Let’s check this in post man.
 
   ![img13](./images/image13.png)

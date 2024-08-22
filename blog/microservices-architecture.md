@@ -1,5 +1,5 @@
 ---
-title: 'Microservices Architecture: Design, Implementation, and Monitoring'
+title: "Microservices Architecture: Design, Implementation, and Monitoring"
 sidebar_label: Microservices Basics
 authors: [nayanika-mukherjee]
 tags: [microservices, architecture, spring boot, docker, kubernetes, monitoring]
@@ -7,9 +7,9 @@ date: 2024-07-29
 hide_table_of_contents: true
 ---
 
-## Introduction
-
 Microservices architecture is an approach to designing software systems where the application is broken down into smaller, loosely coupled, and independently deployable services. Each service focuses on a specific business functionality and communicates with other services through well-defined APIs. This architecture enables easier maintenance, scalability, and faster deployment cycles.
+
+<!-- truncate -->
 
 ## Designing Microservices Architecture
 
@@ -42,6 +42,7 @@ public class ExampleController {
     }
 }
 ```
+
 ### Example: Dockerizing a Spring Boot Application
 
 ```dockerfile
@@ -57,6 +58,7 @@ COPY target/myapp.jar /app/myapp.jar
 # Run the application
 ENTRYPOINT ["java", "-jar", "myapp.jar"]
 ```
+
 ### Example: Deploying to Kubernetes
 
 ```yaml
@@ -75,10 +77,10 @@ spec:
         app: myapp
     spec:
       containers:
-      - name: myapp
-        image: myapp:latest
-        ports:
-        - containerPort: 8080
+        - name: myapp
+          image: myapp:latest
+          ports:
+            - containerPort: 8080
 ```
 
 ## Monitoring and Managing Microservices
@@ -137,6 +139,7 @@ spec:
 ## Real-World Examples and Performance Considerations
 
 ### Choosing the Right Tools and Frameworks
+
 Selecting the appropriate tools and frameworks depends on factors like:
 
 - **Language Preferences:** Spring Boot for Java, Flask for Python, Express for Node.js.
@@ -144,6 +147,7 @@ Selecting the appropriate tools and frameworks depends on factors like:
 - **Orchestration Requirements:** Kubernetes for managing containerized applications.
 
 ### Monitoring and Managing Microservices
+
 To ensure reliability and performance:
 
 - **Health Checks:** Regularly check the health of services using Kubernetes liveness and readiness probes.
@@ -151,16 +155,19 @@ To ensure reliability and performance:
 - **Circuit Breakers:** Implement fault tolerance with tools like Hystrix.
 
 ### Real-World Examples
+
 Several companies have successfully implemented microservices:
 
 - **Netflix:** Uses microservices to handle massive traffic and deliver streaming content.
 - **Amazon:** Migrated from a monolithic architecture to microservices to improve scalability and resilience.
 
 They have faced challenges such as:
+
 - **Complexity:** Managing numerous services can be complex.
 - **Data Consistency:** Ensuring consistency across distributed services.
 
 ### Performance Considerations
+
 Scaling microservices involves:
 
 - **Load Balancing:** Distributing traffic evenly across services using tools like NGINX or Kubernetes Ingress.

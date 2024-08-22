@@ -1,5 +1,5 @@
 ---
-title: 'Mastering Design Patterns in Java'
+title: "Mastering Design Patterns in Java"
 sidebar_label: Design-Patterns
 authors: [dharshibalasubramaniyam]
 tags: [design-patterns, java, best-practices]
@@ -7,17 +7,9 @@ date: 2024-06-18
 hide_table_of_contents: true
 ---
 
-- In the world of software engineering, turning ideas into actual code can be tricky.
+In software engineering, a design pattern is a general repeatable solution to a commonly occurring problem in software design. A design pattern isn't a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.
 
-- As developers, our goal is not just to make things work, but also to make sure our code is maintainable, scalable, adaptable and reusable.
-
-- Enter design patterns — the time-tested blueprints that empower us to tackle recurring design problems with elegance and efficiency.
-
-- At its heart, a design pattern is like a ready-made solution for common problems we face when designing software. These solutions are like shortcuts, saving us time and effort by using proven strategies that experts have refined over many years.
-
-- In this article, we’ll delve into some of the most important design patterns that every developer should be familiar with. We’ll explore their principles, why they’re useful, and how you can use them in real projects. Whether you’re struggling with creating objects, organizing relationships between classes, or managing how objects behave, there’s a design pattern that can help.
-
-- Let’s begin.
+<!-- truncate -->
 
 ## 1. Singleton pattern
 
@@ -66,7 +58,7 @@ public class Clipboard {
     private String value;
 
     private static Clipboard clipboard = null;
-  
+
     // Private constructor to prevent instantiation from outside
     private Clipboard() {}
 
@@ -93,7 +85,7 @@ public class Clipboard {
 ```
 public class Main {
     public static void main(String[] args) {
-        
+
         // Getting the singleton instances
         Clipboard clipboard1 = Clipboard.getInstance();
         Clipboard clipboard2 = Clipboard.getInstance();
@@ -110,6 +102,7 @@ public class Main {
 - Now, both clipboard1 and clipboard2 reference the same instance of the Clipboard class, ensuring consistency across the application.
 
 ## 2. Factory Design pattern
+
 - The Factory Design Pattern is a creational design pattern that provides an interface for creating objects in a super class but allows subclasses to decide which class to instantiate. In other words, it provides a way to delegate the instantiation logic to child classes.
 
 - Imagine you’re building a program that simulates a simple console based calculator. You have different types of operations like addition, subtraction, multiplication, division etc. Each operation has its own unique behavior. Now, you want to create these operation objects in your program based on customer choice.
@@ -203,23 +196,23 @@ public static void main(String[] args) {
  Output output = new ConsoleOutput();
 
  try {
- 
+
    System.out.println("\n1. Addition(+)\n2. Subtraction(-)\n3. Multiplication(*)\n4. Division(/)");
-   
+
    // getting choice from user
    System.out.println("\n\nSelect your operation (1-4): ");
    int choice = scan.nextInt()
-  
+
    // getting 2 operands from user
    System.out.println("Enter first operand: ");
    double operand1 = scan.nextDouble();
    System.out.println("Enter second operand: ");
    double operand2 = scan.nextDouble();
-   
+
    // create opeartion instance based on user choice
    OperationFactory operationFactory = new OperationFactoryImpl();
    Operation operation = operationFactory.getInstance(choice);
-   
+
    // printing result
    System.out.println("\nThis result is " + operation.calculate(operand1, operand2) + ".");
  }
@@ -234,7 +227,7 @@ public static void main(String[] args) {
 }
 ```
 
-- Here the Main class demonstrates the usage of the factory to create different operation objects without knowing their specific implementation classes (Loose coupling). 
+- Here the Main class demonstrates the usage of the factory to create different operation objects without knowing their specific implementation classes (Loose coupling).
 - It only interacts with the factory interface. Not only that, but we can also easily add new types of operations without changing existing client code. We are just needed to create a new concrete product and update the factory if necessary.
 
 ## 3. Builder pattern
@@ -275,7 +268,7 @@ public class User {
                 ", city: '" + city + '\'' +
                 " }";
     }
-    
+
     // builder class
     public static class UserBuilder {
         private String name; // required field
@@ -531,7 +524,6 @@ public class DecoratorMain {
 }
 ```
 
-
 - DecoratorMain Class: Contains the main() method where the decorator pattern is demonstrated. It creates a circle, decorates it with a border, and then further decorates it with a color. Finally, it calls the draw() method to visualize the decorated shape.
 - Now, with the implementation of the Decorator Pattern, our drawing application gains the remarkable ability to embellish not only circles but also a plethora of geometric shapes such as rectangles, triangles, and beyond. Moreover, the extensibility of this pattern enables us to seamlessly integrate additional decorators, offering features like transparency, diverse border styles (solid, dotted), and much more. This dynamic enhancement capability, achieved without altering the core structure of the shapes, underscores the pattern’s prowess in promoting code reusability, flexibility, and scalability.
 
@@ -628,9 +620,8 @@ public class YoutubeChannel implements Subject{
 }
 ```
 
-
 - Concrete Subject: The YoutubeChannel class implements the Subject interface. It maintains a list of subscribers and notifies them when a new event occurs.
-package observer;
+  package observer;
 
 ```
 public class YoutubeSubscriber implements Observer{
@@ -654,7 +645,6 @@ public class YoutubeSubscriber implements Observer{
     }
 }
 ```
-
 
 - Concrete Observer: The YoutubeSubscriber class implements the Observer interface. It defines the behavior to be performed when notified by a subject.
 
@@ -696,4 +686,5 @@ Dear Bob, Notification from MyChannel: LIVE_STREAM on JAVA for beginners
 - By using the Observer design pattern, the YouTube channel can easily notify all its subscribers whenever a new video is uploaded without tightly coupling the channel and its subscribers. This promotes a more flexible and maintainable design.
 
 ## Conclusion
+
 In conclusion, design patterns are indispensable tools for Java developers, offering proven solutions to recurring design problems and promoting code reusability, maintainability, and scalability. By understanding and implementing these patterns effectively, developers can craft robust, flexible, and easily maintainable software solutions. While mastering design patterns requires practice and experience, the benefits they bring to software development are invaluable. Whether you’re working on a small project or a large-scale enterprise application, leveraging design patterns empowers you to write cleaner, more efficient code and ultimately become a more proficient Java developer.

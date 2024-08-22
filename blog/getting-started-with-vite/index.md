@@ -24,6 +24,10 @@ date: 2024-03-17 12:15:07
 description: "Learn how to get started with React by creating a new app using Vite. Follow the steps to set up your development environment and build your first React application."
 ---
 
+In this blog post, we will learn how to get started with React by creating a new app using Vite. We will follow the steps to set up our development environment and build our first React application. We will explore the advantages of using Vite for React development and discuss its features, benefits, and community support. Let's dive in!
+
+<!-- truncate -->
+
 import './style.css';
 
 ![Getting Started with React and Vite](./react-and-vite.jpg)

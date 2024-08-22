@@ -1,5 +1,5 @@
 ---
-title: 'Cyber Security and the Web Explosion'
+title: "Cyber Security and the Web Explosion"
 sidebar_label: Cyber Security and Web Explosion
 authors: [pujan-sarkar]
 tags: [cyber security, web explosion, internet, technology]
@@ -7,9 +7,9 @@ date: 2024-06-23
 hide_table_of_contents: true
 ---
 
-## Introduction
-
 In the digital age, the exponential growth of the internet, often referred to as the web explosion, has transformed every facet of modern life. From personal communication to business operations, the internet has become a fundamental pillar. However, this explosion has also introduced significant challenges, particularly in the realm of cyber security. As we become increasingly interconnected, the need to protect sensitive information and maintain privacy has never been more critical.
+
+<!-- truncate -->
 
 ## Understanding the Web Explosion
 

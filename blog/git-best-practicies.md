@@ -1,5 +1,5 @@
 ---
-title: ' Git Best Practices: Commit Often, Perfect Later, Publish Once'
+title: " Git Best Practices: Commit Often, Perfect Later, Publish Once"
 sidebar_label: Git Best Practicies
 authors: [ajay-dhangar]
 tags: [git, best practicies]
@@ -8,6 +8,8 @@ hide_table_of_contents: true
 ---
 
 Git is a powerful tool for managing the development of software projects, but it can be challenging to use effectively. In this article, we'll take a look at some best practices for using Git, including how to structure your commits, how to manage branches, and how to collaborate with others. By following these best practices, you can make your development process more efficient and less error-prone.
+
+<!-- truncate -->
 
 ## Commit Often, Perfect Later, Publish Once
 
@@ -39,4 +41,4 @@ When you're collaborating with others, it's important to communicate effectively
 
 ## Conclusion
 
-Git is a powerful tool for managing the development of software projects, but it can be challenging to use effectively. By following best practices for using Git, such as committing often, structuring your commits, managing your branches, and collaborating with others, you can make your development process more efficient and less error-prone. By doing this, you can make it easier to understand the evolution of your codebase, to track down bugs, and to collaborate with others. Happy coding! 
+Git is a powerful tool for managing the development of software projects, but it can be challenging to use effectively. By following best practices for using Git, such as committing often, structuring your commits, managing your branches, and collaborating with others, you can make your development process more efficient and less error-prone. By doing this, you can make it easier to understand the evolution of your codebase, to track down bugs, and to collaborate with others. Happy coding!

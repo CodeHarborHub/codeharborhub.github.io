@@ -1,13 +1,15 @@
 ---
-title: 'IoT (Internet of Things): Integration and Application Development'
-slidebar_label: 'IoT: Integration and Application Development'
+title: "IoT (Internet of Things): Integration and Application Development"
+slidebar_label: "IoT: Integration and Application Development"
 authors: [nayanika-mukherjee]
 tags: [IoT, Internet of Things, Sensors, Actuators, Cloud, Edge Computing]
 date: 2024-07-31
 hide_table_of_contents: true
 ---
 
-The Internet of Things (IoT) represents a network of interconnected devices that communicate and share data to drive intelligent actions, transforming industries and everyday life.
+The Internet of Things (IoT) is a transformative technology that connects physical devices to the internet, enabling data collection, exchange, and automation. This documentation provides an overview of IoT, including its architecture, communication protocols, sensors, actuators, and integration with cloud and edge computing.
+
+<!-- truncate -->
 
 ## Introduction to IoT
 
@@ -21,7 +23,7 @@ The Internet of Things (IoT) represents a network of interconnected devices that
   - **Network Layer**: Transmits data between devices and the cloud.
   - **Data Layer**: Manages data storage, processing, and analytics.
   - **Application Layer**: Interfaces where users interact with the IoT system.
-  
+
 ### Example: Simple IoT Architecture Diagram
 
 ```plaintext
@@ -39,18 +41,18 @@ The Internet of Things (IoT) represents a network of interconnected devices that
 ### Example: Basic MQTT Communication
 
 ```javascript
-const mqtt = require('mqtt');
-const client = mqtt.connect('mqtt://broker.hivemq.com');
+const mqtt = require("mqtt");
+const client = mqtt.connect("mqtt://broker.hivemq.com");
 
-client.on('connect', () => {
-  client.subscribe('sensor/data', (err) => {
+client.on("connect", () => {
+  client.subscribe("sensor/data", (err) => {
     if (!err) {
-      client.publish('sensor/data', 'Temperature: 22°C');
+      client.publish("sensor/data", "Temperature: 22°C");
     }
   });
 });
 
-client.on('message', (topic, message) => {
+client.on("message", (topic, message) => {
   console.log(message.toString());
 });
 ```
@@ -132,15 +134,16 @@ print(f'Encrypted data: {encrypted}')
 
 ```javascript
 // Example: Sending sensor data to a server
-const axios = require('axios');
+const axios = require("axios");
 const data = { temperature: 22, humidity: 55 };
 
-axios.post('https://example.com/api/sensor-data', data)
-  .then(response => {
-    console.log('Data sent successfully:', response.data);
+axios
+  .post("https://example.com/api/sensor-data", data)
+  .then((response) => {
+    console.log("Data sent successfully:", response.data);
   })
-  .catch(error => {
-    console.error('Error sending data:', error);
+  .catch((error) => {
+    console.error("Error sending data:", error);
   });
 ```
 

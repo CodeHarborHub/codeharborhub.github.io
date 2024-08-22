@@ -1,5 +1,5 @@
 ---
-title: 'Leveraging GPT Model for Microfrontends: Architecting Front-End at Scale'
+title: "Leveraging GPT Model for Microfrontends: Architecting Front-End at Scale"
 sidebar_label: Microfrontends and GPT
 authors: [nayanika-mukherjee]
 tags: [microfrontends, GPT, front-end, architecture, technology]
@@ -7,9 +7,9 @@ date: 2024-08-01
 hide_table_of_contents: true
 ---
 
-## Introduction
-
 Microfrontends represent a new architectural trend in web development, aiming to extend the benefits of microservices to the frontend. This documentation delves into leveraging GPT models for architecting front-end applications at scale using microfrontends.
+
+<!-- truncate -->
 
 ## Introduction to Microfrontends
 
@@ -114,4 +114,3 @@ For further learning and exploration, consider the following resources:
 ## Conclusion
 
 Leveraging GPT models for microfrontends offers a scalable, flexible approach to frontend development. By understanding the principles and best practices outlined in this documentation, developers can architect robust, maintainable front-end applications that meet the demands of modern web development.
-

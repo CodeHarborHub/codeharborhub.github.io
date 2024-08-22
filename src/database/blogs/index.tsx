@@ -49,14 +49,6 @@ const blogs: Blog[] = [
   },
   {
     id: 6,
-    title: "VS Code: Fix Bug in Any Extension by Rebuilding It",
-    image: "/img/blogs/build-done-vsce.png",
-    description:
-      "How to fix a bug in any VS Code extension (.vsix) by rebuilding that extension",
-    slug: "fix-bug-in-vscode-extension",
-  },
-  {
-    id: 7,
     title: "Dockerizing a Rust application with Multi-Stage Builds",
     image: "/img/blogs/rust-docker.png",
     description:
@@ -64,7 +56,7 @@ const blogs: Blog[] = [
     slug: "dockerizing-a-rust-application-with-multi-stage-builds",
   },
   {
-    id: 8,
+    id: 7,
     title: "Git Best Practices: Commit Often, Perfect Later, Publish Once",
     image: "/img/svg/coding.svg",
     description:
@@ -72,7 +64,7 @@ const blogs: Blog[] = [
     slug: "git-best-practicies",
   },
   {
-    id: 9,
+    id: 8,
     title: "Mastering Data Structures in Python",
     image: "/img/svg/programming.svg",
     description:
@@ -80,7 +72,7 @@ const blogs: Blog[] = [
     slug: "Mastering Data Structures in Python",
   },
   {
-    id: 10,
+    id: 9,
     title: "Automating Tasks with Python",
     image: "/img/svg/progress.svg",
     description:
@@ -88,7 +80,7 @@ const blogs: Blog[] = [
     slug: "automating-tasks-with-python",
   },
   {
-    id: 11,
+    id: 10,
     title: "A Beginner’s Guide to the Top 5 React Hooks",
     image: "/img/svg/react.svg",
     description:
@@ -96,7 +88,7 @@ const blogs: Blog[] = [
     slug: "Beginner’s Guide to the Top 5 React Hooks",
   },
   {
-    id: 12,
+    id: 11,
     title: "DOM manipulation in JavaScript",
     image: "/img/svg/javascript_frameworks.svg",
     description:
@@ -104,7 +96,7 @@ const blogs: Blog[] = [
     slug: "DOM manipulation in JavaScript",
   },
   {
-    id: 13,
+    id: 12,
     title: "CI evolution: From FTP client to GitHub Action",
     image: "/img/svg/dev_productivity.svg",
     description:
@@ -112,7 +104,7 @@ const blogs: Blog[] = [
     slug: "from-ftp-client-to-github-action",
   },
   {
-    id: 14,
+    id: 13,
     title: "Getting Started with PostgreSQL",
     image: "/img/svg/educator.svg",
     description:
@@ -120,7 +112,7 @@ const blogs: Blog[] = [
     slug: "Getting started with PostgreSQL",
   },
   {
-    id: 15,
+    id: 14,
     title: "Getting Started with NextJS",
     image: "/img/svg/next_js.svg",
     description:
@@ -128,7 +120,7 @@ const blogs: Blog[] = [
     slug: "Getting-started-with-nextJS",
   },
   {
-    id: 16,
+    id: 15,
     title: "Comprehensive Documentation on Linux Development and Cybersecurity",
     image: "/img/svg/developer_activity.svg",
     description:

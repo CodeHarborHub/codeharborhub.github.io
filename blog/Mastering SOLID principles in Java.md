@@ -1,6 +1,6 @@
 ---
-title: 'Mastering SOLID principles in Java'
-sidebar_label: SOLID principles 
+title: "Mastering SOLID principles in Java"
+sidebar_label: SOLID principles
 authors: [dharshibalasubramaniyam]
 tags: [solid-principles, java, best-practices]
 date: 2024-06-18
@@ -8,6 +8,8 @@ hide_table_of_contents: true
 ---
 
 SOLID principles are one of the object-oriented approaches used in software development, intended to create quality software. The broad goal of the SOLID principles is to reduce dependencies, so that developers can change one area of the software without affecting others. Furthermore, they are intended to make designs easier to understand, maintain, reuse, and extend.
+
+<!-- truncate -->
 
 ## 1. Single responsibility principle (SRP)
 
@@ -28,7 +30,7 @@ public class BankAccount {
      this.accountNo = accountNo;
      this.accountType = accountType;
   }
-  
+
   public void deposit() {
      //code to deposit amount
   }
@@ -97,7 +99,6 @@ public class NotificationService {
 }
 ```
 
-
 ## 2. Open closed principle (OCP)
 
 - OCP states that, software entities (such as classes, modules, functions, etc.) should be open for extension but closed for modification.
@@ -121,7 +122,7 @@ public class BankAccount {
      this.sqlBankAccountRepository = sqlBankAccountRepository;
      this.notificationService = notificationService;
   }
-  
+
   public void deposit() {
     //code to deposit amount
   }
@@ -133,14 +134,14 @@ public class BankAccount {
   public double calculateInterest() {
     if(this.accountType.equals(‘Savings’))
      return this.balance * 0.03;
-  
+
     else if(this.accountType.equals(‘Checking’))
      return this.balance * 0.01;
-  
+
     else if(this.accountType.equals(‘FixedDeposit’))
      return this.balance * 0.05;
   }
-  
+
 }
 ```
 
@@ -160,7 +161,7 @@ public class SavingsBankAccount implements BankAccount {
   public double calculateInterest() {
     return this.balance * 0.03;
   }
-  
+
 }
 public class CheckingBankAccount implements BankAccount {
   // attributes and constructor
@@ -170,7 +171,7 @@ public class CheckingBankAccount implements BankAccount {
   public double calculateInterest() {
     return this.balance * 0.01;
   }
-  
+
 }
 public class FixedDepositBankAccount implements BankAccount {
   // attributes and constructor
@@ -180,20 +181,20 @@ public class FixedDepositBankAccount implements BankAccount {
   public double calculateInterest() {
     return this.balance * 0.05;
   }
-  
+
 }
 ```
 
 - With new implementation, we can calculate interest by implementing BankAccount without modifying underlying logic. The class is open for extension (new account classes can be added) but closed for modification (existing calculateInterest methods remain untouched).
 
 ```
-BankAccount savingsBankAccount = new SavingsBankAccount(); 
+BankAccount savingsBankAccount = new SavingsBankAccount();
 double savingsBankAccountInterest = savingsBankAccount. calculateInterest();
 
-BankAccount checkingBankAccount = new CheckingBankAccount(); 
+BankAccount checkingBankAccount = new CheckingBankAccount();
 double checkingBankAccountInterest = checkingBankAccount. calculateInterest();
 
-BankAccount fixedDepositBankAccount = new FixedDepositBankAccount(); 
+BankAccount fixedDepositBankAccount = new FixedDepositBankAccount();
 double fixedDepositBankAccountInterest = fixedDepositBankAccount. calculateInterest();
 ```
 
@@ -260,11 +261,10 @@ class Penguin extends Bird{
 }
 ```
 
-
 ## 4. Interface segregation principle (ISP)
 
 - ISP states that, clients should not be forced to depend on interfaces they do not use.
-This principle encourages you to create specific, fine-grained interfaces rather than large, monolithic ones, to avoid forcing clients to implement methods they don’t need.
+  This principle encourages you to create specific, fine-grained interfaces rather than large, monolithic ones, to avoid forcing clients to implement methods they don’t need.
 - For an example consider the withdraw method of LoanBankAccount class that implements previously discussed BankAccount class.
 
 ```
@@ -279,10 +279,10 @@ public class SavingsBankAccount implements BankAccount {
   // deposit and calculateInterest method declarations
 
   public void withdraw(double amount) {
-    if (this.balance < double amount) 
+    if (this.balance < double amount)
         this.balance-=amount;
   }
-  
+
 }
 
 public class CheckingBankAccount implements BankAccount {
@@ -290,10 +290,10 @@ public class CheckingBankAccount implements BankAccount {
   // deposit and withdraw method declarations
 
   public void withdraw(double amount) {
-    if (this.balance < double amount) 
+    if (this.balance < double amount)
         this.balance-=amount;
   }
-  
+
 }
 public class LoanBankAccount implements BankAccount {
   // attributes and constructor
@@ -302,7 +302,7 @@ public class LoanBankAccount implements BankAccount {
   public double withdraw() {
     //empty method – cannot withdraw from loan accounts
   }
-  
+
 }
 ```
 
@@ -332,7 +332,6 @@ public class LoanBankAccount implements BankAccount {
 ```
 
 - Here, we created BankAccount interface for deposit and calculateInterest and Withdrawable interface for withdraw. So that implementation classes can implement necessary interfaces according to its need.
-
 
 ## 5. Dependency inversion principle (DIP)
 

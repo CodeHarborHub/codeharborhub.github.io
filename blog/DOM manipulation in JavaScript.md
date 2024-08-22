@@ -1,5 +1,5 @@
 ---
-title: 'DOM manipulation in JavaScript'
+title: "DOM manipulation in JavaScript"
 sidebar_label: DOM-manipulation-in-JavaScript
 authors: [dharshibalasubramaniyam]
 tags: [dom, javascript]
@@ -7,36 +7,40 @@ date: 2024-06-25
 hide_table_of_contents: true
 ---
 
+In web development, the Document Object Model (DOM) is a crucial aspect of creating dynamic and interactive web pages. The DOM represents the structure of a web document as a tree of nodes, allowing developers to access, modify, and interact with the content and elements of a web page using JavaScript.
+
+<!-- truncate -->
+
 ## 1. Understanding DOM
 
 - The Document Object Model (DOM) is a programming interface for web documents.
 
 - This model allows developers to interact with the document programmatically via scripting languages like JavaScript.
 
-- When a web page is loaded, the browser parses the HTML and creates the DOM. 
+- When a web page is loaded, the browser parses the HTML and creates the DOM.
 
 - The DOM represents the document as a tree of nodes, where each node is an object representing a part of the document:
 
-*Document Node*: Represents the entire document.
+_Document Node_: Represents the entire document.
 
-*Element Nodes*: Represent HTML elements like `<div>`, `<p>`, `<a>`, etc.
+_Element Nodes_: Represent HTML elements like `<div>`, `<p>`, `<a>`, etc.
 
-*Text Nodes*: Contain the text content within elements.
+_Text Nodes_: Contain the text content within elements.
 
-*Attribute Nodes*: Represent the attributes of HTML elements (`class`, `id`, `src` etc.).
+_Attribute Nodes_: Represent the attributes of HTML elements (`class`, `id`, `src` etc.).
 
 For example, consider the following HTML:
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
+  <head>
     <title>Example with Attributes</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1 class="header" id="main-title" data-info="example">Hello, World!</h1>
     <p>This is a paragraph.</p>
-</body>
+  </body>
 </html>
 ```
 
@@ -58,7 +62,7 @@ Document
   │           └── "This is a paragraph."
 ```
 
-The DOM plays a central role in web development by enabling developers to create dynamic and interactive web pages. 
+The DOM plays a central role in web development by enabling developers to create dynamic and interactive web pages.
 
 - Access and manipulate elements: Developers can use JavaScript to select, modify, and create HTML elements.
 
@@ -66,7 +70,7 @@ The DOM plays a central role in web development by enabling developers to create
 
 - Modify styles: Through the DOM, developers can change the CSS styles of elements dynamically.
 
-## 2. DOM Manipulation 
+## 2. DOM Manipulation
 
 ### 2.1. Accessing Elements
 
@@ -76,16 +80,15 @@ The DOM plays a central role in web development by enabling developers to create
 <div id="title">Hello, World!</div>
 ```
 
-
 ```js
 // Get the element with the ID 'myElement'
-const element = document.getElementById('myElement');
+const element = document.getElementById("myElement");
 
 // Log the element to the console
 console.log(element);
 ```
 
-- To get elements by their class, we can use the `getElementsByClassName` method. This method returns a live HTMLCollection of elements with the specified class name. 
+- To get elements by their class, we can use the `getElementsByClassName` method. This method returns a live HTMLCollection of elements with the specified class name.
 
 ```html
 <div class="myClass">First Element</div>
@@ -95,14 +98,14 @@ console.log(element);
 
 ```js
 // Get the elements with the class name 'myClass'
-const elements = document.getElementsByClassName('myClass');
+const elements = document.getElementsByClassName("myClass");
 
 // Log the elements to the console
 console.log(elements);
 
 // Optionally, you can iterate over the elements as well
 for (let i = 0; i < elements.length; i++) {
-    console.log(elements[i])
+  console.log(elements[i]);
 }
 ```
 
@@ -112,8 +115,8 @@ for (let i = 0; i < elements.length; i++) {
 <h1>Hello, World!</h1>
 <p>This is a paragraph.</p>
 <div>
-    <p>Another paragraph inside a div.</p>
-    <p>Second paragraph inside a div.</p>
+  <p>Another paragraph inside a div.</p>
+  <p>Second paragraph inside a div.</p>
 </div>
 ```
 
@@ -123,7 +126,7 @@ const paragraphs = document.getElementsByTagName("p");
 
 // Loop through and log the text content of each <p> element
 for (let i = 0; i < paragraphs.length; i++) {
-    console.log(paragraphs[i].textContent);
+  console.log(paragraphs[i].textContent);
 }
 ```
 
@@ -146,7 +149,6 @@ const paragraphInDiv = document.querySelector("div p");
 - The `querySelectorAll` method in JavaScript allows you to select and retrieve a list (or NodeList) of all elements that match a specified CSS selector within the document or within a specific element. Unlike `querySelector`, which returns only the first matching element, `querySelectorAll` returns a NodeList containing all matching elements.
 
 ```js
-
 // Select all <p> elements in the document
 const paragraphs = document.querySelectorAll("p");
 
@@ -158,8 +160,8 @@ const introElements = document.querySelectorAll(".intro");
 
 // Select all <li> elements inside the <ul>
 const listItems = document.querySelectorAll("ul li");
-
 ```
+
 ### 2.2. Modifying Content
 
 - `innerHTML` allows you to get or set the HTML markup inside an element.
@@ -217,19 +219,19 @@ spanElement.innerText = "Updated inner text.";
 
 ```js
 // Get the element with the ID 'myElement'
-const element = document.getElementById('myElement');
+const element = document.getElementById("myElement");
 
 // Get the value of an attribute
-const classValue = element.getAttribute('class');
-console.log('Class:', classValue); // Output: Class: myClass
+const classValue = element.getAttribute("class");
+console.log("Class:", classValue); // Output: Class: myClass
 
 // Set a new value for an attribute
-element.setAttribute('class', 'newClass');
-console.log('Updated Class:', element.getAttribute('class')); // Output: Updated Class: newClass
+element.setAttribute("class", "newClass");
+console.log("Updated Class:", element.getAttribute("class")); // Output: Updated Class: newClass
 
 // Remove an attribute
-element.removeAttribute('class');
-console.log(element.hasAttribute('class')); // Output: false
+element.removeAttribute("class");
+console.log(element.hasAttribute("class")); // Output: false
 ```
 
 ### 2.4. Creating and Inserting Elements
@@ -249,34 +251,34 @@ console.log(element.hasAttribute('class')); // Output: false
 ```
 
 ```js
-const container = document.getElementById('container');
-const todolist = document.querySelector('.todo-list');
+const container = document.getElementById("container");
+const todolist = document.querySelector(".todo-list");
 
 // Create a new element
-const newToDo = document.createElement('li');
-newToDo.setAttribute("class", "todo-item")
-newToDo.textContent = 'Buy fruits.';
+const newToDo = document.createElement("li");
+newToDo.setAttribute("class", "todo-item");
+newToDo.textContent = "Buy fruits.";
 
 // Append the new element as the last child
 todolist.appendChild(newToDo);
 
 // Create another new element
-const title = document.createElement('h2');
-newToDo.textContent = 'My tasks';
+const title = document.createElement("h2");
+newToDo.textContent = "My tasks";
 
 // Insert the title before the list
 container.insertBefore(title, todolist);
 
 // Create yet another new element
-const lastElement = document.createElement('div');
-lastElement.textContent = 'Last Element';
+const lastElement = document.createElement("div");
+lastElement.textContent = "Last Element";
 
 // Append yet another element as the last child
 container.append(lastElement);
 
 // Create and prepend a new element
-const firstElement = document.createElement('div');
-firstElement.textContent = 'First Element';
+const firstElement = document.createElement("div");
+firstElement.textContent = "First Element";
 
 // Prepend the new element as the first child
 container.prepend(firstElement);
@@ -290,28 +292,28 @@ container.prepend(firstElement);
 
 ```html
 <div id="container">
-    <div id="childElement">Child Element</div>
-    <div id="anotherChildElement">Another Child Element</div>
+  <div id="childElement">Child Element</div>
+  <div id="anotherChildElement">Another Child Element</div>
 </div>
 ```
 
 ```js
 // Get the container element
-const container = document.getElementById('container');
+const container = document.getElementById("container");
 
 // Get the child element to be removed
-const childElement = document.getElementById('childElement');
+const childElement = document.getElementById("childElement");
 
 // Remove the child element using removeChild
 container.removeChild(childElement);
 
 // Get another child element to be removed
-const anotherChildElement = document.getElementById('anotherChildElement');
+const anotherChildElement = document.getElementById("anotherChildElement");
 
 // Remove the element using remove()
 anotherChildElement.remove();
-
 ```
+
 ### 2.6. Modifying Styles
 
 - The `style` property allows to set or get inline styles for an element. This directly modifies the style attribute of the element in the DOM.
@@ -322,27 +324,27 @@ anotherChildElement.remove();
 
 ```js
 // Get the element
-const element = document.getElementById('myElement');
+const element = document.getElementById("myElement");
 
 // Change the background color and font size using the style property
-element.style.backgroundColor = 'blue';
-element.style.fontSize = '20px';
+element.style.backgroundColor = "blue";
+element.style.fontSize = "20px";
 ```
 
 - The `classList` property provides methods to add, remove, and toggle CSS classes on an element. This is a more flexible way to manage an element's classes compared to directly setting the `class` attribute.
 
 ```js
 // Get the element
-const element = document.getElementById('myElement');
+const element = document.getElementById("myElement");
 
 // Add a new class to the element
-element.classList.add('newClass');
+element.classList.add("newClass");
 
 // Remove an existing class from the element
-element.classList.remove('initialClass');
+element.classList.remove("initialClass");
 
 // Toggle a class on the element (add it if it doesn't exist, remove it if it does)
-element.classList.toggle('toggledClass');
+element.classList.toggle("toggledClass");
 ```
 
 ### 2.7. Event Handling
@@ -356,20 +358,20 @@ element.classList.toggle('toggledClass');
 ```js
 // Define the event handler function
 function handleClick() {
-    alert('Button was clicked!');
+  alert("Button was clicked!");
 }
 
 // Get the button element
-const button = document.getElementById('myButton');
+const button = document.getElementById("myButton");
 
 // Add a click event listener
-button.addEventListener('click', handleClick);
+button.addEventListener("click", handleClick);
 ```
 
 - The `removeEventListener()` method removes an event handler that was added with `addEventListener()`.
 
 ```js
-button.removeEventListener('click', handleClick);
+button.removeEventListener("click", handleClick);
 ```
 
 ## Conclusion

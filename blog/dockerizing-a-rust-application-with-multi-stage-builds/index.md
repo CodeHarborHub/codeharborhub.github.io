@@ -1,7 +1,7 @@
 ---
-title: 'Dockerizing a Rust application with Multi-Stage Builds'
+title: "Dockerizing a Rust application with Multi-Stage Builds"
 authors: [abhijith-m-s, ajay-dhangar]
-tags: 
+tags:
   - Rust
   - Docker
   - Microservice Architecture
@@ -33,6 +33,10 @@ meta:
     content: "https://codeharborhub.github.io/assets/images/mern-8a27add30515e58f789f89a4c9072818.jpg"
 ---
 
+In this blog post, we will learn how to get started with MERN stack development. The MERN stack consists of four technologies: MongoDB, Express.js, React, and Node.js. We will cover the basics of each technology and guide you through building a simple web application using the MERN stack.
+
+<!-- truncate -->
+
 Create a Docker image for your Rust application with minimal image size ⚒️
 
 ![Dockerizing a Rust application with Multi-Stage Builds](./rust-docker.png)
@@ -48,10 +52,10 @@ Don’t worry 😙, you aren’t alone…
 Here, I am going to be talking specifically about building a lightweight image for your Rust Application. Will be releasing for other applications in the (not so distant 😅) future…
 
 > _According to AWS,_
-> 
+>
 > _Docker is a software platform that allows you to build, test, and deploy applications quickly. Docker packages software into standardized units called containers that have everything the software needs to run including libraries, system tools, code, and runtime. Using Docker, you can quickly deploy and scale applications into any environment and know your code will run._
-> 
-> _Chill_😄 _It’s basically solves the problem of “It RUNS of my MACHINE”. It allows you to run your application as a container on any OS having the Docker Daemon ( right now which is practically any OS )_
+>
+> *Chill*😄 _It’s basically solves the problem of “It RUNS of my MACHINE”. It allows you to run your application as a container on any OS having the Docker Daemon ( right now which is practically any OS )_
 
 Let’s talk about methods that can be used to make your image as light as possible:
 
@@ -67,7 +71,6 @@ That can make quite a lot of difference when dealing with an actual infrastructu
 > Repo link https://github.com/AMS003010/Rust-Docker
 
 <hr/>
-
 
 ## Create an Image with a Simple Dockerfile
 

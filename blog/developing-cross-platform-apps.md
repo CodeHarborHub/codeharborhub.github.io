@@ -1,5 +1,5 @@
 ---
-title: 'Developing Cross-Platform Apps Using Flutter and Dart'
+title: "Developing Cross-Platform Apps Using Flutter and Dart"
 sidebar_label: Flutter and Dart Development
 authors: [nayanika-mukherjee]
 tags: [flutter, dart, cross-platform, mobile development, technology]
@@ -7,9 +7,9 @@ date: 2024-07-27
 hide_table_of_contents: true
 ---
 
-## Introduction
-
 Cross-platform development allows developers to build applications that can run on multiple operating systems with a single codebase. Flutter, paired with the Dart programming language, is a powerful framework for creating high-performance, visually attractive applications for both mobile and web platforms.
+
+<!-- truncate -->
 
 ## What is Flutter?
 
@@ -32,13 +32,15 @@ Dart is a client-optimized programming language for apps on multiple platforms. 
 1. **Install Flutter:**
    ```bash
    flutter doctor
-```
+   ```
+
+````
 
 2. **Create a New Flutter Project:**
    ```bash
 flutter create my_app
 cd my_app
-```
+````
 
 ## Flutter Architecture and Components
 
@@ -51,6 +53,7 @@ Flutter's architecture is based on reactive programming. It uses a widget tree t
 ## UI Design in Flutter
 
 Flutter provides a wide array of widgets for building UIs. Example:
+
 ```dart
 import 'package:flutter/material.dart';
 
@@ -80,6 +83,7 @@ State management is crucial in Flutter. Popular approaches include:
 ## Working with APIs
 
 To make network requests in Flutter:
+
 ```dart
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -101,7 +105,8 @@ Flutter supports various database solutions:
 
 - SQLite: Using sqflite package.
 - Firebase: Using cloud_firestore package.
-Example using SQLite:
+  Example using SQLite:
+
 ```dart
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
@@ -122,6 +127,7 @@ void initDatabase() async {
 ## Animations and Advanced UI Techniques
 
 Flutter provides powerful animation capabilities:
+
 ```dart
 import 'package:flutter/material.dart';
 
@@ -161,6 +167,7 @@ class _MyAnimatedWidgetState extends State<MyAnimatedWidget> with SingleTickerPr
   }
 }
 ```
+
 ## Testing and Debugging
 
 Testing in Flutter includes:
@@ -168,7 +175,8 @@ Testing in Flutter includes:
 - Unit Testing: Using flutter_test package.
 - Widget Testing: Ensures widgets render correctly.
 - Integration Testing: Tests the complete app.
-Example of a unit test:
+  Example of a unit test:
+
 ```dart
 import 'package:flutter_test/flutter_test.dart';
 
@@ -182,6 +190,7 @@ int addOne(int value) => value + 1;
 ```
 
 ## Deploying Flutter Applications
+
 Deploying to different platforms:
 
 - Android: `flutter build apk`
@@ -199,6 +208,7 @@ To optimize performance:
 ## Community and Resources
 
 Engage with the Flutter community:
+
 - Flutter Community
 - Stack Overflow
 - Medium Articles
@@ -206,6 +216,7 @@ Engage with the Flutter community:
 ## Case Studies and Real-World Examples
 
 Explore real-world applications built with Flutter:
+
 - Google Ads: High-performance app for managing ad campaigns.
 - Reflectly: Personal journaling app with rich UI and smooth animations.
 - Alibaba: Large-scale e-commerce app.

@@ -1,5 +1,5 @@
 ---
-title: 'Mastering Data Structures in Python'
+title: "Mastering Data Structures in Python"
 sidebar_label: Data Structures
 authors: [santhosh-siddhardha]
 tags: [data-structures, python, best-practices]
@@ -9,11 +9,14 @@ hide_table_of_contents: true
 
 Data structures are essential components in computer science, enabling efficient data storage, manipulation, and retrieval. In Python, a variety of built-in data structures are available, each suited for specific tasks. This article aims to provide a comprehensive guide to mastering these data structures, including their usage, advantages, and best practices.
 
+<!-- truncate -->
+
 ## Overview of Data Structures
 
 ### Types of Data Structures
 
 1. **Primitive Data Structures**
+
    - Integers
    - Floats
    - Strings

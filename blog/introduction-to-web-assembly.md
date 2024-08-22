@@ -1,5 +1,5 @@
 ---
-title: 'Introduction to WebAssembly: Enhancing Web Performance'
+title: "Introduction to WebAssembly: Enhancing Web Performance"
 sidebar_label: WebAssembly and Web Performance
 authors: [nayanika-mukherjee]
 tags: [webassembly, wasm, web performance, technology]
@@ -7,9 +7,9 @@ date: 2024-07-21
 hide_table_of_contents: true
 ---
 
-## Introduction
-
 WebAssembly (Wasm) is a binary instruction format that provides near-native performance for web applications. Designed as a portable compilation target for high-level languages like C, C++, and Rust, WebAssembly enables efficient execution of code on modern web browsers. This documentation introduces WebAssembly, its benefits, and how to get started with Wasm development.
+
+<!-- truncate -->
 
 ## What is WebAssembly (Wasm)?
 
@@ -50,10 +50,12 @@ To compile your code to WebAssembly, follow these steps:
    ```bash
    emcc your_code.c -o your_code.wasm
    ```
-For Rust:
+   For Rust:
+
 ```
 rustc --target wasm32-unknown-unknown -O your_code.rs
 ```
+
 ## Interfacing with JavaScript
 
 WebAssembly can interact with JavaScript, enabling you to call Wasm functions from JavaScript and vice versa. Use the JavaScript WebAssembly API to load and instantiate Wasm modules.

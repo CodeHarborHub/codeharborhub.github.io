@@ -1,11 +1,15 @@
 ---
-title: 'Automating Tasks with Python: Using the OS and Subprocess Modules'
+title: "Automating Tasks with Python: Using the OS and Subprocess Modules"
 sidebar_label: Automating Tasks with Python
 authors: [nayanika-mukherjee]
 tags: [automation, Python, OS module, Subprocess module, technology]
 date: 2024-07-13
 hide_table_of_contents: true
 ---
+
+In today's fast-paced world, automation plays a crucial role in enhancing productivity and efficiency. Python, with its rich set of libraries and modules, provides a powerful framework for automating various system-level tasks. This blog explores how to leverage Python's OS and Subprocess modules to automate tasks such as file and directory operations and executing system commands.
+
+<!-- truncate -->
 
 ## Introduction
 

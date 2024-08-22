@@ -1,5 +1,5 @@
 ---
-title: 'Dockerize Spring-boot with Github-Actions'
+title: "Dockerize Spring-boot with Github-Actions"
 sidebar_label: Dockerize Spring-boot with Github-Actions
 authors: [DharshiBalasubramaniyam]
 tags: [docker, githubactions, springboot, ci-cd]
@@ -7,7 +7,9 @@ date: 2024-07-28
 hide_table_of_contents: true
 ---
 
-# Dockerize Spring-boot with Github-Actions
+In this blog, we will learn how to Dockerize a Spring Boot application and set up a Continuous Integration/Continuous Deployment (CI/CD) pipeline using GitHub Actions.
+
+<!-- truncate -->
 
 - This Blog article demonstrates a complete Docker CI/CD pipeline for a Spring Boot application using GitHub Actions.
 
@@ -30,7 +32,6 @@ Benefits of Using Docker:
 - This ensures that the application behaves the same way in development, testing, and production environments.
 
 - With Docker, dependencies required for an application to run are packaged within the container. This eliminates conflicts between dependencies on the host system and allows different versions of dependencies to coexist peacefully.
-  
 - With Docker, dependencies required for an application to run are packaged within the container. This eliminates conflicts between dependencies on the host system and allows different versions of dependencies to coexist peacefully.
 
 - Docker supports microservices-based applications, where each service can be packaged and deployed independently in its own container.
@@ -171,7 +172,6 @@ Requests to `localhost:8080` on your host machine are forwarded to port `9000` i
 
 Now, you can access this application from your web browser on `http://localhost:8080`.
 
-
 To Verify that your application is running inside a Docker container, run docker ps command, which lists all running containers.
 
 ```
@@ -181,7 +181,7 @@ docker ps
 To list all the containers (Running and Stopped), run below command.
 
 ```
-docker ps -a 
+docker ps -a
 ```
 
 ### 3.5. Pushing Docker Images to Docker Hub
@@ -224,13 +224,11 @@ docker run -p 8080:9000 yourusername/spring-boot-docker-example-repo:v1.0
 
 Open your web browser and navigate to http://localhost:8080 to access your Spring Boot application running inside the Docker container.
 
-
 ## ⚡ 4. Continuous Integration and Deployment (CI/CD) with Docker and GitHub actions.
 
 ### 4.1. Understanding CI/CD
 
 ![image](./images/image03.png)
-
 
 1. **Continuous Integration**: CI is a practice in software development where developers frequently integrate (merge) their code changes into a shared repository.
 
@@ -238,7 +236,7 @@ Open your web browser and navigate to http://localhost:8080 to access your Sprin
 - You push your code to the shared repository.
 - Automated tests run to check if your code works.
 - If tests pass, the code is merged. If not, you fix the issues and push again.
-  
+
 2. **Continuous Deployment**: CD is a practice where code changes are automatically deployed (released) to a production environment after they pass CI stage.
 
 - Once the code is merged and all tests pass, the CI system builds a new version of the application.
@@ -292,7 +290,7 @@ Runners are servers that run your workflows when they’re triggered.
 jobs:
   build: #Job 1
     runs-on: ubuntu-latest # Runner for Job 1
-  
+
   test: # Job 2
     runs-on: ubuntu-latest # Runner for Job 2
     needs: build #test will only run if the build job completes successfully.
@@ -312,12 +310,12 @@ Each step runs in its own process.
 jobs:
   build: #Job 1
     runs-on: ubuntu-latest # Runner for Job 1
-    
-    steps: 
+
+    steps:
     # Step 1
     - name: Checkout code
       uses: actions/checkout@v2
-    
+
     # Step 2
     - name: Set up JDK 11
       uses: actions/setup-java@v2
@@ -358,7 +356,7 @@ Secrets are accessed in workflows using the secrets context.
 
 ```
 - name: Login to dockerhub
-  run: docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{secrets.DOCKER_PASSWORD}} 
+  run: docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{secrets.DOCKER_PASSWORD}}
 ```
 
 ### 4.3. Writing GitHub Actions Workflow for Dockerization
@@ -410,7 +408,7 @@ jobs:
         run: mvn clean install # Run the Maven clean and install commands
 
       - name: Login to Docker Hub # Step to log in to Docker Hub
-        run: docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{secrets.DOCKER_PASSWORD}}  # Login with secrets 
+        run: docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{secrets.DOCKER_PASSWORD}}  # Login with secrets
 
       - name: Build Docker image # Step to build the Docker image
         run: docker build -t yourusername/spring-boot-docker-example-repo:v1.0 . # Build the Docker image with the specified tag
@@ -457,6 +455,5 @@ Open your web browser and navigate to `http://localhost:8080` to access your Spr
 With GitHub Actions, you no longer need to manually build and push your Docker image every time you make changes.
 
 The workflow you set up automates the entire process. Every time you push code to the repository, GitHub Actions will build the Docker image and push it to Docker Hub for you.
-
 
 We are done 🎉!

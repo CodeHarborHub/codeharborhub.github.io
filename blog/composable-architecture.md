@@ -1,15 +1,16 @@
 ---
-title: 'Composable Architecture: Building Modular and Scalable Applications'
+title: "Composable Architecture: Building Modular and Scalable Applications"
 sidebar_label: Composable Architecture
 authors: [nayanika-mukherjee]
-tags: [architecture, microservices, modularity, scalability, software development]
+tags:
+  [architecture, microservices, modularity, scalability, software development]
 date: 2024-08-01
 hide_table_of_contents: true
 ---
 
-## Introduction
-
 Composable architecture emphasizes building applications using modular, interchangeable components. This approach enhances flexibility, scalability, and maintainability, allowing developers to adapt to changing requirements efficiently. This documentation explores the principles, design strategies, and practical applications of composable architecture.
+
+<!-- truncate -->
 
 ## Designing Modular Components
 
@@ -153,4 +154,4 @@ Composable architecture is an evolving field. Continuous learning, experimentati
 
 ## Conclusion
 
-Composable architecture offers a powerful approach to building modular, scalable applications. By adopting its principles and best practices, developers can create flexible, resilient systems that adapt to changing needs. 
+Composable architecture offers a powerful approach to building modular, scalable applications. By adopting its principles and best practices, developers can create flexible, resilient systems that adapt to changing needs.

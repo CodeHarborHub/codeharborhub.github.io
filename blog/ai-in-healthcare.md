@@ -1,11 +1,15 @@
 ---
-title: 'Artificial Intelligence in Healthcare: Innovations and Ethical Considerations'
+title: "Artificial Intelligence in Healthcare: Innovations and Ethical Considerations"
 sidebar_label: AI in Healthcare
 authors: [nayanika-mukherjee]
 tags: [AI, healthcare, machine learning, medical devices, ethics, case studies]
 date: 2024-07-30
 hide_table_of_contents: true
 ---
+
+In today's rapidly evolving healthcare landscape, Artificial Intelligence (AI) is playing a transformative role in improving patient care, diagnosis, and operational efficiency. This blog explores the applications of AI in healthcare, machine learning models for medical diagnosis, AI-powered medical devices, and the ethical considerations and regulatory compliance associated with AI in healthcare.
+
+<!-- truncate -->
 
 ## Introduction
 
@@ -68,10 +72,11 @@ print(f'Accuracy: {accuracy}')
 ```
 
 ## AI-Powered Medical Devices
+
 AI-powered medical devices enhance patient care and operational efficiency:
 
 - **Wearables:** Devices that monitor vital signs and alert patients and doctors to potential issues.
-Robotics: Surgical robots that assist in precision surgeries.
+  Robotics: Surgical robots that assist in precision surgeries.
 - **Diagnostic Tools:** AI-driven tools that provide real-time diagnostic support to clinicians.
 
 ### Example: Using AI in Wearables

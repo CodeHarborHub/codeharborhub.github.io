@@ -1,12 +1,15 @@
 ---
-title: 'Cloud-Native Development with Microservices and Kubernetes'
-slidebar_label: 'Cloud-Native Development with Microservices and Kubernetes'
+title: "Cloud-Native Development with Microservices and Kubernetes"
+slidebar_label: "Cloud-Native Development with Microservices and Kubernetes"
 authors: [nayanika-mukherjee]
 tags: [Cloud-Native, Microservices, Kubernetes, Istio, Linkerd]
 date: 2024-07-31
 hide_table_of_contents: true
 ---
 
+In the era of cloud computing, cloud-native development has emerged as a paradigm for building scalable, resilient, and maintainable applications. This guide explores the key concepts, tools, and best practices associated with cloud-native development using microservices and Kubernetes.
+
+<!-- truncate -->
 
 ## Introduction to Cloud-Native Development
 
@@ -58,13 +61,14 @@ spec:
         app: my-microservice
     spec:
       containers:
-      - name: my-microservice
-        image: my-microservice-image:latest
-        ports:
-        - containerPort: 80
+        - name: my-microservice
+          image: my-microservice-image:latest
+          ports:
+            - containerPort: 80
 ```
 
 ## Service Meshes (Istio, Linkerd)
+
 Service meshes provide advanced networking features for microservices, such as traffic management, security, and observability.
 
 ### Istio:
@@ -94,7 +98,7 @@ Effective monitoring and management are crucial for maintaining the health and p
 global:
   scrape_interval: 15s
 scrape_configs:
-  - job_name: 'kubernetes'
+  - job_name: "kubernetes"
     kubernetes_sd_configs:
       - role: pod
     relabel_configs:

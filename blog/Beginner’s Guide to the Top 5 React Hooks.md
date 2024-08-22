@@ -1,11 +1,15 @@
 ---
-title: 'A Beginner’s Guide to the Top 5 React Hooks'
+title: "A Beginner’s Guide to the Top 5 React Hooks"
 sidebar_label: React hooks
 authors: [dharshibalasubramaniyam]
 tags: [react.js, react-hooks]
 date: 2024-06-19
 hide_table_of_contents: true
 ---
+
+In this beginner’s guide, we’ll explore the top 5 React hooks that every React developer should know. React hooks are a powerful feature introduced in React 16.8 that allow you to use state and other React features in functional components. They provide a more elegant and composable way to manage component logic compared to class components. Let’s dive into the top 5 React hooks you should be familiar with.
+
+<!-- truncate -->
 
 ## Why React Hooks?
 
@@ -32,7 +36,7 @@ hide_table_of_contents: true
 ### Importing useState hook from react:
 
 ```js
-import { useState } from 'react';
+import { useState } from "react";
 ```
 
 ### Declaring a state variable named count with an initial value of 0,
@@ -57,6 +61,7 @@ const Counter = () => {
   );
 };
 ```
+
 - In above example, when the button is clicked, the onClick event handler calls the setCount function with the updated value of count (count + 1), causing the component to re-render with the new state value.
 
 - Note: We cannot update a state variable like, count = count +1
@@ -67,29 +72,26 @@ const Counter = () => {
 
 ```js
 const Counter = () => {
-  const [person, setPerson] = useState({id: '1', name: 'John', age: 25});
+  const [person, setPerson] = useState({ id: "1", name: "John", age: 25 });
 
   const updateName = (newName) => {
-    setPerson(prevState => {
+    setPerson((prevState) => {
       return { ...prevState, name: newName };
     });
   };
 
   const updateAge = (newAge) => {
-    setPerson(prevState => {
+    setPerson((prevState) => {
       return { ...prevState, age: newAge };
     });
   };
 
-  return (
-    <div>
-      {/* form to update name and age */}
-    </div>
-  );
+  return <div>{/* form to update name and age */}</div>;
 };
 ```
 
 ## 2. ‘useEffect’ hook
+
 - The useEffect hook in React enables functional components to perform side effects, such as data fetching, DOM manipulation, or subscriptions. It replaces lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount in class components.
 
 ### componentDidMount
@@ -101,7 +103,7 @@ const Counter = () => {
 ```js
 useEffect(() => {
   // Perform initialization or side effects
-  console.log("The component is rendered initially.")
+  console.log("The component is rendered initially.");
 }, []);
 ```
 
@@ -114,7 +116,7 @@ useEffect(() => {
 ```js
 useEffect(() => {
   // Effect runs after every render
-  console.log("The component is rendered.")
+  console.log("The component is rendered.");
 });
 ```
 
@@ -123,7 +125,7 @@ useEffect(() => {
 ```js
 useEffect(() => {
   // Perform side effects after state or props update
-  console.log("dependency1 or dependency2 have updated.")
+  console.log("dependency1 or dependency2 have updated.");
 }, [dependency1, dependency2]);
 ```
 
@@ -136,10 +138,10 @@ useEffect(() => {
 ```js
 useEffect(() => {
   // Perform side effects
-  console.log("dependency is updated.")
+  console.log("dependency is updated.");
   return () => {
     // Cleanup tasks
-    console.log("The component is unmounted.")
+    console.log("The component is unmounted.");
   };
 }, [dependency]);
 ```
@@ -154,7 +156,7 @@ useEffect(() => {
 
 ```js
 // themeContext.js
-import React, { createContext } from 'react';
+import React, { createContext } from "react";
 
 export const ThemeContext = createContext(null);
 ```
@@ -165,11 +167,11 @@ export const ThemeContext = createContext(null);
 
 ```js
 function App() {
-  const theme = 'dark';
+  const theme = "dark";
 
   return (
     <ThemeContext.Provider value={theme}>
-      <MyComponent/>
+      <MyComponent />
     </ThemeContext.Provider>
   );
 }
@@ -180,20 +182,21 @@ function App() {
 - Now, any component within the provider can access the context using the useContext hook.
 
 ```js
-import React, { useContext } from 'react';
-import ThemeContext from './ThemeContext';
+import React, { useContext } from "react";
+import ThemeContext from "./ThemeContext";
 
 function MyComponent() {
   const theme = useContext(ThemeContext);
 
-  return <div 
-            style={{
-               background: theme === 'dark' ?
-                    '#222' : '#fff' }
-            }
-         >
-            Content
-         </div>;
+  return (
+    <div
+      style={{
+        background: theme === "dark" ? "#222" : "#fff",
+      }}
+    >
+      Content
+    </div>
+  );
 }
 ```
 
@@ -214,25 +217,21 @@ const Counter = () => {
   // Step 1: Define initial state
   const initialState = { count: 0 };
 
-  return (
-    <div>
-      content
-    </div>
-  );
+  return <div>content</div>;
 };
 ```
 
 ### Reducer Function
 
 - You define a reducer function. This function takes two arguments: the current state and an action, and returns the new state based on the action. The reducer function is responsible for updating the state.
-  
+
 ```js
 // Step 2: Define reducer function
 const reducer = (state, action) => {
   switch (action.type) {
-    case 'increment':
+    case "increment":
       return { count: state.count + 1 };
-    case 'decrement':
+    case "decrement":
       return { count: state.count - 1 };
     default:
       throw new Error();
@@ -247,15 +246,15 @@ const reducer = (state, action) => {
 ```js
 const Counter = () => {
   const initialState = { count: 0 };
-  
+
   // Step 3: Use useReducer hook
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
     <div>
       Count: {state.count}
-      <button onClick={() => dispatch({ type: 'increment' })}>+</button>
-      <button onClick={() => dispatch({ type: 'decrement' })}>-</button>
+      <button onClick={() => dispatch({ type: "increment" })}>+</button>
+      <button onClick={() => dispatch({ type: "decrement" })}>-</button>
     </div>
   );
 };
@@ -272,7 +271,7 @@ const Counter = () => {
 Example 1
 
 ```js
-import React, { useRef } from 'react';
+import React, { useRef } from "react";
 
 function MyComponent() {
   // Create a ref to store a DOM element
@@ -301,7 +300,7 @@ In this example, myInputRef is created using useRef, and it's attached to the in
 Example 2
 
 ```js
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef } from "react";
 
 function Counter() {
   // State for storing the count
@@ -316,10 +315,10 @@ function Counter() {
     if (intervalIdRef.current !== null) {
       return; // If already running, do nothing
     }
-    
+
     // Start the counter
     intervalIdRef.current = setInterval(() => {
-      setCount(prevCount => prevCount + 1);
+      setCount((prevCount) => prevCount + 1);
     }, 1000);
   };
 
@@ -329,7 +328,7 @@ function Counter() {
     if (intervalIdRef.current === null) {
       return; // If not running, do nothing
     }
-    
+
     // Stop the counter
     clearInterval(intervalIdRef.current);
     intervalIdRef.current = null;
@@ -346,6 +345,7 @@ function Counter() {
 
 export default Counter;
 ```
+
 - We have a state variable count that stores the current count.
 - We create a ref named intervalIdRef using useRef(null). This ref will be used to store the ID returned by setInterval so that we can later clear the interval.
 - startCounter function starts a timer using setInterval and increments the count every second. It first checks if the counter is already running to avoid starting multiple timers simultaneously.

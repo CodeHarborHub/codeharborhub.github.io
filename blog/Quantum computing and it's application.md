@@ -6,6 +6,10 @@ tags: [Quantum Computing, Applications]
 date: 2024-07-22
 ---
 
+In the realm of computing, quantum computing stands as a revolutionary field that leverages the principles of quantum mechanics to process information in fundamentally different ways compared to classical computing. This blog aims to introduce the basics of quantum computing, explore its potential applications, and provide resources for further learning.
+
+<!-- truncate -->
+
 ## Quantum Computing: Basics and Applications
 
 Quantum computing is a revolutionary field that leverages the principles of quantum mechanics to process information in fundamentally different ways compared to classical computing. This blog will introduce the basics of quantum computing, explore its potential applications, and provide resources for further learning.
@@ -61,30 +65,36 @@ Quantum machine learning combines quantum computing and classical machine learni
 ## Resources for Further Learning
 
 ### Books
+
 1. **"Quantum Computing: A Gentle Introduction" by Eleanor Rieffel and Wolfgang Polak**
+
    - A comprehensive introduction to the principles and applications of quantum computing.
 
 2. **"Quantum Computation and Quantum Information" by Michael A. Nielsen and Isaac L. Chuang**
    - Often considered the definitive textbook on quantum computing, covering a wide range of topics in depth.
 
 ### Papers
+
 1. **"Simulating Physics with Computers" by Richard Feynman**
+
    - One of the foundational papers in quantum computing, introducing the concept of using quantum systems for simulation.
 
 2. **"Shor's Algorithm for Quantum Factoring" by Peter Shor**
    - The seminal paper that introduced Shor's algorithm, demonstrating the potential of quantum computers to solve certain problems exponentially faster than classical computers.
 
 ### Online Courses
+
 1. **"Quantum Computing for the Very Curious" by Michael Nielsen**
+
    - A free, interactive online book that provides a hands-on introduction to quantum computing.
 
 2. **Coursera: "Quantum Computing" by University of Toronto**
    - A comprehensive course covering the basics of quantum computing, quantum algorithms, and quantum hardware.
 
 ### Tutorials and Blogs
+
 1. **Qiskit Tutorials**
    - IBM's open-source quantum computing framework provides extensive tutorials and resources for learning quantum programming.
-   
 2. **Quantum Computing Report**
    - A blog that keeps up with the latest news, developments, and insights in the field of quantum computing.
 
