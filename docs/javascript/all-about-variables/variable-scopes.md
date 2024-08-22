@@ -13,7 +13,6 @@ Understanding variable scope in JavaScript is essential for writing effective an
 
 In this tutorial, we'll explore the different types of scopes in JavaScript, how they work, and how you can use them to control the accessibility of your variables.
 
-
 ## What Is Scope?
 
 In JavaScript, scope refers to the current context of code execution. It determines which variables and functions are accessible at a given point in your code. Think of scope as the set of rules that govern where and how variables and functions can be accessed or referenced.
@@ -42,7 +41,7 @@ Here's an example of a variable declared in the global scope:
 let globalVar = "I am a global variable";
 
 function accessGlobalVar() {
-    console.log(globalVar); // Accessible here
+  console.log(globalVar); // Accessible here
 }
 
 accessGlobalVar(); // Outputs: I am a global variable
@@ -62,8 +61,8 @@ Here's an example of a variable declared in a local scope:
 
 ```javascript title="app.js" showLineNumbers
 function myFunction() {
-    let localVar = "I am a local variable";
-    console.log(localVar); // Accessible here
+  let localVar = "I am a local variable";
+  console.log(localVar); // Accessible here
 }
 
 myFunction(); // Outputs: I am a local variable
@@ -83,8 +82,8 @@ Here's an example of a variable declared in a block scope:
 
 ```javascript title="app.js" showLineNumbers
 if (true) {
-    let blockVar = "I am a block-scoped variable";
-    console.log(blockVar); // Accessible here
+  let blockVar = "I am a block-scoped variable";
+  console.log(blockVar); // Accessible here
 }
 
 console.log(blockVar); // Error: blockVar is not defined
@@ -104,8 +103,8 @@ Here's an example of variable shadowing:
 let name = "Global Name";
 
 function displayName() {
-    let name = "Local Name"; // Shadows the global variable
-    console.log(name); // Outputs: Local Name
+  let name = "Local Name"; // Shadows the global variable
+  console.log(name); // Outputs: Local Name
 }
 
 displayName();
@@ -125,11 +124,11 @@ Here's an example illustrating function scope with `var`:
 
 ```javascript title="app.js" showLineNumbers
 function myFunction() {
-    if (true) {
-        var varVariable = "I am a var variable";
-    }
+  if (true) {
+    var varVariable = "I am a var variable";
+  }
 
-    console.log(varVariable); // Accessible here
+  console.log(varVariable); // Accessible here
 }
 
 myFunction(); // Outputs: I am a var variable
@@ -149,11 +148,11 @@ Here's an example illustrating block scope with `let`:
 
 ```javascript title="app.js" showLineNumbers
 if (true) {
-    let letVariable = "I am a let variable";
-    const constVariable = "I am a const variable";
+  let letVariable = "I am a let variable";
+  const constVariable = "I am a const variable";
 
-    console.log(letVariable); // Accessible here
-    console.log(constVariable); // Accessible here
+  console.log(letVariable); // Accessible here
+  console.log(constVariable); // Accessible here
 }
 
 console.log(letVariable); // Error: letVariable is not defined
