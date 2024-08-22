@@ -53,7 +53,7 @@ const blogs: Blog[] = [
     image: "/img/blogs/build-done-vsce.png",
     description:
       "How to fix a bug in any VS Code extension (.vsix) by rebuilding that extension",
-    slug: "fix-bug-in-vscode-extension",
+    slug: "/",
   },
   {
     id: 7,
