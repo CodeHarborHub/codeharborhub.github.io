@@ -17,7 +17,6 @@ The first step in creating an effective prompt is to define the goal you want to
 
 Once you have defined the goal, the next step is to identify the steps required to achieve that goal. Break down the goal into smaller, manageable steps that the user can follow to reach the desired outcome. This will help the user understand what they need to do and how to do it.
 
-
 ## Step 3: Design the Prompt
 
 With the goal and steps identified, it's time to design the prompt. The prompt should be clear, concise, and easy to follow. Use simple language and provide clear instructions to guide the user through each step. You can use visual cues, such as arrows or icons, to help the user navigate the prompt.

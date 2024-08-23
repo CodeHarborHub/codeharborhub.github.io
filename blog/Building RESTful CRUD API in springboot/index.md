@@ -1,5 +1,5 @@
 ---
-title: 'Building a RESTful CRUD API with Spring Boot: A step by step guide'
+title: "Building a RESTful CRUD API with Spring Boot: A step by step guide"
 sidebar_label: Springboot-REST-API-CRUD
 authors: [dharshibalasubramaniyam]
 tags: [springboot, rest-api]
@@ -12,19 +12,21 @@ In this article, we will learn how to build a RESTful CRUD (Create, Read, Update
 <!-- truncate -->
 
 ## What is RESTFUL API?
-- In the realm of modern web development, RESTful APIs have become a cornerstone for building scalable, efficient, and maintainable web applications. 
 
-- In the world of computers and the internet, applications communicate with each other using a set of rules. 
+- In the realm of modern web development, RESTful APIs have become a cornerstone for building scalable, efficient, and maintainable web applications.
+
+- In the world of computers and the internet, applications communicate with each other using a set of rules.
 
 - RESTful APIs (Application Programming Interfaces) are act as intermediaries between different software applications (client and server), allowing them to communicate and share data with each other over the internet.
 
-- *Representational State Transfer (REST)*: This is a style of building software systems that use standard HTTP methods (like GET, POST, PUT, DELETE) to perform operations on resources (like data stored in a database). It emphasizes simplicity, scalability, and flexibility.
+- _Representational State Transfer (REST)_: This is a style of building software systems that use standard HTTP methods (like GET, POST, PUT, DELETE) to perform operations on resources (like data stored in a database). It emphasizes simplicity, scalability, and flexibility.
 
-- *API (Application Programming Interface)*: Think of an API as a set of rules and protocols that allow different software applications to talk to each other. It defines how different parts of software systems can interact and exchange data.
+- _API (Application Programming Interface)_: Think of an API as a set of rules and protocols that allow different software applications to talk to each other. It defines how different parts of software systems can interact and exchange data.
 
-- So, when we say a *“RESTful API”*, we’re talking about a set of rules and conventions that govern how applications communicate with each other over the internet using standard HTTP methods.
+- So, when we say a _“RESTful API”_, we’re talking about a set of rules and conventions that govern how applications communicate with each other over the internet using standard HTTP methods.
 
 ## Why spring boot?
+
 - Among the myriad of frameworks available for building RESTful APIs, Spring Boot stands out as a robust and developer-friendly option for Java developers.
 
 - Spring Boot makes it simple for developers to create web applications without getting bogged down in complex configuration.
@@ -34,7 +36,7 @@ In this article, we will learn how to build a RESTful CRUD (Create, Read, Update
 - It comes with many useful tools and features ready to use, like handling data, security, and more, saving you time and effort.
 
 - Spring Boot can easily connect with other tools and libraries, making it flexible for different needs.
-Motive of this article
+  Motive of this article
 
 - In this comprehensive guide, we’ll delve into the process of creating a RESTful CRUD (Create, Read, Update, Delete) API for managing user data using Spring Boot and MySQL. We’ll cover everything from project setup to testing, demonstrating best practices and essential techniques along the way. By the end of this tutorial, you’ll have a solid understanding of how to architect, develop RESTful APIs using Spring Boot.
 
@@ -56,28 +58,28 @@ Motive of this article
 
 - Visit spring initializer and fill in all the details accordingly and at last click on the GENERATE button. Extract the zip file and import it into your IDE.
 
-    ![img-03](./images/image01.png)
+  ![img-03](./images/image01.png)
 
 ### 1.1. Add below dependencies in pom.xml file.
 
 ```
 <dependencies>
-      // we'll use this dependency to create RESTful API endpoints, 
+      // we'll use this dependency to create RESTful API endpoints,
       // handle HTTP requests (GET, POST, PUT, DELETE), and return JSON responses.
       <dependency>
        <groupId>org.springframework.boot</groupId>
        <artifactId>spring-boot-starter-web</artifactId>
       </dependency>
-      
-      // we'll use this dependency to interact with a database, 
-      // define JPA entities (data models), perform CRUD operations, 
+
+      // we'll use this dependency to interact with a database,
+      // define JPA entities (data models), perform CRUD operations,
       // and execute custom database queries.
       <dependency>
        <groupId>org.springframework.boot</groupId>
        <artifactId>spring-boot-starter-data-jpa</artifactId>
       </dependency>
 
-      // we'll use this dependency to establish a connection to 
+      // we'll use this dependency to establish a connection to
       // our MySQL database, execute SQL queries, and manage database transactions.
       <dependency>
        <groupId>mysql</groupId>
@@ -85,18 +87,18 @@ Motive of this article
        <version>8.0.33</version>
        <scope>runtime</scope>
       </dependency>
-      
-      // we'll use Lombok annotations (such as @Data, @Getter, @Setter) 
-      // in our Java classes to automatically generate common methods, 
+
+      // we'll use Lombok annotations (such as @Data, @Getter, @Setter)
+      // in our Java classes to automatically generate common methods,
       // making your code cleaner and more concise.
       <dependency>
        <groupId>org.projectlombok</groupId>
        <artifactId>lombok</artifactId>
        <optional>true</optional>
       </dependency>
-      
-      // we'll use this dependency to annotate your Java model classes 
-      // with validation constraints (e.g., @NotBlank, @NotNull, @Size) 
+
+      // we'll use this dependency to annotate your Java model classes
+      // with validation constraints (e.g., @NotBlank, @NotNull, @Size)
       // and automatically validate request data in your RESTful API endpoints.
       <dependency>
        <groupId>org.springframework.boot</groupId>
@@ -105,7 +107,6 @@ Motive of this article
 
 </dependencies>
 ```
-
 
 ### 1.2. Update application.properties file
 
@@ -121,7 +122,7 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
 - Create below folder structure inside src folder. We’ll travel through each file one by one.
 
-   ![img-03](./images/image02.png)
+  ![img-03](./images/image02.png)
 
 ## Step 3: Create User Model
 
@@ -290,15 +291,15 @@ public interface UserService {
     ResponseEntity<ApiResponseDto<?>> registerUser(UserDetailsRequestDto newUserDetails)
             throws UserAlreadyExistsException, UserServiceLogicException;
 
-    ResponseEntity<ApiResponseDto<?>> getAllUsers() 
+    ResponseEntity<ApiResponseDto<?>> getAllUsers()
             throws UserServiceLogicException;
 
-    ResponseEntity<ApiResponseDto<?>> updateUser(UserDetailsRequestDto newUserDetails, int id) 
+    ResponseEntity<ApiResponseDto<?>> updateUser(UserDetailsRequestDto newUserDetails, int id)
             throws UserNotFoundException, UserServiceLogicException;
 
-    ResponseEntity<ApiResponseDto<?>> deleteUser(int id) 
+    ResponseEntity<ApiResponseDto<?>> deleteUser(int id)
             throws UserServiceLogicException, UserNotFoundException;
-    
+
 }
 ```
 
@@ -437,6 +438,7 @@ public ResponseEntity<ApiResponseDto<?>> deleteUser(int id) throws UserServiceLo
 ```
 
 :::note
+
 - The `@Service` annotation is used to indicate that a class is a service component in the Spring application context.
 
 - The `@Component` annotation is a generic stereotype annotation used to indicate that a class is a Spring component. Components annotated with @Component are candidates for auto-detection when using Spring's component scanning feature.
@@ -444,7 +446,7 @@ public ResponseEntity<ApiResponseDto<?>> deleteUser(int id) throws UserServiceLo
 - The `@Autowired` annotation is used to automatically inject dependencies into Spring-managed beans. When Spring encounters a bean annotated with @Autowired, it looks for other beans in the application context that match the type of the dependency and injects it.
 
 - The `@Slf4j` annotation is not a standard Spring annotation but rather a Lombok annotation used for logging.
-:::
+  :::
 
 ## Step 8: Create controller
 
@@ -453,7 +455,7 @@ public ResponseEntity<ApiResponseDto<?>> deleteUser(int id) throws UserServiceLo
 - It serves as an entry point for processing client requests and often delegates the actual business logic to service classes.
 
 - A controller class is typically annotated with @RestController or @Controller.
-Inside the controller class, you define methods that handle specific HTTP requests. These methods are annotated with `@RequestMapping`, `@GetMapping`, `@PostMapping`, `@PutMapping`, `@DeleteMapping`, or other similar annotations to specify the HTTP method and the URL path that the method should respond to.
+  Inside the controller class, you define methods that handle specific HTTP requests. These methods are annotated with `@RequestMapping`, `@GetMapping`, `@PostMapping`, `@PutMapping`, `@DeleteMapping`, or other similar annotations to specify the HTTP method and the URL path that the method should respond to.
 
 - Each method in the controller class represents a particular endpoint of the REST API.
 
@@ -501,7 +503,7 @@ public class UserController {
 - The `@RequestParam` annotation is used to extract query parameters from the URL of the incoming request.
 
 - The `@RequestBody` annotation is used to extract the request body of the incoming HTTP request. It binds the body of the request to a method parameter in a controller method, typically for POST, PUT, and PATCH requests. E.g., registerUser method.
-:::
+  :::
 
 ## Step 9: Create Exception Handler class
 
@@ -558,11 +560,9 @@ Register user successful
 
 ![img-04](./images/image04.png)
 
-
 Retrieve all users
 
 ![img-05](./images/image05.png)
-
 
 Update the details of John
 
