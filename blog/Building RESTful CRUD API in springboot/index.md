@@ -7,6 +7,10 @@ date: 2024-06-25
 hide_table_of_contents: true
 ---
 
+In this article, we will learn how to build a RESTful CRUD (Create, Read, Update, Delete) API using Spring Boot. We will cover everything from project setup to testing, demonstrating best practices and essential techniques along the way. By the end of this tutorial, you will have a solid understanding of how to architect, develop, and test RESTful APIs using Spring Boot.
+
+<!-- truncate -->
+
 ## What is RESTFUL API?
 - In the realm of modern web development, RESTful APIs have become a cornerstone for building scalable, efficient, and maintainable web applications. 
 
