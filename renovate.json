@@ -16,7 +16,7 @@
   ],
   "automerge": true,
   "automergeType": "pr",
-  "prHourlyLimit": 5,
+  "prHourlyLimit": 24,
   "prConcurrentLimit": 10,
   "labels": ["dependencies"],
   "reviewers": ["Ajay-Dhangar"],
