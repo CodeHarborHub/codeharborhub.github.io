@@ -72,8 +72,8 @@ JavaScript supports scientific notation for representing very large or very smal
 **Example:**
 
 ```javascript title="app.js"
-let largeNumber = 5e6;   // 5 million, equivalent to 5 * 10^6
-let smallNumber = 5e-6;  // 0.000005, equivalent to 5 * 10^-6
+let largeNumber = 5e6; // 5 million, equivalent to 5 * 10^6
+let smallNumber = 5e-6; // 0.000005, equivalent to 5 * 10^-6
 
 console.log(largeNumber); // Outputs: 5000000
 console.log(smallNumber); // Outputs: 0.000005
@@ -223,7 +223,7 @@ The `isNaN()` function checks if a value is `NaN` (Not-a-Number).
 **Example:**
 
 ```javascript title="app.js"
-console.log(isNaN(123));   // Outputs: false
+console.log(isNaN(123)); // Outputs: false
 console.log(isNaN("abc")); // Outputs: true
 ```
 
@@ -234,7 +234,7 @@ The `isFinite()` function checks if a value is a finite number.
 **Example:**
 
 ```javascript title="app.js"
-console.log(isFinite(42));   // Outputs: true
+console.log(isFinite(42)); // Outputs: true
 console.log(isFinite(Infinity)); // Outputs: false
 ```
 
