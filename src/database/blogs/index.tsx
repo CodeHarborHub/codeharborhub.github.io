@@ -9,14 +9,6 @@ interface Blog {
 const blogs: Blog[] = [
   {
     id: 1,
-    title: "Building RESTful CRUD API in springboot",
-    image: "img/blogs/image01.png",
-    description:
-      " RESTful APIs have become a cornerstone for building scalable, efficient, and maintainable web applications.",
-    slug: "Building RESTful CRUD API in springboot",
-  },
-  {
-    id: 2,
     title: "Getting started with Microservices",
     image: "/assets/images/image01-736d71e3db56657987594b3b11459b5d.png",
     description:
@@ -24,7 +16,7 @@ const blogs: Blog[] = [
     slug: "getting-started-with-microservices",
   },
   {
-    id: 3,
+    id: 2,
     title: "Cryptography and Its Use in Cyber Security",
     image: "/img/blogs/introduction-to-cryptography-and-cyber-security.jpg",
     description:
@@ -32,7 +24,7 @@ const blogs: Blog[] = [
     slug: "introduction-to-cryptography-and-cyber-security",
   },
   {
-    id: 4,
+    id: 3,
     title: "Getting started with Mern",
     image: "/img/blogs/mern.jpg",
     description:
@@ -40,7 +32,7 @@ const blogs: Blog[] = [
     slug: "getting-started-with-mern",
   },
   {
-    id: 5,
+    id: 4,
     title: "Getting started with Vite",
     image: "/img/blogs/react-and-vite.jpg",
     description:
@@ -48,7 +40,7 @@ const blogs: Blog[] = [
     slug: "getting-started-with-vite",
   },
   {
-    id: 6,
+    id: 5,
     title: "Dockerizing a Rust application with Multi-Stage Builds",
     image: "/img/blogs/rust-docker.png",
     description:
@@ -56,7 +48,7 @@ const blogs: Blog[] = [
     slug: "dockerizing-a-rust-application-with-multi-stage-builds",
   },
   {
-    id: 7,
+    id: 6,
     title: "Git Best Practices: Commit Often, Perfect Later, Publish Once",
     image: "/img/svg/coding.svg",
     description:
@@ -64,7 +56,7 @@ const blogs: Blog[] = [
     slug: "git-best-practicies",
   },
   {
-    id: 8,
+    id: 7,
     title: "Mastering Data Structures in Python",
     image: "/img/svg/programming.svg",
     description:
@@ -72,7 +64,7 @@ const blogs: Blog[] = [
     slug: "Mastering Data Structures in Python",
   },
   {
-    id: 9,
+    id: 8,
     title: "Automating Tasks with Python",
     image: "/img/svg/progress.svg",
     description:
@@ -80,7 +72,7 @@ const blogs: Blog[] = [
     slug: "automating-tasks-with-python",
   },
   {
-    id: 10,
+    id: 9,
     title: "A Beginner’s Guide to the Top 5 React Hooks",
     image: "/img/svg/react.svg",
     description:
@@ -88,7 +80,7 @@ const blogs: Blog[] = [
     slug: "Beginner’s Guide to the Top 5 React Hooks",
   },
   {
-    id: 11,
+    id: 10,
     title: "DOM manipulation in JavaScript",
     image: "/img/svg/javascript_frameworks.svg",
     description:
@@ -96,7 +88,7 @@ const blogs: Blog[] = [
     slug: "DOM manipulation in JavaScript",
   },
   {
-    id: 12,
+    id: 11,
     title: "CI evolution: From FTP client to GitHub Action",
     image: "/img/svg/dev_productivity.svg",
     description:
@@ -104,7 +96,7 @@ const blogs: Blog[] = [
     slug: "from-ftp-client-to-github-action",
   },
   {
-    id: 13,
+    id: 12,
     title: "Getting Started with PostgreSQL",
     image: "/img/svg/educator.svg",
     description:
@@ -112,7 +104,7 @@ const blogs: Blog[] = [
     slug: "Getting started with PostgreSQL",
   },
   {
-    id: 14,
+    id: 13,
     title: "Getting Started with NextJS",
     image: "/img/svg/next_js.svg",
     description:
@@ -120,7 +112,7 @@ const blogs: Blog[] = [
     slug: "Getting-started-with-nextJS",
   },
   {
-    id: 15,
+    id: 14,
     title: "Comprehensive Documentation on Linux Development and Cybersecurity",
     image: "/img/svg/developer_activity.svg",
     description:

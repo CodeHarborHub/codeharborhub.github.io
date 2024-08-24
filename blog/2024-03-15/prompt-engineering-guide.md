@@ -7,6 +7,8 @@ date: 2020-12-21 15:34:11
 
 Prompt Engineering is a process of creating a prompt that is used to guide the user through a series of steps to achieve a specific goal. It is a powerful tool that can help users complete complex tasks with ease and efficiency. In this guide, we will walk you through the process of creating an effective prompt that will help you achieve your desired outcome.
 
+<!-- truncate -->
+
 ## Step 1: Define the Goal
 
 The first step in creating an effective prompt is to define the goal you want to achieve. This could be anything from completing a task, learning a new skill, or solving a problem. By clearly defining the goal, you can create a prompt that guides the user towards that goal.
@@ -14,7 +16,6 @@ The first step in creating an effective prompt is to define the goal you want to
 ## Step 2: Identify the Steps
 
 Once you have defined the goal, the next step is to identify the steps required to achieve that goal. Break down the goal into smaller, manageable steps that the user can follow to reach the desired outcome. This will help the user understand what they need to do and how to do it.
-
 
 ## Step 3: Design the Prompt
 
