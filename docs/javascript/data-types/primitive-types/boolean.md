@@ -102,7 +102,7 @@ console.log(a <= b); // Output: false
 You can use the conditional (ternary) operator to assign values based on a condition. The syntax of the conditional operator is as follows:
 
 ```javascript
-condition ? valueIfTrue : valueIfFalse
+condition ? valueIfTrue : valueIfFalse;
 ```
 
 Here's an example of using the conditional operator with `Boolean` values:
@@ -143,7 +143,7 @@ console.log(Boolean(null)); // Output: false
 console.log(Boolean(undefined)); // Output: false
 console.log(Boolean({})); // Output: true
 console.log(Boolean([])); // Output: true
-console.log(Boolean(function() {})); // Output: true
+console.log(Boolean(function () {})); // Output: true
 console.log(Boolean(true)); // Output: true
 console.log(Boolean(false)); // Output: false
 ```

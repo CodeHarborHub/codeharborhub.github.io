@@ -25,7 +25,6 @@ let objectName = {
   key2: value2,
   // ...
 };
-
 ```
 
 ### Example:
@@ -36,7 +35,7 @@ let person = {
   firstName: "John",
   lastName: "Doe",
   age: 30,
-  isEmployed: true
+  isEmployed: true,
 };
 
 console.log(person);
@@ -223,13 +222,13 @@ let objectName = Object.create(prototypeObject, {
     value: value1,
     writable: true,
     enumerable: true,
-    configurable: true
+    configurable: true,
   },
   key2: {
     value: value2,
     writable: true,
     enumerable: true,
-    configurable: true
+    configurable: true,
   },
   // ...
 });
@@ -240,16 +239,16 @@ let objectName = Object.create(prototypeObject, {
 ```javascript title="app.js"
 // Create a prototype object
 let personPrototype = {
-  greet: function() {
+  greet: function () {
     return `Hello, my name is ${this.firstName} ${this.lastName}.`;
-  }
+  },
 };
 
 // Create a new object using the prototype
 let person = Object.create(personPrototype, {
   firstName: { value: "John" },
   lastName: { value: "Doe" },
-  age: { value: 30 }
+  age: { value: 30 },
 });
 
 console.log(person.greet());

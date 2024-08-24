@@ -31,13 +31,14 @@ let person = {
   firstName: "John",
   lastName: "Doe",
   age: 30,
-  isEmployed: true
+  isEmployed: true,
 };
 
 console.log(person);
 ```
 
-In this example, `person`  is an object with four properties:
+In this example, `person` is an object with four properties:
+
 - `firstName` is a property with the value `"John"`.
 - `lastName` is a property with the value `"Doe"`.
 - `age` is a property with the value `30`.
@@ -72,7 +73,7 @@ Consider an online shopping cart. You might represent a shopping cart as an obje
 let shoppingCart = {
   apple: 2,
   banana: 3,
-  orange: 1
+  orange: 1,
 };
 
 console.log(shoppingCart);
