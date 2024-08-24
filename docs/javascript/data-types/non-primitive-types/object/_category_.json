@@ -1,0 +1,8 @@
+{
+  "label": "Object",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Objects are complex data types in JavaScript. In this tutorial, you'll learn about objects in JavaScript, how to create objects, and how to access object properties."
+  }
+}
