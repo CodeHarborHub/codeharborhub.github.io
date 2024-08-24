@@ -9,6 +9,8 @@ description: Learn about the string data type in JavaScript, how to create strin
 
 <AdsComponent />
 
+<br />
+
 In JavaScript, a string is a sequence of characters enclosed within single or double quotes. Strings are used to represent text data and are one of the primitive data types in JavaScript.
 
 ## Creating Strings
@@ -50,6 +52,10 @@ let backticks = `Hello, World!`;
 
 console.log(backticks); // Output: Hello, World!
 ```
+
+<AdsComponent />
+
+<br />
 
 ## Common String Operations
 

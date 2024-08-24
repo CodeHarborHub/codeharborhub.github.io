@@ -9,6 +9,8 @@ description: Learn how to declare variables in JavaScript using the var, let, an
 
 <AdsComponent />
 
+<br />
+
 Variables are an essential part of any programming language, allowing you to store and manipulate data in your code. In JavaScript, variables are declared using the `var`, `let`, or `const` keywords. Each of these keywords has its own characteristics and best practices for usage. In this tutorial, we'll explore how to declare variables in JavaScript and discuss the differences between `var`, `let`, and `const`.
 
 ## What Are Variables?
@@ -42,6 +44,10 @@ In this example:
 - You can update these variables as needed throughout your program.
 
 Now that you understand the concept of variables, let's explore how to declare them using the `var`, `let`, and `const` keywords.
+
+<AdsComponent />
+
+<br />
 
 ## Declaring Variables with `var`, `let`, and `const`
 
@@ -150,6 +156,10 @@ PI = 3.14; // Error: Assignment to constant variable.
 ```
 
 - **Imagination:** Imagine `const` as a stone tablet with an inscription that cannot be changed once it's been carved. It's a constant reminder of the value it holds.
+
+<AdsComponent />
+
+<br />
 
 ## When to Use `var`, `let`, or `const`?
 

@@ -9,6 +9,8 @@ description: Learn about hoisting in JavaScript and how it affects variable decl
 
 <AdsComponent />
 
+<br />
+
 Hoisting is a unique feature of JavaScript that allows you to access variables and functions before they are declared in your code. This behavior can be surprising if you're not familiar with it, so understanding how hoisting works is essential for writing reliable JavaScript code.
 
 In this tutorial, we'll explore what hoisting is, how it works in JavaScript, and how it affects variable declarations and function definitions.
@@ -18,6 +20,10 @@ In this tutorial, we'll explore what hoisting is, how it works in JavaScript, an
 Hoisting is a JavaScript mechanism where variable and function declarations are moved to the top of their containing scope during the compilation phase. This means that you can access variables and functions before they are declared in your code, as if they had been "hoisted" to the top of the scope.
 
 It's important to note that only the declarations are hoisted, not the initializations. This means that the variable or function is available for use, but its value is `undefined` until the assignment is encountered in the code.
+
+<AdsComponent />
+
+<br />
 
 ## How Does Hoisting Work?
 
@@ -100,6 +106,10 @@ var sayHello = function () {
 ```
 
 In this example, the variable `sayHello` is hoisted to the top of the scope, but the function assignment is not. Trying to call `sayHello` before the function assignment results in a `TypeError`.
+
+<AdsComponent />
+
+<br />
 
 ### Summary of Hoisting Behavior
 

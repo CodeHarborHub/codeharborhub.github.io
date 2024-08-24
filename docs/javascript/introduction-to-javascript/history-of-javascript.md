@@ -9,6 +9,8 @@ description: JavaScript has a rich history that dates back to the early days of 
 
 <AdsComponent />
 
+<br />
+
 JavaScript, the language that powers the dynamic behavior of websites today, has an interesting history that dates back to the early days of the internet. It was created in just **10 days**, but its impact on the web has been profound and long-lasting. JavaScript has evolved significantly over the years, growing from a simple scripting language to a versatile and powerful programming language that is used by millions of developers worldwide. JavaScript was initially developed by **Brendan Eich** in 1995 while he was working at Netscape Communications Corporation.
 
 ### The Birth of JavaScript: A 10-Day Wonder
@@ -34,6 +36,10 @@ When JavaScript was first released, it was met with skepticism by some developer
 - **2015:** The release of **ECMAScript 6** (ES6) introduced new features and syntax enhancements to the language, making JavaScript more powerful and expressive.
 - **2020:** JavaScript remains one of the most popular programming languages in the world, powering the majority of websites and web applications on the internet.
 - **Future:** JavaScript continues to evolve, with new frameworks, libraries, and tools being developed to enhance its capabilities and simplify web development.
+
+<AdsComponent />
+
+<br />
 
 ### JavaScript Today: A Ubiquitous Language
 

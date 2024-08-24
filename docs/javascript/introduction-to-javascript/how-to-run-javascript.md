@@ -9,6 +9,8 @@ description: Learn how to run JavaScript code in the browser and in Node.js.
 
 <AdsComponent />
 
+<br />
+
 JavaScript is a versatile language that can be run in various environments. Whether you're creating interactive web pages, building server-side applications, or scripting automation tasks, JavaScript has you covered. In this chapter, we'll explore different ways to run JavaScript, from your browser to the server and beyond.
 
 ## 1. Running JavaScript in the Browser
@@ -176,6 +178,10 @@ These online editors provide a convenient way to write and run JavaScript code w
 :::tip
 When using online editors, remember that your code runs in a sandboxed environment, so you may encounter limitations compared to running JavaScript locally on your machine.
 :::
+
+<AdsComponent />
+
+<br />
 
 ## 4. Running JavaScript in Integrated Development Environments (IDEs)
 
