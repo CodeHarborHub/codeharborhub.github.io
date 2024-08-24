@@ -23,6 +23,8 @@ description: JavaScript has gone through numerous updates and improvements since
 
 <AdsComponent />
 
+<br />
+
 JavaScript has gone through numerous updates and improvements since its inception in 1995. These updates are officially known as ECMAScript (ES) versions, named after the standard maintained by ECMA International. Understanding these versions and their features is crucial for anyone looking to master JavaScript. Let's explore each significant version of JavaScript, what they introduced, and how they transformed the language.
 
 ### ECMAScript 1 (ES1) - The Beginning (1997)
@@ -43,6 +45,10 @@ The first official version of JavaScript was standardized as **ECMAScript 1 (ES1
 - **Better Control over Global Objects:** Enhancements to the global `Object` and `Array` prototypes, making JavaScript more flexible.
 
 ES3 was a significant milestone in JavaScript’s evolution, laying the foundation for modern web development practices. Many of the features introduced in ES3 are still widely used today.
+
+<AdsComponent />
+
+<br />
 
 ### ECMAScript 4 (ES4) - The Unreleased Visionary
 
@@ -140,6 +146,10 @@ ES5 was a significant step forward, making JavaScript more reliable, maintainabl
 - **And Much More:** ES6 introduced many other features like `let` and `const` for variable declarations, default parameters, rest parameters, the `...` spread operator, and more.
 
 ES6 was a game changer, introducing many features that are now considered essential in modern JavaScript development.
+
+<AdsComponent />
+
+<br />
 
 ### ECMAScript 2016 (ES7) - Simplicity and Power
 
@@ -242,6 +252,10 @@ ES8 continued the trend of making JavaScript more powerful and expressive, with 
   ```
 
 ES9 further refined JavaScript’s capabilities, making it easier to work with complex data structures and asynchronous operations.
+
+<AdsComponent />
+
+<br />
 
 ### ECMAScript 2019 (ES10) - Refinements and Improvements
 
@@ -360,6 +374,10 @@ ES11 introduced features that improved code readability, maintainability, and pe
   ```
 
 ES12 focused on quality-of-life improvements and developer productivity, making JavaScript code more concise and readable.
+
+<AdsComponent />
+
+<br />
 
 ### ECMAScript 2022 (ES13) - Even More Enhancements
 
@@ -494,6 +512,10 @@ ES12 focused on quality-of-life improvements and developer productivity, making 
      ```
 
    This feature enhances regular expression handling by providing more detailed information about matched substrings.
+
+<AdsComponent />
+
+<br />
 
 ### Conclusion
 

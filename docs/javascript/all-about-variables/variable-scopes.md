@@ -9,6 +9,8 @@ description: Learn about the different scopes of variables in JavaScript.
 
 <AdsComponent />
 
+<br />
+
 Understanding variable scope in JavaScript is essential for writing effective and bug-free code. The scope of a variable determines where in your code a particular variable can be accessed or modified. Knowing how scopes work will help you prevent errors and make your code more predictable and maintainable.
 
 In this tutorial, we'll explore the different types of scopes in JavaScript, how they work, and how you can use them to control the accessibility of your variables.
@@ -92,6 +94,10 @@ console.log(blockVar); // Error: blockVar is not defined
 In the example above, `blockVar` is declared inside an `if` block, making it a block-scoped variable. It can only be accessed within the block where it's defined. Attempting to access `blockVar` outside the block will result in a `ReferenceError`.
 
 Block scope helps you control the visibility and lifetime of variables within specific code blocks, reducing the chances of unintended side effects and making your code more predictable.
+
+<AdsComponent />
+
+<br />
 
 ## Shadowing and Variable Scope
 

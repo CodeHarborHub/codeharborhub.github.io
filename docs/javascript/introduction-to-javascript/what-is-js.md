@@ -9,6 +9,8 @@ description: JavaScript is a high-level, interpreted programming language that i
 
 <AdsComponent />
 
+<br />
+
 JavaScript is a powerful and versatile programming language that is widely used for front-end web development. It is a high-level, interpreted language that can be used to create interactive websites, web applications, and server-side applications. If you've ever interacted with a website—whether it's clicking a button, filling out a form, or watching content update dynamically—JavaScript was likely at work behind the scenes, making it all happen. JavaScript is the "magic" that brings web pages to life, allowing them to respond to user actions and create engaging experiences.
 
 :::tip Imagine JavaScript as the "Magician" of Web Pages
@@ -52,6 +54,10 @@ JavaScript is one of the three core technologies of the web:
 1. **HTML (HyperText Markup Language):** This is the structure or skeleton of a web page. It defines elements like headings, paragraphs, images, and links.
 2. **CSS (Cascading Style Sheets):** CSS is the design or the skin of the web page. It styles the HTML elements, adding colors, layouts, and fonts to make the page visually appealing.
 3. **JavaScript:** JavaScript is the brain that brings the page to life, allowing it to respond to user actions, perform calculations, manipulate content, and much more.
+
+<AdsComponent />
+
+<br />
 
 ### Why is JavaScript Important?
 

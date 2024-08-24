@@ -9,6 +9,8 @@ description: Learn about the number data type in JavaScript, how to create numbe
 
 <AdsComponent />
 
+<br />
+
 Numbers are a crucial part of any programming language, and JavaScript is no exception. In JavaScript, numbers are used to perform calculations, manipulate data, and handle various operations. This tutorial will walk you through everything you need to know about numbers in JavaScript, from basic concepts to advanced usage.
 
 ## What Is a Number in JavaScript?
@@ -81,6 +83,10 @@ console.log(smallNumber); // Outputs: 0.000005
 
 In the examples above, `5e6` represents `5` multiplied by `10` raised to the power of `6` (i.e., `5,000,000`), and `5e-6` represents `5` multiplied by `10` raised to the power of `-6` (i.e., `0.000005`).
 
+<AdsComponent />
+
+<br />
+
 ## Number Precision
 
 JavaScript numbers are precise up to 15 digits. Beyond this, precision may be lost, and the results of calculations might not be what you expect.
@@ -123,6 +129,10 @@ let negativeInfinity = -Infinity;
 console.log(negativeInfinity); // Output: -Infinity
 console.log(negativeInfinity - 1); // Output: -Infinity
 ```
+
+<AdsComponent />
+
+<br />
 
 ### 3. NaN (Not-a-Number)
 
@@ -179,6 +189,10 @@ let number = parseInt("42");
 
 console.log(number); // Output: 42
 ```
+
+<AdsComponent />
+
+<br />
 
 ### 4. `parseFloat()`
 
@@ -238,6 +252,10 @@ console.log(isFinite(42)); // Outputs: true
 console.log(isFinite(Infinity)); // Outputs: false
 ```
 
+<AdsComponent />
+
+<br />
+
 ### 9. `Number()`
 
 The `Number()` function converts a value to a number.
@@ -296,6 +314,10 @@ let product = num1 * num2;
 
 console.log(product); // Output: 30
 ```
+
+<AdsComponent />
+
+<br />
 
 ### 4. Division (`/`)
 

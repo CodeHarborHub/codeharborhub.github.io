@@ -9,6 +9,8 @@ description: Learn about the undefined data type in JavaScript, how to create un
 
 <AdsComponent />
 
+<br />
+
 In JavaScript, `undefined` is a primitive data type that represents an undefined value. When a variable is declared but not assigned a value, it is automatically assigned the value `undefined`.
 
 ## Creating Undefined Values
@@ -43,6 +45,10 @@ You can also use the `typeof` operator to check if a variable is `undefined`. Th
 let undefinedValue;
 console.log(typeof undefinedValue === "undefined"); // Output: true
 ```
+
+<AdsComponent />
+
+<br />
 
 ## Common Operations with Undefined Values
 
