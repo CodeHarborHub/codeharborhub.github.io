@@ -77,9 +77,9 @@ const BasicEditor= () => {
           <img src="https://cdn-icons-png.flaticon.com/128/9333/9333993.png" onClick={()=>setChecker(pre => ({...pre, settings: !pre.settings}))}  alt='settings'/>
           </div>
         </div>
-        <textarea style={{fontSize:`${checker.fontSize}pt`,color:checker.fontColor==false?"unset":checker.fontColor,background:checker.backcolor==false?"transparent":checker.backcolor}} className={checker.html ? 'editor_textarea_activate' : 'editor_textarea_deactivate'} value={html} placeholder="HTML" onChange={(e) => setHtml(e.target.value)}></textarea>
-        <textarea style={{fontSize:`${checker.fontSize}pt`,color:checker.fontColor==false?"unset":checker.fontColor,background:checker.backcolor==false?"transparent":checker.backcolor}} className={checker.css ? 'editor_textarea_activate' : 'editor_textarea_deactivate'} value={css} placeholder="CSS" onChange={(e) => setCss(e.target.value)}></textarea>
-        <textarea style={{fontSize:`${checker.fontSize}pt`,color:checker.fontColor==false?"unset":checker.fontColor,background:checker.backcolor==false?"transparent":checker.backcolor}} className={checker.js ? 'editor_textarea_activate' : 'editor_textarea_deactivate'} value={js} placeholder="JavaScript" onChange={(e) => setJs(e.target.value)}></textarea>
+        <textarea style={{fontSize:`${checker.fontSize}pt`,color:checker.fontColor==false?"unset":checker.fontColor,background:checker.backcolor==false?"transparent":checker.backcolor}} className={checker.html ? 'editor_textarea_activate' : 'editor_textarea_deactivate'} value={html} placeholder="HTML" onChange={(e) => setHtml(e.target.value)} />
+        <textarea style={{fontSize:`${checker.fontSize}pt`,color:checker.fontColor==false?"unset":checker.fontColor,background:checker.backcolor==false?"transparent":checker.backcolor}} className={checker.css ? 'editor_textarea_activate' : 'editor_textarea_deactivate'} value={css} placeholder="CSS" onChange={(e) => setCss(e.target.value)} />
+        <textarea style={{fontSize:`${checker.fontSize}pt`,color:checker.fontColor==false?"unset":checker.fontColor,background:checker.backcolor==false?"transparent":checker.backcolor}} className={checker.js ? 'editor_textarea_activate' : 'editor_textarea_deactivate'} value={js} placeholder="JavaScript" onChange={(e) => setJs(e.target.value)} />
       </div>
       <div className={style.browserWindow} style={{height:"35.3rem",flex:"1 0 30rem",marginTop:"1.3rem"}}>
       <div className={style.browserWindowHeader}>
@@ -97,7 +97,7 @@ const BasicEditor= () => {
         </div>
       </div>
  
-      <iframe ref={iframeRef} className='output_container' id="preview"></iframe> 
+      <iframe ref={iframeRef} className='output_container' id="preview" /> 
     </div>
     </div>
   );
