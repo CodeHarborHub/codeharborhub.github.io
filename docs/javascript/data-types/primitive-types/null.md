@@ -127,7 +127,7 @@ In the example above, the strict equality comparison (`===`) checks if `nullValu
 You can use the conditional (ternary) operator to assign values based on a condition. The syntax of the conditional operator is as follows:
 
 ```javascript
-condition ? valueIfTrue : valueIfFalse
+condition ? valueIfTrue : valueIfFalse;
 ```
 
 Here's an example of using the conditional operator with `null` values:
