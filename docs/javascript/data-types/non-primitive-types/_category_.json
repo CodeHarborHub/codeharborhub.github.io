@@ -1,0 +1,8 @@
+{
+  "label": "Non Primitive Types",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Non-primitive types are more complex data types in JavaScript. In this tutorial, you'll learn about non-primitive types in JavaScript, such as object, array, function, and more."
+  }
+}
