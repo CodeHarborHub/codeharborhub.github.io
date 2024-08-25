@@ -61,7 +61,7 @@ export default function Contact(): JSX.Element {
   const handleSubmit = async(e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setChecker(pre=>({...pre,loading:true}))
-    let response=await axios.post("https://codeharborhub-email-back-end.onrender.com/contact",{
+    let response=await axios.post("https://chh-backend.vercel.app//contact",{
       name:formValues.fullName,
       email:formValues.email,
       message:formValues.message
