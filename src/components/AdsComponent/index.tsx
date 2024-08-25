@@ -26,7 +26,7 @@ const AdsComponent = () => {
         data-ad-format="fluid"
         data-ad-client="ca-pub-5832817025080991"
         data-ad-slot="3270832720"
-      ></ins>
+       />
     </>
   );
 };
