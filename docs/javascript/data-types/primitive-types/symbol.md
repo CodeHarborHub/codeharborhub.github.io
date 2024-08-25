@@ -61,7 +61,7 @@ let firstName = Symbol("firstName");
 let person = {
   [firstName]: "John",
   lastName: "Doe",
-  age: 30
+  age: 30,
 };
 
 console.log(person[firstName]); // Output: John
@@ -79,9 +79,9 @@ let logSymbol = Symbol("log");
 
 // Create an object with a symbol property
 let logger = {
-  [logSymbol]: function(message) {
+  [logSymbol]: function (message) {
     console.log(message);
-  }
+  },
 };
 
 logger[logSymbol]("Logging a message"); // Output: Logging a message
