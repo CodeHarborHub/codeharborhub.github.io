@@ -1,8 +1,0 @@
-{
-    "label": "Indexing and Hashing",
-    "position": 5,
-    "link": {
-        "type": "generated-index",
-        "description": "Explore various indexing techniques and hashing methods in DBMS."
-    }
-}

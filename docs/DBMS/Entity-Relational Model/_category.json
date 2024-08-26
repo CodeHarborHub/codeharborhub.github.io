@@ -1,9 +1,0 @@
-{
-    "label": "Entity-Relational Model",
-    "position": 1,
-    "link": {
-      "type": "generated-index",
-      "description": "In this section, you will learn about the Entity-Relational Model in DBMS, a fundamental concept for conceptual design of databases. We will cover the basics of entities, relationships, attributes, and constraints, and how they are used to create a structured database schema."
-    }
-  }
-  

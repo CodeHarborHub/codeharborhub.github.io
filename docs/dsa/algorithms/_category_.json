@@ -1,8 +1,0 @@
-{
-    "label": "Algorithms",
-    "position": 14,
-    "link": {
-      "type": "generated-index",
-      "description": "Searching algorithms are a set of techniques used to find a specific element or value in a collection of data. They are commonly used in computer science and data analysis to efficiently locate desired information."
-    }
-  }
