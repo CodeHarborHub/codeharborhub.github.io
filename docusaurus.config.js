@@ -116,11 +116,18 @@ const config = {
       ],
 
       algolia: {
-        apiKey: "2c1a3331ebff51f76d2f247323ee4ba4",
-        indexName: "code-harbor-hub",
-        appId: "M9BCMBK1PH",
+        apiKey: "c2da29542646ed6c62329fff1bb0264f",
+        indexName: "odeharborhubio",
+        appId: "ZF3MPCPQHR",
         contextualSearch: false,
       },
+      
+      // algolia: {
+      //   apiKey: "2c1a3331ebff51f76d2f247323ee4ba4",
+      //   indexName: "code-harbor-hub",
+      //   appId: "M9BCMBK1PH",
+      //   contextualSearch: false,
+      // },
 
       navbar: {
         title: "CodeHarborHub",
