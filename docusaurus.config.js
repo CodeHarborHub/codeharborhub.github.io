@@ -116,7 +116,7 @@ const config = {
       ],
 
       algolia: {
-        apiKey: "c2da29542646ed6c62329fff1bb0264f",
+        apiKey: "66c23e399ddb3c00367d40e3",
         indexName: "odeharborhubio",
         appId: "ZF3MPCPQHR",
         contextualSearch: false,
