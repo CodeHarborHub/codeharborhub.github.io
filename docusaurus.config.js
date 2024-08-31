@@ -121,7 +121,7 @@ const config = {
         appId: "ZF3MPCPQHR",
         contextualSearch: false,
       },
-      
+
       navbar: {
         title: "CodeHarborHub",
         logo: {
