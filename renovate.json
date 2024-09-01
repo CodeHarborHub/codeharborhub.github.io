@@ -14,7 +14,7 @@
       "groupSlug": "all"
     }
   ],
-  "automerge": true,
+  "automerge": false,
   "automergeType": "pr",
   "prHourlyLimit": 24,
   "prConcurrentLimit": 10,
