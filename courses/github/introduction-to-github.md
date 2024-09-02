@@ -66,3 +66,5 @@ Now that you know what to expect from this course, let's get started with the fi
 [![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=ajay-dhangar&template_name=introduction-to-github&owner=%40me&name=skills-introduction-to-github&description=My+clone+repository&visibility=public)
 
 Click on the button above to create a new repository and start the course. You can use this repository to follow along with the lessons and practice what you learn.
+
+If you have any questions or need help, feel free to ask in the [GitHub Discussions](https://github.com/orgs/codeharborhub/discussions/categories/introduction-to-github) for this course. We're here to help you succeed!
