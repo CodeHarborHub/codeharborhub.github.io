@@ -22,7 +22,7 @@ To get started with GitHub, you need to create a GitHub account. If you already 
 
 2. Enter your email address, choose a username, and create a password.
 
-    <BrowserWindow url="https://github.com" minHeight={300} bodyStyle={{ padding: 0 }}>
+    <BrowserWindow url="https://github.com" bodyStyle={{ padding: 0 }}>
       ![Create Account](img-2.png)
     </BrowserWindow>
 
@@ -31,13 +31,13 @@ To get started with GitHub, you need to create a GitHub account. If you already 
 
     You will receive an email from GitHub with a link to verify your email address. Click on the link to verify your email address.
 
-    <BrowserWindow url="https://mail.google.com/mail/u/..." minHeight={300} bodyStyle={{ padding: 0 }}>
+    <BrowserWindow url="https://mail.google.com/mail/u/..." bodyStyle={{ padding: 0 }}>
       ![Verify Email](img-3.png)
     </BrowserWindow>
 
 5. Congratulations! You now have a GitHub account.
    
-   <BrowserWindow url="https://github.com/chh-user" minHeight={300} bodyStyle={{ padding: 0 }}>
+   <BrowserWindow url="https://github.com/chh-user" bodyStyle={{ padding: 0 }}>
       ![GitHub account](img-4.png)
     </BrowserWindow>
 
