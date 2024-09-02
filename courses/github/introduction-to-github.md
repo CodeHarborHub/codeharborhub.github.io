@@ -5,11 +5,23 @@ sidebar_label: Introduction to GitHub
 sidebar_position: 1
 description: Get started with GitHub in less than an hour! Learn the basics of Git and GitHub, create a new repository, clone a repository, create a branch, make changes to a file, commit changes, push changes to GitHub, create a pull request, and merge a pull request.
 tags: [github, git, version control, collaboration, open source, beginners]
-keywords: [github, git, version control, collaboration, open source, repository, branch, commit, pull request, merge, beginners]
+keywords:
+  [
+    github,
+    git,
+    version control,
+    collaboration,
+    open source,
+    repository,
+    branch,
+    commit,
+    pull request,
+    merge,
+    beginners,
+  ]
 ---
 
 **Get Started using GitHub in less than an hour! 🚀**
-
 
 > **Estimated completion time:** 1 hour
 >
@@ -20,7 +32,6 @@ keywords: [github, git, version control, collaboration, open source, repository,
 > **Audience:** Developers, students, and anyone new to GitHub
 >
 > **Author:** Ajay Dhangar
->
 
 <!-- ## Course Outline
 
@@ -57,7 +68,6 @@ GitHub is a platform that brings people together to work on projects from all ov
 ## Prerequisites
 
 This course is designed for beginners, so no prior knowledge of Git or GitHub is required. All you need is a GitHub account and a computer with an internet connection.
-
 
 ## Let's get started!
 
