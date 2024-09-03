@@ -10,13 +10,11 @@ keywords: [github, git, version control, collaboration, beginners, open source, 
 
 **To get started with GitHub, you need to create a GitHub account. If you already have a GitHub account, you can skip this step.**
 
-## Create a GitHub account
-
 To get started with GitHub, you need to create a GitHub account. If you already have a GitHub account, you can skip this step.
 
 1. Go to [GitHub](https://github.com/) and click on the "Sign up" button.
 
-    <BrowserWindow url="https://github.com" minHeight={300} bodyStyle={{ padding: 0 }}>
+    <BrowserWindow url="https://github.com" bodyStyle={{ padding: 0 }}>
       ![GitHub Sign Up](img-1.png)
     </BrowserWindow>
 
