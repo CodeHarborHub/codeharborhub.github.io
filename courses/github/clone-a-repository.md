@@ -77,4 +77,4 @@ To clone a repository from GitHub, follow these steps:
     # Push changes back to GitHub
     ```
 
-Congratulations! You have successfully cloned a repository from GitHub to your local machine. You can now start working on the project, collaborate with others, and contribute to the codebase. Happy coding! 🚀
+Congratulations! You have successfully cloned a repository from GitHub to your local machine. You can now start working on the project, collaborate with others, and contribute to the codebase. Happy coding!

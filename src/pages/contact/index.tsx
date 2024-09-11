@@ -58,32 +58,75 @@ export default function Contact(): JSX.Element {
   };
 
   // Function to handle form submission
-  const handleSubmit = async(e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setChecker(pre=>({...pre,loading:true}))
-    let response=await axios.post("https://chh-backend.vercel.app/contact",{
-      name:formValues.fullName,
-      email:formValues.email,
-      message:formValues.message
-    })
-
-    setFormValues({
-      fullName: "",
-      email: "",
-      phone: "",
-      message: "",
-      feedbackType: "Question",
-      otherFeedback: "",
-    })
-    if(response.data.ok){
-      setChecker(pre=>({...pre,popup:true,status:true,loading:false}))
+  
+    setChecker((prev) => ({ ...prev, loading: true }));
+  
+    try {
+      // Sending form data to the backend with correct headers
+      const response = await axios.post(
+        "https://chh-backend.vercel.app/email-contact",
+        {
+          name: formValues.fullName,
+          email: formValues.email,
+          phone: formValues.phone,
+          message: formValues.message,
+          feedbackType: formValues.feedbackType,
+          otherFeedback: formValues.otherFeedback,
+        },
+        {
+          headers: {
+            "Content-Type": "application/json", // Ensuring JSON format
+          },
+        }
+      );
+  
+      // Resetting form values after submission
+      setFormValues({
+        fullName: "",
+        email: "",
+        phone: "",
+        message: "",
+        feedbackType: "Question",
+        otherFeedback: "",
+      });
+  
+      // Handling response based on the server's reply
+      if (response.data.ok) {
+        setChecker((prev) => ({
+          ...prev,
+          popup: true,
+          status: true,
+          loading: false,
+        }));
+      } else {
+        setChecker((prev) => ({
+          ...prev,
+          popup: true,
+          status: false,
+          loading: false,
+        }));
+      }
+    } catch (error) {
+      console.error("Error submitting the form:", error);
+      // Set error state if request fails
+      setChecker((prev) => ({
+        ...prev,
+        popup: true,
+        status: false,
+        loading: false,
+      }));
     }
-    else{
-      setChecker(pre=>({...pre,popup:true,status:false,loading:false}))
-    }
-    setTimeout(()=>{
-    setChecker(pre=>({...pre,popup:false,status:false}))
-    },2000)
+  
+    // Hide popup after 2 seconds
+    setTimeout(() => {
+      setChecker((prev) => ({
+        ...prev,
+        popup: false,
+        status: false,
+      }));
+    }, 2000);
   };
 
   return (
