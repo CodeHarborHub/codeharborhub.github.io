@@ -5,7 +5,20 @@ sidebar_label: Make Changes to a File
 sidebar_position: 6
 description: Learn how to make changes to a file in a Git repository. Edit files, add new content, and update existing code in your project.
 tags: [github, git, version control, collaboration, beginners]
-keywords: [github, git, version control, collaboration, beginners, open source, edit, file, changes, update, content]
+keywords:
+  [
+    github,
+    git,
+    version control,
+    collaboration,
+    beginners,
+    open source,
+    edit,
+    file,
+    changes,
+    update,
+    content,
+  ]
 ---
 
 **To make changes to a file in a Git repository, you need to edit the file, add new content, or update existing code. Making changes to files allows you to improve your project, fix bugs, and add new features.**
@@ -22,33 +35,33 @@ To make changes to a file in a Git repository, follow these steps:
 
 5. Stage the changes using the `git add` command. This command adds the changes to the staging area, preparing them for the next commit.
 
-    ```bash title="Terminal"
-    git add filename
-    ```
+   ```bash title="Terminal"
+   git add filename
+   ```
 
-    :::tip Note: 
-    Replace `filename` with the name of the file you want to stage. You can also use `git add .` to stage all changes in the repository.
-    :::
+   :::tip Note:
+   Replace `filename` with the name of the file you want to stage. You can also use `git add .` to stage all changes in the repository.
+   :::
 
 6. Commit the changes using the `git commit` command. This command creates a new commit with the changes you staged in the previous step.
 
-    ```bash title="Terminal"
-    git commit -m "Add new feature to the project"
-    ```
+   ```bash title="Terminal"
+   git commit -m "Add new feature to the project"
+   ```
 
-    :::tip Note:
-    Replace `"Add new feature to the project"` with a meaningful commit message that describes the changes you made in this commit.
-    :::
+   :::tip Note:
+   Replace `"Add new feature to the project"` with a meaningful commit message that describes the changes you made in this commit.
+   :::
 
 7. Push the changes to GitHub using the `git push` command. This command uploads the commits to the remote repository on GitHub.
 
-    ```bash title="Terminal"
-    git push origin branch-name
-    ```
+   ```bash title="Terminal"
+   git push origin branch-name
+   ```
 
-    :::tip Note:
-    Replace `branch-name` with the name of the branch you are working on. By default, the branch name is `main` or `master`.
-    :::
+   :::tip Note:
+   Replace `branch-name` with the name of the branch you are working on. By default, the branch name is `main` or `master`.
+   :::
 
 8. Verify the changes on GitHub by visiting the repository on the GitHub website. You should see the new commit with the changes you made to the file.
 
