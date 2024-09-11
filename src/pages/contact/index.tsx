@@ -60,9 +60,9 @@ export default function Contact(): JSX.Element {
   // Function to handle form submission
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-  
+
     setChecker((prev) => ({ ...prev, loading: true }));
-  
+
     try {
       // Sending form data to the backend with correct headers
       const response = await axios.post(
@@ -81,7 +81,7 @@ export default function Contact(): JSX.Element {
           },
         }
       );
-  
+
       // Resetting form values after submission
       setFormValues({
         fullName: "",
@@ -91,7 +91,7 @@ export default function Contact(): JSX.Element {
         feedbackType: "Question",
         otherFeedback: "",
       });
-  
+
       // Handling response based on the server's reply
       if (response.data.ok) {
         setChecker((prev) => ({
@@ -118,7 +118,7 @@ export default function Contact(): JSX.Element {
         loading: false,
       }));
     }
-  
+
     // Hide popup after 2 seconds
     setTimeout(() => {
       setChecker((prev) => ({
