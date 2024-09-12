@@ -87,7 +87,6 @@ const config = {
         isCloseable: true,
         backgroundColor: "#4d5061",
       },
-      
 
       metadata: [
         {
