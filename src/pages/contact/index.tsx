@@ -6,7 +6,7 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { FaYoutube, FaDiscord, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import Popup from "../popup/popup";
+import Popup from "../../components/popup/popup";
 import axios from 'axios'
 // import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import { log } from "console";
@@ -77,7 +77,7 @@ export default function Contact(): JSX.Element {
         },
         {
           headers: {
-            "Content-Type": "application/json", // Ensuring JSON format
+            "Content-Type": "application/json",
           },
         }
       );
@@ -90,9 +90,8 @@ export default function Contact(): JSX.Element {
         message: "",
         feedbackType: "Question",
         otherFeedback: "",
-      });
-  
-      // Handling response based on the server's reply
+      });  
+      
       if (response.data.ok) {
         setChecker((prev) => ({
           ...prev,
@@ -110,7 +109,6 @@ export default function Contact(): JSX.Element {
       }
     } catch (error) {
       console.error("Error submitting the form:", error);
-      // Set error state if request fails
       setChecker((prev) => ({
         ...prev,
         popup: true,
@@ -237,7 +235,7 @@ export default function Contact(): JSX.Element {
                     <div>
                       <h5 className={styles.help_heading}>How Can We Help?</h5>
                       <p className={styles.help_text}>
-                        ajaydhyangar49@gmail.com
+                        codeharborhub@gmail.com
                       </p>
                     </div>
                   </motion.div>
@@ -339,7 +337,7 @@ export default function Contact(): JSX.Element {
                       name="feedbackType"
                       value={formValues.feedbackType}
                       onChange={handleInputChange}
-                      className={styles.form_select}
+                      className={styles.form_select}                      
                       required
                     >
                       <option value="Question">Question</option>
