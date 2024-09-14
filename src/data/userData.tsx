@@ -323,8 +323,8 @@ export const Users: User[] = [
       "https://github.com/Ajay-Dhangar/zacson",
     tags: ["opensource", "html", "css", "javascript", "gym", "templates", "scss", "php"],
   },
-  
-  // Array Explorer 
+
+  // Array Explorer
 
   {
     title: "Array Explorer",
@@ -335,7 +335,7 @@ export const Users: User[] = [
     source: "https://github.com/Ajay-Dhangar/array-explorer",
     tags: ["opensource", "html", "javascript", "product", "css"],
   },
-  
+
 
   // Activitar GYM Template
 
@@ -401,7 +401,7 @@ export const Users: User[] = [
       source: "https://github.com/Ridhima10/Js-mini-projects/tree/main/QR%20code%20generator",
       tags: ["html", "css", "javascript"],
     },
-   
+
     // Anime Template
 
     {
