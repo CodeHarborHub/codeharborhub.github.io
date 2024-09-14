@@ -32,6 +32,7 @@
   --ifm-bg-color: #f8f9fa;
   --image-filter:invert(0);
   --site-color-svg-icon-favorite: #ff1100cb;
+  --ifm-text-color: #000;
 }
 
 [data-theme="dark"] {
@@ -48,6 +49,7 @@
   --ifm-bg-color: #1a202c;
   --image-filter:invert(1);
   --site-color-svg-icon-favorite: #ff9100e5;
+  --ifm-text-color: #fff;
 }
 
 .header-github-link::before {
@@ -69,7 +71,6 @@
 }
 
 div[class^="announcementBar_"] {
-  background: #06e06fb4;
   color: #fff;
   border-bottom: 1.8px dotted rgb(37, 184, 11);
   font-weight: bold;
@@ -84,15 +85,16 @@ div[class^="announcementBar_"] {
 div[class^="announcementBar_"] a {
   font-size: 1.2em;
   padding: 1px 4px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     rgb(252 176 69 / 100%) 0%,
     rgb(253 29 29 / 100%) 50%,
-    rgb(131 58 180 / 100%) 100%
+    rgb(229, 223, 232) 100%
   );
   background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 2px #ff00de, 0 0 1px #ff00de;
+  -webkit-text-fill-color: transparent; */
+  text-decoration: none;
+  color: #48df84;
 }
 
 div[class^="announcementBar_"] a:hover {
@@ -100,8 +102,8 @@ div[class^="announcementBar_"] a:hover {
   padding: 1px 4px;
   background: linear-gradient(
     90deg,
-    rgb(131 58 180 / 100%) 0%,
-    rgb(253 29 29 / 100%) 50%,
+    rgb(235, 244, 243) 0%,
+    #7ab3c8 50%,
     rgb(252 176 69 / 100%) 100%
   );
   background-clip: text;
@@ -111,14 +113,16 @@ div[class^="announcementBar_"] a:hover {
 [data-theme="dark"] div[class^="announcementBar_"] a {
   font-size: 1.2em;
   padding: 1px 4px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     rgb(131 58 180 / 100%) 0%,
     rgb(253 29 29 / 100%) 50%,
     rgb(252 176 69 / 100%) 100%
   );
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
+  text-decoration: none;
+  color: #48df84;
 }
 
 [data-theme="dark"] div[class^="announcementBar_"] a:hover {
@@ -128,7 +132,7 @@ div[class^="announcementBar_"] a:hover {
     90deg,
     rgb(252 176 69 / 100%) 0%,
     rgb(253 29 29 / 100%) 50%,
-    rgb(131 58 180 / 100%) 100%
+    rgb(220, 203, 232) 100%
   );
   background-clip: text;
   -webkit-text-fill-color: transparent;

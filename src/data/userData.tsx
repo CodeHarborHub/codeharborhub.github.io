@@ -99,26 +99,26 @@ export const Users: User[] = [
 
   // Random Meme Generator Clone
 
-  {
-    title: "Random Meme Generator",
-    description:
-      "It generates random memes by using the technique of API Fetching and also supports the feature of sharing the memes.",
-    preview: require("./showcase/meme.png"),
-    website: "https://giggle-hub.vercel.app/",
-    source: "https://github.com/komal-agarwal5/Giggle-Hub------Meme-Generator",
-    tags: ["opensource", "product", "html", "css", "javascript"],
-  },
+  // {
+  //   title: "Random Meme Generator",
+  //   description:
+  //     "It generates random memes by using the technique of API Fetching and also supports the feature of sharing the memes.",
+  //   preview: require("./showcase/meme.png"),
+  //   website: "https://giggle-hub.vercel.app/",
+  //   source: "https://github.com/komal-agarwal5/Giggle-Hub------Meme-Generator",
+  //   tags: ["opensource", "product", "html", "css", "javascript"],
+  // },
     // URL Shortner
 
-    {
-      title: "URL Shortner",
-      description:
-        "It  Short  URL by using the technique of API Fetching and also supports the feature of copy url.",
-      preview: require("./showcase/URLShortner.png"),
-      website: "https://url-shortner-tau-woad.vercel.app/",
-      source: "https://github.com/kartikmehta18/URLshortner",
-      tags: ["opensource", "product", "html", "css", "javascript"],
-    },
+    // {
+    //   title: "URL Shortner",
+    //   description:
+    //     "It  Short  URL by using the technique of API Fetching and also supports the feature of copy url.",
+    //   preview: require("./showcase/URLShortner.png"),
+    //   website: "https://url-shortner-tau-woad.vercel.app/",
+    //   source: "https://github.com/kartikmehta18/URLshortner",
+    //   tags: ["opensource", "product", "html", "css", "javascript"],
+    // },
 
   // Age Calculator Clone
 
@@ -134,17 +134,17 @@ export const Users: User[] = [
 
   // To Do List App Clone
 
-  {
-    title: "To Do List App",
-    description:
-      "A simple To-Do List App using HTML CSS JS . Add your tasks and manage them easily , mark your task as completed or incomplete ",
-    preview: require("./showcase/todolist.png"),
-    website:
-      "https://50-days-50-web-project.vercel.app/TO_DO_LIST/todolist.html",
-    source:
-      "https://github.com/dhairyagothi/50_days_50_web_project/tree/Main/public/TO_DO_LIST",
-    tags: ["html", "css", "javascript"],
-  },
+  // {
+  //   title: "To Do List App",
+  //   description:
+  //     "A simple To-Do List App using HTML CSS JS . Add your tasks and manage them easily , mark your task as completed or incomplete ",
+  //   preview: require("./showcase/todolist.png"),
+  //   website:
+  //     "https://50-days-50-web-project.vercel.app/TO_DO_LIST/todolist.html",
+  //   source:
+  //     "https://github.com/dhairyagothi/50_days_50_web_project/tree/Main/public/TO_DO_LIST",
+  //   tags: ["html", "css", "javascript"],
+  // },
 
   // Dictonary app
 
@@ -181,18 +181,6 @@ export const Users: User[] = [
     tags: ["opensource", "product", "react", "css", "javascript"],
   },
 
-  // Guess The Number Game Clone
-
-  {
-    title: "Guess The Number Game",
-    description:
-      "It allows users to play the Guess The Number Game based on the choice of Easy(3 rounds), Intermediate(5 rounds) and Hard(7 rounds).",
-    preview: require("./showcase/guessnumber-ss.png"),
-    website: "https://guess-me-tau.vercel.app/",
-    source: "https://github.com/ParnaRoyChowdhury777/Guess_The_Number_Game",
-    tags: ["opensource", "product", "html", "css", "javascript", "vanilla"],
-  },
-
   // QR Generator Clone
 
   {
@@ -206,16 +194,16 @@ export const Users: User[] = [
 
   // captcha code generator
 
-  {
-    title: "Captcha-Code Generator",
-    description:
-      "It generates a Captcha code based on the user's input and validates the user's input with the generated Captcha code.",
-    preview: require("./showcase/captcha-code.png"),
-    website: "https://50-days-50-web-project.vercel.app/captcha/captcha.html",
-    source:
-      "https://github.com/dhairyagothi/50_days_50_web_project/tree/Main/public/captcha",
-    tags: ["html", "css", "javascript"],
-  },
+  // {
+  //   title: "Captcha-Code Generator",
+  //   description:
+  //     "It generates a Captcha code based on the user's input and validates the user's input with the generated Captcha code.",
+  //   preview: require("./showcase/captcha-code.png"),
+  //   website: "https://50-days-50-web-project.vercel.app/captcha/captcha.html",
+  //   source:
+  //     "https://github.com/dhairyagothi/50_days_50_web_project/tree/Main/public/captcha",
+  //   tags: ["html", "css", "javascript"],
+  // },
 
   // Algo: Algorithm Learning Platform
 
@@ -262,15 +250,15 @@ export const Users: User[] = [
 
   // BMI Calculator
 
-  {
-    title: "BMI Calculator",
-    description:
-      "A BMI Calculator is a tool that quickly determines body mass index from a person's weight and height,  categorizing results into underweight, normal weight, overweight .",
-    preview: require("./showcase/BMI-calculator.png"),
-    website: "https://bmi-calculator-liart-five.vercel.app",
-    source: "https://github.com/parikhitritgithub/BMI-Calculator",
-    tags: ["opensource", "javascript", "html", "css"],
-  },
+  // {
+  //   title: "BMI Calculator",
+  //   description:
+  //     "A BMI Calculator is a tool that quickly determines body mass index from a person's weight and height,  categorizing results into underweight, normal weight, overweight .",
+  //   preview: require("./showcase/BMI-calculator.png"),
+  //   website: "https://bmi-calculator-liart-five.vercel.app",
+  //   source: "https://github.com/parikhitritgithub/BMI-Calculator",
+  //   tags: ["opensource", "javascript", "html", "css"],
+  // },
 
   // Gemini AI Chatbot
 
@@ -335,18 +323,19 @@ export const Users: User[] = [
       "https://github.com/Ajay-Dhangar/zacson",
     tags: ["opensource", "html", "css", "javascript", "gym", "templates", "scss", "php"],
   },
-  // Crossfits GYM Template
+
+  // Array Explorer
 
   {
-    title: "Crossfits",
+    title: "Array Explorer",
     description:
-      "Crossfits is a responsive landing page for GYM and Fitness.",
-    preview: require("./showcase/crossfits.png"),
-    website: "https://ridhima10.github.io/Crossfits/",
-    source:
-      "https://github.com/Ridhima10/Crossfits",
-    tags: ["opensource", "html", "css",  "gym", "templates"],
+      "A web application for exploring JavaScript array methods. It provides a visual representation of the array methods.",
+    preview: require("./showcase/array-explorer.png"),
+    website: "https://ajay-dhangar.github.io/array-explorer/",
+    source: "https://github.com/Ajay-Dhangar/array-explorer",
+    tags: ["opensource", "html", "javascript", "product", "css"],
   },
+
 
   // Activitar GYM Template
 
@@ -376,6 +365,21 @@ export const Users: User[] = [
       tags: ["opensource", "html", "css", "javascript", "game"],
     },
 
+    // 3D Scrolling Animation portfolio
+
+    {
+      title: "3D Scrolling Animation portfolio",
+      description:
+        "3D Scrolling Animation portfolio using HTML, CSS and JavaScript, React.js with Vite. Scroll down to see the magic.",
+      preview: require("./showcase/3d-0scrolling-animation.png"),
+      website:
+        "https://3d-0scrolling-animation.vercel.app/",
+      source:
+        "",
+      tags: ["portfolio", "html", "css", "javascript", "react"],
+    },
+
+
     // horse ride booking system
 
     {
@@ -386,17 +390,9 @@ export const Users: User[] = [
       source: null,
       tags: ["opensource", "react", "redux", "motion", "javascript"],
     },
-    //The Pull
 
-    {
-      title: "The Pull",
-      description: "Ecommerce wesbite template from where we can buy variety of shoes",
-      preview: require("./showcase/pull.png"),
-      website:"https://ridhima10.github.io/The_Pull/",
-      source: "https://github.com/Ridhima10/The_Pull",
-      tags: ["html", "css", "javascript"],
-    },
     // QR Generator
+
     {
       title: "QR Generator",
       description: "Simple QR generator made with HTML, CSS and Javacsript",
@@ -405,13 +401,38 @@ export const Users: User[] = [
       source: "https://github.com/Ridhima10/Js-mini-projects/tree/main/QR%20code%20generator",
       tags: ["html", "css", "javascript"],
     },
-    // CSS Buttons sample
+
+    // Anime Template
+
     {
-      title: "Custom made CSS Buttons",
-      description: "Variety of custom made CSS Buttons.Hover on it to get more insight of the buttons. Customize it , use it and have fun ",
-      preview: require("./showcase/buttons.png"),
-      website: "https://github.com/Ridhima10/complete-web-dev.-boot-camp/tree/master/Buttons/Styling%20of%20buttons",
-      source: "https://github.com/Ridhima10/complete-web-dev.-boot-camp/tree/master/Buttons/Styling%20of%20buttons",
+      title: "Anime Template",
+      description: "A simple Anime template made with HTML, CSS and Javascript for anime lovers.",
+      preview: require("./showcase/anime.png"),
+      website: "https://ajay-dhangar.github.io/anime/",
+      source: "https://github.com/Ajay-Dhangar/anime",
+      tags: ["html", "css", "javascript", "templates", "scss"],
+    },
+
+    // Budget App
+
+    {
+      title: "Budget App",
+      description: "A simple budget app made with HTML, CSS and Javascript. It helps you to manage your budget.",
+      preview: require("./showcase/budget.png"),
+      website: "https://ajay-dhangar.github.io/budget-app/",
+      source: "https://github.com/Ajay-Dhangar/budget-app",
       tags: ["html", "css", "javascript"],
-    }
+    },
+
+    // Chat Bot
+
+    {
+      title: "Chat Bot",
+      description: "A simple chat bot made with HTML, CSS and Javascript. It helps you to chat with the bot.",
+      preview: require("./showcase/chatbot.png"),
+      website: "https://ajay-dhangar.github.io/chatbot/",
+      source: "https://github.com/Ajay-Dhangar/chatbot",
+      tags: ["html", "css", "javascript"],
+    },
+
 ];

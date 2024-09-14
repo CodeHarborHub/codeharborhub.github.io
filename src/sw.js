@@ -1,9 +1,9 @@
-import {registerRoute} from 'workbox-routing';
-import {StaleWhileRevalidate} from 'workbox-strategies';
+import { registerRoute } from "workbox-routing";
+import { StaleWhileRevalidate } from "workbox-strategies";
 
 export default function swCustom(params) {
   if (params.debug) {
-    console.log('[CodeMastermindHQ-PWA][SW]: running swCustom code', params);
+    console.log("[CodeHarborHub-PWA][SW]: running swCustom code", params);
   }
 
   // Cache responses from external resources

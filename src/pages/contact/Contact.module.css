@@ -35,7 +35,7 @@
 
 .main__contact_ud_wrapper {
   margin-top: 1rem;
-  align-items: center;  
+  align-items: center;
 }
 
 .ud_contact_title {
@@ -62,7 +62,7 @@
   flex-wrap: wrap;
   gap: 10px;
   margin: 8rem auto auto auto;
-  
+
 }
 
 .contact_info_item {
@@ -76,7 +76,7 @@
 }
 
 .contact_info .icon .fill_current {
-  fill: #816bd1;
+  fill: var(--ifm-color-primary);
 }
 
 .contact_info .contact_info_item .location_heading, .contact_info .contact_info_item .help_heading {
@@ -122,10 +122,13 @@
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 5px;
+  background: transparent;
+  color: var(--ifm-text-color);
 }
 
 .main__contact_contains_right .form_container .form_group .phone_input {
-  background-color: transparent;   
+  background-color: transparent;
+  color: var(--ifm-text-color);
 }
 
 .main__contact_contains_right .form_container .form_group .form_select {
@@ -140,6 +143,8 @@
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 5px;
+  background: transparent;
+  color: var(--ifm-text-color);
 }
 
 .main__contact_contains_right .form_container .form_group .form_button {
@@ -147,7 +152,7 @@
   padding: 0.5rem;
   border: none;
   border-radius: 5px;
-  background-color: #816bd1;
+  background-color: var(--ifm-color-primary);
   color: #fff;
   font-size: 1rem;
   font-weight: 600;
@@ -155,7 +160,7 @@
 }
 
 .main__contact_contains_right .form_container .form_group .form_button:hover{
-  background-color: #816bd1b5;
+  background-color: var(--ifm-color-primary-dark);
 }
 
 @media screen and (max-width: 768px) {
@@ -169,7 +174,7 @@
 }
 
 .social_media_icons{
-  color: #816bd1 !important;
+  color: var(--ifm-color-primary) !important;
   font-size: 34px;
   display: flex;
   flex-direction: row;
@@ -181,7 +186,7 @@
 
 .social_media_icons a{
   list-style: none;
-  color: #816bd1 !important;
+  color: var(--ifm-color-primary) !important;
 }
 
 .social_media_heading{
@@ -199,6 +204,6 @@
   animation: spinner 1s infinite linear;
   margin: auto;
 }
-@keyframes spinner{ 
+@keyframes spinner{
   100%{transform: rotate(1turn)}
 }
