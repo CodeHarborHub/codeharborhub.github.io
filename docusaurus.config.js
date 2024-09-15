@@ -79,7 +79,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: "img/nav-logo.jpg",
+      image: "img/codeharborhub-social-card.jpg",
       announcementBar: {
         id: "announcementBar",
         content:
@@ -110,7 +110,7 @@ const config = {
         },
         {
           property: "og:image",
-          content: "https://codeharborhub.github.io/img/nav-logo.jpg",
+          content: "https://codeharborhub.github.io/img/codeharborhub-social-card.jpg",
         },
         { property: "og:url", content: "https://codeharborhub.github.io" },
       ],
