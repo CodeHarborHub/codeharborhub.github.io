@@ -110,7 +110,8 @@ const config = {
         },
         {
           property: "og:image",
-          content: "https://codeharborhub.github.io/img/codeharborhub-social-card.jpg",
+          content:
+            "https://codeharborhub.github.io/img/codeharborhub-social-card.jpg",
         },
         { property: "og:url", content: "https://codeharborhub.github.io" },
       ],
