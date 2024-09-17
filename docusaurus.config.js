@@ -269,7 +269,7 @@ const config = {
             className: "header-signup-link",
             "aria-label": "Auth",
             label: "Auth",
-          },           
+          },
         ],
         // hideOnScroll: true,
       },
