@@ -1,47 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
 
 interface AuthorProps {
   username: string;
 }
-
-const AuthorContainer = styled.div`
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-`;
-
-const AuthorLink = styled.a`
-  text-decoration: none;
-  color: inherit;
-  display: flex;
-  align-items: center;
-
-  &:hover {
-    opacity: 0.8;
-  }
-`;
-
-const Avatar = styled.img`
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 10px;
-`;
-
-const AuthorName = styled.span`
-  font-weight: bold;
-`;
-
-const Loading = styled.div`
-  font-style: italic;
-  color: #666;
-`;
-
-const Error = styled.div`
-  color: red;
-  font-weight: bold;
-`;
 
 const Author: React.FC<AuthorProps> = ({ username }) => {
   const [authorData, setAuthorData] = useState<any>(null);
@@ -50,37 +11,46 @@ const Author: React.FC<AuthorProps> = ({ username }) => {
 
   useEffect(() => {
     fetch(`https://api.github.com/users/${username}`)
-      .then(response => {
+      .then((response) => {
         if (!response.ok) {
           throw new Error('Failed to fetch author data');
         }
         return response.json();
       })
-      .then(data => {
+      .then((data) => {
         setAuthorData(data);
         setIsLoading(false);
       })
-      .catch(error => {
+      .catch((error) => {
         setError(error.message);
         setIsLoading(false);
       });
   }, [username]);
 
   if (isLoading) {
-    return <Loading>Loading...</Loading>;
+    return <div className="italic text-gray-500">Loading...</div>;
   }
 
   if (error) {
-    return <Error>Error: {error}</Error>;
+    return <div className="text-red-500 font-bold">Error: {error}</div>;
   }
 
   return (
-    <AuthorContainer>
-      <AuthorLink href={authorData.html_url} target="_blank" rel="noopener noreferrer">
-        <Avatar src={authorData.avatar_url} alt={authorData.name} />
-        <AuthorName>{authorData.name || authorData.login}</AuthorName>
-      </AuthorLink>
-    </AuthorContainer>
+    <div className="flex items-center mb-4">
+      <a
+        href={authorData.html_url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center text-inherit no-underline hover:opacity-80"
+      >
+        <img
+          src={authorData.avatar_url}
+          alt={authorData.name || authorData.login}
+          className="w-12 h-12 rounded-full mr-3"
+        />
+        <span className="font-bold">{authorData.name || authorData.login}</span>
+      </a>
+    </div>
   );
 };
 
