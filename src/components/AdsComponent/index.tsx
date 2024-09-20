@@ -1,7 +1,13 @@
 import React, { useEffect } from "react";
 import Head from "@docusaurus/Head";
 
-const AdsComponent = () => {
+declare global {
+  interface Window {
+    adsbygoogle: any[];
+  }
+}
+
+const AdsComponent: React.FC = () => {
   useEffect(() => {
     try {
       (window.adsbygoogle = window.adsbygoogle || []).push({});
