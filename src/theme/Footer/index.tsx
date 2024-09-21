@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       className="wow fadeInUp relative z-10 pt-16 lg:pt-[100px]"
       data-wow-delay=".15s"
       style={{
-        backgroundImage: `linear-gradient(#272329aa, #2d2c2d50, transparent), 
+        backgroundImage: `linear-gradient(#272329aa, #2d2c2d50, transparent),
                           url("/img/use-svg-as-background-image-particle-strokes.svg")`,
         backgroundSize: "cover",
         backgroundPosition: "center",
