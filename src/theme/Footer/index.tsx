@@ -112,7 +112,7 @@ const Footer: React.FC = () => {
                 </li>
                 <li>
                   <Link
-                    to="/dsa-questions/"
+                    to="/dsa-problems/"
                     className="mb-3 inline-block text-base text-gray-300 hover:text-[--ifm-color-primary]"
                   >
                     DSA Problems
@@ -175,7 +175,7 @@ const Footer: React.FC = () => {
                 </li>
                 <li>
                   <Link
-                    to="/team/"
+                    to="/community/team/"
                     className="mb-3 inline-block text-base text-gray-300 hover:text-[--ifm-color-primary]"
                   >
                     Our Team
