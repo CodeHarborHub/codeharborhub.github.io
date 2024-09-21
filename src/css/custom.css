@@ -2,22 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-/* width */
 ::-webkit-scrollbar {
   width: 5px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 2px grey;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--ifm-color-primary);
   border-radius: 3px;
 }
-/* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--ifm-color-primary-dark);
 }
@@ -156,33 +153,6 @@ mark {
   border-radius: 0.2em;
 }
 
-.footer {
-  background-image: linear-gradient(#272329aa, #2d2c2d50, transparent),
-    url("../../static/img/use-svg-as-background-image-particle-strokes.svg");
-  color: #f2f2f2;
-  padding: 20px;
-}
-
-.footer .container {
-  justify-content: space-around;
-}
-
-.footer_info--container {
-  width: 380px;
-}
-
-.footer_info--container img {
-  width: 62px;
-  border-radius: 8px;
-  padding: 0.2rem;
-}
-
-@media screen and (max-width: 420px) {
-  .footer_info--container {
-    width: 100%;
-  }
-}
-
 .hero__title {
   animation: fadeIn 2s;
   animation-fill-mode: forwards;
@@ -226,41 +196,28 @@ mark {
   }
 }
 
-.footer .container a {
-  text-decoration: none;
-}
-
-.footer__bottom {
-  margin-top: 40px;
-}
-
-.footer__copyright a {
-  color: #f0db4f;
-  text-decoration: none;
+.footer-link {
   position: relative;
+  text-decoration: none;
   transition: color 0.3s;
 }
 
-.footer__copyright a::after {
+.footer-link::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 2px;
-  bottom: 0;
+  bottom: -2px; /* Adjust based on text alignment */
   left: 0;
   background-color: #f0db4f;
   visibility: hidden;
   transform: scaleX(0);
-  transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out;
 }
 
-.footer__copyright a:hover::after {
+.footer-link:hover::after {
   visibility: visible;
   transform: scaleX(1);
-}
-
-.footer__bottom .margin-bottom--sm img {
-  border-radius: 8px;
 }
 
 .solution-author-wrapper {
