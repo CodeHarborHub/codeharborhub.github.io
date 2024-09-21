@@ -183,7 +183,7 @@ const Footer: React.FC = () => {
                 </li>
                 <li>
                   <Link
-                    to="/blogs/"
+                    to="/blogs"
                     className="mb-3 inline-block text-base text-gray-300 hover:text-[--ifm-color-primary]"
                   >
                     All Blogs
@@ -246,18 +246,18 @@ const Footer: React.FC = () => {
               </h4>
               <div className="flex flex-col gap-8">
                 <Link
-                  to="/blog/getting-started-with-mern/"
+                  to="/blog/getting-started-with-mern"
                   className="group flex items-center gap-[22px]"
                 >
                   <div className="overflow-hidden rounded">
                     <img src="img/blog-footer-01.jpg" alt="blog" />
                   </div>
                   <span className="max-w-[180px] text-base text-gray-300 group-hover:text-[--ifm-color-primary]">
-                    Getting started with MERN stack
+                    Getting started with the MERN stack
                   </span>
                 </Link>
                 <Link
-                  to="blog/getting-started-with-microservices/"
+                  to="/blog/getting-started-with-microservices"
                   className="group flex items-center gap-[22px]"
                 >
                   <div className="overflow-hidden rounded">
