@@ -93,7 +93,7 @@ const CareerPage: React.FC = () => {
   };
 
   return (
-    <div className="p-4 max-w-7xl mx-auto">
+    <div className="p-4 max-w-auto mx-auto">
       <h1 className="text-3xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-blue-600">
         Career Opportunities for You
       </h1>
@@ -127,7 +127,7 @@ const CareerPage: React.FC = () => {
           <option value="Quality Assurance">Quality Assurance</option>
         </select>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid gap-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
         {filteredCareers.map((career) => (
           <CareerCard key={career.id} {...career} />
         ))}
