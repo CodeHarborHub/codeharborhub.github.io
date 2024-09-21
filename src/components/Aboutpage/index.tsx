@@ -17,7 +17,7 @@ export default function AboutUsSection() {
     <section className="py-16">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          
+
           <div>
             <motion.div
               initial={{ opacity: 0, x: -150 }}
