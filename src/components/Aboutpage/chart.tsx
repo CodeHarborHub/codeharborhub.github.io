@@ -1,5 +1,5 @@
 import React from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Cell, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Cell, Legend, ResponsiveContainer, TooltipProps } from 'recharts';
 
 const data = [
     { name: 'Community', team: 80 },
@@ -16,8 +16,6 @@ const colors = [
     'rgba(42,1,100,0.9)',
     'rgba(115,119,173,0.9)'
 ];
-
-import { TooltipProps } from 'recharts';
 
 const CustomTooltip: React.FC<TooltipProps<number, string>> = ({ active, payload, label }) => {
     if (active && payload && payload.length) {
