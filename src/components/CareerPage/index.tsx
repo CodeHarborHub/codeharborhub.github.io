@@ -4,15 +4,15 @@ import Link from "@docusaurus/Link";
 import careersData, { CareerCardProps } from "../../data/careersData";
 
 const CareerCard: React.FC<CareerCardProps> = ({
-  id,
+  // id,
   title,
   description,
   image,
   link,
-  duration,
-  location,
-  category,
-  tags,
+  // duration,
+  // location,
+  // category,
+  // tags,
 }) => {
   return (
     <motion.div
