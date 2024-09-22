@@ -8,6 +8,7 @@ import { FaYoutube, FaDiscord, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Popup from "../../components/popup/popup";
 import axios from 'axios'
+import Link from "@docusaurus/Link";
 // import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import { log } from "console";
 // Interface defining the structure of form values
@@ -245,24 +246,24 @@ export default function Contact(): JSX.Element {
               <motion.div>
                 <h5 className={styles.social_media_heading}>Find Us On</h5>
                 <div className={styles.social_media_icons}>
-                  <a
-                    href="https://www.linkedin.com/company/codeharborhub/"
+                  <Link
+                    to="https://www.linkedin.com/company/codeharborhub/"
                     target="_blank" rel="noopener noreferrer"
                   >
                     <FaLinkedin />
-                  </a>
-                  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                  </Link>
+                  <Link to="https://www.youtube.com/channel/@ajay-dhangar" target="_blank" rel="noopener noreferrer">
                     <FaYoutube />
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="https://discord.com/invite/c53FQn3pRv"
                     target="_blank"
                   >
                     <FaDiscord />
-                  </a>
-                  <a href="https://x.com/CodesWithAjay?mx=2" target="_blank" rel="noopener noreferrer">
+                  </Link>
+                  <Link to="https://x.com/CodesWithAjay?mx=2" target="_blank" rel="noopener noreferrer">
                     <FaXTwitter />
-                  </a>
+                  </Link>
                 </div>
               </motion.div>
             </div>
