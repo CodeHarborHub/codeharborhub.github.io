@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FaArrowDown } from "react-icons/fa";
 import styles from "./ScrollTopToBottom.module.css";
 
