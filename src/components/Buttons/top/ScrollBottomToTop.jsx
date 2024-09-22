@@ -1,18 +1,18 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
 import styles from "./ScrollBottomToTop.module.css";
 
 export default function ScrollBottomToTop() {
-  const [showButton, setShowButton] = useState<boolean>(false);
+  const [showButton, setShowButton] = useState(false);
 
-  const scrollToTop = (): void => {
+  const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   };
 
-  const handleScroll = (): void => {
+  const handleScroll = () => {
     if (window.scrollY > 100) {
       setShowButton(true);
     } else {
