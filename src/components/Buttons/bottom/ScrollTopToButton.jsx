@@ -13,7 +13,8 @@ export default function ScrollTopToBottom() {
   };
 
   const handleScroll = () => {
-    const bottomThreshold = document.documentElement.scrollHeight - window.innerHeight - 100;
+    const bottomThreshold =
+      document.documentElement.scrollHeight - window.innerHeight - 100;
     if (window.scrollY < bottomThreshold) {
       setShowButton(true);
     } else {
