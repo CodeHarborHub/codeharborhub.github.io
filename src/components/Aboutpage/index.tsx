@@ -316,7 +316,7 @@ export default function AboutUsSection() {
                 stiffness: 100,
                 delay: 0.2,
               }}
-            ></motion.div>
+             />
           </div>
         </div>
       </div>
