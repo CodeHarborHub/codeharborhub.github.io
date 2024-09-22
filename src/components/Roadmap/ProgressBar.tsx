@@ -21,7 +21,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ completed, total }) => {
           className={`shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center ${
             percentage === 100 ? "bg-green-500" : "bg-teal-500"
           }`}
-        ></div>
+         />
       </div>
     </div>
   );
