@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
           <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
             <div className="mb-10 w-full">
               <Link to="#" className="mb-2 inline-block max-w-[80px]">
-                <img src="img/nav-logo.jpg" alt="logo" className="max-w-full" />
+                <img src="/img/nav-logo.jpg" alt="logo" className="max-w-full" />
               </Link>
               <p className="mb-8 max-w-[270px] text-base text-gray-300">
                 CodeHarborHub is a platform for developers to practice their
@@ -250,7 +250,7 @@ const Footer: React.FC = () => {
                   className="group flex items-center gap-[22px]"
                 >
                   <div className="overflow-hidden rounded">
-                    <img src="img/blog-footer-01.jpg" alt="blog" />
+                    <img src="/img/blog-footer-01.jpg" alt="blog" />
                   </div>
                   <span className="max-w-[180px] text-base text-gray-300 group-hover:text-[--ifm-color-primary]">
                     Getting started with the MERN stack
@@ -261,7 +261,7 @@ const Footer: React.FC = () => {
                   className="group flex items-center gap-[22px]"
                 >
                   <div className="overflow-hidden rounded">
-                    <img src="img/blog-footer-02.jpg" alt="blog" />
+                    <img src="/img/blog-footer-02.jpg" alt="blog" />
                   </div>
                   <span className="max-w-[180px] text-base text-gray-300 group-hover:text-[--ifm-color-primary]">
                     Getting started with Microservices
@@ -330,11 +330,11 @@ const Footer: React.FC = () => {
       </div>
       <div>
         <span className="absolute left-0 top-0 z-[-1]">
-          <img src="img/shape1.svg" alt="" />
+          <img src="/img/shape1.svg" alt="" />
         </span>
 
         <span className="absolute bottom-0 right-0 z-[-1]">
-          <img src="img/shape-3.svg" alt="" />
+          <img src="/img/shape-3.svg" alt="" />
         </span>
 
         <span className="absolute right-0 top-0 z-[-1]">
