@@ -26,9 +26,9 @@ const Html: React.FC = () => {
 
     // Toggle status between 'todo' and 'done'
     newRoadmap[sectionIndex].items[itemIndex].status = currentStatus === "todo" ? "done" : "todo";
-    
+
     setRoadmap(newRoadmap);
-    
+
     localStorage.setItem("htmlRoadmap", JSON.stringify(newRoadmap)); // Save to local storage
   };
 
