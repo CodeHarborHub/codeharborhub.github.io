@@ -14,15 +14,15 @@ function WebsiteLink({ to, children }: { to: string; children?: ReactNode }) {
   );
 }
 
-function CompanyLink({ to, children }: { to: string; children?: ReactNode }) {
-  return (
-    <Link to={to}>
-      {children ?? (
-        <Translate id="team.profile.CompanyLinkLabel">company</Translate>
-      )}
-    </Link>
-  );
-}
+// function CompanyLink({ to, children }: { to: string; children?: ReactNode }) {
+//   return (
+//     <Link to={to}>
+//       {children ?? (
+//         <Translate id="team.profile.CompanyLinkLabel">company</Translate>
+//       )}
+//     </Link>
+//   );
+// }
 
 type ProfileProps = {
   className?: string;
