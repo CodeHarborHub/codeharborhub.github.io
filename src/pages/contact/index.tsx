@@ -10,7 +10,6 @@ import Popup from "../../components/popup/popup";
 import axios from 'axios'
 import Link from "@docusaurus/Link";
 // import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import { log } from "console";
 // Interface defining the structure of form values
 interface FormValues {
   fullName: string;
