@@ -6,13 +6,13 @@ import Link from "@docusaurus/Link";
 import blogs from "../../database/blogs";
 import Head from "@docusaurus/Head";
 
-interface Blog {
-  id: number;
-  title: string;
-  image: string;
-  description: string;
-  slug: string;
-}
+// interface Blog {
+//   id: number;
+//   title: string;
+//   image: string;
+//   description: string;
+//   slug: string;
+// }
 
 export default function Blogs() {
   const { siteConfig } = useDocusaurusContext();
