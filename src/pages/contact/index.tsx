@@ -169,7 +169,7 @@ export default function Contact(): JSX.Element {
                     }}
                     className={styles.contact_heading}
                   >
-                    Let's talk about your problem.
+                    Let&apos;s talk about your problem.
                   </motion.h2>
                 </div>
                 {/* Contact information items */}
