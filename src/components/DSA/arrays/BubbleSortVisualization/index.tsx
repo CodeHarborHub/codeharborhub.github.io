@@ -83,7 +83,7 @@ const BubbleSortVisualization: React.FC = () => {
       <button onClick={generateArray} disabled={isSorting}>Generate New Array</button>
       <br /><br />
       <p>
-        <strong>Instructions:</strong> Click the "Sort" button to visualize the Bubble Sort algorithm. You can also adjust the speed of the visualization using the slider.
+        <strong>Instructions:</strong> Click the &quot;Sort&quot; button to visualize the Bubble Sort algorithm. You can also adjust the speed of the visualization using the slider.
       </p>
       <div className="array-container">
         {array.map((value, index) => (
