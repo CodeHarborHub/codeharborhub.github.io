@@ -14,15 +14,15 @@ function WebsiteLink({ to, children }: { to: string; children?: ReactNode }) {
   );
 }
 
-function CompanyLink({ to, children }: { to: string; children?: ReactNode }) {
-  return (
-    <Link to={to}>
-      {children ?? (
-        <Translate id="team.profile.CompanyLinkLabel">company</Translate>
-      )}
-    </Link>
-  );
-}
+// function CompanyLink({ to, children }: { to: string; children?: ReactNode }) {
+//   return (
+//     <Link to={to}>
+//       {children ?? (
+//         <Translate id="team.profile.CompanyLinkLabel">company</Translate>
+//       )}
+//     </Link>
+//   );
+// }
 
 type ProfileProps = {
   className?: string;
@@ -76,7 +76,7 @@ function TeamProfileCard({
               <Link className="button button--secondary" href={twitterUrl}>
                 Twitter
               </Link>
-            )}            
+            )}
           </div>
         </div>
       </div>
@@ -95,9 +95,9 @@ export function ActiveTeamRow(): JSX.Element {
     <div className="row">
       <TeamProfileCardCol
         name="Ajay Dhangar"
-        githubUrl="https://github.com/ajay-dhangar"      
+        githubUrl="https://github.com/ajay-dhangar"
         linkedInUrl="https://www.linkedin.com/in/ajay-dhangar"
-        twitterUrl="https://twitter.com/CodesWithAjay"  
+        twitterUrl="https://twitter.com/CodesWithAjay"
       >
         <Translate
           id="team.profile.Sebastien Lorber.body"
@@ -156,7 +156,7 @@ export function StudentFellowsTeamRow(): JSX.Element {
             "B.Tech student, open source enthusiast, and tech blogger. He loves to contribute to open source and write articles on his {websiteLink}."
           }
         </Translate>
-      </TeamProfileCardCol>      
+      </TeamProfileCardCol>
     </div>
   );
 }
