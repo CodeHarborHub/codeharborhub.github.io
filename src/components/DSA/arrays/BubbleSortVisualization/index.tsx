@@ -1,25 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import './BubbleSortVisualization.css'; 
+import './BubbleSortVisualization.css';
 
 /**
  * BubbleSortVisualization Component
  * This component visualizes the Bubble Sort algorithm.
- * 
+ *
  * @returns {JSX.Element} The rendered component
  */
 const BubbleSortVisualization: React.FC = () => {
   // State to store the array of numbers to be sorted
   const [array, setArray] = useState<number[]>([]);
   // State to control the delay for visualization speed
-  const [delay, setDelay] = useState<number>(200); 
+  const [delay, setDelay] = useState<number>(200);
   // State to indicate if sorting is in progress
-  const [isSorting, setIsSorting] = useState<boolean>(false); 
+  const [isSorting, setIsSorting] = useState<boolean>(false);
   // State to store the indices of elements being compared
   const [comparingIndices, setComparingIndices] = useState<number[]>([]);
 
   // Effect to generate a new array when the component mounts
   useEffect(() => {
-    generateArray();    
+    generateArray();
   }, []);
 
   // Effect to update the CSS transition duration when the delay changes
@@ -83,7 +83,7 @@ const BubbleSortVisualization: React.FC = () => {
       <button onClick={generateArray} disabled={isSorting}>Generate New Array</button>
       <br /><br />
       <p>
-        <strong>Instructions:</strong> Click the "Sort" button to visualize the Bubble Sort algorithm. You can also adjust the speed of the visualization using the slider.
+        <strong>Instructions:</strong> Click the &quot;Sort&quot; button to visualize the Bubble Sort algorithm. You can also adjust the speed of the visualization using the slider.
       </p>
       <div className="array-container">
         {array.map((value, index) => (
