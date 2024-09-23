@@ -78,7 +78,7 @@ const TermsOfService: React.FC = () => {
           Service.
             <br /> <br />
             <SubTitle>Use of the Service</SubTitle>
-            
+
             <StyledOl>
                 <StyledLi>
                 <Strong>Eligibility:</Strong> You must be at least 18 years old to use the Service. By using the Service, you represent and warrant that you are at least 18 years old.
@@ -104,7 +104,7 @@ const TermsOfService: React.FC = () => {
 
             <SubTitle>Privacy</SubTitle>
 
-            Your privacy is important to us. Please review our <a href="/code-harbor-hub/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a> to understand how we collect, use, and disclose your personal information.
+            Your privacy is important to us. Please review our <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a> to understand how we collect, use, and disclose your personal information.
 
             <br /> <br />
 
@@ -115,7 +115,7 @@ const TermsOfService: React.FC = () => {
 
             <SubTitle>Disclaimer of Warranties</SubTitle>
 
-            THE SERVICE IS PROVIDED ON AN "AS-IS" AND "AS AVAILABLE" BASIS, WITHOUT ANY WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED. WE DISCLAIM ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE MAKE NO WARRANTY THAT THE SERVICE WILL MEET YOUR REQUIREMENTS, BE UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE. USE OF THE SERVICE IS AT YOUR OWN RISK.
+            THE SERVICE IS PROVIDED ON AN &quot;AS-IS&quot; AND &quot;AS AVAILABLE&quot; BASIS, WITHOUT ANY WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED. WE DISCLAIM ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE MAKE NO WARRANTY THAT THE SERVICE WILL MEET YOUR REQUIREMENTS, BE UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE. USE OF THE SERVICE IS AT YOUR OWN RISK.
 
             <br /> <br />
 
