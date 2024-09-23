@@ -78,7 +78,7 @@ const TermsOfService: React.FC = () => {
           Service.
             <br /> <br />
             <SubTitle>Use of the Service</SubTitle>
-            
+
             <StyledOl>
                 <StyledLi>
                 <Strong>Eligibility:</Strong> You must be at least 18 years old to use the Service. By using the Service, you represent and warrant that you are at least 18 years old.
