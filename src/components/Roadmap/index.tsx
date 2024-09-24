@@ -320,7 +320,7 @@ const Roadmap: React.FC = () => {
               {category.technologies.map((tech) => (
                 <li key={tech.id} className="roadmap-card">
                   <a href={tech.link} onClick= {(e) => {
-                    e.preventDefault(); 
+                    e.preventDefault();
                     handleButtonClick(tech.link); }}
                     className="roadmap-link">
                     {tech.name}
