@@ -42,7 +42,7 @@ const OurStandards = () => (
       <li>The use of sexualized language or imagery, and sexual attention or advances of any kind</li>
       <li>Trolling, insulting or derogatory comments, and personal or political attacks</li>
       <li>Public or private harassment</li>
-      <li>Publishing others' private information, such as a physical or email address, without their explicit permission</li>
+      <li>Publishing other&apos;s private information, such as a physical or email address, without their explicit permission</li>
       <li>Other conduct which could reasonably be considered inappropriate in a professional setting</li>
     </ul>
   </Section>
@@ -118,7 +118,7 @@ const EnforcementGuidelines = () => (
 const Attribution = () => (
   <Section title="Attribution">
     <p>This Code of Conduct is adapted from the <Link to="https://www.contributor-covenant.org/" target="_blank" rel="noopener noreferrer">Contributor Covenant</Link>, version 2.0, available at <Link to="https://www.contributor-covenant.org/version/2/0/code_of_conduct/" target="_blank" rel="noopener noreferrer">https://www.contributor-covenant.org/version/2/0/code_of_conduct.html</Link>.</p>
-    <p>Community Impact Guidelines were inspired by <Link to="https://github.com/mozilla/inclusion" target="_blank" rel="noopener noreferrer">Mozilla's code of conduct enforcement ladder</Link>.</p>
+    <p>Community Impact Guidelines were inspired by <Link to="https://github.com/mozilla/inclusion" target="_blank" rel="noopener noreferrer">Mozilla&apos;s code of conduct enforcement ladder</Link>.</p>
     <p>For answers to common questions about this code of conduct, see the FAQ at <Link to="https://www.contributor-covenant.org/faq/" target="_blank" rel="noopener noreferrer">https://www.contributor-covenant.org/faq/</Link>. Translations are available at <Link to="https://www.contributor-covenant.org/translations" target="_blank" rel="noopener noreferrer">https://www.contributor-covenant.org/translations</Link>.</p>
   </Section>
 );
