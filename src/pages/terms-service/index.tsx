@@ -95,7 +95,7 @@ const TermsOfService: React.FC = () => {
 
             <StyledOl>
                 <StyledLi>
-                 <Strong>User Content:</Strong> You retain ownership of any content you submit or upload to the Service ("User Content"). By submitting User Content, you grant us a worldwide, royalty-free, and non-exclusive license to use, reproduce, modify, adapt, publish, translate, distribute, and display such User Content.
+                 <Strong>User Content:</Strong> You retain ownership of any content you submit or upload to the Service (&quot;User Content&quot;). By submitting User Content, you grant us a worldwide, royalty-free, and non-exclusive license to use, reproduce, modify, adapt, publish, translate, distribute, and display such User Content.
                 </StyledLi>
                 <StyledLi>
                 <Strong>Intellectual Property:</Strong> All content, trademarks, service marks, logos, and other intellectual property displayed on or related to the Service are the property of <Strong><mark>Ajay Dhangar</mark></Strong> or its licensors. You may not use or display any of these without our prior written consent.
@@ -127,7 +127,7 @@ const TermsOfService: React.FC = () => {
 
             <SubTitle>Governing Law</SubTitle>
 
-            These Terms shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law principles.
+            These Terms shall be governed by and construed per the laws of India, without regard to its conflict of law principles.
 
             <br /> <br />
 
