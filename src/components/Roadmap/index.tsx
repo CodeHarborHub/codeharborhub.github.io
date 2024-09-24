@@ -13,7 +13,7 @@ const techCategories: TechCategory[] = [
     id: 1,
     title: "Frontend",
     technologies: [
-      { id: 1, name: "HTML", link: "/roadmap/html" },
+      { id: 1, name: "HTML", link: "/roadmap/html/" },
       { id: 2, name: "CSS", link: "#" },
       { id: 3, name: "JavaScript", link: "#" },
       { id: 4, name: "React", link: "https://roadmap.sh/react" },
@@ -320,7 +320,7 @@ const Roadmap: React.FC = () => {
               {category.technologies.map((tech) => (
                 <li key={tech.id} className="roadmap-card">
                   <a href={tech.link} onClick= {(e) => {
-                    e.preventDefault(); 
+                    e.preventDefault();
                     handleButtonClick(tech.link); }}
                     className="roadmap-link">
                     {tech.name}

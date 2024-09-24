@@ -253,7 +253,7 @@ const Footer: React.FC = () => {
                     <img src="/img/blog-footer-01.jpg" alt="blog" />
                   </div>
                   <span className="max-w-[180px] text-base text-gray-300 group-hover:text-[--ifm-color-primary]">
-                    Getting started with the MERN stack
+                    Getting started with the MERN stack...
                   </span>
                 </Link>
                 <Link
@@ -264,7 +264,7 @@ const Footer: React.FC = () => {
                     <img src="/img/blog-footer-02.jpg" alt="blog" />
                   </div>
                   <span className="max-w-[180px] text-base text-gray-300 group-hover:text-[--ifm-color-primary]">
-                    Getting started with Microservices
+                    Getting started with Microservices...
                   </span>
                 </Link>
               </div>
@@ -273,7 +273,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      <div className="mt-12 border-t border-[#8890A4] border-opacity-40 py-8 lg:mt-[60px]">
+      <div className="mt-12 border-solid border-0 border-t-2 border-[#8890A4] border-opacity-40 py-8 lg:mt-[60px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-2/3 lg:w-1/2">
