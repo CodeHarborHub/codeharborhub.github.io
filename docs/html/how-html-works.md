@@ -28,7 +28,7 @@ HTML is a markup language that uses tags to define the structure and content of 
 
 <Tabs>
   <TabItem value="HTML Code" label="HTML Code">
-  
+
   ```html title="index.html"
     <!DOCTYPE html>
     <html>
@@ -89,7 +89,7 @@ In addition to rendering HTML content, web browsers handle various resources ass
 
     <Tabs>
       <TabItem value="HTML Code" label="HTML Code">
-      
+
       ```html title="index.html"
         <!DOCTYPE html>
         <html>
@@ -137,7 +137,7 @@ In addition to rendering HTML content, web browsers handle various resources ass
 
     <Tabs>
       <TabItem value="HTML Code" label="HTML Code">
-      
+
       ```html title="index.html"
         <!DOCTYPE html>
         <html>
@@ -176,7 +176,7 @@ In addition to rendering HTML content, web browsers handle various resources ass
 
     <Tabs>
       <TabItem value="HTML Code" label="HTML Code">
-      
+
       ```html title="index.html"
         <!DOCTYPE html>
         <html>
