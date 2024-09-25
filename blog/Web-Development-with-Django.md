@@ -1,4 +1,13 @@
-# Web Development with Django
+---
+title: "Web Development With Django"
+authors: [ajay-dhangar, akshitha-chiluka]
+tags:
+  - Django
+  - Web Development
+  - Frontend Development
+  - Backend Development
+date: 2024-06-10 09:32:00
+---
 
 Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. This guide will introduce you to Django, walk you through setting up a Django project, and cover key features and best practices for developing robust web applications.
 

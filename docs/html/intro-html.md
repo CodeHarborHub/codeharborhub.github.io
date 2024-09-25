@@ -1,11 +1,13 @@
 ---
-id: intro-HTML
+id: intro-html
 title: Introduction of HTML
 sidebar_label: Introduction of HTML
 sidebar_position: 1
 tags: [html, introduction, web development, markup language, hyper text, web pages, career opportunities, personal growth, web-development, web design, web pages, websites, career opportunities, contribute to the web, stay relevant, express yourself, learn other technologies, have fun, how to use html, steps to start using html, set up your development environment, create your first html document, learn html syntax and structure, explore html elements and-attributes]
 description: In this tutorial, you will learn about HTML, its importance, what is HTML, why learn HTML, how to use HTML, steps to start using HTML, and more.
 ---
+
+<AdsComponent />
 
 HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of elements that you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. The enclosing tags can make a word or image hyperlink to somewhere else, can italicize words, can make the font bigger or smaller, and so on.
 
@@ -62,6 +64,8 @@ HTML, which stands for Hyper Text Markup Language, is the standard markup langua
 
 :::
 
+<AdsComponent />
+
 ## Why Learn HTML?
 
 Learning HTML is essential for anyone who wants to create web pages and design documents on the World Wide Web. HTML is the foundation of the World Wide Web and is used to define the structure and content of web pages. Here are some reasons why you should learn HTML:
@@ -76,6 +80,8 @@ Learning HTML is essential for anyone who wants to create web pages and design d
 8. **Express Yourself**: HTML is a versatile and flexible markup language that allows you to express yourself and create unique and engaging web pages. You can use HTML to add text, images, videos, links, and other elements to your web pages, and customize the appearance and layout of your content. By learning HTML, you will be able to express yourself creatively and share your ideas with the world.
 9. **Learn Other Technologies**: HTML is often used in conjunction with other technologies, such as CSS (Cascading Style Sheets) and JavaScript, to create interactive and dynamic web pages. By learning HTML, you will gain a solid foundation in web development and be able to learn other technologies more easily. You will be able to create modern, responsive, and user-friendly web pages that meet the needs of today's users and devices.
 10. **Have Fun**: Learning HTML can be a fun and rewarding experience. You can experiment with different elements, styles, and layouts, and create web pages that reflect your personality and interests. You can learn new skills, solve problems, and express yourself creatively through HTML. By learning HTML, you will be able to unleash your creativity and have fun building web pages that showcase your talents and passions.
+
+<AdsComponent />
 
 ## How to use HTML?
 
@@ -115,6 +121,8 @@ HTML is used to create structured documents for the web. To start using HTML, yo
 **3. Learn HTML syntax and structure**: HTML consists of a series of elements that you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. Each element is enclosed in angle brackets `< >` and consists of a start tag, content, and an end tag. For example, the `<h1>` element is used to define a heading, and the `<p>` element is used to define a paragraph.
 
 **4. Explore HTML elements and attributes**: HTML provides a wide range of elements and attributes that you can use to create structured documents for the web. Some common HTML elements include headings, paragraphs, lists, links, images, tables, forms, and more. Each element has its own purpose and can be customized using attributes, such as `id`, `class`, `style`, `src`, `href`, and more.
+
+<AdsComponent />
 
 ## Conclusion
 
