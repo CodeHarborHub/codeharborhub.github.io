@@ -3,13 +3,22 @@ id: how-html-works
 title: How HTML works with web browsers
 sidebar_label: How HTML works
 sidebar_position: 2
-tags: [html, web-development, front-end-development, web-design, web-browsers, web-technology, web-pages]
+tags:
+  [
+    html,
+    web-development,
+    front-end-development,
+    web-design,
+    web-browsers,
+    web-technology,
+    web-pages,
+  ]
 description: In this tutorial, you will learn about How HTML works with web browsers and how web browsers render HTML content.
 ---
 
 <AdsComponent />
 
-> *We have already learned HTML in the previous tutorial. In this tutorial, we will learn about how HTML works with web browsers and how web browsers render HTML content.*
+> _We have already learned HTML in the previous tutorial. In this tutorial, we will learn about how HTML works with web browsers and how web browsers render HTML content._
 
 HTML, which stands for HyperText Markup Language, serves as the backbone of the World Wide Web. It is the standard language used to create web pages, providing the structure and content that browsers render for users to interact with. Understanding how HTML works with web browsers is fundamental for anyone diving into web development.
 
@@ -40,6 +49,7 @@ HTML is a markup language that uses tags to define the structure and content of 
         <p>This is my first web page.</p>
       </BrowserWindow>
     </TabItem>
+
 </Tabs>
 
 In this example, the `<h1>` tag creates a heading, and the `<p>` tag creates a paragraph. The browser interprets these tags and displays the content accordingly. HTML tags can be nested within each other to create more complex structures, such as lists, tables, forms, and more.
@@ -54,12 +64,12 @@ When a user requests a web page by entering a URL in the browser's address bar o
 
 1. **Parsing**: The browser parses the HTML document from top to bottom, identifying and interpreting each element and its attributes. It builds a Document Object Model (DOM) tree, which represents the structure of the web page as a hierarchical collection of nodes. Each node corresponds to an HTML element, such as a heading, paragraph, image, or link.
 
-2. **Rendering**: The browser uses the DOM tree to render the web page on the screen. It determines the layout of the page, including the position and size of each element, based on the **CSS** styles applied to the elements. The browser also calculates the visibility of each element, taking into account factors such as z-index, opacity, and overflow. 
+2. **Rendering**: The browser uses the DOM tree to render the web page on the screen. It determines the layout of the page, including the position and size of each element, based on the **CSS** styles applied to the elements. The browser also calculates the visibility of each element, taking into account factors such as z-index, opacity, and overflow.
 
-    :::info
-    **CSS (Cascading Style Sheets)** is a stylesheet language used to control the presentation of HTML elements on a web page. CSS allows developers to define styles such as colors, fonts, margins, padding, and layout properties to create visually appealing and responsive designs.
+   :::info
+   **CSS (Cascading Style Sheets)** is a stylesheet language used to control the presentation of HTML elements on a web page. CSS allows developers to define styles such as colors, fonts, margins, padding, and layout properties to create visually appealing and responsive designs.
 
-    :::
+   :::
 
 3. **Painting**: The browser paints the pixels on the screen according to the layout determined in the rendering step. It combines the content, styles, and layout to create the final visual representation of the web page.
 
@@ -75,7 +85,7 @@ In addition to rendering HTML content, web browsers handle various resources ass
 
 - **CSS Stylesheets**: Browsers download and apply CSS stylesheets to control the presentation of HTML elements. Stylesheets can be linked externally using the `<link>` tag or embedded within the HTML document using the `<style>` tag.
 
-    For example, the following HTML code snippet links an external CSS stylesheet to the web page:
+  For example, the following HTML code snippet links an external CSS stylesheet to the web page:
 
     <Tabs>
       <TabItem value="HTML Code" label="HTML Code">
@@ -96,7 +106,7 @@ In addition to rendering HTML content, web browsers handle various resources ass
 
         </TabItem>
         <TabItem value="CSS Code" label="CSS Code">
-        
+
         ```css title="styles.css"
           body {
               font-family: Arial, sans-serif;
@@ -118,14 +128,13 @@ In addition to rendering HTML content, web browsers handle various resources ass
             <p style={{color: "#666"}}>This is my first web page.</p>
           </BrowserWindow>
         </TabItem>
+
     </Tabs>
-
-
 
 - **JavaScript Code**: Browsers execute JavaScript code embedded in the HTML document or linked externally to add interactivity and dynamic behavior to web pages. JavaScript can manipulate the DOM, handle user input, make network requests, and more.
 
-    For example, the following HTML code snippet includes a JavaScript file in the web page:
-    
+  For example, the following HTML code snippet includes a JavaScript file in the web page:
+
     <Tabs>
       <TabItem value="HTML Code" label="HTML Code">
       
@@ -145,7 +154,7 @@ In addition to rendering HTML content, web browsers handle various resources ass
 
         </TabItem>
         <TabItem value="JavaScript Code" label="JavaScript Code">
-        
+
         ```javascript title="script.js"
           document.getElementById("demo").innerHTML = "Hello, JavaScript!";
           ```
@@ -158,13 +167,13 @@ In addition to rendering HTML content, web browsers handle various resources ass
             <p>Hello, JavaScript!</p>
           </BrowserWindow>
         </TabItem>
+
     </Tabs>
 
-
 - **Images and Media**: Browsers download and display images, videos, and audio files embedded in the HTML document using the `<img>`, `<video>`, and `<audio>` tags, respectively. These resources enhance the visual and multimedia content of web pages.
-  
-    For example, the following HTML code snippet includes an image in the web page:
-    
+
+  For example, the following HTML code snippet includes an image in the web page:
+
     <Tabs>
       <TabItem value="HTML Code" label="HTML Code">
       
@@ -189,6 +198,7 @@ In addition to rendering HTML content, web browsers handle various resources ass
             <img src="/img/img-5.png" alt="An image" />
           </BrowserWindow>
         </TabItem>
+
     </Tabs>
 
 By managing these resources efficiently, web developers can create engaging and interactive web pages that deliver a rich user experience. Understanding how HTML works with web browsers and how browsers render content is essential for building modern web applications that meet user expectations and performance standards.

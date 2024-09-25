@@ -16,7 +16,6 @@ HTML tags are the building blocks of an HTML document. They are enclosed in angl
 
 For example, the `<h1>` tag is used to define a heading, and it is written as `<h1>Heading</h1>`. The opening tag `<h1>` indicates the start of the heading, and the closing tag `</h1>` indicates the end of the heading.
 
-
 Commonly used HTML Tags:-
 ![Commonly used HTMl Tags](image.png)
 
@@ -30,12 +29,12 @@ For example, in the HTML element `<p> This is a paragraph.</p>`, `<p>` and `</p>
 
 ## Difference between HTML Elements and HTML Tags
 
-| HTML Tags | HTML Elements |
-|-----------|--------------|
-| HTML Tags are used to hold HTML Elements | HTML Elements hold the content |
-| Enclosed in angle brackets (`<>`) | Consist of opening tag, content, and closing tag |
-| Used to define structure and formatting | Can contain text, images, links, or other HTML elements |
-| Paired with opening and closing tags | Content placed between opening and closing tags |
+| HTML Tags                                | HTML Elements                                           |
+| ---------------------------------------- | ------------------------------------------------------- |
+| HTML Tags are used to hold HTML Elements | HTML Elements hold the content                          |
+| Enclosed in angle brackets (`<>`)        | Consist of opening tag, content, and closing tag        |
+| Used to define structure and formatting  | Can contain text, images, links, or other HTML elements |
+| Paired with opening and closing tags     | Content placed between opening and closing tags         |
 
 ## Conclusion
 

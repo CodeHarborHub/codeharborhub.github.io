@@ -18,6 +18,7 @@ HTML elements are the fundamental components of HTML documents. They consist of 
 ```
 
 In this example:
+
 - `<p>` is the start tag.
 - `This is a paragraph.` is the content.
 - `</p>` is the end tag.
@@ -31,15 +32,15 @@ Tags are the syntax used to create HTML elements. They are enclosed in angle bra
 An HTML document has a specific structure that includes the following elements:
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
+  <head>
     <title>Title of the Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Heading</h1>
     <p>Paragraph of text.</p>
-</body>
+  </body>
 </html>
 ```
 
@@ -87,12 +88,12 @@ An HTML document has a specific structure that includes the following elements:
 
    ```html
    <ul>
-       <li>Item 1</li>
-       <li>Item 2</li>
+     <li>Item 1</li>
+     <li>Item 2</li>
    </ul>
    <ol>
-       <li>First Item</li>
-       <li>Second Item</li>
+     <li>First Item</li>
+     <li>Second Item</li>
    </ol>
    ```
 
@@ -107,14 +108,14 @@ An HTML document has a specific structure that includes the following elements:
 
    ```html
    <table>
-       <tr>
-           <th>Header 1</th>
-           <th>Header 2</th>
-       </tr>
-       <tr>
-           <td>Cell 1</td>
-           <td>Cell 2</td>
-       </tr>
+     <tr>
+       <th>Header 1</th>
+       <th>Header 2</th>
+     </tr>
+     <tr>
+       <td>Cell 1</td>
+       <td>Cell 2</td>
+     </tr>
    </table>
    ```
 
@@ -132,9 +133,9 @@ An HTML document has a specific structure that includes the following elements:
 
    ```html
    <form>
-       <label for="name">Name:</label>
-       <input type="text" id="name" name="name">
-       <button type="submit">Submit</button>
+     <label for="name">Name:</label>
+     <input type="text" id="name" name="name" />
+     <button type="submit">Submit</button>
    </form>
    ```
 
@@ -145,7 +146,7 @@ An HTML document has a specific structure that includes the following elements:
    - `<img>`: Embeds an image.
 
      ```html
-     <img src="image.jpg" alt="Description of image">
+     <img src="image.jpg" alt="Description of image" />
      ```
 
    - `<audio>`: Embeds audio content.
@@ -153,13 +154,13 @@ An HTML document has a specific structure that includes the following elements:
 
    ```html
    <audio controls>
-       <source src="audio.mp3" type="audio/mpeg">
-       Your browser does not support the audio element.
+     <source src="audio.mp3" type="audio/mpeg" />
+     Your browser does not support the audio element.
    </audio>
 
    <video controls>
-       <source src="video.mp4" type="video/mp4">
-       Your browser does not support the video tag.
+     <source src="video.mp4" type="video/mp4" />
+     Your browser does not support the video tag.
    </video>
    ```
 
@@ -176,24 +177,24 @@ An HTML document has a specific structure that includes the following elements:
 
    ```html
    <header>
-       <h1>Welcome to My Website</h1>
+     <h1>Welcome to My Website</h1>
    </header>
    <nav>
-       <ul>
-           <li><a href="#home">Home</a></li>
-           <li><a href="#about">About</a></li>
-       </ul>
+     <ul>
+       <li><a href="#home">Home</a></li>
+       <li><a href="#about">About</a></li>
+     </ul>
    </nav>
    <section>
-       <h2>About Us</h2>
-       <p>This is the about section.</p>
+     <h2>About Us</h2>
+     <p>This is the about section.</p>
    </section>
    <aside>
-       <h2>Related Links</h2>
-       <p>Links to related content.</p>
+     <h2>Related Links</h2>
+     <p>Links to related content.</p>
    </aside>
    <footer>
-       <p>Footer information goes here.</p>
+     <p>Footer information goes here.</p>
    </footer>
    ```
 
@@ -207,25 +208,29 @@ HTML elements can have attributes that provide additional information about the 
 
 ```html
 <a href="https://www.example.com" target="_blank">Visit Example</a>
-<img src="image.jpg" alt="Description of image" width="500" height="300">
+<img src="image.jpg" alt="Description of image" width="500" height="300" />
 ```
 
 <AdsComponent />
 
-### Key Points 
+### Key Points
 
 1. **Structure and Semantics**
+
    - HTML elements define the structure and meaning of web content.
    - Semantic elements like `<header>`, `<nav>`, `<article>`, and `<footer>` provide meaning to the page structure.
 
 2. **Hierarchy and Organization**
+
    - HTML uses a nested structure with parent and child elements to organize content.
    - Headings (`<h1>` to `<h6>`) establish a content hierarchy, aiding in readability and SEO.
 
 3. **Content Presentation**
+
    - Tags like `<p>`, `<ul>`, `<ol>`, and `<table>` are used to present different types of content such as text, lists, and tabular data.
 
 4. **Interactivity**
+
    - Elements like `<a>`, `<form>`, `<input>`, `<button>`, and `<select>` facilitate user interaction.
    - Multimedia elements (`<img>`, `<audio>`, `<video>`) enhance content with images, audio, and video.
 
@@ -233,33 +238,40 @@ HTML elements can have attributes that provide additional information about the 
    - Attributes provide additional information and control behavior of HTML elements.
    - Common attributes include `href` for links, `src` for images, `alt` for image descriptions, and `type` for input fields.
 
-### Benefits 
+### Benefits
 
 1. **Improved Accessibility**
+
    - Semantic HTML helps screen readers and other assistive technologies understand and navigate the content.
    - Proper use of elements and attributes like `alt` for images improves accessibility for visually impaired users.
 
 2. **Better SEO (Search Engine Optimization)**
+
    - Search engines rely on HTML structure and semantics to index and rank web pages.
    - Proper use of headings, links, and metadata enhances SEO, making content more discoverable.
 
 3. **Consistent Styling**
+
    - HTML elements can be easily styled using CSS, ensuring a consistent look and feel across the website.
    - Semantic tags provide hooks for CSS selectors, allowing targeted styling.
 
 4. **Enhanced Usability**
+
    - Forms and interactive elements improve user experience by allowing user input and interaction.
    - Navigation elements (`<nav>`) and structured content improve usability and content discoverability.
 
 5. **Cross-Browser Compatibility**
+
    - HTML is a standardized language supported by all modern web browsers.
    - Properly structured HTML ensures consistent display and functionality across different browsers and devices.
 
 6. **Maintainability**
+
    - Well-structured HTML is easier to read, understand, and maintain.
    - Separation of content (HTML), presentation (CSS), and behavior (JavaScript) promotes cleaner and more maintainable code.
 
 7. **Performance**
+
    - Using appropriate HTML elements and attributes can enhance web performance.
    - For example, loading images with the `srcset` attribute and lazy loading can optimize resource loading and improve page speed.
 
@@ -268,4 +280,5 @@ HTML elements can have attributes that provide additional information about the 
    - Custom data attributes (e.g., `data-*` attributes) can store additional data for JavaScript manipulation.
 
 ## Conclusion
- HTML elements and tags are fundamental to creating structured and interactive web pages. Elements form the building blocks of HTML documents, each defined by opening and closing tags that encapsulate content. Tags define the structure and semantics of content, from headings and paragraphs to lists, tables, forms, and multimedia. Understanding how to use these elements and tags allows developers to create visually appealing and functional websites.
+
+HTML elements and tags are fundamental to creating structured and interactive web pages. Elements form the building blocks of HTML documents, each defined by opening and closing tags that encapsulate content. Tags define the structure and semantics of content, from headings and paragraphs to lists, tables, forms, and multimedia. Understanding how to use these elements and tags allows developers to create visually appealing and functional websites.

@@ -2,8 +2,44 @@
 title: HTML syntax and structure
 sidebar_label: HTML syntax and structure
 sidebar_position: 1
-tags: [html, web-development, syntax-and-structure, html-elements, html-tags, html-attributes, html-structure, html-syntax, html-tutorial, html-basics, html-document-structure]
-keywords: [html, web development, syntax and structure, html elements, html tags, html attributes, html structure, html syntax, html tutorial, html basics, html document structure, web design, web pages, websites, html syntax and structure, html syntax tutorial, html structure tutorial, html elements tutorial, html tags tutorial, html attributes tutorial, html in 2024]
+tags:
+  [
+    html,
+    web-development,
+    syntax-and-structure,
+    html-elements,
+    html-tags,
+    html-attributes,
+    html-structure,
+    html-syntax,
+    html-tutorial,
+    html-basics,
+    html-document-structure,
+  ]
+keywords:
+  [
+    html,
+    web development,
+    syntax and structure,
+    html elements,
+    html tags,
+    html attributes,
+    html structure,
+    html syntax,
+    html tutorial,
+    html basics,
+    html document structure,
+    web design,
+    web pages,
+    websites,
+    html syntax and structure,
+    html syntax tutorial,
+    html structure tutorial,
+    html elements tutorial,
+    html tags tutorial,
+    html attributes tutorial,
+    html in 2024,
+  ]
 description: In this tutorial, you will learn about the syntax and structure of HTML.
 ---
 
@@ -16,77 +52,79 @@ HTML (HyperText Markup Language) is the standard markup language for creating we
 HTML syntax consists of a set of elements, tags, attributes, and their combinations. Here's a breakdown:
 
 1. **Elements** : HTML documents are built using elements, which are structured by HTML tags. Elements typically consist of an opening tag, content, and a closing tag.
-    ```html
-        <tagname>Content goes here</tagname>
-    ```
 
-    For example:
-    
-    <Tabs>
-        <TabItem value="HTML">
-        ```html
-        <p>This is a paragraph element.</p>
-        ```
-        </TabItem>
-        <TabItem value="Output">
-           <BrowserWindow url="http://127.0.0.1:5500/index.html">
-              <p>This is a paragraph element.</p>
-           </BrowserWindow>
-        </TabItem>
-    </Tabs>
+   ```html
+   <tagname>Content goes here</tagname>
+   ```
 
-    Elements can be nested within each other to create complex structures. For example:
-    
-    <Tabs>
-        <TabItem value="HTML">
-        ```html
-        <div>
-            <h1>This is a heading</h1>
-            <p>This is a paragraph element.</p>
-        </div>
-        ```
-        </TabItem>
-        <TabItem value="Output">
-           <BrowserWindow url="http://127.0.0.1:5500/index.html">
-              <div>
-                  <h1>This is a heading</h1>
-                  <p>This is a paragraph element.</p>
-              </div>
-           </BrowserWindow>
-        </TabItem>
-    </Tabs>
+   For example:
+
+   <Tabs>
+       <TabItem value="HTML">
+       ```html
+       <p>This is a paragraph element.</p>
+       ```
+       </TabItem>
+       <TabItem value="Output">
+          <BrowserWindow url="http://127.0.0.1:5500/index.html">
+             <p>This is a paragraph element.</p>
+          </BrowserWindow>
+       </TabItem>
+   </Tabs>
+
+   Elements can be nested within each other to create complex structures. For example:
+
+   <Tabs>
+       <TabItem value="HTML">
+       ```html
+       <div>
+           <h1>This is a heading</h1>
+           <p>This is a paragraph element.</p>
+       </div>
+       ```
+       </TabItem>
+       <TabItem value="Output">
+          <BrowserWindow url="http://127.0.0.1:5500/index.html">
+             <div>
+                 <h1>This is a heading</h1>
+                 <p>This is a paragraph element.</p>
+             </div>
+          </BrowserWindow>
+       </TabItem>
+   </Tabs>
 
 2. **Tags**: Tags are keywords enclosed in angle brackets `<>` that define the structure and content of HTML elements. They can be categorized into two types:
 
+   - **Opening Tags** : They denote the beginning of an element and have the tag name wrapped in angle brackets.
 
-    - **Opening Tags** : They denote the beginning of an element and have the tag name wrapped in angle brackets.
-    ```html
-        <tagname>
-    ```
-    -  **Closing Tags** : They denote the end of an element and have the tag name wrapped in angle brackets, preceded by a forward slash `/`.
+   ```html
+   <tagname></tagname>
+   ```
 
-    ```html
-        </tagname>
-    ```
-    
-    - Some tags, like `<img>`, `<input>`, and `<br>`, are self-closing and do not require a separate closing tag.
+   - **Closing Tags** : They denote the end of an element and have the tag name wrapped in angle brackets, preceded by a forward slash `/`.
+
+   ```html
+       </tagname>
+   ```
+
+   - Some tags, like `<img>`, `<input>`, and `<br>`, are self-closing and do not require a separate closing tag.
 
 3. **Attributes** : HTML elements can have attributes that provide additional information about them. Attributes are added to the opening tag and are written as name-value pairs.
-    ```html
-        <tagname attribute="value">
-    ```
 
-    For example:
-        ```html
-            <img src="image.jpg" alt="Description">
-        ```
+   ```html
+   <tagname attribute="value"></tagname>
+   ```
+
+   For example:
+   `html
+        <img src="image.jpg" alt="Description">
+    `
 
 <AdsComponent />
 
 ## HTML Structure
 
 HTML documents have a hierarchical structure consisting of various elements. Here's a breakdown of the structure:
-
 
 Here's a basic HTML structure:
 
@@ -105,25 +143,25 @@ Here's a basic HTML structure:
 13. `<img>`: Image element for displaying images.
 
 ```html title="index.html"
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Page Title</title>
     <!-- Additional meta tags, stylesheets, and scripts can be included here -->
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <!-- Header content goes here -->
+      <!-- Header content goes here -->
     </header>
     <main>
-        <!-- Main content goes here -->
+      <!-- Main content goes here -->
     </main>
     <footer>
-        <!-- Footer content goes here -->
+      <!-- Footer content goes here -->
     </footer>
-</body>
+  </body>
 </html>
 ```
 
