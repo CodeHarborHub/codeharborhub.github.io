@@ -4,13 +4,8 @@ title: Searching in Data Structures and Algorithms
 sidebar_label: Searching Algorithm
 sidebar_position: 1
 description: ""
-tags:
-  [dsa,data-algorithms , searching
-  ]
+tags: [dsa, data-algorithms, searching]
 ---
-
-
-
 
 Searching is a fundamental operation in computer science and is widely used in various applications. In the context of Data Structures and Algorithms (DSA), searching refers to the process of finding a specific element within a collection of data.
 
@@ -73,8 +68,8 @@ Remember to provide appropriate input and handle edge cases when implementing th
 ## Additional Questions
 
 1. **Question:** Implement a linear search algorithm in C++ to find the index of a target element in an array. Provide the input and output for the following scenario:
-    - **Input:** Array: [5, 2, 9, 7, 3], Target: 9
-    - **Output:** Index: 2
+   - **Input:** Array: [5, 2, 9, 7, 3], Target: 9
+   - **Output:** Index: 2
 
 ```cpp
 #include <iostream>
@@ -100,8 +95,8 @@ int main() {
 ```
 
 2. **Question:** Write a binary search algorithm in Java to find the index of a target element in a sorted array. Provide the input and output for the following scenario:
-    - **Input:** Array: [1, 3, 5, 7, 9], Target: 5
-    - **Output:** Index: 2
+   - **Input:** Array: [1, 3, 5, 7, 9], Target: 5
+   - **Output:** Index: 2
 
 ```java
 public class BinarySearch {
@@ -131,8 +126,8 @@ public class BinarySearch {
 ```
 
 3. **Question:** Implement a hash-based search algorithm in Python to retrieve the value associated with a given key in a dictionary. Provide the input and output for the following scenario:
-    - **Input:** Dictionary: ```{"apple": 1, "banana": 2, "orange": 3}```, Key: "banana"
-    - **Output:** Value: 2
+   - **Input:** Dictionary: `{"apple": 1, "banana": 2, "orange": 3}`, Key: "banana"
+   - **Output:** Value: 2
 
 ```python
 hash_map = {
@@ -148,7 +143,6 @@ print("Value:", value)
 
 Remember to provide appropriate input and handle edge cases when implementing these algorithms to ensure correct results.
 
-
 In conclusion, searching is a fundamental operation in computer science and is widely used in various applications. In the context of Data Structures and Algorithms (DSA), there are several types of searching algorithms, including linear search, binary search, and hash-based search. Each algorithm has its own characteristics and is suitable for different scenarios.
 
 Linear search is a simple algorithm that sequentially checks each element in a collection until the target element is found or the end of the collection is reached. It is commonly used for small collections or unsorted data.
@@ -160,37 +154,6 @@ Hash-based search utilizes a hash function to map keys to values in a data struc
 When implementing these algorithms, it is important to provide appropriate input and handle edge cases to ensure correct results.
 
 Overall, understanding and implementing different searching algorithms is crucial for efficient data retrieval and manipulation in various programming scenarios.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Searching is a fundamental operation in computer science and is widely used in various applications. In the context of Data Structures and Algorithms (DSA), searching refers to the process of finding a specific element within a collection of data.
 
