@@ -4,7 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import React from "react";
 import Head from "@docusaurus/Head";
 
-export default function About() {
+export default function About(): React.JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
@@ -23,7 +23,7 @@ export default function About() {
           src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"
         />
         <meta name="google-adsense-account" content="ca-pub-5832817025080991" />
-      </Head>     
+      </Head>
       <AboutUsSection />
     </Layout>
   );
