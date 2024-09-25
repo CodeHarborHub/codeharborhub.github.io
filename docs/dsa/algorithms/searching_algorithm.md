@@ -20,6 +20,10 @@ Searching is a fundamental operation in computer science and is widely used in v
 
 Linear search is a simple algorithm that sequentially checks each element in a collection until the target element is found or the end of the collection is reached. It is commonly used for small collections or unsorted data.
 
+<LinearSearchVisualizer />
+
+<br />
+
 ```python
 def linear_search(arr, target):
     for i in range(len(arr)):

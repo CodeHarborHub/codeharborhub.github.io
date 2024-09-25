@@ -4,7 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import React from "react";
 import Head from "@docusaurus/Head";
 
-export default function About() {
+export default function About(): React.JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout

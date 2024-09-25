@@ -42,9 +42,15 @@ const LinearSearchVisualizer: React.FC = () => {
     setSearching(false);
   };
 
+  const shuffleArray = () => {
+    const shuffledArray = [...array].sort(() => Math.random() - 0.5);
+    setArray(shuffledArray);
+    resetVisualization();
+  };
+
   return (
     <div className="linear-search-container">
-        <Heading as="h2">Linear Search Visualization</Heading>
+      <Heading as="h2">Linear Search Visualization</Heading>
       <div className="array-container">
         {array.map((num, index) => (
           <div
@@ -70,6 +76,9 @@ const LinearSearchVisualizer: React.FC = () => {
         </button>
         <button onClick={resetVisualization} disabled={!searching && !target}>
           Reset
+        </button>
+        <button onClick={shuffleArray} disabled={searching}>
+          Shuffle Array
         </button>
       </div>
     </div>

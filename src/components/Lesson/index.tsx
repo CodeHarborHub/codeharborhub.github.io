@@ -10,13 +10,12 @@ interface LessonProps {
 
 /**
  * Lesson component displays a single lesson with its title, description, and tags.
- * @param id - Unique identifier for the lesson.
  * @param title - Title of the lesson.
  * @param tags - Array of tags associated with the lesson.
  * @param description - Description or content of the lesson.
  * @returns JSX element representing the lesson.
  */
-const Lesson: React.FC<LessonProps> = ({ id, title, tags, description }) => {
+const Lesson: React.FC<LessonProps> = ({ title, tags, description }) => {
   return (
     <div className="lesson"> {/* Container for the lesson */}
       <h2 className="lesson-title">{title}</h2> {/* Title of the lesson */}
