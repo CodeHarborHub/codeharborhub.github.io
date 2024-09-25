@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Roadmap.css";
-
+import Link from "@docusaurus/Link";
 
 interface TechCategory {
   id: number;
@@ -280,13 +280,7 @@ const Roadmap: React.FC = () => {
     );
   };
 
-  const handleButtonClick = (link: string) => {
-    if(link === "https://roadmap.sh/react") {
-      window.open(link, "_blank");
-    }
-  }
-
-  const filteredCategories = techCategories
+ const filteredCategories = techCategories
     .map((category) => ({
       ...category,
       technologies: category.technologies.filter((tech) =>
@@ -319,12 +313,9 @@ const Roadmap: React.FC = () => {
             <ul className="roadmap-cards">
               {category.technologies.map((tech) => (
                 <li key={tech.id} className="roadmap-card">
-                  <a href={tech.link} onClick= {(e) => {
-                    e.preventDefault();
-                    handleButtonClick(tech.link); }}
-                    className="roadmap-link">
+                  <Link to={tech.link}>
                     {tech.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

@@ -6,6 +6,8 @@ tags: [html, elements, tags, web-development, front-end-development, web-design]
 description: In this tutorial, you will learn about HTML Elements and HTML Tags and about their differences
 ---
 
+<AdsComponent />
+
 HTML (Hypertext Markup Language) is the standard markup language used for creating web pages. It consists of various tags and elements that define the structure and content of a web page.
 
 ## HTML Tags
@@ -23,6 +25,8 @@ Commonly used HTML Tags:-
 HTML elements are made up of tags, along with the content placed between them. An element consists of an opening tag, the content, and a closing tag. The content can be text, images, links, or other HTML elements.
 
 For example, in the HTML element `<p> This is a paragraph.</p>`, `<p>` and `</p>` are HTML tags, and the entire string together is considered an HTML element
+
+<AdsComponent />
 
 ## Difference between HTML Elements and HTML Tags
 
