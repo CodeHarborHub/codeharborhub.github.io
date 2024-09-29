@@ -46,7 +46,14 @@ export const Users: User[] = [
     preview: require("./showcase/TailwindBlog.jpg"),
     website: null,
     source: "https://github.com/Ajay-Dhangar/starter",
-    tags: ["opensource", "clone", "templates", "documentation", "nextjs", "tailwind"],
+    tags: [
+      "opensource",
+      "clone",
+      "templates",
+      "documentation",
+      "nextjs",
+      "tailwind",
+    ],
   },
 
   // Restaurant Clone
@@ -108,17 +115,17 @@ export const Users: User[] = [
   //   source: "https://github.com/komal-agarwal5/Giggle-Hub------Meme-Generator",
   //   tags: ["opensource", "product", "html", "css", "javascript"],
   // },
-    // URL Shortner
+  // URL Shortner
 
-    // {
-    //   title: "URL Shortner",
-    //   description:
-    //     "It  Short  URL by using the technique of API Fetching and also supports the feature of copy url.",
-    //   preview: require("./showcase/URLShortner.png"),
-    //   website: "https://url-shortner-tau-woad.vercel.app/",
-    //   source: "https://github.com/kartikmehta18/URLshortner",
-    //   tags: ["opensource", "product", "html", "css", "javascript"],
-    // },
+  // {
+  //   title: "URL Shortner",
+  //   description:
+  //     "It  Short  URL by using the technique of API Fetching and also supports the feature of copy url.",
+  //   preview: require("./showcase/URLShortner.png"),
+  //   website: "https://url-shortner-tau-woad.vercel.app/",
+  //   source: "https://github.com/kartikmehta18/URLshortner",
+  //   tags: ["opensource", "product", "html", "css", "javascript"],
+  // },
 
   // Age Calculator Clone
 
@@ -149,13 +156,13 @@ export const Users: User[] = [
   // Dictonary app
 
   {
-   title: "Dictonary",
-   description:
-    "In this Dictonary search for words and it outputs word meaning, word pronunciation and usage example.",
-   preview: require("./showcase/Dictonary.png"),
-   website: "https://kartikmehta18.github.io/Dictonary-app/",
-   source: "https://github.com/kartikmehta18/Dictonary-app",
-   tags: ["opensource", "portfolio", "css", "javascript", "html"],
+    title: "Dictonary",
+    description:
+      "In this Dictonary search for words and it outputs word meaning, word pronunciation and usage example.",
+    preview: require("./showcase/Dictonary.png"),
+    website: "https://kartikmehta18.github.io/Dictonary-app/",
+    source: "https://github.com/kartikmehta18/Dictonary-app",
+    tags: ["opensource", "portfolio", "css", "javascript", "html"],
   },
 
   // Portfolio
@@ -303,10 +310,8 @@ export const Users: User[] = [
     description:
       "A simple To-Do List App using HTML CSS JS with Local Storage. Add your tasks and manage them easily.",
     preview: require("./showcase/todo-list.png"),
-    website:
-      "https://ajay-dhangar.github.io/to-do-list/",
-    source:
-      "https://github.com/Ajay-Dhangar/to-do-list",
+    website: "https://ajay-dhangar.github.io/to-do-list/",
+    source: "https://github.com/Ajay-Dhangar/to-do-list",
     tags: ["opensource", "html", "css", "javascript"],
   },
 
@@ -317,11 +322,18 @@ export const Users: User[] = [
     description:
       "Zacson is a modern and responsive web application for GYM and Fitness.",
     preview: require("./showcase/zacson.jpg"),
-    website:
-      "https://ajay-dhangar.github.io/zacson/",
-    source:
-      "https://github.com/Ajay-Dhangar/zacson",
-    tags: ["opensource", "html", "css", "javascript", "gym", "templates", "scss", "php"],
+    website: "https://ajay-dhangar.github.io/zacson/",
+    source: "https://github.com/Ajay-Dhangar/zacson",
+    tags: [
+      "opensource",
+      "html",
+      "css",
+      "javascript",
+      "gym",
+      "templates",
+      "scss",
+      "php",
+    ],
   },
 
   // Array Explorer
@@ -336,7 +348,6 @@ export const Users: User[] = [
     tags: ["opensource", "html", "javascript", "product", "css"],
   },
 
-
   // Activitar GYM Template
 
   {
@@ -344,95 +355,162 @@ export const Users: User[] = [
     description:
       "Activitar is a modern and responsive web application designed for GYM and Fitness.",
     preview: require("./showcase/activitar.png"),
-    website:
-      "https://ajay-dhangar.github.io/activitar",
-    source:
-      "https://github.com/Ajay-Dhangar/activitar",
-    tags: ["opensource", "html", "css", "javascript", "gym", "templates", "scss"],
+    website: "https://ajay-dhangar.github.io/activitar",
+    source: "https://github.com/Ajay-Dhangar/activitar",
+    tags: [
+      "opensource",
+      "html",
+      "css",
+      "javascript",
+      "gym",
+      "templates",
+      "scss",
+    ],
   },
 
-    // Othello Game
+  // Othello Game
 
-    {
-      title: "Othello Game",
-      description:
-        "Othello Game using HTML, CSS and JavaScript. Play the game and enjoy the fun.",
-      preview: require("./showcase/Othello.png"),
-      website:
-        "https://asmitamishra24.github.io/Othello/index.html",
-      source:
-        "https://github.com/AsmitaMishra24/Othello",
-      tags: ["opensource", "html", "css", "javascript", "game"],
-    },
+  {
+    title: "Othello Game",
+    description:
+      "Othello Game using HTML, CSS and JavaScript. Play the game and enjoy the fun.",
+    preview: require("./showcase/Othello.png"),
+    website: "https://asmitamishra24.github.io/Othello/index.html",
+    source: "https://github.com/AsmitaMishra24/Othello",
+    tags: ["opensource", "html", "css", "javascript", "game"],
+  },
 
-    // 3D Scrolling Animation portfolio
+  // 3D Scrolling Animation portfolio
 
-    {
-      title: "3D Scrolling Animation portfolio",
-      description:
-        "3D Scrolling Animation portfolio using HTML, CSS and JavaScript, React.js with Vite. Scroll down to see the magic.",
-      preview: require("./showcase/3d-0scrolling-animation.png"),
-      website:
-        "https://3d-0scrolling-animation.vercel.app/",
-      source:
-        "",
-      tags: ["portfolio", "html", "css", "javascript", "react"],
-    },
+  {
+    title: "3D Scrolling Animation portfolio",
+    description:
+      "3D Scrolling Animation portfolio using HTML, CSS and JavaScript, React.js with Vite. Scroll down to see the magic.",
+    preview: require("./showcase/3d-0scrolling-animation.png"),
+    website: "https://3d-0scrolling-animation.vercel.app/",
+    source: "",
+    tags: ["portfolio", "html", "css", "javascript", "react"],
+  },
 
+  // horse ride booking system
 
-    // horse ride booking system
+  {
+    title: "Horse Ride Booking",
+    description:
+      "Front-end development for a horse ride booking system using React.js, redux, and montion animation.",
+    preview: require("./showcase/horse-ride-booking.jpg"),
+    website: "https://horse-ride-booking.vercel.app/",
+    source: null,
+    tags: ["opensource", "react", "redux", "motion", "javascript"],
+  },
 
-    {
-      title: "Horse Ride Booking",
-      description: "Front-end development for a horse ride booking system using React.js, redux, and montion animation.",
-      preview: require("./showcase/horse-ride-booking.jpg"),
-      website: "https://horse-ride-booking.vercel.app/",
-      source: null,
-      tags: ["opensource", "react", "redux", "motion", "javascript"],
-    },
+  // QR Generator
 
-    // QR Generator
+  {
+    title: "QR Generator",
+    description: "Simple QR generator made with HTML, CSS and Javacsript",
+    preview: require("./showcase/QR.png"),
+    website:
+      "https://github.com/Ridhima10/Js-mini-projects/tree/main/QR%20code%20generator",
+    source:
+      "https://github.com/Ridhima10/Js-mini-projects/tree/main/QR%20code%20generator",
+    tags: ["html", "css", "javascript"],
+  },
 
-    {
-      title: "QR Generator",
-      description: "Simple QR generator made with HTML, CSS and Javacsript",
-      preview: require("./showcase/QR.png"),
-      website: "https://github.com/Ridhima10/Js-mini-projects/tree/main/QR%20code%20generator",
-      source: "https://github.com/Ridhima10/Js-mini-projects/tree/main/QR%20code%20generator",
-      tags: ["html", "css", "javascript"],
-    },
+  // Anime Template
 
-    // Anime Template
+  {
+    title: "Anime Template",
+    description:
+      "A simple Anime template made with HTML, CSS and Javascript for anime lovers.",
+    preview: require("./showcase/anime.png"),
+    website: "https://ajay-dhangar.github.io/anime/",
+    source: "https://github.com/Ajay-Dhangar/anime",
+    tags: ["html", "css", "javascript", "templates", "scss"],
+  },
 
-    {
-      title: "Anime Template",
-      description: "A simple Anime template made with HTML, CSS and Javascript for anime lovers.",
-      preview: require("./showcase/anime.png"),
-      website: "https://ajay-dhangar.github.io/anime/",
-      source: "https://github.com/Ajay-Dhangar/anime",
-      tags: ["html", "css", "javascript", "templates", "scss"],
-    },
+  // Budget App
 
-    // Budget App
+  {
+    title: "Budget App",
+    description:
+      "A simple budget app made with HTML, CSS and Javascript. It helps you to manage your budget.",
+    preview: require("./showcase/budget.png"),
+    website: "https://ajay-dhangar.github.io/budget-app/",
+    source: "https://github.com/Ajay-Dhangar/budget-app",
+    tags: ["html", "css", "javascript"],
+  },
 
-    {
-      title: "Budget App",
-      description: "A simple budget app made with HTML, CSS and Javascript. It helps you to manage your budget.",
-      preview: require("./showcase/budget.png"),
-      website: "https://ajay-dhangar.github.io/budget-app/",
-      source: "https://github.com/Ajay-Dhangar/budget-app",
-      tags: ["html", "css", "javascript"],
-    },
+  // Chat Bot
 
-    // Chat Bot
+  {
+    title: "Chat Bot",
+    description:
+      "A simple chat bot made with HTML, CSS and Javascript. It helps you to chat with the bot.",
+    preview: require("./showcase/chatbot.png"),
+    website: "https://ajay-dhangar.github.io/chatbot/",
+    source: "https://github.com/Ajay-Dhangar/chatbot",
+    tags: ["html", "css", "javascript"],
+  },
 
-    {
-      title: "Chat Bot",
-      description: "A simple chat bot made with HTML, CSS and Javascript. It helps you to chat with the bot.",
-      preview: require("./showcase/chatbot.png"),
-      website: "https://ajay-dhangar.github.io/chatbot/",
-      source: "https://github.com/Ajay-Dhangar/chatbot",
-      tags: ["html", "css", "javascript"],
-    },
+  // Video Game Portal
+
+  {
+    title: "Video Game Portal",
+    description:
+      "A simple video game portal made with HTML, CSS and Javascript. It helps you to play video games.",
+    preview: require("./showcase/video-game-portal.png"),
+    website: "https://ajay-dhangar.github.io/video-game-portal/",
+    source: "https://github.com/ajay-dhangar/video-game-portal",
+    tags: ["html", "css", "javascript"],
+  },
+
+  // 8 Puzzle Game
+
+  {
+    title: "8 Puzzle Game",
+    description:
+      "8 Puzzle Game using HTML, CSS and JavaScript. Play the game and enjoy the fun.",
+    preview: require("./showcase/8-puzzle.png"),
+    website: "https://ajay-dhangar.github.io/8-puzzle/",
+    source: "https://github.com/ajay-dhangar/8-puzzle",
+    tags: ["html", "css", "javascript", "game"],
+  },
+
+  // Scientific Calculator
+
+  {
+    title: "Scientific Calculator",
+    description:
+      "Scientific Calculator using HTML, CSS and JavaScript. It helps you to do scientific calculations.",
+    preview: require("./showcase/scientific-calculator.png"),
+    website: "https://ajay-dhangar.github.io/scientific-calculator/",
+    source: "https://github.com/ajay-dhangar/scientific-calculator",
+    tags: ["html", "css", "javascript"],
+  },
+
+  // rock-paper-scissors-game
+
+  {
+    title: "Rock Paper Scissors",
+    description:
+      "Rock Paper Scissors Game using HTML, CSS and JavaScript. Play the game and enjoy the fun.",
+    preview: require("./showcase/rock-paper-scissors.png"),
+    website: "https://ajay-dhangar.github.io/rock-paper-scissors-game/",
+    source: "https://github.com/ajay-dhangar/rock-paper-scissors-game",
+    tags: ["html", "css", "javascript", "game"],
+  },
+
+  // number-guess-game
+
+  {
+    title: "Number Guess Game",
+    description:
+      "Number Guess Game using HTML, CSS and JavaScript. Play the game and enjoy the fun.",
+    preview: require("./showcase/number-guess.png"),
+    website: "https://ajay-dhangar.github.io/number-guess-game/",
+    source: "https://github.com/ajay-dhangar/number-guess-game",
+    tags: ["html", "css", "javascript", "game"],
+  },
 
 ];
