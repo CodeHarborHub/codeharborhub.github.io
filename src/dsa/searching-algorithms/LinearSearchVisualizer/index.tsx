@@ -54,7 +54,7 @@ const LinearSearchVisualizer: React.FC = () => {
       <div className="array-container">
         {array.map((num, index) => (
           <div
-            key={`${num}-${index}`}
+            key={num}
             className={`array-item ${index === currentIndex ? 'current' : ''} ${
               index === foundIndex ? 'found' : ''
             }`}
