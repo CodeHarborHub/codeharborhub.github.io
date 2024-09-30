@@ -1,46 +1,25 @@
-import React, { useState, useEffect } from 'react';
-import './ArrayVisualization.css'; 
+import React, { useState, useEffect } from "react";
 
 const ArrayVisualizations: React.FC = () => {
-  // State variables
-  const [array, setArray] = useState<number[]>([]); // Holds the array of numbers
-  const [delay, setDelay] = useState<number>(300); // Controls the delay for visualization
-  const [minIndex, setMinIndex] = useState<number | null>(null); // Index of the minimum value in the array
-  const [isDisabled, setIsDisabled] = useState<boolean>(false); // Controls button disable state
-  const [currentIndex, setCurrentIndex] = useState<number | null>(null); // Current index being evaluated
-  const [isSorting, setIsSorting] = useState<boolean>(false); // Indicates if the array is being sorted
+  const [array, setArray] = useState<number[]>([]);
+  const [delay, setDelay] = useState<number>(300);
+  const [minIndex, setMinIndex] = useState<number | null>(null);
+  const [isDisabled, setIsDisabled] = useState<boolean>(false);
+  const [currentIndex, setCurrentIndex] = useState<number | null>(null);
+  const [isSorting, setIsSorting] = useState<boolean>(false);
 
-  // Generates a new array when the component mounts
   useEffect(() => {
-    generateArray();    
+    generateArray();
   }, []);
 
-  // Updates the transition duration whenever the delay changes
-  useEffect(() => {
-    updateMoveDuration();
-  }, [delay]);
-
-  // Function to generate a new array with random values
   const generateArray = () => {
-    const newArray = Array.from({ length: 18 }, () => Math.ceil(Math.random() * 90) + 10);
+    const newArray = Array.from(
+      { length: 12 },
+      () => Math.ceil(Math.random() * 90) + 10
+    );
     setArray(newArray);
   };
 
-  // Function to update the transition duration for CSS animations
-  const updateMoveDuration = () => {
-    const stylesheets = document.styleSheets;
-    for (let i = 0; i < stylesheets.length; i++) {
-      const rules = (stylesheets[i] as CSSStyleSheet).cssRules || (stylesheets[i] as CSSStyleSheet).rules;
-      for (let j = 0; j < rules.length; j++) {
-        if ((rules[j] as CSSStyleRule).selectorText === '.v-move') {
-          (rules[j] as CSSStyleRule).style.transitionDuration = `${delay}ms`;
-          break;
-        }
-      }
-    }
-  };
-
-  // Function to find the lowest value in the array
   const findLowest = async () => {
     setIsDisabled(true);
     setIsSorting(true);
@@ -52,36 +31,75 @@ const ArrayVisualizations: React.FC = () => {
         minVal = array[j];
         minIdx = j;
       }
-      await new Promise(resolve => setTimeout(resolve, delay));
+      await new Promise((resolve) => setTimeout(resolve, delay));
     }
     setMinIndex(minIdx);
     setIsSorting(false);
     setIsDisabled(false);
   };
 
-  // Function to reset the array to new random values
   const resetArray = () => {
     generateArray();
     setMinIndex(null);
   };
 
   return (
-    <div className='array-visualizations'>
-      <p>Speed: <input type="range" min="50" max="500" value={delay} onChange={e => setDelay(Number(e.target.value))} /></p>
-      <button onClick={findLowest} disabled={isDisabled || isSorting}>Find Lowest</button>
-      &nbsp;
-      <button onClick={resetArray} disabled={isDisabled || isSorting}>New Values</button>
-      <p>Lowest value: {minIndex !== null ? array[minIndex] : null}</p>
-      <br /> <br />
-      <div className="array-container">
+    <div className="p-5 border border-blue-500 rounded-md shadow-md dark:border-gray-100 dark:bg-gray-800">
+      <div className="flex justify-center items-center mb-4">
+        <p className="mb-4">
+          Speed:{" "}
+          <input
+            type="range"
+            min="50"
+            max="500"
+            value={delay}
+            onChange={(e) => setDelay(Number(e.target.value))}
+            className="ml-2"
+          />
+        </p>
+        <div className="flex space-x-4 mb-4">
+          <button
+            onClick={findLowest}
+            disabled={isDisabled || isSorting}
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded disabled:opacity-50 border border-blue-700"
+          >
+            Find Lowest
+          </button>
+          <button
+            onClick={resetArray}
+            disabled={isDisabled || isSorting}
+            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded disabled:opacity-50 border border-green-700"
+          >
+            New Values
+          </button>
+        </div>
+      </div>
+      <p className="m-2 mb-6 text-center">
+        Lowest value of{" "}
+        <span className="font-bold">
+          [
+          {array.map(
+            (value, index) =>
+              `${value}${index === array.length - 1 ? "" : ", "}`
+          )}
+          ]{" "}
+        </span>
+        : &nbsp;
+        <span className="font-bold text-[--ifm-color-primary]">
+          {minIndex !== null ? array[minIndex] : null}
+        </span>
+      </p>
+      <div className="flex justify-center items-end h-72">
         {array.map((value, index) => (
           <div
-            key={index}
-            className={`array-bar ${index === minIndex ? 'min-value' : ''} ${index === currentIndex ? 'current-value' : ''}`}
+            key={value}
+            className={`w-8 mx-1 bg-blue-500 transition-all duration-300
+              ${index === minIndex ? "bg-red-500" : ""}
+              ${index === currentIndex ? "bg-yellow-300" : ""}`}
             style={{ height: `${value * 3}px` }}
-           />
+          />
         ))}
-      </div>      
+      </div>
     </div>
   );
 };
