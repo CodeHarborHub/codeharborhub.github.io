@@ -39,7 +39,7 @@ export const TweetsSection: React.FC = () => {
           <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-200">
             Loved by Many Users
           </h2>
-          <div className="mt-2 w-24 h-1 mx-auto bg-blue-500 dark:bg-blue-400"></div>
+          <div className="mt-2 w-24 h-1 mx-auto bg-blue-500 dark:bg-blue-400" />
         </motion.div>
 
         {/* Swiper Tweets */}
@@ -47,7 +47,7 @@ export const TweetsSection: React.FC = () => {
           slidesPerView={1}
           spaceBetween={30}
           autoplay={{ delay: 2000 }}
-          loop={true}
+          loop
           breakpoints={{
             640: { slidesPerView: 1, spaceBetween: 20 },
             768: { slidesPerView: 2, spaceBetween: 30 },
