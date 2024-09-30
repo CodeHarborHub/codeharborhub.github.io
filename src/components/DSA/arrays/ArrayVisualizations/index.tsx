@@ -93,8 +93,8 @@ const ArrayVisualizations: React.FC = () => {
         {array.map((value, index) => (
           <div
             key={value}
-            className={`w-8 mx-1 bg-blue-500 transition-all duration-300 
-              ${index === minIndex ? "bg-red-500" : ""} 
+            className={`w-8 mx-1 bg-blue-500 transition-all duration-300
+              ${index === minIndex ? "bg-red-500" : ""}
               ${index === currentIndex ? "bg-yellow-300" : ""}`}
             style={{ height: `${value * 3}px` }}
           />
