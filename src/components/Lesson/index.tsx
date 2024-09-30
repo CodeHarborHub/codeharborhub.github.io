@@ -21,8 +21,8 @@ const Lesson: React.FC<LessonProps> = ({ title, tags, description }) => {
       <h2 className="lesson-title">{title}</h2> {/* Title of the lesson */}
       <p className="lesson-description">{description}</p> {/* Description or content of the lesson */}
       <div className="lesson-tags"> {/* Container for tags */}
-        {tags.map((tag, index) => (
-          <span key={index} className="lesson-tag">{tag}</span>
+        {tags.map((tag) => (
+          <span key={tag} className="lesson-tag">{tag}</span>
         ))
         }
       </div>
