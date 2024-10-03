@@ -35,7 +35,6 @@ export default function Home() {
           src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"
         />
         <meta name="google-adsense-account" content="ca-pub-5832817025080991" />
-        <meta name="google-site-verification" content="rn58c9eOt8ij52CdcS8Lk4rx-8yUCjCkRsCDrycQfW4" />
       </Head>
       <main className={style.main__home}>
         <div className={style.home__header}>
