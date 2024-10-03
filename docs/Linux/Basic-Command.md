@@ -6,6 +6,7 @@
 - `ls`: List directory contents.
 - `cd <directory>`: Change to the specified directory.
 - `mkdir <directory>`: Create a new directory.
+- `rmdir <directory>`: Removes an empty directory.
 
 ## File Operations
 
