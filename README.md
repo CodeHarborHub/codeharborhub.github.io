@@ -1,5 +1,3 @@
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&weight=900&pause=1000&color=0FF26C&random=false&center=false&width=1500&height=100&lines=Announcement:+Contributors,+please+ensure+tasks+are+completed+within+assigned+timeframes+as+per+project+sidebar." alt="Announcement" />
-
 # CodeHarborHub
 
 Welcome to CodeHarborHub! Your gateway to top-notch tech education. **Tired of limitations?** CodeHarborHub shatters them. We're the exclusive platform offering a comprehensive tech curriculum, taught by industry masters, completely free. Join our vibrant community, master in-demand skills, and launch your dream tech career.
