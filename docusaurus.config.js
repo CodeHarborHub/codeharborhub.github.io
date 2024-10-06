@@ -176,10 +176,10 @@ const config = {
               {
                 type: "html",
                 value: `<div class="dropdown_grid">
-                <a class="dropbtn" href="/dsa/"> DSA </a>
+                <a class="dropbtn" href="https://codeharborhub.github.io/dsa/" target="_self"> DSA </a>
                 <div class="dropdown-content dsa-content ">
-                  <a href="/dsa/problems/" class="nav__icons"> 🧩Problems </a> <br />
-                  <a href="/dsa/solutions/" class="nav__icons  "> 💡Solutions </a>
+                  <a href="https://codeharborhub.github.io/dsa/problems/" target="_self" class="nav__icons"> 🧩Problems </a> <br />
+                  <a href="https://codeharborhub.github.io/dsa/solutions/" target="_self" class="nav__icons  "> 💡Solutions </a>
                 </div>
               </div>`,
               },

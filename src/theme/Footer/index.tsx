@@ -112,16 +112,18 @@ const Footer: React.FC = () => {
                 </li>
                 <li>
                   <Link
-                    to="/dsa/problems/"
+                    to="https://codeharborhub.github.io/dsa/problems/"
                     className="mb-3 inline-block text-base text-gray-300 hover:text-[--ifm-color-primary]"
+                    target="_self"
                   >
                     DSA Problems
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/dsa/solutions/"
+                    to="https://codeharborhub.github.io/dsa/solutions/"
                     className="mb-3 inline-block text-base text-gray-300 hover:text-[--ifm-color-primary]"
+                    target="_self"
                   >
                     DSA Solutions
                   </Link>
