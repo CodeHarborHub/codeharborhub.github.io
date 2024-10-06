@@ -176,10 +176,10 @@ const config = {
               {
                 type: "html",
                 value: `<div class="dropdown_grid">
-                <a class="dropbtn" href="/dsa/"> DSA </a>
+                <a class="dropbtn" href="#"> DSA </a>
                 <div class="dropdown-content dsa-content ">
-                  <a href="/dsa-problems/" class="nav__icons"> 🧩Problems </a> <br />
-                  <a href="/dsa-solutions/" class="nav__icons  "> 💡Solutions </a>
+                  <a href="#" class="nav__icons"> 🧩Problems </a> <br />
+                  <a href="#" class="nav__icons  "> 💡Solutions </a>
                 </div>
               </div>`,
               },
@@ -304,11 +304,11 @@ const config = {
               },
               {
                 label: "DSA Problems",
-                to: "/dsa-problems/",
+                to: "#",
               },
               {
                 label: "DSA Solutions",
-                to: "/dsa-solutions/",
+                to: "#",
               },
             ],
           },
@@ -525,20 +525,20 @@ const config = {
         showLastUpdateTime: true,
       },
     ],
-    [
-      "@docusaurus/plugin-content-docs",
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
-      {
-        id: "dsa",
-        path: "dsa",
-        routeBasePath: "dsa",
-        sidebarPath: require.resolve("./sidebarsDSA.js"),
-        remarkPlugins: [remarkMath],
-        rehypePlugins: [rehypeKatex],
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
-      },
-    ],
+    // [
+    //   "@docusaurus/plugin-content-docs",
+    //   /** @type {import('@docusaurus/plugin-content-docs').Options} */
+    //   {
+    //     id: "dsa",
+    //     path: "dsa",
+    //     routeBasePath: "dsa",
+    //     sidebarPath: require.resolve("./sidebarsDSA.js"),
+    //     remarkPlugins: [remarkMath],
+    //     rehypePlugins: [rehypeKatex],
+    //     showLastUpdateAuthor: true,
+    //     showLastUpdateTime: true,
+    //   },
+    // ],
     [
       "@docusaurus/plugin-content-docs",
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
@@ -568,35 +568,35 @@ const config = {
         showLastUpdateTime: true,
       },
     ],
-    [
-      "@docusaurus/plugin-content-docs",
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
-      {
-        id: "dsa-solutions",
-        path: "dsa-solutions",
-        routeBasePath: "dsa-solutions",
-        editUrl: "#",
-        sidebarPath: require.resolve("./sidebarsCommunity.js"),
-        remarkPlugins: [remarkMath],
-        rehypePlugins: [rehypeKatex],
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
-      {
-        id: "dsa-problems",
-        path: "dsa-problems",
-        routeBasePath: "dsa-problems",
-        sidebarPath: require.resolve("./sidebarsCommunity.js"),
-        remarkPlugins: [remarkMath],
-        rehypePlugins: [rehypeKatex],
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
-      },
-    ],
+    // [
+    //   "@docusaurus/plugin-content-docs",
+    //   /** @type {import('@docusaurus/plugin-content-docs').Options} */
+    //   {
+    //     id: "dsa-solutions",
+    //     path: "dsa-solutions",
+    //     routeBasePath: "dsa-solutions",
+    //     editUrl: "#",
+    //     sidebarPath: require.resolve("./sidebarsCommunity.js"),
+    //     remarkPlugins: [remarkMath],
+    //     rehypePlugins: [rehypeKatex],
+    //     showLastUpdateAuthor: true,
+    //     showLastUpdateTime: true,
+    //   },
+    // ],
+    // [
+    //   "@docusaurus/plugin-content-docs",
+    //   /** @type {import('@docusaurus/plugin-content-docs').Options} */
+    //   {
+    //     id: "dsa-problems",
+    //     path: "dsa-problems",
+    //     routeBasePath: "dsa-problems",
+    //     sidebarPath: require.resolve("./sidebarsCommunity.js"),
+    //     remarkPlugins: [remarkMath],
+    //     rehypePlugins: [rehypeKatex],
+    //     showLastUpdateAuthor: true,
+    //     showLastUpdateTime: true,
+    //   },
+    // ],
     [
       path.join(__dirname, "/plugins/my-plugin"),
       {
