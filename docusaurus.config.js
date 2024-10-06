@@ -568,35 +568,7 @@ const config = {
         showLastUpdateTime: true,
       },
     ],
-    // [
-    //   "@docusaurus/plugin-content-docs",
-    //   /** @type {import('@docusaurus/plugin-content-docs').Options} */
-    //   {
-    //     id: "dsa-solutions",
-    //     path: "dsa-solutions",
-    //     routeBasePath: "dsa-solutions",
-    //     editUrl: "#",
-    //     sidebarPath: require.resolve("./sidebarsCommunity.js"),
-    //     remarkPlugins: [remarkMath],
-    //     rehypePlugins: [rehypeKatex],
-    //     showLastUpdateAuthor: true,
-    //     showLastUpdateTime: true,
-    //   },
-    // ],
-    // [
-    //   "@docusaurus/plugin-content-docs",
-    //   /** @type {import('@docusaurus/plugin-content-docs').Options} */
-    //   {
-    //     id: "dsa-problems",
-    //     path: "dsa-problems",
-    //     routeBasePath: "dsa-problems",
-    //     sidebarPath: require.resolve("./sidebarsCommunity.js"),
-    //     remarkPlugins: [remarkMath],
-    //     rehypePlugins: [rehypeKatex],
-    //     showLastUpdateAuthor: true,
-    //     showLastUpdateTime: true,
-    //   },
-    // ],
+    
     [
       path.join(__dirname, "/plugins/my-plugin"),
       {

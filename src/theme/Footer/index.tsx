@@ -112,7 +112,7 @@ const Footer: React.FC = () => {
                 </li>
                 <li>
                   <Link
-                    to="/dsa-problems/"
+                    to="/dsa/problems/"
                     className="mb-3 inline-block text-base text-gray-300 hover:text-[--ifm-color-primary]"
                   >
                     DSA Problems
@@ -120,7 +120,7 @@ const Footer: React.FC = () => {
                 </li>
                 <li>
                   <Link
-                    to="/dsa-solutions/"
+                    to="/dsa/solutions/"
                     className="mb-3 inline-block text-base text-gray-300 hover:text-[--ifm-color-primary]"
                   >
                     DSA Solutions
