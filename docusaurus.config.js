@@ -176,10 +176,10 @@ const config = {
               {
                 type: "html",
                 value: `<div class="dropdown_grid">
-                <a class="dropbtn" href="#"> DSA </a>
+                <a class="dropbtn" href="/dsa/"> DSA </a>
                 <div class="dropdown-content dsa-content ">
-                  <a href="#" class="nav__icons"> 🧩Problems </a> <br />
-                  <a href="#" class="nav__icons  "> 💡Solutions </a>
+                  <a href="/dsa/problems/" class="nav__icons"> 🧩Problems </a> <br />
+                  <a href="/dsa/solutions/" class="nav__icons  "> 💡Solutions </a>
                 </div>
               </div>`,
               },
