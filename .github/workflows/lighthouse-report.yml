@@ -44,10 +44,6 @@ jobs:
             http://localhost:3000/docs/category/javascript
             http://localhost:3000/courses
             http://localhost:3000/courses/category/reactjs
-            http://localhost:3000/dsa-problems
-            http://localhost:3000/dsa-problems/category/leetcode-problems
-            http://localhost:3000/dsa-solutions
-            http://localhost:3000/dsa-solutions/category/leetcode-solutions
             http://localhost:3000/blog
             http://localhost:3000/showcase
             http://localhost:3000/community
