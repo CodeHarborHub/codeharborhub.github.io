@@ -83,7 +83,7 @@ const config = {
       announcementBar: {
         id: "announcementBar",
         content:
-          '🐐 Check out our latest project <a target="_blank" href="https://eco-farm-hub.github.io/goat-farming/">Goat Farming</a>! Learn more about sustainable farming practices. 🌱',
+          '📢 Join our <a target="_blank" href="https://www.whatsapp.com/channel/0029Vah6hro8F2pGUhuAcR0B">WhatsApp Channel</a> for the latest updates and collaboration on exciting projects!',
         isCloseable: true,
         backgroundColor: "#4d5061",
       },
