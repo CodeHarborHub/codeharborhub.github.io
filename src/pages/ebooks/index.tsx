@@ -1,19 +1,18 @@
 import React from "react";
-import "./style.css";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import books from "../../database/ebooks";
 import Head from "@docusaurus/Head";
 
-export default function Books() {
+export default function Books(): JSX.Element {
   // Books component
   const { siteConfig } = useDocusaurusContext();
 
   return (
     <Layout
-      title={`Blogs from ${siteConfig.title}`}
-      description="Welcome to CodeHarborHub Blog. Learn the basics to advanced concepts of web development. html, css, javascript, react, node.js, dsa, and more."
+      title={`Books from ${siteConfig.title}`}
+      description="Explore CodeHarborHub's E-Books on web development topics, including HTML, CSS, JavaScript, React, Node.js, and more."
     >
       <Head>
         <script
@@ -28,28 +27,46 @@ export default function Books() {
         />
         <meta name="google-adsense-account" content="ca-pub-5832817025080991" />
       </Head>
-      <section className="blog-page margin-top--lg margin-bottom--lg">
-        <div className="blog-header">
-          <h1 className="TitleText">Welcome to CodeHarborHub E-Books </h1>
-          <p className="SubTitleText">
-            Learn the basics to advanced concepts of web development. html, css,
-            javascript, react, node.js, DSA, and many more from our E-Book
-            collection.
+      <section className="blog-page my-10">
+        <div className="text-center mb-8">
+          <h1 className="text-4xl font-bold gradient-text">
+            Welcome to CodeHarborHub E-Books
+          </h1>
+          <p className="text-lg text-gray-700 dark:text-gray-300">
+            Discover a variety of web development resources. Learn HTML, CSS,
+            JavaScript, React, Node.js, DSA, and much more with our e-books.
           </p>
         </div>
-        <div className="card-container">
+        <div className="grid gap-6 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {books.map((book) => (
-            <div key={book.id} className="card">
-              <img src={book.image} alt={book.title} />
-              <h2>{book.title}</h2>
-              <p>{book.description}</p>
-              <Link to={book.link} className="read-more">
-                Link to the PDF
-              </Link>
-            </div>
+            <BookCard key={book.id} book={book} />
           ))}
         </div>
       </section>
     </Layout>
   );
 }
+
+const BookCard = ({ book }) => {
+  return (
+    <div className="card bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden">
+      <img
+        src={book.image}
+        alt={book.title}
+        className="w-full h-48 object-cover"
+      />
+      <div className="p-4">
+        <h2 className="text-xl font-semibold dark:text-white">{book.title}</h2>
+        <p className="text-gray-600 dark:text-gray-400 mb-4">
+          {book.description}
+        </p>
+        <Link
+          to={book.link}
+          className="text-blue-600 dark:text-blue-400 hover:underline"
+        >
+          Link to the PDF
+        </Link>
+      </div>
+    </div>
+  );
+};
