@@ -408,11 +408,19 @@ const config = {
       },
       prism: {
         theme: prismThemes.github,
-        // theme: prismThemes.dracula,
-        // theme: prismThemes.vsDark,
         darkTheme: prismThemes.dracula,
-        // darkTheme: prismThemes.github,
-        additionalLanguages: ["powershell"],
+        additionalLanguages: [
+          'java',
+          'latex',
+          'haskell',
+          'matlab',
+          'PHp',
+          'powershell',
+          'bash',
+          'diff',
+          'json',
+          'scss',
+        ],
       },
       docs: {
         sidebar: {
