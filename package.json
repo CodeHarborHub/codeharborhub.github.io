@@ -19,7 +19,7 @@
     "@docusaurus/core": "^3.4.0",
     "@docusaurus/plugin-content-pages": "^3.3.2",
     "@docusaurus/plugin-google-analytics": "^3.3.2",
-    "@docusaurus/plugin-google-gtag": "^3.3.2",
+    "@docusaurus/plugin-google-gtag": "^3.6.0",
     "@docusaurus/plugin-google-tag-manager": "^3.3.2",
     "@docusaurus/plugin-ideal-image": "^3.3.2",
     "@docusaurus/plugin-pwa": "^3.3.2",
