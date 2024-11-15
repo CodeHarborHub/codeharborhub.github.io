@@ -83,7 +83,7 @@
     "dotenv": "^16.4.5",
     "gh-pages": "^6.1.1",
     "lighthouse": "^12.2.2",
-    "postcss": "^8.4.47",
+    "postcss": "^8.4.49",
     "tailwindcss": "^3.4.12"
   },
   "browserslist": {
