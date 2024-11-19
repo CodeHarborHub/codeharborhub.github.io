@@ -25,7 +25,7 @@
     "@docusaurus/plugin-pwa": "^3.3.2",
     "@docusaurus/plugin-vercel-analytics": "^3.3.2",
     "@docusaurus/preset-classic": "^3.3.2",
-    "@docusaurus/remark-plugin-npm2yarn": "^3.4.0",
+    "@docusaurus/remark-plugin-npm2yarn": "^3.6.2",
     "@docusaurus/theme-classic": "^3.4.0",
     "@docusaurus/theme-live-codeblock": "^3.3.2",
     "@docusaurus/theme-mermaid": "^3.3.2",
