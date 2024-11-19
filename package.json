@@ -76,7 +76,7 @@
     "@babel/core": "^7.24.7",
     "@babel/plugin-syntax-jsx": "^7.24.7",
     "@babel/preset-react": "^7.24.7",
-    "@docusaurus/module-type-aliases": "^3.3.2",
+    "@docusaurus/module-type-aliases": "^3.6.2",
     "@docusaurus/types": "^3.3.2",
     "@types/node": "^22.6.1",
     "autoprefixer": "^10.4.20",
