@@ -1,9 +1,9 @@
 ---
-title: "Introduction to Quantum Computing and Its Applications"
+title: "Introduction to Quantum Computing and It's Applications"
 sidebar_label: Quantum Computing
 authors: [pujan-sarkar]
 tags: [Quantum Computing, Applications]
-date: 2024-07-22
+date: 2024-11-25
 ---
 
 In the realm of computing, quantum computing stands as a revolutionary field that leverages the principles of quantum mechanics to process information in fundamentally different ways compared to classical computing. This blog aims to introduce the basics of quantum computing, explore its potential applications, and provide resources for further learning.
@@ -24,7 +24,9 @@ Quantum computing harnesses the peculiar principles of quantum mechanics, such a
 
 A qubit is the fundamental unit of quantum information. Unlike a classical bit, which can be either 0 or 1, a qubit can exist in a state that is a linear combination of both. This property is called superposition. Mathematically, a qubit's state can be represented as:
 
-$$ |\psi\rangle = \alpha|0\rangle + \beta|1\rangle $$
+$$ 
+|\psi\rangle = \alpha|0\rangle + \beta|1\rangle 
+$$
 
 where $|\alpha|^2$ and $|\beta|^2$ are the probabilities of the qubit being in the state $|0\rangle$ and $|1\rangle$ respectively, and $|\alpha|^2 + |\beta|^2 = 1$.
 

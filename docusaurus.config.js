@@ -57,7 +57,8 @@ const config = {
           showReadingTime: true,
           editUrl:
             "https://github.com/codeharborhub/codeharborhub.github.io/edit/main/",
-          remarkPlugins: [[npm2yarn, { converters: ["pnpm"] }]],
+          remarkPlugins: [[npm2yarn, { converters: ["pnpm"] }], remarkMath],
+          rehypePlugins: [rehypeKatex],
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -410,16 +411,16 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
         additionalLanguages: [
-          'java',
-          'latex',
-          'haskell',
-          'matlab',
-          'PHp',
-          'powershell',
-          'bash',
-          'diff',
-          'json',
-          'scss',
+          "java",
+          "latex",
+          "haskell",
+          "matlab",
+          "PHp",
+          "powershell",
+          "bash",
+          "diff",
+          "json",
+          "scss",
         ],
       },
       docs: {
@@ -576,7 +577,7 @@ const config = {
         showLastUpdateTime: true,
       },
     ],
-    
+
     [
       path.join(__dirname, "/plugins/my-plugin"),
       {
