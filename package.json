@@ -80,7 +80,7 @@
     "@docusaurus/types": "^3.3.2",
     "@types/node": "^22.6.1",
     "autoprefixer": "^10.4.20",
-    "dotenv": "^16.4.5",
+    "dotenv": "^16.4.7",
     "gh-pages": "^6.1.1",
     "lighthouse": "^12.2.2",
     "postcss": "^8.4.47",
