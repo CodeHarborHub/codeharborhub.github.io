@@ -3,7 +3,7 @@ title: "Chrome Extension Using MERN"
 sidebar_label: Chrome Extension Using MERN
 authors: [khushi-kalra]
 tags: [chrome extension, web dev, React, Express, MongoDB, Node, UI]
-date: 2024-06-13 23:23:23
+date: 2024-06-13
 hide_table_of_contents: true
 ---
 

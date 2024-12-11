@@ -2,7 +2,7 @@
 title: "Sed: Normalize markdown file with Regex"
 authors: [ajay-dhangar]
 tags: [sed, regex, web clipper]
-date: 2024-03-15 14:37:46
+date: 2024-03-15
 description: How to normalize markdown file with Regex using sed command-line utility in Linux, macOS, and Windows.
 draft: false
 ---

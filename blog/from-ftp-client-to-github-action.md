@@ -2,7 +2,7 @@
 title: "CI evolution: From FTP client to GitHub Action"
 authors: [ajay-dhangar]
 tags: [ftp, sftp, GitHub Action, ftp deploy]
-date: 2024-03-15 11:37:46
+date: 2024-03-15
 decription: The evolution of remote file management
 draft: false
 ---

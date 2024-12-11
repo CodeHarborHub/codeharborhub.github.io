@@ -3,7 +3,7 @@ title: "React JS"
 sidebar_label: React JS
 authors: [hitesh-gahanolia]
 tags: [javascript, framework, frontend, react, node]
-date: 2024-06-13 12:29
+date: 2024-06-13
 hide_table_of_contents: true
 ---
 
