@@ -1,9 +1,9 @@
 ---
-title: "SQL"
-sidebar_label: SQL - Structured Query Language
-authors: [hitesh-gahanolia]
+title: "SQL - Structured Query Language"
+sidebar_label: "SQL"
+authors: [ajay-dhangar, hitesh-gahanolia]
 tags: [sql, databases, data]
-date: 2024-06-12 5:17
+date: 2024-06-12
 hide_table_of_contents: true
 ---
 

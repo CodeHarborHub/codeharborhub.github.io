@@ -2,8 +2,8 @@
 title: "Sed: Normalize markdown file with Regex"
 authors: [ajay-dhangar]
 tags: [sed, regex, web clipper]
-date: 2024-03-15 14:37:46
-description: How to normalize markdown file with Regex
+date: 2024-03-15
+description: How to normalize markdown file with Regex using sed command-line utility in Linux, macOS, and Windows.
 draft: false
 ---
 
@@ -16,7 +16,7 @@ One of the common issues I encounter is inconsistent formatting of the front mat
 ```markdown
 ---
 title: "Sed: Normalize markdown file with Regex"
-author: Ajay Dhangar
+author: [ajay-dhangar]
 tags: [sed, regex, web clipper]
 date: 2020-11-26 21:13:28
 description: How to normalize markdown file with Regex
@@ -32,7 +32,7 @@ To make the front matter consistent across all my markdown files, I decided to u
 sed -i -E "s/^---\n(.*: .*\n)+---\n//g" file.md
 ```
 
-Let's break down the regular expression:
+**Let's break down the regular expression:**
 
 - `^---\n` matches the opening three dashes at the beginning of the file, followed by a newline character.
 - `(.*: .*\n)+` matches one or more lines containing a key-value pair, where the key is followed by a colon and a space, and the value is followed by a newline character.

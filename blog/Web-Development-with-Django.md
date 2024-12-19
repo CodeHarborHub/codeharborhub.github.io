@@ -6,7 +6,7 @@ tags:
   - Web Development
   - Frontend Development
   - Backend Development
-date: 2024-06-10 09:32:00
+date: 2024-06-10
 ---
 
 Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. This guide will introduce you to Django, walk you through setting up a Django project, and cover key features and best practices for developing robust web applications.
@@ -53,10 +53,10 @@ A Django project is a collection of settings and configurations for an instance 
 
 ### Key Files and Directories
 
-manage.py: A command-line utility for interacting with your project.
-settings.py: Configuration settings for your project.
-urls.py: URL declarations for your project.
-wsgi.py and asgi.py: Entry points for WSGI/ASGI-compatible web servers.
+- **manage.py:** A command-line utility for interacting with your project.
+- **settings.py:** Configuration settings for your project.
+- **urls.py:** URL declarations for your project.
+- **wsgi.py and asgi.py:** Entry points for WSGI/ASGI-compatible web servers.
 
 ## 4. Building Your First Django App
 
@@ -70,9 +70,9 @@ python manage.py startapp myapp
 
 ### Defining Models
 
-Models are Python classes that define the structure of your database tables. Define a model in models.py:
+Models are Python classes that define the structure of your database tables. Define a model in `models.py`:
 
-```python
+```python title="myapp/models.py"
 from django.db import models
 
 class Post(models.Model):
@@ -94,7 +94,7 @@ python manage.py migrate
 
 Register your models to be managed via the Django admin interface:
 
-```python
+```python title="myapp/admin.py"
 from django.contrib import admin
 from .models import Post
 
@@ -104,10 +104,10 @@ admin.site.register(Post)
 
 ## 5. Django Views and Templates
 
-Creating Views
-Views handle the logic of your application and return responses. Define a view in views.py:
+### Creating Views
+Views handle the logic of your application and return responses. Define a view in `views.py`:
 
-```python
+```python title="myapp/views.py"
 from django.shortcuts import render
 from .models import Post
 
@@ -118,9 +118,9 @@ def index(request):
 
 ### URL Routing
 
-Map URLs to views in urls.py:
+Map URLs to views in `urls.py`:
 
-```python
+```python title="myapp/urls.py"
 from django.urls import path
 from . import views
 
@@ -131,9 +131,9 @@ urlpatterns = [
 
 ### Using Templates
 
-Create HTML templates in the templates directory. For example, index.html:
+Create HTML templates in the templates directory. For example, `index.html`:
 
-```html
+```html title="myapp/templates/index.html"
 <!doctype html>
 <html>
   <head>
@@ -152,9 +152,9 @@ Create HTML templates in the templates directory. For example, index.html:
 
 ### Template Inheritance
 
-Use template inheritance to avoid redundancy. Create a base template base.html:
+Use template inheritance to avoid redundancy. Create a base template `base.html`:
 
-```html
+```html title="myapp/templates/base.html"
 <!doctype html>
 <html>
   <head>
@@ -166,11 +166,12 @@ Use template inheritance to avoid redundancy. Create a base template base.html:
 </html>
 ```
 
-Extend it in index.html:
+Extend it in `index.html`:
 
-```html
-{% extends 'base.html' %} {% block title %}Home{% endblock %} {% block content
-%}
+```html title="myapp/templates/index.html"
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
 <h1>Posts</h1>
 <ul>
   {% for post in posts %}
@@ -184,9 +185,9 @@ Extend it in index.html:
 
 ### Creating Forms
 
-Define a form in forms.py:
+Define a form in `forms.py`:
 
-```python
+```python title="myapp/forms.py"
 from django import forms
 from .models import Post
 
@@ -196,10 +197,10 @@ class PostForm(forms.ModelForm):
         fields = ['title', 'content']
 ```
 
-Handling Form Submissions
+### Handling Form Submissions
 Handle form submissions in a view:
 
-```python
+```python title="myapp/views.py"
 from django.shortcuts import render, redirect
 from .forms import PostForm
 
@@ -214,10 +215,10 @@ def create_post(request):
     return render(request, 'create_post.html', {'form': form})
 ```
 
-Form Validation
+### Form Validation
 Django forms automatically handle validation, but you can add custom validation methods to your form fields if needed.
 
-Using Django Forms with Models
+### Using Django Forms with Models
 Django forms can be used directly with models to simplify data handling and validation.
 
 ## 7. Deploying Django Applications

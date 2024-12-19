@@ -14,9 +14,3 @@ Hello, and welcome to the CSS Learning Path! In this page, you will find a colle
 ## Core Courses
 
 The following courses are designed to help you learn the fundamentals of CSS, including selectors, properties, values, and more. These courses will guide you through the basics of CSS and help you build a solid foundation in front-end web development.
-
-import CSSCourses from '@site/src/database/all-courses/CSSCourses';
-
-<div className="Courses">
-    <Courses courses={CSSCourses} />
-</div>

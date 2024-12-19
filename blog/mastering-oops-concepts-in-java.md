@@ -1,6 +1,6 @@
 ---
 title: "Mastering OOP concepts in JAVA"
-sidebar_label: OOP
+sidebar_label: OOPs in Java
 authors: [dharshibalasubramaniyam]
 tags: [oop, java, best-practices]
 date: 2024-06-18
