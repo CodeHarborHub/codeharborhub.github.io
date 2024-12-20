@@ -69,7 +69,7 @@
     "remark-math": "^6.0.0",
     "styled-components": "^6.1.8",
     "swiper": "^11.1.4",
-    "three": "^0.170.0",
+    "three": "^0.171.0",
     "vanilla-tilt": "^1.8.1"
   },
   "devDependencies": {
