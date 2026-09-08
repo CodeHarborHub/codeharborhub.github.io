@@ -1,0 +1,13 @@
+{
+  "label": "Excel Masterclass",
+  "position": 10,
+  "link": {
+    "type": "generated-index",
+    "title": "Excel Masterclass",
+    "description": "Master Microsoft Excel from foundational formulas to advanced data modeling, Power Query, dynamic arrays, and VBA automation.",
+    "slug": "/category/excel"
+  },
+  "customProps": {
+    "description": "A comprehensive, step-by-step guide to mastering Microsoft Excel for data analysis, business modeling, and process automation."
+  }
+}

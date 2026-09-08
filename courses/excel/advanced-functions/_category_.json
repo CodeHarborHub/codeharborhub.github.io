@@ -1,0 +1,9 @@
+{
+  "label": "7. Advanced Functions",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "title": "Advanced Functions & Dynamic Arrays",
+    "description": "Leverage complex lookups, information evaluation, database functions, cube formulas, and modern dynamic array functions like FILTER and UNIQUE."
+  }
+}

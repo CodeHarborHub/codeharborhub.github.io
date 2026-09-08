@@ -1,0 +1,9 @@
+{
+  "label": "6. Pivot Tables",
+  "position": 6,
+  "link": {
+    "type": "generated-index",
+    "title": "Pivot Tables & Summaries",
+    "description": "Analyze large datasets with PivotTables, custom groupings, slicers, calculated fields, and interactive PivotCharts."
+  }
+}
