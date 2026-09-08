@@ -1,0 +1,9 @@
+{
+  "label": "8. Data Modeling",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "title": "Data Modeling & Power Pivot",
+    "description": "Understand relational data models, Power Pivot integration, DAX measures, time intelligence functions, and performance optimization."
+  }
+}

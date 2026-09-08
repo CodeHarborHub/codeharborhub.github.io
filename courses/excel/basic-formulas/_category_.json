@@ -1,0 +1,9 @@
+{
+  "label": "2. Basic Formulas",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "title": "Basic Formulas & Functions",
+    "description": "Master core formula syntax, mathematical functions, text manipulation, logical IF statements, and cell referencing."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "label": "Interface Overview",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "title": "Excel Interface Overview",
+    "description": "Master the primary UI components of Microsoft Excel, including ribbon customization, formula bar navigation, worksheet views, and layout controls."
+  }
+}

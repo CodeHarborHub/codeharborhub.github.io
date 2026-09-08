@@ -15,6 +15,7 @@ import Organizations from "../components/HomePage/organizations";
 import TweetsSection from "../components/HomePage/TweetsSection";
 import WhyChooseCodeHarbor from "../components/WhyChooseCodeHarbor";
 import ContributorList from "../components/ContributorList";
+import AntiAdBlock from "../components/AntiAdBlock";
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -39,6 +40,7 @@ export default function Home() {
         <meta name="google-adsense-account" content="ca-pub-5832817025080991" />
       </Head>
       <main className={style.main__home}>
+        <AntiAdBlock />
         <div className={style.home__header}>
           <Header />
         </div>

@@ -1,0 +1,9 @@
+{
+  "label": "10. Automation & VBA",
+  "position": 10,
+  "link": {
+    "type": "generated-index",
+    "title": "Automation & VBA Programming",
+    "description": "Automate repetitive tasks by recording macros, writing custom VBA procedures, managing control structures, and designing interactive UserForms."
+  }
+}

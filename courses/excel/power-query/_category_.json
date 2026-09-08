@@ -1,0 +1,9 @@
+{
+  "label": "9. Power Query",
+  "position": 9,
+  "link": {
+    "type": "generated-index",
+    "title": "Power Query (ETL Engine)",
+    "description": "Extract, transform, and load data from external sources, perform complex data cleaning steps, and automate data shaping pipelines."
+  }
+}
