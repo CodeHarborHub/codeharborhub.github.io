@@ -10,6 +10,8 @@ tags: [excel ribbon, customize ribbon, ribbon tabs, custom groups, reset ribbon,
 
 Customizing the Microsoft Excel Ribbon allows you to organize commands, tabs, and groups to align with your personal workflow. While you can reorder and add custom features, customizations apply only to the specific Office application you are editing.
 
+<AdsComponent />
+
 ### What You Can vs. Can't Customize
 
 ![Ribbon Customization Map](https://support.microsoft.com/en-us/office/media/wd-ribbon-customize-map.png)
@@ -54,6 +56,8 @@ Commands can only be added to custom groups; default built-in groups cannot have
 | **Add Commands** | Select custom group > Choose source in **Choose commands from** > Highlight tool > Click **Add**. |
 | **Replace Default Group** | Add a **New Group** to the tab > Add target commands from **Main Tabs** > Select original default group > Click **Remove**. |
 | **Hide Command Labels** | Right-click custom group > Select **Hide Command Labels**. |
+
+<AdsComponent />
 
 ### Resetting and Sharing Customizations
 
