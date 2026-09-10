@@ -35,7 +35,7 @@ jobs:
 
       - name: Cache previous stars count
         id: cache_previous_stars
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: previous_stars.txt
           key: stars-${{ github.repository }}-${{ github.run_id }}
@@ -74,7 +74,7 @@ jobs:
           echo "${{ steps.get_stars.outputs.stars }}" > previous_stars.txt
 
       - name: Update cache with new stars count
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: previous_stars.txt
           key: stars-${{ github.repository }}-${{ github.run_id }}
