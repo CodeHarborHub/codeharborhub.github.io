@@ -10,6 +10,8 @@ tags: [excel status bar, auto calculation, quick stats, excel status bar customi
 
 Located at the very bottom of the Excel application window, the **Status Bar** provides real-time information about your current worksheet state, instant statistical summaries of selected data, display view toggles, and zoom controls.
 
+<AdsComponent />
+
 **Anatomy of the Status Bar**
 
 The Status Bar operates quietly in the background, updating dynamically as you navigate cells and highlight data blocks:
@@ -45,6 +47,8 @@ Right-click anywhere on the Status Bar to enable or disable any of the six built
 Left-clicking any summary statistic on the Status Bar automatically copies that exact calculated value directly to your clipboard for quick pasting!
 :::
 
+<AdsComponent />
+
 **Understanding Cell Modes**
 
 The left side of the Status Bar indicates how Excel is currently processing your keyboard and mouse inputs:
@@ -73,3 +77,5 @@ The far-right section of the Status Bar houses rapid layout and magnification ad
 * **Workbook View Buttons**: Switch instantly between **Normal**, **Page Layout**, and **Page Break Preview** views.
 * **Zoom Percentage Button**: Click the percentage text (e.g., `100%`) to open the Zoom dialog and select precise magnification scales.
 * **Zoom Slider**: Drag the slider left (`-`) or right (`+`) to scale worksheet visibility smoothly between $10\%$ and $400\%$.
+
+<AdsComponent />

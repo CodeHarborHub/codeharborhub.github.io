@@ -10,6 +10,8 @@ tags: [quick access toolbar, excel qat, toolbar customization, excel shortcuts, 
 
 The **Quick Access Toolbar (QAT)** is a customizable toolbar positioned independently of the active Ribbon tab. It provides single-click access to your most frequently used Excel commands, tools, and custom macros from anywhere in the application.
 
+<AdsComponent />
+
 **Overview and Default Configuration**
 
 By default, the Quick Access Toolbar is located in the top-left corner of the title bar (above the Ribbon tabs).
@@ -54,6 +56,8 @@ Depending on your screen resolution and workspace preference, you can display th
 | **Above the Ribbon** *(Default)* | Saves vertical grid space; keeps the worksheet tall. | QAT Dropdown > **Show Above the Ribbon** |
 | **Below the Ribbon** | Easier cursor reach; allows more horizontal space for icons. | QAT Dropdown > **Show Below the Ribbon** |
 
+<AdsComponent />
+
 **Keyboard Shortcuts for QAT Tools**
 
 The Quick Access Toolbar enables automatic numerical keyboard shortcuts:
@@ -91,3 +95,5 @@ You can back up your toolbar setup to transfer it to another computer or restore
 
 To revert the toolbar back to its original state:
 * Click **Reset** at the bottom of the Quick Access Toolbar options window, then select **Reset only Quick Access Toolbar**.
+
+<AdsComponent />

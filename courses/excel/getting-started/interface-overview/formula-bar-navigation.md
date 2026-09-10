@@ -10,6 +10,8 @@ tags: [excel formula bar, name box, excel navigation, formula editing, named ran
 
 Located directly above the worksheet grid, the **Formula Bar** and **Name Box** form the core command center for viewing, entering, and auditing data in Microsoft Excel. While cells on the grid display final calculated outputs, the Formula Bar reveals the actual underlying logic, text, or formulas behind those numbers.
 
+<AdsComponent />
+
 **Anatomy of the Formula Bar Area**
 
 The Formula Bar layout is divided into three functional components across a single horizontal line:
@@ -53,6 +55,8 @@ When editing data in the Formula Bar, three small control buttons activate betwe
 
 When writing complex, nested logic functions (such as multiple nested `IF` or `XLOOKUP` statements), a single-line view can cut off long expressions.
 
+<AdsComponent />
+
 ### Expanding the Formula Bar
 * **Keyboard Shortcut**: Press `Ctrl + Shift + U` to toggle the Formula Bar between a single line and an expanded multi-line panel.
 * **Mouse Drag**: Hover your cursor over the bottom edge of the Formula Bar until it turns into a vertical split arrow (`↕`), then drag downward to expand.
@@ -75,3 +79,5 @@ When you click inside the Formula Bar to edit an equation, Excel triggers **Colo
 * Each cell or range reference in the formula receives a distinct border color (e.g., `Blue` for `A2`, `Red` for `B2`).
 * Matching color-coded outline boxes appear on the active worksheet grid simultaneously.
 * You can adjust cell references visually by dragging the colored selection handles directly on the grid while remaining in Formula Bar editing mode.
+
+<AdsComponent />
