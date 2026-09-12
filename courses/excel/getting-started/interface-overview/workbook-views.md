@@ -3,11 +3,27 @@ title: "Excel Workbook Views & Display Options"
 sidebar_label: Excel Workbook Views
 description: "Learn how to use Normal, Page Layout, Page Break Preview, and Custom Views in Microsoft Excel to optimize reading, printing, and presentation formats."
 sidebar_position: 6
+keywords: [excel workbook views, normal view excel, page layout view, page break preview, excel custom views, excel display options, hide gridlines excel, freeze panes excel]
+tags: [excel workbook views, normal view excel, page layout view, page break preview, excel custom views, excel display options, hide gridlines excel, freeze panes excel]
 ---
 
 Microsoft Excel offers several **Workbook Views** designed to help you work efficiently during different phases of spreadsheet development—whether you are entering raw data, preparing report layouts, configuring page breaks for printing, or setting up dedicated presentation views.
 
+<br />
 <AdsComponent />
+<br />
+
+## Video Explanation
+
+<LiteYouTubeEmbed
+  id="D2gV9yAv8g0"
+  params="autoplay=1&autohide=1&showinfo=0&rel=0"
+  title="Excel Workbook Views Guide"
+  lazyLoad={true}
+  webp
+/>
+
+<br />
 
 This guide covers all primary workbook views, display options, and custom layout configurations available in Excel.
 
@@ -57,7 +73,9 @@ Excel provides three main view modes accessible from the **View** tab on the Rib
 
 ```
 
+<br />
 <AdsComponent />
+<br />
 
 ### B. Page Layout View
 
@@ -117,7 +135,9 @@ Excel provides three main view modes accessible from the **View** tab on the Rib
 Drag any blue boundary line with your mouse to instantly scale or re-adjust print boundaries.
 :::
 
+<br />
 <AdsComponent />
+<br />
 
 ## 3. Show / Hide Display Elements
 
@@ -175,7 +195,6 @@ To manage large datasets across complex workbooks or multiple displays, use the 
 
 
 ```
-
 +-----------------------------------------------------------------------------------+
 | View Tab -> Window Group:                                                         |
 | [ New Window ]   [ Arrange All ]   [ Freeze Panes v ]   [ Split ]   [ Hide ]      |
@@ -189,7 +208,9 @@ To manage large datasets across complex workbooks or multiple displays, use the 
 * **Freeze Panes:** Keeps top rows or left columns locked in place while scrolling through large datasets.
 * **Split:** Divides the active worksheet window into multiple scrollable panes.
 
+<br />
 <AdsComponent />
+<br />
 
 ## Summary Best Practices
 
