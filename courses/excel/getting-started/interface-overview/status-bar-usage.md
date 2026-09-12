@@ -10,9 +10,23 @@ tags: [excel status bar, auto calculation, quick stats, excel status bar customi
 
 Located at the very bottom of the Excel application window, the **Status Bar** provides real-time information about your current worksheet state, instant statistical summaries of selected data, display view toggles, and zoom controls.
 
+<br />
 <AdsComponent />
+<br />
 
-**Anatomy of the Status Bar**
+## Video Explanation
+
+<LiteYouTubeEmbed
+  id="NDNR-bgD5qw"
+  params="autoplay=1&autohide=1&showinfo=0&rel=0"
+  title="Excel Status Bar Guide"
+  lazyLoad={true}
+  webp
+/>
+
+<br />
+
+## Anatomy of the Status Bar
 
 The Status Bar operates quietly in the background, updating dynamically as you navigate cells and highlight data blocks:
 
@@ -22,7 +36,7 @@ The Status Bar operates quietly in the background, updating dynamically as you n
 * **Summary Statistics** *(Center)*: Shows dynamic calculations for selected numerical or text ranges without writing formulas.
 * **View & Zoom Controls** *(Far Right)*: Enables fast switching between workbook views and sheet magnification levels.
 
-**Automatic Summary Statistics (Quick Stats)**
+## Automatic Summary Statistics (Quick Stats)
 
 When you highlight two or more cells, the Status Bar automatically aggregates and displays key mathematical metrics instantly.
 
@@ -47,9 +61,11 @@ Right-click anywhere on the Status Bar to enable or disable any of the six built
 Left-clicking any summary statistic on the Status Bar automatically copies that exact calculated value directly to your clipboard for quick pasting!
 :::
 
+<br />
 <AdsComponent />
+<br />
 
-**Understanding Cell Modes**
+## Understanding Cell Modes
 
 The left side of the Status Bar indicates how Excel is currently processing your keyboard and mouse inputs:
 
@@ -58,9 +74,9 @@ The left side of the Status Bar indicates how Excel is currently processing your
 * **Edit**: Activated when you press `F2` or double-click a cell to modify existing contents. Arrow keys move the text cursor within the cell.
 * **Point**: Activated when building a formula and clicking target cells to add references. Arrow keys navigate across worksheet cells to build formula ranges.
 
-**Customizing the Status Bar Context Menu**
+## Customizing the Status Bar Context Menu
 
-Right-clicking the Status Bar opens a comprehensive configuration menu allowing you to toggle workspace status toggles on or off:
+Right-clicking the Status Bar opens a comprehensive configuration menu allowing you to toggle workspace status indicators on or off:
 
 ![Status Bar Options](./img/status-bar-options.png)
 
@@ -70,12 +86,14 @@ Right-clicking the Status Bar opens a comprehensive configuration menu allowing 
 * **Calculation Mode**: Indicates whether workbook formulas are set to **Automatic** or **Manual**.
 * **Track Changes / Signatures**: Displays active security and collaboration permissions.
 
-**View Shortcuts and Zoom Controls**
+## View Shortcuts and Zoom Controls
 
 The far-right section of the Status Bar houses rapid layout and magnification adjustments.
 
 * **Workbook View Buttons**: Switch instantly between **Normal**, **Page Layout**, and **Page Break Preview** views.
 * **Zoom Percentage Button**: Click the percentage text (e.g., `100%`) to open the Zoom dialog and select precise magnification scales.
-* **Zoom Slider**: Drag the slider left (`-`) or right (`+`) to scale worksheet visibility smoothly between $10\%$ and $400\%$.
+* **Zoom Slider**: Drag the slider left (`-`) or right (`+`) to scale worksheet visibility smoothly between **10%** and **400%**.
 
+<br />
 <AdsComponent />
+<br />

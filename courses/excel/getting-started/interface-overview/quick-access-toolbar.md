@@ -10,9 +10,23 @@ tags: [quick access toolbar, excel qat, toolbar customization, excel shortcuts, 
 
 The **Quick Access Toolbar (QAT)** is a customizable toolbar positioned independently of the active Ribbon tab. It provides single-click access to your most frequently used Excel commands, tools, and custom macros from anywhere in the application.
 
+<br />
 <AdsComponent />
+<br />
 
-**Overview and Default Configuration**
+## Video Explanation
+
+<LiteYouTubeEmbed
+  id="GEv7_AHtv-w"
+  params="autoplay=1&autohide=1&showinfo=0&rel=0"
+  title="Microsoft Office - Quick Access Toolbar"
+  lazyLoad={true}
+  webp
+/>
+
+<br />
+
+## Overview and Default Configuration
 
 By default, the Quick Access Toolbar is located in the top-left corner of the title bar (above the Ribbon tabs).
 
@@ -25,7 +39,7 @@ When you first open Excel, the QAT typically contains a minimal set of primary o
 * **Undo** (`Ctrl + Z`)
 * **Redo / Repeat** (`Ctrl + Y`)
 
-**Adding and Removing Commands**
+## Adding and Removing Commands
 
 You can add almost any Excel command—or even custom macros—to the Quick Access Toolbar for quick access.
 
@@ -45,20 +59,22 @@ You can add almost any Excel command—or even custom macros—to the Quick Acce
 1. Navigate to **File > Options > Quick Access Toolbar** (or right-click the QAT and choose **Customize Quick Access Toolbar...**).
 2. Set **Choose commands from** to *Popular Commands*, *Commands Not in the Ribbon*, or *All Commands*.
 3. Highlight your desired command in the left box and click **Add >>**.
-4. To remove a tool, highlight it in the right-hand panel and click **&lt;&lt; Remove**.
+4. To remove a tool, highlight it in the right-hand panel and click **\<\< Remove**.
 
-**Repositioning the Toolbar**
+## Repositioning the Toolbar
 
 Depending on your screen resolution and workspace preference, you can display the Quick Access Toolbar above or below the Ribbon.
 
 | Position | Advantages | How to Set |
 | :--- | :--- | :--- |
-| **Above the Ribbon** *(Default)* | Saves vertical grid space; keeps the worksheet tall. | QAT Dropdown > **Show Above the Ribbon** |
-| **Below the Ribbon** | Easier cursor reach; allows more horizontal space for icons. | QAT Dropdown > **Show Below the Ribbon** |
+| **Above the Ribbon** *(Default)* | Saves vertical grid space; keeps the worksheet tall. | QAT Dropdown → **Show Above the Ribbon** |
+| **Below the Ribbon** | Easier cursor reach; allows more horizontal space for icons. | QAT Dropdown → **Show Below the Ribbon** |
 
+<br />
 <AdsComponent />
+<br />
 
-**Keyboard Shortcuts for QAT Tools**
+## Keyboard Shortcuts for QAT Tools
 
 The Quick Access Toolbar enables automatic numerical keyboard shortcuts:
 
@@ -66,16 +82,18 @@ The Quick Access Toolbar enables automatic numerical keyboard shortcuts:
 2. Notice the numbers displayed over each item in your Quick Access Toolbar (`1`, `2`, `3`, ... `9`).
 3. Press `Alt + [Number]` to trigger that exact command immediately without touching the mouse.
 
-> **Example:** If your 4th item on the QAT is **Paste Special Values**, pressing `Alt + 4` executes that command instantly.
+:::info Example
+If your 4th item on the QAT is **Paste Special Values**, pressing `Alt + 4` executes that command instantly.
+:::
 
-**Reordering Commands**
+## Reordering Commands
 
 1. Open **File > Options > Quick Access Toolbar**.
 2. Select the command you want to resequence from the right-hand list.
 3. Use the **Move Up** (▲) and **Move Down** (▼) buttons on the far right to reorder the tools.
 4. Click **OK** to apply your changes.
 
-**Importing, Exporting, and Resetting**
+## Importing, Exporting, and Resetting
 
 You can back up your toolbar setup to transfer it to another computer or restore default settings.
 
@@ -86,14 +104,17 @@ You can back up your toolbar setup to transfer it to another computer or restore
 
 ### Importing Settings
 1. Go to **File > Options > Quick Access Toolbar**.
-2. Click **Import/Export** > **Import customization file**.
+2. Click **Import/Export** → **Import customization file**.
 3. Select your `.exportedUI` file to apply your saved layout.
 
-> **Warning:** Importing a customization file overwrites all existing Ribbon and Quick Access Toolbar configurations.
+:::warning
+Importing a customization file overwrites all existing Ribbon and Quick Access Toolbar configurations.
+:::
 
 ### Resetting to Defaults
 
 To revert the toolbar back to its original state:
 * Click **Reset** at the bottom of the Quick Access Toolbar options window, then select **Reset only Quick Access Toolbar**.
 
+<br />
 <AdsComponent />

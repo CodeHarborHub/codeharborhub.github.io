@@ -10,9 +10,23 @@ tags: [excel formula bar, name box, excel navigation, formula editing, named ran
 
 Located directly above the worksheet grid, the **Formula Bar** and **Name Box** form the core command center for viewing, entering, and auditing data in Microsoft Excel. While cells on the grid display final calculated outputs, the Formula Bar reveals the actual underlying logic, text, or formulas behind those numbers.
 
+<br />
 <AdsComponent />
+<br />
 
-**Anatomy of the Formula Bar Area**
+## Video Explanation
+
+<LiteYouTubeEmbed
+  id="oqo-ZEwyvLU"
+  params="autoplay=1&autohide=1&showinfo=0&rel=0"
+  title="Excel Formula Bar and Name Box Navigation Guide"
+  lazyLoad={true}
+  webp
+/>
+
+<br />
+
+## Anatomy of the Formula Bar Area
 
 The Formula Bar layout is divided into three functional components across a single horizontal line:
 
@@ -22,7 +36,7 @@ The Formula Bar layout is divided into three functional components across a sing
 * **Function Buttons** *(Center)*: Quick action controls to cancel, accept, or insert functions.
 * **Formula Edit Box** *(Right)*: The active text box for entering or modifying values, labels, and mathematical logic.
 
-**The Name Box: Navigation & Named Ranges**
+## The Name Box: Navigation & Named Ranges
 
 The **Name Box** serves as both a position indicator and a high-speed navigation tool.
 
@@ -39,9 +53,11 @@ Instead of memorizing cell coordinates, you can assign descriptive names to cell
 2. Click the **Name Box**, type a unique identifier (e.g., `Total_Revenue`), and press `Enter`.
 3. Clicking the dropdown arrow on the Name Box allows you to select any saved Named Range across the entire workbook instantly.
 
-> **Rule for Named Ranges**: Names must start with a letter or underscore, cannot contain spaces, and cannot match standard cell addresses like `A1` or `SUM`.
+:::info Rule for Named Ranges
+Names must start with a letter or underscore, cannot contain spaces, and cannot match standard cell addresses like `A1` or `SUM`.
+:::
 
-**Formula Bar Controls & Shortcuts**
+## Formula Bar Controls & Shortcuts
 
 When editing data in the Formula Bar, three small control buttons activate between the Name Box and the text field:
 
@@ -51,11 +67,13 @@ When editing data in the Formula Bar, three small control buttons activate betwe
 | `✔` | **Enter** | `Ctrl + Enter` | Commits changes while keeping the selection on the **same cell** (unlike `Enter`, which moves selection down). |
 | `fx` | **Insert Function** | `Shift + F3` | Opens the **Insert Function** dialog box to search for functions and build arguments step-by-step. |
 
-**Working with Multi-Line Formulas**
+## Working with Multi-Line Formulas
 
 When writing complex, nested logic functions (such as multiple nested `IF` or `XLOOKUP` statements), a single-line view can cut off long expressions.
 
+<br />
 <AdsComponent />
+<br />
 
 ### Expanding the Formula Bar
 * **Keyboard Shortcut**: Press `Ctrl + Shift + U` to toggle the Formula Bar between a single line and an expanded multi-line panel.
@@ -72,7 +90,7 @@ To make lengthy formulas readable and maintainable, add intentional line breaks:
 
 ```
 
-**Auditing and Highlighting Cell References**
+## Auditing and Highlighting Cell References
 
 When you click inside the Formula Bar to edit an equation, Excel triggers **Color-Coded Syntax Highlighting**:
 
@@ -80,4 +98,6 @@ When you click inside the Formula Bar to edit an equation, Excel triggers **Colo
 * Matching color-coded outline boxes appear on the active worksheet grid simultaneously.
 * You can adjust cell references visually by dragging the colored selection handles directly on the grid while remaining in Formula Bar editing mode.
 
+<br />
 <AdsComponent />
+<br />
