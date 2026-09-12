@@ -11,81 +11,227 @@ import React, {
 interface ICommunityStatsContext {
   githubStarCount: number;
   githubStarCountText: string;
+
   githubContributorsCount: number;
+  githubContributorsCountText: string;
+
   githubForksCount: number;
+  githubForksCountText: string;
+
   loading: boolean;
+  error: string | null;
+
   refetch: () => Promise<void>;
 }
 
-export const CommunityStatsContext = createContext<ICommunityStatsContext | undefined>(undefined);
+const GITHUB_REPO =
+  "CodeHarborHub/codeharborhub.github.io";
 
-export const CommunityStatsProvider: FC = ({ children }) => {
-  const [loading, setLoading] = useState(true);
-  const [githubStarCount, setGithubStarCount] = useState(0);
-  const [githubContributorsCount, setGithubContributorsCount] = useState(0);
-  const [githubForksCount, setGithubForksCount] = useState(0);
+const GITHUB_API =
+  `https://api.github.com/repos/${GITHUB_REPO}`;
 
-  const fetchGithubCount = useCallback(async (signal: AbortSignal) => {
-    try {
-      setLoading(true);
+export const CommunityStatsContext = createContext<
+  ICommunityStatsContext | undefined
+>(undefined);
 
-      const response = await fetch(
-        "https://api.github.com/repos/CodeHarborHub/codeharborhub.github.io",
-        {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          signal,
-        }
-      );
+interface GitHubRepositoryResponse {
+  stargazers_count?: number;
+  forks_count?: number;
+}
 
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
+interface GitHubContributor {
+  login?: string;
+  contributions?: number;
+}
 
-      const json = await response.json();
-      setGithubStarCount(json.stargazers_count || 0);
-      setGithubContributorsCount(140 || 0); // Assuming this property exists
-      setGithubForksCount(json.forks_count || 0);
-    } catch (error) {
-      console.error("Error fetching GitHub data:", error);
-    } finally {
-      setLoading(false);
+/**
+ * Fetch the total number of contributors.
+ *
+ * GitHub's repository endpoint doesn't directly expose a
+ * contributor count, so we use the contributors endpoint
+ * with `per_page=1` and read GitHub's pagination metadata.
+ */
+const fetchContributorCount = async (
+  signal: AbortSignal
+): Promise<number> => {
+  const response = await fetch(
+    `${GITHUB_API}/contributors?per_page=1&anon=true`,
+    {
+      method: "GET",
+      headers: {
+        Accept: "application/vnd.github+json",
+      },
+      signal,
     }
-  }, []);
+  );
+
+  if (!response.ok) {
+    throw new Error(
+      `Unable to fetch contributors (${response.status})`
+    );
+  }
+
+  const contributors: GitHubContributor[] =
+    await response.json();
+
+  const linkHeader = response.headers.get("Link");
+
+  if (linkHeader) {
+    const lastPageMatch = linkHeader.match(
+      /[?&]page=(\d+)>;\s*rel="last"/
+    );
+
+    if (lastPageMatch) {
+      return Number(lastPageMatch[1]);
+    }
+  }
+
+  return contributors.length;
+};
+
+export const CommunityStatsProvider: FC<
+  React.PropsWithChildren
+> = ({ children }) => {
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  const [githubStarCount, setGithubStarCount] =
+    useState(0);
+
+  const [
+    githubContributorsCount,
+    setGithubContributorsCount,
+  ] = useState(0);
+
+  const [githubForksCount, setGithubForksCount] =
+    useState(0);
+
+  const fetchGithubCount = useCallback(
+    async (signal?: AbortSignal) => {
+      const controller =
+        signal ? undefined : new AbortController();
+
+      const requestSignal =
+        signal ?? controller!.signal;
+
+      try {
+        setLoading(true);
+        setError(null);
+
+        const [repositoryResponse, contributorCount] =
+          await Promise.all([
+            fetch(GITHUB_API, {
+              method: "GET",
+              headers: {
+                Accept:
+                  "application/vnd.github+json",
+              },
+              signal: requestSignal,
+            }),
+
+            fetchContributorCount(requestSignal),
+          ]);
+
+        if (!repositoryResponse.ok) {
+          throw new Error(
+            `Unable to fetch repository data (${repositoryResponse.status})`
+          );
+        }
+
+        const repository: GitHubRepositoryResponse =
+          await repositoryResponse.json();
+
+        setGithubStarCount(
+          repository.stargazers_count ?? 0
+        );
+
+        setGithubForksCount(
+          repository.forks_count ?? 0
+        );
+
+        setGithubContributorsCount(
+          contributorCount
+        );
+      } catch (err) {
+        if (
+          err instanceof DOMException &&
+          err.name === "AbortError"
+        ) {
+          return;
+        }
+
+        console.error(
+          "Failed to fetch CodeHarborHub GitHub statistics:",
+          err
+        );
+
+        setError(
+          err instanceof Error
+            ? err.message
+            : "Unable to load community statistics."
+        );
+      } finally {
+        setLoading(false);
+      }
+    },
+    []
+  );
 
   useEffect(() => {
-    const abortController = new AbortController();
-    fetchGithubCount(abortController.signal);
+    const controller = new AbortController();
+
+    void fetchGithubCount(controller.signal);
 
     return () => {
-      abortController.abort();
+      controller.abort();
     };
   }, [fetchGithubCount]);
 
-  const githubStarCountText = useMemo(() => {
-    return convertStatToText(githubStarCount);
-  }, [githubStarCount]);
+  const githubStarCountText = useMemo(
+    () => convertStatToText(githubStarCount),
+    [githubStarCount]
+  );
 
-  const githubContributorsCountText = useMemo(() => {
-    return convertStatToText(githubContributorsCount);
-  }, [githubContributorsCount]);
+  const githubContributorsCountText = useMemo(
+    () => convertStatToText(githubContributorsCount),
+    [githubContributorsCount]
+  );
 
-  const githubForksCountText = useMemo(() => {
-    return convertStatToText(githubForksCount);
-  }, [githubForksCount]);
+  const githubForksCountText = useMemo(
+    () => convertStatToText(githubForksCount),
+    [githubForksCount]
+  );
 
-  const value = {
-    githubStarCount,
-    githubStarCountText,
-    githubContributorsCount,
-    githubContributorsCountText,
-    githubForksCount,
-    githubForksCountText,
-    loading,
-    refetch: fetchGithubCount,
-  };
+  const value = useMemo<ICommunityStatsContext>(
+    () => ({
+      githubStarCount,
+      githubStarCountText,
+
+      githubContributorsCount,
+      githubContributorsCountText,
+
+      githubForksCount,
+      githubForksCountText,
+
+      loading,
+      error,
+
+      refetch: async () => {
+        await fetchGithubCount();
+      },
+    }),
+    [
+      githubStarCount,
+      githubStarCountText,
+      githubContributorsCount,
+      githubContributorsCountText,
+      githubForksCount,
+      githubForksCountText,
+      loading,
+      error,
+      fetchGithubCount,
+    ]
+  );
 
   return (
     <CommunityStatsContext.Provider value={value}>
@@ -94,26 +240,46 @@ export const CommunityStatsProvider: FC = ({ children }) => {
   );
 };
 
-export const useCommunityStatsContext = () => {
-  const context = useContext(CommunityStatsContext);
-  if (context === undefined) {
-    throw new Error("useCommunityStatsContext must be used within a CommunityStatsProvider");
+export const useCommunityStatsContext =
+  (): ICommunityStatsContext => {
+    const context = useContext(
+      CommunityStatsContext
+    );
+
+    if (!context) {
+      throw new Error(
+        "useCommunityStatsContext must be used within CommunityStatsProvider"
+      );
+    }
+
+    return context;
+  };
+
+export const convertStatToText = (
+  num: number
+): string => {
+  if (!Number.isFinite(num)) {
+    return "0";
   }
-  return context;
-};
 
-export const convertStatToText = (num: number) => {
-  const hasIntlSupport =
-    typeof Intl === "object" && Intl && typeof Intl.NumberFormat === "function";
-
-  if (!hasIntlSupport) {
-    return `${(num / 1000).toFixed(1)}k`;
+  if (
+    typeof Intl !== "undefined" &&
+    typeof Intl.NumberFormat === "function"
+  ) {
+    return new Intl.NumberFormat("en-US", {
+      notation: "compact",
+      compactDisplay: "short",
+      maximumSignificantDigits: 3,
+    }).format(num);
   }
 
-  const formatter = new Intl.NumberFormat("en-US", {
-    notation: "compact",
-    compactDisplay: "short",
-    maximumSignificantDigits: 3,
-  });
-  return formatter.format(num);
+  if (num >= 1_000_000) {
+    return `${(num / 1_000_000).toFixed(1)}M`;
+  }
+
+  if (num >= 1_000) {
+    return `${(num / 1_000).toFixed(1)}K`;
+  }
+
+  return String(num);
 };
