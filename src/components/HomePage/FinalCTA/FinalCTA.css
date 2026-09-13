@@ -1,0 +1,414 @@
+/* =========================================================
+   CodeHarborHub — Final CTA
+   ========================================================= */
+
+.final-cta {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 2rem 0;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      color-mix(in srgb, var(--ifm-color-primary) 13%, transparent),
+      transparent 48%
+    ),
+    var(--ifm-background-color);
+}
+
+.final-cta__container {
+  position: relative;
+  margin: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 32px;
+  background:
+    linear-gradient(
+      145deg,
+      color-mix(in srgb, var(--ifm-color-primary) 5%, var(--ifm-background-surface-color)),
+      var(--ifm-background-surface-color)
+    );
+  box-shadow:
+    0 30px 80px color-mix(in srgb, var(--ifm-color-primary) 8%, transparent),
+    inset 0 1px 0 color-mix(in srgb, white 8%, transparent);
+}
+
+/* =========================================================
+   Background
+   ========================================================= */
+
+.final-cta__grid {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  opacity: 0.4;
+  background-image:
+    linear-gradient(
+      to right,
+      color-mix(in srgb, var(--ifm-color-emphasis-300) 20%, transparent) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      color-mix(in srgb, var(--ifm-color-emphasis-300) 20%, transparent) 1px,
+      transparent 1px
+    );
+  background-size: 42px 42px;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 20%,
+    black 80%,
+    transparent
+  );
+}
+
+.final-cta__glow {
+  position: absolute;
+  z-index: -2;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(80px);
+  opacity: 0.18;
+}
+
+.final-cta__glow--one {
+  top: -150px;
+  left: 8%;
+  background: var(--ifm-color-primary);
+}
+
+.final-cta__glow--two {
+  right: 5%;
+  bottom: -180px;
+  background: var(--ifm-color-primary-dark);
+}
+
+/* =========================================================
+   Content
+   ========================================================= */
+
+.final-cta__content {
+  position: relative;
+  z-index: 2;
+  padding: 1rem;
+  text-align: center;
+}
+
+.final-cta__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid color-mix(
+    in srgb,
+    var(--ifm-color-primary) 30%,
+    var(--ifm-color-emphasis-200)
+  );
+  border-radius: 999px;
+  background: color-mix(
+    in srgb,
+    var(--ifm-color-primary) 7%,
+    transparent
+  );
+  color: var(--ifm-color-primary);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.final-cta__title {
+  margin: 0 auto;
+  font-size: clamp(1rem, 6vw, 5rem);
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+  font-weight: 900;
+  color: var(--ifm-heading-color);
+}
+
+.final-cta__highlight {
+  color: var(--ifm-color-primary);
+}
+
+.final-cta__description {
+  max-width: 650px;
+  margin: 1.5rem auto 0;
+  color: var(--ifm-color-emphasis-700);
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  line-height: 1.75;
+}
+
+/* =========================================================
+   Buttons
+   ========================================================= */
+
+.final-cta__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 2rem;
+}
+
+.final-cta__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  min-height: 50px;
+  padding: 0.8rem 1.2rem;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 750;
+  text-decoration: none;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease,
+    border-color 180ms ease;
+}
+
+.final-cta__button:hover {
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.final-cta__button--primary {
+  color: #fff;
+  background: var(--ifm-color-primary);
+  box-shadow:
+    0 10px 30px color-mix(
+      in srgb,
+      var(--ifm-color-primary) 25%,
+      transparent
+    );
+}
+
+.final-cta__button--primary:hover {
+  color: #fff;
+  background: var(--ifm-color-primary-dark);
+  box-shadow:
+    0 15px 35px color-mix(
+      in srgb,
+      var(--ifm-color-primary) 32%,
+      transparent
+    );
+}
+
+.final-cta__button--secondary {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  color: var(--ifm-font-color-base);
+  background: color-mix(
+    in srgb,
+    var(--ifm-background-color) 75%,
+    transparent
+  );
+}
+
+.final-cta__button--secondary:hover {
+  color: var(--ifm-font-color-base);
+  border-color: var(--ifm-color-primary);
+  background: color-mix(
+    in srgb,
+    var(--ifm-color-primary) 6%,
+    var(--ifm-background-color)
+  );
+}
+
+/* =========================================================
+   Trust line
+   ========================================================= */
+
+.final-cta__trust {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1.5rem;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.82rem;
+}
+
+.final-cta__status {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 0 4px color-mix(
+    in srgb,
+    #22c55e 12%,
+    transparent
+  );
+}
+
+.final-cta__separator {
+  opacity: 0.45;
+}
+
+/* =========================================================
+   Terminal
+   ========================================================= */
+
+.final-cta__terminal {
+  position: absolute;
+  right: -80px;
+  bottom: -95px;
+  z-index: 1;
+  width: 330px;
+  overflow: hidden;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 16px;
+  opacity: 0.35;
+  transform: rotate(-6deg);
+  background: var(--ifm-background-color);
+  box-shadow: 0 25px 60px rgb(0 0 0 / 18%);
+  pointer-events: none;
+}
+
+.final-cta__terminal-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.7rem 0.8rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.final-cta__terminal-header > span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ifm-color-emphasis-400);
+}
+
+.final-cta__terminal-header code {
+  margin-left: auto;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.65rem;
+}
+
+.final-cta__terminal-body {
+  padding: 5rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.7rem;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.final-cta__terminal-prompt {
+  color: var(--ifm-color-primary);
+}
+
+.final-cta__terminal-output {
+  color: var(--ifm-color-emphasis-500);
+}
+
+.final-cta__terminal-success {
+  color: #22c55e;
+}
+
+/* =========================================================
+   Dark mode
+   ========================================================= */
+
+[data-theme="dark"] .final-cta {
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      color-mix(in srgb, var(--ifm-color-primary) 16%, transparent),
+      transparent 50%
+    ),
+    var(--ifm-background-color);
+}
+
+[data-theme="dark"] .final-cta__container {
+  border-color: color-mix(
+    in srgb,
+    var(--ifm-color-primary) 18%,
+    var(--ifm-color-emphasis-200)
+  );
+}
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+
+@media (max-width: 996px) {
+  .final-cta {
+    padding: 2rem 1rem;
+  }
+
+  .final-cta__container {
+    min-height: auto;
+    border-radius: 24px;
+  }
+
+  .final-cta__content {
+    padding: 1rem;
+  }
+
+  .final-cta__terminal {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .final-cta {
+    padding: 0 0.5rem;
+  }
+
+  .final-cta__container {
+    border-radius: 20px;
+  }
+
+  .final-cta__content {
+    padding: 1rem;
+  }
+
+  .final-cta__eyebrow {
+    font-size: 0.64rem;
+  }
+
+  .final-cta__title {
+    font-size: clamp(2rem, 12vw, 3.5rem);
+  }
+
+  .final-cta__description {
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+
+  .final-cta__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .final-cta__button {
+    width: 100%;
+  }
+
+  .final-cta__trust {
+    font-size: 0.72rem;
+  }
+}
+
+/* =========================================================
+   Reduced motion
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .final-cta__button {
+    transition: none;
+  }
+
+  .final-cta__button:hover {
+    transform: none;
+  }
+}

@@ -1,0 +1,371 @@
+/* =========================================================
+   CodeHarborHub - Testimonial / Tweet Card
+   ========================================================= */
+
+.tweet-card {
+  --tweet-primary: var(--ifm-color-primary);
+
+  --tweet-background: var(--ifm-background-surface-color);
+  --tweet-page-background: var(--ifm-background-color);
+
+  --tweet-heading: var(--ifm-heading-color);
+  --tweet-text: var(--ifm-font-color-base);
+  --tweet-muted: var(--ifm-color-emphasis-700);
+
+  --tweet-border: var(--ifm-color-emphasis-200);
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  min-height: 315px;
+
+  padding: 1.35rem;
+
+  overflow: hidden;
+
+  border: 1px solid var(--tweet-border);
+  border-radius: 1.2rem;
+
+  background:
+    linear-gradient(
+      145deg,
+      color-mix(
+        in srgb,
+        var(--tweet-primary) 4%,
+        var(--tweet-background)
+      ),
+      var(--tweet-background)
+    );
+
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.035),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+  transition:
+    transform 220ms ease,
+    border-color 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.tweet-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 1.2rem;
+  right: 1.2rem;
+
+  height: 2px;
+
+  border-radius: 0 0 999px 999px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--tweet-primary),
+    transparent
+  );
+
+  opacity: 0;
+
+  transition: opacity 220ms ease;
+}
+
+.tweet-card:hover {
+  transform: translateY(-5px);
+
+  border-color: color-mix(
+    in srgb,
+    var(--tweet-primary) 35%,
+    var(--tweet-border)
+  );
+
+  box-shadow:
+    0 18px 45px
+      color-mix(
+        in srgb,
+        var(--tweet-primary) 9%,
+        transparent
+      ),
+    0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.tweet-card:hover::before {
+  opacity: 1;
+}
+
+/* ---------------------------------------------------------
+   Quote
+   --------------------------------------------------------- */
+
+.tweet-card__quote {
+  position: absolute;
+
+  top: 1rem;
+  right: 1rem;
+
+  display: grid;
+  place-items: center;
+
+  width: 38px;
+  height: 38px;
+
+  border-radius: 0.7rem;
+
+  color: color-mix(
+    in srgb,
+    var(--tweet-primary) 75%,
+    var(--tweet-muted)
+  );
+
+  background: color-mix(
+    in srgb,
+    var(--tweet-primary) 7%,
+    var(--tweet-page-background)
+  );
+}
+
+/* ---------------------------------------------------------
+   Header
+   --------------------------------------------------------- */
+
+.tweet-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  padding-right: 2.5rem;
+}
+
+.tweet-card__identity {
+  display: flex;
+  align-items: center;
+
+  gap: 0.75rem;
+
+  min-width: 0;
+}
+
+.tweet-card__avatar {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  object-fit: cover;
+
+  border: 2px solid
+    color-mix(
+      in srgb,
+      var(--tweet-primary) 22%,
+      var(--tweet-border)
+    );
+
+  border-radius: 50%;
+
+  background: var(--tweet-page-background);
+}
+
+.tweet-card__avatar--fallback {
+  display: grid;
+  place-items: center;
+
+  color: var(--tweet-primary);
+
+  background: color-mix(
+    in srgb,
+    var(--tweet-primary) 10%,
+    var(--tweet-page-background)
+  );
+
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.tweet-card__user {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+}
+
+.tweet-card__name {
+  overflow: hidden;
+
+  color: var(--tweet-heading);
+
+  font-size: 0.92rem;
+  line-height: 1.3;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tweet-card__handle {
+  color: var(--tweet-muted);
+
+  font-size: 0.76rem;
+}
+
+.tweet-card__github {
+  display: grid;
+  place-items: center;
+
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  border: 1px solid var(--tweet-border);
+  border-radius: 50%;
+
+  color: var(--tweet-muted);
+
+  background: var(--tweet-page-background);
+
+  transition:
+    color 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease;
+}
+
+.tweet-card__github:hover {
+  color: var(--tweet-primary);
+
+  border-color: color-mix(
+    in srgb,
+    var(--tweet-primary) 35%,
+    var(--tweet-border)
+  );
+
+  transform: rotate(-5deg);
+}
+
+/* ---------------------------------------------------------
+   Content
+   --------------------------------------------------------- */
+
+.tweet-card__content {
+  flex: 1;
+
+  margin-top: 1.4rem;
+
+  color: var(--tweet-text);
+
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+
+.tweet-card__content p {
+  margin: 0;
+}
+
+/* ---------------------------------------------------------
+   Footer
+   --------------------------------------------------------- */
+
+.tweet-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+
+  border-top: 1px solid var(--tweet-border);
+}
+
+.tweet-card__date {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 0.4rem;
+
+  color: var(--tweet-muted);
+
+  font-size: 0.72rem;
+}
+
+.tweet-card__date svg {
+  color: var(--tweet-primary);
+}
+
+.tweet-card__link {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 0.3rem;
+
+  color: var(--tweet-primary);
+
+  font-size: 0.76rem;
+  font-weight: 750;
+
+  text-decoration: none;
+
+  transition: gap 180ms ease;
+}
+
+.tweet-card__link:hover {
+  color: var(--tweet-primary);
+
+  gap: 0.55rem;
+}
+
+.tweet-card__link:focus-visible,
+.tweet-card__github:focus-visible {
+  outline: 3px solid
+    color-mix(
+      in srgb,
+      var(--tweet-primary) 30%,
+      transparent
+    );
+
+  outline-offset: 3px;
+}
+
+/* ---------------------------------------------------------
+   Mobile
+   --------------------------------------------------------- */
+
+@media screen and (max-width: 560px) {
+  .tweet-card {
+    min-height: 295px;
+
+    padding: 1.15rem;
+  }
+
+  .tweet-card__content {
+    font-size: 0.88rem;
+    line-height: 1.7;
+  }
+}
+
+/* ---------------------------------------------------------
+   Reduced Motion
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .tweet-card,
+  .tweet-card::before,
+  .tweet-card__github,
+  .tweet-card__link {
+    transition: none;
+  }
+
+  .tweet-card:hover {
+    transform: none;
+  }
+
+  .tweet-card__github:hover {
+    transform: none;
+  }
+}

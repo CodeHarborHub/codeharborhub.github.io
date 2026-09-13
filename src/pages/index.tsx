@@ -2,7 +2,7 @@ import clsx from "clsx";
 import style from "./index.module.css";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import Heading from "@theme/Heading";
+// import Heading from "@theme/Heading";
 import Head from "@docusaurus/Head";
 import Header from "../components/HomePage/Header";
 import ResourcesSection from "../components/HomePage/ResourcesSection";
@@ -10,12 +10,13 @@ import ScrollTopToButton from "../components/Buttons/bottom/ScrollTopToButton";
 import ScrollBottomToTop from "../components/Buttons/top/ScrollBottomToTop";
 import { LandingCommunity } from "../components/HomePage/Community";
 import { CommunityStatsProvider } from "../context/CommunityStats";
-import Faq from "./Faq";
+// import Faq from "./Faq";
 import Organizations from "../components/HomePage/organizations";
 import TweetsSection from "../components/HomePage/TweetsSection";
-import WhyChooseCodeHarbor from "../components/WhyChooseCodeHarbor";
+import WhyChooseCodeHarbor from "../components/HomePage/WhyChooseCodeHarbor";
 import ContributorList from "../components/ContributorList";
 import AntiAdBlock from "../components/AntiAdBlock";
+import FinalCTA from "../components/HomePage/FinalCTA";
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -36,7 +37,7 @@ export default function Home() {
           custom-element="amp-auto-ads"
           src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"
         />
-        
+
         <meta name="google-adsense-account" content="ca-pub-5832817025080991" />
       </Head>
       <main className={style.main__home}>
@@ -47,15 +48,11 @@ export default function Home() {
 
         <hr className={style.home__hr} />
 
-        <div className={style.home__header}>
-          <WhyChooseCodeHarbor />
-        </div>
+        <WhyChooseCodeHarbor />
 
         <hr className={style.home__hr} />
 
-        <div>
-          <ResourcesSection />
-        </div>
+        <ResourcesSection />
 
         <hr className={style.home__hr} />
 
@@ -65,11 +62,6 @@ export default function Home() {
 
         <hr className={style.home__hr} />
 
-        <div className={style.home__divider}>
-          <Heading as="h2" className={clsx("text--center")}>
-            Our GitHub Organizations
-          </Heading>
-        </div>
         <Organizations />
 
         <hr className={style.home__hr} />
@@ -85,13 +77,21 @@ export default function Home() {
         </div>
 
         <Faq /> */}
+        
+        <ContributorList
+          contributorsPerPage={150}
+          contributorsIgnore={[
+            "restyled-commits",
+            "dependabot",
+            "renovate",
+            "deepsource-autofix",
+            "ImgBotApp",
+          ]}
+        />
 
-        <div className={style.home__divider}>
-          <Heading as="h2" className={clsx("text--center", style.mainHeading)}>
-            Our Contributors
-          </Heading>
-        </div>
-        <ContributorList contributorsPerPage={150} contributorsIgnore={["restyled-commits", "dependabot", "renovate", "deepsource-autofix", "ImgBotApp"]} />
+<hr className={style.home__hr} />
+
+        <FinalCTA />
 
         <ScrollTopToButton />
         <ScrollBottomToTop />
