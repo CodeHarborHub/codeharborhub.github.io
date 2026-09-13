@@ -60,7 +60,7 @@
     "docusaurus2-dotenv": "^1.4.0",
     "express": "^5.1.0",
     "fontawesome": "^5.6.3",
-    "framer-motion": "^12.10.5",
+    "motion": "^12.10.5",
     "joi": "^17.12.1",
     "lucide-react": "^0.563.0",
     "passport": "^0.7.0",
