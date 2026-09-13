@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
+// @ts-ignore
 import Link from "@docusaurus/Link";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -15,6 +16,8 @@ import {
   Trophy,
 } from "lucide-react";
 
+// The stylesheet is handled by Docusaurus/Webpack and has no TypeScript declarations.
+// @ts-ignore
 import "./style.css";
 
 type ResourceType = "tutorial" | "courses" | "blog" | "dsa";
@@ -40,7 +43,7 @@ interface ResourceCategory {
 const ALL_RESOURCES: Resource[] = [
   {
     id: "tutorials",
-    url: "/docs/",
+    url: "/tutorials/",
     type: "tutorial",
     title: "Learn the Fundamentals",
     description:
@@ -63,7 +66,7 @@ const ALL_RESOURCES: Resource[] = [
   },
   {
     id: "blog",
-    url: "/blog/",
+    url: "https://codeharborhub.github.io/blog/",
     type: "blog",
     title: "Explore the Tech Blog",
     description:
@@ -74,7 +77,7 @@ const ALL_RESOURCES: Resource[] = [
   },
   {
     id: "dsa",
-    url: "/dsa/",
+    url: "https://codeharborhub.github.io/dsa/",
     type: "dsa",
     title: "Build Strong DSA Skills",
     description:
@@ -342,7 +345,7 @@ const ResourcesSection: React.FC = () => {
           </div>
 
           <Link
-            to="/blog/"
+            to="https://codeharborhub.github.io/blog/"
             className="chh-resources__view-all"
           >
             <span>View all resources</span>

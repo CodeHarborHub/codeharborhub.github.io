@@ -35,7 +35,7 @@ const FinalCTA: React.FC = () => {
           {/* CTAs */}
           <div className="final-cta__actions">
             <Link
-              to="/tutorial"
+              to="/tutorials/"
               className="final-cta__button final-cta__button--primary"
             >
               <Terminal size={18} aria-hidden="true" />
@@ -44,7 +44,7 @@ const FinalCTA: React.FC = () => {
             </Link>
 
             <a
-              href="https://github.com/CodeHarborHub/codeharborhub.github.io"
+              href="https://github.com/codeharborhub/codeharborhub.github.io"
               target="_blank"
               rel="noopener noreferrer"
               className="final-cta__button final-cta__button--secondary"
